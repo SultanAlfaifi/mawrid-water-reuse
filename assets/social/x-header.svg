@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" role="img" aria-labelledby="title desc">
+  <title id="title">MAWRID social header</title>
+  <desc id="desc">MAWRID social-media header in the 1500 by 500 X header format.</desc>
+  <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061923"/><stop offset="1" stop-color="#0b5259"/></linearGradient><linearGradient id="d" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4be3d0"/><stop offset="1" stop-color="#158bb8"/></linearGradient><pattern id="g" width="45" height="45" patternUnits="userSpaceOnUse"><path d="M45 0H0V45" fill="none" stroke="#8bc8c2" stroke-opacity=".07"/></pattern></defs>
+  <rect width="1500" height="500" fill="url(#b)"/><rect width="1500" height="500" fill="url(#g)"/>
+  <path d="M0 435c280-73 489 25 742-17s484-23 758 33v49H0Z" fill="#102f3a"/>
+  <g transform="translate(1050 26)"><circle cx="202" cy="213" r="177" fill="none" stroke="#48d8c8" stroke-width="3" stroke-dasharray="10 11" opacity=".55"/><path d="M202 42c-40 61-98 124-98 188a98 98 0 0 0 196 0c0-64-58-127-98-188Z" fill="url(#d)"/><path d="M202 128v184M202 166c-32-20-58-18-80-7M202 208c-37-17-67-10-87 6M202 166c32-20 58-18 80-7M202 208c37-17 67-10 87 6M202 250c-28-11-53-3-69 11M202 250c28-11 53-3 69 11" fill="none" stroke="#effffd" stroke-width="7" stroke-linecap="round"/></g>
+  <g font-family="Arial, Helvetica, sans-serif"><text x="115" y="190" fill="#f5fbfb" font-size="90" font-weight="700" letter-spacing="12">MAWRID</text><text x="120" y="238" fill="#61d7c6" font-size="18" font-weight="700" letter-spacing="5">SMART DECENTRALIZED WATER REUSE</text><text x="115" y="327" fill="#f5fbfb" font-size="38" font-weight="600">Give every drop a second purpose.</text><text x="118" y="373" fill="#a9c9ca" font-size="18">Local biochar · Condition-based care · Fail-safe by design</text></g>
+</svg>

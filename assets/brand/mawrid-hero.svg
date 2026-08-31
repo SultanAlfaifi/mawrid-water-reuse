@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" role="img" aria-labelledby="title desc">
+  <title id="title">MAWRID — Give every drop a second purpose</title>
+  <desc id="desc">Dark blue technical banner showing a water drop, circular reuse path, palm-inspired filtration layers, and the MAWRID project statement.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061923"/>
+      <stop offset="0.55" stop-color="#0a2f3c"/>
+      <stop offset="1" stop-color="#0b4c55"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4be3d0"/>
+      <stop offset="1" stop-color="#158bb8"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#8bc8c2" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="600" fill="url(#bg)"/>
+  <rect width="1600" height="600" fill="url(#grid)"/>
+  <circle cx="1300" cy="280" r="240" fill="#35dbc8" opacity=".08" filter="url(#glow)"/>
+  <path d="M0 520C280 445 425 575 690 512s444-28 596 26 235 10 314-25v87H0Z" fill="#102d38"/>
+  <path d="M0 548c240-65 451 30 680-5s431-30 634 15c130 29 218 16 286-8" fill="none" stroke="#38d4c5" stroke-opacity=".24" stroke-width="3"/>
+
+  <g transform="translate(115 86)">
+    <rect width="92" height="92" rx="24" fill="#0f4050" stroke="#47d9c8" stroke-opacity=".45"/>
+    <path d="M46 16C35 33 22 49 22 63a24 24 0 0 0 48 0c0-14-13-30-24-47Z" fill="url(#water)"/>
+    <path d="M46 39v35M46 48c-8-5-14-4-19-1M46 56c8-5 14-4 19-1M46 64c-7-3-12-1-16 2M46 64c7-3 12-1 16 2" fill="none" stroke="#effffd" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="115" y="245" fill="#f5fbfb" font-size="82" font-weight="700" letter-spacing="12">MAWRID</text>
+    <text x="120" y="296" fill="#62d7c7" font-size="19" font-weight="700" letter-spacing="5">SMART DECENTRALIZED WATER REUSE</text>
+    <text x="115" y="375" fill="#f5fbfb" font-size="38" font-weight="600">Give every drop a second purpose.</text>
+    <text x="117" y="420" fill="#b9d1d3" font-size="21">A safety-oriented pathway from ablution greywater</text>
+    <text x="117" y="452" fill="#b9d1d3" font-size="21">to monitored, fit-for-purpose non-potable reuse.</text>
+  </g>
+
+  <g transform="translate(985 80)">
+    <circle cx="260" cy="220" r="178" fill="none" stroke="#45d7c7" stroke-width="3" stroke-dasharray="10 11" opacity=".65"/>
+    <path d="M260 50c-43 65-107 133-107 203a107 107 0 0 0 214 0c0-70-64-138-107-203Z" fill="url(#water)" opacity=".95"/>
+    <path d="M260 139v184" fill="none" stroke="#eafffb" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+    <path d="M260 178c-35-22-63-19-87-8M260 220c-39-18-72-10-94 6M260 178c35-22 63-19 87-8M260 220c39-18 72-10 94 6M260 263c-31-12-58-4-76 12M260 263c31-12 58-4 76 12" fill="none" stroke="#effffd" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+    <path d="M396 342a185 185 0 0 1-275 15" fill="none" stroke="#d9b76e" stroke-width="9" stroke-linecap="round"/>
+    <path d="m113 356 9-28 22 22Z" fill="#d9b76e"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2">
+      <rect x="36" y="13" width="126" height="34" rx="17" fill="#102f3a" stroke="#4adbc9" stroke-opacity=".45"/>
+      <text x="99" y="35" text-anchor="middle" fill="#a8e8df">RECOVER</text>
+      <rect x="370" y="92" width="112" height="34" rx="17" fill="#102f3a" stroke="#4adbc9" stroke-opacity=".45"/>
+      <text x="426" y="114" text-anchor="middle" fill="#a8e8df">TREAT</text>
+      <rect x="366" y="370" width="120" height="34" rx="17" fill="#102f3a" stroke="#4adbc9" stroke-opacity=".45"/>
+      <text x="426" y="392" text-anchor="middle" fill="#a8e8df">VERIFY</text>
+      <rect x="25" y="420" width="110" height="34" rx="17" fill="#102f3a" stroke="#d9b76e" stroke-opacity=".6"/>
+      <text x="80" y="442" text-anchor="middle" fill="#e7cd94">REUSE</text>
+    </g>
+  </g>
+  <rect x="115" y="512" width="590" height="1" fill="#75b8b5" opacity=".35"/>
+  <text x="115" y="545" fill="#7faeb0" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="3">CONCEPT-STAGE · EVIDENCE-DRIVEN · FAIL-SAFE BY DESIGN</text>
+</svg>

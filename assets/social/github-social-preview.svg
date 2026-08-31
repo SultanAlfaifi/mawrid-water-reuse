@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">MAWRID GitHub social preview</title>
+  <desc id="desc">Social card for MAWRID, a smart decentralized water reuse concept.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061923"/><stop offset="1" stop-color="#0b5259"/></linearGradient>
+    <linearGradient id="d" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4be3d0"/><stop offset="1" stop-color="#158bb8"/></linearGradient>
+    <pattern id="g" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#8bc8c2" stroke-opacity=".07"/></pattern>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#g)"/>
+  <path d="M0 540c260-80 400 50 650-16s403-19 630 35v81H0Z" fill="#102f3a"/>
+  <g transform="translate(840 72)">
+    <circle cx="190" cy="215" r="177" fill="none" stroke="#4adbc9" stroke-width="3" stroke-dasharray="10 12" opacity=".55"/>
+    <path d="M190 40C150 102 92 166 92 230a98 98 0 0 0 196 0c0-64-58-128-98-190Z" fill="url(#d)"/>
+    <path d="M190 126v187M190 165c-33-21-60-18-82-7M190 208c-38-18-68-10-89 6M190 165c33-21 60-18 82-7M190 208c38-18 68-10 89 6M190 252c-29-12-54-4-71 11M190 252c29-12 54-4 71 11" fill="none" stroke="#effffd" stroke-width="7" stroke-linecap="round"/>
+    <path d="M313 326A172 172 0 0 1 62 344" fill="none" stroke="#d9b76e" stroke-width="9" stroke-linecap="round"/>
+    <path d="m56 343 9-28 22 22Z" fill="#d9b76e"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="80" y="190" fill="#f5fbfb" font-size="92" font-weight="700" letter-spacing="12">MAWRID</text>
+    <text x="84" y="240" fill="#61d7c6" font-size="18" font-weight="700" letter-spacing="5">SMART DECENTRALIZED WATER REUSE</text>
+    <text x="80" y="350" fill="#f5fbfb" font-size="38" font-weight="600">Give every drop</text>
+    <text x="80" y="397" fill="#f5fbfb" font-size="38" font-weight="600">a second purpose.</text>
+    <text x="82" y="464" fill="#a9c9ca" font-size="19">Date-palm biochar · Condition-based care</text>
+    <text x="82" y="495" fill="#a9c9ca" font-size="19">Continuous monitoring · Fail-safe diversion</text>
+  </g>
+</svg>
