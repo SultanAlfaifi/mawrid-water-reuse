@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MAWRID is a safety-oriented concept for decentralized reuse of ablution greywater.">
+  <meta name="theme-color" content="#071d2b">
+  <title>MAWRID | Smart Decentralized Water Reuse</title>
+  <style>
+    :root {
+      --ink: #071d2b;
+      --panel: #0d3440;
+      --cyan: #45d8c8;
+      --cyan-soft: #a6ebe2;
+      --sand: #d6b36b;
+      --white: #f4fbfa;
+      --muted: #a8c5c7;
+      --line: rgba(147, 219, 211, .18);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--white);
+      background:
+        linear-gradient(rgba(118, 203, 195, .045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(118, 203, 195, .045) 1px, transparent 1px),
+        radial-gradient(circle at 82% 16%, rgba(69, 216, 200, .13), transparent 28rem),
+        var(--ink);
+      background-size: 46px 46px, 46px 46px, auto, auto;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 82px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand img { width: 46px; height: 46px; object-fit: cover; object-position: left; border-radius: 12px; }
+    .brand strong { letter-spacing: .18em; font-size: 1.05rem; }
+    .nav-link { color: var(--muted); text-decoration: none; font-weight: 650; }
+    .nav-link:hover { color: var(--cyan-soft); }
+
+    .hero {
+      min-height: calc(100vh - 82px);
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 64px;
+      padding: 72px 0 92px;
+    }
+    .eyebrow { color: var(--cyan); font-size: .76rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+    h1 { margin: 18px 0 22px; max-width: 790px; font-size: clamp(3.15rem, 7vw, 6.6rem); line-height: .93; letter-spacing: -.065em; }
+    h1 span { color: var(--cyan); }
+    .lead { max-width: 680px; color: #c0d5d6; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+    .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 22px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 750;
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); border-color: var(--cyan); }
+    .button.primary { color: #06252b; background: var(--cyan); border-color: var(--cyan); }
+    .button svg { margin-right: 9px; }
+
+    .drop-card {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 460px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      background: linear-gradient(145deg, rgba(20, 79, 86, .8), rgba(8, 35, 46, .7));
+      box-shadow: 0 30px 90px rgba(0, 0, 0, .25);
+    }
+    .drop-card::before { content: ""; position: absolute; width: 340px; height: 340px; border: 1px dashed rgba(69, 216, 200, .45); border-radius: 50%; animation: spin 28s linear infinite; }
+    .drop { width: min(78%, 330px); z-index: 1; filter: drop-shadow(0 22px 40px rgba(0, 0, 0, .25)); }
+    .status { position: absolute; right: 22px; bottom: 22px; z-index: 2; padding: 9px 13px; border: 1px solid rgba(214, 179, 107, .45); border-radius: 999px; color: #ead39f; background: rgba(42, 37, 27, .76); font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    section { padding: 92px 0; }
+    .section-head { max-width: 760px; margin-bottom: 38px; }
+    h2 { margin: 10px 0; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.05; letter-spacing: -.045em; }
+    .section-head p { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { padding: 28px; border: 1px solid var(--line); border-radius: 24px; background: rgba(13, 52, 64, .62); }
+    .number { color: var(--sand); font-size: .76rem; font-weight: 850; letter-spacing: .14em; }
+    .card h3 { margin: 16px 0 8px; font-size: 1.2rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .94rem; }
+
+    .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .step { position: relative; padding: 22px 18px; border: 1px solid var(--line); border-radius: 20px; background: #0c303a; }
+    .step:not(:last-child)::after { content: "→"; position: absolute; right: -12px; top: 50%; z-index: 2; color: var(--cyan); transform: translate(50%, -50%); }
+    .step b { display: block; margin-bottom: 7px; color: var(--cyan-soft); }
+    .step small { color: var(--muted); }
+
+    .cta { margin: 40px auto 80px; padding: 56px; border: 1px solid rgba(214, 179, 107, .35); border-radius: 32px; text-align: center; background: linear-gradient(135deg, rgba(20, 76, 79, .95), rgba(45, 43, 31, .78)); }
+    .cta h2 { max-width: 760px; margin-inline: auto; }
+    .cta p { color: #c7d6d3; }
+    footer { padding: 28px 0 46px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 20px; }
+
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; padding-top: 48px; }
+      .drop-card { min-height: 350px; }
+      .grid { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: 1fr; }
+      .step:not(:last-child)::after { content: "↓"; right: 50%; top: auto; bottom: -18px; transform: translate(50%, 50%); }
+      .cta { padding: 38px 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a class="brand" href="#top" aria-label="MAWRID home">
+        <img src="assets/brand/mawrid-logo.svg" alt="">
+        <strong>MAWRID</strong>
+      </a>
+      <a class="nav-link" href="https://github.com/SultanAlfaifi/mawrid-water-reuse">View on GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero wrap">
+      <div>
+        <div class="eyebrow">Smart decentralized water reuse</div>
+        <h1>Every drop deserves a <span>second purpose.</span></h1>
+        <p class="lead">MAWRID is a safety-oriented concept that recovers source-separated ablution greywater, treats it with low-energy filtration and date-palm biochar, and verifies it before non-potable reuse.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/SultanAlfaifi/mawrid-water-reuse">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.23.7-3.91-1.37-3.91-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.74-1.55-2.58-.3-5.29-1.29-5.29-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18A11 11 0 0 1 12 6.1c.98 0 1.95.13 2.87.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.72 5.39-5.3 5.68.42.36.79 1.07.79 2.16v3.25c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
+            Explore the repository
+          </a>
+          <a class="button" href="#system">See how it works</a>
+        </div>
+      </div>
+      <div class="drop-card" aria-label="MAWRID visual identity">
+        <img class="drop" src="assets/brand/mawrid-logo.svg" alt="MAWRID logo">
+        <span class="status">CONCEPT · PRE-VALIDATION</span>
+      </div>
+    </div>
+
+    <section class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The opportunity</div>
+        <h2>Water quality should match water purpose.</h2>
+        <p>Ablution water is commonly discharged after one light use while drinking-quality water serves nearby non-potable demand. MAWRID explores a safer, local second use.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><span class="number">01 · RECOVER</span><h3>Separate at the source</h3><p>Collect only defined ablution and selected handwashing drainage, excluding toilet, kitchen, and industrial wastewater.</p></article>
+        <article class="card"><span class="number">02 · TREAT</span><h3>Use only what is needed</h3><p>Combine screening, granular filtration, tested date-palm biochar, and controlled disinfection for a specified end use.</p></article>
+        <article class="card"><span class="number">03 · PROTECT</span><h3>Fail toward non-reuse</h3><p>If quality, disinfection, or sensor health cannot be verified, the reuse valve closes and water is diverted safely.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="system">
+      <div class="section-head">
+        <div class="eyebrow">The treatment path</div>
+        <h2>Accessible processes. Auditable decisions.</h2>
+      </div>
+      <div class="flow">
+        <div class="step"><b>01 Source</b><small>Separated ablution greywater</small></div>
+        <div class="step"><b>02 Filter</b><small>Screen and multimedia bed</small></div>
+        <div class="step"><b>03 Adsorb</b><small>Date-palm biochar cartridge</small></div>
+        <div class="step"><b>04 Disinfect</b><small>Validated microbial barrier</small></div>
+        <div class="step"><b>05 Verify</b><small>Release or safe diversion</small></div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="cta">
+        <div class="eyebrow">Open project documentation</div>
+        <h2>Read the science, safety case, validation plan, and roadmap.</h2>
+        <p>The repository clearly separates published evidence, prototype targets, simulated data, and future measured results.</p>
+        <div class="actions" style="justify-content:center">
+          <a class="button primary" href="https://github.com/SultanAlfaifi/mawrid-water-reuse">Open MAWRID on GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><span>MAWRID · Give every drop a second purpose.</span><span>Concept-stage research project</span></div>
+  </footer>
+</body>
+</html>
