@@ -1,0 +1,20 @@
+field_name,data_type,unit,required,description
+evidence_status,string,,yes,SIMULATED TARGET RESULT LITERATURE or NOT_TESTED
+timestamp_utc,datetime,UTC,yes,Observation timestamp
+device_id,string,,yes,Unique sensor or gateway identifier
+system_state,string,,yes,Controller state
+flow_l_min,number,L/min,yes,Instantaneous treatment flow
+total_volume_l,number,L,yes,Cumulative treated volume
+turbidity_in_ntu,number,NTU,no,Inlet turbidity
+turbidity_out_ntu,number,NTU,yes,Outlet turbidity
+ph,number,pH,no,pH before disinfection
+temperature_c,number,degC,no,Water temperature
+conductivity_us_cm,number,uS/cm,no,Electrical conductivity
+pressure_in_kpa,number,kPa,no,Pressure before granular filters
+pressure_out_kpa,number,kPa,no,Pressure after granular filters
+delta_pressure_kpa,number,kPa,yes,Calculated filter differential pressure
+free_chlorine_mg_l,number,mg/L,no,Free chlorine after declared contact condition
+calibration_status,string,,yes,VALID DUE EXPIRED or UNKNOWN
+quality_flag,string,,yes,VALID SUSPECT MISSING or INVALID
+reuse_valve,string,,yes,OPEN or CLOSED
+alarm,string,,yes,Active alarm code or NONE

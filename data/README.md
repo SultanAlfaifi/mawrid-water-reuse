@@ -13,3 +13,10 @@ Future experimental datasets should include:
 - Raw measurements and explicit quality-control flags.
 - Any exclusions with reasons.
 - A license and data dictionary.
+
+## Schemas
+
+- [`sensor-data-schema.csv`](sensor-data-schema.csv) defines the minimum online telemetry fields.
+- [`laboratory-results-schema.csv`](laboratory-results-schema.csv) defines a traceable sensor-to-laboratory comparison record.
+
+The example laboratory row is `SIMULATED`. It demonstrates structure only and is not a MAWRID result.

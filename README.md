@@ -3,12 +3,13 @@
 </div>
 
 <p align="center">
-  <strong>A safety-oriented, decentralized system for giving lightly contaminated greywater a second useful life.</strong>
+  <strong>An AI-assisted, IoT-enabled system for safe decentralized reuse of source-separated ablution greywater.</strong>
 </p>
 
 <p align="center">
   <a href="#the-challenge">Challenge</a> ·
   <a href="#the-system">System</a> ·
+  <a href="#digital-intelligence">AI & IoT</a> ·
   <a href="#what-is-new">Innovation</a> ·
   <a href="#validation-plan">Validation</a> ·
   <a href="#documentation">Documentation</a>
@@ -16,6 +17,8 @@
 
 > [!IMPORTANT]
 > **Project status: concept-stage / pre-validation.** MAWRID has not yet demonstrated regulatory compliance or water safety. Performance values in this repository are prototype targets unless explicitly labeled as measured results.
+
+> **Digital status:** the safety state machine and analytics interfaces are specified, but no trained MAWRID model is claimed. Current repository telemetry is simulated and labeled accordingly.
 
 ## The challenge
 
@@ -95,6 +98,31 @@ Online measurements support operation; they do not replace laboratory validation
 | Conductivity | Detect source changes and salinity concerns | Treatment may not reduce dissolved salts |
 | Free chlorine after contact | Confirm chlorination process conditions | Requires validation against microbial targets |
 | UV254, if validated | Potential surrogate for selected organic breakthrough | Not a universal chemical or pathogen detector |
+
+## Digital intelligence
+
+MAWRID adds an explainable digital layer to the physical treatment train. IoT sensors provide time-series observations, deterministic rules protect the reuse outlet, and AI-assisted analytics may identify abnormal behaviour and maintenance needs. Online measurements and AI outputs support operation; they do not certify water safety or replace laboratory validation.
+
+The digital layer is designed to:
+
+- detect abnormal sensor and process behaviour;
+- estimate a transparent filter-health indicator;
+- flag possible sensor drift for inspection and documented calibration;
+- recommend cleaning, sampling, or maintenance actions;
+- evaluate remaining-useful-life prediction only after sufficient representative pilot data exist.
+
+| Function | Primary authority |
+|---|---|
+| Detect an unusual multivariable pattern | Analytics or a validated AI model |
+| Estimate filter condition | Transparent rules first; predictive model after validation |
+| Recommend inspection or laboratory sampling | Decision-support layer |
+| Evaluate a validated release limit | Deterministic safety controller |
+| Close the reuse valve | Independent fail-safe controller |
+| Demonstrate water quality for the selected use | Validated laboratory methods and applicable approval |
+
+**AI never independently authorizes water reuse.** If a critical measurement is missing, stale, outside its validated range, or inconsistent with a required process condition, the reuse valve closes regardless of the model output.
+
+Read the [AI and IoT architecture](docs/ai-and-iot-architecture.md), [data and model card](docs/data-and-model-card.md), [sensor and laboratory workflow](docs/sensor-and-lab-workflow.md), and [demo scenarios](docs/demo-scenarios.md).
 
 ## Safety by design
 
@@ -179,6 +207,10 @@ The preferred first deployment is a mosque or university building with a central
 | [Safety and risk controls](docs/safety.md) | Hazards, barriers, fail-safe rules, and residuals handling |
 | [Impact and economics](docs/impact-and-economics.md) | Water balance, CAPEX/OPEX framework, and sustainability accounting |
 | [Roadmap](docs/roadmap.md) | Path from bench evidence to monitored deployment |
+| [AI and IoT architecture](docs/ai-and-iot-architecture.md) | Edge, data, analytics, safety, and communications boundaries |
+| [Data and model card](docs/data-and-model-card.md) | Intended model use, evidence status, evaluation, and limitations |
+| [Sensor and laboratory workflow](docs/sensor-and-lab-workflow.md) | Traceable reconciliation of online and laboratory measurements |
+| [Demo scenarios](docs/demo-scenarios.md) | Reproducible normal, degradation, and fail-safe demonstrations |
 | [References](references/README.md) | Curated official, scientific, and standards-based sources |
 
 ## Evidence labels

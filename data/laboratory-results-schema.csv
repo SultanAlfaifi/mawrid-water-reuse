@@ -1,0 +1,2 @@
+evidence_status,sample_id,collected_at_utc,location,analyte,result,unit,method,detection_limit,qc_status,matched_device_id,comparison_status
+SIMULATED,LAB-DEMO-001,2026-08-31T08:15:00Z,post_filtration,turbidity,1.6,NTU,reference_method,0.1,PASS,TURB-OUT-01,MATCH
