@@ -544,6 +544,7 @@ export function createPalmStory({ container, lang = 'ar', reducedMotion = false 
     const anchor = event.target.closest?.('.palm-source-link');
     if (event.pointerType !== 'touch' && !dragGesture?.active && anchor && viewport.contains(anchor)) {
       touchInput = false;
+      touchSourceIndex = null;
       hoverSourceIndex = Number(anchor.dataset.sourceIndex);
       syncSourcePresentation();
     }
@@ -564,7 +565,8 @@ export function createPalmStory({ container, lang = 'ar', reducedMotion = false 
     keyboardSourceIndex = null;
     const anchor = event.target.closest?.('.palm-source-link');
     if (anchor && viewport.contains(anchor)) pressedSource = { index: Number(anchor.dataset.sourceIndex), href: anchor.href, pointerType: event.pointerType };
-    if (touchInput) touchSourceIndex = anchor ? Number(anchor.dataset.sourceIndex) : null;
+    hoverSourceIndex = touchInput ? null : anchor ? Number(anchor.dataset.sourceIndex) : null;
+    touchSourceIndex = touchInput && anchor ? Number(anchor.dataset.sourceIndex) : null;
     syncSourcePresentation();
     dragGesture = { id: event.pointerId, x: event.clientX, y: event.clientY, offset: readLoopOffset(), active: false };
     updateLoop();
@@ -654,6 +656,8 @@ export function createPalmStory({ container, lang = 'ar', reducedMotion = false 
     if (anchor && (event.pointerType === 'touch' || pressed?.pointerType === 'touch' || touchInput || touchQuery.matches)) {
       event.preventDefault();
       touchInput = true;
+      hoverSourceIndex = null;
+      keyboardSourceIndex = null;
       touchSourceIndex = Number(anchor.dataset.sourceIndex);
       details.open = true;
       syncSourcePresentation();
@@ -664,6 +668,8 @@ export function createPalmStory({ container, lang = 'ar', reducedMotion = false 
     const anchor = event.target.closest?.('.palm-source-link');
     if (event.key === ' ' && touchQuery.matches && anchor) {
       event.preventDefault();
+      hoverSourceIndex = null;
+      keyboardSourceIndex = null;
       touchSourceIndex = Number(anchor.dataset.sourceIndex);
       details.open = true;
       syncSourcePresentation();
@@ -678,7 +684,13 @@ export function createPalmStory({ container, lang = 'ar', reducedMotion = false 
     if (anchor) {
       const index = Number(anchor.dataset.sourceIndex);
       const keyboardFocus = anchor.matches(':focus-visible');
-      if (keyboardFocus) { keyboardSourceIndex = index; syncSourcePresentation(); }
+      if (keyboardFocus) {
+        touchInput = touchQuery.matches;
+        hoverSourceIndex = null;
+        touchSourceIndex = null;
+        keyboardSourceIndex = index;
+        syncSourcePresentation();
+      }
       const box = anchor.getBoundingClientRect();
       const frame = viewport.getBoundingClientRect();
       // Pointer clicks on visible clones must not jump to the original copy.
