@@ -21,6 +21,7 @@ const t = (key) => UI[key]?.[state.lang === 'ar' ? 0 : 1] ?? key;
 const local = (value) => value[state.lang];
 const pad = (n) => String(n).padStart(2, '0');
 let model, animationContext, documentBlob, palmStory, campusGallery;
+let documentRequest = 0;
 const documentDialog = $('#document-dialog');
 const docLoaders = {
   ...import.meta.glob('../../docs/*.md', { query: '?raw', import: 'default' }),
@@ -213,12 +214,14 @@ async function openDocument(key) {
   const file = key === 'references' ? '../../references/README.md' : '../../docs/' + key + '.md';
   const load = docLoaders[file];
   if (!load) return;
+  const request = ++documentRequest;
   $('#document-title').textContent = t('documentLoading');
   $('#document-body').replaceChildren();
   $('#document-source').hidden = true;
   if (!documentDialog.open) documentDialog.showModal();
   try {
     const raw = await load();
+    if (request !== documentRequest || !documentDialog.open) return;
     $('#document-title').textContent = raw.match(/^#\s+(.+)$/m)?.[1] ?? key;
     $('#document-body').innerHTML = DOMPurify.sanitize(marked.parse(raw));
     $('#document-body').dir = /[أ-ي]/.test(raw.slice(0, 600)) ? 'rtl' : 'ltr';
@@ -251,8 +254,14 @@ async function openDocument(key) {
     $('#document-source').hidden = false;
     $('#document-body').scrollTop = 0;
   } catch {
+    if (request !== documentRequest || !documentDialog.open) return;
     $('#document-title').textContent = t('documentError');
   }
+}
+
+function closeDocument() {
+  documentRequest++;
+  documentDialog.close();
 }
 
 function setupMotion() {
@@ -287,16 +296,19 @@ $('#reset-view').addEventListener('click', () => model?.resetCamera?.());
 $('#stage-doc').addEventListener('click', () => openDocument(STAGES[state.stage].doc));
 $$('[data-doc]').forEach((button) => button.addEventListener('click', () => openDocument(button.dataset.doc)));
 $('#palm-story').addEventListener('opendocument', (event) => openDocument(event.detail.key));
-$('#close-document').addEventListener('click', () => documentDialog.close());
+$('#close-document').addEventListener('click', closeDocument);
+documentDialog.addEventListener('cancel', () => { documentRequest++; });
 documentDialog.addEventListener('click', (event) => {
   if (event.target === documentDialog) {
     const r = documentDialog.getBoundingClientRect();
-    if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) documentDialog.close();
+    if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) closeDocument();
   }
 });
 $('#model-container').addEventListener('processviewerror', () => { model?.dispose(); model = null; renderFallback(); });
 reducedMotion.addEventListener('change', () => {
-  stopTour(); state.flow = !reducedMotion.matches; model?.setFlow(state.flow);
+  stopTour(); state.flow = !reducedMotion.matches;
+  model?.setReducedMotion?.(reducedMotion.matches);
+  model?.setFlow(state.flow);
   $('#flow').setAttribute('aria-pressed', String(state.flow)); setupMotion();
 });
 document.addEventListener('visibilitychange', () => { if (document.hidden) stopTour(); });

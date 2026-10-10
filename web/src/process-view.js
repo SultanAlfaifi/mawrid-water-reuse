@@ -25,6 +25,10 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
   renderer.toneMappingExposure = 0.86;
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFShadowMap;
+  // Camera or route-indicator motion does not move any shadow caster. Refresh
+  // the static shadow only when the unit's parts, selection or valves change.
+  renderer.shadowMap.autoUpdate = false;
+  renderer.shadowMap.needsUpdate = true;
   renderer.domElement.className = 'process-canvas';
   renderer.domElement.setAttribute('aria-label', 'مجسم توضيحي لوحدة مورد: اسحب أفقيًا للدوران واختر مكوّنًا لاستكشافه.');
   renderer.domElement.setAttribute('role', 'img');
@@ -431,6 +435,43 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
     return curve;
   };
   const pipes = [];
+  const pipeSegments = compact ? 28 : 40;
+  const pipeRadialSegments = 8;
+  const tubePoint = new THREE.Vector3();
+  const tubeNormal = new THREE.Vector3();
+  const fittingDirection = new THREE.Vector3();
+  const fittingUp = new THREE.Vector3(0, 1, 0);
+  const tubeCircle = Array.from({ length: pipeRadialSegments + 1 }, (_, index) => {
+    const angle = index / pipeRadialSegments * Math.PI * 2;
+    return { sin: Math.sin(angle), cos: -Math.cos(angle) };
+  });
+  // Same Frenet-frame construction as Three's TubeGeometry, with stable index,
+  // UV and GPU buffers. Opening the unit changes vertices, not its topology.
+  const updatePipeGeometry = (geometry, curve, radius) => {
+    const frames = curve.computeFrenetFrames(pipeSegments, false);
+    const positions = geometry.attributes.position;
+    const normals = geometry.attributes.normal;
+    let vertex = 0;
+    for (let segment = 0; segment <= pipeSegments; segment += 1) {
+      curve.getPointAt(segment / pipeSegments, tubePoint);
+      const normal = frames.normals[segment];
+      const binormal = frames.binormals[segment];
+      for (const circle of tubeCircle) {
+        tubeNormal.copy(normal).multiplyScalar(circle.cos).addScaledVector(binormal, circle.sin).normalize();
+        normals.setXYZ(vertex, tubeNormal.x, tubeNormal.y, tubeNormal.z);
+        positions.setXYZ(vertex, tubePoint.x + radius * tubeNormal.x, tubePoint.y + radius * tubeNormal.y, tubePoint.z + radius * tubeNormal.z);
+        vertex += 1;
+      }
+    }
+    geometry.parameters.path = curve;
+    geometry.tangents = frames.tangents;
+    geometry.normals = frames.normals;
+    geometry.binormals = frames.binormals;
+    positions.needsUpdate = true;
+    normals.needsUpdate = true;
+    geometry.boundingBox = null;
+    geometry.computeBoundingSphere();
+  };
   const pipeGroup = new THREE.Group();
   scene.add(pipeGroup);
   const makePipe = (stageIndex, points, radius = 0.073, material = materials.pvc) => {
@@ -458,13 +499,17 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
     for (const pipe of pipes) {
       const points = pipe.points();
       pipe.curve = roundedRoute(points);
-      pipe.item.geometry.dispose();
-      pipe.item.geometry = new THREE.TubeGeometry(pipe.curve, compact ? 28 : 40, pipe.radius, 8, false);
+      if (pipe.item.geometry.type !== 'TubeGeometry') {
+        pipe.item.geometry.dispose();
+        pipe.item.geometry = new THREE.TubeGeometry(pipe.curve, pipeSegments, pipe.radius, pipeRadialSegments, false);
+        pipe.item.geometry.attributes.position.setUsage(THREE.DynamicDrawUsage);
+        pipe.item.geometry.attributes.normal.setUsage(THREE.DynamicDrawUsage);
+      } else updatePipeGeometry(pipe.item.geometry, pipe.curve, pipe.radius);
       pipe.fittings.forEach((fitting, index) => {
         const endpoint = index === 0 ? points[0] : points.at(-1);
-        const direction = index === 0 ? points[1].clone().sub(endpoint) : endpoint.clone().sub(points.at(-2));
+        fittingDirection.copy(index === 0 ? points[1] : endpoint).sub(index === 0 ? endpoint : points.at(-2));
         fitting.position.copy(endpoint);
-        fitting.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize());
+        fitting.quaternion.setFromUnitVectors(fittingUp, fittingDirection.normalize());
       });
     }
   };
@@ -493,6 +538,10 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
   let lastTime = 0;
   let elapsed = 0;
   let renderUntil = 0;
+  let suspendedAt = null;
+  let renderWidth = 0;
+  let renderHeight = 0;
+  let renderPixelRatio = renderer.getPixelRatio();
   const dropletTransform = new THREE.Object3D();
   const updateWaterCurve = () => {
     const downstream = mode === 'normal' ? reusePipe : rejectPipe;
@@ -506,7 +555,7 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
     if (!droplets.visible) return;
     for (let i = 0; i < droplets.count; i += 1) {
       const progress = ((i / droplets.count) + (reducedMotion ? 0 : elapsed * 0.042)) % 1;
-      dropletTransform.position.copy(waterCurve.getPointAt(progress));
+      waterCurve.getPointAt(progress, dropletTransform.position);
       dropletTransform.scale.setScalar(i % 3 === 0 ? 1.3 : 1);
       dropletTransform.updateMatrix();
       droplets.setMatrixAt(i, dropletTransform.matrix);
@@ -530,6 +579,7 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
     }
     updatePipes();
     updateWaterCurve();
+    renderer.shadowMap.needsUpdate = true;
   };
   const applyMode = () => {
     const fault = mode !== 'normal';
@@ -544,6 +594,7 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
     }
     materials.screen.emissiveIntensity = mode === 'power' ? 0 : 0.18;
     updateWaterCurve();
+    renderer.shadowMap.needsUpdate = true;
   };
 
   const requestFrame = (milliseconds = reducedMotion ? 50 : 950) => {
@@ -585,14 +636,29 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
   let pointerDown = null;
   const onPointerDown = (event) => {
     activePointers.add(event.pointerId);
-    pointerDown = activePointers.size === 1 ? { x: event.clientX, y: event.clientY, id: event.pointerId } : null;
+    pointerDown = activePointers.size === 1 && event.button === 0 ? { x: event.clientX, y: event.clientY, id: event.pointerId, moved: false, intent: null } : null;
+  };
+  const onPointerMove = (event) => {
+    if (!pointerDown || event.pointerId !== pointerDown.id) return;
+    const x = Math.abs(event.clientX - pointerDown.x);
+    const y = Math.abs(event.clientY - pointerDown.y);
+    if (Math.hypot(x, y) > 6) pointerDown.moved = true;
+    if (event.pointerType !== 'touch') return;
+    if (!pointerDown.intent && Math.max(x, y) > 6) {
+      if (x > y * 1.1) pointerDown.intent = 'orbit';
+      else if (y > x * 1.1) pointerDown.intent = 'scroll';
+    }
+    // Let native pan-y scrolling claim a vertical gesture without first nudging
+    // the camera. A deliberate horizontal drag still reaches OrbitControls.
+    if (pointerDown.intent !== 'orbit') event.stopPropagation();
   };
   const onPointerUp = (event) => {
     activePointers.delete(event.pointerId);
     if (!pointerDown || event.pointerId !== pointerDown.id) return;
     const distance = Math.hypot(event.clientX - pointerDown.x, event.clientY - pointerDown.y);
+    const moved = pointerDown.moved;
     pointerDown = null;
-    if (distance > 6 || disposed || contextLost) return;
+    if (moved || distance > 6 || disposed || contextLost) return;
     const rect = renderer.domElement.getBoundingClientRect();
     if (!rect.width || !rect.height) return;
     pointer.set(((event.clientX - rect.left) / rect.width) * 2 - 1, -((event.clientY - rect.top) / rect.height) * 2 + 1);
@@ -614,6 +680,7 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
   };
   const cancelPointer = (event) => { activePointers.delete(event.pointerId); pointerDown = null; };
   renderer.domElement.addEventListener('pointerdown', onPointerDown);
+  renderer.domElement.addEventListener('pointermove', onPointerMove, { capture: true, passive: true });
   renderer.domElement.addEventListener('pointerup', onPointerUp);
   renderer.domElement.addEventListener('pointercancel', cancelPointer);
   const onControlsChange = () => requestFrame();
@@ -622,11 +689,20 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
   const onControlsStart = () => { cameraFlight = null; };
   controls.addEventListener('change', onControlsChange);
   controls.addEventListener('start', onControlsStart);
-  const onVisibilityChange = () => {
-    if (document.hidden && raf) { cancelAnimationFrame(raf); raf = 0; lastTime = 0; }
-    else requestFrame();
+  const syncVisibility = () => {
+    const now = performance.now();
+    if (!inView || document.hidden) {
+      if (suspendedAt === null) suspendedAt = now;
+      if (raf) cancelAnimationFrame(raf);
+      raf = 0;
+      lastTime = 0;
+    } else {
+      if (suspendedAt !== null && cameraFlight) cameraFlight.started += now - Math.max(suspendedAt, cameraFlight.started);
+      suspendedAt = null;
+      requestFrame();
+    }
   };
-  document.addEventListener('visibilitychange', onVisibilityChange);
+  document.addEventListener('visibilitychange', syncVisibility);
   const onContextLost = (event) => {
     event.preventDefault();
     contextLost = true;
@@ -640,12 +716,21 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
   const resize = () => {
     if (disposed || contextLost) return;
     const rect = container.getBoundingClientRect();
-    const width = Math.max(1, rect.width);
-    const height = Math.max(1, rect.height);
+    const width = Math.max(1, Math.round(rect.width));
+    const height = Math.max(1, Math.round(rect.height));
+    const pixelRatio = Math.min(window.devicePixelRatio || 1, window.matchMedia('(max-width: 700px)').matches ? 1.5 : 2);
+    const sizeChanged = width !== renderWidth || height !== renderHeight;
+    const ratioChanged = pixelRatio !== renderPixelRatio;
+    if (!sizeChanged && !ratioChanged) return;
+    renderWidth = width;
+    renderHeight = height;
+    renderPixelRatio = pixelRatio;
+    if (ratioChanged) renderer.setPixelRatio(pixelRatio);
+    renderer.setSize(width, height, false);
+    if (!sizeChanged) { requestFrame(); return; }
     camera.aspect = width / height;
     camera.fov = width < 600 ? 42 : 35;
     camera.updateProjectionMatrix();
-    renderer.setSize(width, height, false);
     cameraFlight = null;
     fitCamera(false);
     requestFrame();
@@ -691,10 +776,12 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
   }
   const resizeObserver = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(resize) : null;
   resizeObserver?.observe(container);
+  // Also refresh DPR when the window is zoomed or moved between displays. The
+  // size guard keeps mobile browser-bar and duplicate observer events harmless.
+  window.addEventListener('resize', resize, { passive: true });
   const intersectionObserver = typeof IntersectionObserver !== 'undefined' ? new IntersectionObserver(([entry]) => {
     inView = entry.isIntersecting;
-    if (!inView && raf) { cancelAnimationFrame(raf); raf = 0; lastTime = 0; }
-    if (inView) requestFrame();
+    syncVisibility();
   }, { rootMargin: '100px' }) : null;
   intersectionObserver?.observe(container);
 
@@ -707,6 +794,7 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
         stage.accent.emissiveIntensity = i === activeStage ? 0.30 : 0;
         stage.selectionRing.visible = i === activeStage;
       });
+      renderer.shadowMap.needsUpdate = true;
       requestFrame();
     },
     setExploded(value) {
@@ -721,6 +809,33 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
       if (disposed) return;
       flow = Boolean(value);
       requestFrame();
+    },
+    // The preference can change while this view remains mounted. The parent
+    // forwards that change; no remount or stale initialization flag is needed.
+    setReducedMotion(value) {
+      if (disposed) return;
+      const next = Boolean(value);
+      if (next === reducedMotion) return;
+      reducedMotion = next;
+      controls.enableDamping = false;
+      controls.update();
+      controls.enableDamping = !reducedMotion;
+      if (reducedMotion) {
+        if (Math.abs(explodedAmount - explodedTarget) > 0.001) {
+          explodedAmount = explodedTarget;
+          updateExplosion();
+          fitCamera(false);
+        }
+        if (cameraFlight) {
+          const goal = cameraGoal(false);
+          controls.target.copy(goal.target);
+          camera.position.copy(goal.position);
+          cameraFlight = null;
+          controls.update();
+        }
+        renderUntil = performance.now();
+      }
+      requestFrame(reducedMotion ? 50 : 950);
     },
     setMode(value) {
       if (disposed) return;
@@ -772,8 +887,10 @@ export async function createProcessView({ container, onSelect = () => {}, reduce
       raf = 0;
       resizeObserver?.disconnect();
       intersectionObserver?.disconnect();
-      document.removeEventListener('visibilitychange', onVisibilityChange);
+      window.removeEventListener('resize', resize);
+      document.removeEventListener('visibilitychange', syncVisibility);
       renderer.domElement.removeEventListener('pointerdown', onPointerDown);
+      renderer.domElement.removeEventListener('pointermove', onPointerMove, true);
       renderer.domElement.removeEventListener('pointerup', onPointerUp);
       renderer.domElement.removeEventListener('pointercancel', cancelPointer);
       renderer.domElement.removeEventListener('webglcontextlost', onContextLost);

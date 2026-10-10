@@ -69,8 +69,8 @@ export function createCampusGallery({ container, lang = 'ar', reducedMotion } = 
   let direction = language === 'ar' ? -1 : 1;
   let activeIndex = saved?.activeIndex ?? 1;
   let angle = -activeIndex * stepAngle * direction;
-  let cardWidth = 560;
-  let radius = 430;
+  let cardWidth = 900;
+  let radius = 640;
   let flight = null;
   let pointer = null;
   let raf = 0;
@@ -80,6 +80,10 @@ export function createCampusGallery({ container, lang = 'ar', reducedMotion } = 
   let inView = typeof IntersectionObserver === 'undefined';
   let disposed = false;
   let imagesPrimed = false;
+  let imagesReady = false;
+  let imagePreparation = null;
+  let pendingMove = false;
+  let transitionVersion = 0;
   let suppressClickUntil = 0;
   let motionPointerIntent = null;
   const id = `campus-gallery-${++instanceCount}`;
@@ -112,8 +116,8 @@ export function createCampusGallery({ container, lang = 'ar', reducedMotion } = 
     const image = textElement('img', 'campus-gallery__image');
     image.width = 1672;
     image.height = 941;
-    image.loading = 'lazy';
-    image.decoding = 'async';
+    image.loading = index === activeIndex ? 'eager' : 'lazy';
+    image.decoding = 'sync';
     image.draggable = false;
     const requestedImage = imageFor(key);
     let temporary = !requestedImage;
@@ -200,14 +204,27 @@ export function createCampusGallery({ container, lang = 'ar', reducedMotion } = 
     if (nearest !== activeIndex) updateActive(nearest);
   }
   function clearTimer() { if (timer) clearTimeout(timer); timer = 0; }
+  function prepareImages() {
+    if (imagePreparation) return imagePreparation;
+    imagesPrimed = true;
+    // Decode this bounded set once before large photographs become animated
+    // compositor layers. A loaded image can still be awaiting its first decode.
+    imagePreparation = Promise.allSettled(cards.map(({ image }) => {
+      image.loading = 'eager';
+      return typeof image.decode === 'function' ? image.decode() : Promise.resolve();
+    })).then(() => { imagesReady = true; });
+    return imagePreparation;
+  }
   function scheduleRotation() {
     clearTimer();
-    if (canAutoplay() && !flight) timer = window.setTimeout(() => {
+    if (canAutoplay() && !flight && !pendingMove) timer = window.setTimeout(() => {
       timer = 0;
       if (canAutoplay()) move(1, 'auto');
     }, 4700);
   }
   function cancelFlight() {
+    transitionVersion += 1;
+    pendingMove = false;
     flight = null;
     if (raf) cancelAnimationFrame(raf);
     raf = 0;
@@ -243,10 +260,9 @@ export function createCampusGallery({ container, lang = 'ar', reducedMotion } = 
   function syncMotion() {
     if (disposed) return;
     if (inView && !imagesPrimed) {
-      imagesPrimed = true;
       // Load the five small WebP assets when the gallery enters view, before a
       // rear photograph rotates forward. They remain lazy while offscreen.
-      cards.forEach(({ image }) => { image.loading = 'eager'; });
+      void prepareImages();
     }
     updateControls();
     if (!canAutoplay()) clearTimer();
@@ -266,17 +282,30 @@ export function createCampusGallery({ container, lang = 'ar', reducedMotion } = 
   function goToAngle(target, kind = 'manual') {
     clearTimer();
     cancelFlight();
-    if (reduce || Math.abs(target - angle) < 0.01) {
-      angle = target;
-      renderAngle();
+    const version = transitionVersion;
+    const start = () => {
+      // A later selection, drag, language change or disposal supersedes this
+      // queued transition while decoding is still in progress.
+      if (disposed || version !== transitionVersion) return;
+      pendingMove = false;
+      if (reduce || Math.abs(target - angle) < 0.01) {
+        angle = target;
+        renderAngle();
+        updateControls();
+        scheduleRotation();
+        return;
+      }
+      flight = { from: angle, to: target, kind, started: performance.now(), duration: kind === 'auto' ? 1000 : 720, pausedAt: null };
+      root.classList.add('is-moving');
       updateControls();
-      scheduleRotation();
-      return;
+      raf = requestAnimationFrame(animate);
+    };
+    if (imagesReady) start();
+    else {
+      pendingMove = true;
+      updateControls();
+      void prepareImages().then(start);
     }
-    flight = { from: angle, to: target, kind, started: performance.now(), duration: kind === 'auto' ? 1000 : 720, pausedAt: null };
-    root.classList.add('is-moving');
-    updateControls();
-    raf = requestAnimationFrame(animate);
   }
   function select(index) {
     const base = -wrap(index) * stepAngle * direction;
@@ -292,34 +321,18 @@ export function createCampusGallery({ container, lang = 'ar', reducedMotion } = 
     const width = viewport.getBoundingClientRect().width;
     if (width < 1) return;
     const mobile = width < 600;
-    const spacing = mobile ? 1.02 : 1.13;
-    const perspective = Math.max(660, width * 2.2);
-    cardWidth = Math.min(660, width * (mobile ? 0.85 : 0.78));
-    // A real five-sided Y ring. Desktop fits the swept side-card envelope.
-    // Mobile gives the front photograph 85% of the viewport and lets angled
-    // neighbours crop at the edges; fitting every corner made it too small.
-    // Radius follows DeSandro's regular-polygon construction plus spacing.
-    for (let pass = 0; !mobile && pass < 5; pass += 1) {
-      radius = (cardWidth / 2) / Math.tan(Math.PI / count) * spacing;
-      let extent = cardWidth / 2;
-      // Check intermediate angles too: a half-turned photograph can project
-      // wider than either resting neighbour during a carousel transition.
-      for (let degrees = 0; degrees <= 80; degrees += 4) {
-        const radians = degrees * Math.PI / 180;
-        for (const corner of [-cardWidth / 2, cardWidth / 2]) {
-          const x = radius * Math.sin(radians) + corner * Math.cos(radians);
-          const z = radius * (Math.cos(radians) - 1) - corner * Math.sin(radians);
-          extent = Math.max(extent, Math.abs(x / (1 - z / perspective)));
-        }
-      }
-      if (extent * 2 <= width * 0.96) break;
-      cardWidth *= width * 0.96 / (extent * 2);
-    }
+    const spacing = mobile ? 1 : 1.04;
+    const perspective = Math.max(800, width * 2.4);
+    cardWidth = Math.min(1000, width * (mobile ? 0.94 : 0.9));
+    // Size the front image first. Fitting the entire rotating envelope made
+    // every photograph small; only the rear neighbours may crop at the frame.
+    // The current photograph retains its full native aspect ratio and a margin
+    // on both sides, while a real five-sided ring supplies the angled glimpses.
     radius = (cardWidth / 2) / Math.tan(Math.PI / count) * spacing;
     const height = cardWidth * 941 / 1672;
     root.style.setProperty('--campus-card-width', `${cardWidth}px`);
     root.style.setProperty('--campus-card-height', `${height}px`);
-    root.style.setProperty('--campus-scene-height', `${height + (mobile ? 82 : 98)}px`);
+    root.style.setProperty('--campus-scene-height', `${height + (mobile ? 64 : 104)}px`);
     viewport.style.perspective = `${perspective}px`;
     cards.forEach(({ card }, index) => { card.style.transform = `rotateY(${index * stepAngle * direction}deg) translateZ(${radius}px)`; });
     renderAngle();

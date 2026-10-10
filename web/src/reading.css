@@ -17,16 +17,21 @@ body { font-size:18px; }
 .input-output strong { font-size:16px; }
 .stage-evidence { font-size:15px; }
 .lesson-doc { font-size:15px; margin-top:8px; }
-.product-caption .mono, .drag-hint, .journey-position { display:none; }
+.product-caption .mono, .journey-position { display:none; }
 .product-caption { padding:18px 22px 0; }
 .render-tag { font-size:14px; }
 .model-stage { height:330px; }
-.tool-button { font-size:15px; min-height:42px; }
+.tool-button { font-size:15px; min-height:44px; }
+#reset-view { min-width:44px; }
+.language-button { width:44px; height:44px; flex-shrink:0; }
+.model-toolbar { flex-wrap:wrap; row-gap:8px; }
+.view-actions { flex-wrap:wrap; }
+.drag-hint { display:block; font-size:13px; line-height:1.7; }
 .stage-tabs { grid-template-columns:repeat(3,minmax(0,1fr)); }
 .stage-tab, html[lang=en] .stage-tab { font-size:16px; min-height:46px; flex-direction:row; }
 .stage-tab .mono { display:none; }
 .journey-footer { justify-content:flex-end; padding-block:12px 0; }
-.step-button { width:34px; height:34px; }
+.step-button { width:44px; height:44px; }
 .model-note { font-size:13px; padding-top:12px; }
 .purpose .eyebrow { display:none; }
 .purpose-copy>p:first-child { font-size:20px; }
@@ -43,7 +48,8 @@ body { font-size:18px; }
 .logic-footnote { font-size:15px; }
 .logic-footnote p, .logic-footnote .text-button { font-size:15px; }
 .logic-footnote .evidence-label { display:none; }
-.evidence-row { grid-template-columns:1fr 1.4fr .85fr 30px; }
+.evidence-row { grid-template-columns:1fr 1.4fr .85fr 44px; }
+.evidence-link { width:44px; min-height:44px; }
 .evidence-row h3 { font-size:20px; }
 .evidence-row p { font-size:17px; }
 .evidence-status { font-size:15px; }
@@ -64,6 +70,12 @@ body { font-size:18px; }
 .document-footer { font-size:14px; }
 @media(min-width:1400px) { .stage-tabs{grid-template-columns:repeat(6,minmax(0,1fr))} .model-stage{height:400px} }
 @media(max-width:900px) {
+  .site-header { height:auto; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:6px 18px; padding-block:16px 8px; }
+  .site-header>.wordmark { grid-column:1; grid-row:1; justify-self:start; }
+  .site-header>.header-tools { grid-column:2; grid-row:1; }
+  .site-header nav, html[lang=en] .site-header nav { grid-column:1/-1; grid-row:2; display:flex; align-items:center; gap:24px; min-width:0; overflow-x:auto; overscroll-behavior-x:contain; white-space:nowrap; scrollbar-width:none; padding:8px; font-size:15px; }
+  .site-header nav::-webkit-scrollbar { display:none; }
+  .site-header nav a { display:inline-flex; align-items:center; min-height:44px; flex-shrink:0; }
   .hero { grid-template-columns:1fr; }
   .hero-copy { display:contents; }
   .hero-copy>.eyebrow{order:0;align-self:start;margin:0}
@@ -73,7 +85,7 @@ body { font-size:18px; }
   .hero-product{order:4;position:relative;top:auto;width:100%}
   .lesson{order:5;margin:0}
   .hero-actions .text-button{display:inline-flex}
-  .evidence-row{grid-template-columns:1fr 1.2fr .85fr 30px}
+  .evidence-row{grid-template-columns:1fr 1.2fr .85fr 44px}
   .evidence-status{grid-column:auto;grid-row:auto}
   .evidence-link{grid-column:auto;grid-row:auto}
 }
@@ -83,6 +95,8 @@ body { font-size:18px; }
   .hero-actions .button, .hero-actions .text-button, html[lang=en] .hero-actions .text-button { font-size:15px; }
   #stage-description{font-size:18px}
   .tool-button{font-size:14px;padding-inline:8px}
+  .model-toolbar { justify-content:flex-start; }
+  .drag-hint { flex-basis:100%; padding-inline:8px; }
   .stage-tab, html[lang=en] .stage-tab{font-size:15px}
   .model-stage{height:300px}
   .section-title, html[lang=en] .section-title{font-size:30px}
