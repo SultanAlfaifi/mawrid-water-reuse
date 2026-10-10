@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use or discuss MAWRID, please cite this repository."
-title: "MAWRID: Smart Decentralized Water Reuse"
+title: "MAWRID: Ablution Water for Campus Irrigation"
 type: software
 authors:
   - family-names: "Team"
     given-names: "MAWRID"
-abstract: "A concept-stage, safety-oriented system for treating source-separated ablution greywater toward monitored non-potable reuse using low-energy filtration, date-palm-derived biochar, controlled disinfection, condition-based maintenance, and fail-safe diversion."
+abstract: "A concept-stage campus system for treating source-separated ablution water toward landscape irrigation, with an independent reuse controller, proposed filtration and disinfection, and an evidence-led comparison of optional date-palm-derived adsorption media. The repository includes an illustrative browser explorer and a validation plan, not measured treatment results."
 version: 0.1.0
 date-released: 2026-08-31
 license: MIT
@@ -16,5 +16,5 @@ keywords:
   - biochar
   - date palm
   - decentralized treatment
-  - predictive maintenance
+  - campus irrigation
   - Saudi Arabia

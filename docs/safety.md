@@ -1,23 +1,30 @@
 # Safety and Risk Controls
 
+> **Status:** Preliminary `DESIGN` requirements, not tested safety performance or site authorization. Scope follows the [project brief](project-brief.md); outstanding evidence is recorded in the [evidence register](evidence-register.md).
+
 ## 1. Safety objective
 
 MAWRID must prevent human or environmental exposure whenever treatment performance cannot be demonstrated. Safety is established through source control, multiple barriers, validated operating limits, hygienic plumbing, laboratory verification, and a fail-safe release decision.
+
+The first proposed application is one separately collected university ablution source serving a controlled zone of ornamental plants with drip irrigation. Exposure routes include maintenance contact, public access, accidental drinking, spray/aerosols, soil, and drainage. The site review must address these before any field irrigation. Drinking, reuse for ablution, edible crops, and mixed wastewater are outside this version.
 
 ## 2. Release philosophy
 
 ```text
 Reuse permission =
-  valid critical sensors
+  required site/use authorization in force
+  AND valid critical sensors
   AND valid calibration state
   AND treatment flow within validated range
   AND filtration integrity within validated range
   AND disinfection condition satisfied
-  AND treated storage available
+  AND treated storage available and within validated age/condition limits
   AND no active critical fault
 ```
 
 If any term is false or unknown, reuse permission is false.
+
+This is a proposed operating rule, not proof that water is safe. Use-specific laboratory verification and a reviewed commissioning plan remain required. The independent local controller owns outlet protection; the website, remote dashboard, and future AI recommendations cannot authorize or open the outlet. Verify the actual valve position and destination flow under critical faults, communications loss, and loss of power before relying on the design.
 
 ## 3. Preliminary hazard register
 
@@ -34,6 +41,8 @@ If any term is false or unknown, reuse permission is false.
 | Valve or power failure | Unsuitable water reaches reuse network | Normally closed or fail-to-divert design | Position feedback and flow verification | Isolate mechanically and repair |
 | Exhausted biochar mishandling | Worker or environmental exposure | Characterization and handling procedure | Waste classification records | Regenerate or dispose through approved route |
 | Backwash discharged incorrectly | Pollution or plumbing incident | Approved drain/containment connection | Flow and inspection | Stop cycle and contain |
+| Public access, aerosol exposure, or unsuitable irrigation use | Human exposure outside the evaluated use | Controlled ornamental zone, drip configuration, labeling and access management | Site inspection and use review | Stop irrigation, isolate the area, investigate |
+| Salinity, target chemicals, or disinfectant incompatible with plants/soil | Plant injury or soil/drainage impact | Source/use-specific chemical review and limits | Laboratory analysis and site observations | Stop or divert; review treatment and use |
 
 This register is preliminary. A multidisciplinary site hazard assessment must update likelihood, severity, ownership, and verification for the selected installation.
 
@@ -41,7 +50,8 @@ This register is preliminary. A multidisciplinary site hazard assessment must up
 
 ### Source acceptance
 
-- Only mapped and approved fixtures connect to the raw-water line.
+- Only the mapped university ablution source may connect in the first version.
+- Handwashing fixtures or any other added source require separate characterization, risk review, and a scope update before connection.
 - Floor drains and cleaning-chemical discharges require explicit review.
 - Abnormal source-water indicators trigger diversion and investigation.
 
@@ -61,7 +71,7 @@ This register is preliminary. A multidisciplinary site hazard assessment must up
 
 - Potable make-up uses approved backflow protection or an air gap.
 - Reuse pipework and outlets are permanently identified as non-potable.
-- Valve position is confirmed independently where practical.
+- Critical fault testing verifies commanded valve state, independently observed physical position, and measured destination flow; a software flag alone is insufficient evidence.
 - Tank overflows and drains terminate at approved destinations.
 
 ## 5. Water not released for reuse
@@ -84,6 +94,8 @@ Operational sensors are supplemented by paired influent and effluent analyses. T
 
 An accredited laboratory or recognized method should be used for decisions affecting public health or regulatory compliance.
 
+No sensor reading, `REUSE_READY` display, clear-looking water, or simulated laboratory comparison certifies the intended use. Adsorption/biochar is optional and requires a selected constituent, leaching assessment, and defined acceptance criteria when included; it is not a disinfection barrier.
+
 ## 7. Residuals and end of life
 
 Treatment transfers some contamination into screenings, backwash water, tank sediment, and spent media. It does not make these residuals disappear.
@@ -102,7 +114,7 @@ International documents such as WHO guidance, EPA risk-based frameworks, ISO sta
 
 ## 9. Incident response
 
-The pilot plan must define:
+No partner, required permission, or approved pilot is currently documented. Before a physical pilot, its plan must define:
 
 - Automatic isolation and alarm behaviour.
 - Manual emergency stop and lockout.

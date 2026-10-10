@@ -1,12 +1,18 @@
 # Scientific Basis
 
+> **Status:** `LITERATURE` rationale and `DESIGN` hypotheses. No MAWRID treatment results are documented. The [project brief](project-brief.md) fixes the first use case; the [evidence register](evidence-register.md) distinguishes references, targets, simulation, and measured results.
+
 ## 1. Fit-for-purpose treatment
 
 MAWRID follows a fit-for-purpose principle: treatment should be designed for the source water, intended use, exposure pathway, and required risk reduction. Producing drinking-water quality is not automatically necessary for a non-potable application, but using fewer barriers is acceptable only when evidence demonstrates that the selected treatment train meets the applicable target safely.
 
+The initial hypothesis is recovery of one separate university ablution source for controlled drip irrigation of ornamental plants. It excludes mixed drains and irrigation of edible crops. Neither the suitability of a candidate source nor the intended-use water quality has been demonstrated.
+
 ## 2. Source water is variable
 
 Ablution water is often described as low-strength greywater, but this does not mean clean or pathogen-free. Its composition can vary with user behaviour, soap use, floor-drain connections, cleaning practices, storage time, and accidental contamination.
+
+Floor drains, cleaning discharges, and handwashing fixtures are possible contamination or scope-change cases, not accepted connections in the first version. Characterize and confirm the actual source before choosing treatment barriers.
 
 The characterization phase therefore measures distributions rather than relying on a single sample. The initial panel should include:
 
@@ -27,7 +33,7 @@ No single stage is expected to manage every hazard.
 | Source control | Exclude unsuitable wastewater | Requires fixture survey and cross-connection control |
 | Screening | Remove coarse debris | Not a dissolved or microbial barrier |
 | Granular filtration | Reduce particles and turbidity | Does not guarantee pathogen removal |
-| Biochar adsorption | Remove selected adsorbable constituents | Performance is media-, water-, and constituent-specific |
+| Adsorption, if justified | Remove selected adsorbable constituents | Biochar and alternatives require constituent- and water-specific comparison |
 | Disinfection | Reduce microbial risk | Requires challenge validation and process monitoring |
 | Storage controls | Limit recontamination and regrowth | Residual protection and residence time must be managed |
 | Fail-safe diversion | Prevent release outside validated conditions | Depends on sensor, valve, software, and plumbing integrity |
@@ -42,6 +48,8 @@ The scientific proposition is conditional:
 
 Biochar properties depend strongly on feedstock, pyrolysis temperature, residence time, activation method, particle size, washing, and water chemistry. Published performance for one material or contaminant cannot be transferred directly to MAWRID.
 
+This is an optional material study within the water-recovery concept. If no relevant adsorption need is found, or date-palm biochar adds no benefit against the simpler train and commercial-carbon comparator, omit it. Local supply, environmental benefit, reproducibility, and lower cost remain hypotheses requiring documented preparation and lifecycle boundaries. Date-palm fibre evidence must not be described as a result for pyrolyzed biochar; see the scoped descriptions in [references](../references/README.md).
+
 ## 5. Adsorption and breakthrough
 
 Adsorption media have finite capacity. A fixed-bed experiment tracks inlet concentration `Cin` and outlet concentration `Cout` over time or cumulative bed volumes.
@@ -50,7 +58,7 @@ Adsorption media have finite capacity. A fixed-bed experiment tracks inlet conce
 Normalized concentration = Cout / Cin
 ```
 
-The project will predefine a constituent-specific breakthrough point, such as `Cout/Cin = 0.10`, and an exhaustion criterion. These values are experimental definitions, not universal safety limits.
+If adsorption testing proceeds, the protocol must predefine a constituent-specific breakthrough point and an exhaustion criterion. `Cout/Cin = 0.10` is an **ILLUSTRATIVE** definition, not a selected MAWRID criterion, universal safety limit, or achieved result. The absolute outlet concentration and analytical limits must also be reported.
 
 Differential pressure cannot identify adsorption saturation. Likewise, a clear-looking effluent does not demonstrate remaining adsorption capacity.
 
@@ -85,16 +93,20 @@ IF differential pressure high → backwash or maintenance
 IF breakthrough confirmed     → replace or regenerate media
 ```
 
-Machine learning is a later research step. It requires multiple complete media-life runs, independent validation data, representative seasonal and site variation, uncertainty reporting, and performance superior to a transparent baseline model.
+Machine learning is a later research step. It requires multiple complete media-life runs, independent validation data, representative seasonal and site variation, uncertainty reporting, and performance superior to a transparent baseline model. Its recommendations cannot override the independent outlet controller or authorize irrigation.
 
-## 9. Scientific claims register
+## 9. Scientific claim boundaries
+
+The following summary uses the [central evidence register](evidence-register.md); it does not add a measured result.
 
 | Statement | Current status |
 |---|---|
-| Source-separated ablution greywater may be suitable for non-potable reuse after appropriate treatment | **LITERATURE** |
+| Published studies support investigating separately collected ablution water for a defined non-potable use | **LITERATURE**, not a result for the proposed university source |
 | Date-palm residues can be converted into adsorptive biochar | **LITERATURE** |
 | MAWRID biochar treats real ablution greywater effectively | **NOT TESTED** |
 | Online surrogate data can predict MAWRID breakthrough | **NOT TESTED** |
-| The proposed fail-safe logic diverts every declared fault | **TARGET** |
+| The physical outlet protection prevents reuse during every declared critical fault | **TARGET**, physical tests not documented |
 | MAWRID water meets a Saudi reuse requirement | **NOT TESTED** |
 | MAWRID is cheaper than commercial systems | **NOT TESTED** |
+
+Recovered water counts toward measured impact only when actually used for the defined irrigation demand. Potable-water offset additionally requires an equivalent baseline and all extra potable inputs; source volume or a simulated balance is not evidence of savings. See [impact and economics](impact-and-economics.md).

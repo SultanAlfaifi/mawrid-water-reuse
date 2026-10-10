@@ -2,6 +2,8 @@
 
 > **Status:** Proposed architecture. The deterministic state machine can be prototyped before a predictive model is trained. No AI performance result is claimed.
 
+The first application is a university ablution-water treatment unit with a proposed irrigation outlet. The public static website is a demonstration interface for this use case. Its simulated telemetry, control state, and 3D flow illustration are separate from a field gateway, physical actuator, and laboratory record. A realistic rendering does not establish built hardware or treatment validation.
+
 ## Design principle
 
 MAWRID separates decision support from safety authority:
@@ -22,7 +24,7 @@ flowchart LR
     Q --> A
     A --> D[Dashboard and maintenance advice]
     R --> C[Fail-safe valve controller]
-    C -->|validated state| U[Approved non-potable reuse]
+    C -->|validated state| U[Approved university irrigation]
     C -->|unknown or failed state| X[Reprocess, contain, or divert]
 ```
 
@@ -44,6 +46,10 @@ The edge layer should:
 Every observation should carry a sensor identifier, unit, timestamp, calibration status, quality flag, and evidence label. Laboratory records must preserve sample identity, collection time, method, result, unit, detection limit, and quality-control status.
 
 The initial implementation can use CSV or a small local database. A pilot may use MQTT for telemetry and a time-series database, subject to cybersecurity and data-governance review.
+
+The sample CSV uses a simulated gateway identifier and simulated calibration and quality flags. These fields demonstrate the data contract; they are not calibration certificates. A stale, missing, or invalid critical reading must produce a non-reuse state rather than be converted to zero or replaced silently with the last value.
+
+Browser alerts should expose the relevant reading, threshold, timestamp, rule version, and reason for the state transition. Keep control buttons and evidence labels in accessible HTML as well as any 3D scene. The public website does not command a real reuse valve.
 
 ## Analytics layer
 

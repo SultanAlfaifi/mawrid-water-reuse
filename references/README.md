@@ -34,15 +34,15 @@ This library separates regulatory context, technical guidance, and peer-reviewed
    - Supports: date-palm waste is a viable biochar precursor and manufacturing conditions affect adsorption properties.
    - Boundary: this is not an ablution-greywater field trial or evidence of pathogen removal.
 
-5. **Kearns, J. P. et al. (2021).** “Biochar Water Treatment for Control of Organic Micropollutants with UVA Surrogate Monitoring.” *Environmental Engineering Science*, 38(5), 298–309. [https://doi.org/10.1089/ees.2020.0173](https://doi.org/10.1089/ees.2020.0173)
+5. **Kearns, J. et al. (2021).** “Biochar Water Treatment for Control of Organic Micropollutants with UVA Surrogate Monitoring.” *Environmental Engineering Science*, 38(5), 298–309. [https://doi.org/10.1089/ees.2020.0173](https://doi.org/10.1089/ees.2020.0173)
    - Supports: UVA254 may act as an economical surrogate for adsorption-bed condition under tested circumstances.
-   - Boundary: UVA254 is not a pathogen indicator, universal contaminant detector, or substitute for laboratory validation.
+   - Boundary: the study uses wood-derived biochar and bench columns; UVA254 is not a pathogen indicator, universal contaminant detector, or substitute for laboratory validation of MAWRID palm biochar.
 
-6. **Kundu, S. et al. (2025).** “Realistic and field scale applications of biochar for water remediation: A literature review.” *Journal of Environmental Management*. [Open-access full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC12160065/)
+6. **Fang, J., Wang, D., Wilkin, R., & Su, C. (2025).** “Realistic and field scale applications of biochar for water remediation: A literature review.” *Journal of Environmental Management*, 385, 125524. [DOI](https://doi.org/10.1016/j.jenvman.2025.125524), [open-access full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC12160065/)
    - Supports: biochar has field and pilot potential, with continuing scale-up and performance uncertainties.
    - Boundary: biochar does not consistently outperform commercial activated carbon.
 
-7. **Lawal, A. A. et al. (2022).** “A comprehensive review on the chemical regeneration of biochar adsorbent for sustainable wastewater treatment.” *npj Clean Water*. [https://doi.org/10.1038/s41545-022-00172-3](https://doi.org/10.1038/s41545-022-00172-3)
+7. **Alsawy, T., Rashad, E., El-Qelish, M., & Mohammed, R. H. (2022).** “A comprehensive review on the chemical regeneration of biochar adsorbent for sustainable wastewater treatment.” *npj Clean Water*, 5, 29. [https://doi.org/10.1038/s41545-022-00172-3](https://doi.org/10.1038/s41545-022-00172-3)
    - Supports: regeneration may extend media life but creates performance and secondary-waste considerations.
 
 ## Risk, reuse, and test frameworks
@@ -63,6 +63,22 @@ This library separates regulatory context, technical guidance, and peer-reviewed
 
 12. **APHA, AWWA, & WEF.** *Standard Methods for the Examination of Water and Wastewater*, 24th edition. [Publisher page](https://secure.apha.org/imis/ItemDetail?CATEGORY=BK&iProductCode=978-087553-2998)
     - Supports: recognized analytical methods for physical, chemical, and microbiological water testing.
+
+## Additional palm evidence and Saudi resource context
+
+13. **Odokonyero, K. et al. (2024).** “Superhydrophobic sand mulch and date palm biochar boost growth of Moringa oleifera in sandy soils via enhanced irrigation and nutrient use efficiency.” *Frontiers in Plant Science*, 15, 1434462. [DOI](https://doi.org/10.3389/fpls.2024.1434462), [publisher full text](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2024.1434462/full)
+    - Supports: KAUST-affiliated authors document palm-leaf biochar production and a soil/plant experiment using nutrient-loaded biochar and sand mulch.
+    - Boundary: this is **soil amendment**, not ablution-water treatment or a filtration-media result. Nutrient-loaded soil biochar is not assumed suitable for MAWRID water.
+
+14. **Fseha, Y. H., Sizirici, B., & Yildiz, I. (2023; online 2022).** “Phoenix dactylifera (date palm)-Derived Biochar Application for the Adsorptive Removal of Multiple Inorganics from Groundwater for Drinking Water Purposes.” *Arabian Journal for Science and Engineering*, 48, 12725–12740. [DOI](https://doi.org/10.1007/s13369-022-07472-3), [Khalifa University record](https://khazna.ku.ac.ae/en/publications/phoenix-dactylifera-date-palm-derived-biochar-application-for-the/)
+    - Supports: date-palm-waste biochar adsorption of selected ions in packed columns; effects of flow, inlet concentration, and bed height; synthetic-groundwater application.
+    - Boundary: neither the water matrix nor target ions establishes MAWRID ablution-water performance. The paper's drinking-water purpose is not MAWRID certification or a pathogen-removal claim.
+
+15. **General Authority for Statistics (2025).** *Agricultural Statistics Publication 2024*. [Official release](https://www.stats.gov.sa/en/w/news/127), [official English publication](https://www.stats.gov.sa/documents/20117/2435281/Agricultural%2BStatistics%2B2024%2B%2B-%2BEN.pdf/1d9fef9e-4238-e4c7-4c41-86475ce8241c?t=1764479027952)
+    - Supports: more than 37.6 million palm trees in Saudi Arabia in data year **2024**.
+    - Boundary: palm counts do not measure collectable residue volume, biochar yield, secured project supply, or local media price.
+
+These additions and the research-logo provenance were checked on **10 October 2026**; see the Arabic-first [palm research register](../docs/palm-research.md). Logos identify research affiliations, not MAWRID partners or endorsements.
 
 ## Citation policy
 

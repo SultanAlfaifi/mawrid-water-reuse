@@ -1,5 +1,7 @@
 # Innovation and Prior Art
 
+> **Status:** Proposed contribution, not demonstrated novelty or performance. Scope follows the [project brief](project-brief.md); claim status and required evidence follow the [evidence register](evidence-register.md).
+
 ## 1. Honest novelty position
 
 MAWRID is not based on the claim that any individual treatment component is new.
@@ -19,17 +21,21 @@ This repository therefore avoids “first,” “unique,” and patentability cl
 
 ## 2. Proposed contribution
 
-The project's defensible contribution is the **integration and validation** of five elements for a specific Saudi use case:
+The contribution to test is a simple, traceable recovery system for **one separate university ablution source and a controlled ornamental-irrigation zone**. Integration, user value, and performance have not yet been demonstrated. The proposed elements are:
 
-1. A defined low-strength source: separately collected ablution and handwashing greywater.
-2. A reproducible date-palm biochar cartridge benchmarked against commercial activated carbon.
-3. A constituent-specific breakthrough definition linked to cumulative bed volumes and candidate online surrogates.
-4. Condition-based cleaning and media replacement that distinguishes hydraulic clogging from adsorption exhaustion.
-5. A fail-safe release architecture that diverts water when quality or system integrity cannot be demonstrated.
+1. One mapped ablution source, with actual quality, available volume, irrigation demand, and storage constraints measured before sizing.
+2. A treatment train justified by that source and use. Date-palm biochar is an optional candidate only if a relevant dissolved-constituent need is found; compare it with the simpler train and commercial activated carbon.
+3. Transparent maintenance rules that distinguish hydraulic clogging from adsorption exhaustion when adsorption is included.
+4. Independent outlet protection that closes or diverts on invalid critical data or failed process conditions, with physical valve and flow testing required.
+5. Traceable recording of water actually used, extra potable water, energy, costs, and maintenance, against a declared equivalent baseline.
+
+Additional handwashing sources require a source study and scope update. Predictive AI is a later maintenance study; it is not needed to explain or validate the first version and cannot authorize irrigation.
 
 ### Research proposition
 
-> Can an engineered date-palm biochar cartridge, coupled with low-cost operational measurements and laboratory calibration, provide useful adsorption capacity and advance warning of breakthrough in a decentralized ablution-greywater system while fail-safe controls prevent unverified reuse?
+> Can a university recover water from one separate ablution source for a defined irrigation demand with a justified treatment train, independent outlet protection, and measurable operating benefit?
+
+If adsorption is justified, a subordinate material question is whether reproducibly prepared date-palm biochar adds useful performance and lifecycle value against the controls. Advance warning from online surrogates is a later question after target-specific correlation and complete media-life data exist.
 
 ## 3. Difference from a conventional filter demonstration
 
@@ -38,21 +44,21 @@ The project's defensible contribution is the **integration and validation** of f
 | Shows visibly clearer water | Quantifies influent and effluent distributions using declared methods |
 | Replaces a cartridge on a schedule | Tracks loading, pressure loss, and defined breakthrough |
 | Treats sensor readings as proof of safety | Uses sensors for control and laboratory tests for validation |
-| Reports gross collection as water saved | Measures net water delivered and used after all losses |
+| Reports gross collection as water saved | Records water actually used and calculates source-specific offset against equivalent demand, including extra potable inputs |
 | Calls local biomass sustainable | Measures processing, energy, residuals, and end-of-life burdens |
 | Continues operating after a bad reading | Fails closed and logs the diversion event |
 
 ## 4. Alternatives and design choice
 
-| Approach | Strength | Why it is not the V1 default |
+| Approach | Strength | Role in the first design decision |
 |---|---|---|
 | Reverse osmosis | High dissolved-solids rejection | Pressure, energy, membrane maintenance, and reject stream may exceed the needs of low-strength non-potable reuse |
 | Membrane bioreactor | Strong treatment for higher-load wastewater | Biological and membrane complexity may be unnecessary for the narrowly defined source |
-| Commercial greywater package | Established market option | MAWRID is testing a local sorbent and auditable condition-based operating model; it must still beat commercial benchmarks on evidence |
-| Sand plus disinfection | Simpler and lower cost | May not address the selected dissolved constituent; this becomes an essential control treatment |
+| Commercial greywater package | Established market option | Benchmark the proposed system against equivalent source/use, evidence level, service, and lifecycle cost; no superiority is established |
+| Sand plus disinfection | Simpler candidate, with cost and performance to test | Essential comparator and possible final train if it meets the source/use requirements; adsorption is not mandatory |
 | Commercial activated carbon | Mature adsorption medium | Serves as the performance and cost benchmark, not an inferior straw-man comparison |
 
-The correct principle is **minimum treatment that safely meets the defined requirement**, not minimum equipment at any cost.
+The design principle is **a justified treatment train that meets the defined source/use requirements**. Each additional barrier must address a measured need or documented risk; safe performance still requires validation.
 
 ## 5. Prior-art work before commercialization
 
@@ -64,12 +70,12 @@ The correct principle is **minimum treatment that safely meets the defined requi
 
 ## 6. Claims we make
 
-- MAWRID targets an underused, source-separable water stream.
-- The treatment train is deliberately scoped to non-potable reuse.
+- MAWRID proposes to investigate separately collected university ablution water; the site's recoverable resource and demand are not yet measured.
+- The first treatment concept is scoped to controlled landscape irrigation of ornamental plants.
 - Date-palm biochar is evaluated as a local alternative, not assumed to be superior.
 - Operational monitoring and laboratory verification have different roles.
 - The architecture is designed to fail toward non-reuse.
-- Water, energy, cost, and residuals can be measured in a pilot.
+- Water, energy, cost, and residuals are planned pilot measurements, not current results.
 
 ## 7. Claims we do not make
 

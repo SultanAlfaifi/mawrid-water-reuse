@@ -1,17 +1,21 @@
 # System Design
 
-> **Status:** Concept architecture. Component sizing and release limits require bench and site-specific validation.
+> **Status:** `DESIGN` concept architecture. No physical treatment result, tested outlet protection, confirmed university partnership, or site approval is documented. Component sizing and operating limits require bench and site-specific validation.
+
+This document follows the [project brief](project-brief.md) and [evidence register](evidence-register.md). It specifies intended behaviour; the digital explorer does not demonstrate that the hardware exists or performs as described.
 
 ## 1. Design objective
 
-MAWRID is designed to recover **source-separated, lightly contaminated ablution and selected handwashing greywater** and treat it for one approved non-potable use. The architecture prioritizes low treatment complexity, observable operation, maintainability, and safe failure.
+The first concept recovers **one separately collected ablution-water source at one university facility** for a defined landscape-irrigation demand. The proposed initial use is a controlled zone of ornamental plants with drip irrigation, subject to site, exposure, and applicable-requirements review. Source quality and recoverable volume are hypotheses to measure, not established properties.
+
+The architecture prioritizes low treatment complexity, observable operation, maintainability, and failure toward non-reuse. Additional handwashing drains require separate characterization and a scope change in the project brief before inclusion.
 
 The design does not include toilet wastewater, kitchen wastewater, grease-bearing drains, industrial wastewater, or unidentified mixed drainage.
 
 ## 2. Functional architecture
 
 ```text
-Source-separated drain
+One university ablution drain
         │
         ▼
 Coarse screen ──────────────── screenings to controlled disposal
@@ -26,16 +30,21 @@ Feed pump + flow control
 Sand / multimedia filter ───── backwash to approved sewer or treatment
         │
         ▼
-Date-palm biochar cartridge
+Optional adsorption stage ──── selected only if characterization justifies it
         │
         ▼
 Controlled disinfection + verified contact condition
         │
         ▼
-Quality decision manifold
-        ├── PASS → treated-water tank → approved non-potable use
+Treated-water tank + age/condition checks
+        │
+        ▼
+Independent outlet controller + decision manifold
+        ├── PASS → defined irrigation zone, after pilot approval
         └── HOLD/FAIL → reprocess, contain, or approved sewer
 ```
+
+The diagram is a candidate functional arrangement, not a construction drawing. Storage and the irrigation outlet must remain within the validated operating envelope; if stored-water age or a critical downstream condition is unknown, the independent outlet protection keeps reuse closed. Discharge destinations shown as approved are requirements to obtain, not existing approvals.
 
 ## 3. Treatment barriers
 
@@ -51,11 +60,11 @@ Design requirements include a cleanout, high-level overflow, low-level pump prot
 
 ### 3.3 Sand or multimedia filtration
 
-This stage targets suspended solids and turbidity. It protects the adsorption bed and improves the consistency of downstream disinfection. Media grading, filtration velocity, run length, backwash trigger, and backwash volume will be selected experimentally.
+This stage targets suspended solids and turbidity and supports downstream treatment. It protects an adsorption bed if one is justified. Media grading, filtration velocity, run length, backwash trigger, and backwash volume will be selected experimentally.
 
 ### 3.4 Date-palm biochar adsorption
 
-The cartridge investigates whether date-palm-derived biochar can provide useful adsorption capacity for a **preselected dissolved constituent**. Candidate media will be characterized for:
+Adsorption is included only if source characterization identifies a relevant dissolved constituent that simpler treatment does not adequately address. A candidate cartridge then investigates whether date-palm-derived biochar provides useful capacity for that **preselected constituent**. Candidate media will be characterized for:
 
 - Feedstock identity and preparation.
 - Pyrolysis and activation conditions.
@@ -65,7 +74,7 @@ The cartridge investigates whether date-palm-derived biochar can provide useful 
 - Empty-bed contact time and hydraulic head loss.
 - Capacity and bed volumes to a defined breakthrough criterion.
 
-Commercial activated carbon is the benchmark. Local origin alone is not evidence of better performance or lower lifecycle cost.
+The simpler train without adsorption and commercial activated carbon are comparators. If adsorption is unnecessary, or biochar adds no justified benefit after performance, leaching, hydraulics, maintenance, and cost are considered, the project advances with the simpler train or a supported alternative. Local origin alone is not evidence of better performance or lower lifecycle cost.
 
 ### 3.5 Disinfection
 
@@ -105,7 +114,9 @@ Low-cost sensors require calibration, fouling checks, declared uncertainty, and 
 | `MAINTENANCE` | Manual service, calibration, or media replacement | Locked closed |
 | `FAULT` | Critical data or process integrity is unavailable | Fail-closed |
 
-The controller must not infer safe release from the last valid reading after sensor loss or power interruption.
+These states specify the proposed physical controller, not measured valve behaviour. `REUSE_READY` describes eligibility under validated process rules; it is not a certificate of water quality. Site authorization and laboratory verification remain separate requirements.
+
+The independent local controller must not infer release permission from the last valid reading after sensor loss or power interruption. The website, remote dashboard, and any future AI model cannot open the reuse outlet. Bench testing must verify the physical valve position and destination flow, including loss of power and communications.
 
 ## 6. Condition-based media management
 
@@ -124,14 +135,14 @@ The first controller will use transparent rules based on measured thresholds and
 
 ## 7. Modular scale-up
 
-Scale is defined by tested hydraulic capacity, not by marketing labels. Parallel treatment trains may increase flow; series lead-lag adsorption may increase protection and media utilization. Any scale-up must preserve contact time, loading, backwash performance, monitoring coverage, and the validated disinfection envelope.
+No treatment capacity or production size has been selected. A name such as `M5`, or the dimensions of the illustrative 3D unit, establishes neither `5 m³/day` nor any tested hydraulic capacity. Sizing follows measured source availability, irrigation demand, storage constraints, and validated loading/contact conditions. Parallel treatment trains or lead-lag adsorption are later design options, not current product configurations. Any scale-up must preserve the validated process envelope.
 
 ## 8. Open design decisions
 
-- Select the first approved end use.
+- Confirm the proposed university source and controlled ornamental-irrigation zone, including demand and the approval path.
 - Characterize representative influent variability.
-- Select the biochar target constituent and analytical method.
-- Determine media preparation and activation route.
+- Decide whether adsorption is justified; if so, select the target constituent, analytical method, and comparable media.
+- If biochar testing proceeds, determine its preparation and activation route.
 - Validate hydraulic loading and contact time.
 - Select disinfectant and contact configuration.
 - Confirm current Saudi plumbing, building, water-reuse, and discharge requirements.

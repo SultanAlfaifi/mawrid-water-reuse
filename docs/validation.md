@@ -2,16 +2,26 @@
 
 > **Purpose:** Generate reproducible evidence for treatment performance, media life, safe control, and pilot feasibility.
 
+> **Status:** `DESIGN` / `TARGET` validation plan. This is not a completed experimental protocol or a results report. There are no documented MAWRID water-treatment results, confirmed university partner, laboratory commitment, or field-use approval. Scope and evidence labels follow the [project brief](project-brief.md) and [evidence register](evidence-register.md).
+
+The first source is one separately collected university ablution drain. The proposed use is a controlled ornamental-plant zone with drip irrigation, after source/use risk review and required approvals. No field irrigation is part of the initial bench study.
+
 ## 1. Experimental questions
 
 1. How variable is the selected source water over users, peak periods, cleaning events, and storage times?
 2. What does each treatment barrier contribute?
-3. Does date-palm biochar outperform a no-biochar control and approach commercial activated-carbon performance for the selected target?
+3. Is adsorption needed for a selected dissolved constituent? If so, does date-palm biochar add value against the simpler train and commercial activated carbon?
 4. How many bed volumes are treated before defined breakthrough?
 5. Can online measurements provide useful advance warning of that breakthrough?
 6. Does disinfection achieve the selected microbial target under representative worst-case conditions?
 7. Does the system divert water reliably during sensor, process, communication, and power faults?
-8. What are net recovery, energy, consumables, residuals, and cost per cubic metre?
+8. What are measured recovery, irrigation water actually used, source-specific offset against equivalent demand, energy, consumables, residuals, and cost per cubic metre?
+
+### Before a test can produce a reported result
+
+Freeze a protocol identifier/version, source and intended-use boundaries, target constituent and analytical method, sampling locations and timing, media recipe/batch, hydraulic loading/contact conditions, storage intervals, independent-run and replicate counts, quality controls, uncertainty method, exclusions, and pass/fail criteria. For microbial work, specify the challenge organism or accepted surrogate, method, detection limit, contact conditions, and use-specific target. Record which inputs remain unresolved; do not fill them with demonstration values.
+
+Tests require appropriate facilities, trained staff, and permission for the activity. Evidence from a simulation, a laboratory material test, a controller bench test, and a monitored irrigation pilot is reported separately.
 
 ## 2. Phase A: source characterization
 
@@ -19,14 +29,18 @@ Collect time-stamped samples from the proposed pilot source across:
 
 - Low, normal, and peak use.
 - Different days and cleaning schedules.
-- With and without soap-dominant handwashing inputs if these are included.
+- Ablution-source variation and documented cleaning/contamination events; unsuitable streams remain excluded.
 - Immediate testing and defined storage intervals.
 
 Record fixture connections, weather where relevant, flow, temperature, sampling method, holding time, and analytical method.
 
+Measure irrigation demand and its existing supply source over comparable periods. Additional handwashing connections require a separate source characterization, risk review, and update to the project brief before inclusion; they are outside the first-version test matrix.
+
 ## 3. Phase B: media screening
 
 ### Test matrix
+
+Characterization first determines whether an adsorption study is needed. If it is not, compare and validate the simpler treatment train without claiming a biochar benefit. The following matrix is a candidate material study, not a requirement to build every variant or evidence that any has been tested.
 
 | ID | Treatment | Purpose |
 |---|---|---|
@@ -88,18 +102,22 @@ Candidate inputs include:
 - Media batch and preparation conditions.
 - Laboratory target-constituent measurements.
 
-The first baseline is a transparent threshold or regression model. A more complex model must be evaluated prospectively on independent exhaustion runs and compared against the baseline.
+Transparent operating and maintenance rules come first. Predictive analytics are a later study after relevant independent runs exist. A more complex model must be evaluated prospectively on held-out complete exhaustion runs and compared against the rule baseline. Prediction cannot open or override the independent outlet controller.
 
-### Provisional model targets
+### Provisional later-study targets — not achieved results
 
 - Warning at least 10 bed volumes before defined breakthrough.
 - Remaining-life error no greater than 20% after at least three independent complete exhaustion runs.
-- Uncertainty or “insufficient confidence” state exposed to the controller.
+- Uncertainty or “insufficient confidence” state shown with the recommendation; independent outlet protection remains authoritative.
 - No release decision made by the prediction model alone.
+
+These numbers are draft research targets, not a basis to declare model readiness. Before evaluation, define the warning event, bed-volume origin, remaining-life error formula/denominator, forecast timing, and uncertainty interval. At least three complete runs is a proposed starting minimum, not a claim of statistically sufficient validation. Report actual run counts, variability, uncertainty, and performance against the baseline.
 
 ## 7. Phase F: fault injection
 
 Every fault test records event time, controller state, valve response, destination flow, alarm, operator action, and recovery.
+
+Record commanded valve state, independently observed physical position, and measured destination flow as separate observations. A digital state transition or rendered valve animation demonstrates software behaviour only; it does not pass a physical fault test.
 
 | Fault | Expected response |
 |---|---|
@@ -125,12 +143,15 @@ Every fault test records event time, controller state, valve response, destinati
 
 Laboratory methods should follow an accredited or otherwise recognized standard. Raw data, units, detection limits, calibration records, exclusions, and analysis scripts must be retained.
 
+Meter collection, all potable inputs, actual irrigation use, rejection, backwash, overflow, and storage change separately. Report laboratory recovery separately from field water offset. An offset calculation requires equivalent irrigation demand and the original supply source; losses already excluded by the delivered-use meter must not be subtracted twice. Apply the definitions in [impact and economics](impact-and-economics.md). No equipment label or rendered dimensions establish a treatment capacity.
+
 ## 9. Results template
 
 No placeholder value should be presented as a result. Each published result includes:
 
 ```text
 Label: RESULT
+Protocol identifier and version:
 Metric:
 Source and test condition:
 Sample size:
@@ -139,6 +160,7 @@ Influent distribution:
 Effluent distribution:
 Estimate and uncertainty:
 Raw-data path:
+Calibration and quality-control record:
 Protocol deviation, if any:
 ```
 
@@ -148,8 +170,11 @@ Proceed from bench work to a site pilot only when:
 
 - The selected treatment train meets all predeclared bench acceptance criteria.
 - The disinfection barrier is validated for the chosen end use.
-- Biochar leaching and residuals risks are characterized.
+- If biochar is included, its leaching and residuals risks are characterized.
+- If adsorption is omitted, the validated simpler train still meets the defined source/use criteria; no biochar performance claim is made.
 - Fail-safe fault tests pass.
 - Plumbing and cross-connection controls are reviewed by qualified professionals.
 - Required Saudi regulatory and site approvals are identified and obtained.
 - A sampling, maintenance, incident, and shutdown plan is approved.
+
+All pilot gates are future requirements. A schedule or successful digital demonstration does not establish that any gate has passed.

@@ -1,245 +1,105 @@
-<div align="center">
-  <img src="assets/brand/mawrid-hero.svg" alt="MAWRID — Give every drop a second purpose" width="100%">
+<div align="center" dir="rtl">
+  <img src="assets/brand/mawrid-hero.svg" alt="مورد — مياه الوضوء، مورد للري" width="100%">
 </div>
 
-<p align="center">
-  <strong>An AI-assisted, IoT-enabled system for safe decentralized reuse of source-separated ablution greywater.</strong>
-</p>
+# مورد · MAWRID
 
-<p align="center">
-  <a href="#the-challenge">Challenge</a> ·
-  <a href="#the-system">System</a> ·
-  <a href="#digital-intelligence">AI & IoT</a> ·
-  <a href="#what-is-new">Innovation</a> ·
-  <a href="#validation-plan">Validation</a> ·
-  <a href="#documentation">Documentation</a>
-</p>
+**مياه الوضوء، مورد للري.**
 
-> [!IMPORTANT]
-> **Project status: concept-stage / pre-validation.** MAWRID has not yet demonstrated regulatory compliance or water safety. Performance values in this repository are prototype targets unless explicitly labeled as measured results.
+مورد تصميم لوحدة محلية تسترجع مياه الوضوء المفصولة في منشأة جامعية، وتعالجها لري المساحات الخضراء، وتمنع إعادة الاستخدام عند فشل شروط التشغيل المحددة، وتوثق الماء المستخدم فعلًا.
 
-> **Digital status:** the safety state machine and analytics interfaces are specified, but no trained MAWRID model is claimed. Current repository telemetry is simulated and labeled accordingly.
+**الوضع الحالي:** تصميم مفاهيمي وتجربة رقمية تعليمية. لا توجد في المستودع نتائج معالجة مائية فعلية، أو تجربة ميدانية معتمدة، أو شراكة مؤكدة، أو نموذج ذكاء اصطناعي مدرّب. البيانات المعروضة للمحاكاة، ومعايير الأداء أهداف تحتاج اختبارًا.
 
-## The challenge
+[مرجع المشروع](docs/project-brief.md) · [المستكشف التعليمي](index.html) · [خريطة المخرجات](docs/judging-map.md) · [سجل الأدلة](docs/evidence-register.md) · [English](#english)
 
-Water used for ablution and handwashing is often discharged after a single, relatively light use. In the same facility, drinking-quality water may then be used for toilet flushing or landscape irrigation.
+## المشكلة في موقع واحد
 
-This is a mismatch between **water quality** and **water purpose**.
+نبدأ بموقع جامعي لديه منطقة وضوء مركزية وطلب قريب على الري. السؤال الذي نختبره: هل يمكن استرجاع هذا المصدر واستخدامه محليًا، بتكلفة وعبء تشغيل مقبولين، وبعد إثبات متطلبات استخدامه؟
 
-MAWRID asks a focused engineering question:
+نقيس كمية الماء ومواقيت توفره والطلب على الري وإمكانية فصل التصريف قبل تحديد حجم الوحدة. إدارة المرافق هي العميل المستهدف، وفريق الصيانة هو المستخدم اليومي. اختيار الموقع والتعاون معه ما زالا خطوة مطلوبة.
 
-> Can source-separated ablution greywater be treated locally to a defined non-potable specification, while detecting process deterioration early enough to prevent unsuitable water from reaching the reuse outlet?
+## منتج واحد، ووظائف واضحة
 
-## The system
-
-**MAWRID** is a modular treatment-and-control concept for separately collected ablution and handwashing greywater. It combines accessible treatment processes with continuous operational monitoring and fail-safe diversion.
-
-<div align="center">
-  <img src="assets/diagrams/treatment-train.svg" alt="MAWRID treatment train from source separation to safe non-potable reuse" width="100%">
-</div>
-
-| Stage | Purpose |
+| الوظيفة | ما نحتاج إثباته |
 |---|---|
-| Source separation | Keep low-strength greywater apart from toilet, kitchen, and industrial wastewater |
-| Screening and equalization | Remove coarse solids and stabilize intermittent flow |
-| Sand or multimedia filtration | Reduce suspended solids and protect downstream treatment |
-| Date-palm biochar cartridge | Test adsorption of selected dissolved constituents using a local waste-derived medium |
-| Controlled disinfection | Provide a validated microbial barrier after filtration |
-| Online monitoring | Track loading, hydraulic condition, treatment integrity, and disinfection conditions |
-| Fail-safe diversion | Block reuse when quality, sensor health, or process state cannot be trusted |
+| استرجاع المصدر ومعالجته | أداء محدد للماء الداخل، والغرض المختار، وطريقة قياس موثقة |
+| حماية مسار إعادة الاستخدام | متحكم مستقل يغلق المسار عند فشل شروط التشغيل أو فقد قياس حرج |
+| قياس الاستخدام والتشغيل | موازنة ماء قابلة للمراجعة، وسجل أحداث، ووقت صيانة وتكلفة |
 
-The treated water is intended only for an **approved non-potable use**. The first pilot will select one end use after confirming applicable Saudi requirements and completing a site-specific risk assessment.
+المسار المقترح: **فصل مياه الوضوء، موازنة التدفق، ترشيح، اختبار امتزاز عند الحاجة، تعقيم نتحقق منه، تخزين مضبوط، ثم قرار الاستخدام أو التحويل.**
 
-## Why start with ablution water?
+الري المقترح في البداية هو ري نباتات زينة بالتنقيط في نطاق مضبوط؛ تفاصيله النهائية تحتاج مراجعة الموقع والمخاطر والمتطلبات التنظيمية. مرحلة الاختبار المائي تبدأ على منصة مخبرية قبل أي تطبيق ميداني.
 
-- It can be source-separated at centralized washing areas.
-- It is generally less contaminated than mixed wastewater, although it is **not inherently safe**.
-- Supply patterns and nearby non-potable demand can be measured at mosques, campuses, and public facilities.
-- Treating a defined source avoids unnecessary complexity associated with blackwater or kitchen wastewater.
+## أين نبحث عن التميز؟
 
-### V1 boundaries
+نختبر خرطوشة فحم حيوي من مخلفات النخيل أمام **الترشيح والتعقيم دون امتزاز** و**الكربون المنشط التجاري**. نحدد المكوّن المستهدف بالامتزاز أولًا، ثم نقارن الأداء، وما قد تطلقه المادة إلى الماء، وعمر الخدمة والكلفة. إذا لم تضف الخرطوشة قيمة قابلة للقياس، نستخدم المسار الأبسط.
 
-| In scope | Explicitly out of scope |
-|---|---|
-| Ablution drainage | Toilet wastewater |
-| Selected handwashing drainage | Kitchen and grease-bearing wastewater |
-| Non-potable reuse after validation | Drinking or food preparation |
-| A defined pilot site and end use | Reuse for ablution |
-| Operational sensors plus laboratory verification | Claims that sensors detect every contaminant |
+تبدأ الصيانة بقواعد تشغيل مفهومة. يمكن دراسة التنبؤ والذكاء الاصطناعي لاحقًا إذا توفرت بيانات ممثلة وأثبتت فائدة إضافية. قرار فتح مسار إعادة الاستخدام يبقى لدى المتحكم المستقل، وتحقق جودة الماء يعتمد على الطرق المخبرية والمتطلبات المنطبقة.
 
-## What is new?
+## ما الذي يشرحه الموقع؟
 
-Greywater recycling, sand filtration, activated carbon, biochar, chlorination, and lead-lag adsorption are established ideas. Date-palm material has also been studied for water treatment. MAWRID therefore does **not** claim to have invented these components.
+[المستكشف التعليمي](index.html) يعرض مكونات التصميم ومسار الماء وسيناريوهات التشغيل. الشكل ثلاثي الأبعاد والمحاكاة يشرحان الفكرة؛ أبعاد المكونات وأداء المعالجة والاستجابة المادية للصمامات تحتاج تحققًا فعليًا. وجود الواجهة في المستودع لا يعني أن نسختها الحالية منشورة أو أن وحدة مائية بُنيت.
 
-The proposed innovation is their integration into a locally relevant, safety-oriented operating architecture:
+المبدأ التشغيلي المستهدف: **عند فقد شروط التشغيل الموثوقة، يُغلق مسار إعادة الاستخدام.**
 
-1. **Engineered local sorbent:** evaluate date-palm-derived biochar against commercial activated carbon under real ablution-greywater conditions.
-2. **Condition-based maintenance:** track cumulative bed volumes and differential pressure instead of replacing media only on a calendar.
-3. **Defined breakthrough detection:** correlate a selected online surrogate, flow history, and laboratory measurements with adsorption exhaustion.
-4. **Fail-safe reuse control:** divert water whenever a critical limit, sensor-health check, or disinfection condition fails.
-5. **Auditable impact:** measure water actually delivered for reuse, energy, consumables, residuals, and cost per cubic metre.
+## طريق الإثبات
 
-<div align="center">
-  <img src="assets/diagrams/filter-health.svg" alt="Condition-based filter health and fail-safe decision logic" width="100%">
-</div>
+1. تحديد موقع وعميل واستخدام واحد، وقياس المصدر والطلب.
+2. الاتفاق على بروتوكول ومؤشرات قبول قبل الاختبار.
+3. مقارنة المعالجة الأبسط والكربون التجاري وخرطوشة النخيل إن ثبتت الحاجة إليها.
+4. اختبار التحكم والموازنة المائية وأعطال الحساسات والطاقة.
+5. مراجعة النتائج والتكلفة وعبء المشغل؛ ثم تقرير جدوى تجربة ميدانية بشروطها.
 
-Read the full [innovation and prior-art position](docs/innovation.md).
+تربط [خريطة المخرجات التسعة](docs/judging-map.md) كل جزء بالدليل الموجود وما ينقصه. وتوضح [خطة التحقق](docs/validation.md) الاختبارات التقنية المقترحة.
 
-## Monitoring without overclaiming
+## التشغيل المحلي
 
-Online measurements support operation; they do not replace laboratory validation.
+من مجلد المستودع، باستخدام Node.js 22.12 أو أحدث:
 
-| Measurement | Operational use | Limitation |
-|---|---|---|
-| Flow and cumulative volume | Quantify hydraulic loading and bed volumes | Does not indicate water quality |
-| Differential pressure | Detect clogging or hydraulic deterioration | Does not indicate adsorption saturation |
-| Turbidity | Observe particulate-treatment integrity | Does not prove microbial safety |
-| pH and temperature | Support process and disinfection control | Not direct contaminant measurements |
-| Conductivity | Detect source changes and salinity concerns | Treatment may not reduce dissolved salts |
-| Free chlorine after contact | Confirm chlorination process conditions | Requires validation against microbial targets |
-| UV254, if validated | Potential surrogate for selected organic breakthrough | Not a universal chemical or pathogen detector |
-
-## Digital intelligence
-
-MAWRID adds an explainable digital layer to the physical treatment train. IoT sensors provide time-series observations, deterministic rules protect the reuse outlet, and AI-assisted analytics may identify abnormal behaviour and maintenance needs. Online measurements and AI outputs support operation; they do not certify water safety or replace laboratory validation.
-
-The digital layer is designed to:
-
-- detect abnormal sensor and process behaviour;
-- estimate a transparent filter-health indicator;
-- flag possible sensor drift for inspection and documented calibration;
-- recommend cleaning, sampling, or maintenance actions;
-- evaluate remaining-useful-life prediction only after sufficient representative pilot data exist.
-
-| Function | Primary authority |
-|---|---|
-| Detect an unusual multivariable pattern | Analytics or a validated AI model |
-| Estimate filter condition | Transparent rules first; predictive model after validation |
-| Recommend inspection or laboratory sampling | Decision-support layer |
-| Evaluate a validated release limit | Deterministic safety controller |
-| Close the reuse valve | Independent fail-safe controller |
-| Demonstrate water quality for the selected use | Validated laboratory methods and applicable approval |
-
-**AI never independently authorizes water reuse.** If a critical measurement is missing, stale, outside its validated range, or inconsistent with a required process condition, the reuse valve closes regardless of the model output.
-
-Read the [AI and IoT architecture](docs/ai-and-iot-architecture.md), [data and model card](docs/data-and-model-card.md), [sensor and laboratory workflow](docs/sensor-and-lab-workflow.md), and [demo scenarios](docs/demo-scenarios.md).
-
-## Safety by design
-
-MAWRID uses a simple release principle:
-
-> **No verified process state, no reuse.**
-
-The reuse valve remains closed if a critical sensor is unavailable, calibration is expired, turbidity is outside the validated envelope, disinfection conditions are not met, or the controller loses power. Water is routed to reprocessing, containment, or an approved sewer connection.
-
-The safety case also includes cross-connection prevention, non-potable labeling, protected make-up water, controlled storage time, sampling points, residuals management, and periodic laboratory testing. See [Safety and risk controls](docs/safety.md).
-
-## Validation plan
-
-The prototype is designed to answer questions, not to stage a visual-only filtration demonstration.
-
-```text
-Characterize source water
-        ↓
-Compare sand, raw biochar, activated biochar, and commercial carbon
-        ↓
-Run fixed-bed exhaustion tests and construct breakthrough curves
-        ↓
-Validate disinfection under representative worst-case conditions
-        ↓
-Inject sensor and process faults to test fail-safe diversion
-        ↓
-Complete a monitored pilot at one facility
+```powershell
+npm.cmd ci
+npm.cmd run dev
 ```
 
-### Provisional prototype targets
+افتح [الموقع المحلي](http://127.0.0.1:4173). للتحقق شغّل `npm.cmd run check`، ولتوليد الصفحة الثابتة شغّل `npm.cmd run build`. يشرح [دليل التطوير](docs/development.md) ملفات المصدر ومخرجات `index.html` و`assets/app/`؛ البناء محلي ولا ينشر الموقع.
 
-These are predeclared engineering targets, **not measured achievements or universal legal limits**.
+## الوثائق والمراجع
 
-| KPI | Prototype target | Evidence required |
-|---|---:|---|
-| Net water recovery | ≥ 80% over representative cycles | Calibrated inlet, reject, backwash, and reuse flow measurements |
-| Filtration integrity | Effluent turbidity ≤ 2 NTU for 95% of release time and never > 5 NTU | Online readings checked against a reference method |
-| Microbial treatment | ≥ 3-log reduction of the selected challenge organism | Accredited or validated microbiological method |
-| Biochar breakthrough | Selected constituent remains below `Cout/Cin = 0.10` until declared breakthrough | Paired laboratory samples and a no-biochar control |
-| Monitoring availability | ≥ 95% valid data availability | Calibration and missing-data records |
-| Fail-safe response | 100% successful diversion in declared fault tests | Logged high-turbidity, low-disinfectant, sensor-loss, communication-loss, and power-loss tests |
+[مرجع المشروع](docs/project-brief.md) هو المصدر المعتمد للنطاق والعميل والاستخدام والحالة. تبدأ منه الوثائق العامة، وتشرح الوثائق التقنية التفاصيل والفرضيات التجريبية.
 
-Final release criteria will be determined by the selected end use, risk assessment, current Saudi requirements, and laboratory validation. The complete protocol is in [Experimental validation](docs/validation.md).
-
-## Circular value, measured honestly
-
-<div align="center">
-  <img src="assets/diagrams/circular-value.svg" alt="Circular pathway from date-palm residues and ablution water to monitored non-potable reuse" width="100%">
-</div>
-
-MAWRID links two underused streams: lightly contaminated water and date-palm residues. The environmental claim remains conditional until the project measures feedstock preparation, pyrolysis or activation, transport, pumping, disinfectant use, backwash, regeneration, and end-of-life handling.
-
-The primary impact metric is:
-
-```text
-Net water offset
-= treated water actually delivered and used
-− potable make-up
-− treatment and backwash losses
-```
-
-## Pilot concept
-
-The preferred first deployment is a mosque or university building with a centralized ablution area, accessible source-separation plumbing, and measurable nearby non-potable demand.
-
-| Pilot element | Initial approach |
+| الوثيقة | ما ستجده فيها |
 |---|---|
-| Capacity | Bench system first; then a site-specific `1–5 m³/day` pilot |
-| End use | One approved low-exposure use selected after risk and regulatory review |
-| Comparison | Date-palm biochar, activated date-palm biochar, and commercial activated carbon |
-| Measurements | Flow, bed volumes, turbidity, pH, conductivity, pressure drop, disinfectant condition, energy, and laboratory water quality |
-| Decision | Advance only if treatment, safety, operability, and cost evidence meet predeclared criteria |
+| [خريطة مخرجات المعسكر](docs/judging-map.md) | التسعة مخرجات، حالة كل منها، والدليل المطلوب |
+| [سجل الأدلة](docs/evidence-register.md) | الفرق بين التصميم والمحاكاة والهدف والنتيجة |
+| [الهوية والمحتوى](docs/brand-and-content.md) | الاسم والصياغة والمصطلحات وطريقة عرض الادعاءات |
+| [التصميم المرئي الموحد](docs/visual-design.md) | ترتيب مكونات الوحدة وعلاقة المجسم بصورة الجامعة |
+| [مراجع التصميم](docs/design-references.md) | المصادر الرسمية والتقنيات المستخدمة ومنشأ الصور وتراخيص الخطوط |
+| [أبحاث النخيل](docs/palm-research.md) | ما تدعمه الدراسات وما يحتاج إثباتًا في مورد |
+| [دليل التطوير](docs/development.md) | تشغيل الواجهة واختبارها وبناؤها ومصدر ملفات GitHub Pages |
+| [تصميم النظام](docs/system-design.md) | المكونات والأجهزة وحالات التشغيل |
+| [الأساس العلمي](docs/scientific-basis.md) | دور المعالجة والامتزاز وحدود القياس |
+| [الابتكار والبدائل](docs/innovation.md) | فرضية التميز والمقارنة والأفكار السابقة |
+| [التحقق التجريبي](docs/validation.md) | بروتوكول المقارنة والاختبار ومعايير القبول المقترحة |
+| [المخاطر والحماية](docs/safety.md) | الحواجز ومسار التحويل والتخزين والفحوص |
+| [الأثر والتكلفة](docs/impact-and-economics.md) | الموازنة المائية وتكاليف التركيب والتشغيل |
+| [خريطة التطوير](docs/roadmap.md) | بوابات الانتقال من التعريف إلى النموذج والتطبيق |
+| [التحكم والتحليلات](docs/ai-and-iot-architecture.md) | الحساسات والبرمجيات وحدود سلطة الذكاء الاصطناعي |
+| [بطاقة البيانات والنموذج](docs/data-and-model-card.md) | حالة البيانات والتقييم والقيود |
+| [مطابقة الحساسات والمختبر](docs/sensor-and-lab-workflow.md) | المعايرة وتتبع العينات والمقارنة |
+| [سيناريوهات المحاكاة](docs/demo-scenarios.md) | السيناريو الطبيعي والتدهور والأعطال |
+| [البيانات](data/README.md) | ملفات توضيحية موسومة بالمحاكاة ومخططات البيانات |
+| [المراجع](references/README.md) | المصادر العلمية والرسمية؛ ليست نتائج تجارب مورد |
 
-## Documentation
+للاستشهاد بالمشروع، راجع [بيانات الاستشهاد](CITATION.cff). لا يتضمن هذا المستودع اعتمادًا لتركيب منظومة أو إعادة استخدام ماء؛ التطبيق يحتاج مراجعة مختصة وتحققًا مخبريًا وموافقات منطبقة.
 
-| Document | Purpose |
-|---|---|
-| [System design](docs/system-design.md) | Treatment train, instrumentation, operating states, and modular architecture |
-| [Scientific basis](docs/scientific-basis.md) | Fit-for-purpose treatment, biochar role, and measurement boundaries |
-| [Innovation and prior art](docs/innovation.md) | Defensible novelty, competing approaches, and claims we avoid |
-| [Experimental validation](docs/validation.md) | Test matrix, sampling, breakthrough testing, and acceptance logic |
-| [Safety and risk controls](docs/safety.md) | Hazards, barriers, fail-safe rules, and residuals handling |
-| [Impact and economics](docs/impact-and-economics.md) | Water balance, CAPEX/OPEX framework, and sustainability accounting |
-| [Roadmap](docs/roadmap.md) | Path from bench evidence to monitored deployment |
-| [AI and IoT architecture](docs/ai-and-iot-architecture.md) | Edge, data, analytics, safety, and communications boundaries |
-| [Data and model card](docs/data-and-model-card.md) | Intended model use, evidence status, evaluation, and limitations |
-| [Sensor and laboratory workflow](docs/sensor-and-lab-workflow.md) | Traceable reconciliation of online and laboratory measurements |
-| [Demo scenarios](docs/demo-scenarios.md) | Reproducible normal, degradation, and fail-safe demonstrations |
-| [References](references/README.md) | Curated official, scientific, and standards-based sources |
+## English
 
-## Evidence labels
+**MAWRID — Ablution water, a resource for irrigation.**
 
-Every technical statement and future dataset should use one of these labels:
+MAWRID is a concept for a university facility: collect source-separated ablution water, treat it for a defined landscape-irrigation use, protect the outlet with an independent rule-based controller, and record water actually used.
 
-| Label | Meaning |
-|---|---|
-| **LITERATURE** | Reported by an external source; not a MAWRID result |
-| **TARGET** | A predeclared prototype acceptance criterion |
-| **RESULT** | A MAWRID measurement linked to method and raw data |
-| **ILLUSTRATIVE** | An example used only to explain a calculation or interface |
-| **NOT TESTED** | An important claim awaiting evidence |
+The current repository contains a conceptual design and an educational digital experience. It contains no measured MAWRID treatment results, approved field pilot, confirmed partnership, or trained AI model. Demo inputs are simulated. The 3D view explains components and flow; it does not validate dimensions, treatment performance, or physical valve behaviour.
 
-## Team and track
+Date-palm biochar is a testable hypothesis. It must demonstrate value against a simpler treatment train and commercial activated carbon. Maintenance starts with transparent rules; predictive analytics comes later if representative data supports it. Laboratory verification and applicable approvals govern the intended water use.
 
-MAWRID is being developed for a water-innovation hackathon. Team names, roles, institutional affiliation, challenge track, demo video, and pitch deck will be added before submission.
-
-## Responsible use
-
-This repository documents a research and engineering concept. It is not construction guidance, a water-safety certification, or authorization to install a reuse system. Any deployment requires qualified engineering review, site-specific risk assessment, laboratory validation, current regulatory approval, and safe plumbing practices.
-
-## Citation
-
-If you reference this project, use the metadata in [`CITATION.cff`](CITATION.cff).
-
----
-
-<p align="center">
-  <strong>MAWRID</strong><br>
-  Give every drop a second purpose.
-</p>
+Start with the [project brief](docs/project-brief.md), [nine-deliverable map](docs/judging-map.md), [evidence register](docs/evidence-register.md), and [technical references](references/README.md). For the digital experience, see the [design sources and asset provenance](docs/design-references.md) and [development guide](docs/development.md).

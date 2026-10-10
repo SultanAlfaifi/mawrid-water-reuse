@@ -1,0 +1,2 @@
+# Keep generated vendor shader strings intact; their whitespace is intentional.
+assets/app/** -whitespace linguist-generated=true

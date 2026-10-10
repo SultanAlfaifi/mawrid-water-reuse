@@ -1,0 +1,42 @@
+{
+  "asset": "campus-testing",
+  "kind": "AI-generated conceptual illustration",
+  "tool": "image_gen.imagegen (built-in)",
+  "generatedOn": "2026-10-10",
+  "reference": "assets/images/campus-concept.png",
+  "referenceUse": "Campus style and conceptual product appearance only; not an engineering-validated design",
+  "sourceGeneratedFile": "exec-8e37e93f-54da-48f5-ae27-8e2ae0987b13.png",
+  "requestedDimensions": {
+    "width": 1536,
+    "height": 864
+  },
+  "actualDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "original": {
+    "path": "assets/images/campus-testing.png",
+    "format": "PNG",
+    "bytes": 2022031,
+    "sha256": "66d5fc70dea849f0d9485022aae3ec22704f6d3e0313e010a1eb40f6b554948e"
+  },
+  "web": {
+    "path": "assets/images/campus-testing.webp",
+    "format": "WebP",
+    "quality": 87,
+    "method": 6,
+    "bytes": 141482,
+    "sha256": "33df79d0daa6b2f949bcaa2f61f36af9c91bd275dd2ec938284f11d9cb60b991"
+  },
+  "postProcessing": "WebP encoding only; no cropping, resizing, retouching or compositing",
+  "doesNotProve": [
+    "Executed installation",
+    "Existing physical prototype",
+    "Measured water-treatment performance",
+    "Certified or approved reuse safety"
+  ],
+  "caption": {
+    "ar": "تصور بصري، ليس صورة تطبيق منفذ أو نتيجة اختبار",
+    "en": "Concept illustration, not an implemented installation or a test result"
+  }
+}

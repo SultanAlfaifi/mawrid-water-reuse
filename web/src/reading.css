@@ -1,0 +1,102 @@
+/* The overview carries the short story; expandable sections hold the detail. */
+:root { --muted:#4d6156; }
+body { font-size:18px; }
+.site-header nav, html[lang=en] .site-header nav { font-size:16px; }
+.hero { padding-block:45px 55px; }
+.hero-lead, html[lang=en] .hero-lead { font-size:20px; line-height:1.85; max-width:460px; }
+.hero-actions .button, .hero-actions .text-button, html[lang=en] .hero-actions .text-button { font-size:16px; }
+.eyebrow { font-size:15px; }
+.lesson { margin-top:30px; }
+.lesson-heading { font-size:14px; }
+.lesson-category { display:none; }
+.lesson h2, html[lang=en] .lesson h2 { font-size:26px; }
+#stage-description { font-size:18px; line-height:1.9; }
+.stage-details { margin-top:16px; font-size:16px; }
+.stage-details summary { cursor:pointer; color:var(--green); }
+.input-output span:not(.connection-arrow) { font-size:14px; }
+.input-output strong { font-size:16px; }
+.stage-evidence { font-size:15px; }
+.lesson-doc { font-size:15px; margin-top:8px; }
+.product-caption .mono, .drag-hint, .journey-position { display:none; }
+.product-caption { padding:18px 22px 0; }
+.render-tag { font-size:14px; }
+.model-stage { height:330px; }
+.tool-button { font-size:15px; min-height:42px; }
+.stage-tabs { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.stage-tab, html[lang=en] .stage-tab { font-size:16px; min-height:46px; flex-direction:row; }
+.stage-tab .mono { display:none; }
+.journey-footer { justify-content:flex-end; padding-block:12px 0; }
+.step-button { width:34px; height:34px; }
+.model-note { font-size:13px; padding-top:12px; }
+.purpose .eyebrow { display:none; }
+.purpose-copy>p:first-child { font-size:20px; }
+.scope-line span { font-size:14px; }
+.scope-line strong { font-size:16px; }
+.quiet-note { font-size:15px!important; }
+.campus-figure figcaption { font-size:14px; }
+.section-intro { font-size:18px; line-height:1.9; max-width:400px; }
+.section-space { padding-block:68px; }
+.scenario-tab { font-size:16px; padding:10px 16px; }
+.condition, .decision-result>p { font-size:18px; }
+.condition-status, .decision-label, .decision-route { font-size:15px; }
+.decision-main h3, html[lang=en] .decision-main h3 { font-size:26px; }
+.logic-footnote { font-size:15px; }
+.logic-footnote p, .logic-footnote .text-button { font-size:15px; }
+.logic-footnote .evidence-label { display:none; }
+.evidence-row { grid-template-columns:1fr 1.4fr .85fr 30px; }
+.evidence-row h3 { font-size:20px; }
+.evidence-row p { font-size:17px; }
+.evidence-status { font-size:15px; }
+.evidence-row .mono { display:none; }
+.deliverables-section .section-intro { display:none; }
+.camp-pack>summary { cursor:pointer; border-block:1px solid var(--line); padding:22px 0; font-size:20px; color:var(--forest); }
+.deliverable h3 { font-size:19px; }
+.deliverable-body p { font-size:17px; }
+.detail-label, .deliverable-body .text-button { font-size:16px; }
+.plan-link { display:flex; align-items:center; justify-content:space-between; gap:24px; padding-top:25px; font-size:17px; }
+.plan-link .text-button { font-size:17px; }
+.closing { padding-block:55px 65px; }
+.closing h2 { font-size:36px; }
+.site-footer { font-size:14px; }
+.site-footer .text-button { font-size:15px; }
+.document-body { font-size:17px; }
+.document-body table { font-size:15px; }
+.document-footer { font-size:14px; }
+@media(min-width:1400px) { .stage-tabs{grid-template-columns:repeat(6,minmax(0,1fr))} .model-stage{height:400px} }
+@media(max-width:900px) {
+  .hero { grid-template-columns:1fr; }
+  .hero-copy { display:contents; }
+  .hero-copy>.eyebrow{order:0;align-self:start;margin:0}
+  .hero-copy>h1{order:1}
+  .hero-lead{order:2;margin:0;max-width:600px}
+  .hero-actions{order:3;margin:0}
+  .hero-product{order:4;position:relative;top:auto;width:100%}
+  .lesson{order:5;margin:0}
+  .hero-actions .text-button{display:inline-flex}
+  .evidence-row{grid-template-columns:1fr 1.2fr .85fr 30px}
+  .evidence-status{grid-column:auto;grid-row:auto}
+  .evidence-link{grid-column:auto;grid-row:auto}
+}
+@media(max-width:680px) {
+  .hero { gap:24px; }
+  .hero-lead, html[lang=en] .hero-lead { font-size:19px; margin-top:0; }
+  .hero-actions .button, .hero-actions .text-button, html[lang=en] .hero-actions .text-button { font-size:15px; }
+  #stage-description{font-size:18px}
+  .tool-button{font-size:14px;padding-inline:8px}
+  .stage-tab, html[lang=en] .stage-tab{font-size:15px}
+  .model-stage{height:300px}
+  .section-title, html[lang=en] .section-title{font-size:30px}
+  .purpose-copy>p:first-child{font-size:19px}
+  .scope-line strong{font-size:16px}
+  .evidence-row{grid-template-columns:1fr auto;gap:10px}
+  .evidence-row>div{grid-column:1}
+  .evidence-row p{grid-column:1;padding-inline-start:0;font-size:17px}
+  .evidence-status{grid-column:1;margin-inline-start:0;font-size:15px}
+  .evidence-link{grid-column:2;grid-row:1}
+  .decision-main h3, html[lang=en] .decision-main h3{font-size:25px}
+  .logic-footnote p{flex-basis:100%;font-size:15px}
+  .deliverable h3{font-size:17px}
+  .plan-link{align-items:flex-start;flex-direction:column;gap:10px}
+  .site-footer>span{font-size:14px}
+  .document-body{font-size:16px}
+}

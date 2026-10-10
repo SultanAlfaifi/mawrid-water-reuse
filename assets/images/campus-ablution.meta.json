@@ -1,0 +1,42 @@
+{
+  "asset": "campus-ablution",
+  "kind": "AI-generated conceptual illustration",
+  "tool": "image_gen.imagegen (built-in)",
+  "generatedOn": "2026-10-10",
+  "reference": "assets/images/campus-concept.png",
+  "referenceUse": "Campus style and conceptual product appearance only; not an engineering-validated design",
+  "sourceGeneratedFile": "exec-aee2a3ba-203f-4164-9450-7d9f28b6b307.png",
+  "requestedDimensions": {
+    "width": 1536,
+    "height": 864
+  },
+  "actualDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "original": {
+    "path": "assets/images/campus-ablution.png",
+    "format": "PNG",
+    "bytes": 2450713,
+    "sha256": "189852746bac950584d205af32ded079af362f025ec3785d6fddbb6dd5f132d8"
+  },
+  "web": {
+    "path": "assets/images/campus-ablution.webp",
+    "format": "WebP",
+    "quality": 87,
+    "method": 6,
+    "bytes": 219138,
+    "sha256": "9d299ed5115c0a44dc1faa8e85aa13019f94b4de164a0542aa627684834c776e"
+  },
+  "postProcessing": "WebP encoding only; no cropping, resizing, retouching or compositing",
+  "doesNotProve": [
+    "Executed installation",
+    "Existing physical prototype",
+    "Measured water-treatment performance",
+    "Certified or approved reuse safety"
+  ],
+  "caption": {
+    "ar": "تصور بصري، ليس صورة تطبيق منفذ أو نتيجة اختبار",
+    "en": "Concept illustration, not an implemented installation or a test result"
+  }
+}

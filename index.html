@@ -1,100 +1,89 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MAWRID is an AI-assisted, IoT-enabled concept for safe decentralized reuse of source-separated ablution greywater.">
-  <meta name="theme-color" content="#071d2b">
-  <link rel="icon" href="assets/brand/mawrid-logo.svg" type="image/svg+xml">
-  <title>MAWRID | AI-Assisted Water Reuse</title>
-  <style>
-    :root { color-scheme: dark; --ink:#071d2b; --panel:#0d3440; --accent:#45d8c8; --soft:#a6ebe2; --white:#f4fbfa; --muted:#aec9ca; --line:rgba(147,219,211,.2); --danger:#ff9c87; --radius:18px; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; color:var(--white); background:radial-gradient(circle at 86% 9%,rgba(69,216,200,.13),transparent 26rem),linear-gradient(rgba(118,203,195,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(118,203,195,.035) 1px,transparent 1px),var(--ink); background-size:auto,52px 52px,52px 52px,auto; font-family:"Aptos","Segoe UI",ui-sans-serif,system-ui,sans-serif; line-height:1.6; }
-    a { color:inherit; }
-    .wrap { width:min(1160px,calc(100% - 40px)); margin-inline:auto; }
-    nav { display:flex; align-items:center; justify-content:space-between; min-height:76px; border-bottom:1px solid var(--line); }
-    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
-    .brand img { width:44px; height:44px; object-fit:cover; object-position:left; border-radius:12px; }
-    .brand strong { letter-spacing:.16em; }
-    .nav { display:flex; gap:24px; }
-    .nav a { color:var(--muted); text-decoration:none; font-weight:700; }
-    .nav a:hover,.nav a:focus-visible { color:var(--soft); }
-    .hero { min-height:calc(100dvh - 76px); display:grid; grid-template-columns:1.08fr .92fr; align-items:center; gap:64px; padding:64px 0 80px; }
-    .eyebrow { color:var(--accent); font-size:.78rem; font-weight:850; letter-spacing:.17em; text-transform:uppercase; }
-    h1 { margin:16px 0 22px; max-width:720px; font-size:clamp(3rem,6.5vw,6rem); line-height:.98; letter-spacing:-.06em; }
-    h1 span { color:var(--accent); }
-    .lead { max-width:650px; color:#c4d9d9; font-size:clamp(1.05rem,2vw,1.25rem); }
-    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
-    .button { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 21px; border:1px solid var(--line); border-radius:999px; color:var(--white); background:transparent; text-decoration:none; font:inherit; font-weight:780; cursor:pointer; transition:transform .2s ease,border-color .2s ease; }
-    .button:hover,.button:focus-visible { transform:translateY(-2px); border-color:var(--accent); outline:none; }
-    .button:active { transform:translateY(1px); }
-    .button.primary { color:#06252b; background:var(--accent); border-color:var(--accent); }
-    .visual,.panel { border:1px solid var(--line); border-radius:var(--radius); background:rgba(13,52,64,.65); }
-    .visual { padding:26px; box-shadow:0 30px 90px rgba(0,18,24,.34); }
-    .visual img { display:block; width:100%; height:auto; }
-    .note { margin:18px 0 0; color:var(--muted); font-size:.86rem; }
-    section { padding:86px 0; }
-    .head { max-width:760px; margin-bottom:36px; }
-    h2 { margin:10px 0 14px; font-size:clamp(2.1rem,5vw,3.7rem); line-height:1.05; letter-spacing:-.045em; }
-    .head p,.panel p { color:var(--muted); }
-    .principles { display:grid; grid-template-columns:1.35fr .65fr; gap:18px; }
-    .panel { padding:30px; }
-    .panel:first-child { grid-row:span 2; display:flex; flex-direction:column; justify-content:space-between; min-height:330px; }
-    .panel h3 { margin:0 0 12px; }
-    .statement { color:var(--soft)!important; font-size:clamp(1.45rem,3vw,2.25rem); font-weight:780; line-height:1.18; }
-    .flow { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; }
-    .step { min-height:142px; padding:20px 16px; border:1px solid var(--line); border-radius:var(--radius); background:#0c303a; }
-    .step b { display:block; margin-bottom:8px; color:var(--soft); }
-    .step small { color:var(--muted); }
-    .authority { display:grid; grid-template-columns:.86fr 1.14fr; gap:34px; align-items:start; }
-    .authority header { position:sticky; top:28px; }
-    .authority ul { margin:0; padding:0; list-style:none; }
-    .authority li { display:grid; grid-template-columns:1fr auto; gap:24px; padding:20px 0; border-bottom:1px solid var(--line); }
-    .tag { color:var(--soft); font-size:.82rem; font-weight:820; text-align:right; }
-    .demo { padding:28px; }
-    .controls { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
-    .scenario { min-height:42px; padding:0 16px; border:1px solid var(--line); border-radius:999px; color:var(--white); background:transparent; font:inherit; font-weight:750; cursor:pointer; }
-    .scenario[aria-pressed="true"] { color:#06252b; background:var(--accent); border-color:var(--accent); }
-    .readout { display:grid; grid-template-columns:1.1fr .9fr; gap:26px; }
-    .result { padding:24px; border-radius:var(--radius); background:rgba(7,29,43,.7); }
-    .state { margin:6px 0 12px; color:var(--soft); font-size:clamp(1.8rem,5vw,3.1rem); line-height:1; }
-    .state.fail { color:var(--danger); }
-    .metrics { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-    .metric { padding:17px; border:1px solid var(--line); border-radius:var(--radius); }
-    .metric small { color:var(--muted); }
-    .metric b { display:block; margin-top:4px; }
-    .docs { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
-    .doc { padding:22px; border:1px solid var(--line); border-radius:var(--radius); text-decoration:none; background:rgba(13,52,64,.45); }
-    .doc:hover,.doc:focus-visible { border-color:var(--accent); outline:none; }
-    .doc b,.doc span { display:block; }
-    .doc span { color:var(--muted); font-size:.92rem; }
-    footer { padding:28px 0 44px; border-top:1px solid var(--line); color:var(--muted); }
-    footer .wrap { display:flex; justify-content:space-between; gap:20px; }
-    @media(max-width:900px){ .hero,.authority,.readout{grid-template-columns:1fr}.authority header{position:static}.flow{grid-template-columns:repeat(2,1fr)} }
-    @media(max-width:620px){ .wrap{width:min(100% - 28px,1160px)}.nav .page{display:none}section{padding:68px 0}.principles,.flow,.docs,.metrics{grid-template-columns:1fr}.panel:first-child{grid-row:auto;min-height:auto}.authority li{grid-template-columns:1fr;gap:6px}.tag{text-align:left}footer .wrap{flex-direction:column} }
-    @media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important} }
-  </style>
-</head>
-<body>
-  <header class="wrap"><nav aria-label="Primary navigation"><a class="brand" href="#top"><img src="assets/brand/mawrid-logo.svg" alt=""><strong>MAWRID</strong></a><div class="nav"><a class="page" href="#intelligence">AI and IoT</a><a href="https://github.com/SultanAlfaifi/mawrid-water-reuse">GitHub</a></div></nav></header>
-  <main id="top">
-    <div class="hero wrap">
-      <div><div class="eyebrow">AI-assisted decentralized water reuse</div><h1>Measure the system. <span>Protect the outlet.</span></h1><p class="lead">MAWRID treats source-separated ablution greywater and uses explainable monitoring to detect deterioration before non-potable reuse.</p><div class="actions"><a class="button primary" href="#demo">Run the safety demo</a><a class="button" href="README.md">Read the evidence</a></div></div>
-      <div class="visual"><img src="assets/diagrams/treatment-train.svg" alt="MAWRID treatment train from separated ablution water to controlled non-potable reuse"><p class="note">Concept-stage architecture. Performance targets are not measured results.</p></div>
-    </div>
-    <section class="wrap"><div class="head"><div class="eyebrow">The operating principle</div><h2>A digital layer with a hard safety boundary.</h2><p>The system combines physical treatment, IoT observations, decision support, and local fail-safe control.</p></div><div class="principles"><article class="panel"><div><h3>AI supports maintenance</h3><p>Analytics can flag abnormal behaviour, possible sensor drift, and emerging filter deterioration. Every alert must show its contributing signals.</p></div><p class="statement">AI predicts and explains. Validated rules protect the reuse outlet.</p></article><article class="panel"><h3>Laboratory evidence remains essential</h3><p>Online measurements support operation. They do not replace validated chemical and microbial testing.</p></article><article class="panel"><h3>Unknown means non-reuse</h3><p>A missing critical signal, failed process condition, or power loss closes the valve locally.</p></article></div></section>
-    <section class="wrap" id="system"><div class="head"><div class="eyebrow">Treatment and verification</div><h2>One traceable path from source to decision.</h2></div><div class="flow"><div class="step"><b>Separate</b><small>Defined ablution drainage</small></div><div class="step"><b>Filter</b><small>Granular filtration</small></div><div class="step"><b>Adsorb</b><small>Date-palm biochar</small></div><div class="step"><b>Disinfect</b><small>Validated process condition</small></div><div class="step"><b>Observe</b><small>IoT and data checks</small></div><div class="step"><b>Release or divert</b><small>Fail-safe control</small></div></div></section>
-    <section class="wrap" id="intelligence"><div class="authority"><header><div class="eyebrow">Decision authority</div><h2>Useful intelligence, limited authority.</h2><p>Each decision belongs to the component that can support it with the right evidence.</p></header><ul><li><strong>Detect unusual behaviour</strong><span class="tag">Analytics or validated AI</span></li><li><strong>Estimate filter condition</strong><span class="tag">Rules first, AI after data</span></li><li><strong>Recommend inspection</strong><span class="tag">Decision support</span></li><li><strong>Evaluate release limits</strong><span class="tag">Safety controller</span></li><li><strong>Close the reuse valve</strong><span class="tag">Independent local control</span></li><li><strong>Demonstrate water quality</strong><span class="tag">Validated laboratory methods</span></li></ul></div></section>
-    <section class="wrap" id="demo"><div class="head"><div class="eyebrow">Interactive control demonstration</div><h2>Change the condition. Inspect the response.</h2><p>Simulated values demonstrate system logic. They are not treatment-performance evidence.</p></div><div class="panel demo"><div class="controls" role="group" aria-label="Select a simulated scenario"><button class="scenario" data-scenario="normal" aria-pressed="true">Normal operation</button><button class="scenario" data-scenario="clogging" aria-pressed="false">Filter degradation</button><button class="scenario" data-scenario="sensor" aria-pressed="false">Sensor loss</button><button class="scenario" data-scenario="turbidity" aria-pressed="false">Turbidity event</button></div><div class="readout" aria-live="polite"><div class="result"><span class="eyebrow">Simulated scenario</span><h3 class="state" id="state">Reuse available</h3><p id="explanation">All demonstration release conditions are present. No anomaly is active.</p><p><strong>AI advice:</strong> <span id="advice">Continue monitoring.</span></p></div><div class="metrics"><div class="metric"><small>Valve</small><b id="valve">OPEN</b></div><div class="metric"><small>Controller</small><b id="controller">REUSE_READY</b></div><div class="metric"><small>Outlet turbidity</small><b id="turbidity">1.4 NTU</b></div><div class="metric"><small>Pressure difference</small><b id="pressure">1.5 kPa</b></div></div></div></div></section>
-    <section class="wrap"><div class="head"><div class="eyebrow">Inspect the design</div><h2>Claims, data, and safety remain auditable.</h2></div><div class="docs"><a class="doc" href="docs/ai-and-iot-architecture.md"><b>AI and IoT architecture</b><span>Edge, analytics, safety, and communications</span></a><a class="doc" href="docs/data-and-model-card.md"><b>Data and model card</b><span>Intended use, evaluation, maturity, and limitations</span></a><a class="doc" href="docs/sensor-and-lab-workflow.md"><b>Sensor and laboratory workflow</b><span>Traceable reconciliation without silent auto-calibration</span></a><a class="doc" href="docs/demo-scenarios.md"><b>Demo scenarios</b><span>Reproducible normal, degradation, and failure tests</span></a></div></section>
-  </main>
-  <footer><div class="wrap"><span>MAWRID. Give every drop a second purpose.</span><span>Concept-stage research and engineering project</span></div></footer>
-  <script>
-    const scenarios={normal:{state:"Reuse available",explanation:"All demonstration release conditions are present. No anomaly is active.",advice:"Continue monitoring.",valve:"OPEN",controller:"REUSE_READY",turbidity:"1.4 NTU",pressure:"1.5 kPa",fail:false},clogging:{state:"Maintenance review",explanation:"Pressure difference is rising while flow is declining. The condition suggests progressive hydraulic clogging.",advice:"Inspect or backwash the filter. Safety rules remain authoritative.",valve:"OPEN*",controller:"REUSE_READY*",turbidity:"1.8 NTU",pressure:"4.7 kPa",fail:false},sensor:{state:"Reuse blocked",explanation:"A critical turbidity signal is unavailable. The system cannot verify the process state.",advice:"Inspect the sensor and complete the approved verification procedure.",valve:"CLOSED",controller:"FAULT",turbidity:"NO DATA",pressure:"1.7 kPa",fail:true},turbidity:{state:"Water diverted",explanation:"Outlet turbidity exceeds the demonstration limit. Deterministic control closes the reuse path.",advice:"Inspect treatment integrity and collect a confirmatory sample.",valve:"CLOSED",controller:"DIVERT",turbidity:"6.3 NTU",pressure:"2.0 kPa",fail:true}};
-    const state=document.getElementById("state");
-    document.querySelectorAll(".scenario").forEach(button=>button.addEventListener("click",()=>{const selected=scenarios[button.dataset.scenario];document.querySelectorAll(".scenario").forEach(item=>item.setAttribute("aria-pressed",String(item===button)));state.textContent=selected.state;state.classList.toggle("fail",selected.fail);document.getElementById("explanation").textContent=selected.explanation;document.getElementById("advice").textContent=selected.advice;document.getElementById("valve").textContent=selected.valve;document.getElementById("controller").textContent=selected.controller;document.getElementById("turbidity").textContent=selected.turbidity;document.getElementById("pressure").textContent=selected.pressure;}));
-  </script>
-</body>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="مورد: مشروع لاستعادة مياه الوضوء المفصولة من المصدر لري المساحات الخضراء في الجامعات. اكتشف المراحل وخطة التحقق والأدلة المطلوبة.">
+    <meta name="theme-color" content="#e9f3ef">
+    <title>مورد — مياه الوضوء، مورد للري</title>
+    <script type="module" crossorigin src="./assets/app/index-BwrGyKdx.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/app/index-TjOxZZ0H.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+    <header class="site-header">
+      <a class="wordmark" href="#main" aria-label="مورد MAWRID">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5C19 13 10 21 10 30a14 14 0 0 0 28 0C38 21 29 13 24 5Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M11 29h12a7 7 0 0 1 7 7v6M38 27H27a7 7 0 0 1-7-7V11" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+        <span class="brand-ar">مورد</span><span class="brand-en">MAWRID</span>
+      </a>
+      <nav aria-label="التنقل الرئيسي" data-i18n-aria="navLabel">
+        <a href="#explore" data-i18n="navExplore">اكتشف الوحدة</a>
+        <a href="#logic" data-i18n="navLogic">جرّب القرار</a>
+        <a href="#evidence" data-i18n="navEvidence">الأدلة</a>
+        <a href="#deliverables" data-i18n="navDeliverables">مخرجات المعسكر</a>
+      </nav>
+      <div class="header-tools"><span class="project-status"><i></i><span data-i18n="designStage">مرحلة التصميم</span></span><button id="language" class="language-button" lang="en" aria-label="Switch to English">EN</button></div>
+    </header>
+    <main id="main">
+      <section class="hero wrap" id="explore" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-line"></span><span data-i18n="eyebrow">من مياه الوضوء إلى ري الجامعة</span></p>
+          <h1 id="hero-title"><span data-i18n="heroLine1">مياه الوضوء،</span><br><span class="serene" data-i18n="heroLine2">موردٌ للري.</span></h1>
+          <p class="hero-lead" data-i18n="heroLead">نجمع مياه الوضوء، نعالجها في الموقع، ونختبر استخدامها لري المساحات الخضراء.</p>
+          <div class="hero-actions"><button id="start-journey" class="button primary"><span data-i18n="startJourney">كيف يعمل مورد؟</span><span class="arrow">↗</span></button><button class="text-button" data-doc="project-brief"><span data-i18n="readBrief">تعريف المشروع</span><span class="arrow">↗</span></button></div>
+          <div class="lesson" id="lesson" aria-live="polite" aria-atomic="true">
+            <div class="lesson-heading"><span class="lesson-number mono" id="lesson-number">01 / 06</span><span class="lesson-category" data-i18n="layer">المرحلة</span></div>
+            <h2 id="stage-title">نجمع الماء</h2><p id="stage-description">نجمع مياه الوضوء من خط منفصل ونوازن تدفقها في خزان.</p>
+            <details class="stage-details"><summary data-i18n="stageDetails">تفاصيل المرحلة</summary><div class="input-output"><div><span data-i18n="input">ما الذي يدخل؟</span><strong id="stage-input">مياه وضوء من خط منفصل</strong></div><span class="connection-arrow" aria-hidden="true">→</span><div><span data-i18n="output">ما الذي يخرج؟</span><strong id="stage-output">تدفق منتظم إلى المرشح</strong></div></div><p class="stage-evidence"><span data-i18n="stageEvidence">الدليل المطلوب</span><span id="stage-evidence">مسح التوصيلات وقياس حجم المصدر وطلب الري.</span></p></details>
+            <button class="lesson-doc text-button" id="stage-doc"><span data-i18n="readTechnical">شرح فني</span><span class="arrow">↗</span></button>
+          </div>
+        </div>
+        <div class="hero-product">
+          <div class="product-caption"><span class="mono">MAWRID / CONCEPT UNIT</span><span class="render-tag" data-i18n="conceptModel">مجسم تصوري</span></div>
+          <div class="model-stage" id="model-container" role="img" aria-label="مجسم مفاهيمي لوحدة مورد، من التجميع إلى الترشيح والتطهير والتحكم" data-i18n-aria="modelLabel">
+            <div class="model-loading" id="model-loading"><span class="loading-drop"></span><span data-i18n="loadingModel">نجهّز رحلة الماء…</span></div>
+          </div>
+          <div class="model-toolbar">
+            <div class="view-actions"><button id="explode" class="tool-button" aria-pressed="false"><span class="tool-icon" aria-hidden="true">⊞</span><span data-i18n="explode">افتح الطبقات</span></button><button id="flow" class="tool-button" aria-pressed="true"><span class="tool-icon" aria-hidden="true">≈</span><span data-i18n="flow">مسار الماء</span></button><button id="reset-view" class="tool-button" data-i18n-aria="resetView" aria-label="إعادة زاوية العرض"><span aria-hidden="true">↶</span></button></div>
+            <span class="drag-hint" data-i18n="dragHint">اسحب للدوران · اختر جزءًا لتفهمه</span>
+          </div>
+          <div class="stage-tabs" id="stage-tabs" role="group" aria-label="مراحل المعالجة" data-i18n-aria="stagesLabel"></div>
+          <div class="journey-footer"><span class="journey-position"><i></i><span id="model-caption"></span></span><div class="step-arrows"><button id="previous" class="step-button" aria-label="المرحلة السابقة" data-i18n-aria="previous">←</button><button id="next" class="step-button" aria-label="المرحلة التالية" data-i18n-aria="next">→</button></div></div>
+          <p class="model-note" data-i18n="modelNote">تصميم مقترح، يحتاج اختبارًا هندسيًا ومخبريًا.</p>
+        </div>
+      </section>
+      <section id="palm-story"></section>
+      <section class="purpose section-space" id="purpose">
+        <div class="wrap purpose-grid">
+          <div><p class="eyebrow" data-i18n="purposeEyebrow">أين نبدأ؟</p><h2 class="section-title" data-i18n="purposeTitle">مصدر واحد.<br>واستخدام واضح.</h2></div>
+          <div class="purpose-copy"><p data-i18n="purposeText">مرفق وضوء في جامعة، ووحدة قريبة منه، ومساحة مزروعة تحتاج الري.</p><div class="scope-line"><div><span data-i18n="sourceLabel">المصدر الأول</span><strong data-i18n="sourceValue">مياه وضوء مفصولة</strong></div><div><span data-i18n="buyerLabel">العميل الأول</span><strong data-i18n="buyerValue">إدارة المرافق الجامعية</strong></div><div><span data-i18n="useLabel">الاستخدام المستهدف</span><strong data-i18n="useValue">ري المساحات الخضراء</strong></div></div><p class="quiet-note" data-i18n="pilotNote">الموقع والسعة والتكلفة تحددها الدراسة الميدانية.</p></div>
+        </div>
+        <div id="campus-gallery" class="wrap"></div>
+      </section>
+      <section class="logic-section section-space wrap" id="logic" aria-labelledby="logic-title">
+        <div class="section-top"><div><p class="eyebrow" data-i18n="logicEyebrow">جرّب القرار</p><h2 class="section-title" id="logic-title" data-i18n="logicTitle">هل يمر الماء إلى الري؟</h2></div><p class="section-intro" data-i18n="logicIntro">اختر حالة لترى قرار المتحكم.</p></div>
+        <div class="scenario-tabs" id="scenario-tabs" role="group" aria-label="حالات تجربة القرار" data-i18n-aria="scenarioLabel"></div>
+        <div class="decision-space">
+          <div class="condition-list" id="condition-list"></div>
+          <div class="decision-result" id="decision-result" aria-live="polite" aria-atomic="true"><span class="decision-label" data-i18n="controllerDecision">القرار</span><div class="decision-main"><span id="decision-icon" aria-hidden="true">↗</span><h3 id="decision-title"></h3></div><p id="decision-description"></p><div class="decision-route"><span class="route-label" data-i18n="valveLabel">صمام الري</span><strong id="valve-state"></strong><span class="route-line"></span><span id="route-state"></span></div></div>
+        </div>
+        <div class="logic-footnote"><span class="evidence-label" data-i18n="illustrative">تجربة توضيحية</span><p data-i18n="logicNote">تجربة رقمية للقرار. صلاحية الماء تتطلب تحاليل فعلية.</p><button class="text-button" data-doc="demo-scenarios" data-i18n="readProtocol">بروتوكول العرض</button></div>
+      </section>
+      <section class="evidence-section section-space" id="evidence" aria-labelledby="evidence-title">
+        <div class="wrap">
+          <div class="section-top"><div><p class="eyebrow" data-i18n="evidenceEyebrow">حالة المشروع</p><h2 class="section-title" id="evidence-title" data-i18n="evidenceTitle">أين وصل مورد؟</h2></div><p class="section-intro" data-i18n="evidenceIntro">ما يعمل الآن، وما يحتاج اختبارًا.</p></div>
+          <div class="evidence-table" id="evidence-table"></div>
+        </div>
+      </section>
+      <section class="deliverables-section section-space wrap" id="deliverables" aria-labelledby="deliverables-title">
+        <div class="section-top"><div><p class="eyebrow" data-i18n="deliverablesEyebrow">ملف المعسكر</p><h2 class="section-title" id="deliverables-title" data-i18n="deliverablesTitle">المخرجات والأدلة</h2></div><p class="section-intro" data-i18n="deliverablesIntro">التفاصيل مرتبة حسب المخرجات التسعة.</p></div>
+        <details class="camp-pack"><summary data-i18n="showDeliverables">عرض المخرجات التسعة</summary><div id="deliverables-list" class="deliverables-list"></div></details>
+        <div class="plan-link"><span data-i18n="planSummary">خطة تطوير مقترحة، خطوة بخطوة.</span><button class="text-button" data-doc="roadmap"><span data-i18n="readRoadmap">افتح خطة التطوير</span><span class="arrow">↗</span></button></div>
+      </section>
+      <section class="closing section-space wrap"><h2 data-i18n="closingTitle">اكتشف المشروع كاملًا.</h2><div class="closing-actions"><button class="button primary" data-doc="project-brief"><span data-i18n="readProject">تعريف المشروع</span><span class="arrow">↗</span></button><a class="text-button" href="https://github.com/SultanAlfaifi/mawrid-water-reuse" target="_blank" rel="noopener noreferrer"><span data-i18n="openRepository">المستودع على GitHub</span><span class="arrow">↗</span></a></div></section>
+    </main>
+    <footer class="site-footer wrap"><a class="wordmark" href="#main"><span class="brand-ar">مورد</span><span class="brand-en">MAWRID</span></a><span data-i18n="footerStatus">مورد · مرحلة التصميم والاختبار المخطط</span><div><button class="text-button" data-doc="references" data-i18n="references">المراجع</button><button class="text-button" data-doc="evidence-register" data-i18n="evidenceRegister">سجل الأدلة</button></div></footer>
+    <dialog id="document-dialog" class="document-dialog" aria-labelledby="document-title"><div class="document-bar"><h2 id="document-title"></h2><button id="close-document" class="tool-button" aria-label="إغلاق المستند" data-i18n-aria="closeDocument">✕</button></div><div id="document-body" class="document-body"></div><div class="document-footer"><span data-i18n="documentLanguage">الوثائق التقنية التفصيلية متاحة بلغتها الأصلية.</span><a id="document-source" target="_blank" rel="noopener noreferrer" data-i18n="sourceFile">تنزيل نص المستند</a></div></dialog>
+    <noscript><main><h1>مورد</h1><p>نطوّر وحدة تستعيد مياه الوضوء المفصولة من المصدر لري المساحات الخضراء في الجامعات. المشروع في مرحلة التصميم والتحقق المخطط.</p><a href="https://github.com/SultanAlfaifi/mawrid-water-reuse">اقرأ المشروع والأدلة في المستودع</a></main></noscript>
+  </body>
 </html>
