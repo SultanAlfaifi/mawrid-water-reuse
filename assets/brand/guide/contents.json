@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "title": "هوية مورد",
+    "en": "MAWRID identity",
+    "file": "pages/01.svg"
+  },
+  {
+    "id": 2,
+    "title": "فكرة واحدة. حضور واضح.",
+    "en": "The brand idea",
+    "file": "pages/02.svg"
+  },
+  {
+    "id": 3,
+    "title": "الحرم المشرق.",
+    "en": "A bright campus world",
+    "file": "pages/03.svg"
+  },
+  {
+    "id": 4,
+    "title": "الشعار الأساسي.",
+    "en": "Primary signature",
+    "file": "pages/04.svg"
+  },
+  {
+    "id": 5,
+    "title": "عائلة الشعار.",
+    "en": "One mark, several lockups",
+    "file": "pages/05.svg"
+  },
+  {
+    "id": 6,
+    "title": "مساحة تحفظ وضوحه.",
+    "en": "Clear space and minimum size",
+    "file": "pages/06.svg"
+  },
+  {
+    "id": 7,
+    "title": "لون واحد. خلفية هادئة.",
+    "en": "Colorways and correct use",
+    "file": "pages/07.svg"
+  },
+  {
+    "id": 8,
+    "title": "ألوان مورد.",
+    "en": "The palette",
+    "file": "pages/08.svg"
+  },
+  {
+    "id": 9,
+    "title": "الألوان تخدم القراءة.",
+    "en": "Contrast and color roles",
+    "file": "pages/09.svg"
+  },
+  {
+    "id": 10,
+    "title": "خط واضح بلغتين.",
+    "en": "Typography",
+    "file": "pages/10.svg"
+  },
+  {
+    "id": 11,
+    "title": "عنوان واحد. فكرة واحدة.",
+    "en": "Type scale and composition",
+    "file": "pages/11.svg"
+  },
+  {
+    "id": 12,
+    "title": "مسار الماء. قوس الضوء.",
+    "en": "Graphic language",
+    "file": "pages/12.svg"
+  },
+  {
+    "id": 13,
+    "title": "أيقونات بنفس النَفَس.",
+    "en": "A consistent icon family",
+    "file": "pages/13.svg"
+  },
+  {
+    "id": 14,
+    "title": "كيف تبدو صور مورد؟",
+    "en": "Photography and concept imagery",
+    "file": "pages/14.svg"
+  },
+  {
+    "id": 15,
+    "title": "خمس لقطات. رحلة واحدة.",
+    "en": "A coherent image sequence",
+    "file": "pages/15.svg"
+  },
+  {
+    "id": 16,
+    "title": "حركة تشرح العلاقة.",
+    "en": "Motion and digital behavior",
+    "file": "pages/16.svg"
+  },
+  {
+    "id": 17,
+    "title": "صوت مورد.",
+    "en": "Brand voice",
+    "file": "pages/17.svg"
+  },
+  {
+    "id": 18,
+    "title": "هوية تعمل على الورق.",
+    "en": "Stationery and reports",
+    "file": "pages/18.svg"
+  },
+  {
+    "id": 19,
+    "title": "حضور رقمي موحّد.",
+    "en": "Social and research templates",
+    "file": "pages/19.svg"
+  },
+  {
+    "id": 20,
+    "title": "في المعرض والمختبر.",
+    "en": "Exhibition and working labels",
+    "file": "pages/20.svg"
+  },
+  {
+    "id": 21,
+    "title": "العرض يحكي القصة نفسها.",
+    "en": "Presentation system",
+    "file": "pages/21.svg"
+  },
+  {
+    "id": 22,
+    "title": "الحزمة الجاهزة للاستخدام.",
+    "en": "Files and handoff",
+    "file": "pages/22.svg"
+  },
+  {
+    "id": 23,
+    "title": "مورد. بروح الحرم المشرق.",
+    "en": "MAWRID / bright campus",
+    "file": "pages/23.svg"
+  }
+]

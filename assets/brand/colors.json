@@ -1,0 +1,167 @@
+{
+  "name": "MAWRID / مورد",
+  "version": "1.0",
+  "colors": {
+    "forest": "#123e35",
+    "green": "#39786a",
+    "paper": "#f7faf6",
+    "mint": "#e9f3ef",
+    "sage": "#b4cfba",
+    "ink": "#243d38",
+    "sand": "#d9ccba",
+    "muted": "#4d6156",
+    "line": "#d1e0d5",
+    "white": "#ffffff"
+  },
+  "specifications": {
+    "forest": {
+      "hex": "#123e35",
+      "rgb": [
+        18,
+        62,
+        53
+      ],
+      "cmykApprox": [
+        71,
+        0,
+        15,
+        76
+      ]
+    },
+    "green": {
+      "hex": "#39786a",
+      "rgb": [
+        57,
+        120,
+        106
+      ],
+      "cmykApprox": [
+        53,
+        0,
+        12,
+        53
+      ]
+    },
+    "paper": {
+      "hex": "#f7faf6",
+      "rgb": [
+        247,
+        250,
+        246
+      ],
+      "cmykApprox": [
+        1,
+        0,
+        2,
+        2
+      ]
+    },
+    "mint": {
+      "hex": "#e9f3ef",
+      "rgb": [
+        233,
+        243,
+        239
+      ],
+      "cmykApprox": [
+        4,
+        0,
+        2,
+        5
+      ]
+    },
+    "sage": {
+      "hex": "#b4cfba",
+      "rgb": [
+        180,
+        207,
+        186
+      ],
+      "cmykApprox": [
+        13,
+        0,
+        10,
+        19
+      ]
+    },
+    "ink": {
+      "hex": "#243d38",
+      "rgb": [
+        36,
+        61,
+        56
+      ],
+      "cmykApprox": [
+        41,
+        0,
+        8,
+        76
+      ]
+    },
+    "sand": {
+      "hex": "#d9ccba",
+      "rgb": [
+        217,
+        204,
+        186
+      ],
+      "cmykApprox": [
+        0,
+        6,
+        14,
+        15
+      ]
+    },
+    "muted": {
+      "hex": "#4d6156",
+      "rgb": [
+        77,
+        97,
+        86
+      ],
+      "cmykApprox": [
+        21,
+        0,
+        11,
+        62
+      ]
+    },
+    "line": {
+      "hex": "#d1e0d5",
+      "rgb": [
+        209,
+        224,
+        213
+      ],
+      "cmykApprox": [
+        7,
+        0,
+        5,
+        12
+      ]
+    },
+    "white": {
+      "hex": "#ffffff",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "cmykApprox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "print": "CMYK values are mathematical approximations; production conversion uses the printer profile.",
+  "type": {
+    "arabic": "IBM Plex Sans Arabic",
+    "english": "Manrope"
+  },
+  "tagline": {
+    "ar": "مياه الوضوء، موردٌ للري.",
+    "en": "Ablution water, a resource for irrigation."
+  }
+}

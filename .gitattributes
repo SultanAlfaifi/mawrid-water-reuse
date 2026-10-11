@@ -1,2 +1,10 @@
 # Keep generated vendor shader strings intact; their whitespace is intentional.
 assets/app/** -whitespace linguist-generated=true
+# Generated documents may contain only ASCII; keep byte offsets and CRCs intact.
+*.pdf binary
+*.pptx binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.ttf binary

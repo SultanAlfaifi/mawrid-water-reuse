@@ -1,0 +1,1033 @@
+{
+  "name": "MAWRID identity kit",
+  "version": "1.0",
+  "entry": "assets/brand/guide/index.html",
+  "files_count": 205,
+  "files": [
+    {
+      "path": "DESIGN.md",
+      "bytes": 3478,
+      "sha256": "21d9096f07b15342f15ce25e9fcae67176d96551b9025a0224bd49c0939334ae"
+    },
+    {
+      "path": "assets/brand/README.md",
+      "bytes": 4675,
+      "sha256": "ed0a6e208cfee66c49a4b2f4416cf2036c6cd1564b5d70ce3be271746c8d3e53"
+    },
+    {
+      "path": "assets/brand/colors.json",
+      "bytes": 2465,
+      "sha256": "3265d130a969030d2b2698219efe8144468ead934ed1a489a8ffb73e399c1908"
+    },
+    {
+      "path": "assets/brand/guide/contents.json",
+      "bytes": 3104,
+      "sha256": "9880d20ca4829601e3051e6d6a1e3b84c1da3fd4fa4a33f8942c7c3453e1670f"
+    },
+    {
+      "path": "assets/brand/guide/index.html",
+      "bytes": 9860,
+      "sha256": "6ac84187194d44a24fb6d61ed2d8ef60e8aefd5b2a1153792211a01d86bfe876"
+    },
+    {
+      "path": "assets/brand/guide/pages/01.svg",
+      "bytes": 380572,
+      "sha256": "f8e35c5d94e10d8b660c8807b812df4b2ef78e8e02047635f7cd29d7dfbeeae9"
+    },
+    {
+      "path": "assets/brand/guide/pages/02.svg",
+      "bytes": 205440,
+      "sha256": "00c33262de18b617f8518cf7bbfdc94a9cab14844b43da6f7cc3537e9f53f519"
+    },
+    {
+      "path": "assets/brand/guide/pages/03.svg",
+      "bytes": 439124,
+      "sha256": "546a0898a71b40198d542f75499085123615419b8b4345c33a56531ba751724f"
+    },
+    {
+      "path": "assets/brand/guide/pages/04.svg",
+      "bytes": 129624,
+      "sha256": "3ed0eadce74a97f2e49e30e5c08f9b0593f8f83fad254ade6199ca5364ca5cb4"
+    },
+    {
+      "path": "assets/brand/guide/pages/05.svg",
+      "bytes": 137143,
+      "sha256": "d1e3338272d006eb17aef074475c2aa953e02e48c6526a8537e0cf6a05c4af04"
+    },
+    {
+      "path": "assets/brand/guide/pages/06.svg",
+      "bytes": 159820,
+      "sha256": "87e5fea9cbdc355613a54c1b970aeb6b784171dc32cc905e2b192c6994b1233a"
+    },
+    {
+      "path": "assets/brand/guide/pages/07.svg",
+      "bytes": 166898,
+      "sha256": "564215b187d2822d1121ca0551a53477fc703a03520b673d494f790056875cdd"
+    },
+    {
+      "path": "assets/brand/guide/pages/08.svg",
+      "bytes": 178734,
+      "sha256": "c270adbddd2e6e18e966a99a9f9d7c568e1db2b5b824767c60fbf9e00a1b9138"
+    },
+    {
+      "path": "assets/brand/guide/pages/09.svg",
+      "bytes": 167360,
+      "sha256": "963132548c2346df37ab387e7deed582ac401d713008496afbe7e8ece2ca126a"
+    },
+    {
+      "path": "assets/brand/guide/pages/10.svg",
+      "bytes": 112016,
+      "sha256": "b3d70e39f2a3becf360b77eb87c560c169bff4da69f8b9b9a2d7370dc74afe6f"
+    },
+    {
+      "path": "assets/brand/guide/pages/11.svg",
+      "bytes": 140417,
+      "sha256": "6f23c80f8185930d3803ee0be9b011a60b7bb1702a0f55fc63990199c8318071"
+    },
+    {
+      "path": "assets/brand/guide/pages/12.svg",
+      "bytes": 62292,
+      "sha256": "42fb63321340b9294eebdf45743aa87de6e8303dbf208c8766ed435c171f559a"
+    },
+    {
+      "path": "assets/brand/guide/pages/13.svg",
+      "bytes": 119141,
+      "sha256": "d2408fe4c499f9ae5e99f39619157a095c08435c4c75bc6521717adc660338f5"
+    },
+    {
+      "path": "assets/brand/guide/pages/14.svg",
+      "bytes": 455999,
+      "sha256": "55cccb80d5a96f1f273d52c6bc7a86211c955bdc3c49a6e11b2384b9ae8677af"
+    },
+    {
+      "path": "assets/brand/guide/pages/15.svg",
+      "bytes": 1656247,
+      "sha256": "786725b87f6d26d4e0c1c3c2602f402ef57e510d6a4f3fe0ceb763d00aeedb6d"
+    },
+    {
+      "path": "assets/brand/guide/pages/16.svg",
+      "bytes": 221388,
+      "sha256": "acc987729cc443c0e13d7735bee8537f9d84b996f8e272c4a4819d33dc8fc890"
+    },
+    {
+      "path": "assets/brand/guide/pages/17.svg",
+      "bytes": 159753,
+      "sha256": "e56737324c6746c8e9eea32087d9a0db536a56c8ba6b0f17b604e68737ca44b8"
+    },
+    {
+      "path": "assets/brand/guide/pages/18.svg",
+      "bytes": 458953,
+      "sha256": "b05d793fe6e7b47e8d2de4e1068af41e327b41f202d7ed52322325988d008f7c"
+    },
+    {
+      "path": "assets/brand/guide/pages/19.svg",
+      "bytes": 733533,
+      "sha256": "53847a9bc87546b9d2a89ced5c853866907927efa896b37f5257534143fee686"
+    },
+    {
+      "path": "assets/brand/guide/pages/20.svg",
+      "bytes": 402461,
+      "sha256": "e77bc24c1e058d040f0fd51d036db1825f643704eb4b6e815082266c6b4c96f1"
+    },
+    {
+      "path": "assets/brand/guide/pages/21.svg",
+      "bytes": 439986,
+      "sha256": "77ad26dd578123357614b3a266f49c8ba245268277a184e5fb717ac96bd73a5b"
+    },
+    {
+      "path": "assets/brand/guide/pages/22.svg",
+      "bytes": 288640,
+      "sha256": "2d24914aeac4b8dfaae6a909f942325d3fd7bea23a55b4c3af22fdaec1311a98"
+    },
+    {
+      "path": "assets/brand/guide/pages/23.svg",
+      "bytes": 426328,
+      "sha256": "8b678dd2413f10e128e3d5b53b177ebc230d3ad9838b834d7516082142db7b33"
+    },
+    {
+      "path": "assets/brand/icons/carbon.svg",
+      "bytes": 442,
+      "sha256": "453f3eab3d104f65480d803870a8db47008156de27ae3af73a83d2cfa44af2d5"
+    },
+    {
+      "path": "assets/brand/icons/disinfection.svg",
+      "bytes": 364,
+      "sha256": "058afcc0dcc2a47e6fb0e209815bc1c7aa404297a21121b755fd0d8733db0219"
+    },
+    {
+      "path": "assets/brand/icons/evidence.svg",
+      "bytes": 305,
+      "sha256": "77b479005948b61b909bf4bb44f343fb3f403e53a1c871d6e2392436818c7fe4"
+    },
+    {
+      "path": "assets/brand/icons/filter.svg",
+      "bytes": 334,
+      "sha256": "ab18df3561cb2785aa5fee07b7c0c9c5ee8067084cb7d8d0c726dddff1f9c381"
+    },
+    {
+      "path": "assets/brand/icons/irrigation.svg",
+      "bytes": 421,
+      "sha256": "461cddede14cd7b63d13afb86a7beb85848a13378f1029ef1352a926242c70be"
+    },
+    {
+      "path": "assets/brand/icons/lab.svg",
+      "bytes": 393,
+      "sha256": "1bf9414e99784ca736261d9be23360c76a9b233ccd4dacb89f7f8ff5e3734a0b"
+    },
+    {
+      "path": "assets/brand/icons/maintenance.svg",
+      "bytes": 382,
+      "sha256": "99da60af8d6e124c451ff047afc54cf23e983d7d92d07a15d02d63e79c734b0c"
+    },
+    {
+      "path": "assets/brand/icons/palm.svg",
+      "bytes": 388,
+      "sha256": "4c3b11c74f0c5ab5d44e91005e722a512cd305e5731edd8d60ba27af7b947a6c"
+    },
+    {
+      "path": "assets/brand/icons/route.svg",
+      "bytes": 380,
+      "sha256": "235b09e5ec68775fa40066e6e7aee480ccb4f45819552b06b3a84eb72b9b151e"
+    },
+    {
+      "path": "assets/brand/icons/sensor.svg",
+      "bytes": 342,
+      "sha256": "011292a8095ab982ce3c0da2073f79ad98753bc5df92e72cf931212c1eb87e91"
+    },
+    {
+      "path": "assets/brand/icons/source.svg",
+      "bytes": 369,
+      "sha256": "6d892de2b87e962d9e08f6f928430c84f8012bcbdbc8154640e6df20edb7c9ec"
+    },
+    {
+      "path": "assets/brand/icons/tank.svg",
+      "bytes": 364,
+      "sha256": "42bae444c9958233e6799e8d0efde4950911495f0042017b93af27b01f687278"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-bilingual-green.svg",
+      "bytes": 3880,
+      "sha256": "660f554eb8ef34b654d0c603789332a27779330bad5e71e3452f8491a0e7c2e5"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-bilingual-ink.svg",
+      "bytes": 3878,
+      "sha256": "45fdcdcecda39e6dc402c671ed08083ee1ebdf2379e3d32a71f21ac636e669af"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-bilingual-white.svg",
+      "bytes": 3880,
+      "sha256": "f08ad248b22d77820529025164e1bab1afe599a65ad029d71c7be8bbe6c1c372"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-bilingual.svg",
+      "bytes": 3868,
+      "sha256": "3e64ff9b3bc1651aa4dea1c43308da2a21154e9137ab84253c969c247256dc44"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-en-green.svg",
+      "bytes": 2347,
+      "sha256": "2ef1d75caa0bb6620358a94005064f4509b6338501751fa8d665747497175e0d"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-en-ink.svg",
+      "bytes": 2345,
+      "sha256": "4f87bb456dd901c6cb4990cf455236ce4c07c0609ccfc2a28a1bd40fefe8a277"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-en-white.svg",
+      "bytes": 2347,
+      "sha256": "27cd4514fe124d87722cd9c5d3178d3474affa5188ca64f8f09df4b6d4a2b993"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-en.svg",
+      "bytes": 2342,
+      "sha256": "cd5d715f1bc032ace8e87ab894258abb6c9d149a0bf29b101ec6d1e02854872a"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-mark-green.svg",
+      "bytes": 407,
+      "sha256": "cee4320e6c95ae513aefd3fd34be5eb4f0beaf00249afe0d9307a91ed6e054f2"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-mark-ink.svg",
+      "bytes": 405,
+      "sha256": "e9b13b328027d6d45eda646d67bba21679eb25bc966731aa35550d72656e0168"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-mark-white.svg",
+      "bytes": 407,
+      "sha256": "4e56b3ba8c56bf116d069dbec1f565f9c4925970f3e1e3d45e2d6eb31e798b89"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-mark.svg",
+      "bytes": 400,
+      "sha256": "b6b9a038d2e8ea31a64403bcce117b35190ffa92b73fe40beea1bf647aa152a3"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-primary-green.svg",
+      "bytes": 2092,
+      "sha256": "b3fcac385af0dc1cca20692d1cb15e73cd385a2a35c9872c5e5d4d5d1cee02e6"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-primary-ink.svg",
+      "bytes": 2090,
+      "sha256": "ff01ff7d0a85a00c7747001e887cc705deaed8e1dbf22ed5cdeee2b79bac5b2e"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-primary-white.svg",
+      "bytes": 2092,
+      "sha256": "93a5615ca0e774dc5e08833dca7baeec158dbacd489c6efbd5a2721a760ee95f"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-primary.svg",
+      "bytes": 2087,
+      "sha256": "973dbe919a57541a53475b14e9e2f775f45c918e35391482ba69932153fae0bb"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-stacked-green.svg",
+      "bytes": 4715,
+      "sha256": "4c55db7a94e35798b089b9f3bfc63f373c0c0c2e641491b4c1f2100919abd941"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-stacked-ink.svg",
+      "bytes": 4713,
+      "sha256": "6560c55d3427a5d74529e9d9e45d56099bb6b61e888632363163f8b9b620d654"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-stacked-white.svg",
+      "bytes": 4715,
+      "sha256": "819b2b4ef90a1084bca2c3d15ed057dee21d5bbaa25c82b30f9ce1608571f468"
+    },
+    {
+      "path": "assets/brand/logos/mawrid-stacked.svg",
+      "bytes": 4705,
+      "sha256": "501d8d9e8c2b9d59446e41cb85263810045d7fe31a25aa4e8d6a388250c4337d"
+    },
+    {
+      "path": "assets/brand/mawrid-hero.svg",
+      "bytes": 351907,
+      "sha256": "ee1d043e425d0ec8b207c51ffa231fedb688a3a126f87f8367e43d770839eaff"
+    },
+    {
+      "path": "assets/brand/mawrid-icon-192.png",
+      "bytes": 6351,
+      "sha256": "28aa4efe4f683ea87b2e80b1e236d430a1316ad40aa2343e8728366bc75af415"
+    },
+    {
+      "path": "assets/brand/mawrid-icon-32.png",
+      "bytes": 1089,
+      "sha256": "24a0eda422fbc017a22ae602919aad1d83e5a5cfd134bba872aae2af0854a5ca"
+    },
+    {
+      "path": "assets/brand/mawrid-icon-512.png",
+      "bytes": 23150,
+      "sha256": "f53e9e240c949dbce6cd0520022aa84063ce286d6bae65c21e960f5a449601fe"
+    },
+    {
+      "path": "assets/brand/mawrid-logo.svg",
+      "bytes": 452,
+      "sha256": "85a6464325c9ba21051b5bbd3935dfbe8deeac180303cefba047b2ab9431897e"
+    },
+    {
+      "path": "assets/brand/mawrid-tokens.css",
+      "bytes": 475,
+      "sha256": "c423910161ccbf57231a1b63215807c2188b769038975c4a23c2ba9eb076312a"
+    },
+    {
+      "path": "assets/brand/palette.csv",
+      "bytes": 393,
+      "sha256": "8ba03bb1b45d788fd722fbee6544fcb3a86b2418335663e3f3ab42b574ef00ea"
+    },
+    {
+      "path": "assets/brand/patterns/arc-light.svg",
+      "bytes": 975,
+      "sha256": "03cf1da1325fcdaf51ba7ad92b6279f5590ec3b5b3bf1815e61d1cd36788c3eb"
+    },
+    {
+      "path": "assets/brand/patterns/architectural-screen.svg",
+      "bytes": 840,
+      "sha256": "c28eb48e69a04410767e5fe79ff205f5543f699c8b1b6abdbb9d423486c4b032"
+    },
+    {
+      "path": "assets/brand/patterns/symbol-route.svg",
+      "bytes": 1034,
+      "sha256": "dba278790750406719993722e6c7edb23bd99ee210e98dc702a3b444efd48e3a"
+    },
+    {
+      "path": "assets/brand/photography-prompts.md",
+      "bytes": 3424,
+      "sha256": "ad82154428ad0238aa76312f41a8fd9f0fdf290919943ae24892126cbbf00cbc"
+    },
+    {
+      "path": "assets/brand/photography/README.md",
+      "bytes": 812,
+      "sha256": "e8fa92fec7de68e62ec336d1fa2f21fedcce4ee934f3a582cf0bc458f4266903"
+    },
+    {
+      "path": "assets/brand/photography/campus-ablution.jpg",
+      "bytes": 278551,
+      "sha256": "d6b7e7c740814507f7a1e5074169d695d936a95c745919d674a0a41c81fc488e"
+    },
+    {
+      "path": "assets/brand/photography/campus-concept.jpg",
+      "bytes": 302060,
+      "sha256": "d8bc4849bbbf13b740644147acb01d811a6a3018b70087d2f5f1199f37fd2fa0"
+    },
+    {
+      "path": "assets/brand/photography/campus-irrigation.jpg",
+      "bytes": 330475,
+      "sha256": "99b496ad4ea28d611494fb6b4e0e00a0bedb85bcc8b82d0af7e8034a179e00d6"
+    },
+    {
+      "path": "assets/brand/photography/campus-maintenance.jpg",
+      "bytes": 248280,
+      "sha256": "5d1140bcd44216ad3b85434ba6c14299fe2a90516b6a2b9c60f11ed947784ba5"
+    },
+    {
+      "path": "assets/brand/photography/campus-testing.jpg",
+      "bytes": 217268,
+      "sha256": "0731ec7e6ceea89d07ed1a34a468a105c2d52225fd151ef2d86ec580407f9fa4"
+    },
+    {
+      "path": "assets/brand/png/icons/carbon.png",
+      "bytes": 3116,
+      "sha256": "1b0136836bce3f9fbc94f8a3daadd3f61960a4f432d8d708a3a96da575cc1a6f"
+    },
+    {
+      "path": "assets/brand/png/icons/disinfection.png",
+      "bytes": 3045,
+      "sha256": "99afd3541435862b6d4420bf404114adb3ef5de27922933c7d52168070628ee9"
+    },
+    {
+      "path": "assets/brand/png/icons/evidence.png",
+      "bytes": 1805,
+      "sha256": "64fde247735baaca47baf7403aab49bb81bfe1967d22109b098a96bd480e3d2b"
+    },
+    {
+      "path": "assets/brand/png/icons/filter.png",
+      "bytes": 1390,
+      "sha256": "432ecd34775197bb2aaf52a7ec56b06adc10c30d5021a4be1095f14fa8c5be1f"
+    },
+    {
+      "path": "assets/brand/png/icons/irrigation.png",
+      "bytes": 3486,
+      "sha256": "cc889c54a253fd3bc4718fa02f6571e7cd94069ad929677b6f68fbc3c828af6d"
+    },
+    {
+      "path": "assets/brand/png/icons/lab.png",
+      "bytes": 2632,
+      "sha256": "e38fd2f368a229dfb08375a544f57ab151bb67107d0b80977a441a6bc12cd4a9"
+    },
+    {
+      "path": "assets/brand/png/icons/maintenance.png",
+      "bytes": 4460,
+      "sha256": "2a86482d13223cf60deabb170f2d721db6eee824a1e5d1115aca10d6c9255946"
+    },
+    {
+      "path": "assets/brand/png/icons/palm.png",
+      "bytes": 4210,
+      "sha256": "41bd260f0b176efe828cca6ff4efcacf0b6bac82b96ca9cdc1393275ba7eaa8c"
+    },
+    {
+      "path": "assets/brand/png/icons/route.png",
+      "bytes": 3850,
+      "sha256": "f71ff30aa49b7bf58420e011624369d4c75160b8d5f73561d7fa86cf3e58b44a"
+    },
+    {
+      "path": "assets/brand/png/icons/sensor.png",
+      "bytes": 3700,
+      "sha256": "385c567d03bd87d6ccdfbd2165531f5ef8f8355f4caf1c69afd72db062614b6b"
+    },
+    {
+      "path": "assets/brand/png/icons/source.png",
+      "bytes": 2139,
+      "sha256": "fb39b64302d38ad103ba0639a7fca060a18fad174fd0eef0b1017a168b65e9d4"
+    },
+    {
+      "path": "assets/brand/png/icons/tank.png",
+      "bytes": 3540,
+      "sha256": "41be6d4068e14d0a631f040adb3dea5de4d94bcc1c133eda7fd34a60840753c2"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-bilingual-green.png",
+      "bytes": 33322,
+      "sha256": "493114ace18458316e2de14678704cbb69472f309ad88eaeea57785be784ea77"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-bilingual-ink.png",
+      "bytes": 33435,
+      "sha256": "c5562761f9ed65c1d39954f3f5145cdbd1d26bd8d06904e372aaf308a17aa159"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-bilingual-white.png",
+      "bytes": 25729,
+      "sha256": "4018ef551de0795abb95a0c153c8a59680fc69a4c3749be7074b0f8b12160d20"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-bilingual.png",
+      "bytes": 33322,
+      "sha256": "493114ace18458316e2de14678704cbb69472f309ad88eaeea57785be784ea77"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-en-green.png",
+      "bytes": 33537,
+      "sha256": "c8b98f19be5ca50875e93ac7e7cbf330a2751d577f5f7351dd085530e3244ca5"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-en-ink.png",
+      "bytes": 33658,
+      "sha256": "ca0ac6633abae8f66a51f2c899142be548febc522b2cc9eb1244fc65efecc926"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-en-white.png",
+      "bytes": 26004,
+      "sha256": "a404c0afb1f3fc10a3d9db61a44575d083515f3aa6cb3824df0b8e37c96d954b"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-en.png",
+      "bytes": 33537,
+      "sha256": "c8b98f19be5ca50875e93ac7e7cbf330a2751d577f5f7351dd085530e3244ca5"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-mark-green.png",
+      "bytes": 6841,
+      "sha256": "bf17f0f3bb464f1c75cdc9f2a6d39b5aaa42cb621fb77ee1383d18d49d5b4acc"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-mark-ink.png",
+      "bytes": 6839,
+      "sha256": "42f5168fdf409888da139152bf4f98818fe0a74d6f5e839eb00b034509dabc7c"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-mark-white.png",
+      "bytes": 5598,
+      "sha256": "6283aafdb1d74e90525b197c9e920b3b3e89abf692d2c5574bf9f4786185825a"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-mark.png",
+      "bytes": 6841,
+      "sha256": "bf17f0f3bb464f1c75cdc9f2a6d39b5aaa42cb621fb77ee1383d18d49d5b4acc"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-primary-green.png",
+      "bytes": 25282,
+      "sha256": "e9de92984b933e594e915e5db827533ab3d1fa85a0387c216fa372276c5f07b1"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-primary-ink.png",
+      "bytes": 25317,
+      "sha256": "e33ab184194ba3edd87e41f169c51c8626585486bbe4b89753f8d8212a719926"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-primary-white.png",
+      "bytes": 19172,
+      "sha256": "a03bacee4fb9dc316858d6ff74d5bf5af4e798888cb5a6cf2b602ca11231d9e9"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-primary.png",
+      "bytes": 25282,
+      "sha256": "e9de92984b933e594e915e5db827533ab3d1fa85a0387c216fa372276c5f07b1"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-stacked-green.png",
+      "bytes": 33654,
+      "sha256": "bc977b99b1044d214b897cc9ca68143a2d337e8aa004e7e50ae69b09eaa3f59d"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-stacked-ink.png",
+      "bytes": 33706,
+      "sha256": "fa637913739801b6d963523ffeb085e4dda637756f5137ad7a46638aef89f5eb"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-stacked-white.png",
+      "bytes": 26205,
+      "sha256": "673c17325bf596ee235a0bb5d53d849b3497fc9fd9e5bb3bce1f7f0fa40f5b3f"
+    },
+    {
+      "path": "assets/brand/png/logos/mawrid-stacked.png",
+      "bytes": 33654,
+      "sha256": "bc977b99b1044d214b897cc9ca68143a2d337e8aa004e7e50ae69b09eaa3f59d"
+    },
+    {
+      "path": "assets/brand/png/patterns/arc-light.png",
+      "bytes": 29533,
+      "sha256": "fe5f4f101450c77b6f36f7095e3002ce05cc23a00e3b9a770ba89c105fb8825b"
+    },
+    {
+      "path": "assets/brand/png/patterns/architectural-screen.png",
+      "bytes": 40604,
+      "sha256": "653cff5de65a4ee2f6094b52edc7abaf81b6986a94a70b358a2047b1059eae0d"
+    },
+    {
+      "path": "assets/brand/png/patterns/symbol-route.png",
+      "bytes": 11106,
+      "sha256": "f4fd4f47a90559fd94c30f817829e9d92a97482470958cadd4e441e5b95de586"
+    },
+    {
+      "path": "assets/brand/png/templates/business-card-back.png",
+      "bytes": 45369,
+      "sha256": "c46eece91d28eb3a1c400bbc26bec2704266c28766f794ee7fc29387cc858ca8"
+    },
+    {
+      "path": "assets/brand/png/templates/business-card-front.png",
+      "bytes": 73738,
+      "sha256": "b584d2680773f90a7b9e72ab20741043ecc601adc7496df687a7f194bafdcbea"
+    },
+    {
+      "path": "assets/brand/png/templates/exhibition-poster-a3.png",
+      "bytes": 1587270,
+      "sha256": "809b90b8bfaebe3184acc37366edf88eb8f557aa759d03f0ec60fcb3521cb517"
+    },
+    {
+      "path": "assets/brand/png/templates/letterhead-a4.png",
+      "bytes": 88707,
+      "sha256": "1ee098878f212384da359e351a3877f7d204078e0804a4888b0727ec030e17fd"
+    },
+    {
+      "path": "assets/brand/png/templates/report-cover-a4.png",
+      "bytes": 2058656,
+      "sha256": "d1a5f0283b04c0df483ccf7872dd529192929b1ada291d4dffa8e0098eba96e9"
+    },
+    {
+      "path": "assets/brand/png/templates/research-card.png",
+      "bytes": 101600,
+      "sha256": "42b99f3f2e90e5102009b54ac37850dac29330fdd5f118986619072baad1babd"
+    },
+    {
+      "path": "assets/brand/png/templates/sample-label.png",
+      "bytes": 56585,
+      "sha256": "4077acb6d4f2b71e2b932b17f227609a90d6df5a0c72638268b3281f196c4964"
+    },
+    {
+      "path": "assets/brand/png/templates/social-square.png",
+      "bytes": 1586059,
+      "sha256": "a70d642142c56f21d53099b8d4e0023b2317e7ec9d72809fd1c7a27b64849d4f"
+    },
+    {
+      "path": "assets/brand/png/templates/social-story.png",
+      "bytes": 3302682,
+      "sha256": "0ed0c1139d82258e9fe5a931fc6c277a9c722f34ee87f4d2eb2447cc0e663eff"
+    },
+    {
+      "path": "assets/brand/png/templates/unit-label.png",
+      "bytes": 63475,
+      "sha256": "cb6b1a11b64dc362bf5899dd72d2f23810fff199c7aa3cbbefed3a92d1719747"
+    },
+    {
+      "path": "assets/brand/readme-cover.png",
+      "bytes": 748462,
+      "sha256": "e79913e458dc765f7e1b117e6ea10e1096fc46a5a5a250c752bb8255f918652b"
+    },
+    {
+      "path": "assets/brand/readme-cover.svg",
+      "bytes": 433500,
+      "sha256": "e0262dc6afe81bb2019861d859162fffa28642fd1e0f2e077279772c4e716e47"
+    },
+    {
+      "path": "assets/brand/templates/business-card-back.svg",
+      "bytes": 23730,
+      "sha256": "6fdd577e125b1d224052236d6bf7fe0e10c6b101b66a89d95a50808894df9b83"
+    },
+    {
+      "path": "assets/brand/templates/business-card-front.svg",
+      "bytes": 35710,
+      "sha256": "adef516561fa8b68095b1c8e7e0975bb363dd47a1fb1a27b4f9164c013d977ba"
+    },
+    {
+      "path": "assets/brand/templates/exhibition-poster-a3.svg",
+      "bytes": 468432,
+      "sha256": "691e70f9fcac1f015e3026940f6940701f955e850c1c3edf817dd14ecc43cbd5"
+    },
+    {
+      "path": "assets/brand/templates/letterhead-a4.svg",
+      "bytes": 50200,
+      "sha256": "51fad8612fddd9e3ebd740b3c7e04705885a2eb7260c090fb7adc39c60e28b43"
+    },
+    {
+      "path": "assets/brand/templates/mawrid-presentation.pptx",
+      "bytes": 9726114,
+      "sha256": "a908f113aa8cf594c44d4a022b47aa73291fa9b12536c3053b7ef9b3470049b4"
+    },
+    {
+      "path": "assets/brand/templates/report-cover-a4.svg",
+      "bytes": 331442,
+      "sha256": "ae26ad84454b17d0df9e55afaeba38d0f995655abb421b625990a67906771a37"
+    },
+    {
+      "path": "assets/brand/templates/research-card.svg",
+      "bytes": 58477,
+      "sha256": "d67bc1ff431203f4962e0afcf482619f27cb094c6b505ebf1c483fbc30cef922"
+    },
+    {
+      "path": "assets/brand/templates/sample-label.svg",
+      "bytes": 45538,
+      "sha256": "198762aed2b983ab97052adcf924c99e9074e8ab72e5f23ddfaf0c4c3ffea730"
+    },
+    {
+      "path": "assets/brand/templates/social-square.svg",
+      "bytes": 318665,
+      "sha256": "c353117a6988736230f5cabf5284ea5b3418f5afea48dd9f4af9852c49576bc0"
+    },
+    {
+      "path": "assets/brand/templates/social-story.svg",
+      "bytes": 395484,
+      "sha256": "3a64d6463be5639117621432e6fb194038e1d39a7b6676d6abe4e7b9cac7ae1b"
+    },
+    {
+      "path": "assets/brand/templates/unit-label.svg",
+      "bytes": 69579,
+      "sha256": "c93b1ed78cc120c8576f2a3639d9e97693dcface9e12c11d72d6f78671041282"
+    },
+    {
+      "path": "assets/diagrams/circular-value.png",
+      "bytes": 134666,
+      "sha256": "9ff38a27acba262858594e46452e1fa60ae4fd73c36caa6f92cd08684d83ce1c"
+    },
+    {
+      "path": "assets/diagrams/circular-value.svg",
+      "bytes": 341677,
+      "sha256": "9ea1cdeddda7fb0385e3bed40cd5072c0874c0f343fd06dfd36c26a6d9f328fd"
+    },
+    {
+      "path": "assets/diagrams/filter-health.png",
+      "bytes": 133580,
+      "sha256": "a0a46b4f307b641af2228c3c26bc97fedfd37e5c0ba53944b8827b13ad38b42c"
+    },
+    {
+      "path": "assets/diagrams/filter-health.svg",
+      "bytes": 350745,
+      "sha256": "c6f6d0882c0ed201f68fabb00255a6adae0419af11a24064b64a09c71fb74994"
+    },
+    {
+      "path": "assets/diagrams/treatment-train.png",
+      "bytes": 122698,
+      "sha256": "dc8ed4227c1a006e20b20a4014dd3f56905b21637c68de70eef571a24f1697fc"
+    },
+    {
+      "path": "assets/diagrams/treatment-train.svg",
+      "bytes": 326385,
+      "sha256": "c1bb7e91bcac70b0bfef9054c5d304e63696d302f67cbeef77ed59419f41f2ed"
+    },
+    {
+      "path": "assets/fonts/LICENSE-manrope.txt",
+      "bytes": 4386,
+      "sha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac"
+    },
+    {
+      "path": "assets/fonts/LICENSE-plex-arabic.txt",
+      "bytes": 4454,
+      "sha256": "4cef27c29e8bdab6c04f64d902ec280ab23a0594754e0f9c4884c94fc63a4135"
+    },
+    {
+      "path": "assets/fonts/manrope-400.ttf",
+      "bytes": 94972,
+      "sha256": "a13d9b41b0a471ce58f0e46d377fa3cc76615e4632c3b15eb397caadf7a13f0a"
+    },
+    {
+      "path": "assets/fonts/manrope-700.ttf",
+      "bytes": 94928,
+      "sha256": "b9584e099e0e7f1e1e914c3037aabb9010c50346a3ce8df5eeeeecc0563044d8"
+    },
+    {
+      "path": "assets/fonts/plex-arabic-400.ttf",
+      "bytes": 219592,
+      "sha256": "02609c5ef845ef511676c8badb24d1fc8b4aed3dc3b9d8bbdab22c14431b7c16"
+    },
+    {
+      "path": "assets/fonts/plex-arabic-600.ttf",
+      "bytes": 227276,
+      "sha256": "9e8b030f3326946e481c874a2f751c1321cb0708cba81b79e6c3f9ffacc931df"
+    },
+    {
+      "path": "assets/fonts/plex-arabic-700.ttf",
+      "bytes": 229352,
+      "sha256": "05616a64c5dca137a327b30b1fe7f4fcd1e16892a332e1665b49d52038858044"
+    },
+    {
+      "path": "assets/images/campus-ablution.meta.json",
+      "bytes": 1456,
+      "sha256": "c1253badcb9be51a975ed9add721f0cd2f84e426c1b3e358ed0f2d14149d7639"
+    },
+    {
+      "path": "assets/images/campus-ablution.png",
+      "bytes": 2450713,
+      "sha256": "189852746bac950584d205af32ded079af362f025ec3785d6fddbb6dd5f132d8"
+    },
+    {
+      "path": "assets/images/campus-ablution.prompt.md",
+      "bytes": 2525,
+      "sha256": "190d14283e49638277c5c5c093ed16869685c272d5cdbe6a76b049fa5b3535e3"
+    },
+    {
+      "path": "assets/images/campus-ablution.webp",
+      "bytes": 219138,
+      "sha256": "9d299ed5115c0a44dc1faa8e85aa13019f94b4de164a0542aa627684834c776e"
+    },
+    {
+      "path": "assets/images/campus-concept.png",
+      "bytes": 2503639,
+      "sha256": "c8da0f7cba9549b353825b2367f7a3ffbe58e179827557dde96d5076c23c6da8"
+    },
+    {
+      "path": "assets/images/campus-concept.prompt.md",
+      "bytes": 3482,
+      "sha256": "98e123a16d701bcfb5bd5063e9d269c6e9b894bc88d92751f895a9a5bd4a292b"
+    },
+    {
+      "path": "assets/images/campus-concept.webp",
+      "bytes": 230910,
+      "sha256": "b721ea4c6c4866222d3449e116a6d0ac05215e0af07acb1423ccccbbdac12f1f"
+    },
+    {
+      "path": "assets/images/campus-irrigation.meta.json",
+      "bytes": 1462,
+      "sha256": "ea09f8cf09aa24318eee2b1f57951e3d1f9029f1c60c157ba48eeaaf49281764"
+    },
+    {
+      "path": "assets/images/campus-irrigation.png",
+      "bytes": 2708015,
+      "sha256": "253f8f187aea4a0ffaecd14f09a3f060b8056590378f86e934bb050009677036"
+    },
+    {
+      "path": "assets/images/campus-irrigation.prompt.md",
+      "bytes": 2504,
+      "sha256": "3aed8ae5a27bae1ec5f00d60d4964d6b1fc10f82c578cca678b91f8719cf17ee"
+    },
+    {
+      "path": "assets/images/campus-irrigation.webp",
+      "bytes": 271888,
+      "sha256": "16725e7643d40c8d2508901045d3449276a0810f6cf5c480008c7f9049ecddf2"
+    },
+    {
+      "path": "assets/images/campus-maintenance.meta.json",
+      "bytes": 1465,
+      "sha256": "a19c152942585f63402b4c89dbeab45355097eb46821c778b11d4696d0deea50"
+    },
+    {
+      "path": "assets/images/campus-maintenance.png",
+      "bytes": 2226660,
+      "sha256": "3458323482f40e95fdbe3f6a5c97dc762db4238097f49f07e1da8ea33064b7f5"
+    },
+    {
+      "path": "assets/images/campus-maintenance.prompt.md",
+      "bytes": 3040,
+      "sha256": "94dc0ce541b862df4989a14421e3382f40b43416ebb46a89794fbb5e63b84b26"
+    },
+    {
+      "path": "assets/images/campus-maintenance.webp",
+      "bytes": 176634,
+      "sha256": "e80d47195a4a8c02a00b3c8eee9089dda9ce32fac8196354f7b266e637344623"
+    },
+    {
+      "path": "assets/images/campus-testing.meta.json",
+      "bytes": 1453,
+      "sha256": "529a1f7913d4c9c390d09760fd5e94813d1fde2da48f7407dbe2ef3ba7238b88"
+    },
+    {
+      "path": "assets/images/campus-testing.png",
+      "bytes": 2022031,
+      "sha256": "66d5fc70dea849f0d9485022aae3ec22704f6d3e0313e010a1eb40f6b554948e"
+    },
+    {
+      "path": "assets/images/campus-testing.prompt.md",
+      "bytes": 2499,
+      "sha256": "f6df9e510571cc35700ffa5af8d441262a9d4848d29666100c03d79e43497bbe"
+    },
+    {
+      "path": "assets/images/campus-testing.webp",
+      "bytes": 141482,
+      "sha256": "33df79d0daa6b2f949bcaa2f61f36af9c91bd275dd2ec938284f11d9cb60b991"
+    },
+    {
+      "path": "assets/social/github-social-preview.png",
+      "bytes": 645500,
+      "sha256": "badfc03a1adbc9ef5a11f2046a4842c064759e9341c2eaf36ec8a7843f994a5e"
+    },
+    {
+      "path": "assets/social/github-social-preview.svg",
+      "bytes": 351907,
+      "sha256": "ee1d043e425d0ec8b207c51ffa231fedb688a3a126f87f8367e43d770839eaff"
+    },
+    {
+      "path": "assets/social/x-header.png",
+      "bytes": 656831,
+      "sha256": "e7aa7293e321cd86b655b2719e3ce0e02c508c0d82c41c55272262f1c90dd4bb"
+    },
+    {
+      "path": "assets/social/x-header.svg",
+      "bytes": 318949,
+      "sha256": "bfed45779acab3c8253cdcaaf7b1a9e9f6c02db79048f01f6b837ceca98a1343"
+    },
+    {
+      "path": "docs/ai-and-iot-architecture.md",
+      "bytes": 5271,
+      "sha256": "83b1cb4d4adf5c5fc8d0b8f73fe1d8d837f1c29ce5a6c739368d428be4b27d14"
+    },
+    {
+      "path": "docs/brand-and-content.md",
+      "bytes": 17457,
+      "sha256": "d53a5657832531f9615ff6d233f59c490e5f67c7e3a04ccce602fd9ef111bf75"
+    },
+    {
+      "path": "docs/data-and-model-card.md",
+      "bytes": 5295,
+      "sha256": "11a76a34cf57390b3dd7b72489bada6173dd117183fc288632a827eecd958446"
+    },
+    {
+      "path": "docs/demo-scenarios.md",
+      "bytes": 3375,
+      "sha256": "6b78accff6f8995afbd0fa32c0efd25946d018135e94daf04362a49f2f6560b2"
+    },
+    {
+      "path": "docs/design-references.md",
+      "bytes": 10844,
+      "sha256": "ab163a4f727ea697051076294233cfc266ee357834829d49ec8826b0e0be1a3a"
+    },
+    {
+      "path": "docs/development.md",
+      "bytes": 7579,
+      "sha256": "e73e3ca42f7bd9d3bd7b69cd5dc842320c892d9fb89b7fe2a6c21fafb1d363a9"
+    },
+    {
+      "path": "docs/evidence-register.md",
+      "bytes": 6922,
+      "sha256": "91c4721abe4e53fc431cd00cacac5c11102ae38e5a315b38e3343c2dc49a6a7f"
+    },
+    {
+      "path": "docs/impact-and-economics.md",
+      "bytes": 6612,
+      "sha256": "98c509b6c960310f828c624292343861a956cf3acce762f0f3d2a2c0c8b380b3"
+    },
+    {
+      "path": "docs/innovation.md",
+      "bytes": 6573,
+      "sha256": "50a309cb5003ad0cbd7383bf232ae6f61a0997a3c4faaca02c2b14982fee20e6"
+    },
+    {
+      "path": "docs/judging-map.md",
+      "bytes": 7877,
+      "sha256": "aa96ca169d2ed0e92fe146f1d1a8164dc33f9d644041df406d976bdbe2d5c91f"
+    },
+    {
+      "path": "docs/palm-research.md",
+      "bytes": 19482,
+      "sha256": "f31b1e026617758eb666c613bd0dfbc3c1fa2d8ee633a8d39a931d0448ebeb1f"
+    },
+    {
+      "path": "docs/project-brief.md",
+      "bytes": 10226,
+      "sha256": "3880ec59d5dc9f556a6a87f0e4db0b1ab90101012f44175fba1fe5323c459183"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "bytes": 6644,
+      "sha256": "3abac730676a3af52eb7248b36cd56432d6b12727f99ac67adb2d9fb882b37bd"
+    },
+    {
+      "path": "docs/safety.md",
+      "bytes": 9037,
+      "sha256": "d2b61be6511bba05e78f351e559adb1e775a220b21038b07ce8573bfec85f169"
+    },
+    {
+      "path": "docs/scientific-basis.md",
+      "bytes": 8193,
+      "sha256": "23c7c94106c233d8cea8dfa3a4fd38b7f4a07cb691124d207cdd3ea99259104b"
+    },
+    {
+      "path": "docs/sensor-and-lab-workflow.md",
+      "bytes": 2272,
+      "sha256": "4f9c309fe3a673bfc4be1b600d71e7b66965c27d832a1e45955fda6c434f10d4"
+    },
+    {
+      "path": "docs/system-design.md",
+      "bytes": 9844,
+      "sha256": "adf89a767e35fc29dcd0a3abb17d8dafd973004556287e2f5e59fdb32b60690b"
+    },
+    {
+      "path": "docs/validation.md",
+      "bytes": 10760,
+      "sha256": "58f591893b1906be9688be3be1fef8e9fb60b55036461fd6a86822387c886ad4"
+    },
+    {
+      "path": "docs/visual-design.md",
+      "bytes": 2504,
+      "sha256": "c0148240ad25440d71289b3af16e7f51a24b0f5c9f2b96df7a5e0daf638cae4a"
+    },
+    {
+      "path": "output/pdf/mawrid-brand-book.pdf",
+      "bytes": 4648628,
+      "sha256": "c9a8807fcd788ca729247951bb7bdd03a750feabe61805d3bb02a82b5ca4add9"
+    },
+    {
+      "path": "references/README.md",
+      "bytes": 9897,
+      "sha256": "1207d66e5ee553102746ba866dce3d557dfe09322eebd123f8feb3176b52e892"
+    },
+    {
+      "path": "references/references.bib",
+      "bytes": 4657,
+      "sha256": "17f6c54eaf927476209d7a2c55b7dd5b714a7cbebbabfaf0c9c73607819a6d82"
+    },
+    {
+      "path": "scripts/brand/check-typography.mjs",
+      "bytes": 1553,
+      "sha256": "d9f73fb383e5d0a2824f0a6f48b857bf1850bf8f50e0b8cf127ecc1134b0e81a"
+    },
+    {
+      "path": "scripts/brand/create-applications.mjs",
+      "bytes": 17494,
+      "sha256": "73ab8f2fd157c9b9bad1d11b522841a9203981cb579150afd6adf50bd917a521"
+    },
+    {
+      "path": "scripts/brand/create-brandbook.mjs",
+      "bytes": 22954,
+      "sha256": "f84022a8e9b8ec1cc15e76fcc02a525508c0a167c268c101bb107b9beef3650e"
+    },
+    {
+      "path": "scripts/brand/create-diagrams.mjs",
+      "bytes": 11404,
+      "sha256": "1a181ad2cf4b00b8fd29f927aaba325e09bc402530a9e6b1289deec35b942fa8"
+    },
+    {
+      "path": "scripts/brand/create-logos.mjs",
+      "bytes": 2010,
+      "sha256": "1069c3d46d6a24f30d9e0907fa6d2ac6dd8d95da67ffb7bf278f104aada563d9"
+    },
+    {
+      "path": "scripts/brand/create-presentation.cjs",
+      "bytes": 19160,
+      "sha256": "d26b788292a14cdc3c930c7904e3d5c6aba21e7d5ed0fec50004b3267a78cb69"
+    },
+    {
+      "path": "scripts/brand/create-readme-cover.mjs",
+      "bytes": 3334,
+      "sha256": "bbe1f523523f41727bf7ec101070b71316a8987dc13b0f7e8c8ae00baf8c8516"
+    },
+    {
+      "path": "scripts/brand/export-assets.mjs",
+      "bytes": 1925,
+      "sha256": "f829019fcd21c66b3419afaa2e7b1207994e58ff673ff7449eba4f6afb735899"
+    },
+    {
+      "path": "scripts/brand/export-brandbook.py",
+      "bytes": 4416,
+      "sha256": "db2dcb9475b54b10fa08dcde023b1a21416711769c043b0f2d3c23744673d875"
+    },
+    {
+      "path": "scripts/brand/export-photography.mjs",
+      "bytes": 1697,
+      "sha256": "766862af1f77c2ef29cbcada8c1aa22892510ca039c65621cbbbf2facf6602a5"
+    },
+    {
+      "path": "scripts/brand/package-kit.py",
+      "bytes": 2817,
+      "sha256": "32c60d3247caec73e7583eab5c30aed3a930e72360bcca2de0bdc44ec9a0b793"
+    },
+    {
+      "path": "scripts/brand/shared.mjs",
+      "bytes": 6015,
+      "sha256": "2e021285458f80b41cdb12668c728f62fa45539adcb199782aa682dcc4c7c099"
+    }
+  ]
+}

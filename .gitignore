@@ -13,3 +13,4 @@ __pycache__/
 *.py[cod]
 .site-build/
 .qa/
+output/brand/mawrid-identity-kit.zip

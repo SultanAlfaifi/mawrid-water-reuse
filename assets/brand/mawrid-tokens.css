@@ -1,0 +1,18 @@
+:root {
+  --mawrid-forest: #123e35;
+  --mawrid-green: #39786a;
+  --mawrid-paper: #f7faf6;
+  --mawrid-mint: #e9f3ef;
+  --mawrid-sage: #b4cfba;
+  --mawrid-ink: #243d38;
+  --mawrid-sand: #d9ccba;
+  --mawrid-muted: #4d6156;
+  --mawrid-line: #d1e0d5;
+  --mawrid-white: #ffffff;
+  --mawrid-font-ar: 'Plex Arabic', sans-serif;
+  --mawrid-font-en: 'Manrope', sans-serif;
+  --mawrid-radius: 8px;
+  --mawrid-grid: 8px;
+  --mawrid-motion-short: 180ms;
+  --mawrid-motion-scene: 720ms;
+}

@@ -1,105 +1,142 @@
-<div align="center" dir="rtl">
-  <img src="assets/brand/mawrid-hero.svg" alt="مورد — مياه الوضوء، مورد للري" width="100%">
-</div>
+![MAWRID — Ablution water, a resource for irrigation.](assets/brand/readme-cover.png)
 
-# مورد · MAWRID
+# MAWRID
 
-**مياه الوضوء، مورد للري.**
+**Ablution water, a resource for irrigation.**
 
-مورد تصميم لوحدة محلية تسترجع مياه الوضوء المفصولة في منشأة جامعية، وتعالجها لري المساحات الخضراء، وتمنع إعادة الاستخدام عند فشل شروط التشغيل المحددة، وتوثق الماء المستخدم فعلًا.
+A campus water-reuse concept connecting one source to one nearby use: collect source-separated ablution water, treat it for landscape irrigation, protect the outlet with an independent controller, and measure water actually used.
 
-**الوضع الحالي:** تصميم مفاهيمي وتجربة رقمية تعليمية. لا توجد في المستودع نتائج معالجة مائية فعلية، أو تجربة ميدانية معتمدة، أو شراكة مؤكدة، أو نموذج ذكاء اصطناعي مدرّب. البيانات المعروضة للمحاكاة، ومعايير الأداء أهداف تحتاج اختبارًا.
+[Project website](https://sultalfaifi.com/mawrid-water-reuse/) · [Brand guide](https://sultalfaifi.com/mawrid-water-reuse/assets/brand/guide/index.html) · [Project brief](docs/project-brief.md) · [Evidence register](docs/evidence-register.md)
 
-[مرجع المشروع](docs/project-brief.md) · [المستكشف التعليمي](index.html) · [خريطة المخرجات](docs/judging-map.md) · [سجل الأدلة](docs/evidence-register.md) · [English](#english)
+## One source. One use. One first customer.
 
-## المشكلة في موقع واحد
-
-نبدأ بموقع جامعي لديه منطقة وضوء مركزية وطلب قريب على الري. السؤال الذي نختبره: هل يمكن استرجاع هذا المصدر واستخدامه محليًا، بتكلفة وعبء تشغيل مقبولين، وبعد إثبات متطلبات استخدامه؟
-
-نقيس كمية الماء ومواقيت توفره والطلب على الري وإمكانية فصل التصريف قبل تحديد حجم الوحدة. إدارة المرافق هي العميل المستهدف، وفريق الصيانة هو المستخدم اليومي. اختيار الموقع والتعاون معه ما زالا خطوة مطلوبة.
-
-## منتج واحد، ووظائف واضحة
-
-| الوظيفة | ما نحتاج إثباته |
+| Scope | First version |
 |---|---|
-| استرجاع المصدر ومعالجته | أداء محدد للماء الداخل، والغرض المختار، وطريقة قياس موثقة |
-| حماية مسار إعادة الاستخدام | متحكم مستقل يغلق المسار عند فشل شروط التشغيل أو فقد قياس حرج |
-| قياس الاستخدام والتشغيل | موازنة ماء قابلة للمراجعة، وسجل أحداث، ووقت صيانة وتكلفة |
+| Source | Ablution water collected through a separate drain; toilets, kitchens and mixed wastewater are excluded. |
+| Use | Landscape irrigation, initially ornamental planting with drip irrigation in a defined area. |
+| Setting | One university facility with a central ablution area and nearby irrigation demand. |
+| Customer | University facilities management; maintenance staff operate the proposed unit. |
+| Value to establish | Water actually used, operating cost and maintenance effort at the selected site. |
 
-المسار المقترح: **فصل مياه الوضوء، موازنة التدفق، ترشيح، اختبار امتزاز عند الحاجة، تعقيم نتحقق منه، تخزين مضبوط، ثم قرار الاستخدام أو التحويل.**
+Source volume, demand, site suitability and customer interest require confirmation. Drinking water, reuse for ablution and food preparation are outside this scope.
 
-الري المقترح في البداية هو ري نباتات زينة بالتنقيط في نطاق مضبوط؛ تفاصيله النهائية تحتاج مراجعة الموقع والمخاطر والمتطلبات التنظيمية. مرحلة الاختبار المائي تبدأ على منصة مخبرية قبل أي تطبيق ميداني.
+## The proposed water journey
 
-## أين نبحث عن التميز؟
+**Separate and collect → balance and filter → test adsorption if needed → disinfect and store → verify conditions → irrigate or divert.**
 
-نختبر خرطوشة فحم حيوي من مخلفات النخيل أمام **الترشيح والتعقيم دون امتزاز** و**الكربون المنشط التجاري**. نحدد المكوّن المستهدف بالامتزاز أولًا، ثم نقارن الأداء، وما قد تطلقه المادة إلى الماء، وعمر الخدمة والكلفة. إذا لم تضف الخرطوشة قيمة قابلة للقياس، نستخدم المسار الأبسط.
+Date-palm-derived media is an optional adsorption trial, included only for a defined treatment need and a fair comparison with alternatives.
 
-تبدأ الصيانة بقواعد تشغيل مفهومة. يمكن دراسة التنبؤ والذكاء الاصطناعي لاحقًا إذا توفرت بيانات ممثلة وأثبتت فائدة إضافية. قرار فتح مسار إعادة الاستخدام يبقى لدى المتحكم المستقل، وتحقق جودة الماء يعتمد على الطرق المخبرية والمتطلبات المنطبقة.
+The proposed independent controller closes the reuse path and diverts water if an operating condition fails or a critical measurement is lost. Sensors monitor the process; laboratory methods verify water for its intended use. Analytics support maintenance, without authority to open the outlet.
 
-## ما الذي يشرحه الموقع؟
+[System design](docs/system-design.md) · [Treatment diagram](assets/diagrams/treatment-train.svg) · [Outlet protection and risks](docs/safety.md)
 
-[المستكشف التعليمي](index.html) يعرض مكونات التصميم ومسار الماء وسيناريوهات التشغيل. الشكل ثلاثي الأبعاد والمحاكاة يشرحان الفكرة؛ أبعاد المكونات وأداء المعالجة والاستجابة المادية للصمامات تحتاج تحققًا فعليًا. وجود الواجهة في المستودع لا يعني أن نسختها الحالية منشورة أو أن وحدة مائية بُنيت.
+## What exists today
 
-المبدأ التشغيلي المستهدف: **عند فقد شروط التشغيل الموثوقة، يُغلق مسار إعادة الاستخدام.**
+| Area | Repository status |
+|---|---|
+| Digital experience | Interactive 3D unit, campus carousel, research links and simulated operating scenarios. |
+| Water treatment | Conceptual hardware and a validation plan. No measured MAWRID treatment results. |
+| Outlet protection | Software rules tested with synthetic inputs. Physical controller, valve and power-failure tests remain. |
+| Date-palm media | Adsorption hypothesis. Performance, service life, material release and cost remain unproven. |
+| Data and AI | Illustrative telemetry and schemas. No field dataset or trained MAWRID AI model. |
+| Field adoption | Target customer and use case. No confirmed partnership, approved field pilot or certification documented. |
 
-## طريق الإثبات
+The website is an educational digital prototype. Its geometry and generated scenes explain the concept; dimensions, water quality and physical hardware require validation. Performance and cost figures in the plan are targets or examples, without guarantees.
 
-1. تحديد موقع وعميل واستخدام واحد، وقياس المصدر والطلب.
-2. الاتفاق على بروتوكول ومؤشرات قبول قبل الاختبار.
-3. مقارنة المعالجة الأبسط والكربون التجاري وخرطوشة النخيل إن ثبتت الحاجة إليها.
-4. اختبار التحكم والموازنة المائية وأعطال الحساسات والطاقة.
-5. مراجعة النتائج والتكلفة وعبء المشغل؛ ثم تقرير جدوى تجربة ميدانية بشروطها.
+## Where the design aims to add value
 
-تربط [خريطة المخرجات التسعة](docs/judging-map.md) كل جزء بالدليل الموجود وما ينقصه. وتوضح [خطة التحقق](docs/validation.md) الاختبارات التقنية المقترحة.
+- **A defined source and nearby use.** Size against measured source flows and irrigation demand.
+- **An optional local medium.** Compare palm biochar with treatment without adsorption and commercial activated carbon. Keep the simpler route if it adds no measurable value.
+- **An independent outlet decision.** Test sensor, valve and power faults before a field trial.
+- **A traceable water balance.** Account for actual irrigation use, diversion, washing, makeup water, energy and maintenance. Separate recovered use from net potable-water offset.
 
-## التشغيل المحلي
+These are design priorities and hypotheses. Studies support mechanisms or methods; they do not establish MAWRID results, partnerships or superiority.
 
-من مجلد المستودع، باستخدام Node.js 22.12 أو أحدث:
+[Innovation and alternatives](docs/innovation.md) · [Palm-media research](docs/palm-research.md) · [Scientific references](references/README.md)
 
-```powershell
-npm.cmd ci
-npm.cmd run dev
+## The evidence path
+
+1. Confirm the site, customer and use; measure source and demand.
+2. Define methods, controls and acceptance criteria before testing.
+3. Compare treatments in the laboratory, with adsorption where justified.
+4. Test physical outlet protection and faults; reconcile the water balance.
+5. Review results, cost, workload and applicable requirements before a bounded field trial.
+
+The [evidence register](docs/evidence-register.md) distinguishes design, simulation, literature, targets and results. Follow the [validation plan](docs/validation.md) and [roadmap](docs/roadmap.md) for proposed experiments and evidence gates.
+
+## Nine deliverables, one project story
+
+The [camp deliverable map](docs/judging-map.md) records evidence and gaps for each required output, without implying completion, submission or a judging score.
+
+| # | Required output | Starting document |
+|---|---|---|
+| 1 | Team information, roles and capacity | [Deliverable map](docs/judging-map.md) |
+| 2 | Problem and need for a solution | [Project brief](docs/project-brief.md) |
+| 3 | Solution and level of innovation | [System design](docs/system-design.md) / [Alternatives](docs/innovation.md) |
+| 4 | Customer and value | [Project brief](docs/project-brief.md) |
+| 5 | Prototype plan and success criteria | [Validation plan](docs/validation.md) |
+| 6 | Prototype diagram and components | [Treatment diagram](assets/diagrams/treatment-train.svg) / [Visual design](docs/visual-design.md) |
+| 7 | Implementation plan and resource needs | [Roadmap](docs/roadmap.md) |
+| 8 | Feasibility, scaling and impact | [Impact and economics](docs/impact-and-economics.md) |
+| 9 | One-page project summary | [Project brief](docs/project-brief.md) |
+
+Team contacts and private approvals belong in the private submission pack.
+
+## Explore the project
+
+The [project website](https://sultalfaifi.com/mawrid-water-reuse/) connects the unit, palm-material hypothesis and simulator. Campus scenes follow **ablution → unit → laboratory check → irrigation → maintenance**.
+
+The website supports Arabic and English. The detailed project documents are currently primarily in Arabic; this README provides an English entry point.
+
+| Reference | Purpose |
+|---|---|
+| [Project brief](docs/project-brief.md) | Authoritative scope, customer, current status and boundaries. |
+| [Sensor and laboratory workflow](docs/sensor-and-lab-workflow.md) / [Control architecture](docs/ai-and-iot-architecture.md) | Calibration, sample tracking and control authority. |
+| [Data and model card](docs/data-and-model-card.md) / [Example data](data/README.md) / [Demo scenarios](docs/demo-scenarios.md) | Data status, simulated records and fault scenarios. |
+| [Design sources and asset provenance](docs/design-references.md) | Visual references, generated-image provenance and font licenses. |
+| [Development guide](docs/development.md) | Source structure, interaction behavior and static-site build outputs. |
+
+## Identity and visual direction
+
+The website's line-drawn drop mark anchors **forest green, pale paper, mint and warm limestone**, with IBM Plex Sans Arabic and Manrope typography. The visual world is a bright Saudi campus: restrained Islamic geometric screens, palms and natural morning light.
+
+The [23-page guide](https://sultalfaifi.com/mawrid-water-reuse/assets/brand/guide/index.html) covers logos, clear space, colors, typography, patterns, icons, imagery, motion and applications.
+
+[Brand-book PDF](output/pdf/mawrid-brand-book.pdf) · [Full identity kit](https://github.com/SultanAlfaifi/mawrid-water-reuse/releases/download/identity-v1.0/mawrid-identity-kit.zip) · [Editable presentation](assets/brand/templates/mawrid-presentation.pptx) · [Brand assets and reproduction instructions](assets/brand/README.md)
+
+Generated scenes are labeled as unbuilt concepts. Institutional logos identify cited research sources, with a link to the relevant study.
+
+## Getting started
+
+Requires **Node.js 22.12 or newer** and npm. From the repository root:
+
+```sh
+npm ci
+npm run dev
 ```
 
-افتح [الموقع المحلي](http://127.0.0.1:4173). للتحقق شغّل `npm.cmd run check`، ولتوليد الصفحة الثابتة شغّل `npm.cmd run build`. يشرح [دليل التطوير](docs/development.md) ملفات المصدر ومخرجات `index.html` و`assets/app/`؛ البناء محلي ولا ينشر الموقع.
+Open [http://127.0.0.1:4173](http://127.0.0.1:4173). On Windows PowerShell, use `npm.cmd` if required.
 
-## الوثائق والمراجع
+```sh
+npm run check
+npm run build
+```
 
-[مرجع المشروع](docs/project-brief.md) هو المصدر المعتمد للنطاق والعميل والاستخدام والحالة. تبدأ منه الوثائق العامة، وتشرح الوثائق التقنية التفاصيل والفرضيات التجريبية.
+`check` tests digital decision rules. `build` generates `index.html` and `assets/app/` from `web/`; it does not publish or validate water treatment. Also check interactions, both languages, mobile layouts, reduced motion and WebGL fallback in a browser.
 
-| الوثيقة | ما ستجده فيها |
+| Path | Role |
 |---|---|
-| [خريطة مخرجات المعسكر](docs/judging-map.md) | التسعة مخرجات، حالة كل منها، والدليل المطلوب |
-| [سجل الأدلة](docs/evidence-register.md) | الفرق بين التصميم والمحاكاة والهدف والنتيجة |
-| [الهوية والمحتوى](docs/brand-and-content.md) | الاسم والصياغة والمصطلحات وطريقة عرض الادعاءات |
-| [التصميم المرئي الموحد](docs/visual-design.md) | ترتيب مكونات الوحدة وعلاقة المجسم بصورة الجامعة |
-| [مراجع التصميم](docs/design-references.md) | المصادر الرسمية والتقنيات المستخدمة ومنشأ الصور وتراخيص الخطوط |
-| [أبحاث النخيل](docs/palm-research.md) | ما تدعمه الدراسات وما يحتاج إثباتًا في مورد |
-| [دليل التطوير](docs/development.md) | تشغيل الواجهة واختبارها وبناؤها ومصدر ملفات GitHub Pages |
-| [تصميم النظام](docs/system-design.md) | المكونات والأجهزة وحالات التشغيل |
-| [الأساس العلمي](docs/scientific-basis.md) | دور المعالجة والامتزاز وحدود القياس |
-| [الابتكار والبدائل](docs/innovation.md) | فرضية التميز والمقارنة والأفكار السابقة |
-| [التحقق التجريبي](docs/validation.md) | بروتوكول المقارنة والاختبار ومعايير القبول المقترحة |
-| [المخاطر والحماية](docs/safety.md) | الحواجز ومسار التحويل والتخزين والفحوص |
-| [الأثر والتكلفة](docs/impact-and-economics.md) | الموازنة المائية وتكاليف التركيب والتشغيل |
-| [خريطة التطوير](docs/roadmap.md) | بوابات الانتقال من التعريف إلى النموذج والتطبيق |
-| [التحكم والتحليلات](docs/ai-and-iot-architecture.md) | الحساسات والبرمجيات وحدود سلطة الذكاء الاصطناعي |
-| [بطاقة البيانات والنموذج](docs/data-and-model-card.md) | حالة البيانات والتقييم والقيود |
-| [مطابقة الحساسات والمختبر](docs/sensor-and-lab-workflow.md) | المعايرة وتتبع العينات والمقارنة |
-| [سيناريوهات المحاكاة](docs/demo-scenarios.md) | السيناريو الطبيعي والتدهور والأعطال |
-| [البيانات](data/README.md) | ملفات توضيحية موسومة بالمحاكاة ومخططات البيانات |
-| [المراجع](references/README.md) | المصادر العلمية والرسمية؛ ليست نتائج تجارب مورد |
+| `web/` | Editable website source. |
+| `docs/`, `data/`, `references/` | Project definition, evidence, examples and sources. |
+| `assets/brand/`, `assets/images/`, `assets/diagrams/` | Identity system, concept imagery and explanatory diagrams. |
+| `scripts/brand/` | Reproducible identity and document generators. |
+| `tests/` | Software decision-rule tests. |
+| `index.html`, `assets/app/` | Generated static website outputs. |
 
-للاستشهاد بالمشروع، راجع [بيانات الاستشهاد](CITATION.cff). لا يتضمن هذا المستودع اعتمادًا لتركيب منظومة أو إعادة استخدام ماء؛ التطبيق يحتاج مراجعة مختصة وتحققًا مخبريًا وموافقات منطبقة.
+Built with **Vite, Three.js, GSAP, Marked and DOMPurify**, locally hosted fonts and locked dependencies. See the [development guide](docs/development.md) and the separate [identity-generation toolchain](assets/brand/README.md).
 
-## English
+## Licensing and attribution
 
-**MAWRID — Ablution water, a resource for irrigation.**
+See the [MIT license](LICENSE) for software and project documentation. Fonts retain their SIL Open Font License notices: [IBM Plex Sans Arabic](assets/fonts/LICENSE-plex-arabic.txt) and [Manrope](assets/fonts/LICENSE-manrope.txt). Third-party logos and publications retain their rights; citation does not grant reproduction rights.
 
-MAWRID is a concept for a university facility: collect source-separated ablution water, treat it for a defined landscape-irrigation use, protect the outlet with an independent rule-based controller, and record water actually used.
-
-The current repository contains a conceptual design and an educational digital experience. It contains no measured MAWRID treatment results, approved field pilot, confirmed partnership, or trained AI model. Demo inputs are simulated. The 3D view explains components and flow; it does not validate dimensions, treatment performance, or physical valve behaviour.
-
-Date-palm biochar is a testable hypothesis. It must demonstrate value against a simpler treatment train and commercial activated carbon. Maintenance starts with transparent rules; predictive analytics comes later if representative data supports it. Laboratory verification and applicable approvals govern the intended water use.
-
-Start with the [project brief](docs/project-brief.md), [nine-deliverable map](docs/judging-map.md), [evidence register](docs/evidence-register.md), and [technical references](references/README.md). For the digital experience, see the [design sources and asset provenance](docs/design-references.md) and [development guide](docs/development.md).
+Image-generation prompts and provenance are recorded in the [design references](docs/design-references.md). Use [CITATION.cff](CITATION.cff) when citing the project.
