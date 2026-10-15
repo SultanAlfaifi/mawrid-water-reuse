@@ -121,7 +121,7 @@ function makeInflowPlan(config) {
     const noisy = weights.map(weight => weight * (1 + signed(rng, 0.05)));
     const sum = noisy.reduce((a, b) => a + b, 0) || 1;
     const nominalSum = weights.reduce((a, b) => a + b, 0) || 1;
-    weights.forEach((weight, i) => { inflow.push(noisy[i] / sum * total); nominal.push(weight / nominalSum); });
+    weights.forEach((weight, i) => { inflow.push(noisy[i] / sum * total); nominal.push(active ? weight / nominalSum : 0); });
     totals.push(total);
   }
   return { inflow, nominal, totals, ordinaryLitres };
@@ -556,7 +556,7 @@ function singleStep(sim) {
   sim.day = Math.min(7, Math.floor(sim.minute / MINUTES_PER_DAY) + 1);
   sim.timeLabel = timeLabel(Math.min(sim.minute, sim.config.days * MINUTES_PER_DAY - stepMinutes));
   sim.done = sim.step >= sim._plan.inflow.length;
-  if (sim.step % (MINUTES_PER_DAY / stepMinutes) === 0) {
+  if (sim.step % (MINUTES_PER_DAY / stepMinutes) === 0 && (sim.config.preset !== 'university' || dayIndex % 7 < 5)) {
     const deFriday = sim._currentDayCollected / friday;
     sim._forecastDaily = 0.35 * deFriday + 0.65 * sim._forecastDaily;
     sim._currentDayCollected = 0;

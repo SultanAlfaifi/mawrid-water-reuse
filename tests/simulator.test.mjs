@@ -219,6 +219,7 @@ test('Sunday week gives Friday multiplier on day six and university no inflow Fr
   assert.ok(Math.abs(daily[5] / daily[0] - DEFAULT_CONFIG.fridayMultiplier) < 1e-8);
   const university = finish(createSimulation({ preset: 'university' }));
   assert.equal(university.history.slice(5 * 288).reduce((sum, row) => sum + row.inflow, 0), 0);
+  assert.equal(university.history.slice(5 * 288).reduce((sum, row) => sum + row.forecast, 0), 0, 'forecast must obey the same known university workweek before observing the flow');
   assert.ok(university.history.slice(0, 288).some(row => row.inflow > 0));
 });
 
