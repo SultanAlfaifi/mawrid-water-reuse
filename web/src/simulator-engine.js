@@ -596,7 +596,6 @@ export function injectFault(sim, id) {
 }
 
 export function clearFaults(sim) {
-  const hadFaults = Object.keys(sim.faults).length > 0;
   sim.faults = {};
   sim.stages.uv.intensity = 100;
   sim.stages.sand.dp = BASE_DP;
@@ -611,10 +610,9 @@ export function clearFaults(sim) {
   sim._washSteps = [];
   sim._maintenanceActive = false;
   sim.maintenance.forEach(item => { item.resolved = true; });
-  if (hadFaults) {
-    sim.calibrations.push({ minute: sim.minute, time: sim.timeLabel, status: 'محاكاة صيانة ومعايرة؛ ليست شهادة ميدانية' });
-    event(sim, 'calibration', 'إزالة الأعطال ومحاكاة المعايرة', 'أُعيدت الحساسات والمصباح والوسط إلى حالتها الافتراضية. يبقى الإذن رهين جميع شروط القواعد الثابتة.');
-  }
+  sim._announced.clear();
+  sim.calibrations.push({ minute: sim.minute, time: sim.timeLabel, status: 'محاكاة صيانة ومعايرة؛ ليست شهادة ميدانية' });
+  event(sim, 'calibration', 'إزالة الأعطال ومحاكاة المعايرة', 'أُعيدت الحساسات والمصباح والوسط إلى حالتها الافتراضية. يبقى الإذن رهين جميع شروط القواعد الثابتة.');
   refreshReadings(sim, false);
   updateDecision(sim);
   return sim;

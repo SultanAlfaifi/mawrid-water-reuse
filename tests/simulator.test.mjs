@@ -261,3 +261,24 @@ test('report is visibly simulated, includes real ledger, fault response and futu
   assert.equal(report.calibrations.length, 1);
   assertBalance(sim);
 });
+
+
+test('restoration records service and repeated sensor faults open fresh latched calibration tickets', () => {
+  const sim = createSimulation({ preset: 'haram' });
+  stepSimulation(sim, 80);
+  for (let incident = 0; incident < 2; incident++) {
+    injectFault(sim, 'drift');
+    stepSimulation(sim, 20);
+    const unresolved = sim.maintenance.filter(item => item.key.includes('calibration') && !item.resolved);
+    assert.equal(unresolved.length, 1);
+    assert.equal(sim.decision.permitted, false);
+    clearFaults(sim);
+    assert.equal(sim.maintenance.filter(item => !item.resolved).length, 0);
+  }
+  assert.equal(sim.maintenance.filter(item => item.key.includes('calibration')).length, 2);
+  assert.equal(sim.calibrations.length, 2);
+  clearFaults(sim);
+  assert.equal(sim.calibrations.length, 3, 'an explicit service action is logged even without an injected fault');
+  assert.equal(getMetrics(sim).unsafeIrrigationCount, 0);
+  assertBalance(sim);
+});
