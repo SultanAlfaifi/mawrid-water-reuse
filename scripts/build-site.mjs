@@ -22,4 +22,6 @@ await rm(appOutput, { recursive: true, force: true });
 await mkdir(appOutput, { recursive: true });
 await cp(path.join(built, 'assets/app'), appOutput, { recursive: true });
 await writeFile(path.join(root, 'index.html'), await readFile(path.join(built, 'index.html')));
-console.log('Static site ready at index.html; sources are in web/.');
+await mkdir(path.join(root, 'simulator'), { recursive: true });
+await writeFile(path.join(root, 'simulator/index.html'), await readFile(path.join(built, 'simulator/index.html')));
+console.log('Static site ready at index.html and simulator/index.html; sources are in web/.');

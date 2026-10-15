@@ -115,14 +115,14 @@ npm ci
 npm run dev
 ```
 
-Open [http://127.0.0.1:4173](http://127.0.0.1:4173). On Windows PowerShell, use `npm.cmd` if required.
+Open [http://127.0.0.1:4173](http://127.0.0.1:4173), or the Arabic digital simulator at [http://127.0.0.1:4173/simulator/](http://127.0.0.1:4173/simulator/). The homepage also links to the simulator. On Windows PowerShell, use `npm.cmd` if required.
 
 ```sh
 npm run check
 npm run build
 ```
 
-`check` tests digital decision rules. `build` generates `index.html` and `assets/app/` from `web/`; it does not publish or validate water treatment. Also check interactions, both languages, mobile layouts, reduced motion and WebGL fallback in a browser.
+`check` tests digital decision rules. `build` generates `index.html`, `simulator/index.html` and `assets/app/` from `web/`; it does not publish or validate water treatment. Simulator outputs are **SIMULATED**, with published values and declared assumptions; they are not measurements or treatment-validation results. Also check interactions, both languages on the homepage, the Arabic simulator, mobile layouts, reduced motion and WebGL fallback in a browser.
 
 | Path | Role |
 |---|---|
@@ -131,7 +131,7 @@ npm run build
 | `assets/brand/`, `assets/images/`, `assets/diagrams/` | Identity system, concept imagery and explanatory diagrams. |
 | `scripts/brand/` | Reproducible identity and document generators. |
 | `tests/` | Software decision-rule tests. |
-| `index.html`, `assets/app/` | Generated static website outputs. |
+| `index.html`, `simulator/index.html`, `assets/app/` | Generated static website outputs for the existing GitHub Pages site. |
 
 Built with **Vite, Three.js, GSAP, Marked and DOMPurify**, locally hosted fonts and locked dependencies. See the [development guide](docs/development.md) and the separate [identity-generation toolchain](assets/brand/README.md).
 

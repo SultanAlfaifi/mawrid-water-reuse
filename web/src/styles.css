@@ -50,6 +50,8 @@ h1{font-size:clamp(3rem,4.3vw,4.95rem);line-height:1.13;letter-spacing:-.035em;f
 .button{display:inline-flex;align-items:center;justify-content:center;gap:25px;min-height:50px;padding:10px 23px;border:1px solid transparent;font-size:.9rem;font-weight:600;transition:background .2s,transform .2s}
 .button.primary{background:var(--forest);color:#f5faf3;border-radius:5px}
 .button.primary:hover{background:#27584a;transform:translateY(-2px)}
+.button.simulator-link{background:var(--mint);border-color:var(--green);color:var(--forest);border-radius:5px}
+.button.simulator-link:hover{background:#dceade}
 .arrow{font:400 1.1rem Manrope,sans-serif;display:inline-block}
 [dir=rtl] .arrow{transform:scaleX(-1)}
 .text-button{display:inline-flex;gap:12px;align-items:center;background:none;border:0;padding:5px 0;font-size:.8rem;font-weight:600;line-height:1.7}

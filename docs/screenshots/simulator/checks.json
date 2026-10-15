@@ -1,0 +1,117 @@
+{
+  "status": "SIMULATED",
+  "date": "2026-10-15",
+  "seed": 350,
+  "preset": "mosque",
+  "note": "Software simulation only; deterministic fault at step150; hidden true quality audits releases after the fixed controller decision. No physical test or compliance claim.",
+  "results": [
+    {
+      "fault": "normal",
+      "injectionStep": null,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 65.8682469186958,
+      "divertedM3": 4.331753081304464,
+      "backwashM3": 0,
+      "overflowM3": 0,
+      "storedM3": 0,
+      "balanceErrorPct": 3.601702665140655e-13
+    },
+    {
+      "fault": "drift",
+      "injectionStep": 150,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 2.5817328730813083,
+      "divertedM3": 64.20318071228091,
+      "backwashM3": 0,
+      "overflowM3": 1.3317530813044578,
+      "storedM3": 2.083333333333332,
+      "balanceErrorPct": 1.5546917979024413e-14
+    },
+    {
+      "fault": "ph",
+      "injectionStep": 150,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 2.8595106508590855,
+      "divertedM3": 63.92540293450313,
+      "backwashM3": 0,
+      "overflowM3": 1.3317530813044578,
+      "storedM3": 2.083333333333332,
+      "balanceErrorPct": 1.5546917979024413e-14
+    },
+    {
+      "fault": "uv",
+      "injectionStep": 150,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 4.158615783980223,
+      "divertedM3": 62.626297801381995,
+      "backwashM3": 0,
+      "overflowM3": 1.3317530813044578,
+      "storedM3": 2.083333333333332,
+      "balanceErrorPct": 1.5546917979024413e-14
+    },
+    {
+      "fault": "power",
+      "injectionStep": 150,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 2.303955095303531,
+      "divertedM3": 60.69212132837189,
+      "backwashM3": 0,
+      "overflowM3": 5.1907490969915555,
+      "storedM3": 2.013174479333035,
+      "balanceErrorPct": 1.9433647473780516e-15
+    },
+    {
+      "fault": "clog",
+      "injectionStep": 150,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 2.9983995397479744,
+      "divertedM3": 59.63767688392745,
+      "backwashM3": 0.36,
+      "overflowM3": 5.1907490969915555,
+      "storedM3": 2.013174479333035,
+      "balanceErrorPct": 8.421247238638222e-15
+    },
+    {
+      "fault": "contamination",
+      "injectionStep": 150,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 61.79075159156496,
+      "divertedM3": 8.409248408435351,
+      "backwashM3": 0,
+      "overflowM3": 0,
+      "storedM3": 0,
+      "balanceErrorPct": 4.275402444231713e-13
+    },
+    {
+      "fault": "carbon",
+      "injectionStep": 150,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 2.303955095303531,
+      "divertedM3": 64.48095849005868,
+      "backwashM3": 0,
+      "overflowM3": 1.3317530813044578,
+      "storedM3": 2.083333333333332,
+      "balanceErrorPct": 1.5546917979024413e-14
+    },
+    {
+      "fault": "valve",
+      "injectionStep": 150,
+      "unsafeIrrigationCount": 0,
+      "collectedM3": 70.20000000000002,
+      "irrigatedM3": 2.303955095303531,
+      "divertedM3": 60.69212132837189,
+      "backwashM3": 0,
+      "overflowM3": 5.1907490969915555,
+      "storedM3": 2.013174479333035,
+      "balanceErrorPct": 1.9433647473780516e-15
+    }
+  ]
+}
