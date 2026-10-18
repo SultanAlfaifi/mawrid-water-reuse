@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-18",
+  "scope": "Local software and delivery checks only. No water-quality, physical actuation or field-model validation.",
+  "base_commit": "f61e022d89786dc03d0e8ef777f79232a1329da1",
+  "preservation": {
+    "status": "PASS",
+    "original_paths_unchanged": [
+      "output/",
+      "mawrid-system/",
+      "mawrid-final/",
+      "ml/"
+    ],
+    "method": "Git staged tree compared to immutable base before adding this new proof directory."
+  },
+  "automated": {
+    "public_site_tests": 20,
+    "browser_model_tests": 5,
+    "python_comparison_snapshots": 74,
+    "long_sequence_iterations": 1500,
+    "repository_links": 353,
+    "original_delivered_client_and_scene_hashes": "PASS"
+  },
+  "browser": {
+    "status": "PASS",
+    "desktop": {
+      "width": 1440,
+      "height": 1000
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    },
+    "faults": [
+      {
+        "fault": "turbidity",
+        "state": "HOLD",
+        "codes": [
+          "TURBIDITY_HIGH"
+        ]
+      },
+      {
+        "fault": "sensor_dropout",
+        "state": "HOLD",
+        "codes": [
+          "QUALITY_SENSOR_INVALID"
+        ]
+      },
+      {
+        "fault": "clogging",
+        "state": "HOLD",
+        "codes": [
+          "OUTLET_PRESSURE_OUT_OF_RANGE",
+          "FILTER_DIFFERENTIAL_HIGH"
+        ]
+      },
+      {
+        "fault": "power_loss",
+        "state": "HOLD",
+        "codes": [
+          "POWER_LOSS"
+        ]
+      },
+      {
+        "fault": "valve_stuck",
+        "state": "HOLD",
+        "codes": [
+          "VALVE_COMMAND_FEEDBACK_MISMATCH"
+        ]
+      }
+    ],
+    "page_errors": [],
+    "failed_responses": [],
+    "api_requests": []
+  },
+  "delivery": {
+    "status": "PASS",
+    "nestedMount": "/mawrid-water-reuse",
+    "pausedExport": {
+      "simulation_running": false,
+      "clock_paused": true,
+      "effective_flow_lpm": {
+        "inlet_lpm": 0,
+        "treatment_lpm": 0,
+        "reuse_lpm": 0,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 0,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "rate_basis": "snapshot.flow and equipment describe the instantaneous virtual rule, including latent rates when paused. effective_flow_lpm is zero while the clock is paused."
+    },
+    "homepageCTA": "Arabic and English verified",
+    "backNavigation": "restored stopped UI and working controls",
+    "media": {
+      "duration": 60,
+      "width": 1280,
+      "height": 720,
+      "currentTime": 1.65783,
+      "error": null
+    },
+    "webglFallback": "controls remain usable; sensor dropout produces HOLD",
+    "scope": "Software behavior and media playback capability only; no continuous visual film review, hardware or water-quality validation."
+  },
+  "media": {
+    "status": "passed",
+    "video": {
+      "video_stream_index": 0,
+      "video_stream_count": 1,
+      "audio_stream_count": 0,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "fps_basis": "avg_frame_rate",
+      "duration": 60,
+      "duration_basis": "video_stream",
+      "pixel_format": "yuv420p",
+      "codec": "h264"
+    },
+    "decoded_frames": 1440,
+    "full_decode": "passed",
+    "continuous_visual_playback_reviewed": false,
+    "review": "../../video/review/review.md"
+  },
+  "sha256": {
+    "README.md": "99c4192915e8b7902ee9250225c023eb1da4bf0350eea906427c58a52675b8d5",
+    "experience/src/main.js": "1c1c769d203e94b7ed858e3342bf7269d703e60a9957588ebf1a83d99d334d22",
+    "experience/src/model.js": "0d1f52634c31a26e6cc7c0967b48bc7a553c45034a8299b82a21ddc1dbb9d070",
+    "experience/index.html": "093a26a375078dd0f2083bae23379f3e5136ce5711ff226771b1a6b077a1575c",
+    "assets/demo/mawrid-software-demo.mp4": "8cdf8fb0298639525eccc4e8afd0fca3d25079672df190c4518cbef9cb9eea03",
+    "assets/demo/mawrid-software-demo-poster.jpg": "2caaf1e79d8a07a3b4cbf1939f7259a6d2b884d68e3de32fd11077c1a32ad970"
+  }
+}

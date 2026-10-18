@@ -1,5 +1,8 @@
+# Keep source hashes and static builds stable across Windows and Linux.
+* text=auto eol=lf
 # Keep generated vendor shader strings intact; their whitespace is intentional.
 assets/app/** -whitespace linguist-generated=true
+experience/assets/** -whitespace linguist-generated=true
 # Generated documents may contain only ASCII; keep byte offsets and CRCs intact.
 *.pdf binary
 *.pptx binary
@@ -12,12 +15,13 @@ assets/app/** -whitespace linguist-generated=true
 *.woff2 binary
 *.jpeg binary
 *.gif binary
+*.mp4 binary
 mawrid-system/client/assets/*.js -whitespace linguist-generated=true
 mawrid-system/client/plant3d/assets/** -whitespace linguist-generated=true
 mawrid-final/dist/assets/** -whitespace linguist-generated=true
-output/** -whitespace linguist-generated=true
+output/** -text -whitespace linguist-generated=true
 # Preserve published CSV byte streams and verbatim upstream license texts.
-*.csv -whitespace
-assets/licenses/** -whitespace
+*.csv -text -whitespace
+assets/licenses/** -text -whitespace
 # Preserve immutable research source hashes while checking other whitespace.
 ml/** whitespace=-blank-at-eof

@@ -1,0 +1,7 @@
+.render/
+recordings/
+review/*-styleframe.png
+review/browser-first.png
+review/browser-overview.png
+review/local-*.png
+review/at-*.jpg

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "video/recordings/browser-journey.webm",
+    "sha256": "93e3d99332f718435ef4a2702548402f098eadc4131b6f3af9709669d8234466",
+    "decoded_frames": 281,
+    "first_frame_seconds": 0.0,
+    "last_frame_seconds": 18.828,
+    "effective_fps_over_span": 14.871468026343743,
+    "median_frame_interval_seconds": 0.044999999999999984,
+    "requested_capture_fps": 24,
+    "actual_timebase": "VFR browser canvas MediaRecorder; source headers omit average FPS/duration",
+    "target_fps": 24
+  },
+  {
+    "path": "video/recordings/browser-fault.webm",
+    "sha256": "08fb1ce11fe02e510d5392534a0b95b0eb1be816f83305bd9be0646532929d92",
+    "decoded_frames": 279,
+    "first_frame_seconds": 0.0,
+    "last_frame_seconds": 11.586,
+    "effective_fps_over_span": 23.994476091834972,
+    "median_frame_interval_seconds": 0.04149999999999987,
+    "requested_capture_fps": 24,
+    "actual_timebase": "VFR browser canvas MediaRecorder; source headers omit average FPS/duration",
+    "target_fps": 24
+  }
+]

@@ -7,10 +7,12 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "node scripts/build-site.mjs",
+    "build:experience": "node experience/build.mjs",
     "check": "node --test tests/*.test.mjs",
     "check:system": "node --test mawrid-system/client/test-*.mjs",
     "check:scene": "node --test mawrid-system/plant3d/test-*.mjs",
-    "check:repo": "node scripts/check-repository.mjs"
+    "check:repo": "node scripts/check-repository.mjs",
+    "check:experience": "node --test experience/test-model.mjs"
   },
   "dependencies": {
     "dompurify": "3.4.16",
