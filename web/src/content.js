@@ -24,8 +24,8 @@ export const UI = {
     "Camp deliverables"
   ],
   "designStage": [
-    "مرحلة التصميم",
-    "Design stage"
+    "نموذج برمجي يعمل",
+    "Working software prototype"
   ],
   "eyebrow": [
     "من مياه الوضوء إلى ري الجامعة",
@@ -40,8 +40,8 @@ export const UI = {
     "A resource for irrigation."
   ],
   "heroLead": [
-    "نجمع مياه الوضوء، نعالجها في الموقع، ونختبر استخدامها لري المساحات الخضراء.",
-    "Collect ablution water, treat it on site, and test its use for landscape irrigation."
+    "نطوّر نظامًا لإعادة استخدام مياه الوضوء في الري. جرّب المحطة الافتراضية وراقب القراءات وقرار الري.",
+    "We are developing a system to reuse ablution water for irrigation. Explore the virtual plant, readings and irrigation decision."
   ],
   "tryPrototype": [
     "جرّب النموذج البرمجي",
@@ -180,8 +180,8 @@ export const UI = {
     "Can water reach irrigation?"
   ],
   "logicIntro": [
-    "اختر حالة لترى قرار المتحكم.",
-    "Choose a scenario to see the controller decision."
+    "اختر حالة لترى قرار الري الافتراضي وسببه.",
+    "Choose a scenario to see the virtual irrigation decision and its reason."
   ],
   "scenarioLabel": [
     "حالات تجربة القرار",
@@ -224,8 +224,8 @@ export const UI = {
     "Local biochar: a hypothesis to compare."
   ],
   "biocharText": [
-    "نقارن الوسط المشتق من مخلفات النخيل بالمعالجة دونه وبالكربون التجاري. تحدد النتائج فائدته، وتكلفة تشغيله، ومكانه في النسخة الأولى.",
-    "We compare date-palm-derived media with a no-biochar control and commercial carbon. Results will determine its benefit, operating cost, and place in the first unit."
+    "نخطط لمقارنة وسط من مخلفات النخيل بالكربون التجاري وبالمعالجة دونه. تحدد الاختبارات فائدته وتكلفته قبل اعتماده في المحطة.",
+    "We plan to compare date-palm-derived media with commercial carbon and a no-biochar control. Testing will determine its benefit and cost before adoption."
   ],
   "comparisonPlan": [
     "خطة المقارنة",
@@ -296,8 +296,8 @@ export const UI = {
     "View the GitHub repository"
   ],
   "footerStatus": [
-    "مورد · مرحلة التصميم والاختبار المخطط",
-    "MAWRID · Design and planned testing"
+    "مورد · نموذج برمجي، والتحقق الميداني هو القادم",
+    "MAWRID · Software prototype; field validation is next"
   ],
   "references": [
     "المراجع",
@@ -589,17 +589,23 @@ export const EVIDENCE = [
   },
   {
     "code": "ILLUSTRATIVE",
-    "doc": "demo-scenarios",
+    "doc": "judge-guide",
     "ar": [
-      "التجربة الرقمية",
-      "مجسم تفاعلي وتجربة قرار في المتصفح.",
-      "تعمل"
+      "النموذج البرمجي",
+      "محطة ثلاثية الأبعاد، ومحاكاة أعطال، وقواعد قرار وسجل محلي.",
+      "يعمل"
     ],
     "en": [
-      "Digital demo",
-      "An interactive model and browser control example.",
+      "Software prototype",
+      "A 3D plant, fault simulation, decision rules and local logs.",
       "Working"
     ]
+  },
+  {
+    "code": "RESEARCH",
+    "doc": "research-guide",
+    "ar": ["بحث الذكاء الاصطناعي", "كشف شذوذ على GECCO وWaterHub، مستقل عن قرار الري.", "بحث تجريبي"],
+    "en": ["AI research", "Anomaly research on GECCO and WaterHub, separate from irrigation control.", "Experimental"]
   },
   {
     "code": "NOT TESTED",
