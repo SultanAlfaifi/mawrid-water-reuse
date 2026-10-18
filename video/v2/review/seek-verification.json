@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "time": 2.8,
+      "sha256": "e8c602e5803a6d0d4c8b0230f5ac69fd2617574ee6d5dd8c2c66e5fcc672fa87",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open"
+    },
+    {
+      "time": 19,
+      "sha256": "8d291e021f8a3cbb6e530a5337e88083711854ad85ae13497ba1fbbd8be3a2b5",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open"
+    },
+    {
+      "time": 34,
+      "sha256": "648f1c46eba25688d61f4ff13bc3ace0e363a7333f19a928d4e8e5c944dba630",
+      "repeat_identical": true,
+      "state": "HOLD",
+      "irrigation": "closed"
+    },
+    {
+      "time": 40,
+      "sha256": "bfab791710db942c65078b7cd78180a0f5229033a45a6318f5fb247732cadd06",
+      "repeat_identical": true,
+      "state": "HOLD",
+      "irrigation": "closed"
+    },
+    {
+      "time": 55.5,
+      "sha256": "4a47163d456dfb5e62eae6b94a41d6802349dee40f112160ddcc90a7545abc56",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open"
+    }
+  ],
+  "scope": "Deterministic frame seeking, Arabic bounds and virtual fault response only."
+}
