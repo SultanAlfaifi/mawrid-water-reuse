@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-17",
+  "purpose": "Primary-source UX research and read-only review for Mawrid UI simplification",
+  "scope": {
+    "web_research": true,
+    "source_code_review": true,
+    "browser_run": false,
+    "user_testing": false,
+    "ml_or_ui_modified": false,
+    "real_sensor_or_model_data_read": false,
+    "accessibility_certification": false
+  },
+  "source_notes": "المراجع مقروءة بالبحث/فتح الصفحات الرسمية. الاستنتاجات التطبيقية مميزة عن نص المعيار. لا ادعاء بأن مشروع مورد يملك قدرات المنتج الصناعي المثال.",
+  "sources": [
+    {
+      "id": "gov-navigation",
+      "publisher": "GOV.UK Design System",
+      "title": "Navigate a service",
+      "url": "https://design-system.service.gov.uk/patterns/navigate-a-service/",
+      "basis": "تنقل ثابت إلى المهام الأهم؛ بسّط رحلة المستخدم أولاً. قائمة التنقل ليست فهرس كل صفحة."
+    },
+    {
+      "id": "gov-buttons",
+      "publisher": "GOV.UK Design System",
+      "title": "Button",
+      "url": "https://design-system.service.gov.uk/components/button/",
+      "basis": "إجراء رئيسي واضح وتسمية تصف الفعل؛ كثرة الإجراءات المتساوية في البروز تربك الخطوة التالية."
+    },
+    {
+      "id": "fluent-accessibility",
+      "publisher": "Microsoft Fluent 2",
+      "title": "Accessibility",
+      "url": "https://fluent2.microsoft.design/accessibility",
+      "basis": "تسلسل واضح ولغة مباشرة وتركيز مرئي وتباين وإعادة تدفق وتكبير نص؛ تجميع المحتوى يساعد المسح البصري."
+    },
+    {
+      "id": "fluent-navigation",
+      "publisher": "Microsoft Fluent 2",
+      "title": "Nav usage",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/nav/usage/",
+      "basis": "عناوين قصيرة وواضحة وترتيب متوقع وأولوية للفئات المهمة. توجيه مكوّن Nav تجريبي؛ نستخدم المبدأ ولا نفترض اعتماد مكوّنه."
+    },
+    {
+      "id": "carbon-disclosure",
+      "publisher": "IBM Carbon",
+      "title": "Accordion guidelines",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/accordion/guidelines",
+      "basis": "التفاصيل القابلة للفتح تقلل الزحام، لكن قد لا يقرأها المستخدم؛ لا تخفِ المعلومات التي يحتاج الجميع قراءتها. الصفحة الحالية محدثة 2026-09-09."
+    },
+    {
+      "id": "wai-older",
+      "publisher": "W3C WAI",
+      "title": "Older Users and Web Accessibility",
+      "url": "https://www.w3.org/WAI/older-users/",
+      "basis": "قد تتغير الرؤية والدقة الحركية والذاكرة القصيرة مع العمر؛ مبادئ الإتاحة تساعد طيفاً واسعاً من المستخدمين دون افتراض احتياج موحد لكل كبار السن."
+    },
+    {
+      "id": "wai-rtl",
+      "publisher": "W3C Internationalization",
+      "title": "Structural markup and right-to-left text in HTML",
+      "url": "https://www.w3.org/International/questions/qa-html-dir",
+      "basis": "استخدم اتجاه HTML الدلالي للنص العربي وخصائص CSS المنطقية start/end، وتعامل صراحة مع اتجاه المحتوى الديناميكي."
+    },
+    {
+      "id": "wai-target-minimum",
+      "publisher": "W3C WAI",
+      "title": "Understanding SC 2.5.8 Target Size (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "basis": "حد WCAG 2.2 AA هو 24×24 CSS px مع استثناءات منها التباعد؛ لا يصح وصف 44px بأنه الحد الأدنى AA."
+    },
+    {
+      "id": "wai-target-enhanced",
+      "publisher": "W3C WAI",
+      "title": "Understanding SC 2.5.5 Target Size (Enhanced)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html",
+      "basis": "المعيار المحسن AAA يستهدف 44×44 CSS px مع استثناءات. نقترح 44–48px كهدف تصميم عملي للأزرار الأساسية، لا كشهادة امتثال."
+    },
+    {
+      "id": "wai-status",
+      "publisher": "W3C WAI",
+      "title": "Understanding SC 4.1.3 Status Messages",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "basis": "أعلن تغيرات الحالة المهمة لتقنيات المساعدة دون سحب التركيز؛ الإفراط في live regions قد يجعل التطبيق كثير الكلام."
+    },
+    {
+      "id": "water-domain-example",
+      "publisher": "Bentley Systems official product documentation",
+      "title": "WaterSight — Realtime simulation",
+      "url": "https://bentleysystems.service-now.com/community?id=kb_article_view&sysparm_article=KB0016436",
+      "basis": "مثال منتج يربط نتائج نموذج هيدروليكي ببيانات حساسات في عرض متكامل. مثال لتنظيم المعلومات وليس دليلاً على أداء مورد أو ضمان سلامة الماء."
+    }
+  ],
+  "practical_rules": [
+    {
+      "id": "R1",
+      "title": "خطوة أولى واضحة",
+      "application": "في أول زيارة اشرح مورد بجملة ومسار المياه المبسط، ثم اجعل «استكشف المنشأة» الإجراء الرئيسي. عند بدء تجربة اكتب «ابدأ المحاكاة»؛ وعند المصدر التاريخي «شغّل القراءات التاريخية». لا تستخدم «بدء جلسة» وحدها قبل شرح نوعها.",
+      "source_ids": [
+        "gov-buttons",
+        "gov-navigation"
+      ]
+    },
+    {
+      "id": "R2",
+      "title": "تنقل قصير وثابت بحسب المهام",
+      "application": "خمسة أقسام رئيسية مقترحة، مع الإعدادات كأداة ثانوية. استخدم نفس هوية الموقع وروابطه في لوحة التشغيل والمشهد، وأظهر مكان المستخدم. ضع «المشهد» و«التحكم» كعرضين للمنشأة نفسها يحافظان على الجلسة.",
+      "source_ids": [
+        "gov-navigation",
+        "fluent-navigation"
+      ]
+    },
+    {
+      "id": "R3",
+      "title": "الحالة أولاً والتفاصيل عند الحاجة",
+      "application": "ابدأ كل شاشة بثلاثة أمور: الحالة الآن، سببها، والخطوة المتاحة. اجعل معاملات التشغيل وقائمة الأجهزة الكاملة والتفاصيل البحثية قابلة للتوسيع. أبقِ نوع المصدر، وجود محاكاة، عمر البيانات، وحدود التحكم أو النموذج ظاهرة دائماً.",
+      "source_ids": [
+        "carbon-disclosure",
+        "fluent-accessibility"
+      ]
+    },
+    {
+      "id": "R4",
+      "title": "عربية مباشرة وأرقام لا يختل اتجاهها",
+      "application": "استخدم اسماً عربياً واضحاً للجهاز أولاً والكود تحته؛ مثال «خزان التجميع / TK-101». وحّد المصطلحات ولا تجعل أيقونة وحدها تحمل المعنى. احتفظ dir=rtl دلالياً واعزل الأرقام والوحدات والتواريخ ذات الاتجاه المختلف؛ افحص ترتيب Tab الفعلي في RTL.",
+      "source_ids": [
+        "wai-rtl",
+        "fluent-accessibility"
+      ]
+    },
+    {
+      "id": "R5",
+      "title": "قراءة ولمس مريحان دون تبسيط مُخل",
+      "application": "استهدف 44–48px للأزرار المتكررة ومسافة تمنع الضغط الخاطئ، مع خط عربي واضح وتباين وفوكس مرئي وتكبير 200% دون قطع النص. اجعل الحركة اختيارية أو مخفضة، واحتفظ بديل نصي كامل للمشهد وأزرار كاميرا تغني عن السحب. القياسات المطلوبة تُختبر بصرياً ولا تُفترض من الكود.",
+      "source_ids": [
+        "wai-older",
+        "wai-target-minimum",
+        "wai-target-enhanced",
+        "fluent-accessibility"
+      ]
+    },
+    {
+      "id": "R6",
+      "title": "تحديثات هادئة تحفظ التركيز",
+      "application": "حدّث الأرقام في مواضعها؛ لا تعِد بناء الشاشة كل ثانيتين. خصص status قصيراً لتغير مهم مثل انقطاع الاتصال أو إيقاف المحاكاة، لا لكل قراءة. أبقِ الحقل المركّز والتحديد والتمرير، وانقل التركيز إلى عنوان الوجهة فقط عند تنقل صريح.",
+      "source_ids": [
+        "wai-status",
+        "fluent-accessibility"
+      ]
+    },
+    {
+      "id": "R7",
+      "title": "الشفافية العلمية قريبة من الرقم",
+      "application": "اعرض «محاكاة افتراضية» أو «قراءات تاريخية» أو «قراءات واردة» مع وقتها؛ افصلها عن حكم النموذج. سمِّ النتيجة «إشارة شذوذ» لا «سلامة المياه». عند عرض تقييم، أظهر البسط والمقام والتعرض الزمني والفشل في شروط القبول، مع رابط واضح للتقرير الكامل. هذا تطبيق خاص بمورد؛ المثال الصناعي لا يثبت أداءه.",
+      "source_ids": [
+        "water-domain-example",
+        "carbon-disclosure"
+      ]
+    }
+  ],
+  "current_code_review": [
+    {
+      "id": "O1",
+      "priority": "high",
+      "kind": "code-grounded navigation inference",
+      "files": [
+        {
+          "path": "mawrid-system/client/index.html",
+          "line": 45
+        },
+        {
+          "path": "mawrid-system/client/index.html",
+          "line": 54
+        },
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 5
+        }
+      ],
+      "finding": "غرفة التشغيل والنظرة العامة والتصور الهندسي والمشهد المكاني مداخل متقاربة بلا تعريف موحد لمسار مستخدم جديد. لا يظهر «عن مورد» ضمن التنقل الأساسي.",
+      "change": "اجمع التجربة في «المنشأة» مع المشهد والتحكم، وأضف شرح المشروع كوجهة واضحة؛ حافظ على الوصول إلى الذكاء والأدلة.",
+      "not_asserted": "لم يُختبر ارتباك مستخدم حقيقي؛ هذا استنتاج من بنية التنقل."
+    },
+    {
+      "id": "O2",
+      "priority": "high",
+      "kind": "concrete update/focus risk",
+      "files": [
+        {
+          "path": "mawrid-system/client/index.html",
+          "line": 69
+        },
+        {
+          "path": "mawrid-system/client/app.js",
+          "line": 69
+        },
+        {
+          "path": "mawrid-system/client/app.js",
+          "line": 284
+        },
+        {
+          "path": "mawrid-system/client/app.js",
+          "line": 475
+        }
+      ],
+      "finding": "page-content كله aria-live=polite. refresh كل ثانيتين يستدعي applyState ثم render؛ صفحات overview/measurements/alerts/history/model تعاد بinnerHTML. إذا كان التركيز داخلها يستبدل العنصر، وقد تتكرر إعلانات المحتوى.",
+      "change": "حدّث القيم بعناصر ثابتة، واعزل منطقة status موجزة. اختبر بقاء focus على زر أو select عبر ثلاث دورات polling.",
+      "not_asserted": "لم يُشغّل قارئ شاشة؛ معدل الإعلان الفعلي يعتمد عليه. استثناءات plant وsettings الحالية يجب الحفاظ عليها."
+    },
+    {
+      "id": "O3",
+      "priority": "medium",
+      "kind": "code-grounded onboarding inference",
+      "files": [
+        {
+          "path": "mawrid-system/client/app.js",
+          "line": 333
+        },
+        {
+          "path": "mawrid-system/client/app.js",
+          "line": 351
+        }
+      ],
+      "finding": "نافذة بدء الجلسة تجمع مصادر المحاكاة والتاريخية والتلقي عبر API في select واحد. الوصف موجود لكنه يأتي بعد اختيار مفهوم تقني.",
+      "change": "اعرض أولاً ثلاثة أغراض مفهومة: تجربة افتراضية، استعراض بيانات سابقة، استقبال قراءات. ضع تفاصيل المصادر والقنوات داخل الغرض المختار، دون بدء آلي أو تبديل جلسة صامت."
+    },
+    {
+      "id": "O4",
+      "priority": "medium",
+      "kind": "code-grounded view continuity inference",
+      "files": [
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 5
+        },
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 22
+        },
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 24
+        }
+      ],
+      "finding": "المشهد يعيد المستخدم إلى التحكم لبدء الجلسة، وله روابط محدودة مختلفة عن تنقل التطبيق. الفصل الوظيفي صحيح لكنه يزيد تبديل السياق.",
+      "change": "نفس شريط التنقل، مع تبديل واضح بين المشهد والتحكم. رسالة الفراغ تشرح سبب عدم وجود بيانات وزراً إلى التحكم؛ لا يبدأ المشهد جلسة بمجرد فتحه."
+    },
+    {
+      "id": "O5",
+      "priority": "medium",
+      "kind": "visual-density hypothesis",
+      "files": [
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 9
+        },
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 21
+        },
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 27
+        }
+      ],
+      "finding": "أربع بطاقات تدفق، حالة العملية، تفاصيل الجهاز، قراءات المحاكاة، وكل الأجهزة متجاورة في الواجهة. هذه كثافة مصدرية تستلزم اختباراً بصرياً، وليست مخالفة إتاحة مثبتة.",
+      "change": "قدّم مراحل المسار الأربع: تجميع، معالجة، تخزين، استخدام؛ اختيار مرحلة يفتح أجهزتها، مع «كل الأجهزة» متاحاً. لا تحذف المعلومات أو تُخفِ حالة التعطل."
+    },
+    {
+      "id": "O6",
+      "priority": "retain",
+      "kind": "existing strengths",
+      "files": [
+        {
+          "path": "mawrid-system/client/index.html",
+          "line": 14
+        },
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 7
+        },
+        {
+          "path": "mawrid-system/plant3d/index.html",
+          "line": 24
+        },
+        {
+          "path": "mawrid-system/plant3d/main.js",
+          "line": 19
+        },
+        {
+          "path": "mawrid-system/plant3d/main.js",
+          "line": 101
+        }
+      ],
+      "finding": "يوجد RTL عربي، رابط تخطي، نص ثابت يوضح المحاكاة، بدائل نصية للأجهزة، أوامر كاميرا ولوحة مفاتيح، reduced motion، وإشارة مستقلة لحدود الذكاء.",
+      "change": "احتفظ بهذه الضمانات خلال التبسيط؛ لا تجعل التحسين البصري يمحو مصدر الحالة أو سبب توقف الحركة."
+    }
+  ],
+  "navigation_proposal": {
+    "proposal_only": true,
+    "primary": [
+      {
+        "label": "عن مورد",
+        "purpose": "الفكرة، المشكلة، مراحل المعالجة، وما هو منفذ أو مخطط؛ روابط الأدلة."
+      },
+      {
+        "label": "المنشأة",
+        "children": [
+          "المشهد",
+          "التحكم",
+          "تفاصيل الأجهزة"
+        ],
+        "purpose": "مساحة واحدة للجلسة الافتراضية مع شريط مصدر ووقت وحالة دائم."
+      },
+      {
+        "label": "القياسات والتنبيهات",
+        "children": [
+          "القياسات",
+          "التنبيهات"
+        ],
+        "purpose": "قراءة القيم وفهم الإشارات مع المصدر والوحدات."
+      },
+      {
+        "label": "السجل",
+        "purpose": "جلسات سابقة وتصدير ومرجع أصل كل قراءة."
+      },
+      {
+        "label": "الذكاء والأدلة",
+        "purpose": "هوية النموذج الجاري وحدوده ونتائج التقييم وروابط التقارير؛ يبقى ظاهراً وليس مدفوناً داخل الإعدادات."
+      }
+    ],
+    "utility": [
+      "الإعدادات",
+      "المساعدة"
+    ],
+    "first_visit": "صفحة عن مورد مع شرح قصير ورسم مسار وأزرار «استكشف المنشأة» و«راجع النتائج والأدلة». بدء المحاكاة فعل صريح داخل المنشأة.",
+    "return_visit": "يمكن تذكر آخر وجهة دون إنشاء أو استئناف جلسة أو تبديل مصدر تلقائياً.",
+    "route_compatibility": "احتفظ بمداخل الروابط القديمة #plant/#model وviewer مع توجيه واضح؛ جمع التنقل لا يعني جمع بيانات أو صلاحيات المصادر."
+  },
+  "suggested_verification_tasks": [
+    "مستخدم جديد يشرح خلال دقيقة الفرق بين المشروع والمحاكاة والنموذج البحثي ويصل إلى الثلاثة دون مساعدة.",
+    "مستخدم يصل من المشهد إلى التحكم ثم يعود لنفس الجلسة والجهاز دون إنشاء جلسة جديدة.",
+    "اختبار Tab والتركيز عبر ثلاث دورات تحديث؛ لا يقفز التركيز ولا يمحى إدخال أو اختيار.",
+    "تجربة تكبير 200% وعرض ضيق وreduced motion وقارئ شاشة عربي؛ لا يُحكم بامتثال WCAG من المصدر وحده.",
+    "عند انقطاع الاتصال تبقى آخر لقطة مؤرخة وتتوقف الحركة حسب العقد، وتظهر الحالة بعبارة وأيقونة/شكل لا باللون وحده.",
+    "التقرير يظهر فشل القبول وحدود المصدر ولا يحوّل النجاح البرمجي إلى دليل سلامة مياه."
+  ],
+  "reviewed_files_sha256": {
+    "mawrid-system/client/index.html": "e8b9ef3aa575f4a062b9f6e05ddf10d8d2ca6af41052cd544a498a16405ecd56",
+    "mawrid-system/client/app.js": "75514c2d97a12e7013a46c26a52c5c38254f676ed145ef324bcefebfc602da9d",
+    "mawrid-system/plant3d/index.html": "b0f1ee3ee54e2270182a6336e065debb7e466032852e6d0047043e4c0781ba2b",
+    "mawrid-system/plant3d/main.js": "0be5750afeebd00a20a97d947ba0eba48d8e827229d3cba880fbbf6b2ef3627b"
+  },
+  "boundaries": [
+    "لا واجهة أو نموذج أو تقرير مجمد عُدّل.",
+    "لا تغيير شروط قبول النماذج أو اعتماد ML للتحكم.",
+    "المراجعة مصدرية؛ قياسات التباين والأهداف والتدفق البصري تحتاج تنفيذ QA منفصل.",
+    "توصيات كبار السن تراعي تنوع القدرات ولا تفترض قصوراً موحداً أو تلغي أدوات الخبراء."
+  ]
+}

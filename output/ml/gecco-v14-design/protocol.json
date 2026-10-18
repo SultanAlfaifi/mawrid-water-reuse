@@ -1,0 +1,60 @@
+{
+  "frozen_at_utc": "2026-10-17T10:25:34.082877+00:00",
+  "candidate": "V14",
+  "attempt": "v14_run01_sensor_tail_pulse_weights",
+  "relative_to": "V12",
+  "purpose": "Test target-time alignment of positive training emphasis with causal sensor-tail pulse onsets, not a new negative weighting, model family, feature or inference policy.",
+  "single_change": "Replace label-onset positive mass0.25 by sensor-tail-pulse-aligned mass0.25; all other V12 statistical components unchanged.",
+  "q95": {
+    "population": "ALL original training rows with label exactly0 and finite original float64 frozen IF raw anomaly score, including HGB-ineligible rows",
+    "quantile": 0.95,
+    "method": "linear",
+    "tail_comparison": ">="
+  },
+  "pulses": {
+    "axis": "Full original raw training axis before label/eligibility filtering",
+    "tail": "finite raw IF >= fixed training-normal q95",
+    "episode": "Maximal contiguous True run of tail",
+    "confirmed_start": "start>0 and immediately previous raw IF finite and belowq95",
+    "censored": "series-start and starts after unavailable/nonfiniteIF are not confirmed and receive no pulse bonus",
+    "window": "Original offsets0,1,2 from each confirmed start, truncated at actual tail episode end; rows must remain in that same tail episode",
+    "all_confirmed_pulses": true,
+    "no_label_boundary_reset": true,
+    "no_shift_or_compression": true
+  },
+  "weights": {
+    "normal_mass": 0.5,
+    "normal_distribution": "uniform over HGB-eligible known-normal rows",
+    "positive_point_mass": 0.125,
+    "positive_event_mass": 0.125,
+    "positive_pulse_mass": 0.25,
+    "positive_event_definition": "original contiguous label1 segment; unknown/normal end segment",
+    "pulse_distribution": "Uniform over positive segments with at least one nonempty confirmed-pulse-window intersection with HGB-eligible label1 rows, then uniformly over those eligible pulses within that segment, then uniformly over its eligible intersecting rows",
+    "global_no_eligible_bonus_fallback": "Move0.25 into event-uniformmass, making0.375; never substitute another window or shift to later eligible rows",
+    "unknown_weight": 0
+  },
+  "fixed": "V12 features/reference statistics/IF estimator/HGBparams/availability/scoring plus V10 selection/certification/pending/rescue unchanged. No new model family/threshold grid/fit on calibration/test.",
+  "limitations": [
+    "IF training representation remains in-sample, not cross-fitted or prequential.",
+    "Every source/period is previously disclosed development data.",
+    "V6 past fallback is conditional reference and does not guarantee V8 retention. V8 retained as separately fixed evaluation gate, not selectioninput.",
+    "A three-sample training emphasis is not an inference latency guarantee.",
+    "No live streaming parity or RaspberryPi latency qualification, no3D/valve integration."
+  ],
+  "evaluation": {
+    "cases": 19,
+    "geometry": "Identical13GECCO+6WaterHub temporal cases, train before4calibrationblocks beforetest, 120rows discarded before features per independent segment; continuous2019cal retainsonegap",
+    "maximum_confirmation_seconds": 120,
+    "original_strong_gate_unchanged": true,
+    "retain_exact_event_ids": "Every IF/V6/V8/V9/V10/V11/V12/V13 event ID perperiod and connectedsourcepool; V6∪V8 includes119 detected events. Counts alone insufficient.",
+    "v8_goal": "Identical availability, pairedextraeventdelay<=120s, no FP fragment/duration increase in any period or connectedsourcepool, strictly fewer pooled FPfragments and FPfragment reduction in at least2periods",
+    "no_test_retuning": true
+  },
+  "execution": {
+    "training_parallelism": 1,
+    "cases": "fresh subprocess percase",
+    "minimum_free_disk_bytes": 1073741824,
+    "independent_raw_sensor_replay_required_before_report": true
+  },
+  "source_access_before_this_protocol": "Existing disclosed V8..V13 source and post-test diagnostics reviewed. Train-only descriptive support measurement authorized separately, with no newweights/fits/alternatepolicyreplay. No new external sensor source."
+}

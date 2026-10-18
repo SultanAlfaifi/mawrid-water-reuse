@@ -1,0 +1,2449 @@
+{
+  "created_at_utc": "2026-10-16T11:33:19.526199+00:00",
+  "audit_version": "waterhub_saved_artifacts_scalar_v1",
+  "absolute_runtime_tolerance": 1e-12,
+  "audit_code_sha256": "d5d014c92c701d2729d5c47008e95db4fc6657dca8805c3dcfc2972ff8b3bc86",
+  "checks": [
+    {
+      "check": "all_six_periods_complete_before_data_access",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "final_results_protocol_hash",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "access_marker_protocol_hash",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "freeze_precedes_recorded_access",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_baseline/metrics.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_baseline/metrics.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v2/alarm_policy.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v2/alarm_policy.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v2/candidates_supervised.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v2/candidates_supervised.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v5/calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v5/calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v5/recovery_candidate.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v5/recovery_candidate.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/audit_run04.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/audit_run04.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/build_development_report.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/build_development_report.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/corroborated_rescue.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/corroborated_rescue.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/departure_scores.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/departure_scores.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/development.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/development.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/development_v2.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/development_v2.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/development_v3.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/development_v3.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/development_v4.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/development_v4.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/guarded_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/guarded_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/joint_calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/joint_calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/joint_calibration_v2.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/joint_calibration_v2.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/latched_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/latched_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/local_change.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/local_change.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/partially_labeled_model.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/partially_labeled_model.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/runtime_v4.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/runtime_v4.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/source_joint_calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/source_joint_calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/source_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/source_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_corroborated_rescue.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_corroborated_rescue.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_guarded_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_guarded_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_joint_calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_joint_calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_latched_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_latched_suppression.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_local_change.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_local_change.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_partially_labeled_model.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_partially_labeled_model.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_runtime_v4.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_runtime_v4.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_source_calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_source_calibration.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_unknown_label_metrics.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_unknown_label_metrics.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_waterhub_adapter.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_waterhub_adapter.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_waterhub_evaluation.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_waterhub_evaluation.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/test_waterhub_loader.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/test_waterhub_loader.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/unknown_label_metrics.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/unknown_label_metrics.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/waterhub_adapter.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/waterhub_adapter.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/waterhub_evaluation.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/waterhub_evaluation.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "current hash:ml/gecco_v6/waterhub_loader.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "frozen_source hash:ml/gecco_v6/waterhub_loader.py",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "source_archive_matches_protocol",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "source_schema",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "source_regular_minute_end_grid",
+      "passed": true,
+      "compared_values": 480959,
+      "numeric_comparisons": 480959,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:frozen_case_geometry",
+      "passed": true,
+      "compared_values": 14,
+      "numeric_comparisons": 9,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:protocol_hash",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:bundle_hash_before_unpickle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:past_only_geometry",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:fit_and_calibration_indices_before_test",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:bundle_cadence",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:frozen_selection:selected",
+      "passed": true,
+      "compared_values": 4684,
+      "numeric_comparisons": 3553,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:frozen_selection:guard_selected",
+      "passed": true,
+      "compared_values": 4666,
+      "numeric_comparisons": 3528,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:frozen_selection:shape_support_threshold",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 1,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:calibration_original_indices",
+      "passed": true,
+      "compared_values": 87840,
+      "numeric_comparisons": 87840,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:calibration_labels_match_source",
+      "passed": true,
+      "compared_values": 87840,
+      "numeric_comparisons": 87840,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:test_original_indices",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:test_timestamps",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:test_labels_match_source",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:prediction_schema",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:runtime_timestamps",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:baseline_score",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:shape_raw",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:level",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:jump",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:sustained",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:guarded_shape",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:rescue__level",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:rescue__jump",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:rescue__sustained",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:rescue__shape_raw",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:baseline_prediction",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:guarded_prediction",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:prediction",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:available",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:runtime:ignored_gap",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:unmasked_sensor_availability",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:scalar_metrics_vs_period_file",
+      "passed": true,
+      "compared_values": 3296,
+      "numeric_comparisons": 2547,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-11:scalar_metrics_vs_final_period",
+      "passed": true,
+      "compared_values": 3296,
+      "numeric_comparisons": 2547,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:frozen_case_geometry",
+      "passed": true,
+      "compared_values": 14,
+      "numeric_comparisons": 9,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:protocol_hash",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:bundle_hash_before_unpickle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:past_only_geometry",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:fit_and_calibration_indices_before_test",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:bundle_cadence",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:frozen_selection:selected",
+      "passed": true,
+      "compared_values": 6529,
+      "numeric_comparisons": 4988,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:frozen_selection:guard_selected",
+      "passed": true,
+      "compared_values": 13040,
+      "numeric_comparisons": 9969,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:frozen_selection:shape_support_threshold",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 1,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:calibration_original_indices",
+      "passed": true,
+      "compared_values": 87840,
+      "numeric_comparisons": 87840,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:calibration_labels_match_source",
+      "passed": true,
+      "compared_values": 87840,
+      "numeric_comparisons": 87840,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:test_original_indices",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:test_timestamps",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:test_labels_match_source",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:prediction_schema",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:runtime_timestamps",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:baseline_score",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:shape_raw",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:level",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:jump",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:sustained",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:guarded_shape",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:rescue__level",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:rescue__jump",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:rescue__sustained",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:rescue__shape_raw",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:baseline_prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:guarded_prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:available",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:runtime:ignored_gap",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:unmasked_sensor_availability",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:scalar_metrics_vs_period_file",
+      "passed": true,
+      "compared_values": 2292,
+      "numeric_comparisons": 1752,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2018-12:scalar_metrics_vs_final_period",
+      "passed": true,
+      "compared_values": 2292,
+      "numeric_comparisons": 1752,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:frozen_case_geometry",
+      "passed": true,
+      "compared_values": 14,
+      "numeric_comparisons": 9,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:protocol_hash",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:bundle_hash_before_unpickle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:past_only_geometry",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:fit_and_calibration_indices_before_test",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:bundle_cadence",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:frozen_selection:selected",
+      "passed": true,
+      "compared_values": 5540,
+      "numeric_comparisons": 4269,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:frozen_selection:guard_selected",
+      "passed": true,
+      "compared_values": 11095,
+      "numeric_comparisons": 8560,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:frozen_selection:shape_support_threshold",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 1,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:calibration_original_indices",
+      "passed": true,
+      "compared_values": 87840,
+      "numeric_comparisons": 87840,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:calibration_labels_match_source",
+      "passed": true,
+      "compared_values": 87840,
+      "numeric_comparisons": 87840,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:test_original_indices",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:test_timestamps",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:test_labels_match_source",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:prediction_schema",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:runtime_timestamps",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:baseline_score",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:shape_raw",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:level",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:jump",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:sustained",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:guarded_shape",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:rescue__level",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:rescue__jump",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:rescue__sustained",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:rescue__shape_raw",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:baseline_prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:guarded_prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:available",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:runtime:ignored_gap",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:unmasked_sensor_availability",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:scalar_metrics_vs_period_file",
+      "passed": true,
+      "compared_values": 1370,
+      "numeric_comparisons": 1047,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-01:scalar_metrics_vs_final_period",
+      "passed": true,
+      "compared_values": 1370,
+      "numeric_comparisons": 1047,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:frozen_case_geometry",
+      "passed": true,
+      "compared_values": 14,
+      "numeric_comparisons": 9,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:protocol_hash",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:bundle_hash_before_unpickle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:past_only_geometry",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:fit_and_calibration_indices_before_test",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:bundle_cadence",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:frozen_selection:selected",
+      "passed": true,
+      "compared_values": 3699,
+      "numeric_comparisons": 2834,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:frozen_selection:guard_selected",
+      "passed": true,
+      "compared_values": 7235,
+      "numeric_comparisons": 5528,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:frozen_selection:shape_support_threshold",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 1,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:calibration_original_indices",
+      "passed": true,
+      "compared_values": 89280,
+      "numeric_comparisons": 89280,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:calibration_labels_match_source",
+      "passed": true,
+      "compared_values": 89280,
+      "numeric_comparisons": 89280,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:test_original_indices",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:test_timestamps",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:test_labels_match_source",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:prediction_schema",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:runtime_timestamps",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:baseline_score",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:shape_raw",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:level",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:jump",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:sustained",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:guarded_shape",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:rescue__level",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:rescue__jump",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:rescue__sustained",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:rescue__shape_raw",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:baseline_prediction",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:guarded_prediction",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:prediction",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:available",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:runtime:ignored_gap",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:unmasked_sensor_availability",
+      "passed": true,
+      "compared_values": 40320,
+      "numeric_comparisons": 40320,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:scalar_metrics_vs_period_file",
+      "passed": true,
+      "compared_values": 2862,
+      "numeric_comparisons": 2157,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-02:scalar_metrics_vs_final_period",
+      "passed": true,
+      "compared_values": 2862,
+      "numeric_comparisons": 2157,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:frozen_case_geometry",
+      "passed": true,
+      "compared_values": 14,
+      "numeric_comparisons": 9,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:protocol_hash",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:bundle_hash_before_unpickle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:past_only_geometry",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:fit_and_calibration_indices_before_test",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:bundle_cadence",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:frozen_selection:selected",
+      "passed": true,
+      "compared_values": 4261,
+      "numeric_comparisons": 3209,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:frozen_selection:guard_selected",
+      "passed": true,
+      "compared_values": 4238,
+      "numeric_comparisons": 3178,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:frozen_selection:shape_support_threshold",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 1,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:calibration_original_indices",
+      "passed": true,
+      "compared_values": 84960,
+      "numeric_comparisons": 84960,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:calibration_labels_match_source",
+      "passed": true,
+      "compared_values": 84960,
+      "numeric_comparisons": 84960,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:test_original_indices",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:test_timestamps",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:test_labels_match_source",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:prediction_schema",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:runtime_timestamps",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:baseline_score",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:shape_raw",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:level",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:jump",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:sustained",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:guarded_shape",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:rescue__level",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:rescue__jump",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:rescue__sustained",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:rescue__shape_raw",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:baseline_prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:guarded_prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:prediction",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:available",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:runtime:ignored_gap",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:unmasked_sensor_availability",
+      "passed": true,
+      "compared_values": 44640,
+      "numeric_comparisons": 44640,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:scalar_metrics_vs_period_file",
+      "passed": true,
+      "compared_values": 2166,
+      "numeric_comparisons": 1647,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-03:scalar_metrics_vs_final_period",
+      "passed": true,
+      "compared_values": 2166,
+      "numeric_comparisons": 1647,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:frozen_case_geometry",
+      "passed": true,
+      "compared_values": 14,
+      "numeric_comparisons": 9,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:protocol_hash",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:bundle_hash_before_unpickle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:past_only_geometry",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:fit_and_calibration_indices_before_test",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:bundle_cadence",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:frozen_selection:selected",
+      "passed": true,
+      "compared_values": 5115,
+      "numeric_comparisons": 3872,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:frozen_selection:guard_selected",
+      "passed": true,
+      "compared_values": 5065,
+      "numeric_comparisons": 3814,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:frozen_selection:shape_support_threshold",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 1,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:calibration_original_indices",
+      "passed": true,
+      "compared_values": 84960,
+      "numeric_comparisons": 84960,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:calibration_labels_match_source",
+      "passed": true,
+      "compared_values": 84960,
+      "numeric_comparisons": 84960,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:test_original_indices",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:test_timestamps",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:test_labels_match_source",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:prediction_schema",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:runtime_timestamps",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:baseline_score",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:shape_raw",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:level",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:jump",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:sustained",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:guarded_shape",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:rescue__level",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:rescue__jump",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:rescue__sustained",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:rescue__shape_raw",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:baseline_prediction",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:guarded_prediction",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:prediction",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:available",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:runtime:ignored_gap",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:unmasked_sensor_availability",
+      "passed": true,
+      "compared_values": 43200,
+      "numeric_comparisons": 43200,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:scalar_metrics_vs_period_file",
+      "passed": true,
+      "compared_values": 1010,
+      "numeric_comparisons": 777,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "2019-04:scalar_metrics_vs_final_period",
+      "passed": true,
+      "compared_values": 1010,
+      "numeric_comparisons": 777,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "pooled_original_axis_contiguous",
+      "passed": true,
+      "compared_values": 260639,
+      "numeric_comparisons": 260639,
+      "detail": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "pooled_scalar_metrics",
+      "passed": true,
+      "compared_values": 12354,
+      "numeric_comparisons": 9416,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "independent_acceptance_accounting",
+      "passed": true,
+      "compared_values": 13,
+      "numeric_comparisons": 11,
+      "detail": {
+        "mismatch_paths": [],
+        "mismatches": 0
+      }
+    }
+  ],
+  "hashes": {
+    "protocol.json": "4446d27200194466a93808ebc2ed6f169f95c791ab003c47e8cb0fdd734a31f0",
+    "current/ml/gecco_baseline/metrics.py": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+    "frozen_source/ml/gecco_baseline/metrics.py": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+    "current/ml/gecco_v2/alarm_policy.py": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+    "frozen_source/ml/gecco_v2/alarm_policy.py": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+    "current/ml/gecco_v2/candidates_supervised.py": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+    "frozen_source/ml/gecco_v2/candidates_supervised.py": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+    "current/ml/gecco_v5/calibration.py": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+    "frozen_source/ml/gecco_v5/calibration.py": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+    "current/ml/gecco_v5/recovery_candidate.py": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+    "frozen_source/ml/gecco_v5/recovery_candidate.py": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+    "current/ml/gecco_v6/audit_run04.py": "508046a6313e8f9fba48a1112a23015bc9a81ebfebf2963e49017985f34c4b27",
+    "frozen_source/ml/gecco_v6/audit_run04.py": "508046a6313e8f9fba48a1112a23015bc9a81ebfebf2963e49017985f34c4b27",
+    "current/ml/gecco_v6/build_development_report.py": "eed26f2b2e61280f9dd39a0fe4e9a83cf241a391ad08385cd35afb7082685278",
+    "frozen_source/ml/gecco_v6/build_development_report.py": "eed26f2b2e61280f9dd39a0fe4e9a83cf241a391ad08385cd35afb7082685278",
+    "current/ml/gecco_v6/corroborated_rescue.py": "166d38dba2ddfcd51ba33a04e74bc199b4833beb4c15209f388f4fd187d53d7b",
+    "frozen_source/ml/gecco_v6/corroborated_rescue.py": "166d38dba2ddfcd51ba33a04e74bc199b4833beb4c15209f388f4fd187d53d7b",
+    "current/ml/gecco_v6/departure_scores.py": "439b552e422c46e8ce021a689cded6ae6355bae8cd92582c7ce39d052ae3164b",
+    "frozen_source/ml/gecco_v6/departure_scores.py": "439b552e422c46e8ce021a689cded6ae6355bae8cd92582c7ce39d052ae3164b",
+    "current/ml/gecco_v6/development.py": "9f38406b8ea368e88bcf9379482eb7e17f559decbc29dadefe37895827be44b0",
+    "frozen_source/ml/gecco_v6/development.py": "9f38406b8ea368e88bcf9379482eb7e17f559decbc29dadefe37895827be44b0",
+    "current/ml/gecco_v6/development_v2.py": "a00e64fe5c80ff11b07d9d0b72b44a08b1532a0f39b1f8e60cf7bcabb2620750",
+    "frozen_source/ml/gecco_v6/development_v2.py": "a00e64fe5c80ff11b07d9d0b72b44a08b1532a0f39b1f8e60cf7bcabb2620750",
+    "current/ml/gecco_v6/development_v3.py": "464a7337f6667473af7e658ba0d3ad10a351f644d63039cc251316d54a387ba1",
+    "frozen_source/ml/gecco_v6/development_v3.py": "464a7337f6667473af7e658ba0d3ad10a351f644d63039cc251316d54a387ba1",
+    "current/ml/gecco_v6/development_v4.py": "e1082b5be8447713f92b473be07fe8f175e3b1e5e00eb1a4ea61aa16702d0e88",
+    "frozen_source/ml/gecco_v6/development_v4.py": "e1082b5be8447713f92b473be07fe8f175e3b1e5e00eb1a4ea61aa16702d0e88",
+    "current/ml/gecco_v6/guarded_suppression.py": "f25b3aa7f5caa0d5ecdddb0b112b9ae88846f3fd82cd902e4b0cfb770e7bb27a",
+    "frozen_source/ml/gecco_v6/guarded_suppression.py": "f25b3aa7f5caa0d5ecdddb0b112b9ae88846f3fd82cd902e4b0cfb770e7bb27a",
+    "current/ml/gecco_v6/joint_calibration.py": "0243e4402b1da5582df73eeac225328ea6d48aa8df35bfebebb5923cfbf917cd",
+    "frozen_source/ml/gecco_v6/joint_calibration.py": "0243e4402b1da5582df73eeac225328ea6d48aa8df35bfebebb5923cfbf917cd",
+    "current/ml/gecco_v6/joint_calibration_v2.py": "bbd1a3b81437d71468a2ccd694049b802220d57aecc11b83922bfd01958b2b23",
+    "frozen_source/ml/gecco_v6/joint_calibration_v2.py": "bbd1a3b81437d71468a2ccd694049b802220d57aecc11b83922bfd01958b2b23",
+    "current/ml/gecco_v6/latched_suppression.py": "7d65a2cb24c93eeac0fa0e7cb0c89837cf4110456fa1494ab877dba93cb8924d",
+    "frozen_source/ml/gecco_v6/latched_suppression.py": "7d65a2cb24c93eeac0fa0e7cb0c89837cf4110456fa1494ab877dba93cb8924d",
+    "current/ml/gecco_v6/local_change.py": "bffc42d3a85fe9c4e91b7d5418e4187701645f7ed2a45f5c23aa763de3777396",
+    "frozen_source/ml/gecco_v6/local_change.py": "bffc42d3a85fe9c4e91b7d5418e4187701645f7ed2a45f5c23aa763de3777396",
+    "current/ml/gecco_v6/partially_labeled_model.py": "c49c230fe274b7154924988a3edf6cbc7879fd4c0b3d52ff3496e83bf9eb44d7",
+    "frozen_source/ml/gecco_v6/partially_labeled_model.py": "c49c230fe274b7154924988a3edf6cbc7879fd4c0b3d52ff3496e83bf9eb44d7",
+    "current/ml/gecco_v6/runtime_v4.py": "69caebab5a6541968db76f358d55435c14851fa41be92bb5847796b8d5d38032",
+    "frozen_source/ml/gecco_v6/runtime_v4.py": "69caebab5a6541968db76f358d55435c14851fa41be92bb5847796b8d5d38032",
+    "current/ml/gecco_v6/source_joint_calibration.py": "9192ccc264fadb663b8f88a06244c44f9598b14b09b3bd4cbc99278b7c0f7131",
+    "frozen_source/ml/gecco_v6/source_joint_calibration.py": "9192ccc264fadb663b8f88a06244c44f9598b14b09b3bd4cbc99278b7c0f7131",
+    "current/ml/gecco_v6/source_suppression.py": "6f85639855eb733aa44e9e8072a39001bdbf1c123af781c486b6e014ac74c5da",
+    "frozen_source/ml/gecco_v6/source_suppression.py": "6f85639855eb733aa44e9e8072a39001bdbf1c123af781c486b6e014ac74c5da",
+    "current/ml/gecco_v6/test_corroborated_rescue.py": "046c9de4e144c7db1fc9b11bc6c17f51edc99497e1c6d74255009f61155e8fea",
+    "frozen_source/ml/gecco_v6/test_corroborated_rescue.py": "046c9de4e144c7db1fc9b11bc6c17f51edc99497e1c6d74255009f61155e8fea",
+    "current/ml/gecco_v6/test_guarded_suppression.py": "41f4fdfbc66f76b210510c63d876727b97a06f9859e796c654f58879193fc62e",
+    "frozen_source/ml/gecco_v6/test_guarded_suppression.py": "41f4fdfbc66f76b210510c63d876727b97a06f9859e796c654f58879193fc62e",
+    "current/ml/gecco_v6/test_joint_calibration.py": "d27bb40d3cda48d0b58a9f90aa06205a4a4d2aa1d6187eb2cd2e233ba8f08f58",
+    "frozen_source/ml/gecco_v6/test_joint_calibration.py": "d27bb40d3cda48d0b58a9f90aa06205a4a4d2aa1d6187eb2cd2e233ba8f08f58",
+    "current/ml/gecco_v6/test_latched_suppression.py": "4dceb5cf9e8a3b38d00ef140e4b5228b880e54d9e26ca4da507cfc8ef339ed81",
+    "frozen_source/ml/gecco_v6/test_latched_suppression.py": "4dceb5cf9e8a3b38d00ef140e4b5228b880e54d9e26ca4da507cfc8ef339ed81",
+    "current/ml/gecco_v6/test_local_change.py": "1fab7bb4725e7ab6bb5926cc9e563545902daf0d6af52935382e65e8396ebcbb",
+    "frozen_source/ml/gecco_v6/test_local_change.py": "1fab7bb4725e7ab6bb5926cc9e563545902daf0d6af52935382e65e8396ebcbb",
+    "current/ml/gecco_v6/test_partially_labeled_model.py": "359d87dec20767725d28e94d5baaf7715ec2543532b968f41b3cec778f4a5794",
+    "frozen_source/ml/gecco_v6/test_partially_labeled_model.py": "359d87dec20767725d28e94d5baaf7715ec2543532b968f41b3cec778f4a5794",
+    "current/ml/gecco_v6/test_runtime_v4.py": "55bb2630e09d697b33db948dd3a037e9335a9eb8fc12b5e275675d48280832d4",
+    "frozen_source/ml/gecco_v6/test_runtime_v4.py": "55bb2630e09d697b33db948dd3a037e9335a9eb8fc12b5e275675d48280832d4",
+    "current/ml/gecco_v6/test_source_calibration.py": "824a472d7987ecd2d05a5470c8ec9f7c53c4467b4122324bcacc25c7d2406cee",
+    "frozen_source/ml/gecco_v6/test_source_calibration.py": "824a472d7987ecd2d05a5470c8ec9f7c53c4467b4122324bcacc25c7d2406cee",
+    "current/ml/gecco_v6/test_unknown_label_metrics.py": "fddede36a4774d7773022f243f8b89e50dec23c27d2a0745c1afdcf2590e0d07",
+    "frozen_source/ml/gecco_v6/test_unknown_label_metrics.py": "fddede36a4774d7773022f243f8b89e50dec23c27d2a0745c1afdcf2590e0d07",
+    "current/ml/gecco_v6/test_waterhub_adapter.py": "675d7afbf94df53ae31550b13810cebb1c5b04e1a252df4c6f73aef8869496b3",
+    "frozen_source/ml/gecco_v6/test_waterhub_adapter.py": "675d7afbf94df53ae31550b13810cebb1c5b04e1a252df4c6f73aef8869496b3",
+    "current/ml/gecco_v6/test_waterhub_evaluation.py": "ac64c41aba005d2f77ea9a00bc1719d03aa2a1392446e90da434febce61a6c42",
+    "frozen_source/ml/gecco_v6/test_waterhub_evaluation.py": "ac64c41aba005d2f77ea9a00bc1719d03aa2a1392446e90da434febce61a6c42",
+    "current/ml/gecco_v6/test_waterhub_loader.py": "dc5c95f76139a338b1a46e63398486b1616dfb31d2df3cf2e2ed1a859529bd8a",
+    "frozen_source/ml/gecco_v6/test_waterhub_loader.py": "dc5c95f76139a338b1a46e63398486b1616dfb31d2df3cf2e2ed1a859529bd8a",
+    "current/ml/gecco_v6/unknown_label_metrics.py": "46fb870eb6f6cae6203d4431d95f91e3907413106d6f8d7926480671e0c5f7cf",
+    "frozen_source/ml/gecco_v6/unknown_label_metrics.py": "46fb870eb6f6cae6203d4431d95f91e3907413106d6f8d7926480671e0c5f7cf",
+    "current/ml/gecco_v6/waterhub_adapter.py": "0aa2c0393883e41e72fc3b62de03f2fa66e7c7d8697018895a860a50e6478c0f",
+    "frozen_source/ml/gecco_v6/waterhub_adapter.py": "0aa2c0393883e41e72fc3b62de03f2fa66e7c7d8697018895a860a50e6478c0f",
+    "current/ml/gecco_v6/waterhub_evaluation.py": "78b507d9b6d15cb245d5e925771cec0f4840f664d950d7dbe3b699159a2e77e4",
+    "frozen_source/ml/gecco_v6/waterhub_evaluation.py": "78b507d9b6d15cb245d5e925771cec0f4840f664d950d7dbe3b699159a2e77e4",
+    "current/ml/gecco_v6/waterhub_loader.py": "d96cbcc4f4fb0d6b6ee91b9827a02dcd5e3aa6c44714aeb5f78d5e7f5715200a",
+    "frozen_source/ml/gecco_v6/waterhub_loader.py": "d96cbcc4f4fb0d6b6ee91b9827a02dcd5e3aa6c44714aeb5f78d5e7f5715200a",
+    "source_archive": "f91e930d1e194f401f4570c8ddbfdd90606475233e2f6cd36114ff9da11fc8b0",
+    "adapted_source.csv.gz": "2ebd0997afb7571390c7df6b5b64616dec81441b304f6a02ff323b6218984ff7",
+    "2018-11/bundle.joblib": "204adae633f68f467373f7851c97785569c9a107f0c422e5b174d929338f4a39",
+    "2018-11/calibration_scores.csv.gz": "babad172b39e57408cf8410acefd8a88b5912b353be0a4b49a311e968f38fd39",
+    "2018-11/predictions.csv.gz": "c0770a537aa247d695b9b48dced76dfd207d4d13afcfd291792db03fb553bee3",
+    "2018-12/bundle.joblib": "7bd199f649a2a283a5a14c0acaa858ebc4eed4444295bf2734abbc90bbd8edd8",
+    "2018-12/calibration_scores.csv.gz": "a41257e8c3c36af7518d56f7d9ea8352bbe2f79bdfbb17a2c0bb66c07ea482a9",
+    "2018-12/predictions.csv.gz": "2d1dc42edbcdf4a67f4e3c098a10893290eded63ce08ec8e4af32ddcd43f1e62",
+    "2019-01/bundle.joblib": "a53aed87ea9fe7e6d74997ebdba6966b9320ba285056268e998a6898efad8f11",
+    "2019-01/calibration_scores.csv.gz": "557b8477e14c7162b93ba36f7c5d3352767886aab485e624402530b8e6f6aa19",
+    "2019-01/predictions.csv.gz": "4c1b273d1e2a094f532825542ccdd1a8b2d56b8616788ed2e4092bdd009c211b",
+    "2019-02/bundle.joblib": "a588ec3dc2688dd831075b9c835e108cf1c5e75aa8c344e40886c89808cb80ff",
+    "2019-02/calibration_scores.csv.gz": "ef358f0a9c31a1d1c9dc9388388edf1e70736bb13a3ba90a22293c1b7622cb6b",
+    "2019-02/predictions.csv.gz": "41ffc36b404842e15c762d377e936e3691e94024941a26aaf7334d6ab3b27949",
+    "2019-03/bundle.joblib": "cd7f66770c638d0fd04c5b653e47867823124e3867304296f39c01f77bb206d2",
+    "2019-03/calibration_scores.csv.gz": "1f46cf3fa970644a23a030b847cb7a5eb126d3e771f356ba0bf370e9a89c70e8",
+    "2019-03/predictions.csv.gz": "87270c959cbbe0c6a9dd952dc0032e3dce84103cc124c24eb1d4581b548947cb",
+    "2019-04/bundle.joblib": "abe0d13e14b6b76d3371fdbd12fd74e39e11faa081923a0d264d9a886b5ce644",
+    "2019-04/calibration_scores.csv.gz": "7fc5b6e99b0b31f1b0698fb0425bc145df2982ac35c9a8e924de67ef1dc3f20e",
+    "2019-04/predictions.csv.gz": "b9193abb46f9f561b0f2a92ed30dec13afe2a49a380fb8a946084e5f45b1d248"
+  },
+  "scope": "Completed six-period saved-artifact audit; no raw CSV adaptation or refitting",
+  "limitations": [
+    "Audit PASS is calculation/integrity evidence, not validation success or deployment approval.",
+    "Adapted-source bytes are fingerprinted, not regenerated from raw CSVs in this audit.",
+    "Declared fit/calibration bounds and frozen code are checked; models are not retrained.",
+    "Artifact timestamps cannot independently prove historical absence of undisclosed access.",
+    "Latency is on the sampled minute grid; zero is not proof of instantaneous physical detection."
+  ],
+  "fresh_validation_requirements_passed": false,
+  "periods_replayed": [
+    {
+      "case": "2018-11",
+      "rows": 43200,
+      "runtime_replayed": true
+    },
+    {
+      "case": "2018-12",
+      "rows": 44640,
+      "runtime_replayed": true
+    },
+    {
+      "case": "2019-01",
+      "rows": 44640,
+      "runtime_replayed": true
+    },
+    {
+      "case": "2019-02",
+      "rows": 40320,
+      "runtime_replayed": true
+    },
+    {
+      "case": "2019-03",
+      "rows": 44640,
+      "runtime_replayed": true
+    },
+    {
+      "case": "2019-04",
+      "rows": 43200,
+      "runtime_replayed": true
+    }
+  ],
+  "audit_passed": true,
+  "passed": true,
+  "total_numeric_checks": 7086481,
+  "replayed_rows": 260640,
+  "check_groups": 290,
+  "compared_values": 7113572,
+  "failed_check_groups": 0
+}

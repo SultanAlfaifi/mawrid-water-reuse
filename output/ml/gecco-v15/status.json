@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-10-17T11:53:06.226788+00:00",
+  "phase": "current_retention_goal_failed",
+  "candidate": "V15",
+  "complete_cases": 19,
+  "audit_passed": true,
+  "quality_goal_passed": false,
+  "accepted_calibration_cases": 7,
+  "retained_v6_v8_union": 117,
+  "v6_v8_union": 119,
+  "no_model_fit": true,
+  "fresh_validation": false,
+  "new_sensor_replay": false,
+  "model_promoted": false,
+  "results_sha256": "f6f3b75af60ec35041c9ad22305651250ffa90d78803fddcce21565da7f5655b",
+  "audit_sha256": "0a297adf68575da23d6cea7d54b34500b36bd7b3e370a141b09e5a15c2eb8045",
+  "protocol_sha256": "5bc11ea7154a29c9f2301d2d9d652c8d38887e908c5d6aeb9983a2e3a5ca0c66",
+  "accepted_identity_cases": 7,
+  "accepted_nonidentity_cases": 0,
+  "fallback_identity_cases": 12,
+  "final_choices_identical_to_v8_in_all19_cases": true,
+  "post_test_diagnosis_sha256": "eae106c6ee050db2722d7c3423aa6bab02d8963e1635cb82414c6e811f590b5a"
+}

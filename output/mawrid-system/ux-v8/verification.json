@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "created_at_utc": "2026-10-17T16:55:07.667352+00:00",
+  "scope": "Local guided automatic water-journey presentation; browser, synthetic state logic, camera and static artifact integrity. No training or field validation.",
+  "checks": {
+    "client_sources": {
+      "count": 9,
+      "mismatches": []
+    },
+    "scene_sources": {
+      "count": 21,
+      "mismatches": []
+    },
+    "scene_artifacts": {
+      "count": 24,
+      "mismatches": []
+    }
+  },
+  "http": [
+    {
+      "path": "/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 9781,
+      "sha256": "f57e892783f54be178eaf88fd98d4f437f60f652bf8359bb508e94f7baf2f7e9"
+    },
+    {
+      "path": "/assets/mawrid-ui-1b17ffb42516.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "bytes": 195578,
+      "sha256": "1b17ffb425165eba711cc7dee866f27082572f9f75c737ec3891894b6e341824"
+    },
+    {
+      "path": "/plant3d/index.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 6846,
+      "sha256": "25761eabeb5c3a584571848cf002d7c1929cd5ea9fc5f927f0568b1bec0327dc"
+    }
+  ],
+  "tests": {
+    "frontend_groups": 68,
+    "presentation_clock_groups": 8,
+    "experience_cases": 22,
+    "water_journey_cases": 5,
+    "scene_camera_tests": 31
+  },
+  "browser": {
+    "full_eight_stage_run": "browser-observations.json",
+    "post_packaging": "client-bundle-browser.json",
+    "completion_no_fault": "after-automatic-completion-api.json",
+    "mobile_css_viewport": [
+      389,
+      842
+    ],
+    "desktop_css_viewport": [
+      961,
+      975
+    ],
+    "screenshot": "automatic-bundle-final.png",
+    "delivery_url": "http://127.0.0.1:8787/#plant",
+    "final_state": "idle with explicit start"
+  },
+  "build_proofs": {
+    "client-build-r1.json": "38d45755c3e7d8c3874ae2693b4b3dd22f0ec8330e8d427b3b45a74fa2c96f0e",
+    "plant3d-build-r1.json": "9fc213c5bf6baf50632ea725243805c17c12cd866e72bd0f9cbd29ef7bd56437"
+  },
+  "final_file_sha256": {
+    "mawrid-system/client/index.html": "f57e892783f54be178eaf88fd98d4f437f60f652bf8359bb508e94f7baf2f7e9",
+    "mawrid-system/client/styles.css": "a2e72658edc2e74a6f37e00f4dd4b08a350e072990c8557d5ba50620489db4e0",
+    "mawrid-system/build-client.mjs": "9b6f89e3a59d98b66f62766e5e67269b32c915bac77c95bddfdf8a15a0a04116",
+    "mawrid-system/README.md": "85f4d16e355432bc8f084129458e0e0649dc642e5cbf9d2816991ae18495aa2d",
+    "mawrid-system/CONTRACT.json": "4ebeb8df99e114d17c6f02db5ea5893342adf5073fe4bfd0fc08d3b2f2d221b6",
+    "mawrid-system/client/assets/mawrid-ui-1b17ffb42516.js": "1b17ffb425165eba711cc7dee866f27082572f9f75c737ec3891894b6e341824"
+  },
+  "reading_seconds": [
+    24,
+    21,
+    26,
+    22,
+    27,
+    22,
+    24,
+    24
+  ],
+  "total_reading_seconds": 190,
+  "camera_transition_ms": 1100,
+  "automatic_fault_commands": false,
+  "backend_changed": false,
+  "ml_changed": false,
+  "physical_hardware_connected": false,
+  "limits": [
+    "Synthetic tests are not a usability study or accessibility certification.",
+    "Preview-only MutationObserver error captured without source attribution; see browser notes."
+  ]
+}

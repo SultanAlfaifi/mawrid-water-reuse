@@ -1,0 +1,16 @@
+﻿Number,Tag,Component,Function
+①,TR-101,Collection chamber & trap,Collect ablution and hand-wash water; retain coarse and floating solids.
+②,P-101,Submersible lift pump,Lift collected water to the equalization tank.
+③,T-201,Equalization tank,Buffer prayer-time inflow surges and measure raw-water properties.
+④,P-102,Feed pump,Feed the treatment train at a controlled flow.
+⑤,F-301,Multimedia sand filter,Reduce turbidity and suspended solids.
+⑥,F-303,5 µm PP cartridge filter,Retain fine particles after sand filtration and before carbon / Biochar adsorption.
+⑦,F-302,Carbon / palm Biochar filter,Adsorb targeted dissolved and organic constituents.
+⑧,UV-401,UV disinfection reactor,Inactivate microorganisms.
+⑨,AT-501,Verification cell,"Measure final turbidity, pH, conductivity and temperature."
+⑩,XV-601 / XV-602,Irrigation + diversion valves,"Select irrigation, reprocessing, holding or drain diversion."
+⑪,P-103,Backwash / reprocess pump,Backwash media and return off-specification water.
+⑫,T-701 / P-104,Treated-water tank + irrigation pump,Provide short-term storage and feed drip irrigation.
+⑬,CP-801,Control panel,"Local controller, HMI, emergency stop, status beacon and 4G platform link."
+⑭,SK-901,Frame + leak tray,Support equipment and collect leaks.
+⑮,DR-001,Drain lines,"Route overflow, backwash and diversion to the sewer through an air gap."

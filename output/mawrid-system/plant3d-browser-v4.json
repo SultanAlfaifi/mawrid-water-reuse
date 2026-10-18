@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-17T11:18:51.469Z",
+  "method": "Read-only CUA DOM and screenshots; temporary HTTP mutations only on an isolated test server, not operator database.",
+  "temporaryServerStopped": true,
+  "temporaryServerExitCode": 0,
+  "modelSentinelStartAndStepCalls": 0,
+  "liveUrl": "http://127.0.0.1:8787/plant3d/index.html",
+  "dom": {
+    "canvasPresent": true,
+    "labelCount": 6,
+    "labelOverlaps": 0,
+    "phase": "live",
+    "scrollWidth": 1910,
+    "width": 1910
+  },
+  "observations": [
+    "WebGL scene, Arabic HUD and local fonts rendered",
+    "Camera rotate/reset and equipment selection updated detail panel",
+    "Sensor dropout: HOLD, chlorine unavailable, displayed flows0 and valveclosed",
+    "Backwash: selected pump showsrunning20L/min",
+    "Paused virtual clock remains connected and phasepaused",
+    "Switch totelemetry clears values and valve becomesunavailable",
+    "New virtualsession replaced oldsession",
+    "Disconnect stopsmotion and retains lastknownOPEN feedback with stale notice"
+  ],
+  "screenshots": [
+    "screenshots/plant3d-dropout-v4.png",
+    "screenshots/plant3d-disconnected-v4.png",
+    "screenshots/plant3d-final-v4.png"
+  ],
+  "scope": "Operational virtual simulation only; no ML, hardware or chemical-process validation."
+}

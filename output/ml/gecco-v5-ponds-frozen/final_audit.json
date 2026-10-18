@@ -1,0 +1,230 @@
+{
+  "status": "pass",
+  "checks": 2580,
+  "findings": [],
+  "cases": [
+    {
+      "case": "2D_Sonde07_fold_1",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "2D_Sonde07_fold_2",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "2D_Sonde07_fold_3",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "2D_Sonde07_fold_4",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "2D_Sonde07_fold_5",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "2D_Sonde07_fold_6",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "3D_Sonde10_fold_1",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "3D_Sonde10_fold_2",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "3D_Sonde10_fold_3",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "3D_Sonde10_fold_4",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "3D_Sonde10_fold_5",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "3D_Sonde10_fold_6",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5A_Sonde04_fold_1",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5A_Sonde04_fold_2",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5A_Sonde04_fold_3",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5A_Sonde04_fold_4",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5A_Sonde04_fold_5",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5A_Sonde04_fold_6",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5B_Sonde15_fold_1",
+      "baseline_events": 1,
+      "candidate_events": 1,
+      "true_events": 1,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5B_Sonde15_fold_2",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5B_Sonde15_fold_3",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5B_Sonde15_fold_4",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5B_Sonde15_fold_5",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    },
+    {
+      "case": "5B_Sonde15_fold_6",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "noninferior": true,
+      "baseline_qualified": true
+    }
+  ],
+  "primary_acceptance_passed": false,
+  "scope": "Independent raw selected-label/source-axis, sparse metric, fullgrid prediction, selection feasibility/winner and provenance audit. No tuning or model changes.",
+  "limitations": [
+    "Does not prove publisher3.1 upstream raw-instrument causality.",
+    "Recomputes selected candidate feasibility and stored-trial winner, not every unselected candidate trial.",
+    "Hash and recorded-access order support reproducibility; they are not proof about unrecorded external human use."
+  ]
+}

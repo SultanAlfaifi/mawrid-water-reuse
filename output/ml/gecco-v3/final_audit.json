@@ -1,0 +1,296 @@
+{
+  "status": "pass",
+  "audited_at_utc": "2026-10-16T05:51:17.229854+00:00",
+  "audit_code_sha256": "53de28b9cff4fc420a45ba160d805aa5b68769a47a6fad0ac3d91b586d3ffb45",
+  "declared_protocol_sha256": "8cf930b90281ef7d2930308b3448329ccaaadd9464619f858de8e3d2a3868bc1",
+  "checks_performed": 65760,
+  "findings": [],
+  "summary": {
+    "fold_1": {
+      "baseline": {
+        "tp": 335,
+        "fp": 139,
+        "fn": 214,
+        "tn": 13131,
+        "f1": 0.6549364613880743,
+        "true_events": 15,
+        "confirmed_new_alarm_inside_events": 14,
+        "false_alarm_runs_per_normal_day": 6.836473247927656,
+        "normal_time_under_alarm": 0.010474755086661644
+      },
+      "v3": {
+        "tp": 471,
+        "fp": 340,
+        "fn": 78,
+        "tn": 12930,
+        "f1": 0.6926470588235294,
+        "true_events": 15,
+        "confirmed_new_alarm_inside_events": 14,
+        "false_alarm_runs_per_normal_day": 6.185380557648831,
+        "normal_time_under_alarm": 0.02562170308967596
+      }
+    },
+    "fold_2": {
+      "baseline": {
+        "tp": 37,
+        "fp": 61,
+        "fn": 442,
+        "tn": 13234,
+        "f1": 0.12824956672443674,
+        "true_events": 15,
+        "confirmed_new_alarm_inside_events": 5,
+        "false_alarm_runs_per_normal_day": 1.6246709289206467,
+        "normal_time_under_alarm": 0.004588191049266641
+      },
+      "v3": {
+        "tp": 80,
+        "fp": 54,
+        "fn": 399,
+        "tn": 13241,
+        "f1": 0.26101141924959215,
+        "true_events": 15,
+        "confirmed_new_alarm_inside_events": 2,
+        "false_alarm_runs_per_normal_day": 1.6246709289206467,
+        "normal_time_under_alarm": 0.004061677322301617
+      }
+    },
+    "fold_3": {
+      "baseline": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 174,
+        "tn": 13644,
+        "f1": 0.0,
+        "true_events": 6,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.105533162330524,
+        "normal_time_under_alarm": 7.328691828508612e-05
+      },
+      "v3": {
+        "tp": 2,
+        "fp": 7,
+        "fn": 172,
+        "tn": 13638,
+        "f1": 0.02185792349726776,
+        "true_events": 6,
+        "confirmed_new_alarm_inside_events": 1,
+        "false_alarm_runs_per_normal_day": 0.316599486991572,
+        "normal_time_under_alarm": 0.0005130084279956027
+      }
+    },
+    "fold_4": {
+      "baseline": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 13771,
+        "f1": 0.0,
+        "true_events": 0,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.10455997676444961,
+        "normal_time_under_alarm": 7.261109497531223e-05
+      },
+      "v3": {
+        "tp": 0,
+        "fp": 45,
+        "fn": 0,
+        "tn": 13727,
+        "f1": 0.0,
+        "true_events": 0,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.8364798141155969,
+        "normal_time_under_alarm": 0.0032674992738890504
+      }
+    },
+    "fold_5": {
+      "baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 13821,
+        "f1": null,
+        "true_events": 0,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.0,
+        "normal_time_under_alarm": 0.0
+      },
+      "v3": {
+        "tp": 0,
+        "fp": 65,
+        "fn": 0,
+        "tn": 13756,
+        "f1": 0.0,
+        "true_events": 0,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 1.9795962665509008,
+        "normal_time_under_alarm": 0.004702988206352652
+      }
+    },
+    "fold_6": {
+      "baseline": {
+        "tp": 29,
+        "fp": 14,
+        "fn": 48,
+        "tn": 13654,
+        "f1": 0.48333333333333334,
+        "true_events": 1,
+        "confirmed_new_alarm_inside_events": 1,
+        "false_alarm_runs_per_normal_day": 0.6321334503950834,
+        "normal_time_under_alarm": 0.0010242903131401815
+      },
+      "v3": {
+        "tp": 46,
+        "fp": 118,
+        "fn": 31,
+        "tn": 13550,
+        "f1": 0.3817427385892116,
+        "true_events": 1,
+        "confirmed_new_alarm_inside_events": 1,
+        "false_alarm_runs_per_normal_day": 2.633889376646181,
+        "normal_time_under_alarm": 0.008633304067895815
+      }
+    },
+    "csv_score_roundtrip": {
+      "baseline_score": {
+        "maximum_absolute_difference": 5.551115123125783e-17,
+        "changed_float_values": 34967,
+        "absolute_tolerance": 1e-15,
+        "note": "Combined CSV scores were parsed and reserialized by the runner; all decisions, labels and row identities must remain exact. Frozen per-partition scores are used for policy replay."
+      },
+      "v3_score": {
+        "maximum_absolute_difference": 1.1102230246251565e-16,
+        "changed_float_values": 42942,
+        "absolute_tolerance": 1e-15,
+        "note": "Combined CSV scores were parsed and reserialized by the runner; all decisions, labels and row identities must remain exact. Frozen per-partition scores are used for policy replay."
+      }
+    },
+    "walk_forward_2018": {
+      "baseline": {
+        "tp": 401,
+        "fp": 216,
+        "fn": 878,
+        "tn": 81255,
+        "f1": 0.4229957805907173,
+        "true_events": 37,
+        "confirmed_new_alarm_inside_events": 20,
+        "false_alarm_runs_per_normal_day": 1.520050079169275,
+        "normal_time_under_alarm": 0.0026512501380859445
+      },
+      "v3": {
+        "tp": 599,
+        "fp": 629,
+        "fn": 680,
+        "tn": 80842,
+        "f1": 0.4778619864379737,
+        "true_events": 37,
+        "confirmed_new_alarm_inside_events": 18,
+        "false_alarm_runs_per_normal_day": 2.2447251169127664,
+        "normal_time_under_alarm": 0.00772053859655583
+      }
+    },
+    "global_original_event_ids": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "external_2019": {
+      "baseline": {
+        "tp": 28,
+        "fp": 104,
+        "fn": 130,
+        "tn": 27055,
+        "f1": 0.19310344827586207,
+        "true_events": 12,
+        "confirmed_new_alarm_inside_events": 5,
+        "false_alarm_runs_per_normal_day": 3.8175190544570863,
+        "normal_time_under_alarm": 0.0038293015206745462
+      },
+      "v3": {
+        "tp": 91,
+        "fp": 5,
+        "fn": 67,
+        "tn": 27154,
+        "f1": 0.7165354330708661,
+        "true_events": 12,
+        "confirmed_new_alarm_inside_events": 9,
+        "false_alarm_runs_per_normal_day": 0.2651054898928532,
+        "normal_time_under_alarm": 0.00018410103464781472
+      }
+    },
+    "v2_v3_native_baseline_equivalence": {
+      "fold_1": {
+        "exact_predictions": true,
+        "same_axis": true,
+        "same_original_labels": true
+      },
+      "fold_2": {
+        "exact_predictions": true,
+        "same_axis": true,
+        "same_original_labels": true
+      },
+      "fold_3": {
+        "exact_predictions": true,
+        "same_axis": true,
+        "same_original_labels": true
+      },
+      "fold_4": {
+        "exact_predictions": true,
+        "same_axis": true,
+        "same_original_labels": true
+      },
+      "fold_5": {
+        "exact_predictions": true,
+        "same_axis": true,
+        "same_original_labels": true
+      },
+      "fold_6": {
+        "exact_predictions": true,
+        "same_axis": true,
+        "same_original_labels": true
+      },
+      "external_2019": {
+        "exact_predictions": true,
+        "same_axis": true,
+        "same_original_labels": true
+      }
+    }
+  },
+  "independent_implementation": "No production metrics, selection, policy or model module imported",
+  "external_source_access": "Only after existence of final external results and every required output was checked",
+  "scope": "Saved scores/predictions, metric recomputation, selection ranking, calibration constraints, source axes, hashes and chronology; models not retrained",
+  "audit_pass_does_not_imply_model_improvement": true
+}

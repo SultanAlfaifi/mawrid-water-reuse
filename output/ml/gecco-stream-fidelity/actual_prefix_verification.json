@@ -1,0 +1,237 @@
+{
+  "passed": true,
+  "scope": "Experimental numerical implementation fidelity on two fixed previously exposed prefixes; not all-period or new-data validation.",
+  "model_acceptance_claim": false,
+  "prototype_enabled": false,
+  "verification_plan_sha256": "d8772205df7089c03298531de375f11af2207927e747c2c85ee3665a21c2e68a",
+  "cases": [
+    {
+      "tested_sample_bounds": [
+        0,
+        1600
+      ],
+      "full_period_tested": false,
+      "exact_original_baseline_features": true,
+      "feature_values_compared": 23680,
+      "exact_eligibility": true,
+      "exact_predictions_and_masks": true,
+      "score_absolute_tolerance": 1e-12,
+      "score_relative_tolerance": 0.0,
+      "maximum_absolute_score_errors": {
+        "row_updates": {
+          "baseline_score": 0.0,
+          "shape_raw": 0.0,
+          "level": 0.0,
+          "jump": 0.0,
+          "sustained": 2.220446049250313e-16,
+          "guarded_shape": 0.0,
+          "rescue__level": 0.0,
+          "rescue__jump": 0.0,
+          "rescue__sustained": 0.0,
+          "rescue__shape_raw": 0.0,
+          "long_context": 0.0,
+          "guarded_long_context": 0.0,
+          "rescue_long_context": 0.0
+        },
+        "chunk_updates": {
+          "baseline_score": 0.0,
+          "shape_raw": 0.0,
+          "level": 0.0,
+          "jump": 0.0,
+          "sustained": 2.220446049250313e-16,
+          "guarded_shape": 0.0,
+          "rescue__level": 0.0,
+          "rescue__jump": 0.0,
+          "rescue__sustained": 0.0,
+          "rescue__shape_raw": 0.0,
+          "long_context": 0.0,
+          "guarded_long_context": 0.0,
+          "rescue_long_context": 0.0
+        }
+      },
+      "chunk_boundaries": [
+        0,
+        1,
+        119,
+        120,
+        121,
+        134,
+        180,
+        801,
+        1560,
+        1561,
+        1600
+      ],
+      "maximum_retained_state": {
+        "long_sensor_rows": 1441,
+        "reference_sensor_rows": 75,
+        "reference_score_rows": 5,
+        "rescue_score_rows": 5,
+        "rolling_rows_per_channel": 15,
+        "rolling_state_pickle_bytes": 1450
+      },
+      "latency_after_initial_gap_seconds": {
+        "rows": 1480,
+        "mean": 0.04354348706161742,
+        "p50": 0.041805833505350165,
+        "p95": 0.05931037260452284,
+        "maximum": 0.38689420899027027,
+        "sum": 64.44436085119378
+      },
+      "chunked_total_seconds": 56.63502533297287,
+      "process_lifetime_peak_rss_bytes": 326254592,
+      "memory_scope": "PeakRSS includes loaded fitted models/imports/batch verification/input/output. Serialized rolling state size is not a full RAM measurement.",
+      "actual_clock": {
+        "first": "2019-04-01T00:01:00",
+        "last": "2019-04-02T02:40:00",
+        "sample_seconds": 60.0
+      },
+      "case_id": "2019-04",
+      "source": {
+        "path": "output/ml/gecco-v6-waterhub-first-use/adapted_source.csv.gz",
+        "sha256": "2ebd0997afb7571390c7df6b5b64616dec81441b304f6a02ff323b6218984ff7",
+        "original_source_row_bounds": [
+          437760,
+          439360
+        ],
+        "original_test_axis_bounds": [
+          437760,
+          439360
+        ],
+        "columns_parsed": [
+          "minute_end",
+          "p1",
+          "p2",
+          "p3",
+          "p4"
+        ],
+        "label_columns_parsed": false,
+        "clock_origin": "Frozen WaterHub adapted minute-end calendar; preserved gaps remain explicit sensor NaNs."
+      },
+      "original_saved_prefix_replay": true,
+      "bundle_sha256": "82ab3609d7aa05220c7378743baca55a5111d92234e05e7aaadfe383a94494d1"
+    },
+    {
+      "tested_sample_bounds": [
+        0,
+        1600
+      ],
+      "full_period_tested": false,
+      "exact_original_baseline_features": true,
+      "feature_values_compared": 35520,
+      "exact_eligibility": true,
+      "exact_predictions_and_masks": true,
+      "score_absolute_tolerance": 1e-12,
+      "score_relative_tolerance": 0.0,
+      "maximum_absolute_score_errors": {
+        "row_updates": {
+          "baseline_score": 0.0,
+          "shape_raw": 0.0,
+          "level": 0.0,
+          "jump": 0.0,
+          "sustained": 4.440892098500626e-16,
+          "guarded_shape": 0.0,
+          "rescue__level": 0.0,
+          "rescue__jump": 0.0,
+          "rescue__sustained": 2.220446049250313e-16,
+          "rescue__shape_raw": 0.0,
+          "long_context": 0.0,
+          "guarded_long_context": 0.0,
+          "rescue_long_context": 0.0
+        },
+        "chunk_updates": {
+          "baseline_score": 0.0,
+          "shape_raw": 0.0,
+          "level": 0.0,
+          "jump": 0.0,
+          "sustained": 4.440892098500626e-16,
+          "guarded_shape": 0.0,
+          "rescue__level": 0.0,
+          "rescue__jump": 0.0,
+          "rescue__sustained": 2.220446049250313e-16,
+          "rescue__shape_raw": 0.0,
+          "long_context": 0.0,
+          "guarded_long_context": 0.0,
+          "rescue_long_context": 0.0
+        }
+      },
+      "chunk_boundaries": [
+        0,
+        1,
+        119,
+        120,
+        121,
+        134,
+        180,
+        801,
+        1560,
+        1561,
+        1600
+      ],
+      "maximum_retained_state": {
+        "long_sensor_rows": 1441,
+        "reference_sensor_rows": 75,
+        "reference_score_rows": 5,
+        "rescue_score_rows": 5,
+        "rolling_rows_per_channel": 15,
+        "rolling_state_pickle_bytes": 2054
+      },
+      "latency_after_initial_gap_seconds": {
+        "rows": 1480,
+        "mean": 0.039515230113957425,
+        "p50": 0.03970666599343531,
+        "p95": 0.04659521670109825,
+        "maximum": 0.2717757089994848,
+        "sum": 58.48254056865699
+      },
+      "chunked_total_seconds": 58.38672804197995,
+      "process_lifetime_peak_rss_bytes": 326254592,
+      "memory_scope": "PeakRSS includes loaded fitted models/imports/batch verification/input/output. Serialized rolling state size is not a full RAM measurement.",
+      "actual_clock": {
+        "first": "2017-11-08T00:30:00",
+        "last": "2017-11-09T03:09:00",
+        "sample_seconds": 60.0
+      },
+      "case_id": "2019_disclosed_test",
+      "source": {
+        "path": "data/external/gecco2019/6_gecco2019_test_water_quality.csv",
+        "sha256": "ad509d0c1c656d3e48dc4e52011da5232d292997e6f7ce08eedd5f6194e3369f",
+        "original_source_row_bounds": [
+          0,
+          1600
+        ],
+        "original_test_axis_bounds": [
+          187230,
+          188830
+        ],
+        "columns_parsed": [
+          "Time",
+          "Tp",
+          "pH",
+          "Cond",
+          "Turb",
+          "SAC",
+          "PFM"
+        ],
+        "label_columns_parsed": false,
+        "clock_origin": "Published GECCO2019 test Time field; actual serialized year is retained, not rewritten to the dataset title year."
+      },
+      "original_saved_prefix_replay": true,
+      "bundle_sha256": "445141c316b30d46a1dff88a87151d61757c8858318bce17421f051f125e9a4d"
+    }
+  ],
+  "environment": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.12.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "threadpool_limit": 1
+  },
+  "limitations": [
+    "Qualified only on the pinned Darwinarm64 pandas kernel; not a Pi benchmark.",
+    "No existing model, threshold, frozen runtime, prototype, label or previous failure evidence changed.",
+    "Other bundles/periods/new data need their own evidence; two prefixes cannot certify long-running deployment.",
+    "The original all19period statistical evaluation and failed acceptance remain unchanged."
+  ],
+  "finished_at_utc": "2026-10-17T05:20:24.826880+00:00"
+}

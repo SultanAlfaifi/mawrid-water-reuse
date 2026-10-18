@@ -1,0 +1,30 @@
+{
+  "geometry": "verification.json covers all three presets, 15 components, 29 connected pipe runs, pipe diameters, head heights, controlled grade crossings, and flow isolation.",
+  "build": "Vite production build passed. Three.js engine chunk is 713 kB before gzip; build emits the normal large-chunk advisory.",
+  "screenshots": {
+    "format": "PNG",
+    "resolution": [
+      3840,
+      2160
+    ],
+    "required": 4,
+    "transparentBonus": true,
+    "disclaimer": "Visible and baked into each PNG"
+  },
+  "browser": [
+    "M10/M20/M30 selection",
+    "Four operating modes",
+    "Cutaway and exploded view",
+    "Human, service step and maintenance area toggles",
+    "Numbering and component table",
+    "Studio and site environments",
+    "No horizontal document overflow at tested mobile breakpoint",
+    "Fallback image loaded at 3840×2160 without WebGL",
+    "Transparent export alpha spans 0–255"
+  ],
+  "limitations": [
+    "60/30 FPS are performance targets, not certified across devices.",
+    "Geometry checks are targeted; no full mechanical interference or hydraulic performance certification is claimed.",
+    "Technical limits and proposed dimensions are documented in the page and README."
+  ]
+}

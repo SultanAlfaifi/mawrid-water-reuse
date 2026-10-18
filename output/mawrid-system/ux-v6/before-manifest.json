@@ -1,0 +1,38 @@
+[
+  {
+    "path": "mawrid-system/client/guide.js",
+    "sha256": "b53738decf3edfd561eedc0b089670c2d16895f1dea04e3227036bc8e509372a"
+  },
+  {
+    "path": "mawrid-system/client/guide.css",
+    "sha256": "f31636b747a3be82def0aa5d54fbdfe941674ee7290a9ecae820d6b14e2d6606"
+  },
+  {
+    "path": "mawrid-system/client/app.js",
+    "sha256": "1a50257db170efe67b26e31d0f0da21ea16c1a7fbdbb300bca2114dd9e708264"
+  },
+  {
+    "path": "mawrid-system/client/test-client.mjs",
+    "sha256": "6eba6aa711d26e2a0072a451b4040f970d148ff053a086e960bdbaaa8051f3a5"
+  },
+  {
+    "path": "mawrid-system/plant3d/main.js",
+    "sha256": "31755f276d3f9642c231818122ceada883ac5ef820d89205808d10beb53facac"
+  },
+  {
+    "path": "mawrid-system/plant3d/style.css",
+    "sha256": "4f000dfe1ecd655a4d09c03c7ab1d3268ee7469b7fc0da6b67f691945fcdf37f"
+  },
+  {
+    "path": "mawrid-system/client/guide-content.js",
+    "sha256": "61da1fcdf63610ea392950507832c2b6e85a34f922a9e7c8ee941df474ef4eae"
+  },
+  {
+    "path": "mawrid-system/CONTRACT.json",
+    "sha256": "b3cf32bdaa7a38cadc4138ded584aed57c917913a07e6b4b630fc12864a526d9"
+  },
+  {
+    "path": "mawrid-system/README.md",
+    "sha256": "f853b22a0c4f4c64365c6516deed86f54d22314332ca4a29fe32e7aebb31936d"
+  }
+]

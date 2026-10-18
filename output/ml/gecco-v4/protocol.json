@@ -1,0 +1,59 @@
+{
+  "frozen_at_utc": "2026-10-16T06:32:35.514649+00:00",
+  "family": "adaptive",
+  "recipe": "return_gated_channel_median5",
+  "source_file": "data/external/gecco2017/1_gecco2017_water_quality.csv",
+  "source_rows": 122334,
+  "source_sha256": "8452e3c03b1d0b1ed81f8e85e90664c52fbe77a59e85c042a4e177cf3d753d1d",
+  "contract": {
+    "created_before_new_source_label_access_utc": "2026-10-16T06:04:43.927761+00:00",
+    "new_source": "data/external/gecco2017/1_gecco2017_water_quality.csv",
+    "new_source_sha256": "8452e3c03b1d0b1ed81f8e85e90664c52fbe77a59e85c042a4e177cf3d753d1d",
+    "new_source_rows": 122334,
+    "status": "Evaluation design only. The selected method and all executable source hashes must be frozen separately after development and before ANY new-source EVENT values are read.",
+    "development_sources": [
+      "GECCO2018: all previous splits now disclosed",
+      "GECCO2019: all three chronological files now disclosed"
+    ],
+    "scope": "Previously unused historical external dataset. Method design used historically later data. This is not a simulated historical deployment without hindsight, a new site, or a MAWRID field test.",
+    "outer_periods": "Six expanding contiguous deciles, k=4..9. Test conceptual interval [floor(N*k/10),floor(N*(k+1)/10)). Training and calibration use only source indices below the test start. The exact past training/calibration geometry is frozen with the selected method.",
+    "gap_rows": 120,
+    "feature_history": "At every calibration and test boundary, first120 rows are excluded and feature/policy state is reset. Missing input is never treated as evidence of normality. No centered windows or future interpolation.",
+    "baseline": "Original v1 IsolationForest algorithm with original feature set, fitting rules, and threshold objective. Refit using the same past training and calibration intervals as V4. Also retain the old V1/V2/V3 results unmodified.",
+    "primary_event_metric": "Confirmed new normal-to-alarm transition inside an original EVENT interval. Every original event, including unscorable events, remains in the denominator.",
+    "false_alarm_metrics": [
+      "False alarm runs per eligible normal day",
+      "Fraction of eligible normal minutes under alarm",
+      "False positive minutes"
+    ],
+    "availability": "Report native availability and intersection-of-availability comparisons; no event denominator reduction for unavailable events.",
+    "pooled_joint_improvement": "On common available rows: confirmed detected events strictly exceed baseline AND false alarm runs/day strictly decrease AND normal alarm fraction does not increase. No metric substitution if this fails.",
+    "stable_joint_improvement": "Pooled joint improvement plus, in EVERY one of the six periods, confirmed event count is at least baseline and both false alarm runs/day and normal alarm fraction are no greater than baseline. Event counts are not interpreted for no-event periods; false alarms still count.",
+    "operating_budget": "Separately report whether EVERY period has <=1 false run/day and <=1% normal minutes under alarm. Passing calibration constraints is not a guarantee of passing future periods.",
+    "result_access": "Do not inspect new-source outer outcomes until all six predictions and metric files have completed. After that single review, no retuning and repeated claim of unseen evaluation.",
+    "release_gate": "No 3D integration in this task. If stability criteria fail, report the failure and preserve the candidate as experimental; do not promote based on the favorable pooled average alone.",
+    "labels": "Original binary labels only. No point adjustment, relabeling, expanded events, forgiven tails, or mapping binary events into the five fault types."
+  },
+  "development_source_sha256": {
+    "data/external/gecco2018/1_gecco2018_water_quality.csv": "c41221f3045696b75b79374f4c41c63f6c988e1df03b1dedcdbf910d44ea71cd"
+  },
+  "code_sha256": {
+    "ml/gecco_v4/run_evaluation.py": "18be4c7e67a5bb90739ef303f9b306e6889092d5601a9670200c2cf1292b9204",
+    "ml/gecco_v4/predict.py": "cef40154d0691aba3d22e3277999843a963f634e04ba6e07400552f17b3d7068",
+    "ml/gecco_v4/supervised_explore.py": "d7193d6a45c09f8cab5a2a62a8a1176aacacfa925602d7d1f4d94c4345c6dd63",
+    "ml/gecco_v4/supervised_candidate.py": "22686adcf7b1f15ccd31a668189c41c8a9b0840696520cd21681bba9b87b7cd0",
+    "ml/gecco_v4/evaluation_contract.json": "fa0996b28e17e4e5eaea9a31e13094c10f550dd9be0caf6e77603e7757324783",
+    "ml/gecco_v4/adaptive_candidate.py": "2c480aaf674ff33e33942b2f1605fc5121bfdac4cfa800cf0f74a80b3f34a0f2",
+    "ml/gecco_baseline/metrics.py": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+    "ml/gecco_v2/alarm_policy.py": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+    "ml/gecco_v2/candidates_supervised.py": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2"
+  },
+  "fold_geometry": "k=4..9; train[0,floor(N*(k-2)/10)); calibration previous20% in four contiguous5% blocks; test next10%. Each cal/test block first120 unavailable, then reset features.",
+  "calibration": "supervised_explore.calibrate: <=1 FP run/day and <=1% normal alarm duration in EVERY past block. Rank worst complete-event block recall, pooled confirmed complete-event recall, point F1, fewer FP minutes, higher threshold. No-event blocks still constrain false alarms; no-event overall chooses high no-alarm threshold through same conservative ranking.",
+  "baseline_calibration": "Original v1 instant F1 selector on all four past calibration blocks reassembled on original axis, with unavailable gaps retained.",
+  "new_source_event_values_read_before_freeze": false,
+  "selected_from": "Previously disclosed GECCO2018 and GECCO2019 development only",
+  "new_source_review": "All six folds must complete before any outer metrics are reviewed. No model-family changes after new-source labels are accessed.",
+  "one_class": "Adaptive uses normal-only fitting. Supervised fit must return explicitly unavailable if eligible labels contain one class; no unplanned family switching.",
+  "output_semantics": "-1 unavailable;0 no model alarm;1 alarm. Never authorizes a valve opening."
+}

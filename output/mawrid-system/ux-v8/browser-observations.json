@@ -1,0 +1,117 @@
+{
+  "checks": [
+    {
+      "check": "start",
+      "at": 1792255058574,
+      "stage": "collection",
+      "clock": "الانتقال بعد 24 ثانية"
+    },
+    {
+      "check": "pause",
+      "at": 1792255080741,
+      "stage": "collection",
+      "clock": "متبقي 2 ثانية"
+    },
+    {
+      "check": "resumed-advanced",
+      "at": 1792255108940,
+      "stage": "media"
+    },
+    {
+      "check": "automatic-stage",
+      "stage": "carbon",
+      "at": 1792255134887,
+      "clock": "الانتقال بعد 24 ثانية"
+    },
+    {
+      "check": "automatic-stage",
+      "stage": "polish",
+      "at": 1792255160029,
+      "clock": "الانتقال بعد 22 ثانية"
+    },
+    {
+      "check": "automatic-stage",
+      "stage": "verify",
+      "at": 1792255186147,
+      "clock": "الانتقال بعد 26 ثانية"
+    },
+    {
+      "check": "automatic-stage",
+      "stage": "uv",
+      "at": 1792255225122,
+      "clock": "الانتقال بعد 11 ثانية"
+    },
+    {
+      "check": "automatic-stage",
+      "stage": "storage",
+      "at": 1792255250583,
+      "clock": "الانتقال بعد 12 ثانية"
+    },
+    {
+      "check": "automatic-stage",
+      "stage": "irrigation",
+      "at": 1792255276040,
+      "clock": "الانتقال بعد 12 ثانية"
+    },
+    {
+      "check": "completion",
+      "at": 1792255314595,
+      "status": "complete",
+      "cameraMode": "overview"
+    },
+    {
+      "check": "manual-camera-pauses",
+      "status": "paused",
+      "clock": "متبقي 24 ثانية"
+    },
+    {
+      "check": "details-pause-no-auto-resume",
+      "status": "paused"
+    }
+  ],
+  "mobile": {
+    "action": {
+      "bottom": 657.5442962646484,
+      "height": 50.99113464355469,
+      "left": 35.7392692565918,
+      "right": 353.81293869018555,
+      "top": 606.5531616210938,
+      "width": 318.07366943359375,
+      "x": 35.7392692565918,
+      "y": 606.5531616210938
+    },
+    "height": 842,
+    "scrollHeight": 842,
+    "scrollWidth": 389,
+    "width": 389
+  },
+  "desktop": {
+    "action": {
+      "bottom": 800.2331733703613,
+      "height": 53.99953079223633,
+      "left": 60.7392692565918,
+      "right": 285.73925399780273,
+      "top": 746.233642578125,
+      "width": 224.99998474121097,
+      "x": 60.7392692565918,
+      "y": 746.233642578125
+    },
+    "height": 975,
+    "scrollHeight": 975,
+    "scrollWidth": 961,
+    "width": 961
+  },
+  "pausedClock": "متبقي 2 ثانية",
+  "consoleErrorsFinalTab": [
+    {
+      "level": "error",
+      "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "timestamp": "2026-10-17T16:43:48.214Z"
+    }
+  ],
+  "previewNotes": [
+    "The original preview tab intermittently stopped at initial HTML with the ES-module entry. A single deferred classic IIFE now boots on two consecutive reloads in that original tab and a reload in a fresh tab; start and pause/resume also verified after packaging.",
+    "Native pointer mapping in the original tab remained unreliable after viewport tests; keyboard activation worked. Final semantic pointer checks and screenshot used fresh tab 18. This is an automation observation, not a demonstrated end-user control failure.",
+    "A captured MutationObserver console error lacks an attributed source URL. No zero-console-error claim is made; visible start/pause/resume/manual exit and reload all worked."
+  ]
+}

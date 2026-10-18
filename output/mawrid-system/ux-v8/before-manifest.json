@@ -1,0 +1,38 @@
+[
+  {
+    "path": "mawrid-system/client/app.js",
+    "sha256": "fa30d22862451c8e600a2a296122c6803963d577a8197441828b9f81535d3a95"
+  },
+  {
+    "path": "mawrid-system/client/guide.js",
+    "sha256": "60bd3e12887f03aaac11def33efaae02cb4d5c4742da9196de80a198bff67fbe"
+  },
+  {
+    "path": "mawrid-system/client/guide.css",
+    "sha256": "9db794064561f863918b610ebc622de75cd09bde7070d368d7a1a4c4809ca4b0"
+  },
+  {
+    "path": "mawrid-system/client/water-journey.js",
+    "sha256": "b55d265667f22aa94ae6fccc0e4da2a05916a17bd0b7b3e95dfe98beb4707346"
+  },
+  {
+    "path": "mawrid-system/client/test-client.mjs",
+    "sha256": "f0551e28b135b855cc907ecf396ca383f2421113ee1e6f38f2fce58d521a3115"
+  },
+  {
+    "path": "mawrid-system/client/guide-content.js",
+    "sha256": "97abbaec1ecd69334802eea6a98dad5015c85d8b0a26c23bcb1d0739a25160fa"
+  },
+  {
+    "path": "mawrid-system/CONTRACT.json",
+    "sha256": "8bbc58b0515a2778b54a6ea0552e9867026598bf3aefa3fba44b362991960ac8"
+  },
+  {
+    "path": "mawrid-system/README.md",
+    "sha256": "e0f1bfd7ba3289aa65d7c7654db8866edc4fcca27b7aa0d4077180743962ccf9"
+  },
+  {
+    "path": "mawrid-system/client/index.html",
+    "sha256": "5cef0ee0df77317d4eb1ce358c507de3121875850f5aad902cdbca1542b6bab2"
+  }
+]

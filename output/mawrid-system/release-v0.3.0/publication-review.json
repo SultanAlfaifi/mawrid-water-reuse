@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "review_date": "2026-10-18",
+  "reviewed_at_utc": "2026-10-18T13:39:07.567922+00:00",
+  "scope": "Publication selection, local links, build evidence and artifact integrity; not an exhaustive security audit or field validation.",
+  "repository": "SultanAlfaifi/mawrid-water-reuse",
+  "release": "v0.3.0",
+  "tracked_files_before_this_record": 1173,
+  "changed_paths_before_this_record": 886,
+  "curated_ml_evidence_files": 217,
+  "curated_ml_evidence_bytes": 178188445,
+  "compiled_client_and_scene_hash_checks": "PASS",
+  "local_documentation_links_checked": 335,
+  "credential_pattern_findings": 0,
+  "credential_scan_scope": "UTF-8 newly staged files <=30MiB; private keys, GitHub/OpenAI/AWS token formats and credential URLs; binary archives not interpreted by this scan.",
+  "excluded": [
+    "local runtime databases and backups",
+    "virtual environments and node_modules",
+    "complete third-party raw datasets and partial downloads",
+    "private submission drafts and temporary work directories",
+    "model weights and bulk row predictions from Git history"
+  ],
+  "research_asset": {
+    "location": "GitHub Release v0.3.0",
+    "path": "mawrid-v9-research-assets.zip",
+    "bytes": 24797225,
+    "sha256": "e359023288d526396c2e348f75fd8899a5d20acf1e7951c4713e0d170915d0ff"
+  },
+  "related_verification": [
+    "verification.json",
+    "third-party-notices-verification.json",
+    "../ux-v8/verification.json"
+  ],
+  "public_site_build": "PASS; built from current docs and sources",
+  "github_ci_status": "Not evaluated by this local record; see repository Actions."
+}

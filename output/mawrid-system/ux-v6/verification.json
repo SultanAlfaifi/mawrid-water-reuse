@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "scope": "Bounded functional and responsive verification; not a user study or full accessibility certification. No backend, hardware or ML changes.",
+  "changes": [
+    "Dedicated experience layout with one primary next action derived from server state",
+    "Details native dialog, optional brief equipment role and benefit; no automatic equipment popup",
+    "Explicit pause and resume, separate manual-hold reset, inline write errors and serialized commands",
+    "Session-bound completion requires confirmed sensor dropout closure and actual returned reuse readiness",
+    "Reduced home page repetition; products and all technical/component details retained",
+    "Scene aspect changes preserve relative camera fit"
+  ],
+  "synthetic_checks": {
+    "client_groups": 45,
+    "experience_state_cases": 20,
+    "scene_tests": 21,
+    "build_proof": "plant3d-build-r3.json"
+  },
+  "browser_checks": [
+    "Explicit start created virtual session and normal operation",
+    "Sensor dropout reported closure; live API confirmed virtual valve closed and reuse_lpm=0",
+    "Restoration returned reuse flow and completion text",
+    "Scenario action did not open equipment popup",
+    "Explicit equipment selection showed role and benefit only",
+    "Native details modal opened and closed with focus restored",
+    "Home navigation restored workspace; collapsed products still expose unit and box",
+    "Pause and resume both work; keyboard focus moves to next primary action",
+    "390x842 CSS mobile: action bottom 688.23, no horizontal overflow and page height 842",
+    "964x976 CSS desktop: action bottom 844.34, no horizontal overflow and page height 976"
+  ],
+  "console_observation": {
+    "message": "One captured MutationObserver.observe parameter-not-Node error without source URL; also seen in prior IAB sessions. Not attributed to app code; no observed functional failure. No claim of an error-free console.",
+    "timestamp": "2026-10-17T14:14:10.691Z"
+  },
+  "final_state": {
+    "session_id": "b8d87f52-c1f4-49cd-8a44-4241b1160e90",
+    "running": false,
+    "fault": "none",
+    "mode": "auto",
+    "hardware_connected": false,
+    "ml_status": "unavailable"
+  },
+  "source_manifest": [
+    {
+      "path": "mawrid-system/client/app.js",
+      "sha256": "98299e655b8f05d917c555875d9d2d740effe9f52a51ee101193f14a2e6e7108"
+    },
+    {
+      "path": "mawrid-system/client/guide.js",
+      "sha256": "8ffe00c449df6a72b59946c99dee5bd6ca5f86c163ab608e04f6ad2b83bf5633"
+    },
+    {
+      "path": "mawrid-system/client/guide.css",
+      "sha256": "72c2e6a64d60e15a4ec69ca5cca44f7362e44c394437aefc6217ab72608240d5"
+    },
+    {
+      "path": "mawrid-system/client/guide-content.js",
+      "sha256": "654df70dd67f34f50eeeaedd64636632e0ae63367601fd5c08dda60439abf3b8"
+    },
+    {
+      "path": "mawrid-system/client/experience-state.js",
+      "sha256": "89803cba359c18e190b761a0181106d572b45b034fceb0e9dfe7a1c357896103"
+    },
+    {
+      "path": "mawrid-system/client/test-experience-state.mjs",
+      "sha256": "b8c6fa3704d4918f8cfdafeb5e6bb4adaa6548bedbe2d458bef0faa76e341c3f"
+    },
+    {
+      "path": "mawrid-system/client/test-client.mjs",
+      "sha256": "4922301860eaf2bcb384dd5a5867a6418a47305193140f0c05a156643cb03229"
+    },
+    {
+      "path": "mawrid-system/plant3d/main.js",
+      "sha256": "3e83c032bf28dbf360aad00ca8270f5e9c796dd1e260f599f5c31138e17b7569"
+    },
+    {
+      "path": "mawrid-system/plant3d/style.css",
+      "sha256": "d9f178bbfcd0dcf1b9220581238b122979242887f6b1488eacecd939f41e2023"
+    },
+    {
+      "path": "mawrid-system/CONTRACT.json",
+      "sha256": "002da4496b4bfdcdb6f3debdf59f4f1c2ef7e660cd109cf4fd8e7c54ff4e9c3a"
+    },
+    {
+      "path": "mawrid-system/README.md",
+      "sha256": "2bd4c6fbdb7169f2166808601f75dce827f2cdb6bd050659147cfad5ea4c21d4"
+    }
+  ]
+}

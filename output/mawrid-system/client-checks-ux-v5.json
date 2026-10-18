@@ -1,0 +1,33 @@
+{
+  "created_at_utc": "2026-10-17T13:10:18.284277+00:00",
+  "passed": true,
+  "command": [
+    "node",
+    "mawrid-system/client/test-client.mjs"
+  ],
+  "exit_code": 0,
+  "stdout": "34 frontend checks PASS; actual guide module and app queue/event handlers with synthetic fixtures only; no browser-rendering/accessibility claim, network or persisted application mutations.\n",
+  "stderr": "",
+  "source_sha256": {
+    "mawrid-system/client/test-client.mjs": "6eba6aa711d26e2a0072a451b4040f970d148ff053a086e960bdbaaa8051f3a5",
+    "mawrid-system/client/app.js": "2493f3c56786548d039520e81ecf6ebb8fc6f2b580d4e59913b4ffe60d4b994e",
+    "mawrid-system/client/api.js": "1941af2e313471b025957c216e0ca6c2b8e3f08cd9f7e4c7fce540cd070c81a9",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/plant.js": "35787759f5d284e14dc36595d47ee55e5fe816ae521e7e624bdb2c0f9c31975d",
+    "mawrid-system/client/guide.js": "253a9b0a510e2b0e3bf32bd9d87a88c967eb9e09a2f46ab87d204086ce32844e",
+    "mawrid-system/client/guide-content.js": "61da1fcdf63610ea392950507832c2b6e85a34f922a9e7c8ee941df474ef4eae",
+    "mawrid-system/CONTRACT.json": "b3cf32bdaa7a38cadc4138ded584aed57c917913a07e6b4b630fc12864a526d9"
+  },
+  "source_sha256_after": {
+    "mawrid-system/client/test-client.mjs": "6eba6aa711d26e2a0072a451b4040f970d148ff053a086e960bdbaaa8051f3a5",
+    "mawrid-system/client/app.js": "2493f3c56786548d039520e81ecf6ebb8fc6f2b580d4e59913b4ffe60d4b994e",
+    "mawrid-system/client/api.js": "1941af2e313471b025957c216e0ca6c2b8e3f08cd9f7e4c7fce540cd070c81a9",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/plant.js": "35787759f5d284e14dc36595d47ee55e5fe816ae521e7e624bdb2c0f9c31975d",
+    "mawrid-system/client/guide.js": "253a9b0a510e2b0e3bf32bd9d87a88c967eb9e09a2f46ab87d204086ce32844e",
+    "mawrid-system/client/guide-content.js": "61da1fcdf63610ea392950507832c2b6e85a34f922a9e7c8ee941df474ef4eae",
+    "mawrid-system/CONTRACT.json": "b3cf32bdaa7a38cadc4138ded584aed57c917913a07e6b4b630fc12864a526d9"
+  },
+  "sources_unchanged": true,
+  "scope": "Real guide ES module plus actual app queue/event logic in a synthetic minimal-DOM VM; real API request construction against a fetch stub. Not browser rendering, accessibility, field hardware or ML validation. No live database or HTTP writes."
+}

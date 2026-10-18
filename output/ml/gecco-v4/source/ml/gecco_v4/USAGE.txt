@@ -1,0 +1,90 @@
+MAWRID V4 — offline anomaly detection and chronological evaluation
+
+Scope
+-----
+V4 learns normal per-channel change scales, then ranks deviations from causal
+rolling reference values. Scores are not probabilities of safe water or sensor
+trust. The binary GECCO labels do not identify the five sensor-fault classes.
+Nothing here connects the 3D simulator, controls a valve or authorizes opening.
+
+Development and new evaluation
+------------------------------
+All GECCO2018 and GECCO2019 results were already disclosed before V4 design.
+Their V4 results are development results, even when each fitted fold uses only
+earlier observations. Development includes unsuccessful recipes, preserved in
+output/ml/gecco-v4-supervised-development and gecco-v4-adaptive-development.
+
+GECCO2017 was downloaded without loading its EVENT values. Source hashes,
+timestamp overlap and complete 60-row sensor-window overlap were checked.
+The method, selection rules and six outer periods were frozen before EVENT
+access. This is a new historical external check of the method, not a simulated
+historical deployment without hindsight: method design used datasets later in
+calendar time. It is not a new measuring-site claim or a MAWRID field trial.
+
+For each of six deciles k=4..9, train on rows before decile k-2, calibrate on
+the preceding20% as four5% blocks, then evaluate the next10%. Fitted model and
+operating point use only the local past. The original IsolationForest baseline
+is refitted to identical training/calibration boundaries. Every calibration
+and outer block retains its first120 excluded rows as unavailable, then resets
+history. The selected detector needs94 additional initial rows. Those rows and
+events stay in the evaluation denominator. Native and common-row metrics are
+both reported. No future interpolation, centered windows or point adjustment.
+
+The source2017 forward clock jump and source2018 backward clock jump are
+preserved in acquisition order. Elapsed time uses the nominal one-minute row
+cadence. Do not sort or deduplicate by local wall-clock strings.
+
+Reproduction
+------------
+Use Python3.12 and the exact versions in ml/gecco_baseline/requirements.txt.
+The original local environment is ml/gecco_baseline/.venv (not distributed).
+Use a NEW output directory so existing hashes and results remain immutable:
+
+  python -B ml/gecco_v4/run_evaluation.py declare --family adaptive --recipe return_gated_channel_median5 --output-dir output/ml/v4-reproduction
+  python -B ml/gecco_v4/run_evaluation.py 2018 --output-dir output/ml/v4-reproduction
+  python -B ml/gecco_v4/run_evaluation.py 2017 --output-dir output/ml/v4-reproduction
+
+A rerun reproduces an already reviewed benchmark. It is not a new unseen test.
+The runner emits progress without outer metrics until all six periods finish.
+Do not alter a frozen source to improve results; create a separately disclosed
+development version with a new evaluation plan instead.
+
+Offline inference
+-----------------
+Load only trusted local joblib files. Example (no simulator connection):
+
+  python -B ml/gecco_v4/checked_predict.py --model output/ml/gecco-v4/external_2017/fold_6/v4_model.joblib --input readings.csv --output predictions.csv
+
+Input: ordered required sensor columns, consecutive one-minute acquisition
+rows. The nine-channel benchmark expects Tp,Cl,pH,Redox,Leit,Trueb,Cl_2,Fm,Fm_2.
+Chlorine channels are chlorine dioxide, not free residual chlorine. Extra
+labels, timestamps and row IDs are ignored by the model. Provide explicit
+missing rows or restart history at acquisition gaps; this interface does not
+infer missing elapsed minutes from timestamps. Different sensor schema needs
+retraining and validation; do not map channels solely by similar names.
+
+Output prediction: -1 unavailable, 0 no model alarm, 1 alarm. Current missing
+measurements never produce a reassuring normal value. An available0 is not
+water-safety clearance. Decisions include causal alarm persistence chosen from
+past calibration. At most189 consecutive rows reproduce current inference
+for the selected184-predecessor detector with the largest policy window.
+
+Post-audit guard
+----------------
+checked_predict.py was added after the external result was reviewed. It checks
+the model hash and the original freeze.json calibration record. A missing or
+infeasible calibration, or zero event recall in a calibration block that has
+events, returns unavailable(-1) with an explicit reason. It does not retune the
+model, improve the reported benchmark, or establish field readiness. The old
+predict.py remains frozen so the original failed experiment can be reproduced.
+The guard is verified with synthetic tests only; the benchmark metrics above
+are the unchanged original V4 metrics, not newly computed guarded results.
+
+Verification
+------------
+  python -B -m unittest discover -s ml/gecco_v4 -p 'test*.py' -v
+  python -B ml/gecco_v4/benchmark_inference.py --output-dir output/ml/gecco-v4
+
+Benchmark timing is for the local Mac only. No Raspberry Pi performance or
+field stability is established. Detailed pass/fail gates are read from actual
+results in output/ml/gecco-v4/report.html, not assumed from this usage file.

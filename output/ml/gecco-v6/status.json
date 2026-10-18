@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-10-16T11:54:55.679729+00:00",
+  "development_pass": true,
+  "fresh_evaluation_complete": true,
+  "fresh_acceptance": {
+    "checks": {
+      "six_complete_periods": true,
+      "each_period_has_one_day_observed_known_normal": true,
+      "all_periods_and_pool_noninferior": true,
+      "strictly_more_pooled_events": true,
+      "strictly_fewer_pooled_false_runs": true,
+      "event_gain_in_at_least_two_periods": true,
+      "false_run_reduction_in_at_least_two_periods": false,
+      "at_least_five_primary_events": true,
+      "at_least_two_eventful_periods": true
+    },
+    "passes_fresh_validation_requirements": false,
+    "deployment_approved": false
+  },
+  "fresh_source_consumed": true,
+  "independent_audit_file": "../gecco-v6-waterhub-first-use/audit.json",
+  "three_d_connected": false,
+  "field_deployment_approved": false,
+  "goal_achieved": false,
+  "next_required": "Improve sensitivity to longer labeled events and conservative calibration in disclosed development; obtain new untouched validation before approval."
+}

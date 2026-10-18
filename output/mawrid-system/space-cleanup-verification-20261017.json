@@ -1,0 +1,11 @@
+{
+  "verified_at": "2026-10-17T09:42:35.949649+00:00",
+  "cleanup_receipt_sha256": "8fda8c920fc36b7b21253c86a8ef54cfbf70c15830317ff325e7bce8040cb05a",
+  "frozen_v13_code_and_inputs_unchanged": true,
+  "git_connectivity_command": "git fsck --connectivity-only --no-dangling",
+  "git_connectivity_exit_code": 0,
+  "git_object_counts_and_HEAD_unchanged": true,
+  "local_application_still_running": true,
+  "hardware_connected": false,
+  "free_GiB": 4.829
+}

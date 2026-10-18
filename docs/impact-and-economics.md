@@ -2,7 +2,9 @@
 
 ## 1. Measure use, not production
 
-The first use case is source-separated ablution water at one university facility, with irrigation of a defined green area as the proposed end use. No site agreement, field water saving, or regulatory approval is claimed. The amount entering the system is not the amount of drinking-quality water displaced. The proposed accounting uses a complete water balance:
+The current use case is source-separated ablution and washbasin water for a defined non-potable landscape-irrigation area. There is no confirmed site agreement, measured field saving or regulatory approval. The design basis is 1,000 L/hour and 15 m³/day at 15 operating hours, with two 5 m³ tanks; it is not measured supply or guaranteed usable output. Commercial carbon is the base medium, with palm carbon a future comparative study.
+
+The amount entering the system is not the amount of potable water displaced. Use a complete water balance:
 
 ```text
 Collected greywater + all potable inputs to the system
@@ -53,7 +55,7 @@ Partial demand coverage can still create value. The system does not need to meet
 
 - Electricity.
 - Disinfectant and other consumables.
-- Biochar preparation, activation, transport, replacement, or regeneration.
+- Commercial-carbon purchase and replacement; future palm-carbon preparation, activation, transport and testing reported separately.
 - Screen cleaning, backwash, tank cleaning, and residual disposal.
 - Sensor calibration and replacement.
 - Laboratory testing.
@@ -76,13 +78,27 @@ Keep three amounts distinct: the bench-prototype budget, the installed and opera
 
 | Case | Purpose |
 |---|---|
-| Existing practice | Potable supply for the selected end use; greywater discharged |
+| Existing practice | Measured current source for the selected irrigation zone, including campus-treated wastewater or potable make-up where actually used; current route of ablution water |
 | Sand + disinfection | Tests whether adsorption adds enough value to justify cost |
 | Commercial activated carbon | Benchmarks local biochar performance and service life |
 | Commercial onsite-reuse system | Benchmarks installed cost, certification, automation, and support |
-| MAWRID candidate train | Evaluates the integrated local-media and condition-based approach |
+| MAWRID base train and retrofit box | Evaluate the relevant treatment/monitoring scope and actual maintenance burden; do not assign full-unit costs to a monitoring-only box |
 
 Comparisons use equivalent capacity, end use, validation level, lifetime, and cost boundary.
+
+### Current station design and historical site research
+
+Earlier planning used a 20 m³/day input, assumed 80% recovery and university-site examples. Those are historical study assumptions, superseded as current station specifications by the later 15 m³/day design reference. No fixed 20% continuous reject belongs to the current non-RO train. Backwash, diversion, overflow and inventory changes must be accounted for directly rather than represented by an arbitrary recovery fraction.
+
+The [site-research entries](evidence-register.md#أدلة-دراسة-جامعة-أم-القرى--13-أكتوبر-2026) remain contextual evidence; they do not establish a partner, unmet demand, current irrigation-water source or purchasing interest. Qualify every candidate site against its actual existing alternatives.
+
+At the design flow, 15 operating hours would give 15 m³ of gross feed per full-load day. Annual useful irrigation volume depends on measured source availability, operating days, treatment availability, backwash/diversion, storage and actual demand. Do not price every litre of gross feed as avoided potable water. Separate hypothetical sensitivity cases from measured operation and disclose assumptions for operating days, tariffs and maintenance.
+
+### Price and quotation discipline
+
+The private station reference contains multiple package scopes and preliminary cost ranges. They are not a single validated bill of materials or binding selling price. Do not combine a compact-unit selling price, a full-site cost estimate and a retrofit-box subscription into one margin calculation. Keep competitor offers and supplier attachments private unless redistribution is authorized.
+
+Each public estimate needs a dated scope and quantity basis, included/excluded tanks and civil works, tax treatment, installation/commissioning, UV option, instruments, spares, warranty reserve, laboratory work, maintenance and recurring software/communications. Replace assumptions with supplier quotations and a site survey before claiming a margin, payback or saving. The current repository does not establish a purchase price or commercial return.
 
 ## 5. Environmental accounting
 
@@ -108,8 +124,10 @@ Assume one site collects `5.0 m³/day` of greywater and adds `0.2 m³/day` of po
 
 ## 7. Commercial hypotheses
 
-The initial commercial hypothesis is sale of a modular unit to a university facility with a maintenance and monitoring agreement. The daily user, purchasing organization, and decision maker must be identified separately. No sale, interest letter, or recurring revenue is claimed. The model needs evidence of media life, service burden, liability, compliance cost, and willingness to pay.
+The two commercial hypotheses are a **complete treatment/monitoring unit** for a qualified site and a **retrofit monitoring/control box** for a compatible existing plant. Maintenance and remote reporting may be separate offers; their price, service burden and customer demand remain unverified. No sale, interest letter, subscription revenue or partnership is claimed.
 
-Estimate the first addressable market from a dated list of candidate university facilities, then filter for separable ablution drainage, suitable irrigation demand, installation space, operating staff, budget, and approval requirements. A count of all universities or mosques is not a count of installation-ready customers. Broader sectors remain later hypotheses until transferability is tested.
+Keep three decisions separate: technical success requires the predeclared treatment and physical-control tests; irrigation feasibility requires measured source availability, equivalent demand, baseline supply and whole-site cost; commercial adoption requires a purchasing organization, approval path and evidence of willingness to pay. Success in one does not establish the others.
+
+Academic institutions are a candidate segment, not a verified market count. Filter prospective sites for separable drainage, demand, existing economically viable reuse, space, staff, budget, installation constraints and approval requirements. Previous university-branch research informs questions; it does not establish that every branch needs MAWRID or that a particular location is approved.
 
 New developments with planned greywater plumbing may offer better economics than retrofits. Centralized ablution areas in existing facilities may also be feasible when drainage separation is accessible.

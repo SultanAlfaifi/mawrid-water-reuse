@@ -1,0 +1,32 @@
+{
+  "ml/gecco_v4/evaluation_contract.json": {
+    "packaged_copy": "source/ml/gecco_v4/evaluation_contract.json",
+    "sha256": "fa0996b28e17e4e5eaea9a31e13094c10f550dd9be0caf6e77603e7757324783",
+    "matched_frozen_protocol": true
+  },
+  "ml/gecco_baseline/metrics.py": {
+    "packaged_copy": "source/ml/gecco_baseline/metrics.py",
+    "sha256": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+    "matched_frozen_protocol": true
+  },
+  "ml/gecco_v4/run_evaluation.py": {
+    "packaged_copy": "source/ml/gecco_v4/run_evaluation.py",
+    "sha256": "18be4c7e67a5bb90739ef303f9b306e6889092d5601a9670200c2cf1292b9204",
+    "matched_frozen_protocol": true
+  },
+  "ml/gecco_v4/make_report.py": {
+    "packaged_copy": "source/ml/gecco_v4/make_report.py",
+    "sha256": "42854fd68fb5dde486e5d54f4fd24d94676980d90e38052cbf43d925c81d35f0",
+    "matched_frozen_protocol": null
+  },
+  "ml/gecco_v4/checked_predict.py": {
+    "packaged_copy": "source/ml/gecco_v4/checked_predict.py",
+    "sha256": "a18ffbfb77481bc786d2deeb50fa577e6cb4050b535c3ffd1312db7d082b0591",
+    "matched_frozen_protocol": null
+  },
+  "ml/gecco_v4/USAGE.txt": {
+    "packaged_copy": "source/ml/gecco_v4/USAGE.txt",
+    "sha256": "4b56aeab770f0ed1e0dca37552e90279e86adf26f90c4607b61d9f0fa06c6c1f",
+    "matched_frozen_protocol": null
+  }
+}

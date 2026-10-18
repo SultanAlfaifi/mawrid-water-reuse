@@ -1,0 +1,48 @@
+GSAP 3.15.0 — bundled package notices
+
+License terms: https://gsap.com/standard-license
+Package license field: Standard 'no charge' license: https://gsap.com/standard-license.
+
+The following copyright and license notices are copied from the installed
+GSAP package source headers used by the public site. The package README
+refers to the same official license URL.
+
+Source: gsap/gsap-core.js
+/*!
+ * GSAP 3.15.0
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+Source: gsap/CSSPlugin.js
+/*!
+ * CSSPlugin 3.15.0
+ * https://gsap.com
+ *
+ * Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+Source: gsap/ScrollTrigger.js
+/*!
+ * ScrollTrigger 3.15.0
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+Source: gsap/Observer.js
+/*!
+ * Observer 3.15.0
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/

@@ -1,0 +1,858 @@
+{
+  "status": "pass",
+  "checks": 1822,
+  "findings": [],
+  "scope": "Independent accounting of all13 disclosed GECCO development cases, original event identities, original baseline score/prediction parity, selected calibration replay, frozen source and bundle hashes. No new source accessed. No guarantee for future sites/events.",
+  "summaries": [
+    {
+      "case": "2017_fold_1",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "insufficient_event_representation",
+      "baseline_events": 15,
+      "candidate_events": 15,
+      "true_events": 17,
+      "lost_ids": [],
+      "baseline_FPday": 1.9630229189741841,
+      "candidate_FPday": 1.9630229189741841,
+      "baseline_FPminutes": 22,
+      "candidate_FPminutes": 22,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_1",
+      "config": "support_q95",
+      "decision": "baseline",
+      "status": "insufficient_event_representation",
+      "baseline_events": 15,
+      "candidate_events": 15,
+      "true_events": 17,
+      "lost_ids": [],
+      "baseline_FPday": 1.9630229189741841,
+      "candidate_FPday": 1.9630229189741841,
+      "baseline_FPminutes": 22,
+      "candidate_FPminutes": 22,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_2",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "no_sensitivity_preserving_false_alarm_improvement",
+      "baseline_events": 15,
+      "candidate_events": 15,
+      "true_events": 18,
+      "lost_ids": [],
+      "baseline_FPday": 1.4754098360655739,
+      "candidate_FPday": 1.4754098360655739,
+      "baseline_FPminutes": 12,
+      "candidate_FPminutes": 12,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_2",
+      "config": "support_q95",
+      "decision": "baseline",
+      "status": "no_sensitivity_preserving_false_alarm_improvement",
+      "baseline_events": 15,
+      "candidate_events": 15,
+      "true_events": 18,
+      "lost_ids": [],
+      "baseline_FPday": 1.4754098360655739,
+      "candidate_FPday": 1.4754098360655739,
+      "baseline_FPminutes": 12,
+      "candidate_FPminutes": 12,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_3",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "no_sensitivity_preserving_false_alarm_improvement",
+      "baseline_events": 12,
+      "candidate_events": 12,
+      "true_events": 15,
+      "lost_ids": [],
+      "baseline_FPday": 3.202189531303455,
+      "candidate_FPday": 3.202189531303455,
+      "baseline_FPminutes": 47,
+      "candidate_FPminutes": 47,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_3",
+      "config": "support_q95",
+      "decision": "baseline",
+      "status": "no_sensitivity_preserving_false_alarm_improvement",
+      "baseline_events": 12,
+      "candidate_events": 12,
+      "true_events": 15,
+      "lost_ids": [],
+      "baseline_FPday": 3.202189531303455,
+      "candidate_FPday": 3.202189531303455,
+      "baseline_FPminutes": 47,
+      "candidate_FPminutes": 47,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_4",
+      "config": "support_q50",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 3,
+      "candidate_events": 3,
+      "true_events": 3,
+      "lost_ids": [],
+      "baseline_FPday": 1.0903584048460373,
+      "candidate_FPday": 1.0903584048460373,
+      "baseline_FPminutes": 33,
+      "candidate_FPminutes": 33,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_4",
+      "config": "support_q95",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 3,
+      "candidate_events": 3,
+      "true_events": 3,
+      "lost_ids": [],
+      "baseline_FPday": 1.0903584048460373,
+      "candidate_FPday": 0.6057546693589096,
+      "baseline_FPminutes": 33,
+      "candidate_FPminutes": 19,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_5",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "no_sensitivity_preserving_false_alarm_improvement",
+      "baseline_events": 2,
+      "candidate_events": 2,
+      "true_events": 2,
+      "lost_ids": [],
+      "baseline_FPday": 0.12015018773466833,
+      "candidate_FPday": 0.12015018773466833,
+      "baseline_FPminutes": 1,
+      "candidate_FPminutes": 1,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_5",
+      "config": "support_q95",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 2,
+      "candidate_events": 2,
+      "true_events": 2,
+      "lost_ids": [],
+      "baseline_FPday": 0.12015018773466833,
+      "candidate_FPday": 0.12015018773466833,
+      "baseline_FPminutes": 1,
+      "candidate_FPminutes": 1,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2017_fold_6",
+      "config": "support_q50",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "baseline_FPday": 5.1173553719008265,
+      "candidate_FPday": 4.1652892561983474,
+      "baseline_FPminutes": 60,
+      "candidate_FPminutes": 52,
+      "noninferior": true,
+      "max_extra_delay_minutes": null
+    },
+    {
+      "case": "2017_fold_6",
+      "config": "support_q95",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "baseline_FPday": 5.1173553719008265,
+      "candidate_FPday": 1.0710743801652893,
+      "baseline_FPminutes": 60,
+      "candidate_FPminutes": 14,
+      "noninferior": true,
+      "max_extra_delay_minutes": null
+    },
+    {
+      "case": "2018_fold_1",
+      "config": "support_q50",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 6,
+      "candidate_events": 6,
+      "true_events": 15,
+      "lost_ids": [],
+      "baseline_FPday": 2.6035859575109237,
+      "candidate_FPday": 2.6035859575109237,
+      "baseline_FPminutes": 44,
+      "candidate_FPminutes": 44,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2018_fold_1",
+      "config": "support_q95",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 6,
+      "candidate_events": 3,
+      "true_events": 15,
+      "lost_ids": [
+        7,
+        9,
+        10
+      ],
+      "baseline_FPday": 2.6035859575109237,
+      "candidate_FPday": 1.844206719903571,
+      "baseline_FPminutes": 44,
+      "candidate_FPminutes": 21,
+      "noninferior": false,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2018_fold_2",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "no_sensitivity_preserving_false_alarm_improvement",
+      "baseline_events": 14,
+      "candidate_events": 14,
+      "true_events": 15,
+      "lost_ids": [],
+      "baseline_FPday": 2.050513377801094,
+      "candidate_FPday": 2.050513377801094,
+      "baseline_FPminutes": 77,
+      "candidate_FPminutes": 77,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2018_fold_2",
+      "config": "support_q95",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 14,
+      "candidate_events": 7,
+      "true_events": 15,
+      "lost_ids": [
+        3,
+        5,
+        6,
+        8,
+        9,
+        10,
+        15
+      ],
+      "baseline_FPday": 2.050513377801094,
+      "candidate_FPday": 2.050513377801094,
+      "baseline_FPminutes": 77,
+      "candidate_FPminutes": 74,
+      "noninferior": false,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2018_fold_3",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "insufficient_event_representation",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 6,
+      "lost_ids": [],
+      "baseline_FPday": 0.10550223459594109,
+      "candidate_FPday": 0.10550223459594109,
+      "baseline_FPminutes": 3,
+      "candidate_FPminutes": 3,
+      "noninferior": true,
+      "max_extra_delay_minutes": null
+    },
+    {
+      "case": "2018_fold_3",
+      "config": "support_q95",
+      "decision": "baseline",
+      "status": "insufficient_event_representation",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 6,
+      "lost_ids": [],
+      "baseline_FPday": 0.10550223459594109,
+      "candidate_FPday": 0.10550223459594109,
+      "baseline_FPminutes": 3,
+      "candidate_FPminutes": 3,
+      "noninferior": true,
+      "max_extra_delay_minutes": null
+    },
+    {
+      "case": "2018_fold_4",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "no_sensitivity_preserving_false_alarm_improvement",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "baseline_FPday": 0.20836347851251627,
+      "candidate_FPday": 0.20836347851251627,
+      "baseline_FPminutes": 2,
+      "candidate_FPminutes": 2,
+      "noninferior": true,
+      "max_extra_delay_minutes": null
+    },
+    {
+      "case": "2018_fold_4",
+      "config": "support_q95",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "baseline_FPday": 0.20836347851251627,
+      "candidate_FPday": 0.20836347851251627,
+      "baseline_FPminutes": 2,
+      "candidate_FPminutes": 2,
+      "noninferior": true,
+      "max_extra_delay_minutes": null
+    },
+    {
+      "case": "2018_fold_5",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "insufficient_event_representation",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "baseline_FPday": 0.0,
+      "candidate_FPday": 0.0,
+      "baseline_FPminutes": 0,
+      "candidate_FPminutes": 0,
+      "noninferior": true,
+      "max_extra_delay_minutes": null
+    },
+    {
+      "case": "2018_fold_5",
+      "config": "support_q95",
+      "decision": "baseline",
+      "status": "insufficient_event_representation",
+      "baseline_events": 0,
+      "candidate_events": 0,
+      "true_events": 0,
+      "lost_ids": [],
+      "baseline_FPday": 0.0,
+      "candidate_FPday": 0.0,
+      "baseline_FPminutes": 0,
+      "candidate_FPminutes": 0,
+      "noninferior": true,
+      "max_extra_delay_minutes": null
+    },
+    {
+      "case": "2018_fold_6",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "insufficient_event_representation",
+      "baseline_events": 1,
+      "candidate_events": 1,
+      "true_events": 1,
+      "lost_ids": [],
+      "baseline_FPday": 0.0,
+      "candidate_FPday": 0.0,
+      "baseline_FPminutes": 0,
+      "candidate_FPminutes": 0,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2018_fold_6",
+      "config": "support_q95",
+      "decision": "baseline",
+      "status": "insufficient_event_representation",
+      "baseline_events": 1,
+      "candidate_events": 1,
+      "true_events": 1,
+      "lost_ids": [],
+      "baseline_FPday": 0.0,
+      "candidate_FPday": 0.0,
+      "baseline_FPminutes": 0,
+      "candidate_FPminutes": 0,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2019_disclosed_test",
+      "config": "support_q50",
+      "decision": "baseline",
+      "status": "no_sensitivity_preserving_false_alarm_improvement",
+      "baseline_events": 5,
+      "candidate_events": 5,
+      "true_events": 12,
+      "lost_ids": [],
+      "baseline_FPday": 3.940263079814064,
+      "candidate_FPday": 3.940263079814064,
+      "baseline_FPminutes": 118,
+      "candidate_FPminutes": 118,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    },
+    {
+      "case": "2019_disclosed_test",
+      "config": "support_q95",
+      "decision": "candidate",
+      "status": "sensitivity_preserving_gate_selected",
+      "baseline_events": 5,
+      "candidate_events": 5,
+      "true_events": 12,
+      "lost_ids": [],
+      "baseline_FPday": 3.940263079814064,
+      "candidate_FPday": 2.231233310256157,
+      "baseline_FPminutes": 118,
+      "candidate_FPminutes": 56,
+      "noninferior": true,
+      "max_extra_delay_minutes": 0
+    }
+  ],
+  "no_new_source_access": true,
+  "audited_at_utc": "2026-10-16T08:59:55.456084+00:00",
+  "source_snapshots": [
+    {
+      "path": "ml/gecco_v5/reproducible_explore.py",
+      "plan_sha256": "887b16425539f758bd32043cb080fcbc3f0fa3109a2659184ba7864934d13c1b",
+      "snapshot_sha256": "887b16425539f758bd32043cb080fcbc3f0fa3109a2659184ba7864934d13c1b",
+      "current_sha256": "887b16425539f758bd32043cb080fcbc3f0fa3109a2659184ba7864934d13c1b",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_v5/recovery_candidate.py",
+      "plan_sha256": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+      "snapshot_sha256": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+      "current_sha256": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_v5/supported_candidate.py",
+      "plan_sha256": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626",
+      "snapshot_sha256": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626",
+      "current_sha256": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_v5/normal_support.py",
+      "plan_sha256": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37",
+      "snapshot_sha256": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37",
+      "current_sha256": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_v5/calibration.py",
+      "plan_sha256": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+      "snapshot_sha256": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+      "current_sha256": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_v5/evaluation.py",
+      "plan_sha256": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08",
+      "snapshot_sha256": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08",
+      "current_sha256": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_v5/runtime.py",
+      "plan_sha256": "7c00d744b73beacb2a491392612c6d77310ad16d200ddf444d41b381ae529118",
+      "snapshot_sha256": "7c00d744b73beacb2a491392612c6d77310ad16d200ddf444d41b381ae529118",
+      "current_sha256": "7c00d744b73beacb2a491392612c6d77310ad16d200ddf444d41b381ae529118",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_baseline/metrics.py",
+      "plan_sha256": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+      "snapshot_sha256": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+      "current_sha256": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_v2/alarm_policy.py",
+      "plan_sha256": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+      "snapshot_sha256": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+      "current_sha256": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+      "matches": true
+    },
+    {
+      "path": "ml/gecco_v2/candidates_supervised.py",
+      "plan_sha256": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+      "snapshot_sha256": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+      "current_sha256": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+      "matches": true
+    }
+  ],
+  "raw_data_provenance": [
+    {
+      "path": "data/external/gecco2017/1_gecco2017_water_quality.csv",
+      "manifest": "data/external/gecco2017/source.json",
+      "manifest_sha256": "0a2f3339e12c616bbd001b0daf075ae4ad2209f451c5d30a110ad0461e8870f9",
+      "expected_sha256": "8452e3c03b1d0b1ed81f8e85e90664c52fbe77a59e85c042a4e177cf3d753d1d",
+      "actual_sha256": "8452e3c03b1d0b1ed81f8e85e90664c52fbe77a59e85c042a4e177cf3d753d1d",
+      "actual_md5": "e5d0b266b586ac6f602fd6bd789ec8ed",
+      "bytes": 9563384,
+      "matches": true
+    },
+    {
+      "path": "data/external/gecco2018/1_gecco2018_water_quality.csv",
+      "manifest": "data/external/gecco2018/source-and-inspection.json",
+      "manifest_sha256": "53f5bde235c2c380c37176bc3dc0fa7ba5ced7e93f153a7b712e05c7953a7885",
+      "expected_sha256": "c41221f3045696b75b79374f4c41c63f6c988e1df03b1dedcdbf910d44ea71cd",
+      "actual_sha256": "c41221f3045696b75b79374f4c41c63f6c988e1df03b1dedcdbf910d44ea71cd",
+      "actual_md5": "270bbe949b418e5d2d1dc47276fcc332",
+      "bytes": 10784171,
+      "matches": true
+    },
+    {
+      "path": "data/external/gecco2019/7_gecco2019_train_water_quality.csv",
+      "manifest": "data/external/gecco2019/source.json",
+      "manifest_sha256": "0704a1f571e7a950cf6e4793fba128d508386db03d603de4d1faad2d2b116b58",
+      "expected_sha256": "05bbe6dea804b6fc6b2bf8ecc35f37c404ff3ae3503c47cf69301edf61c8b4b9",
+      "actual_sha256": "05bbe6dea804b6fc6b2bf8ecc35f37c404ff3ae3503c47cf69301edf61c8b4b9",
+      "actual_md5": "e865a6dd955aae3aae8f3e63efdecf2f",
+      "bytes": 10787236,
+      "matches": true
+    },
+    {
+      "path": "data/external/gecco2019/8_gecco2019_valid_water_qulity.csv",
+      "manifest": "data/external/gecco2019/source.json",
+      "manifest_sha256": "0704a1f571e7a950cf6e4793fba128d508386db03d603de4d1faad2d2b116b58",
+      "expected_sha256": "d451142a969f5972278cbfa53d840b04805ab683b81cad092bda30820ec2e424",
+      "actual_sha256": "d451142a969f5972278cbfa53d840b04805ab683b81cad092bda30820ec2e424",
+      "actual_md5": "4a04e32ae24709f5dfd7a3d59d7b2ba0",
+      "bytes": 4496965,
+      "matches": true
+    },
+    {
+      "path": "data/external/gecco2019/6_gecco2019_test_water_quality.csv",
+      "manifest": "data/external/gecco2019/source.json",
+      "manifest_sha256": "0704a1f571e7a950cf6e4793fba128d508386db03d603de4d1faad2d2b116b58",
+      "expected_sha256": "ad509d0c1c656d3e48dc4e52011da5232d292997e6f7ce08eedd5f6194e3369f",
+      "actual_sha256": "ad509d0c1c656d3e48dc4e52011da5232d292997e6f7ce08eedd5f6194e3369f",
+      "actual_md5": "9599658dd7f8a0ff5f538e1c1e17263f",
+      "bytes": 2621311,
+      "matches": true
+    }
+  ],
+  "provenance_note": "Raw hashes were absent from the supported plan. This post-run sidecar verifies current bytes against pre-existing source manifests; it does not retroactively establish raw-file immutability during every instant of execution. Model/runner files remain untouched.",
+  "case_checks": [
+    {
+      "case": "2017_fold_1",
+      "plan_matches": true,
+      "calibration_rows": 24467,
+      "test_rows": 12234,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2017_fold_2",
+      "plan_matches": true,
+      "calibration_rows": 24467,
+      "test_rows": 12233,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2017_fold_3",
+      "plan_matches": true,
+      "calibration_rows": 24467,
+      "test_rows": 12233,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2017_fold_4",
+      "plan_matches": true,
+      "calibration_rows": 24466,
+      "test_rows": 12234,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2017_fold_5",
+      "plan_matches": true,
+      "calibration_rows": 24467,
+      "test_rows": 12233,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2017_fold_6",
+      "plan_matches": true,
+      "calibration_rows": 24467,
+      "test_rows": 12234,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2018_fold_1",
+      "plan_matches": true,
+      "calibration_rows": 27913,
+      "test_rows": 13957,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2018_fold_2",
+      "plan_matches": true,
+      "calibration_rows": 27914,
+      "test_rows": 13956,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2018_fold_3",
+      "plan_matches": true,
+      "calibration_rows": 27913,
+      "test_rows": 13957,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2018_fold_4",
+      "plan_matches": true,
+      "calibration_rows": 27913,
+      "test_rows": 13956,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2018_fold_5",
+      "plan_matches": true,
+      "calibration_rows": 27913,
+      "test_rows": 13957,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2018_fold_6",
+      "plan_matches": true,
+      "calibration_rows": 27913,
+      "test_rows": 13957,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    },
+    {
+      "case": "2019_disclosed_test",
+      "plan_matches": true,
+      "calibration_rows": 54750,
+      "test_rows": 31650,
+      "baseline_calibration_max_abs_diff": 0.0,
+      "baseline_prediction_parity": "exact",
+      "bundle_hashes_verified": [
+        "support_q50",
+        "support_q95"
+      ]
+    }
+  ],
+  "decisions": {
+    "support_q50": {
+      "candidate": 3,
+      "baseline": 10
+    },
+    "support_q95": {
+      "candidate": 7,
+      "baseline": 6
+    }
+  },
+  "unknown_baseline_observed_rows_kept": {
+    "support_q50": 96677,
+    "support_q95": 10598
+  },
+  "overall_verified": {
+    "support_q50": {
+      "totals": {
+        "baseline": {
+          "sample_count": 188791,
+          "valid_count": 185933,
+          "true_events": 104,
+          "confirmed_new_alarm_inside_events": 73,
+          "false_positive_runs": 236,
+          "normal_valid_count": 183028,
+          "tp": 628,
+          "fp": 419,
+          "fn": 2277,
+          "tn": 182609,
+          "eligible_normal_days": 127.10277777777777,
+          "normal_alarm_minutes": 419.0,
+          "false_alarm_runs_per_normal_day": 1.8567650851235877,
+          "normal_time_under_alarm": 0.0022892672159451014,
+          "f1": 0.31781376518218624
+        },
+        "candidate": {
+          "sample_count": 188791,
+          "valid_count": 185933,
+          "true_events": 104,
+          "confirmed_new_alarm_inside_events": 73,
+          "false_positive_runs": 228,
+          "normal_valid_count": 183028,
+          "tp": 627,
+          "fp": 411,
+          "fn": 2278,
+          "tn": 182617,
+          "eligible_normal_days": 127.10277777777777,
+          "normal_alarm_minutes": 411.0,
+          "false_alarm_runs_per_normal_day": 1.7938238957973645,
+          "normal_time_under_alarm": 0.0022455580566907796,
+          "f1": 0.3180319553639361
+        }
+      },
+      "lost_baseline_events": 0,
+      "hidden_baseline_observed_rows": 0,
+      "noninferior_periods": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "pooled_joint_improvement": true,
+      "stable_joint_improvement": true,
+      "period_event_occurrences": 104,
+      "scope": "Observed test periods only; totals count events on each original continuous source axis. No guarantee for future sites or event types"
+    },
+    "support_q95": {
+      "totals": {
+        "baseline": {
+          "sample_count": 188791,
+          "valid_count": 185933,
+          "true_events": 104,
+          "confirmed_new_alarm_inside_events": 73,
+          "false_positive_runs": 236,
+          "normal_valid_count": 183028,
+          "tp": 628,
+          "fp": 419,
+          "fn": 2277,
+          "tn": 182609,
+          "eligible_normal_days": 127.10277777777777,
+          "normal_alarm_minutes": 419.0,
+          "false_alarm_runs_per_normal_day": 1.8567650851235877,
+          "normal_time_under_alarm": 0.0022892672159451014,
+          "f1": 0.31781376518218624
+        },
+        "candidate": {
+          "sample_count": 188791,
+          "valid_count": 185933,
+          "true_events": 104,
+          "confirmed_new_alarm_inside_events": 63,
+          "false_positive_runs": 155,
+          "normal_valid_count": 183028,
+          "tp": 534,
+          "fp": 271,
+          "fn": 2371,
+          "tn": 182757,
+          "eligible_normal_days": 127.10277777777777,
+          "normal_alarm_minutes": 271.0,
+          "false_alarm_runs_per_normal_day": 1.2194855431955767,
+          "normal_time_under_alarm": 0.001480647769740149,
+          "f1": 0.28787061994609164
+        }
+      },
+      "lost_baseline_events": 10,
+      "hidden_baseline_observed_rows": 0,
+      "noninferior_periods": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "pooled_joint_improvement": false,
+      "stable_joint_improvement": false,
+      "period_event_occurrences": 104,
+      "scope": "Observed test periods only; totals count events on each original continuous source axis. No guarantee for future sites or event types"
+    }
+  },
+  "audit_implementation": "Independent measured/comparison/prediction arithmetic reused from audit_initial_development.py with supported output mapping; no production metrics, evaluation, calibration or model imports. Extra provenance and parity checks executed in memory.",
+  "source_files_modified": false,
+  "new_source_access": false
+}

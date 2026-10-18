@@ -1,0 +1,701 @@
+{
+  "created_at_utc": "2026-10-17T03:25:53.570862+00:00",
+  "candidate_version": "V9",
+  "status": "descriptive_post_test_onset_comparison_only",
+  "development_only": true,
+  "fresh_validation": false,
+  "new_source_accessed": false,
+  "model_refitted": false,
+  "thresholds_changed": false,
+  "input_sha256": {
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/results.json": "682d74afda05993a77316d99b54dc603ba558ae617939ee3cdd52d6564333c86",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/results.json": "4d4770163d9213046d7dcf12cd4dd097345088da7a311aae1b34691c4715f243",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2017_fold_1/predictions.csv.gz": "620e892be1302bffc43e2569b0b564c0d782e5cec63d2e134733dad2c3c575c2",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2017_fold_1/predictions.csv.gz": "c4f0c7a96d0693be73730aded012fdcb73ba4e736a7359f2d35a5b4b40e9a2bd",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2017_fold_2/predictions.csv.gz": "a61dd998d0457fbe6d54d18082bbc0f3f9646bcebfe2feacba4c38e6076df317",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2017_fold_2/predictions.csv.gz": "e47acb58af7bf8c6fc0570ec757c9dcd7d5d5d2553df79c39a9c53194408c9c0",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2017_fold_3/predictions.csv.gz": "f023777373a53133351bfeaffe1541a12684bb31c313ca0305423bbef46ec4e9",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2017_fold_3/predictions.csv.gz": "465889dead7f7843e3dbb1858fe30ea4e5bac51890f75c5e78bf6f6675d187d0",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2017_fold_4/predictions.csv.gz": "f018490130229fda4cc6e00390d13efec4cc8214e85a81f3860862963049c371",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2017_fold_4/predictions.csv.gz": "7ada2ea48792c66cae656b5907f6d30a1e947c97ed1a09c927d898fca7588ce5",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2017_fold_5/predictions.csv.gz": "25b39698371f13da9a4d4245160dc0e1d8b969350a7590b62a18194a79023c5f",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2017_fold_5/predictions.csv.gz": "365987b05a709b68240ea023109679c4243608b11b1c95b8cab12c2e214efe37",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2017_fold_6/predictions.csv.gz": "0fc5baee4d19dfc82a6464d0dc256529db8d4fb89445fa10c7da148ed5416f5d",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2017_fold_6/predictions.csv.gz": "8ebe6911a7a6d229d2ea457eda1f2a945a814d575676565a25e8ac2e9e385492",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2018_fold_1/predictions.csv.gz": "0b06a3e4bbf78b9b6b084c7afb45340c61af8b3c7f743403149577171311fc94",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2018_fold_1/predictions.csv.gz": "e478b0a568b9ad9cf1f1249c0abc3bd2d9c6aeec3eccbf4f7d90df9574dbb2ec",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2018_fold_2/predictions.csv.gz": "411f0dbaac853faca9e1a7ef141f5788c694f6f9497d94013910ee85c73da350",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2018_fold_2/predictions.csv.gz": "cf10cd096e31a66ced7c7d732da90aa608bbc6b10f9e6c6900b959d5d3fd4747",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2018_fold_3/predictions.csv.gz": "2995e048704ab417b228907366bc740d3daf5eb894442446f5d01e90ce8e160b",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2018_fold_3/predictions.csv.gz": "641024886255c5201a61e8bed9f0476412b033356eca4b39f1751b3ed4cb4973",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2018_fold_4/predictions.csv.gz": "49620acf7d8e8e160a0ee3f66d0dc8c06212134b9c0215222d08cbc4685e06b5",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2018_fold_4/predictions.csv.gz": "bee4db6b6834f8268a3c9292e114a86c6e07d4fb4cd554c30a913f76d379cf82",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2018_fold_5/predictions.csv.gz": "3d160a815af2482c0fd7e873ecff39601eaf61bcdee4d2d298fd111e5c8c0900",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2018_fold_5/predictions.csv.gz": "1a5c7c7e7c647a58a309f7d1ed0fe1e3a9afd007ccbd6a6b5c5fdfb322121e09",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2018_fold_6/predictions.csv.gz": "dfccfd9f9ccb5f67162dcfd054f4be7574e0d199149065e2425364f2109bbfff",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2018_fold_6/predictions.csv.gz": "29046507075f6e303a38170a1d92d5ff1a604ec2f02a4942ad526104654bcfef",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2019_disclosed_test/predictions.csv.gz": "c4b144c24db1dd59591068a1411bed61aba8a94841f39a4673a910a21323f723",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2019_disclosed_test/predictions.csv.gz": "579b6912981d8484ec6ff7265817b48f60a44e0fe5d0fd1803eb69122667a063",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2018-11/predictions.csv.gz": "b235a5b248d4e97ffc4e1e83e5bab65c469fc96be8bf57690c37e489d3058eab",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2018-11/predictions.csv.gz": "276223df85a8084adbe3a757dbc768c299029d9a759dfdbb5c825b5573c15a30",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2018-12/predictions.csv.gz": "c22d8fd077852ece3459194045f19a73b09c9a74e777b5e3009c261b6d8dd1b0",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2018-12/predictions.csv.gz": "2827a157d4298fd38229e11f2d6030938e26826e68dc7b37a1c470106f46697d",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2019-01/predictions.csv.gz": "6b4366aacbc17ecb3822f561bfb07817ea3ef66bafb64eeb901c9cf13a8570ee",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2019-01/predictions.csv.gz": "c21d56fe59e5ccecaab2f2e9e7c5430e0c08d7679b19682c50f98a6261016b22",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2019-02/predictions.csv.gz": "7f37ea63b0a3972281f29ca97a1f2e7ac81dd01d7815ec29a512a5ab40951a0f",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2019-02/predictions.csv.gz": "d542d3b230d21a5336b9155d8d60434bf2724da56c2b8d466ca7c9ea64e52941",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2019-03/predictions.csv.gz": "aee39e064603e01419224d6f280b0f1c1fb00e50dc5b70bfe838f4db08df3bc7",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2019-03/predictions.csv.gz": "63ac40d1fc5a48bafd1674d4f8ffebce96942bc2654becb163785b499fdcdc78",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/2019-04/predictions.csv.gz": "45701baa30190ca5454480dd4d2205bb55e58d752736bb3c5c37420f98b18a7d",
+    "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v9-development/run_01/2019-04/predictions.csv.gz": "3f823860bf7d752de0d137b2f20a9912915411cb05eb041a725590110700990b"
+  },
+  "definition": "Original established event onset (previous label0), plus original offsets0,1,2 within same segment; unavailable rows excluded without shifting. Paired comparisons require both scores finite and reference observed. Percentiles use each versions own known-normal score distribution in this disclosed test period, only for post-test ranking description; never used for a threshold or inference.",
+  "caveat": "Raw HGB scores are not calibrated probabilities and are not directly comparable as safety confidence. A larger raw score does not imply better separation; percentile changes supply a scale-aware descriptive check. Aggregate counts use period-local event identities and are not pooled-source unique event totals.",
+  "periods": [
+    {
+      "case": "2017_fold_1",
+      "primary_events": 17,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 17,
+        "increased": 16,
+        "decreased": 1,
+        "unchanged": 0,
+        "median_change": 0.2067114444715054,
+        "q10_change": 0.03025552484542493,
+        "q90_change": 0.8423226710768372
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 17,
+        "increased": 16,
+        "decreased": 1,
+        "unchanged": 0,
+        "median_change": 0.10495417322098877,
+        "q10_change": 0.03025552484542493,
+        "q90_change": 0.8423226710768372
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 17,
+        "increased": 4,
+        "decreased": 13,
+        "unchanged": 0,
+        "median_change": -0.2279531263364981,
+        "q10_change": -0.6419125823282867,
+        "q90_change": 0.22427508339748525
+      },
+      "common_finite_reference_available_normal_rows": 11691,
+      "conditional_available_at_primary_onset": 17
+    },
+    {
+      "case": "2017_fold_2",
+      "primary_events": 18,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 17,
+        "increased": 15,
+        "decreased": 2,
+        "unchanged": 0,
+        "median_change": 0.0049509689671553,
+        "q10_change": 0.0019174090456415718,
+        "q90_change": 0.03742222492280271
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 17,
+        "increased": 15,
+        "decreased": 2,
+        "unchanged": 0,
+        "median_change": 0.0049509689671553,
+        "q10_change": 0.0028652302862971937,
+        "q90_change": 0.04257033353956638
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 17,
+        "increased": 2,
+        "decreased": 2,
+        "unchanged": 13,
+        "median_change": 0.0,
+        "q10_change": -0.001334702258726894,
+        "q90_change": 0.0023956194387405837
+      },
+      "common_finite_reference_available_normal_rows": 11688,
+      "conditional_available_at_primary_onset": 18
+    },
+    {
+      "case": "2017_fold_3",
+      "primary_events": 15,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 15,
+        "increased": 13,
+        "decreased": 2,
+        "unchanged": 0,
+        "median_change": 0.006406100304741298,
+        "q10_change": -1.3287119413691022e-05,
+        "q90_change": 0.015400633992294084
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 15,
+        "increased": 13,
+        "decreased": 2,
+        "unchanged": 0,
+        "median_change": 0.00613925338722837,
+        "q10_change": -1.3287119413691022e-05,
+        "q90_change": 0.011743665736598286
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 15,
+        "increased": 12,
+        "decreased": 2,
+        "unchanged": 1,
+        "median_change": 0.000601064743259494,
+        "q10_change": -0.0005151983513652424,
+        "q90_change": 0.0023183925811437467
+      },
+      "common_finite_reference_available_normal_rows": 11646,
+      "conditional_available_at_primary_onset": 15
+    },
+    {
+      "case": "2017_fold_4",
+      "primary_events": 3,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 3,
+        "increased": 0,
+        "decreased": 3,
+        "unchanged": 0,
+        "median_change": -0.01235633791546853,
+        "q10_change": -0.5461592287694534,
+        "q90_change": -0.010367223025581929
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 3,
+        "increased": 0,
+        "decreased": 3,
+        "unchanged": 0,
+        "median_change": -0.01235633791546853,
+        "q10_change": -0.5461592287694534,
+        "q90_change": -0.010637440128873799
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 3,
+        "increased": 0,
+        "decreased": 3,
+        "unchanged": 0,
+        "median_change": -0.0005912162162161616,
+        "q10_change": -0.34923986486486486,
+        "q90_change": -0.00018581081081079363
+      },
+      "common_finite_reference_available_normal_rows": 11840,
+      "conditional_available_at_primary_onset": 3
+    },
+    {
+      "case": "2017_fold_5",
+      "primary_events": 2,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 2,
+        "increased": 2,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": 0.07874637194453776,
+        "q10_change": 0.0588233734083594,
+        "q90_change": 0.09866937048071613
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 2,
+        "increased": 2,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": 0.07763818889424656,
+        "q10_change": 0.05682864391783524,
+        "q90_change": 0.09844773387065789
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 2,
+        "increased": 0,
+        "decreased": 2,
+        "unchanged": 0,
+        "median_change": -0.0012145070776446443,
+        "q10_change": -0.0018510763045480716,
+        "q90_change": -0.0005779378507412169
+      },
+      "common_finite_reference_available_normal_rows": 11939,
+      "conditional_available_at_primary_onset": 2
+    },
+    {
+      "case": "2017_fold_6",
+      "primary_events": 0,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "common_finite_reference_available_normal_rows": 12054,
+      "conditional_available_at_primary_onset": 0
+    },
+    {
+      "case": "2018_fold_1",
+      "primary_events": 15,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 15,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 15,
+        "median_change": 0.0,
+        "q10_change": 0.0,
+        "q90_change": 0.0
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 15,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 15,
+        "median_change": 0.0,
+        "q10_change": 0.0,
+        "q90_change": 0.0
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 15,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 15,
+        "median_change": 0.0,
+        "q10_change": 0.0,
+        "q90_change": 0.0
+      },
+      "common_finite_reference_available_normal_rows": 13228,
+      "conditional_available_at_primary_onset": 15
+    },
+    {
+      "case": "2018_fold_2",
+      "primary_events": 15,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 15,
+        "increased": 7,
+        "decreased": 8,
+        "unchanged": 0,
+        "median_change": -5.564074509325091e-06,
+        "q10_change": -0.0005781445960084564,
+        "q90_change": 5.125177789875074e-05
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 15,
+        "increased": 5,
+        "decreased": 10,
+        "unchanged": 0,
+        "median_change": -2.677322330266646e-05,
+        "q10_change": -0.013000454391972782,
+        "q90_change": 2.379348725587914e-05
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 15,
+        "increased": 5,
+        "decreased": 10,
+        "unchanged": 0,
+        "median_change": -0.03158607204632624,
+        "q10_change": -0.10662555463638416,
+        "q90_change": 0.0355869745055276
+      },
+      "common_finite_reference_available_normal_rows": 13297,
+      "conditional_available_at_primary_onset": 15
+    },
+    {
+      "case": "2018_fold_3",
+      "primary_events": 6,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 6,
+        "increased": 5,
+        "decreased": 1,
+        "unchanged": 0,
+        "median_change": 0.00013839312643359103,
+        "q10_change": 5.381589968535661e-05,
+        "q90_change": 0.0006205824698602687
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 6,
+        "increased": 4,
+        "decreased": 2,
+        "unchanged": 0,
+        "median_change": 0.00013839312643359103,
+        "q10_change": -2.7167633942875414e-06,
+        "q90_change": 0.0007857352324128347
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 6,
+        "increased": 4,
+        "decreased": 2,
+        "unchanged": 0,
+        "median_change": 0.10971844446078066,
+        "q10_change": -0.2206498566492685,
+        "q90_change": 0.36414761449680216
+      },
+      "common_finite_reference_available_normal_rows": 13603,
+      "conditional_available_at_primary_onset": 6
+    },
+    {
+      "case": "2018_fold_4",
+      "primary_events": 0,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "common_finite_reference_available_normal_rows": 13776,
+      "conditional_available_at_primary_onset": 0
+    },
+    {
+      "case": "2018_fold_5",
+      "primary_events": 0,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 0,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": null,
+        "q10_change": null,
+        "q90_change": null
+      },
+      "common_finite_reference_available_normal_rows": 13777,
+      "conditional_available_at_primary_onset": 0
+    },
+    {
+      "case": "2018_fold_6",
+      "primary_events": 1,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 1,
+        "increased": 1,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": 0.0007298826562938121,
+        "q10_change": 0.0007298826562938121,
+        "q90_change": 0.0007298826562938121
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 1,
+        "increased": 1,
+        "decreased": 0,
+        "unchanged": 0,
+        "median_change": 0.0007298826562938121,
+        "q10_change": 0.0007298826562938121,
+        "q90_change": 0.0007298826562938121
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 1,
+        "increased": 0,
+        "decreased": 0,
+        "unchanged": 1,
+        "median_change": 0.0,
+        "q10_change": 0.0,
+        "q90_change": 0.0
+      },
+      "common_finite_reference_available_normal_rows": 13592,
+      "conditional_available_at_primary_onset": 1
+    },
+    {
+      "case": "2019_disclosed_test",
+      "primary_events": 12,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 9,
+        "increased": 8,
+        "decreased": 1,
+        "unchanged": 0,
+        "median_change": 0.01939710986034444,
+        "q10_change": -0.024381978229860483,
+        "q90_change": 0.270303803323912
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 9,
+        "increased": 8,
+        "decreased": 1,
+        "unchanged": 0,
+        "median_change": 0.06799361682644005,
+        "q10_change": -0.023440992909224606,
+        "q90_change": 0.5247100451050739
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 9,
+        "increased": 4,
+        "decreased": 5,
+        "unchanged": 0,
+        "median_change": -0.0016838907782217305,
+        "q10_change": -0.13098689206590292,
+        "q90_change": 0.07317991217353984
+      },
+      "common_finite_reference_available_normal_rows": 30287,
+      "conditional_available_at_primary_onset": 9
+    },
+    {
+      "case": "2018-11",
+      "primary_events": 74,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 74,
+        "increased": 43,
+        "decreased": 31,
+        "unchanged": 0,
+        "median_change": 0.0016072357318239823,
+        "q10_change": -0.07301153230709032,
+        "q90_change": 0.10267662877256029
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 74,
+        "increased": 46,
+        "decreased": 28,
+        "unchanged": 0,
+        "median_change": 0.0016603379309885935,
+        "q10_change": -0.09649655981650286,
+        "q90_change": 0.11417684975406203
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 74,
+        "increased": 31,
+        "decreased": 43,
+        "unchanged": 0,
+        "median_change": -0.016159800432884563,
+        "q10_change": -0.18313951355515606,
+        "q90_change": 0.15653178766645878
+      },
+      "common_finite_reference_available_normal_rows": 27259,
+      "conditional_available_at_primary_onset": 74
+    },
+    {
+      "case": "2018-12",
+      "primary_events": 52,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 52,
+        "increased": 24,
+        "decreased": 28,
+        "unchanged": 0,
+        "median_change": -0.0004389787664921124,
+        "q10_change": -0.07044132872780165,
+        "q90_change": 0.11666106223342504
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 52,
+        "increased": 27,
+        "decreased": 25,
+        "unchanged": 0,
+        "median_change": 0.0017622354390320755,
+        "q10_change": -0.12696462116702392,
+        "q90_change": 0.1209711471599103
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 52,
+        "increased": 25,
+        "decreased": 27,
+        "unchanged": 0,
+        "median_change": -0.0007160956263082552,
+        "q10_change": -0.17029304836399692,
+        "q90_change": 0.09349454665638418
+      },
+      "common_finite_reference_available_normal_rows": 36308,
+      "conditional_available_at_primary_onset": 52
+    },
+    {
+      "case": "2019-01",
+      "primary_events": 30,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 30,
+        "increased": 18,
+        "decreased": 12,
+        "unchanged": 0,
+        "median_change": 0.006498254721004399,
+        "q10_change": -0.03836794164635325,
+        "q90_change": 0.08054202483342196
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 30,
+        "increased": 18,
+        "decreased": 12,
+        "unchanged": 0,
+        "median_change": 0.00789625829821311,
+        "q10_change": -0.07903002024278777,
+        "q90_change": 0.0999636379999282
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 30,
+        "increased": 14,
+        "decreased": 16,
+        "unchanged": 0,
+        "median_change": -0.011496871028844113,
+        "q10_change": -0.12809600306902916,
+        "q90_change": 0.11365957752895203
+      },
+      "common_finite_reference_available_normal_rows": 41707,
+      "conditional_available_at_primary_onset": 30
+    },
+    {
+      "case": "2019-02",
+      "primary_events": 68,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 68,
+        "increased": 34,
+        "decreased": 34,
+        "unchanged": 0,
+        "median_change": -0.0007625187344089124,
+        "q10_change": -0.12754679524321966,
+        "q90_change": 0.07009215515054164
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 68,
+        "increased": 38,
+        "decreased": 30,
+        "unchanged": 0,
+        "median_change": 0.006739220593906803,
+        "q10_change": -0.13384702165374898,
+        "q90_change": 0.0771345681023233
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 68,
+        "increased": 33,
+        "decreased": 35,
+        "unchanged": 0,
+        "median_change": -0.0013470522484307912,
+        "q10_change": -0.09610214668539165,
+        "q90_change": 0.06880570920867848
+      },
+      "common_finite_reference_available_normal_rows": 34891,
+      "conditional_available_at_primary_onset": 68
+    },
+    {
+      "case": "2019-03",
+      "primary_events": 50,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 50,
+        "increased": 28,
+        "decreased": 22,
+        "unchanged": 0,
+        "median_change": 0.0063122443979884285,
+        "q10_change": -0.08908898998868325,
+        "q90_change": 0.10344580121129945
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 50,
+        "increased": 26,
+        "decreased": 24,
+        "unchanged": 0,
+        "median_change": 0.0025972833537062923,
+        "q10_change": -0.09928534779608017,
+        "q90_change": 0.10391163725345902
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 50,
+        "increased": 26,
+        "decreased": 24,
+        "unchanged": 0,
+        "median_change": 0.004678834078526206,
+        "q10_change": -0.044648049060568254,
+        "q90_change": 0.08559456620000491
+      },
+      "common_finite_reference_available_normal_rows": 40929,
+      "conditional_available_at_primary_onset": 50
+    },
+    {
+      "case": "2019-04",
+      "primary_events": 21,
+      "first_original_onset_score_v9_minus_v8": {
+        "count": 21,
+        "increased": 13,
+        "decreased": 8,
+        "unchanged": 0,
+        "median_change": 0.025263681615364963,
+        "q10_change": -0.09317789042555574,
+        "q90_change": 0.09952190239995952
+      },
+      "max_eligible_original_offsets_0_1_2_score_v9_minus_v8": {
+        "count": 21,
+        "increased": 10,
+        "decreased": 11,
+        "unchanged": 0,
+        "median_change": -0.007026275893354972,
+        "q10_change": -0.08465540208308309,
+        "q90_change": 0.10200811481158242
+      },
+      "first_onset_percentile_of_each_versions_test_normals_difference": {
+        "count": 21,
+        "increased": 9,
+        "decreased": 12,
+        "unchanged": 0,
+        "median_change": -0.0027924891670678686,
+        "q10_change": -0.14263360616273468,
+        "q90_change": 0.14884448724121335
+      },
+      "common_finite_reference_available_normal_rows": 41540,
+      "conditional_available_at_primary_onset": 21
+    }
+  ],
+  "period_local_aggregate_first_onset_score_change": {
+    "count": 395,
+    "increased": 227,
+    "decreased": 153,
+    "unchanged": 15,
+    "median_change": 0.0017567122931783294,
+    "q10_change": -0.08212045727846505,
+    "q90_change": 0.10696923442373277
+  },
+  "period_local_aggregate_first_onset_normal_percentile_change": {
+    "count": 395,
+    "increased": 169,
+    "decreased": 196,
+    "unchanged": 30,
+    "median_change": 0.0,
+    "q10_change": -0.15003369809691175,
+    "q90_change": 0.09879018019223158
+  }
+}

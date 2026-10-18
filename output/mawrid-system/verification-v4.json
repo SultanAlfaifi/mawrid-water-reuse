@@ -1,0 +1,49 @@
+{
+  "verified_at_utc": "2026-10-17T11:21:23.137209+00:00",
+  "passed": true,
+  "scope": "Local operational3D virtual plant presentation. Classifier and physical devices remain outside this qualification.",
+  "current_url": "http://127.0.0.1:8787/plant3d/index.html",
+  "build_sources_and_local_vendors_and_assets_unchanged": true,
+  "synthetic_operational3d_tests": 19,
+  "existing_frontend_assertions_passed": 39,
+  "http_snapshot_checks": 692,
+  "http_snapshots": 17,
+  "original_engineering_viewer_files_unchanged": 45,
+  "operator_database_modified_by_test": false,
+  "temporary_browser_server_stopped_exit_code": 0,
+  "browser_observations": [
+    "WebGL scene, Arabic HUD and local fonts rendered",
+    "Camera rotate/reset and equipment selection updated detail panel",
+    "Sensor dropout: HOLD, chlorine unavailable, displayed flows0 and valveclosed",
+    "Backwash: selected pump showsrunning20L/min",
+    "Paused virtual clock remains connected and phasepaused",
+    "Switch totelemetry clears values and valve becomesunavailable",
+    "New virtualsession replaced oldsession",
+    "Disconnect stopsmotion and retains lastknownOPEN feedback with stale notice"
+  ],
+  "browser_viewport": {
+    "canvasPresent": true,
+    "labelCount": 6,
+    "labelOverlaps": 0,
+    "phase": "live",
+    "scrollWidth": 1910,
+    "width": 1910
+  },
+  "active_model": "V9 research-only public replay; no classifier used in virtual plant",
+  "v14_statistical_goal_met": false,
+  "hardware_connected": false,
+  "physical_valve_state": "closed",
+  "free_disk_GiB": 4.936,
+  "sha256": {
+    "output/mawrid-system/plant3d-build-v4-r2.json": "4ff5671dd2414f015792b971f38d811a8c7cbcc6a0501b3b5fb31182b83da569",
+    "output/mawrid-system/plant3d-integration-v4-r3/verification.json": "cee2ed81dc947a1cf817845c3bd39d11997539239aca3a21b1cfee704c896ba6",
+    "output/mawrid-system/plant3d-browser-v4.json": "e8e6982151653db425f354fdf7ce1ccd6033fc87940ca5f95b103c3805879193",
+    "output/mawrid-system/screenshots/plant3d-final-v4.png": "f274151d14b97a1d57d288e182e296f0b7a94a8f49d26f73bff2727af09ae9fd",
+    "output/mawrid-system/screenshots/plant3d-dropout-v4.png": "5adc8b262da1bf1d7434c4df15d822097c67badf66d093a5bb210bb6418b9c66",
+    "output/mawrid-system/screenshots/plant3d-disconnected-v4.png": "64b4900f176e920917574eb5859a5cf26ebab99a3fb89c70b5805f815c075f9a",
+    "mawrid-system/README.md": "fab7210e9b68aeab93bdd4548b3e2e853d92bb377d986e6d44406e129328b673",
+    "README.md": "a7a31922162db742c080576b3b92176215c59c6d1e168b4d5e102c6fb7e9bb44",
+    "docs/data-and-model-card.md": "c9d723f5f78aaec8e11fbb6586718440cae6766e5573d712bf38c0a8d0bcfc69",
+    "docs/evidence-register.md": "6d9c34926a7c1e91dc05544bd9706b525ffe14afbeb4524f8a34e2c68a246582"
+  }
+}

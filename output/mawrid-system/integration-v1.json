@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-10-17T07:58:16.521181+00:00",
+  "passed": true,
+  "scope": "Local application HTTP, SQLite and genuine qualified V9 inference; not field readiness or improved model acceptance.",
+  "cases": [
+    {
+      "source": "2019_disclosed_test",
+      "rows": 1600,
+      "exact_predictions": true,
+      "score_max_absolute_error": 0.0,
+      "saved_prediction_sha256": "579b6912981d8484ec6ff7265817b48f60a44e0fe5d0fd1803eb69122667a063",
+      "elapsed_seconds": 63.292941457999405
+    },
+    {
+      "source": "2019-04",
+      "rows": 1600,
+      "exact_predictions": true,
+      "score_max_absolute_error": 0.0,
+      "saved_prediction_sha256": "3f823860bf7d752de0d137b2f20a9912915411cb05eb041a725590110700990b",
+      "elapsed_seconds": 62.12054208398331
+    }
+  ],
+  "hardware_connected": false,
+  "fresh_validation": false,
+  "http_validation": [
+    "explicit research scope",
+    "cross-origin rejection",
+    "no open actuator route",
+    "settings validation",
+    "acknowledgement",
+    "duplicate/future device clocks",
+    "telemetry ML unavailable"
+  ],
+  "records_before_restart": {
+    "sessions": 3,
+    "readings": 3201,
+    "events": 16,
+    "unacknowledgedEvents": 11
+  },
+  "restart_preserves_records_requires_new_session": true,
+  "code_sha256": {
+    "mawrid-system/server/store.py": "949b278e6ae443a98e1aa9b90527127b6915a8c08152c588751ccdd2b12b6ff1",
+    "mawrid-system/server/ai.py": "03073f019e304565aa37d05aba26e23199132f38bc56063b53a77ba0d688093f",
+    "mawrid-system/server/__init__.py": "953414236b1649f084ddf55d4c4db286ac5ef25ca2d5ab8b5d442082e5f0b600",
+    "mawrid-system/server/test_ai.py": "fd31bcfcf68621a4c3fea6a1821527318071f6d507c05f23d377f4a049851d94",
+    "mawrid-system/server/test_store.py": "fa2c066023e1762053c42a7546cf70a781fd96fd65fb762c6ef76ce15410fa2b",
+    "mawrid-system/server/test_http.py": "02eaf0394839256bb84315f07c5a8826764ceee14a0e987914013d065dcea250",
+    "mawrid-system/server/app.py": "8171cfb7dfbec2518c49bc8a3b6f928f11e232cb71105d28efcd57665d356eed",
+    "mawrid-system/server/main.py": "f8d2136367a368476146e1fa793efbd38a6d564979c0dbfc27133be8d22538f0",
+    "mawrid-system/server/test_app.py": "627baf2c7868ba5eb1efabcbfc219c47449ffc17e5d22b0cd06b976900c3674a",
+    "mawrid-system/client/index.html": "8ffa77dda7caf4b35a8b5928a61f53b81d97debe53e9593f4f39874b4e79b5b7",
+    "mawrid-system/client/styles.css": "845b4f4b4ff9c09debdadc5b1474065002c99fc8dc480270de1078a1456bfaa8",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/api.js": "3dbcc91e85059671ff40b3aa809e642cff4d86d436b54f1b35ab532f30c46961",
+    "mawrid-system/client/app.js": "ade0c119465776a0e2aee7f8d095d1559c2d24db1ca1d270585d11e42e827935"
+  },
+  "contract_sha256": "65ce6e8e439ea4f51e8e7bff0e70895ff45e7f4a236ed4143c0594c67aa85465",
+  "elapsed_seconds": 126.0502731250017
+}

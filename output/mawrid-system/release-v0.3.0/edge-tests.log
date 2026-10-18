@@ -1,0 +1,22 @@
+test_backoff_is_persistent_and_bounded (edge.test_core.CoreTests.test_backoff_is_persistent_and_bounded) ... ok
+test_empty_input_still_requires_explicit_valid_contract (edge.test_core.CoreTests.test_empty_input_still_requires_explicit_valid_contract) ... ok
+test_file_checkpoint_append_resume_and_changed_prefix_guard (edge.test_core.CoreTests.test_file_checkpoint_append_resume_and_changed_prefix_guard) ... ok
+test_fresh_cli_ingests_and_reports_without_network_or_ml_imports (edge.test_core.CoreTests.test_fresh_cli_ingests_and_reports_without_network_or_ml_imports) ... ok
+test_lease_restart_and_strict_fifo_prevent_leapfrogging (edge.test_core.CoreTests.test_lease_restart_and_strict_fifo_prevent_leapfrogging) ... ok
+test_original_clock_values_null_and_uuid_survive_reopen (edge.test_core.CoreTests.test_original_clock_values_null_and_uuid_survive_reopen) ... ok
+test_partial_invalid_line_keeps_prior_commit_and_repair_resumes (edge.test_core.CoreTests.test_partial_invalid_line_keeps_prior_commit_and_repair_resumes) ... ok
+test_stdin_and_file_never_rewrite_input_or_generate_missing_values (edge.test_core.CoreTests.test_stdin_and_file_never_rewrite_input_or_generate_missing_values) ... ok
+test_validation_rejects_missing_unknown_boolean_nonfinite_and_unaware_clock (edge.test_core.CoreTests.test_validation_rejects_missing_unknown_boolean_nonfinite_and_unaware_clock) ... ok
+test_429_retry_after_is_capped_and_no_future_item_is_sent (edge.test_sender.SenderTests.test_429_retry_after_is_capped_and_no_future_item_is_sent) ... ok
+test_corrupted_outbox_payload_hash_prevents_network (edge.test_sender.SenderTests.test_corrupted_outbox_payload_hash_prevents_network) ... ok
+test_deadline_and_redirect_are_bounded_and_never_follow_remote_url (edge.test_sender.SenderTests.test_deadline_and_redirect_are_bounded_and_never_follow_remote_url) ... ok
+test_historical_duplicate_receipt_can_succeed_after_active_session_changes (edge.test_sender.SenderTests.test_historical_duplicate_receipt_can_succeed_after_active_session_changes) ... ok
+test_inactive_session_blocks_without_rebinding_or_deleting (edge.test_sender.SenderTests.test_inactive_session_blocks_without_rebinding_or_deleting) ... ok
+test_lost_response_after_commit_retries_same_id_payload_and_receipt_after_restart (edge.test_sender.SenderTests.test_lost_response_after_commit_retries_same_id_payload_and_receipt_after_restart) ... ok
+test_payload_conflict_blocks_fifo_without_overwriting_original_receipt (edge.test_sender.SenderTests.test_payload_conflict_blocks_fifo_without_overwriting_original_receipt) ... ok
+test_wrong_receipt_does_not_discard_measurement (edge.test_sender.SenderTests.test_wrong_receipt_does_not_discard_measurement) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.686s
+
+OK

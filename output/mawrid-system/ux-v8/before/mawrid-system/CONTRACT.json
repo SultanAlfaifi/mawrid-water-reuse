@@ -1,0 +1,492 @@
+{
+  "version": 5,
+  "base_url": "http://127.0.0.1:8787",
+  "serving": "One Python server serves buildless client/ and /api with offline local assets. The separate operational3D client is built locally into client/plant3d before use; no build or network download is needed at runtime.",
+  "state": {
+    "app": {
+      "name": "مورد",
+      "mode": "local_prototype",
+      "hardware_connected": false
+    },
+    "source": {
+      "id": "2019_disclosed_test",
+      "name": "GECCO · جودة المياه",
+      "kind": "public_replay",
+      "channels": []
+    },
+    "session": {
+      "id": "uuid",
+      "status": "idle|ready|paused|completed|failed",
+      "position": 0,
+      "total": 1600,
+      "sample_seconds": 60
+    },
+    "model": {
+      "version": "V9",
+      "status": "research_only",
+      "acceptance_passed": false,
+      "message": "",
+      "qualification": "",
+      "metrics": {},
+      "limitations": []
+    },
+    "overview": {
+      "readings": 0,
+      "anomaly_readings": 0,
+      "unavailable_readings": 0,
+      "unacknowledged_alarms": 0,
+      "measured_irrigation_liters": null,
+      "valve_state": "closed",
+      "decision": "محجوز",
+      "reasons": []
+    },
+    "latest": null,
+    "series": [],
+    "alarms": [],
+    "settings": {
+      "site_name": "وحدة مورد التجريبية",
+      "turbidity_max": 2.0,
+      "ph_min": 6.5,
+      "ph_max": 8.5,
+      "chlorine_min": 0.2,
+      "chlorine_max": 0.5,
+      "stale_seconds": 120
+    },
+    "links": {
+      "model_report": "/evidence/gecco-v9/report.html",
+      "viewer": "/viewer/"
+    },
+    "telemetry": {
+      "session_id": null,
+      "last_device_id": null,
+      "last_received_at": null,
+      "last_receipt": null
+    },
+    "virtual_plant": null
+  },
+  "reading": {
+    "id": 1,
+    "session_id": "uuid",
+    "source_id": "2019_disclosed_test",
+    "timestamp": "original source ISO clock",
+    "received_at": "UTC clock",
+    "sample_index": 0,
+    "channels": {
+      "pH": 7.2
+    },
+    "prediction": -1,
+    "reference_prediction": -1,
+    "baseline_prediction": -1,
+    "score": null,
+    "available": false,
+    "ignored_gap": true,
+    "model_version": "V9",
+    "reasons": [],
+    "decision": "محجوز",
+    "measurement_id": "optional UUID for idempotent telemetry"
+  },
+  "alarm": {
+    "id": 1,
+    "session_id": "uuid",
+    "timestamp": "source clock",
+    "kind": "anomaly|missing|safety|system",
+    "severity": "warning|critical|info",
+    "title": "",
+    "detail": "",
+    "acknowledged_at": null,
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "2019_disclosed_test",
+      "name": "GECCO · جودة المياه",
+      "kind": "public_replay",
+      "rows": 1600,
+      "sample_seconds": 60,
+      "channels": [
+        {
+          "key": "Tp",
+          "name": "الحرارة",
+          "unit": "°C"
+        },
+        {
+          "key": "pH",
+          "name": "الأس الهيدروجيني",
+          "unit": "pH"
+        },
+        {
+          "key": "Cond",
+          "name": "الموصلية",
+          "unit": "S/m"
+        },
+        {
+          "key": "Turb",
+          "name": "العكارة",
+          "unit": "FNU"
+        },
+        {
+          "key": "SAC",
+          "name": "الامتصاص الطيفي",
+          "unit": "1/m"
+        },
+        {
+          "key": "PFM",
+          "name": "PFM",
+          "unit": "Hz"
+        }
+      ],
+      "documentation": "https://www.th-koeln.de/mam/downloads/deutsch/hochschule/fakultaeten/informatik_und_ingenieurwissenschaften/rulesgeccoic2019.pdf"
+    },
+    {
+      "id": "2019-04",
+      "name": "WaterHub · حساسات الضغط",
+      "kind": "public_replay",
+      "rows": 1600,
+      "sample_seconds": 60,
+      "channels": [
+        {
+          "key": "p1",
+          "name": "الضغط 1",
+          "unit": "قيمة المصدر"
+        },
+        {
+          "key": "p2",
+          "name": "الضغط 2",
+          "unit": "قيمة المصدر"
+        },
+        {
+          "key": "p3",
+          "name": "الضغط 3",
+          "unit": "قيمة المصدر"
+        },
+        {
+          "key": "p4",
+          "name": "الضغط 4",
+          "unit": "قيمة المصدر"
+        }
+      ]
+    },
+    {
+      "id": "telemetry",
+      "name": "قراءات جهاز عبر API",
+      "kind": "telemetry",
+      "rows": null,
+      "sample_seconds": null,
+      "channels": [
+        {
+          "key": "turbidity",
+          "name": "العكارة",
+          "unit": "NTU"
+        },
+        {
+          "key": "ph",
+          "name": "الأس الهيدروجيني",
+          "unit": "pH"
+        },
+        {
+          "key": "chlorine",
+          "name": "الكلور المتبقي المقاس",
+          "unit": "mg/L"
+        },
+        {
+          "key": "flow_lpm",
+          "name": "التدفق",
+          "unit": "L/min"
+        }
+      ]
+    },
+    {
+      "id": "virtual_plant",
+      "name": "منشأة مورد الافتراضية 01",
+      "kind": "digital_twin",
+      "rows": null,
+      "sample_seconds": 1,
+      "channels": [
+        {
+          "key": "turbidity",
+          "name": "العكارة",
+          "unit": "NTU"
+        },
+        {
+          "key": "ph",
+          "name": "الأس الهيدروجيني",
+          "unit": "pH"
+        },
+        {
+          "key": "chlorine",
+          "name": "الكلور المتبقي",
+          "unit": "mg/L"
+        },
+        {
+          "key": "orp",
+          "name": "جهد الأكسدة",
+          "unit": "mV"
+        },
+        {
+          "key": "p1_bar",
+          "name": "ضغط الدخول",
+          "unit": "bar"
+        },
+        {
+          "key": "p2_bar",
+          "name": "بعد الوسائط",
+          "unit": "bar"
+        },
+        {
+          "key": "p3_bar",
+          "name": "بعد الكربون",
+          "unit": "bar"
+        },
+        {
+          "key": "p4_bar",
+          "name": "ضغط المخرج",
+          "unit": "bar"
+        },
+        {
+          "key": "flow_lpm",
+          "name": "تدفق الري الافتراضي",
+          "unit": "L/min"
+        }
+      ]
+    }
+  ],
+  "routes": {
+    "GET /api/state": "Full state, latest60 readings, latest50 alarms; this call never advances inference.",
+    "GET /api/sources": "{sources: [...]} from this contract",
+    "POST /api/sessions": "{source_id, research_ack:true} -> full state. Replay ack mandatory; creates a fresh durable session; never deletes past data. ML load synchronous may take seconds.",
+    "POST /api/replay/step": "{count:1..25} -> full state, actual live scoring. Serial inference and transactional persistence.",
+    "POST /api/replay/pause": "{} -> full state; frontend also cancels autoplay timer.",
+    "POST /api/control/stop": "{note:optional} -> full state; latch software hold; no physical actuation.",
+    "POST /api/control/reset": "{} -> full state; clears manual hold, valve remains closed without qualified independent controller.",
+    "POST /api/alarms/{id}/ack": "{note:optional} -> full state",
+    "GET /api/readings?limit=100&session_id=optional": "{readings:[...]} limit1..1000",
+    "GET /api/alarms?limit=100": "{alarms:[...]}",
+    "GET /api/export/readings.csv": "All persisted readings flattened; downloadable UTF8 BOM CSV, preserve source/session provenance; no inference.",
+    "GET /api/export/events.csv": "All events downloadable CSV.",
+    "GET /api/report": "JSON summary of measured records, sources/model limitations; no compliance/drinking-water savings claims.",
+    "GET /api/settings": "{settings:{...}}",
+    "PATCH /api/settings": "Whitelist exact settings above, finite numeric ranges/ph ordering; -> full state. Bounds are experimental settings, not verified regulatory limits.",
+    "POST /api/readings": "Telemetry input as before, plus optional paired session_id+measurement_id for transactional receipts. See ingestion_protocol. Returns current state+ingestion for paired IDs; legacy callers retain old shape and monotonic checks.",
+    "POST /api/plant/control": "Active virtual_plant session only: {mode?:auto|standby|backwash, fault?:none|turbidity|sensor_dropout|clogging|power_loss|valve_stuck,speed?:1|10|30,running?:bool}. Applies only to virtual equipment; no GPIO or physical commands. Returns current state."
+  },
+  "errors": "Non2xx JSON {error:{code,message}}; no stack traces. No fallback to random data. All JSON NaN serialized as null.",
+  "ai_adapter": "server/ai.py owned by root: ResearchEngine.status(), start(case_id)->status, step(count)->list[reading fields excluding id/session_id/received_at/reasons/decision], reset(). .start verifies immutable V9 batch and qualified numerical/input hashes BEFORE trusted bundle load. .step is sensor-only genuine model inference on exact qualified1600prefix, labels absent. Backend must lock engine operations and avoid replay after process restart until fresh session.",
+  "safety": "No GPIO, no actuator or arbitrary bundle/path selection. app.hardware_connected=false and overview.valve_state=closed describe physical integration. Virtual equipment can operate only under explicit simulation controls and fixed rules. Research prediction0 means no detected anomaly, never safe water. AI unavailable on telemetry and the virtual plant; it cannot open valves. ORP is not residual chlorine. Original tests and evidence remain immutable. Bind loopback only; same-origin check and JSON content type on mutation.",
+  "ingestion_protocol": {
+    "request_fields": [
+      "session_id",
+      "measurement_id",
+      "timestamp",
+      "device_id",
+      "channels"
+    ],
+    "paired_ids": "Both canonical lower-case UUIDs or neither; collector always sends both. With IDs all four channels explicit, finite numeric or null.",
+    "response": "Full current state plus ingestion receipt; the original receipt may belong to an older session. Never treat response.ingestion as the latest current-session reading.",
+    "receipt": {
+      "measurement_id": "canonical UUID",
+      "session_id": "original telemetry session UUID",
+      "reading_id": 1,
+      "duplicate": false
+    },
+    "deduplication": "Persist receipt, reading and events in one transaction. Same ID plus normalized identical payload returns original reading_id and duplicate:true even after restart or session switch. No new row, event or current-session mutation.",
+    "session_pin": "New IDs are accepted only for the exact current ready/paused telemetry session. No automatic reassignment after UI session change or server restart.",
+    "normalization": "UTC ISO timestamp, exact device_id, canonical session UUID, all four channels as finite floats/null; SHA256 of sorted compact JSON. Receipt ID is globally unique.",
+    "conflicts": {
+      "session_not_active": 409,
+      "idempotency_conflict": 409,
+      "nonincreasing_timestamp": 409,
+      "validation_error": 400
+    },
+    "state_telemetry": "Current telemetry session only. last_receipt describes latest persisted reading, or null for a legacy reading; duplicate is false. Public replay/idle shows null fields.",
+    "transport_scope": "Durable local JSONL collector only. No hardware connection assertion, GPIO, actuation or model qualification for this schema."
+  },
+  "virtual_plant_contract": {
+    "start": "POST /api/sessions {source_id:virtual_plant,research_ack:true}; explicit virtual-source action, no classifier load.",
+    "state": "state.virtual_plant is null for every other source. When selected it is the simulator snapshot below plus session_id and running.",
+    "snapshot": {
+      "source": "virtual_plant",
+      "virtual": true,
+      "hardware": false,
+      "session_id": "UUID added by app",
+      "running": true,
+      "timestamp": "UTC ISO start + elapsed virtual seconds",
+      "elapsed_seconds": 0,
+      "mode": "standby",
+      "fault": "none",
+      "speed": 1,
+      "manual_hold": false,
+      "chans": {
+        "turbidity": null,
+        "ph": null,
+        "chlorine": null,
+        "orp": null,
+        "p1_bar": null,
+        "p2_bar": null,
+        "p3_bar": null,
+        "p4_bar": null,
+        "flow_lpm": null
+      },
+      "validity": {
+        "turbidity": true,
+        "ph": true,
+        "chlorine": true,
+        "orp": true,
+        "p1_bar": true,
+        "p2_bar": true,
+        "p3_bar": true,
+        "p4_bar": true,
+        "flow_lpm": true
+      },
+      "tanks": {
+        "raw": {
+          "liters": 3000,
+          "capacity_liters": 5000,
+          "level_percent": 60
+        },
+        "treated": {
+          "liters": 2000,
+          "capacity_liters": 5000,
+          "level_percent": 40
+        }
+      },
+      "flow": {
+        "inlet_lpm": 0,
+        "treatment_lpm": 0,
+        "reuse_lpm": 0,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "overflow_lpm": 0,
+        "product_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "volumes": {
+        "input_liters": 0,
+        "reuse_liters": 0,
+        "reject_drain_liters": 0,
+        "overflow_liters": 0,
+        "backwash_liters": 0,
+        "initial_stored_liters": 5000,
+        "stored_liters": 5000,
+        "balance_error_liters": 0,
+        "raw_overflow_liters": 0,
+        "treated_overflow_liters": 0,
+        "treatment_feed_liters": 0,
+        "treated_product_liters": 0
+      },
+      "equipment": {
+        "feed_pump": "stopped",
+        "dosing_pumps": "stopped",
+        "irrigation_valve": "closed",
+        "drain_valve": "closed",
+        "power": true,
+        "irrigation_command": "closed",
+        "irrigation_feedback": "closed",
+        "inlet_pump": "stopped",
+        "reuse_pump": "stopped",
+        "backwash_pump": "stopped",
+        "compliance_valve": "closed"
+      },
+      "safety": {
+        "state": "STANDBY",
+        "reuse_permitted": false,
+        "reasons": [],
+        "reason_codes": []
+      },
+      "design_assumptions": {
+        "rated_m3_per_day": 15,
+        "volumetric_recovery": 1.0,
+        "experimental_thresholds": true,
+        "rated_capacity_basis": "treatment feed; not reuse delivery",
+        "rated_feed_lph": 1000,
+        "theoretical_product_m3_per_day": 15,
+        "backwash_source": "treated tank; no treatment or reuse during backwash",
+        "rated_operating_hours_per_day": 15,
+        "daily_duty_cycle_enforced": false,
+        "inlet_lpm": 16.666666666666668,
+        "reuse_demand_lpm": 16.666666666666668,
+        "backwash_lpm": 65,
+        "matched_flow_assumption": "Inlet, treatment feed and irrigation demand are each1000L/hour for a steady-flow illustration; not measured building demand.",
+        "continuous_reject_assumption": "No continuous rejection stage. drain_lpm and reject_drain_liters remain compatibility keys with zero normal reject; recovery1 is volume transfer only, not chemical removal.",
+        "recirculation_model": "Design-only return branch with zero calculated flow. HOLD stops all normal transfers; no automatic diversion.",
+        "design_only_equipment": [
+          "S-100",
+          "DP-101",
+          "DP-102",
+          "DP-103",
+          "DP-104",
+          "CF-101",
+          "UV-C",
+          "TC-101",
+          "CP-01"
+        ],
+        "dosing_model": "Aggregate running/stopped indication only; no per-dose inventory, reaction, UV dose, salinity or carbon-adsorption calculation.",
+        "ai_controls_valves": false,
+        "model_inference": null
+      }
+    },
+    "clock": "Background worker advances one simulated second per real worker tick times speed1/10/30. GET state never advances physics. The virtual clock pauses while session status is paused. Clock is never called a field clock.",
+    "controls": "Engine set_control(mode/fault/speed) and set_manual_hold recompute immediate virtual safety/equipment without advancing time or cumulative volumes. step(0) is read-only. Optional app running controls ticking only.",
+    "balances": "initial storage + input = current storage + reuse + reject drain + overflow + backwash within1e-8liters; all outgoing stocks bounded and every outlet is accounted.",
+    "inference": "No model score, fabricated confidence, or claim of classifier validation on synthetic plant data. Existing genuine public V9 inference remains separately selectable.",
+    "physical_state": "app.hardware_connected=false and overview.valve_state=closed still describe physical integration. Virtual valve may open solely under the simulator fixed rules. UI labels all plant volumes and actuators virtual.",
+    "operational_3d_reader": "Separate local read-only viewer may consume only source.kind=digital_twin, source.id=virtual_plant with canonical session UUID matching snapshot.session_id, app.hardware_connected=false, snapshot.virtual=true/hardware=false, and ready/paused/failed session. Clear local snapshot on null/source/session change. All displayed volumes come from the server; no frame integration. Poll success determines freshness, never the virtual timestamp. Motion requires fresh transport, running=true and ready session; stale/disconnected/paused state stops motion without fabricating valve feedback. Irrigation command/feedback and compliance_valve (product|closed) remain separate. recirculation_lpm=0 describes a design-only return line. GET, load and camera-focus messages never start sessions or send process controls. Missing readings remain unavailable. No model inference or hardware permission is implied."
+  },
+  "guided_application": {
+    "default_route": "#start",
+    "primary_routes": [
+      "#start",
+      "#plant",
+      "#components",
+      "#technology",
+      "#follow"
+    ],
+    "advanced_routes": [
+      "#overview",
+      "#engineering",
+      "#measurements",
+      "#alerts",
+      "#history",
+      "#model",
+      "#settings"
+    ],
+    "navigation": "Routing renders the requested page, focuses main content and returns to the page top. Advanced navigation opens for advanced routes. Navigation and guide-step selection do not create sessions or control the plant.",
+    "explicit_start": "The visible start action POSTs /api/sessions with source_id=virtual_plant and research_ack=true. Resume, test and restore act on the active virtual session. Route entry, iframe load, polling and opening details never start or control the plant.",
+    "guided_scenarios": {
+      "normal": {
+        "fault": "none",
+        "mode": "auto",
+        "running": true
+      },
+      "sensor_dropout": {
+        "fault": "sensor_dropout",
+        "mode": "auto",
+        "running": true
+      },
+      "clear_fault": {
+        "fault": "none",
+        "mode": "auto",
+        "running": true
+      }
+    },
+    "writes": "Explicit commands use the existing serialized mutation queue. Test/restore use speed=1, auto mode and running=true. Manual-hold release invokes reset only; resuming needs a separate click. Failures stay inline and do not advance the experience. Restoration completion requires a previously confirmed sensor-dropout closure and the same session; done text also requires current REUSE, confirmed open valve and positive reuse flow.",
+    "scene": "/plant3d/index.html?embed=1&simple=1 consumes GET state only. The quiet embed hides duplicated metrics and toolbars. Equipment explanations open only on explicit selection; scenario execution does not open an inspector. Viewport resizing preserves camera zoom proportion while fitting the new aspect. Standalone detail and /viewer/ remain available.",
+    "copy": "Arabic component descriptions distinguish the proposed physical process, implemented virtual volumetric rules, design-only chemistry and independent research AI. V9 replay remains separate; V15 did not replace the running model.",
+    "verification_scope": "VM tests cover actual module rendering functions and queue/event logic with a minimal DOM. They do not establish browser layout, WebGL appearance or full accessibility.",
+    "experience": "Dedicated single-scene page with server-state interruptions and a guided eight-stage water journey. Only the next useful primary action is shown. Details are optional; pause remains visible. Per-session journey progress survives route navigation and pause/resume, and resets for a different source/session.",
+    "water_journey": {
+      "stages": [
+        "collection",
+        "media",
+        "carbon",
+        "polish",
+        "verify",
+        "uv",
+        "storage",
+        "irrigation"
+      ],
+      "presentation": "A single short function/benefit card, eight-step progress and explicit next/previous. The stage order is educational, not parcel travel time or chemical efficacy. Server hold/fault/pause/disconnect takes priority. Progress is scoped to the active virtual session.",
+      "writes": "Journey next/previous/replay do not create sessions, advance time or issue plant control. Start/resume/test/restore remain explicit serialized commands. Sensor test appears after irrigation; successful fault closure does not imply field validation.",
+      "scene_protocol": "Same-origin, exact iframe/parent source checks. Parent sends mawrid:journey with a whitelisted stage ID or null. Child sends mawrid:scene-ready so the current stage is reapplied after load. Stage highlighting is static and visually distinct from live flow arrows. Arrows require the exact positive server flow and presentation.motion; no motion on pause/disconnect. No automatic equipment inspector or zoom."
+    }
+  }
+}

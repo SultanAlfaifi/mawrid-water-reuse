@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-17T08:17:42.792190+00:00",
+  "software_status": "local_research_prototype_verified",
+  "field_readiness": false,
+  "url": "http://127.0.0.1:8787/",
+  "server_tests": 23,
+  "frontend_checks": 16,
+  "actual_integration": {
+    "path": "output/mawrid-system/integration-v2.json",
+    "sha256": "61cff0675a513f97a26605c623af7a4d19d824b22ec6a0a30a4a1c888c81fb4d",
+    "public_rows": 3200,
+    "sensor_fixture_rows": 1,
+    "maximum_model_score_error": 0,
+    "all_source_clocks_and_values_exact": true,
+    "restart_preserved_all_records": true,
+    "all_nine_report_links_work": true
+  },
+  "browser_verified": [
+    "six screens",
+    "new qualified GECCO session",
+    "actual sequential inference",
+    "pause and resume controls",
+    "acknowledge anomaly",
+    "CSV download of250readings",
+    "save settings and reload",
+    "manual software hold and reset",
+    "chart channel selection",
+    "responsive menu at observed485CSSpx; no horizontal overflow",
+    "zero console errors"
+  ],
+  "independent_review": "Four reported functional defects fixed: stale state, history filter race, alerts cache and report links. Deferred response regression tests and HTTP link checks passed.",
+  "screenshot": {
+    "path": "output/mawrid-system/screenshots/dashboard-final.png",
+    "sha256": "c93b8c6d0fee4f4090ab6f81e0b53092cdf28daaf0932da3e2a10eec9a94a7cb"
+  },
+  "handed_off_session": {
+    "position": 975,
+    "status": "paused",
+    "source": "2019_disclosed_test",
+    "live_hardware": false
+  },
+  "active_model": "V9 on exact two qualified public prefixes only",
+  "model_acceptance_passed": false,
+  "remaining": [
+    "Statistical event retention plus false alarm goal remains unmet.",
+    "Live Mawrid sensor schema requires a site-fitted independently validated model.",
+    "Physical ESP32 safety controller, sensors and valve integration are not connected."
+  ]
+}

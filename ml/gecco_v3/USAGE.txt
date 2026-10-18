@@ -1,0 +1,88 @@
+MAWRID chronological anomaly-detection experiments
+
+Scope
+-----
+The outputs are offline anomaly alarms on GECCO benchmark data. They are not
+water-safety decisions, calibrated sensor-trust probabilities, or classifiers
+of the five sensor-fault types. Nothing here opens or controls a valve.
+The 3D simulator has not been connected.
+
+Versions
+--------
+gecco-baseline-v1 preserves the first historical single-split experiment.
+gecco-v2 compares the refitted original baseline with a past-calibrated choice
+of raw multiscale supervised and normalized unsupervised detectors.
+gecco-v3 compares the same baseline with three normalized-change supervised
+detectors and a persistent-alarm version of the original baseline.
+V3 was developed after seeing weak early V2 walk-forward outcomes. Therefore
+all 2018 comparisons are retrospective. A separate, later 2019 period was
+reserved until both versions and the release choice were frozen.
+
+Sources
+-------
+2018: data/external/gecco2018/1_gecco2018_water_quality.csv
+2019 TRAIN: 7_gecco2019_train_water_quality.csv, July-September 2017
+2019 CALIBRATION: 8_gecco2019_valid_water_qulity.csv, October-November 2017
+2019 FINAL: 6_gecco2019_test_water_quality.csv, November 2017
+Actual timestamps establish this order despite the file names. File checksums
+and the label-blind overlap audit are included in the experiment artifacts.
+2018 has nine channels; 2019 has six. The latter is an evaluation of the method
+after retraining, not transfer of the nine-channel checkpoint or proof of a
+new site. Events include maintenance and simulated challenge events.
+
+Reproduction from the project root
+----------------------------------
+Use Python 3.12 and the exact versions in ml/gecco_baseline/requirements.txt.
+The original experiment environment is ml/gecco_baseline/.venv, excluded from
+the archive. To create a fresh environment:
+
+  python3 -m venv .venv
+  .venv/bin/python -m pip install -r ml/gecco_baseline/requirements.txt
+
+For each VERSION in v2 and v3, use a NEW output directory to preserve locks:
+
+  .venv/bin/python -B ml/gecco_VERSION/run_experiment.py declare --output-dir output/ml/reproduction-VERSION
+  .venv/bin/python -B ml/gecco_VERSION/run_experiment.py outer --output-dir output/ml/reproduction-VERSION
+  .venv/bin/python -B ml/gecco_VERSION/run_experiment.py external-calibrate --output-dir output/ml/reproduction-VERSION
+  .venv/bin/python -B ml/gecco_VERSION/run_experiment.py external-test --output-dir output/ml/reproduction-VERSION
+
+Replace gecco_VERSION with gecco_v2 or gecco_v3 and VERSION in the output name
+with v2 or v3. A rerun reproduces a benchmark; it is not a new unseen test.
+Frozen protocol/code/model hashes prevent accidental retuning or replacement.
+
+Inference
+---------
+Load only trusted local joblib bundles. The common inference interface is:
+
+  .venv/bin/python -B ml/gecco_v2/predict.py --model MODEL.joblib --input readings.csv --output predictions.csv
+
+Input must contain all ordered channels required by that bundle. Extra columns
+including EVENT are ignored. Output: score, prediction, score_available, reason.
+prediction=-1 means unavailable, 0 means no model alarm, 1 means alarm.
+Zero never grants permission to reuse water or open a valve.
+
+Rows must be consecutive one-minute observations in acquisition order. Supply
+explicit missing rows or restart history at actual acquisition gaps; this CSV
+interface does not infer elapsed time from timestamps. The normalized models
+need 61 clean history rows, plus up to four extra rows for alarm persistence.
+Independent chunks reset history. The bounded-history runtime benchmark uses
+65 rows and verifies its current prediction against batch inference.
+
+Evaluation
+----------
+Six expanding chronological periods cover the last 60% of 2018. Each uses an
+earlier calibration decile, 120-row gaps and independent feature warmups.
+No random split, future imputation, label expansion, event-tail forgiveness,
+or point adjustment is used. Original labeled events remain in denominators
+even when unscorable. The report compares all models on their shared available
+rows and separately shows native coverage and missing predictions.
+False alarms count contiguous positive runs in original normal minutes;
+normal alarm time is also reported. A confirmed event start requires an
+observed 0-to-1 transition inside the event, not an already-running alarm.
+
+Operational limits
+------------------
+These artifacts have no Raspberry Pi measurements or MAWRID field validation.
+Local latency excludes sensor I/O, file loading and 3D rendering. Field
+deployment requires matching channels, site calibration, independent safety
+interlocks, and prospective evaluation of real events and faults.

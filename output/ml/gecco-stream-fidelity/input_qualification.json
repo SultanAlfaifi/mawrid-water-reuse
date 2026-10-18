@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "sensor_only": true,
+  "created_at_utc": "2026-10-17T05:27:52.374527+00:00",
+  "actual_prefix_verification_sha256": "4313b8dccc03fac24a66b71f472699d3fa13719be4e4e26d70580b67c49519ad",
+  "verification_plan_sha256": "d8772205df7089c03298531de375f11af2207927e747c2c85ee3665a21c2e68a",
+  "scope": "Two exact previously exposed prefixes for verified research replay only; no new-input support claim.",
+  "cases": [
+    {
+      "case_id": "2019-04",
+      "rows": 1600,
+      "columns": [
+        "timestamp",
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "source": {
+        "path": "output/ml/gecco-v6-waterhub-first-use/adapted_source.csv.gz",
+        "sha256": "2ebd0997afb7571390c7df6b5b64616dec81441b304f6a02ff323b6218984ff7",
+        "original_source_row_bounds": [
+          437760,
+          439360
+        ],
+        "original_test_axis_bounds": [
+          437760,
+          439360
+        ],
+        "columns_parsed": [
+          "minute_end",
+          "p1",
+          "p2",
+          "p3",
+          "p4"
+        ],
+        "label_columns_parsed": false,
+        "clock_origin": "Frozen WaterHub adapted minute-end calendar; preserved gaps remain explicit sensor NaNs."
+      },
+      "actual_clock": {
+        "first": "2019-04-01T00:01:00",
+        "last": "2019-04-02T02:40:00",
+        "sample_seconds": 60.0
+      },
+      "numeric_roundtrip_exact": true,
+      "label_columns_parsed": false,
+      "csv_path": "output/ml/gecco-stream-fidelity/prototype-demo/2019-04_first1600_sensors.csv",
+      "csv_sha256": "b0cf8a14c1ccc221b5c0145e25d6b5844be0f15549b1ac4374c6d9fe5fe9abfa"
+    },
+    {
+      "case_id": "2019_disclosed_test",
+      "rows": 1600,
+      "columns": [
+        "timestamp",
+        "Tp",
+        "pH",
+        "Cond",
+        "Turb",
+        "SAC",
+        "PFM"
+      ],
+      "source": {
+        "path": "data/external/gecco2019/6_gecco2019_test_water_quality.csv",
+        "sha256": "ad509d0c1c656d3e48dc4e52011da5232d292997e6f7ce08eedd5f6194e3369f",
+        "original_source_row_bounds": [
+          0,
+          1600
+        ],
+        "original_test_axis_bounds": [
+          187230,
+          188830
+        ],
+        "columns_parsed": [
+          "Time",
+          "Tp",
+          "pH",
+          "Cond",
+          "Turb",
+          "SAC",
+          "PFM"
+        ],
+        "label_columns_parsed": false,
+        "clock_origin": "Published GECCO2019 test Time field; actual serialized year is retained, not rewritten to the dataset title year."
+      },
+      "actual_clock": {
+        "first": "2017-11-08T00:30:00",
+        "last": "2017-11-09T03:09:00",
+        "sample_seconds": 60.0
+      },
+      "numeric_roundtrip_exact": true,
+      "label_columns_parsed": false,
+      "csv_path": "output/ml/gecco-stream-fidelity/prototype-demo/2019_disclosed_test_first1600_sensors.csv",
+      "csv_sha256": "f599e8a3ab824ff1500f625e52b0657afa59d458b1dadec9e365ead43662714e"
+    }
+  ]
+}

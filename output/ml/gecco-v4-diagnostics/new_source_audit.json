@@ -1,0 +1,34 @@
+{
+  "audited_at_utc": "2026-10-16T06:02:45.026575+00:00",
+  "source": "https://zenodo.org/records/3884465",
+  "file": "data/external/gecco2017/1_gecco2017_water_quality.csv",
+  "bytes": 9563384,
+  "rows": 122334,
+  "channels": [
+    "Tp",
+    "Cl",
+    "pH",
+    "Redox",
+    "Leit",
+    "Trueb",
+    "Cl_2",
+    "Fm",
+    "Fm_2"
+  ],
+  "sha256": "8452e3c03b1d0b1ed81f8e85e90664c52fbe77a59e85c042a4e177cf3d753d1d",
+  "md5_verified_against_publisher": "e5d0b266b586ac6f602fd6bd789ec8ed",
+  "labels_loaded": false,
+  "first_timestamp": "2016-02-15 12:54:00",
+  "last_timestamp": "2016-05-10 12:47:00",
+  "negative_clock_steps": 0,
+  "non_60_second_steps": 1,
+  "timestamps_overlapping_2018": 0,
+  "exact_sensor_60_row_windows_overlapping_2018": 0,
+  "window_overlap_definition": "Only fully observed windows; all-missing sequences are not evidence of copied measurements.",
+  "timestamps_overlapping_2019": {
+    "6_gecco2019_test_water_quality.csv": 0,
+    "7_gecco2019_train_water_quality.csv": 0,
+    "8_gecco2019_valid_water_qulity.csv": 0
+  },
+  "interpretation": "Previously unused historical dataset. Earlier in calendar time than development datasets. Not a future field deployment or a new-site claim. Method design used later historical datasets; fitted parameters for this evaluation must use only local chronological past."
+}

@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-10-17T10:42:19.501215+00:00",
+  "passed": true,
+  "synthetic_tests_passed": 83,
+  "candidate_tests": 54,
+  "independent_auditor_tests": 29,
+  "parent_candidate_preflight_sha256": "d2f1ca0b780c13b5fda0f6e587f6b87110ec569b3a3c65e72b5dd0e7d652fd14",
+  "auditor_code_sha256": {
+    "ml/gecco_v14_audits/replay.py": "b413a69c3146064ba0fbb1d17d282fa3040e813245bea83d4a6e77d27eab8212",
+    "ml/gecco_v14_audits/test_replay.py": "c41357f5fd620f2ef8de531f4e2d44d72f8ec512914889771a6d8033e9a7a148"
+  },
+  "auditor_test_log_sha256": "4fdc87a877bab9733ee0020c2574c15235908169def27e8f6a0a8f1d717822fa",
+  "candidate_test_log_sha256": "182fcf4c71a77bc6f375b10d08b1ca24a34d41e87f967854f422f1a82a1071a0",
+  "all_candidate_algorithms_and_report_auxiliaries_unchanged": true,
+  "source_measurements_decoded_by_preflight": false,
+  "actual_v14_training_started": false,
+  "free_disk_bytes": 6638321664,
+  "independent_model_runner_auditor_reviews": "Root model and business runner/auditor read-only reviews: no functional blocker",
+  "recipe_immutable_for_this_attempt": true,
+  "development_only": true,
+  "fresh_external_validation": false
+}

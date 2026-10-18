@@ -1,0 +1,51 @@
+328K	/Users/sultan/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle/Launcher
+1.7G	/Users/sultan/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle/Installation
+  0B	/Users/sultan/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle/PersistentDownloads
+1.7G	/Users/sultan/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle
+  0B	/Users/sultan/Library/Caches/com.openai.codex/fsCachedData
+1.7G	/Users/sultan/Library/Caches/com.openai.codex
+1.1G	/Users/sultan/Library/Caches/Google/Chrome/Profile 1
+295M	/Users/sultan/Library/Caches/Google/Chrome/Default
+ 16K	/Users/sultan/Library/Caches/Google/Chrome/System Profile
+1.4G	/Users/sultan/Library/Caches/Google/Chrome
+1.4G	/Users/sultan/Library/Caches/Google
+ 27M	/Users/sultan/Library/Caches/Codex/Default/Cache
+277M	/Users/sultan/Library/Caches/Codex/Default/Partitions
+ 16K	/Users/sultan/Library/Caches/Codex/Default/Code Cache
+304M	/Users/sultan/Library/Caches/Codex/Default
+ 20K	/Users/sultan/Library/Caches/Codex/codex-browser-app/Cache
+ 16K	/Users/sultan/Library/Caches/Codex/codex-browser-app/Code Cache
+ 36K	/Users/sultan/Library/Caches/Codex/codex-browser-app
+304M	/Users/sultan/Library/Caches/Codex
+5.0M	/Users/sultan/.cache/selenium/geckodriver
+7.9M	/Users/sultan/.cache/selenium/manager
+ 30M	/Users/sultan/.cache/selenium/chromedriver
+ 43M	/Users/sultan/.cache/selenium
+340K	/Users/sultan/.cache/tooling/gradle
+340K	/Users/sultan/.cache/tooling
+4.0K	/Users/sultan/.cache/gh/42
+4.0K	/Users/sultan/.cache/gh/f9
+8.0K	/Users/sultan/.cache/gh
+ 35M	/Users/sultan/.cache/prisma/master
+ 35M	/Users/sultan/.cache/prisma
+ 23M	/Users/sultan/.cache/fontconfig
+525M	/Users/sultan/.cache/huggingface/hub
+525M	/Users/sultan/.cache/huggingface
+1.5G	/Users/sultan/.cache/codex-runtimes/codex-primary-runtime
+436K	/Users/sultan/.cache/codex-runtimes/codex-runtime-install-hdfK2S
+1.5G	/Users/sultan/.cache/codex-runtimes
+2.1G	/Users/sultan/.cache
+4.0K	/Users/sultan/Library/Caches/com.openai.atlas/com.onevcat.Kingfisher.ImageCache/com.onevcat.Kingfisher.ImageCache.com.openai.chat
+4.0K	/Users/sultan/Library/Caches/com.openai.atlas/com.onevcat.Kingfisher.ImageCache
+  0B	/Users/sultan/Library/Caches/com.openai.atlas/org.sparkle-project.Sparkle/Launcher
+  0B	/Users/sultan/Library/Caches/com.openai.atlas/org.sparkle-project.Sparkle/Installation
+  0B	/Users/sultan/Library/Caches/com.openai.atlas/org.sparkle-project.Sparkle/PersistentDownloads
+  0B	/Users/sultan/Library/Caches/com.openai.atlas/org.sparkle-project.Sparkle
+ 56K	/Users/sultan/Library/Caches/com.openai.atlas/fsCachedData
+785M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host
+785M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data
+  0B	/Users/sultan/Library/Caches/com.openai.atlas/io.sentry
+789M	/Users/sultan/Library/Caches/com.openai.atlas
+227M	/Users/sultan/Library/Caches/notion.id.ShipIt/update.vks8ATf/Notion.app
+227M	/Users/sultan/Library/Caches/notion.id.ShipIt/update.vks8ATf
+227M	/Users/sultan/Library/Caches/notion.id.ShipIt

@@ -1,0 +1,102 @@
+{
+  "completed_at_utc": "2026-10-16T10:28:17.711891+00:00",
+  "status": "PASS",
+  "checks": 351,
+  "recomputed_test_rows": 188791,
+  "cases": [
+    {
+      "case": "2017_fold_1",
+      "raw_test_rows": 12234,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 0.6759702079871204
+    },
+    {
+      "case": "2017_fold_2",
+      "raw_test_rows": 12233,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 0.5538851250021253
+    },
+    {
+      "case": "2017_fold_3",
+      "raw_test_rows": 12233,
+      "streamed_prefix_rows": 240,
+      "all_saved_components_matched": true,
+      "seconds": 2.5817583329917397
+    },
+    {
+      "case": "2017_fold_4",
+      "raw_test_rows": 12234,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 0.5902328330266755
+    },
+    {
+      "case": "2017_fold_5",
+      "raw_test_rows": 12233,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 0.5835471249883994
+    },
+    {
+      "case": "2017_fold_6",
+      "raw_test_rows": 12234,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 0.6089577499951702
+    },
+    {
+      "case": "2018_fold_1",
+      "raw_test_rows": 13957,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 0.6296037920110393
+    },
+    {
+      "case": "2018_fold_2",
+      "raw_test_rows": 13956,
+      "streamed_prefix_rows": 240,
+      "all_saved_components_matched": true,
+      "seconds": 2.743339875014499
+    },
+    {
+      "case": "2018_fold_3",
+      "raw_test_rows": 13957,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 0.6655133329913951
+    },
+    {
+      "case": "2018_fold_4",
+      "raw_test_rows": 13956,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 0.6716764579759911
+    },
+    {
+      "case": "2018_fold_5",
+      "raw_test_rows": 13957,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 1.279047250020085
+    },
+    {
+      "case": "2018_fold_6",
+      "raw_test_rows": 13957,
+      "streamed_prefix_rows": 0,
+      "all_saved_components_matched": true,
+      "seconds": 2.0209763330058195
+    },
+    {
+      "case": "2019_disclosed_test",
+      "raw_test_rows": 31650,
+      "streamed_prefix_rows": 240,
+      "all_saved_components_matched": true,
+      "seconds": 3.1773587499919813
+    }
+  ],
+  "runtime_sha256": "69caebab5a6541968db76f358d55435c14851fa41be92bb5847796b8d5d38032",
+  "audit_sha256": "508046a6313e8f9fba48a1112a23015bc9a81ebfebf2963e49017985f34c4b27",
+  "scope": "Same disclosed data; executable and component parity plus manual event/FP counts. This is not a new independent data test or Raspberry Pi benchmark."
+}

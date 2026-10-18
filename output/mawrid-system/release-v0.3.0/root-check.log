@@ -1,0 +1,32 @@
+
+> mawrid-water-reuse@0.2.0 check
+> node --test tests/*.test.mjs
+
+✔ only all known valid conditions permit the illustrative route (2.633333ms)
+✔ every selectable fault closes the illustrative reuse path (0.223917ms)
+✔ seven days at five-minute intervals are deterministic and finish (70.974084ms)
+✔ power loss immediately commands CLOSED for every operating route and prevents release (202.748ms)
+✔ final sensor drift is discovered from residuals and ends in quarantine before unsafe release (20.859917ms)
+✔ all eight fault buttons and simultaneous faults keep independently audited unsafe irrigation at zero (210.443833ms)
+✔ AI can only restrict the existing fixed controller; it cannot turn HOLD into REUSE (0.76175ms)
+✔ outlet adapter does not consult final hidden ground truth (0.73725ms)
+✔ the unsafe counter really detects bad water if every measured and model condition is spoofed (0.899917ms)
+✔ pollution injected between prayers waits for water and causes recycling and diversion (11.508875ms)
+✔ restoring a weak lamp cannot retroactively qualify the old untreated batch (1.791708ms)
+✔ long power loss and recovery preserves mass and does not release microbially aged stored water (14.490792ms)
+✔ valve failure isolates flow by stopping pumps and reports a critical alarm (1.563459ms)
+✔ demand backwash draws only recovered water and does not hide it in overflow (0.951375ms)
+✔ comparison shares source volumes; commercial system is sized without inventing its treatment performance (9.286459ms)
+✔ Sunday week gives Friday multiplier on day six and university no inflow Friday/Saturday (18.178333ms)
+✔ no source and sustained outage do not fabricate backwash savings or water (19.235375ms)
+✔ economics uses actual simulated irrigation, capacity ceiling and recurring cost (12.274667ms)
+✔ report is visibly simulated, includes real ledger, fault response and future lab plan (1.466417ms)
+✔ restoration records service and repeated sensor faults open fresh latched calibration tickets (1.183ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 853.206708

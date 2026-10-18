@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-10-17T12:48:27.387008+00:00",
+  "authorization": "\u0634\u0641 \u0627\u064a \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u062e\u0630\u0647 \u0645\u0633\u0627\u062d\u0647 \u0648\u0644\u0627 \u0644\u0647\u0627 \u0641\u0627\u064a\u062f\u0647 \u0627\u062d\u0630\u0641\u0647\u0627",
+  "scope": "Git-classified unopened stable temporary pack garbage only",
+  "removed": [
+    {
+      "path": "/Users/sultan/Documents/ChatGPT/MAWRID/.git/objects/pack/tmp_pack_B0yte5",
+      "apparent_bytes": 12
+    },
+    {
+      "path": "/Users/sultan/Documents/ChatGPT/MAWRID/.git/objects/pack/tmp_pack_wk5IjN",
+      "apparent_bytes": 596770828
+    }
+  ],
+  "free_bytes_before": 4024840192,
+  "free_bytes_after": 4024811520,
+  "head_before_and_after": "1a1fa098d6f81349fb0b79405e87c198c4cb9547",
+  "git_count_before": "count: 7710\nsize: 3.08 GiB\nin-pack: 406\npacks: 2\nsize-pack: 1.79 GiB\nprune-packable: 0\ngarbage: 2\nsize-garbage: 569.13 MiB\n",
+  "git_count_after": "count: 7710\nsize: 3.08 GiB\nin-pack: 406\npacks: 2\nsize-pack: 1.79 GiB\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0 bytes\n",
+  "git_warnings_before": "warning: garbage found: .git/objects/pack/tmp_pack_wk5IjN\nwarning: garbage found: .git/objects/pack/tmp_pack_B0yte5\n",
+  "git_warnings_after": ""
+}

@@ -1,0 +1,96 @@
+{
+  "created_at_utc": "2026-10-17T13:41:57.677Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "clear_fault_restores_virtual_reuse_and_preserves_focus",
+      "passed": true
+    },
+    {
+      "name": "optional_code_and_ai_details_stay_open_during_poll",
+      "passed": true
+    },
+    {
+      "name": "paused_clock_and_volumes_stable_across_navigation",
+      "passed": true
+    },
+    {
+      "name": "mobile_start_391_css_pixels_no_overflow_and_start_target_48px",
+      "passed": true
+    },
+    {
+      "name": "desktop_1642_css_pixels_controls_and_scenario_no_overflow",
+      "passed": true
+    },
+    {
+      "name": "quality_fault_visible_reason_and_zero_virtual_flow",
+      "passed": true
+    },
+    {
+      "name": "standalone_webgl_reference_geometry_selection_camera_and_six_labels_without_overlap_or_clipping",
+      "passed": true
+    },
+    {
+      "name": "component_search_and_selection_keep_query_and_move_focus_to_details",
+      "passed": true
+    },
+    {
+      "name": "mobile_menu_hides_closed_links_and_focuses_first_open_destination",
+      "passed": true
+    },
+    {
+      "name": "final_default_964_css_pixels_no_horizontal_overflow",
+      "passed": true
+    }
+  ],
+  "viewports_css": [
+    {
+      "width": 391,
+      "height": 845
+    },
+    {
+      "width": 1642,
+      "height": 1104
+    },
+    {
+      "width": 964,
+      "height": 976
+    },
+    {
+      "width": 1910,
+      "scope": "standalone 3D"
+    }
+  ],
+  "final_app": {
+    "height": 976,
+    "mainLive": null,
+    "overflow": false,
+    "sourceBadge": "محاكاة تفاعلية / وحدة مورد",
+    "status": "المحاكاة متوقفة مؤقتًا\n\nالزمن والعدادات ثابتة، والحالات المعروضة من آخر لقطة. اضغط «متابعة المحاكاة» لاستئناف الزمن.",
+    "width": 964
+  },
+  "console": {
+    "app_observer_errors_observed": [
+      {
+        "level": "error",
+        "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+        "timestamp": "2026-10-17T13:40:18.570Z"
+      },
+      {
+        "level": "error",
+        "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+        "timestamp": "2026-10-17T13:41:09.003Z"
+      }
+    ],
+    "standalone_errors": [],
+    "note": "Unattributed MutationObserver errors remain in the embedded browser during reloads. The current application source and built entry contain no MutationObserver after disabling the optional Vite preload observer. Functional interactions passed; this is not a zero-console-error certification."
+  },
+  "limitations": [
+    "Functional browser QA on this Mac only, not a usability study with all audience groups.",
+    "No full WCAG certification or field hardware/chemical treatment validation.",
+    "Mobile viewport is an emulated CSS viewport, not a physical-device test."
+  ],
+  "viewport_override_reset": true,
+  "physical_hardware": false,
+  "ml_promoted": false
+}

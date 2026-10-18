@@ -1,0 +1,199 @@
+{
+  "frozen_at_utc": "2026-10-16T11:12:15.473028+00:00",
+  "version": "v6_run04_waterhub_forward_6_v1",
+  "measurement_values_and_row_labels_previously_opened": false,
+  "prior_exposure": "File inventory, headers, timestamp-only geometry, publisher source code only.",
+  "development_selection": "GECCO run04 selected after four disclosed development attempts; none is fresh validation.",
+  "archive_sha256": "f91e930d1e194f401f4570c8ddbfdd90606475233e2f6cd36114ff9da11fc8b0",
+  "archive_path": "data/external/new_holdout_candidate/eawag_adasen/ADASen_paper.zip",
+  "code_sha256": {
+    "ml/gecco_baseline/metrics.py": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+    "ml/gecco_v2/alarm_policy.py": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+    "ml/gecco_v2/candidates_supervised.py": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+    "ml/gecco_v5/calibration.py": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+    "ml/gecco_v5/recovery_candidate.py": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+    "ml/gecco_v6/audit_run04.py": "508046a6313e8f9fba48a1112a23015bc9a81ebfebf2963e49017985f34c4b27",
+    "ml/gecco_v6/build_development_report.py": "eed26f2b2e61280f9dd39a0fe4e9a83cf241a391ad08385cd35afb7082685278",
+    "ml/gecco_v6/corroborated_rescue.py": "166d38dba2ddfcd51ba33a04e74bc199b4833beb4c15209f388f4fd187d53d7b",
+    "ml/gecco_v6/departure_scores.py": "439b552e422c46e8ce021a689cded6ae6355bae8cd92582c7ce39d052ae3164b",
+    "ml/gecco_v6/development.py": "9f38406b8ea368e88bcf9379482eb7e17f559decbc29dadefe37895827be44b0",
+    "ml/gecco_v6/development_v2.py": "a00e64fe5c80ff11b07d9d0b72b44a08b1532a0f39b1f8e60cf7bcabb2620750",
+    "ml/gecco_v6/development_v3.py": "464a7337f6667473af7e658ba0d3ad10a351f644d63039cc251316d54a387ba1",
+    "ml/gecco_v6/development_v4.py": "e1082b5be8447713f92b473be07fe8f175e3b1e5e00eb1a4ea61aa16702d0e88",
+    "ml/gecco_v6/guarded_suppression.py": "f25b3aa7f5caa0d5ecdddb0b112b9ae88846f3fd82cd902e4b0cfb770e7bb27a",
+    "ml/gecco_v6/joint_calibration.py": "0243e4402b1da5582df73eeac225328ea6d48aa8df35bfebebb5923cfbf917cd",
+    "ml/gecco_v6/joint_calibration_v2.py": "bbd1a3b81437d71468a2ccd694049b802220d57aecc11b83922bfd01958b2b23",
+    "ml/gecco_v6/latched_suppression.py": "7d65a2cb24c93eeac0fa0e7cb0c89837cf4110456fa1494ab877dba93cb8924d",
+    "ml/gecco_v6/local_change.py": "bffc42d3a85fe9c4e91b7d5418e4187701645f7ed2a45f5c23aa763de3777396",
+    "ml/gecco_v6/partially_labeled_model.py": "c49c230fe274b7154924988a3edf6cbc7879fd4c0b3d52ff3496e83bf9eb44d7",
+    "ml/gecco_v6/runtime_v4.py": "69caebab5a6541968db76f358d55435c14851fa41be92bb5847796b8d5d38032",
+    "ml/gecco_v6/source_joint_calibration.py": "9192ccc264fadb663b8f88a06244c44f9598b14b09b3bd4cbc99278b7c0f7131",
+    "ml/gecco_v6/source_suppression.py": "6f85639855eb733aa44e9e8072a39001bdbf1c123af781c486b6e014ac74c5da",
+    "ml/gecco_v6/test_corroborated_rescue.py": "046c9de4e144c7db1fc9b11bc6c17f51edc99497e1c6d74255009f61155e8fea",
+    "ml/gecco_v6/test_guarded_suppression.py": "41f4fdfbc66f76b210510c63d876727b97a06f9859e796c654f58879193fc62e",
+    "ml/gecco_v6/test_joint_calibration.py": "d27bb40d3cda48d0b58a9f90aa06205a4a4d2aa1d6187eb2cd2e233ba8f08f58",
+    "ml/gecco_v6/test_latched_suppression.py": "4dceb5cf9e8a3b38d00ef140e4b5228b880e54d9e26ca4da507cfc8ef339ed81",
+    "ml/gecco_v6/test_local_change.py": "1fab7bb4725e7ab6bb5926cc9e563545902daf0d6af52935382e65e8396ebcbb",
+    "ml/gecco_v6/test_partially_labeled_model.py": "359d87dec20767725d28e94d5baaf7715ec2543532b968f41b3cec778f4a5794",
+    "ml/gecco_v6/test_runtime_v4.py": "55bb2630e09d697b33db948dd3a037e9335a9eb8fc12b5e275675d48280832d4",
+    "ml/gecco_v6/test_source_calibration.py": "824a472d7987ecd2d05a5470c8ec9f7c53c4467b4122324bcacc25c7d2406cee",
+    "ml/gecco_v6/test_unknown_label_metrics.py": "fddede36a4774d7773022f243f8b89e50dec23c27d2a0745c1afdcf2590e0d07",
+    "ml/gecco_v6/test_waterhub_adapter.py": "675d7afbf94df53ae31550b13810cebb1c5b04e1a252df4c6f73aef8869496b3",
+    "ml/gecco_v6/test_waterhub_evaluation.py": "ac64c41aba005d2f77ea9a00bc1719d03aa2a1392446e90da434febce61a6c42",
+    "ml/gecco_v6/test_waterhub_loader.py": "dc5c95f76139a338b1a46e63398486b1616dfb31d2df3cf2e2ed1a859529bd8a",
+    "ml/gecco_v6/unknown_label_metrics.py": "46fb870eb6f6cae6203d4431d95f91e3907413106d6f8d7926480671e0c5f7cf",
+    "ml/gecco_v6/waterhub_adapter.py": "0aa2c0393883e41e72fc3b62de03f2fa66e7c7d8697018895a860a50e6478c0f",
+    "ml/gecco_v6/waterhub_evaluation.py": "78b507d9b6d15cb245d5e925771cec0f4840f664d950d7dbe3b699159a2e77e4",
+    "ml/gecco_v6/waterhub_loader.py": "d96cbcc4f4fb0d6b6ee91b9827a02dcd5e3aa6c44714aeb5f78d5e7f5715200a"
+  },
+  "source_scope": "Raw and annotation CSVs June2018-April2019 inclusive; May2019 is unlabelled and unused. August stays on calendar with unknown labels.",
+  "adapter": "Closed minute [M,M+60s), selected raw pressure at M+50s; require six unique aligned slots per process, four finite chosen readings. Score timestamp M+60s. No interpolation or label-derived features.",
+  "ambiguity": "Fixed raw-timestamp duplicate calendar computed before value adaptation. Conditional pipeline causality only; no proof of physical instrument clock chronology.",
+  "annotations": "Six streams x six slots: valid binary agreement among duplicates, then OR only when all36 are known. Otherwise -1, never normal. Complete immutable annotation exports are required; label prefix parity is not claimed for late duplicate annotations.",
+  "cases": [
+    {
+      "name": "2018-11",
+      "train": [
+        0,
+        132480
+      ],
+      "calibration_boundaries": [
+        132480,
+        154440,
+        176400,
+        198360,
+        220320
+      ],
+      "test": [
+        220320,
+        263520
+      ]
+    },
+    {
+      "name": "2018-12",
+      "train": [
+        0,
+        175680
+      ],
+      "calibration_boundaries": [
+        175680,
+        197640,
+        219600,
+        241560,
+        263520
+      ],
+      "test": [
+        263520,
+        308160
+      ]
+    },
+    {
+      "name": "2019-01",
+      "train": [
+        0,
+        220320
+      ],
+      "calibration_boundaries": [
+        220320,
+        242280,
+        264240,
+        286200,
+        308160
+      ],
+      "test": [
+        308160,
+        352800
+      ]
+    },
+    {
+      "name": "2019-02",
+      "train": [
+        0,
+        263520
+      ],
+      "calibration_boundaries": [
+        263520,
+        285840,
+        308160,
+        330480,
+        352800
+      ],
+      "test": [
+        352800,
+        393120
+      ]
+    },
+    {
+      "name": "2019-03",
+      "train": [
+        0,
+        308160
+      ],
+      "calibration_boundaries": [
+        308160,
+        329400,
+        350640,
+        371880,
+        393120
+      ],
+      "test": [
+        393120,
+        437760
+      ]
+    },
+    {
+      "name": "2019-04",
+      "train": [
+        0,
+        352800
+      ],
+      "calibration_boundaries": [
+        352800,
+        374040,
+        395280,
+        416520,
+        437760
+      ],
+      "test": [
+        437760,
+        480960
+      ]
+    }
+  ],
+  "cadence_seconds": 60,
+  "gap_samples_per_independent_block": 120,
+  "training": "Expanding history from June1 to two months before each test. Unknown targets excluded from supervision, normal scale fitting and negative weighting; raw past observations may provide label-independent context. Fixed run04 model and hyperparameters.",
+  "calibration": "Previous two calendar months, four contiguous near-equal minute blocks, each reset with120 discarded observations before feature calculation. Fit no model here. Baseline grid selected on known labels only; inference remains available on unknown labels. Guard and rescue retain fixed run04 grids/gates; unknown-label onset accounting declared before exposure.",
+  "forward_update": "Previous test months become eligible historical training/calibration for later periods under a simulated available-manual-annotations assumption. No human method adjustment between periods.",
+  "primary_events": "Known-positive segment immediately preceded by known0; first row or preceding-unknown onset is left-censored and reported separately. Confirmed event requires actual adjacent sensor predictions0->1 inside original interval. Unknown labels do not alter predictions.",
+  "aggregation": "Report monthly comparisons and one pooled contiguous November-April timeline. Pooled primary event identities are calculated once; do not sum monthly event counts.",
+  "false_runs": "Runs of known-normal alarm minutes; unknown labels split observed fragments and are not proven distinct physical starts.",
+  "failure_policy": "No finite baseline calibration/normal exposure yields an explicitly failed case, preserved error, no invented zero-alarm success; incomplete evaluation cannot pass.",
+  "acceptance": {
+    "complete_periods": 6,
+    "every_period_and_pool": [
+      "no lost baseline event IDs",
+      "identical sensor availability",
+      "no added paired detection delay",
+      "no increased false runs",
+      "no increased false alarm minutes"
+    ],
+    "pooled_more_events": true,
+    "pooled_fewer_false_runs": true,
+    "minimum_event_gain_periods": 2,
+    "minimum_false_run_reduction_periods": 2,
+    "minimum_primary_events": 5,
+    "minimum_eventful_periods": 2,
+    "minimum_observed_known_normal_minutes_each_test_period": 1440
+  },
+  "limits": [
+    "One new hydraulic-pressure installation, not chemical-quality efficacy or sensor fault taxonomy.",
+    "Resampling differs intentionally from publisher processed benchmark; no benchmark reproduction claim.",
+    "Not Raspberry Pi speed validation, no3D or actuator integration."
+  ],
+  "environment": {
+    "python": "3.12.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  }
+}

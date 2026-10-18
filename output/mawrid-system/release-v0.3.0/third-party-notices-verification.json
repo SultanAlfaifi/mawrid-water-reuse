@@ -1,0 +1,66 @@
+{
+  "scope": "Exact local license copies and copyright-header notices for the four direct root runtime packages; existing compiled scene and viewer licenses checked without modification.",
+  "root_runtime_packages": {
+    "dompurify": "3.4.16",
+    "gsap": "3.15.0",
+    "marked": "18.1.0",
+    "three": "0.186.1"
+  },
+  "exact_license_copies": [
+    {
+      "source": "node_modules/dompurify/LICENSE",
+      "destination": "assets/licenses/DOMPurify-Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "source": "node_modules/dompurify/LICENSE-MPL",
+      "destination": "assets/licenses/DOMPurify-MPL-2.0.txt",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "source": "node_modules/marked/LICENSE",
+      "destination": "assets/licenses/marked-LICENSE.txt",
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+    },
+    {
+      "source": "node_modules/three/LICENSE",
+      "destination": "assets/licenses/three-MIT.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    }
+  ],
+  "notice_headers": {
+    "DOMPurify": "node_modules/dompurify/dist/purify.es.mjs",
+    "GSAP": [
+      "node_modules/gsap/gsap-core.js",
+      "node_modules/gsap/CSSPlugin.js",
+      "node_modules/gsap/ScrollTrigger.js",
+      "node_modules/gsap/Observer.js"
+    ]
+  },
+  "existing_packaged_licenses": [
+    {
+      "path": "mawrid-system/client/plant3d/licenses/three-MIT.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "mawrid-system/client/plant3d/licenses/IBM-Plex-Arabic-OFL.txt",
+      "bytes": 4808,
+      "sha256": "1c32ddc3fc6efd167cdcbe475195287f2dc26ed1a4c92fbe31c87ceaffe44f98"
+    },
+    {
+      "path": "mawrid-final/dist/licenses/three-MIT.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "mawrid-final/dist/licenses/IBM-Plex-Arabic-OFL.txt",
+      "bytes": 4808,
+      "sha256": "1c32ddc3fc6efd167cdcbe475195287f2dc26ed1a4c92fbe31c87ceaffe44f98"
+    }
+  ],
+  "modified_code": false,
+  "modified_dependencies": false,
+  "moved_packaged_files": false,
+  "status": "PASS"
+}

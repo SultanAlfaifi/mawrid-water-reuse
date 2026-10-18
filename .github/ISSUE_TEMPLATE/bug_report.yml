@@ -1,0 +1,28 @@
+name: Bug report · بلاغ خلل
+description: Report a reproducible software problem · بلاغ عن خلل برمجي قابل للتكرار
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected experience · الجزء المتأثر
+      options:
+        - Local application / النظام المحلي
+        - Public website / الموقع العام
+        - 3D viewer / المجسم
+        - Research tooling / أدوات البحث
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and expected behavior · الخطوات والسلوك المتوقع
+      description: Include the version and operating system. Do not include credentials, private site details or raw device logs.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Actual behavior · ما حدث بالفعل
+    validations:
+      required: true

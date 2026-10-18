@@ -1,0 +1,104 @@
+test_finite_json_null (server.test_ai.AdapterTests.test_finite_json_null) ... ok
+test_no_claim_of_acceptance_or_safe_water (server.test_ai.AdapterTests.test_no_claim_of_acceptance_or_safe_water) ... ok
+test_reject_arbitrary_source_before_import_or_io (server.test_ai.AdapterTests.test_reject_arbitrary_source_before_import_or_io) ... ok
+test_step_requires_ready_session_and_valid_bounded_count (server.test_ai.AdapterTests.test_step_requires_ready_session_and_valid_bounded_count) ... ok
+test_db_failure_after_engine_step_marks_failed_and_resets_engine (server.test_app.AppTests.test_db_failure_after_engine_step_marks_failed_and_resets_engine) ... ok
+test_export_report_keep_source_session_and_no_unmeasured_volume (server.test_app.AppTests.test_export_report_keep_source_session_and_no_unmeasured_volume) ... ok
+test_get_state_does_not_advance_and_replay_is_real_engine_output (server.test_app.AppTests.test_get_state_does_not_advance_and_replay_is_real_engine_output) ... ok
+test_manual_hold_and_acknowledgement_never_open_or_clear_anomaly (server.test_app.AppTests.test_manual_hold_and_acknowledgement_never_open_or_clear_anomaly) ... ok
+test_restart_retains_history_but_forces_new_session_and_no_model_replay (server.test_app.AppTests.test_restart_retains_history_but_forces_new_session_and_no_model_replay) ... ok
+test_settings_whitelist_finite_order_and_persistence (server.test_app.AppTests.test_settings_whitelist_finite_order_and_persistence) ... ok
+test_simultaneous_steps_are_serial_and_keep_unique_source_axis (server.test_app.AppTests.test_simultaneous_steps_are_serial_and_keep_unique_source_axis) ... ok
+test_telemetry_missing_unknown_ml_timezone_staleness_and_monotonicity (server.test_app.AppTests.test_telemetry_missing_unknown_ml_timezone_staleness_and_monotonicity) ... ok
+test_api_state_does_not_score_and_sessions_step_persistence_exports (server.test_http.HTTPTests.test_api_state_does_not_score_and_sessions_step_persistence_exports) ... mawrid GET /api/state
+mawrid POST /api/sessions
+mawrid POST /api/replay/step
+mawrid GET /api/readings
+mawrid GET /api/export/readings.csv
+mawrid GET /api/state
+mawrid GET /api/state
+ok
+test_cross_origin_content_type_bad_json_limit_and_actuation_rejected (server.test_http.HTTPTests.test_cross_origin_content_type_bad_json_limit_and_actuation_rejected) ... mawrid POST /api/control/stop
+mawrid POST /api/control/stop
+mawrid POST /api/control/stop
+mawrid POST /api/control/stop
+mawrid POST /api/replay/step
+mawrid POST /api/replay/step
+mawrid POST /api/replay/step
+mawrid POST /api/replay/step
+mawrid POST /api/control/open
+mawrid GET /api/readings
+mawrid POST /api/control/stop
+ok
+test_evidence_report_relative_links_reach_sibling_audits_and_prior_report (server.test_http.HTTPTests.test_evidence_report_relative_links_reach_sibling_audits_and_prior_report) ... mawrid GET /evidence/gecco-v9/report.html
+mawrid GET /evidence/gecco-v9-development/run_01/audit.json
+mawrid GET /evidence/gecco-v8/report.html
+mawrid GET /evidence/missing/audit.json
+mawrid GET /evidence/%2e%2e/secret.txt
+ok
+test_static_paths_confined_and_errors_are_json_without_traceback (server.test_http.HTTPTests.test_static_paths_confined_and_errors_are_json_without_traceback) ... mawrid GET /
+mawrid GET /%2e%2e/secret.txt
+mawrid GET /api/does-not-exist
+mawrid GET /viewer/not-built.js
+mawrid GET /
+ok
+test_additive_receipt_schema_migration_preserves_existing_data (server.test_ingestion.IngestionTests.test_additive_receipt_schema_migration_preserves_existing_data) ... ok
+test_concurrent_same_measurement_commits_once (server.test_ingestion.IngestionTests.test_concurrent_same_measurement_commits_once) ... ok
+test_conflicting_content_or_session_never_reuses_id (server.test_ingestion.IngestionTests.test_conflicting_content_or_session_never_reuses_id) ... ok
+test_lost_reply_retry_keeps_one_reading_one_original_receipt (server.test_ingestion.IngestionTests.test_lost_reply_retry_keeps_one_reading_one_original_receipt) ... ok
+test_old_clock_with_new_id_is_not_a_retry (server.test_ingestion.IngestionTests.test_old_clock_with_new_id_is_not_a_retry) ... ok
+test_paired_uuid_and_explicit_four_channel_schema (server.test_ingestion.IngestionTests.test_paired_uuid_and_explicit_four_channel_schema) ... ok
+test_receipt_insert_failure_rolls_back_reading_and_alarm_together (server.test_ingestion.IngestionTests.test_receipt_insert_failure_rolls_back_reading_and_alarm_together) ... ok
+test_receipt_survives_restart_without_resuming_old_session (server.test_ingestion.IngestionTests.test_receipt_survives_restart_without_resuming_old_session) ... ok
+test_retry_of_old_session_does_not_replace_current_measurement (server.test_ingestion.IngestionTests.test_retry_of_old_session_does_not_replace_current_measurement) ... ok
+test_backwash_accounts_every_liter_and_stops_at_empty (server.test_plant.PlantTests.test_backwash_accounts_every_liter_and_stops_at_empty) ... ok
+test_each_fault_immediately_holds_for_observable_reason (server.test_plant.PlantTests.test_each_fault_immediately_holds_for_observable_reason) ... ok
+test_empty_tanks_and_overdraw_bounded (server.test_plant.PlantTests.test_empty_tanks_and_overdraw_bounded) ... ok
+test_failed_closed_valve_command_and_feedback_trip (server.test_plant.PlantTests.test_failed_closed_valve_command_and_feedback_trip) ... ok
+test_full_tank_boundary_fixture_accounts_overflow_separately (server.test_plant.PlantTests.test_full_tank_boundary_fixture_accounts_overflow_separately) ... ok
+test_hundreds_steps_matched_flows_keep_stable_stocks (server.test_plant.PlantTests.test_hundreds_steps_matched_flows_keep_stable_stocks) ... ok
+test_initial_contract_explicit_virtual_and_no_model (server.test_plant.PlantTests.test_initial_contract_explicit_virtual_and_no_model) ... ok
+test_invalid_inputs_are_atomic (server.test_plant.PlantTests.test_invalid_inputs_are_atomic) ... ok
+test_manual_hold_persists_across_fault_clear_and_mode_changes (server.test_plant.PlantTests.test_manual_hold_persists_across_fault_clear_and_mode_changes) ... ok
+test_mixed_control_sequence_conservation (server.test_plant.PlantTests.test_mixed_control_sequence_conservation) ... ok
+test_no_ai_or_threshold_override_can_open_valve (server.test_plant.PlantTests.test_no_ai_or_threshold_override_can_open_valve) ... ok
+test_one_hour_feed_recovery_reject_and_reuse (server.test_plant.PlantTests.test_one_hour_feed_recovery_reject_and_reuse) ... ok
+test_partition_invariant_inventory_and_deterministic_smooth_values (server.test_plant.PlantTests.test_partition_invariant_inventory_and_deterministic_smooth_values) ... ok
+test_power_loss_stops_both_nc_valves_and_all_pumps_in_all_modes (server.test_plant.PlantTests.test_power_loss_stops_both_nc_valves_and_all_pumps_in_all_modes) ... ok
+test_pressure_sensor_and_quality_fault_values (server.test_plant.PlantTests.test_pressure_sensor_and_quality_fault_values) ... ok
+test_reference_design_is_not_an_unimplemented_chemical_or_duty_cycle_claim (server.test_plant.PlantTests.test_reference_design_is_not_an_unimplemented_chemical_or_duty_cycle_claim) ... ok
+test_snapshot_and_zero_step_are_detached_and_read_only (server.test_plant.PlantTests.test_snapshot_and_zero_step_are_detached_and_read_only) ... ok
+test_speed_is_metadata_and_deepcopy_is_transaction_friendly (server.test_plant.PlantTests.test_speed_is_metadata_and_deepcopy_is_transaction_friendly) ... ok
+test_standby_has_no_flow_or_inventory_change (server.test_plant.PlantTests.test_standby_has_no_flow_or_inventory_change) ... ok
+test_timestamp_validation_and_timestamp_overflow_atomic (server.test_plant.PlantTests.test_timestamp_validation_and_timestamp_overflow_atomic) ... ok
+test_control_commit_failure_leaves_snapshot_unchanged (server.test_plant_app.PlantApplicationTests.test_control_commit_failure_leaves_snapshot_unchanged) ... ok
+test_control_validation_and_stuck_valve_feedback (server.test_plant_app.PlantApplicationTests.test_control_validation_and_stuck_valve_feedback) ... ok
+test_explicit_twin_source_no_model_and_read_only_get (server.test_plant_app.PlantApplicationTests.test_explicit_twin_source_no_model_and_read_only_get) ... ok
+test_failed_database_tick_does_not_publish_unsaved_time_or_volume (server.test_plant_app.PlantApplicationTests.test_failed_database_tick_does_not_publish_unsaved_time_or_volume) ... ok
+test_manual_hold_cannot_be_bypassed_by_start_controls_or_fault_clear (server.test_plant_app.PlantApplicationTests.test_manual_hold_cannot_be_bypassed_by_start_controls_or_fault_clear) ... ok
+test_pause_freezes_clock_and_fault_controls_recompute_without_volume_change (server.test_plant_app.PlantApplicationTests.test_pause_freezes_clock_and_fault_controls_recompute_without_volume_change) ... ok
+test_source_switch_clears_twin_and_controls_cannot_change_current_source (server.test_plant_app.PlantApplicationTests.test_source_switch_clears_twin_and_controls_cannot_change_current_source) ... ok
+test_tick_persists_actual_snapshot_conserved_volumes_and_export_provenance (server.test_plant_app.PlantApplicationTests.test_tick_persists_actual_snapshot_conserved_volumes_and_export_provenance) ... ok
+test_clean_copy_bootstraps_with_explicit_python_and_path_fallback (server.test_portability.LauncherTests.test_clean_copy_bootstraps_with_explicit_python_and_path_fallback) ... ok
+test_clean_packaged_copy_serves_virtual_plant_and_reports_missing_ml (server.test_portability.LauncherTests.test_clean_packaged_copy_serves_virtual_plant_and_reports_missing_ml) ... ok
+test_invalid_explicit_interpreter_is_reported_without_silent_fallback (server.test_portability.LauncherTests.test_invalid_explicit_interpreter_is_reported_without_silent_fallback) ... ok
+test_every_declared_main_font_is_served_from_packaged_client_files (server.test_portability.PackagedHTTPTests.test_every_declared_main_font_is_served_from_packaged_client_files) ... mawrid GET /styles.css
+mawrid GET /assets/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2
+mawrid GET /assets/fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2
+mawrid GET /assets/fonts/ibm-plex-sans-arabic-latin-400-normal.woff2
+mawrid GET /assets/fonts/ibm-plex-sans-arabic-latin-600-normal.woff2
+ok
+test_missing_optional_model_returns_clear_json_without_internal_paths (server.test_portability.PackagedHTTPTests.test_missing_optional_model_returns_clear_json_without_internal_paths) ... mawrid POST /api/sessions
+ok
+test_acknowledge_idempotent_without_changing_safety_data (server.test_store.StoreTests.test_acknowledge_idempotent_without_changing_safety_data) ... ok
+test_invalid_values_event_or_foreign_key_commit_nothing (server.test_store.StoreTests.test_invalid_values_event_or_foreign_key_commit_nothing) ... ok
+test_mid_batch_conflict_rolls_back_earlier_insert_and_events (server.test_store.StoreTests.test_mid_batch_conflict_rolls_back_earlier_insert_and_events) ... ok
+test_new_session_never_deletes_history_and_queries_are_bounded (server.test_store.StoreTests.test_new_session_never_deletes_history_and_queries_are_bounded) ... ok
+test_reopen_preserves_readings_events_settings_and_acknowledgement (server.test_store.StoreTests.test_reopen_preserves_readings_events_settings_and_acknowledgement) ... ok
+test_retry_is_idempotent_and_conflicting_payload_rejected (server.test_store.StoreTests.test_retry_is_idempotent_and_conflicting_payload_rejected) ... ok
+test_settings_write_validates_all_before_commit (server.test_store.StoreTests.test_settings_write_validates_all_before_commit) ... ok
+
+----------------------------------------------------------------------
+Ran 65 tests in 4.615s
+
+OK

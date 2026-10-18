@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-17T08:46:30.804314+00:00",
+  "passed": true,
+  "scope": "Synthetic transport/persistence integration only; no model or water-quality validation",
+  "fixtures": {
+    "kind": "synthetic",
+    "device_id": "fixture-edge-http-integration",
+    "clock": "Verification wall clock minus30 seconds, then increasing one-second offsets",
+    "values": {
+      "turbidity": 0.8,
+      "ph": 7.2,
+      "chlorine": 0.3,
+      "flow_lpm": 1.5
+    }
+  },
+  "isolation": {
+    "temporary_sqlite": true,
+    "loopback_ephemeral_port": true,
+    "engine": "server.test_app.FakeEngine",
+    "plant_worker_enabled": false,
+    "live_db_accessed": false,
+    "real_sensors_accessed": false,
+    "ml_bundles_loaded": false,
+    "actuation": false
+  },
+  "code_sha256_before": {
+    "mawrid-system/CONTRACT.json": "7afbc05800ce6eda4537420c0bf8694ae665e8206e961e5e417bc960eaa951c3",
+    "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+    "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+    "mawrid-system/server/main.py": "8a04474ee4ee32be178d9f4bdeca7e02b88112f582bb6b99fbf6cd301c09b331",
+    "mawrid-system/server/test_app.py": "627baf2c7868ba5eb1efabcbfc219c47449ffc17e5d22b0cd06b976900c3674a",
+    "mawrid-system/edge/core.py": "f6abc7d7af26b1e2ddacf38b6f74d772c4eaef8329374cd1a4f237ace915d31f",
+    "mawrid-system/edge/sender.py": "76b59b5214422c5124dce62e2cfde5f23acc0491b962b6152529517aa2940a4d",
+    "mawrid-system/edge/main.py": "d9b358c9387895eec43a915be2318137b5ca73bd5dfff41656bbf77af237343b",
+    "mawrid-system/scripts/verify_edge.py": "90dc7cd9055dbcf11359f473d9d613201a9cb90c4c78d15f5dc284cdda3b298b"
+  },
+  "checks": [
+    {
+      "name": "telemetry_session_created_through_real_http",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "two_fixture_rows_durably_queued",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "lost_reply_is_retry",
+      "passed": true,
+      "actual": "retry",
+      "expected": "retry"
+    },
+    {
+      "name": "only_first_row_sent_before_receipt",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "first_request_retained_without_receipt",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "dropped_reply_belongs_to_committed_measurement",
+      "passed": true,
+      "actual": "64ff3de8-f8e3-487f-854b-bf7be3c72520",
+      "expected": "64ff3de8-f8e3-487f-854b-bf7be3c72520"
+    },
+    {
+      "name": "one_server_reading_after_lost_reply",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "one_atomic_receipt_after_lost_reply",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "server_receipt_matches_reading",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "fifo_second_row_never_attempted_yet",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "persisted_first_backoff_within_bounds",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "outbox_restart_keeps_exact_request_bytes",
+      "passed": true,
+      "actual": "{\"channels\":{\"chlorine\":0.3,\"flow_lpm\":1.5,\"ph\":7.2,\"turbidity\":0.8},\"device_id\":\"fixture-edge-http-integration\",\"measurement_id\":\"64ff3de8-f8e3-487f-854b-bf7be3c72520\",\"session_id\":\"ab12ac72-ac7e-4224-ac56-a1ef2c2d0a46\",\"timestamp\":\"2026-10-17T08:46:00.828266+00:00\"}",
+      "expected": "{\"channels\":{\"chlorine\":0.3,\"flow_lpm\":1.5,\"ph\":7.2,\"turbidity\":0.8},\"device_id\":\"fixture-edge-http-integration\",\"measurement_id\":\"64ff3de8-f8e3-487f-854b-bf7be3c72520\",\"session_id\":\"ab12ac72-ac7e-4224-ac56-a1ef2c2d0a46\",\"timestamp\":\"2026-10-17T08:46:00.828266+00:00\"}"
+    },
+    {
+      "name": "restart_honors_backoff",
+      "passed": true,
+      "actual": "waiting",
+      "expected": "waiting"
+    },
+    {
+      "name": "no_network_during_backoff",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "verification_wait_bounded",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "one_retry_delivered",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "retry_reuses_exact_id_session_payload_hash",
+      "passed": true,
+      "actual": {
+        "measurement_id": "64ff3de8-f8e3-487f-854b-bf7be3c72520",
+        "session_id": "ab12ac72-ac7e-4224-ac56-a1ef2c2d0a46",
+        "payload_sha256": "60509b9faeef1cfdc853c7a0552fe68136901718931c545a2449a6c6eae079d4"
+      },
+      "expected": {
+        "measurement_id": "64ff3de8-f8e3-487f-854b-bf7be3c72520",
+        "session_id": "ab12ac72-ac7e-4224-ac56-a1ef2c2d0a46",
+        "payload_sha256": "60509b9faeef1cfdc853c7a0552fe68136901718931c545a2449a6c6eae079d4"
+      }
+    },
+    {
+      "name": "retry_receipt_is_duplicate",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "retry_keeps_original_reading_id",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "retry_adds_no_reading_receipt_or_event",
+      "passed": true,
+      "actual": {
+        "sessions": 1,
+        "readings": 1,
+        "events": 1,
+        "unacknowledgedEvents": 0,
+        "receipts": 1
+      },
+      "expected": {
+        "sessions": 1,
+        "readings": 1,
+        "events": 1,
+        "unacknowledgedEvents": 0,
+        "receipts": 1
+      }
+    },
+    {
+      "name": "second_still_pending_after_first_receipt",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "second_reading_sent_after_verified_first_receipt",
+      "passed": true,
+      "actual": "empty",
+      "expected": "empty"
+    },
+    {
+      "name": "exactly_two_readings",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "exactly_two_receipts",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "fifo_order_preserved_on_server",
+      "passed": true,
+      "actual": [
+        "64ff3de8-f8e3-487f-854b-bf7be3c72520",
+        "f95ec4c3-7189-44fa-bb12-e28b1201c94c"
+      ],
+      "expected": [
+        "64ff3de8-f8e3-487f-854b-bf7be3c72520",
+        "f95ec4c3-7189-44fa-bb12-e28b1201c94c"
+      ]
+    },
+    {
+      "name": "fixture_input_unchanged",
+      "passed": true,
+      "actual": "72c7a5e257a7c7823b402e0b59176fc7138e3d51fe2bb57af5e4464e4e62dd51",
+      "expected": "72c7a5e257a7c7823b402e0b59176fc7138e3d51fe2bb57af5e4464e4e62dd51"
+    },
+    {
+      "name": "no_inference_during_ingestion",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "server_restart_does_not_resume_session",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "historical_receipt_after_restart_accepted",
+      "passed": true,
+      "actual": "delivered",
+      "expected": "delivered"
+    },
+    {
+      "name": "historical_receipt_preserves_reading_id",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "historical_receipt_marked_duplicate",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "historical_retry_no_db_effect",
+      "passed": true,
+      "actual": {
+        "sessions": 1,
+        "readings": 2,
+        "events": 1,
+        "unacknowledgedEvents": 0,
+        "receipts": 2
+      },
+      "expected": {
+        "sessions": 1,
+        "readings": 2,
+        "events": 1,
+        "unacknowledgedEvents": 0,
+        "receipts": 2
+      }
+    },
+    {
+      "name": "historical_retry_does_not_create_current_latest",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "second_session_created",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "new_session_distinct",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "explicit_new_session_delivered",
+      "passed": true,
+      "actual": "empty",
+      "expected": "empty"
+    },
+    {
+      "name": "current_latest_is_new_session_measurement",
+      "passed": true,
+      "actual": "1c89f434-832d-4655-aa80-ddf7067e5040",
+      "expected": "1c89f434-832d-4655-aa80-ddf7067e5040"
+    },
+    {
+      "name": "old_receipt_allowed_after_session_switch",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "old_receipt_does_not_replace_current_latest",
+      "passed": true,
+      "actual": {
+        "source_id": "telemetry",
+        "timestamp": "2026-10-17T08:46:03.828266+00:00",
+        "sample_index": 0,
+        "channels": {
+          "turbidity": 0.8,
+          "ph": 7.2,
+          "chlorine": 0.3,
+          "flow_lpm": 1.5
+        },
+        "prediction": -1,
+        "reference_prediction": -1,
+        "baseline_prediction": -1,
+        "score": null,
+        "available": false,
+        "ignored_gap": false,
+        "model_version": "unavailable",
+        "device_id": "fixture-edge-http-integration",
+        "measurement_id": "1c89f434-832d-4655-aa80-ddf7067e5040",
+        "reasons": [
+          "صمام البرنامج مغلق؛ لا يوجد متحكم أمان مستقل أو عتاد متصل.",
+          "الذكاء غير متاح لمخطط قراءات الجهاز."
+        ],
+        "decision": "محجوز",
+        "id": 3,
+        "session_id": "aa40135c-bca8-410a-94f5-0e9b3e9e94ae",
+        "received_at": "2026-10-17T08:46:31.883392Z"
+      },
+      "expected": {
+        "source_id": "telemetry",
+        "timestamp": "2026-10-17T08:46:03.828266+00:00",
+        "sample_index": 0,
+        "channels": {
+          "turbidity": 0.8,
+          "ph": 7.2,
+          "chlorine": 0.3,
+          "flow_lpm": 1.5
+        },
+        "prediction": -1,
+        "reference_prediction": -1,
+        "baseline_prediction": -1,
+        "score": null,
+        "available": false,
+        "ignored_gap": false,
+        "model_version": "unavailable",
+        "device_id": "fixture-edge-http-integration",
+        "measurement_id": "1c89f434-832d-4655-aa80-ddf7067e5040",
+        "reasons": [
+          "صمام البرنامج مغلق؛ لا يوجد متحكم أمان مستقل أو عتاد متصل.",
+          "الذكاء غير متاح لمخطط قراءات الجهاز."
+        ],
+        "decision": "محجوز",
+        "id": 3,
+        "session_id": "aa40135c-bca8-410a-94f5-0e9b3e9e94ae",
+        "received_at": "2026-10-17T08:46:31.883392Z"
+      }
+    },
+    {
+      "name": "old_receipt_does_not_replace_current_telemetry_receipt",
+      "passed": true,
+      "actual": {
+        "measurement_id": "1c89f434-832d-4655-aa80-ddf7067e5040",
+        "session_id": "aa40135c-bca8-410a-94f5-0e9b3e9e94ae",
+        "reading_id": 3,
+        "duplicate": false
+      },
+      "expected": {
+        "measurement_id": "1c89f434-832d-4655-aa80-ddf7067e5040",
+        "session_id": "aa40135c-bca8-410a-94f5-0e9b3e9e94ae",
+        "reading_id": 3,
+        "duplicate": false
+      }
+    },
+    {
+      "name": "old_session_new_measurement_blocks",
+      "passed": true,
+      "actual": "blocked",
+      "expected": "blocked"
+    },
+    {
+      "name": "exact_inactive_session_code",
+      "passed": true,
+      "actual": "session_not_active",
+      "expected": "session_not_active"
+    },
+    {
+      "name": "blocked_row_keeps_original_session",
+      "passed": true,
+      "actual": "ab12ac72-ac7e-4224-ac56-a1ef2c2d0a46",
+      "expected": "ab12ac72-ac7e-4224-ac56-a1ef2c2d0a46"
+    },
+    {
+      "name": "blocked_row_keeps_no_false_receipt",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "inactive_request_no_db_effect",
+      "passed": true,
+      "actual": {
+        "sessions": 2,
+        "readings": 3,
+        "events": 2,
+        "unacknowledgedEvents": 0,
+        "receipts": 3
+      },
+      "expected": {
+        "sessions": 2,
+        "readings": 3,
+        "events": 2,
+        "unacknowledgedEvents": 0,
+        "receipts": 3
+      }
+    },
+    {
+      "name": "blocked_state_survives_collector_restart",
+      "passed": true,
+      "actual": "blocked",
+      "expected": "blocked"
+    },
+    {
+      "name": "blocked_row_not_resent_or_rebound",
+      "passed": true,
+      "actual": 4,
+      "expected": 4
+    },
+    {
+      "name": "session_switch_remains_explicit",
+      "passed": true,
+      "actual": "aa40135c-bca8-410a-94f5-0e9b3e9e94ae",
+      "expected": "aa40135c-bca8-410a-94f5-0e9b3e9e94ae"
+    },
+    {
+      "name": "current_latest_preserved_after_rejection",
+      "passed": true,
+      "actual": {
+        "source_id": "telemetry",
+        "timestamp": "2026-10-17T08:46:03.828266+00:00",
+        "sample_index": 0,
+        "channels": {
+          "turbidity": 0.8,
+          "ph": 7.2,
+          "chlorine": 0.3,
+          "flow_lpm": 1.5
+        },
+        "prediction": -1,
+        "reference_prediction": -1,
+        "baseline_prediction": -1,
+        "score": null,
+        "available": false,
+        "ignored_gap": false,
+        "model_version": "unavailable",
+        "device_id": "fixture-edge-http-integration",
+        "measurement_id": "1c89f434-832d-4655-aa80-ddf7067e5040",
+        "reasons": [
+          "صمام البرنامج مغلق؛ لا يوجد متحكم أمان مستقل أو عتاد متصل.",
+          "الذكاء غير متاح لمخطط قراءات الجهاز."
+        ],
+        "decision": "محجوز",
+        "id": 3,
+        "session_id": "aa40135c-bca8-410a-94f5-0e9b3e9e94ae",
+        "received_at": "2026-10-17T08:46:31.883392Z"
+      },
+      "expected": {
+        "source_id": "telemetry",
+        "timestamp": "2026-10-17T08:46:03.828266+00:00",
+        "sample_index": 0,
+        "channels": {
+          "turbidity": 0.8,
+          "ph": 7.2,
+          "chlorine": 0.3,
+          "flow_lpm": 1.5
+        },
+        "prediction": -1,
+        "reference_prediction": -1,
+        "baseline_prediction": -1,
+        "score": null,
+        "available": false,
+        "ignored_gap": false,
+        "model_version": "unavailable",
+        "device_id": "fixture-edge-http-integration",
+        "measurement_id": "1c89f434-832d-4655-aa80-ddf7067e5040",
+        "reasons": [
+          "صمام البرنامج مغلق؛ لا يوجد متحكم أمان مستقل أو عتاد متصل.",
+          "الذكاء غير متاح لمخطط قراءات الجهاز."
+        ],
+        "decision": "محجوز",
+        "id": 3,
+        "session_id": "aa40135c-bca8-410a-94f5-0e9b3e9e94ae",
+        "received_at": "2026-10-17T08:46:31.883392Z"
+      }
+    },
+    {
+      "name": "hardware_not_connected",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "software_valve_stays_closed",
+      "passed": true,
+      "actual": "closed",
+      "expected": "closed"
+    },
+    {
+      "name": "telemetry_model_unavailable",
+      "passed": true,
+      "actual": "unavailable",
+      "expected": "unavailable"
+    },
+    {
+      "name": "no_inference_after_restart",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "temporary_fixture_databases_removed",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "relevant_code_unchanged_during_verification",
+      "passed": true,
+      "actual": {
+        "mawrid-system/CONTRACT.json": "7afbc05800ce6eda4537420c0bf8694ae665e8206e961e5e417bc960eaa951c3",
+        "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+        "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+        "mawrid-system/server/main.py": "8a04474ee4ee32be178d9f4bdeca7e02b88112f582bb6b99fbf6cd301c09b331",
+        "mawrid-system/server/test_app.py": "627baf2c7868ba5eb1efabcbfc219c47449ffc17e5d22b0cd06b976900c3674a",
+        "mawrid-system/edge/core.py": "f6abc7d7af26b1e2ddacf38b6f74d772c4eaef8329374cd1a4f237ace915d31f",
+        "mawrid-system/edge/sender.py": "76b59b5214422c5124dce62e2cfde5f23acc0491b962b6152529517aa2940a4d",
+        "mawrid-system/edge/main.py": "d9b358c9387895eec43a915be2318137b5ca73bd5dfff41656bbf77af237343b",
+        "mawrid-system/scripts/verify_edge.py": "90dc7cd9055dbcf11359f473d9d613201a9cb90c4c78d15f5dc284cdda3b298b"
+      },
+      "expected": {
+        "mawrid-system/CONTRACT.json": "7afbc05800ce6eda4537420c0bf8694ae665e8206e961e5e417bc960eaa951c3",
+        "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+        "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+        "mawrid-system/server/main.py": "8a04474ee4ee32be178d9f4bdeca7e02b88112f582bb6b99fbf6cd301c09b331",
+        "mawrid-system/server/test_app.py": "627baf2c7868ba5eb1efabcbfc219c47449ffc17e5d22b0cd06b976900c3674a",
+        "mawrid-system/edge/core.py": "f6abc7d7af26b1e2ddacf38b6f74d772c4eaef8329374cd1a4f237ace915d31f",
+        "mawrid-system/edge/sender.py": "76b59b5214422c5124dce62e2cfde5f23acc0491b962b6152529517aa2940a4d",
+        "mawrid-system/edge/main.py": "d9b358c9387895eec43a915be2318137b5ca73bd5dfff41656bbf77af237343b",
+        "mawrid-system/scripts/verify_edge.py": "90dc7cd9055dbcf11359f473d9d613201a9cb90c4c78d15f5dc284cdda3b298b"
+      }
+    }
+  ],
+  "limitations": [
+    "This verifier exercises synthetic input over the real local HTTP application; it is not a hardware test.",
+    "Durability starts at successful SQLite commit; unread/uncommitted stdin bytes are outside this guarantee.",
+    "No guarantee against filesystem corruption or storage devices that violate fsync is established."
+  ],
+  "summary": {
+    "synthetic_rows_delivered": 3,
+    "persisted_receipts": 3,
+    "old_session_delivered_rows": 2,
+    "new_session_delivered_rows": 1,
+    "retained_blocked_rows": 1,
+    "original_reading_id_after_lost_reply_and_server_restart": 1
+  },
+  "edge_review": {
+    "scope": "Read-only review during integration; not a comprehensive security audit",
+    "blocking_defects_found": [],
+    "observations": [
+      "Confirmed durable FIFO, stable IDs, verified receipts, explicit sessions and fail-stop409 on this HTTP path.",
+      "File checkpoints are keyed by resolved path and session, not a globally unique source file identity; copies or renamed files imported again receive new IDs.",
+      "Restreaming stdin is a new import, not automatic deduplication of identical sensor content.",
+      "Blocked rows have no automatic repair/rebind command and remain available for manual diagnosis."
+    ]
+  },
+  "code_sha256_after": {
+    "mawrid-system/CONTRACT.json": "7afbc05800ce6eda4537420c0bf8694ae665e8206e961e5e417bc960eaa951c3",
+    "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+    "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+    "mawrid-system/server/main.py": "8a04474ee4ee32be178d9f4bdeca7e02b88112f582bb6b99fbf6cd301c09b331",
+    "mawrid-system/server/test_app.py": "627baf2c7868ba5eb1efabcbfc219c47449ffc17e5d22b0cd06b976900c3674a",
+    "mawrid-system/edge/core.py": "f6abc7d7af26b1e2ddacf38b6f74d772c4eaef8329374cd1a4f237ace915d31f",
+    "mawrid-system/edge/sender.py": "76b59b5214422c5124dce62e2cfde5f23acc0491b962b6152529517aa2940a4d",
+    "mawrid-system/edge/main.py": "d9b358c9387895eec43a915be2318137b5ca73bd5dfff41656bbf77af237343b",
+    "mawrid-system/scripts/verify_edge.py": "90dc7cd9055dbcf11359f473d9d613201a9cb90c4c78d15f5dc284cdda3b298b"
+  },
+  "elapsed_seconds": 1.0990432499966118,
+  "checks_passed": 55,
+  "checks_total": 55
+}

@@ -1,0 +1,31 @@
+{
+  "version": "v15_joint_reference_bounded_recovery_protocol_v1",
+  "scope": "One prospective policy-only development experiment on the 19 previously disclosed periods. No model fit, no fresh external validation, no app/3D/hardware promotion.",
+  "hypothesis": "The evaluated objective differs from V10 calibration. A V8 anchor with bounded suppression and complementary V6 pulse recovery can be selected against the actual joint V6/V8 objective, using frozen V14 confidence scores.",
+  "frozen_inputs": "Reuse exact completed independently audited V8 and V14 calibration/test score artifacts. V14 reference column is V6. Hash metadata, freezes, models and score files before numerical input access. Models are not deserialized or refitted in this policy experiment.",
+  "cadence_seconds": 60,
+  "maximum_confirmation_seconds": 120,
+  "anchor": "V8 output. With low=None preserve identity. Otherwise exact frozen delayed._confirmed_seed with deadline2: release on finite score>=low, unknown score immediately, or continuous V8 pulse age2; latch to pulse end. No anchor post-clear pending release.",
+  "recovery": "Off or a finite threshold. Eligible trigger is original V6 alarm start preceded by V6=0, with V8=0 on that start. No censored triggers, mid-pulse retriggers or synthetic disagreement starts. Seek first finite V14 score>=recovery threshold at offsets0,1,2 from original trigger; cancel irreversibly on either reference unavailable. If hit while original V6 pulse continues, latch recovery on rows of that same V6 pulse only where V8=0. If hit after V6 pulse clears, release once on that row only. If a new V6 pulse starts before pending hit, cancel old pending to avoid ownership transfer. Final availability equals V8; recovery never fills unknown rows. No deadline force without confidence on recovery. No backdating.",
+  "early_grid": {
+    "quantiles": [0, 0.25, 0.5, 0.75, 0.9, 0.95, 1],
+    "method": "float64 linear; sorted unique finite values",
+    "anchor_population": "finite frozen V14 scores on V8 alarm rows of first2 calibration blocks only",
+    "recovery_population": "finite frozen V14 scores on V6=1,V8=0 rows of first2 calibration blocks only",
+    "anchor_extra_choice": "None identity",
+    "recovery_extra_choice": "None disabled",
+    "maximum_trials": 64,
+    "deadline_samples": 2
+  },
+  "selection": "First2 past blocks only choose one policy. Rank feasible candidates by more final confirmed events, fewer false fragments, fewer false minutes, more true-positive rows, fewer active thresholds, smaller anchor threshold, larger recovery threshold. Identity V8 is a trial, not an assumed successful union policy.",
+  "joint_final_constraints": "On concatenated original axis and every individual block: retain exact confirmed IDs of V6 AND V8, actual paired extra delay<=120s against each, identical availability to each, FP fragments and FP minutes<=each. Also preserve each reference positive pulse/positive-segment intersection by an actual final alarm within120s of its first positive row in the same original positive segment. Censored pulse fragments remain obligations, never extra primary event evidence. No assertion that OR preserves confirmed starts.",
+  "pure_seed_change": "Explicit departure from V10: final merged output, rather than pure seed alone, must preserve events/pulses. Pure V8 anchor may lose events recovered by complementary V6 evidence. Pure seed still must preserve V8 availability and not increase FP fragments/minutes in any block or pool. This is an experimental final-output constraint, not a field safety claim.",
+  "recovery_support": "If active, final confirmed primary IDs minus pure anchor confirmed IDs must number>=2 with their actual FIRST final confirmed alarm owned by>=2 blocks on the uncompressed pool axis. This means recovery vs suppressed seed, not necessarily novel vs V8. Recovery may add ZERO known-normal rows vs pure seed globally and in every block. Always evaluate actual final merged transitions, not branch counts or added-positive coverage.",
+  "exposure": "Keep original minima:>=5 original known-onset primary events in>=2 blocks;>=2 blocks each with>=1440 known-normal available minutes and>=5760 combined qualified minutes. Unknown labels excluded without compressing acquisition axis.",
+  "certification": "Freeze early choice. Later2 blocks can accept/reject only; all4 original-axis constraints and recovery support veto only. Never select an alternate after later veto. V6 and V8 already used all4 calibration blocks in their own construction: incremental certificate is conditional on frozen experts, not independent pipeline validation.",
+  "unsupported": "If early feasible set absent, exposure insufficient, later certificate fails or all4 veto fails, output unchanged frozen V8 with explicit accepted=false/status. Record its actual joint assessment; fallback does not imply retained V6 union. No invented calibrated outcome.",
+  "execution": "All19 calibration choices and hashes frozen before opening ANY outer test numeric arrays. One fixed pass of all19 tests after freeze. Independent scalar replay and metrics audit; existing sensor/model audit evidence inherited explicitly, no new sensor or streaming parity claim. Minimum1GiB disk reserve; no duplication of raw files/models.",
+  "acceptance": "Unchanged original strong IF/V6 gates and separate V8 gates on all19 periods plus both contiguous source pools: exact confirmed IDs, availability, paired delay<=120s, no FP-fragment or duration increase. Also retain every exact historical V8 through V14 ID. Require strictly more events vs V6/IF and fewer false fragments, each gain in>=2periods. V8 requires strict pooled FP reduction in>=2periods. All cases/audit complete; otherwise no pass.",
+  "data_disclosure": "All sources and all19 outcomes were previously disclosed and informed this development hypothesis. Temporal train/calibration/test ordering does not restore fresh holdout status. No threshold search, model choice or repairs after V15 test values are opened.",
+  "no_external_services_or_publication": true
+}

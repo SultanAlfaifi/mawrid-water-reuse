@@ -4,13 +4,17 @@
 
 > **Status:** `DESIGN` / `TARGET` validation plan. This is not a completed experimental protocol or a results report. There are no documented MAWRID water-treatment results, confirmed university partner, laboratory commitment, or field-use approval. Scope and evidence labels follow the [project brief](project-brief.md) and [evidence register](evidence-register.md).
 
-The first source is one separately collected university ablution drain. The proposed use is a controlled ornamental-plant zone with drip irrigation, after source/use risk review and required approvals. No field irrigation is part of the initial bench study.
+The intended source is separately collected ablution and washbasin water, characterized by connected fixtures and cleaning practices. The proposed use is a controlled ornamental-plant zone with drip irrigation, after source/use review and required approvals. No field irrigation is part of the initial bench study, and no particular university or site is confirmed.
+
+The current base train uses **commercial activated carbon**. Date-palm-residue carbon is a future material study, compared under equivalent conditions before any replacement. This current scope supersedes the earlier requirement to include palm carbon in the base train. A failed material study does not authorize irrigation or weaken the independently validated treatment and protection requirements.
+
+The station design basis is **1,000 L/hour and 15 m³/day at 15 operating hours**, with two 5 m³ tanks. These are unvalidated design values, not a bench-test size, measured supply or guaranteed output. No fixed 80% recovery or continuous RO reject is assumed. The earlier 100 L/day bench-cost example and 20 m³/day study are historical planning examples. Freeze actual test volumes, operating conditions and acceptance criteria independently before testing.
 
 ## 1. Experimental questions
 
 1. How variable is the selected source water over users, peak periods, cleaning events, and storage times?
 2. What does each treatment barrier contribute?
-3. Is adsorption needed for a selected dissolved constituent? If so, does date-palm biochar add value against the simpler train and commercial activated carbon?
+3. Does the commercial-carbon base train meet its target-specific requirements, and can a later date-palm-carbon candidate match or improve that performance without unacceptable leaching or operating burden?
 4. How many bed volumes are treated before defined breakthrough?
 5. Can online measurements provide useful advance warning of that breakthrough?
 6. Does disinfection achieve the selected microbial target under representative worst-case conditions?
@@ -34,25 +38,26 @@ Collect time-stamped samples from the proposed pilot source across:
 
 Record fixture connections, weather where relevant, flow, temperature, sampling method, holding time, and analytical method.
 
-Measure irrigation demand and its existing supply source over comparable periods. Additional handwashing connections require a separate source characterization, risk review, and update to the project brief before inclusion; they are outside the first-version test matrix.
+Measure irrigation demand and its existing supply source over comparable periods. Characterize each proposed washbasin connection and cleaning/contamination route separately; belonging to the declared source category does not establish equivalent water quality or approve every connection.
 
 ## 3. Phase B: media screening
 
 ### Test matrix
 
-Characterization first determines whether an adsorption study is needed. If it is not, compare and validate the simpler treatment train without claiming a biochar benefit. The following matrix is a candidate material study, not a requirement to build every variant or evidence that any has been tested.
+Characterization defines the adsorption need, target constituent and test conditions. The current base train uses commercial activated carbon. The following arms support a future palm-material comparison; they are not evidence that a material or full train has been tested. Select relevant arms and freeze their conditions before data collection.
 
 | ID | Treatment | Purpose |
 |---|---|---|
 | A | Untreated source water | Influent baseline |
-| B | Sand or multimedia only | Particulate-removal control |
-| C | Raw date-palm biochar only | Adsorption and leaching screen |
-| D | Sand + raw date-palm biochar | Combined untreated-media train |
-| E | Sand + activated date-palm biochar | Candidate optimized train |
-| F | Sand + commercial activated carbon | Industry benchmark |
-| G | Full train + disinfection | End-to-end validation candidate |
+| B | Sand or multimedia only | No-carbon particulate-removal control |
+| C | Raw date-palm biochar only | Future adsorption/leaching screen |
+| D | Sand + raw date-palm biochar | Future untreated-material candidate |
+| E | Sand + activated date-palm biochar | Future optimized-material candidate |
+| F | Sand + commercial activated carbon | Base-medium benchmark |
+| G | Full commercial-carbon train + disinfection | Current end-to-end validation candidate |
+| H | Full qualified palm-carbon train + equivalent disinfection | Later replacement candidate, only after material qualification |
 
-At least one blank and a no-biochar control are required. Replicate counts and sample size will be declared before testing.
+Include blanks and a no-biochar control in material screening. Declare sample size and independent replicates before testing. Apply equivalent disinfection and hydraulic conditions to relevant full-train comparisons. Passing one arm does not pass another; no material test alone authorizes irrigation. The experimental side column and design return branch are not active experiments in the digital twin.
 
 ## 4. Phase C: fixed-bed breakthrough
 
@@ -102,7 +107,7 @@ Candidate inputs include:
 - Media batch and preparation conditions.
 - Laboratory target-constituent measurements.
 
-Transparent operating and maintenance rules come first. Predictive analytics are a later study after relevant independent runs exist. A more complex model must be evaluated prospectively on held-out complete exhaustion runs and compared against the rule baseline. Prediction cannot open or override the independent outlet controller.
+Transparent operating and maintenance rules come first. The current public-data anomaly-detection research is described in the [model card](data-and-model-card.md); it is not a trained carbon-life model or field qualification. Predictive media-life analytics are a later study after relevant independent runs exist. A more complex model must be evaluated prospectively on held-out complete exhaustion runs and compared against the rule baseline. Prediction cannot open or override the independent outlet controller.
 
 ### Provisional later-study targets — not achieved results
 
@@ -170,8 +175,8 @@ Proceed from bench work to a site pilot only when:
 
 - The selected treatment train meets all predeclared bench acceptance criteria.
 - The disinfection barrier is validated for the chosen end use.
-- If biochar is included, its leaching and residuals risks are characterized.
-- If adsorption is omitted, the validated simpler train still meets the defined source/use criteria; no biochar performance claim is made.
+- The commercial-carbon base train meets predeclared treatment, hydraulics, service-life and maintenance criteria.
+- Any later palm-carbon replacement passes its own material-performance, leaching, durability and lifecycle criteria under equivalent conditions; results remain separate from the base train.
 - Fail-safe fault tests pass.
 - Plumbing and cross-connection controls are reviewed by qualified professionals.
 - Required Saudi regulatory and site approvals are identified and obtained.

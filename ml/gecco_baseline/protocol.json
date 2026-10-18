@@ -1,0 +1,59 @@
+{
+  "experiment": "mawrid-gecco-baseline-v1",
+  "status": "predeclared before model fitting and held-out scoring",
+  "source_sha256": "c41221f3045696b75b79374f4c41c63f6c988e1df03b1dedcdbf910d44ea71cd",
+  "seed": 20261016,
+  "split": {
+    "order": "original consecutive row IDs; do not sort local wall-clock timestamps",
+    "train_fraction": 0.6,
+    "validation_end_fraction": 0.8,
+    "gap_rows_after_each_boundary": 30,
+    "reset_feature_history_at_each_split": true
+  },
+  "features": {
+    "channels": ["Tp", "Cl", "pH", "Redox", "Leit", "Trueb", "Cl_2", "Fm", "Fm_2"],
+    "window_minutes": 15,
+    "groups": ["current_value", "absolute_one_step_change", "deviation_from_trailing_mean", "trailing_standard_deviation"],
+    "trailing_window_includes_current": true,
+    "scaling": "none; Isolation Forest splits each feature independently",
+    "missing_policy": "no imputation; require all nine channels valid throughout the 15-row feature window",
+    "fit_policy": "only eligible training windows with all 15 original EVENT labels false",
+    "label_is_never_a_feature": true
+  },
+  "model": {
+    "name": "IsolationForest",
+    "n_estimators": 200,
+    "max_samples": 256,
+    "contamination": "auto",
+    "n_jobs": 1
+  },
+  "threshold_selection": {
+    "source": "validation only",
+    "objective": "maximize unadjusted point-level F1 among feasible candidates",
+    "max_false_positive_runs_per_eligible_normal_day": 1.0,
+    "max_normal_time_under_alarm": 0.01,
+    "tie_break": "fewer false-positive minutes, then higher threshold",
+    "candidates": "validation score quantiles: 0, 0.5, 0.75; 0.80..0.99 (191 equally spaced); 0.99..1 (201 equally spaced); next float above maximum",
+    "prediction": "anomaly_score >= frozen_threshold; no smoothing, debounce, or point adjustment",
+    "targets_are_provisional": true
+  },
+  "evaluation": {
+    "point_labels": "original current-row EVENT, never expanded over feature windows",
+    "unavailable_prediction": -1,
+    "point_metrics": "eligible rows only, with coverage and unavailable counts reported separately",
+    "event_definition": "contiguous TRUE labels in acquisition order",
+    "false_alarm_definition": "contiguous predicted-positive minutes with original EVENT false, including normal tails",
+    "normal_day_denominator": "eligible original-normal minutes / 1440",
+    "event_coverage": "any predicted positive inside event; all events retained, including unavailable events",
+    "new_event_detection": "a new alarm run starts inside the event; report separately from coverage",
+    "delay_units": "nominal minutes, among covered/detected events only",
+    "test_policy": "score only after saving model and threshold lock; no test-guided tuning"
+  },
+  "scope": {
+    "no_3d_integration": true,
+    "no_field_safety_claim": true,
+    "no_five_fault_classification_claim": true,
+    "no_raspberry_pi_benchmark_claim": true,
+    "dataset_limit": "drinking-water benchmark with binary events, including simulated challenge events; Cl and Cl_2 are chlorine dioxide, not free residual chlorine"
+  }
+}

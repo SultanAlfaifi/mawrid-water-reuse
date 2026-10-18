@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-17T10:50:15.641408+00:00",
+  "status": "metadata_followup_complete_not_qualified_for_current_labeled_evaluation",
+  "decision_ar": "لم يثبت التوثيق العام الذي أمكن التحقق منه وجود وسوم دقيقة أو فترات طبيعية معلومة؛ لذلك لا يصلح المصدر الآن لاختبار شرط تأخير 120 ثانية أو حساب الإنذارات الكاذبة على فترات مؤكدة الطبيعية.",
+  "decision_scope": "Not qualified under the current evaluation contract. This is not proof that the authors have no finer annotations, nor rejection for every research purpose.",
+  "source": {
+    "name": "Water Pump Dataset for a Water Supply System",
+    "record": "https://zenodo.org/records/13808085",
+    "doi": "https://doi.org/10.5281/zenodo.13808085",
+    "metadata_api": "https://zenodo.org/api/records/13808085",
+    "readme": "https://zenodo.org/records/13808085/files/Water%20Pump%20Dataset%20Decription.md?download=1",
+    "paper_doi": "https://doi.org/10.1145/3671127.3698790",
+    "official_author_institution_publication_index": "https://illinois-arcs.edu.sg/publications-tscp-dc/",
+    "record_updated": "2024-09-21T11:01:58.806136+00:00",
+    "license": {
+      "id": "cc-by-sa-4.0",
+      "evidence_field": "metadata.license.id in official Zenodo API",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "access_right": "open",
+    "domain": "Real university water supply pumps and tanks, including potable and non-potable systems. Hydraulic/equipment monitoring, not chemical water-quality fault discrimination.",
+    "collection_span_documented": "July2023 through July2024",
+    "actual_row_endpoints_or_continuity_verified": false,
+    "inventory": {
+      "total_bytes_exact_from_api": 1573019292,
+      "files_total": 49,
+      "csv_files": 48,
+      "documentation_files": 1,
+      "description_display_size": "13.5kB",
+      "description_publisher_md5": "349d98aa8e1eaf062d3268f3a91ba6ce",
+      "pressure_individual_display_sizes_MB": [
+        30.9,
+        31.0,
+        30.9,
+        30.9,
+        30.9,
+        30.9
+      ],
+      "tank_level_individual_display_sizes_MB": [
+        32.1,
+        33.3
+      ],
+      "example_pressure_member": "Pressure Sensor - Potable Incoming Pump 1.csv",
+      "example_pressure_publisher_md5": "bf53ee4accff41eb70e192fa19c4a943",
+      "large_download_action": "None; current disk budget and absent frozen protocol preclude acquisition in this task",
+      "description_size_bytes": 13467
+    },
+    "schema_from_previously_read_documentation": {
+      "timestamp": "Time; DD/MM/YYYY HH:mm:ss",
+      "pressure": "Pressure; bar; six separate incoming/outgoing pump CSVs",
+      "tank_level": "Water Level (mm); two tank CSVs",
+      "vibration": "Speed (mm/s), Displacement (micrometres), Temperature (degrees Celsius), separated by pump/axis",
+      "electrical": "Power P1/P2/P3 (W), Current I1/I2/I3 (A), cumulative Energy Em1/Em2/Em3 (kWh)"
+    },
+    "cadence_seconds_documented": 60,
+    "cadence_scope": "Sensor aggregation only; does not establish label resolution.",
+    "upstream_processing": "Publisher describes per-minute mean level, pressure, vibration, power and current; energy is cumulative. Minute boundary convention, original sample timing and upstream gap handling are unverified."
+  },
+  "questions": {
+    "machine_readable_minute_labels": {
+      "established": false,
+      "evidence": "Current official API lists 48 named sensor CSV files and one Markdown document. No separate annotation/label/event file is listed. Previously disclosed schema describes Time and sensor measurements, not a label field.",
+      "limits": "No CSV header or row was requested. File names and documented schemas alone cannot rule out undocumented content.",
+      "sources": [
+        "https://zenodo.org/api/records/13808085",
+        "https://zenodo.org/records/13808085/files/Water%20Pump%20Dataset%20Decription.md?download=1"
+      ]
+    },
+    "precise_incident_onset_and_end": {
+      "established": false,
+      "evidence": "The already exposed beginning of the publisher Additional Information table gives calendar dates/date ranges. No authoritative minute/second start/end annotation source was identified in the inspected metadata.",
+      "limits": "The remainder of the event table was not read. Day-only timing is established for the exposed snippet, not asserted for every possible annotation.",
+      "sources": [
+        "https://zenodo.org/records/13808085/files/Water%20Pump%20Dataset%20Decription.md?download=1",
+        "https://zenodo.org/records/13808085"
+      ]
+    },
+    "explicit_known_normal_coverage": {
+      "established": false,
+      "evidence": "The inspected public metadata and previously read schema do not establish exhaustive normal intervals or a rule that all unlisted times are normal.",
+      "consequence": "Do not turn the complement of a maintenance/fault diary into negative labels. False-positive exposure and counts are not defensible until normal coverage is documented.",
+      "sources": [
+        "https://zenodo.org/records/13808085",
+        "https://zenodo.org/records/13808085/files/Water%20Pump%20Dataset%20Decription.md?download=1"
+      ]
+    },
+    "event_semantics": {
+      "established_partially": true,
+      "evidence": "Publisher describes three event/fault types; the previously exposed snippet includes tank-washing maintenance and a PLC/pump-trigger hardware fault.",
+      "consequence": "These are hydraulic/equipment-operation annotations, not established chemical water-quality contamination labels; maintenance must remain a separate semantic category.",
+      "sources": [
+        "https://zenodo.org/records/13808085",
+        "https://zenodo.org/records/13808085/files/Water%20Pump%20Dataset%20Decription.md?download=1"
+      ]
+    }
+  },
+  "current_gate_assessment": {
+    "usable_for_unchanged_120_second_delay_gate": false,
+    "usable_for_known_normal_false_positive_gate": false,
+    "reason": "Minute-averaged observations do not supply minute-resolved event onset, and missing event records do not establish normality.",
+    "no_inferred_onsets_from_sensor_changes": true,
+    "no_day_schedule_expansion_to_minute_truth": true,
+    "no_normal_labels_imputed_from_missing_annotations": true,
+    "model_parameters_or_thresholds_proposed": false,
+    "source_or_periods_selected_from_outcomes": false
+  },
+  "one_useful_next_step": {
+    "action": "Obtain an official public annotation-and-coverage specification from the data owners before acquiring observations or preregistering a fresh test.",
+    "minimum_metadata_deliverable": [
+      "Machine-readable schema for incident start/end timestamps with timezone and timing uncertainty",
+      "Event taxonomy separating maintenance, operating changes and faults",
+      "Explicit intervals of verified normal coverage and unobserved/unknown status",
+      "Clock alignment and per-minute aggregation boundary convention"
+    ],
+    "success_criterion": "A documented timestamp/coverage contract supports the target delay and false-alarm semantics without inferring truth from sensor values.",
+    "contact_sent": false,
+    "future_acquisition_and_protocol": "Only after qualification; keep published date exposure in any preregistration and disclose the hydraulic-domain scope."
+  },
+  "evidence_chain": {
+    "prior_review": "output/ml/gecco-v13-source-search/review.json",
+    "prior_review_sha256": "0b958cef8e75d6314401038baddb76fbbb65623440c02f9c6ecab0df732331a3",
+    "current_api_response_bytes": 19416,
+    "current_api_response_sha256": "b5900e4e6d2f793a36f7352466f3f108d63d29db70ac1f69e4bf9c1c9c8e24ac",
+    "api_response_persisted": false,
+    "current_readme_publisher_md5": "349d98aa8e1eaf062d3268f3a91ba6ce",
+    "readme_md5_matches_prior_inventory": true,
+    "checksum_limit": "Publisher inventory checksum equality supports unchanged documentation identity; this follow-up did not download and independently hash the complete README.",
+    "primary_pages_read": [
+      "https://zenodo.org/records/13808085",
+      "https://zenodo.org/api/records/13808085",
+      "https://illinois-arcs.edu.sg/publications-tscp-dc/"
+    ],
+    "search_queries_count": 4,
+    "search_scope": "Exact dataset/record and label/annotation/normal terms; no broad new-source loop.",
+    "paper_access": "Publisher DOI returned HTTP403. The institution index confirms the paper and offers a PDF; the PDF was not opened or downloaded to avoid plots/incident-detail exposure.",
+    "readme_prefix_attempt": "A bounded streaming prefix request intended to stop before Additional Information failed TLS certificate verification before content. No certificate verification bypass was attempted; existing documented schema plus current publisher MD5 were used."
+  },
+  "exposure_log": {
+    "prior_exposure_preserved": [
+      {
+        "action": "Open university pump13.5kB publisher description with web tool",
+        "url": "https://zenodo.org/records/13808085/files/Water%20Pump%20Dataset%20Decription.md?download=1",
+        "unplanned_published_schedule_exposure": true,
+        "exposed_scope": "Web response automatically included description lines0–245: schema/cadence plus the beginning of Additional Information table, lines244–245. This revealed the tank-washing date span2023-08-31 through2023-09-06 and a list of calendar dates for PLC-trigger faults in August–October2023. No later table rows were requested or inspected. No measurement CSV or annotation array was opened.",
+        "action_after_discovery": "Stopped document inspection and immediately disclosed exposure to root. This source is NOT described as wholly label-unseen; no model parameters, thresholds, cohort selection or trials were derived from these dates.",
+        "scope_of_no_rows_claim": "No measured observations or row-label arrays; the published event-schedule snippet above was exposed and is explicitly excluded from any zero-label-exposure assertion."
+      }
+    ],
+    "this_followup": "Read official record/file inventory/license/checksums, institution publication title/authors/DOI, and limited search snippets. Re-read the prior local review. No additional incident dates, measured observations, row annotation arrays, plots or model contents were opened.",
+    "sensor_csv_requested": false,
+    "row_annotations_requested": false,
+    "plots_or_models_requested": false,
+    "new_source_values_parsed": false,
+    "wholly_label_unseen_claim_permitted": false,
+    "why_not_wholly_unseen": "The prior published calendar-day schedule snippet was exposed, even though no measured row or row-label array has been read."
+  },
+  "workspace_scope": {
+    "only_new_file_written": "output/ml/gecco-v14-source-qualification/review.json",
+    "prior_source_files_changed": false,
+    "v14_algorithm_protocol_results_changed": false,
+    "training_or_audit_launched": false,
+    "partial_v14_results_read": false,
+    "large_downloads": false,
+    "metadata_budget_bytes": 20971520,
+    "download_accounting": "Direct API body was 19,416 bytes. Web metadata page transport bytes are not exposed by the web tool. No large/data/PDF download was requested."
+  },
+  "no_readiness_or_performance_claim": true
+}

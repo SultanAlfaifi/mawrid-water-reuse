@@ -1,0 +1,898 @@
+{
+  "frozen_at_utc": "2026-10-16T09:29:47.508910+00:00",
+  "configuration": {
+    "method": "support_q50",
+    "selected_using": "13 already disclosed GECCO periods; q50 retains73/104 baseline events, FP236->228. q95 loses10 events and is rejected.",
+    "environment": {
+      "python": "3.12.1",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "packages": {
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.1",
+        "joblib": "1.6.0",
+        "threadpoolctl": "3.7.0"
+      }
+    },
+    "source_doi": "10.25678/00023Y",
+    "sample_seconds": 900,
+    "gap_samples": 8,
+    "gap_minutes": 120,
+    "geometry": "Same k=4..9 expanding-decile local fit/cal/test geometry, applied to each actual phase grid length with its original absolute relative-time slots. No cross-phase or cross-pond pooling for fitting.",
+    "local_refit": "Identical fixed method refits only on each local past prefix; this is not zero-shot transfer of GECCO weights.",
+    "features": [
+      "Chlorophyll_RFU",
+      "BGAPC_RFU",
+      "ODO_sat",
+      "ODO_mgL",
+      "pH",
+      "fDOM_RFU",
+      "SpCond_uScm",
+      "Temp_C"
+    ],
+    "lookbacks_samples": [
+      15,
+      60
+    ],
+    "lookbacks_minutes": [
+      225,
+      900
+    ],
+    "labels": "Original observed conductivity finite and expert-cleaned conductivity missing; other anomaly types unlabelled.",
+    "missing": "Original missing target becomes all-channel unavailable. Inserted grid slots are unavailable; never interpolated. Original event IDs survive time gaps; a gap cannot confirm0->1.",
+    "baseline": "Original200-tree IF with cadence-corrected original threshold grid/F1 ranking and1 false run/day,1% normal-alarm-time calibration constraints.",
+    "baseline_trial_event_diagnostics": "Legacy baseline trial event counts use the full grid and may split an event at an inserted gap; only point F1 and false-alarm quantities affect baseline selection. Candidate calibration and all reported event results use original observed identities.",
+    "no_calibration_evidence": "If no finite baseline calibration score or no normal exposure, use finite no-alarm threshold1.0000000000000002 (IF score is at most1), report unqualified; such periods cannot support release.",
+    "candidate_calibration": "Existing default minimum1 normal day/block,2 observed blocks,4 normal days total,5 reference events across2 blocks; instant/2of3/3of5; preserve every reference event ID and normal exposure. Unknown support retains original IF.",
+    "primary_acceptance": "All312 periods preserve every baseline event identity and availability with no increase in false-run rate or normal alarm duration; strict pooled false-run reduction, original identities within each continuous pond-phase source. Require the unchanged evidence minima.",
+    "evidence_minimum": {
+      "baseline_detected_events": 5,
+      "eventful_cohorts": 2,
+      "eventful_periods": 2,
+      "all_baseline_calibrations_qualified": true
+    },
+    "outcome_policy": "Complete all312 periods before reading outer metrics. Preserve every period, including unqualified calibration and failures; no post-outcome method changes called fresh.",
+    "prior_exposure": "Four M/Phase1 cohorts are disclosed and excluded. All52 remaining groups have only identity/time metadata exposed; sensor suffixes remained opaque. This q50 method and calibration defaults are unchanged from the primary run.",
+    "upstream_limitation": "Publisher intermediate3.1 preprocessing provenance is incomplete. This establishes our own temporal isolation conditional on published inputs; end-to-end raw-instrument causality is unverified.",
+    "scope": "All52 remaining pond-phase series from one ecological experiment,15-minute conductivity anomaly labels; no MAWRID field efficacy, water safety probability, five physical fault classes, or3D/Pi performance claim.",
+    "evaluation": "Untouched52 pond-phase extension of the completed primary benchmark",
+    "cohorts": [
+      {
+        "identity": [
+          "1A",
+          "Sonde01",
+          "D",
+          "1",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22751,
+        "source_key": "1A_Sonde01_D_1_1"
+      },
+      {
+        "identity": [
+          "1A",
+          "Sonde01",
+          "D",
+          "1",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "1A_Sonde01_D_1_2"
+      },
+      {
+        "identity": [
+          "1A",
+          "Sonde01",
+          "D",
+          "1",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13439,
+        "source_key": "1A_Sonde01_D_1_3"
+      },
+      {
+        "identity": [
+          "1B",
+          "Sonde16",
+          "C",
+          "1",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22752,
+        "source_key": "1B_Sonde16_C_1_1"
+      },
+      {
+        "identity": [
+          "1B",
+          "Sonde16",
+          "C",
+          "1",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "1B_Sonde16_C_1_2"
+      },
+      {
+        "identity": [
+          "1B",
+          "Sonde16",
+          "C",
+          "1",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "1B_Sonde16_C_1_3"
+      },
+      {
+        "identity": [
+          "1C",
+          "Sonde13",
+          "C",
+          "2",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22751,
+        "source_key": "1C_Sonde13_C_2_1"
+      },
+      {
+        "identity": [
+          "1C",
+          "Sonde13",
+          "C",
+          "2",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "1C_Sonde13_C_2_2"
+      },
+      {
+        "identity": [
+          "1C",
+          "Sonde13",
+          "C",
+          "2",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "1C_Sonde13_C_2_3"
+      },
+      {
+        "identity": [
+          "1D",
+          "Sonde17",
+          "O",
+          "1",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "1D_Sonde17_O_1_2"
+      },
+      {
+        "identity": [
+          "1D",
+          "Sonde17",
+          "O",
+          "1",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13439,
+        "source_key": "1D_Sonde17_O_1_3"
+      },
+      {
+        "identity": [
+          "2A",
+          "Sonde03",
+          "MD",
+          "1",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22752,
+        "source_key": "2A_Sonde03_MD_1_1"
+      },
+      {
+        "identity": [
+          "2A",
+          "Sonde03",
+          "MD",
+          "1",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "2A_Sonde03_MD_1_2"
+      },
+      {
+        "identity": [
+          "2A",
+          "Sonde03",
+          "MD",
+          "1",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13439,
+        "source_key": "2A_Sonde03_MD_1_3"
+      },
+      {
+        "identity": [
+          "2B",
+          "Sonde05",
+          "C",
+          "3",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22752,
+        "source_key": "2B_Sonde05_C_3_1"
+      },
+      {
+        "identity": [
+          "2B",
+          "Sonde05",
+          "C",
+          "3",
+          "2"
+        ],
+        "grid_rows": 11777,
+        "first_slot": 26016,
+        "last_slot": 37792,
+        "original_rows": 10828,
+        "source_key": "2B_Sonde05_C_3_2"
+      },
+      {
+        "identity": [
+          "2B",
+          "Sonde05",
+          "C",
+          "3",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "2B_Sonde05_C_3_3"
+      },
+      {
+        "identity": [
+          "2C",
+          "Sonde08",
+          "MD",
+          "2",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22752,
+        "source_key": "2C_Sonde08_MD_2_1"
+      },
+      {
+        "identity": [
+          "2C",
+          "Sonde08",
+          "MD",
+          "2",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "2C_Sonde08_MD_2_2"
+      },
+      {
+        "identity": [
+          "2C",
+          "Sonde08",
+          "MD",
+          "2",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "2C_Sonde08_MD_2_3"
+      },
+      {
+        "identity": [
+          "2D",
+          "Sonde07",
+          "M",
+          "1",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "2D_Sonde07_M_1_2"
+      },
+      {
+        "identity": [
+          "2D",
+          "Sonde07",
+          "M",
+          "1",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "2D_Sonde07_M_1_3"
+      },
+      {
+        "identity": [
+          "3A",
+          "Sonde09",
+          "C",
+          "4",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22737,
+        "source_key": "3A_Sonde09_C_4_1"
+      },
+      {
+        "identity": [
+          "3A",
+          "Sonde09",
+          "C",
+          "4",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "3A_Sonde09_C_4_2"
+      },
+      {
+        "identity": [
+          "3A",
+          "Sonde09",
+          "C",
+          "4",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "3A_Sonde09_C_4_3"
+      },
+      {
+        "identity": [
+          "3B",
+          "Sonde18",
+          "O",
+          "2",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "3B_Sonde18_O_2_2"
+      },
+      {
+        "identity": [
+          "3B",
+          "Sonde18",
+          "O",
+          "2",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13439,
+        "source_key": "3B_Sonde18_O_2_3"
+      },
+      {
+        "identity": [
+          "3C",
+          "Sonde20",
+          "O",
+          "3",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "3C_Sonde20_O_3_2"
+      },
+      {
+        "identity": [
+          "3C",
+          "Sonde20",
+          "O",
+          "3",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "3C_Sonde20_O_3_3"
+      },
+      {
+        "identity": [
+          "3D",
+          "Sonde10",
+          "M",
+          "2",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "3D_Sonde10_M_2_2"
+      },
+      {
+        "identity": [
+          "3D",
+          "Sonde10",
+          "M",
+          "2",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "3D_Sonde10_M_2_3"
+      },
+      {
+        "identity": [
+          "4A",
+          "Sonde12",
+          "D",
+          "2",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22749,
+        "source_key": "4A_Sonde12_D_2_1"
+      },
+      {
+        "identity": [
+          "4A",
+          "Sonde12",
+          "D",
+          "2",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16799,
+        "source_key": "4A_Sonde12_D_2_2"
+      },
+      {
+        "identity": [
+          "4A",
+          "Sonde12",
+          "D",
+          "2",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "4A_Sonde12_D_2_3"
+      },
+      {
+        "identity": [
+          "4B",
+          "Sonde14",
+          "MD",
+          "3",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 18759,
+        "source_key": "4B_Sonde14_MD_3_1"
+      },
+      {
+        "identity": [
+          "4B",
+          "Sonde14",
+          "MD",
+          "3",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16799,
+        "source_key": "4B_Sonde14_MD_3_2"
+      },
+      {
+        "identity": [
+          "4B",
+          "Sonde14",
+          "MD",
+          "3",
+          "3"
+        ],
+        "grid_rows": 13302,
+        "first_slot": 44778,
+        "last_slot": 58079,
+        "original_rows": 13302,
+        "source_key": "4B_Sonde14_MD_3_3"
+      },
+      {
+        "identity": [
+          "4C",
+          "Sonde11",
+          "D",
+          "3",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22749,
+        "source_key": "4C_Sonde11_D_3_1"
+      },
+      {
+        "identity": [
+          "4C",
+          "Sonde11",
+          "D",
+          "3",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "4C_Sonde11_D_3_2"
+      },
+      {
+        "identity": [
+          "4C",
+          "Sonde11",
+          "D",
+          "3",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "4C_Sonde11_D_3_3"
+      },
+      {
+        "identity": [
+          "4D",
+          "Sonde06",
+          "MD",
+          "4",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22751,
+        "source_key": "4D_Sonde06_MD_4_1"
+      },
+      {
+        "identity": [
+          "4D",
+          "Sonde06",
+          "MD",
+          "4",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "4D_Sonde06_MD_4_2"
+      },
+      {
+        "identity": [
+          "4D",
+          "Sonde06",
+          "MD",
+          "4",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13439,
+        "source_key": "4D_Sonde06_MD_4_3"
+      },
+      {
+        "identity": [
+          "5A",
+          "Sonde04",
+          "M",
+          "3",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "5A_Sonde04_M_3_2"
+      },
+      {
+        "identity": [
+          "5A",
+          "Sonde04",
+          "M",
+          "3",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "5A_Sonde04_M_3_3"
+      },
+      {
+        "identity": [
+          "5B",
+          "Sonde15",
+          "M",
+          "4",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "5B_Sonde15_M_4_2"
+      },
+      {
+        "identity": [
+          "5B",
+          "Sonde15",
+          "M",
+          "4",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "5B_Sonde15_M_4_3"
+      },
+      {
+        "identity": [
+          "5C",
+          "Sonde02",
+          "D",
+          "4",
+          "1"
+        ],
+        "grid_rows": 22752,
+        "first_slot": 0,
+        "last_slot": 22751,
+        "original_rows": 22751,
+        "source_key": "5C_Sonde02_D_4_1"
+      },
+      {
+        "identity": [
+          "5C",
+          "Sonde02",
+          "D",
+          "4",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "5C_Sonde02_D_4_2"
+      },
+      {
+        "identity": [
+          "5C",
+          "Sonde02",
+          "D",
+          "4",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13439,
+        "source_key": "5C_Sonde02_D_4_3"
+      },
+      {
+        "identity": [
+          "5D",
+          "Sonde19",
+          "O",
+          "4",
+          "2"
+        ],
+        "grid_rows": 16800,
+        "first_slot": 26016,
+        "last_slot": 42815,
+        "original_rows": 16800,
+        "source_key": "5D_Sonde19_O_4_2"
+      },
+      {
+        "identity": [
+          "5D",
+          "Sonde19",
+          "O",
+          "4",
+          "3"
+        ],
+        "grid_rows": 13440,
+        "first_slot": 44640,
+        "last_slot": 58079,
+        "original_rows": 13440,
+        "source_key": "5D_Sonde19_O_4_3"
+      }
+    ],
+    "selection_rule": "Every one of52 remaining Pond/Sonde/Treatment/Replicate/Phase groups in publisher identity metadata; none selected or removed by values, missingness, labels or performance.",
+    "primary_results_disclosed": {
+      "cohorts": 4,
+      "periods": 24,
+      "events": 1,
+      "baseline_detected": 1,
+      "candidate_detected": 1,
+      "false_runs_each": 65,
+      "candidate_gates_activated": 0,
+      "primary_acceptance_passed": false
+    },
+    "independence": "Pond-phases share one ecological experiment, including repeated ponds across phases; do not treat312 periods as312 independent deployments or as a second independent source.",
+    "implementation_repair": {
+      "failed_run": "output/ml/gecco-v5-ponds-reserved-frozen",
+      "original_protocol_sha256": "1ed032621b3be8d2e5819c1560a61e756cb151c86a56b8ee704a250c4c3b81ef",
+      "completed_case_artifacts_before_failure": 210,
+      "scope": "Accept repeated observed-axis boundaries only to retain empty test periods as unmeasurable. Model, calibration, folds, data, metrics and acceptance unchanged. No outer outcomes inspected before repair; this is one repaired evaluation, not a second fresh test."
+    }
+  },
+  "code": {
+    "ml/gecco_v5/ponds_frozen_evaluation.py": {
+      "sha256": "21840ccad1df7f51e47f3ebfbe1068cdd562992141f2b0194e57780f50021fcc",
+      "bytes": 13459
+    },
+    "ml/gecco_v5/ponds_data.py": {
+      "sha256": "402e2214ee73c4be6adaf547cc0458a2495e397958bfb3b25501f3c486f39794",
+      "bytes": 6475
+    },
+    "ml/gecco_v5/baseline_cadence.py": {
+      "sha256": "26e6111fc11c419428759d09eabc2b2a5fccdd6fa7f3c43a3c88c5aeb1deff20",
+      "bytes": 5193
+    },
+    "ml/gecco_v5/sparse_calibration.py": {
+      "sha256": "7663ca90150e584be463576daf86a31cfae329359a2b73a582944e595c90c2ee",
+      "bytes": 10700
+    },
+    "ml/gecco_v5/sparse_evaluation.py": {
+      "sha256": "a8ea22f7fe8c9724a3a6285e6235515fb9396bef863d933163db00a8841c18b9",
+      "bytes": 7845
+    },
+    "ml/gecco_v5/provenance.py": {
+      "sha256": "43008c5eb62730e68c1e6899ef311acf3a1e1dca6036d9d0af57d2b12dead8d6",
+      "bytes": 3067
+    },
+    "ml/gecco_v5/recovery_candidate.py": {
+      "sha256": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+      "bytes": 9620
+    },
+    "ml/gecco_v5/supported_candidate.py": {
+      "sha256": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626",
+      "bytes": 2139
+    },
+    "ml/gecco_v5/normal_support.py": {
+      "sha256": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37",
+      "bytes": 8996
+    },
+    "ml/gecco_v5/calibration.py": {
+      "sha256": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+      "bytes": 14970
+    },
+    "ml/gecco_v5/evaluation.py": {
+      "sha256": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08",
+      "bytes": 7580
+    },
+    "ml/gecco_v5/runtime.py": {
+      "sha256": "7c00d744b73beacb2a491392612c6d77310ad16d200ddf444d41b381ae529118",
+      "bytes": 2635
+    },
+    "ml/gecco_baseline/metrics.py": {
+      "sha256": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+      "bytes": 11876
+    },
+    "ml/gecco_v2/alarm_policy.py": {
+      "sha256": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+      "bytes": 5873
+    },
+    "ml/gecco_v2/candidates_supervised.py": {
+      "sha256": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+      "bytes": 16647
+    },
+    "ml/gecco_v5/ponds_reserved_evaluation.py": {
+      "sha256": "46ac2fb2f1a3f060c58d5c9af78bcf505f2e0aca9b7dca92f8d7900b3aeb2716",
+      "bytes": 7668
+    },
+    "ml/gecco_v5/ponds_reserved_evaluation_v2.py": {
+      "sha256": "96c63769e34ad638385be3fd148ae6a0f4bbaa1e390548801ab76192335205c6",
+      "bytes": 8267
+    },
+    "ml/gecco_v5/empty_periods.py": {
+      "sha256": "6e74f296ca1ced984d6437d973737ddf2ebbd88e25be368d20287ad0a473d4bb",
+      "bytes": 1923
+    },
+    "ml/gecco_v5/ponds_reserved_data.py": {
+      "sha256": "b16b57b6ca4078e877e86bd0f7931606f93a9f174078f1b08b360135acef6b50",
+      "bytes": 5020
+    },
+    "output/ml/gecco-v5-source-search/ponds_reserved_geometry.json": {
+      "sha256": "b752a11d93b782d15b3b3829634210bfed301dca70a95bf1324b19ceea569ebb",
+      "bytes": 15212
+    }
+  },
+  "raw_sources": {
+    "data/external/new_holdout_candidate/eawag_ponds_active_learning/AL_Repo.zip": {
+      "sha256": "3c0fdc52a5d501d11afdd89e464f0bf794eaa409d3d5a958f6513bb6c94592b1",
+      "bytes": 27177506
+    }
+  },
+  "semantics": "Configuration and source hashes declared before first row/label parsing for this evaluation. Prior source exposure must be separately disclosed in configuration."
+}

@@ -1,0 +1,39 @@
+✔ camera bounds include all equipment, route endpoints and label anchors of each educational stage (114.313208ms)
+✔ all eight focused stages fit portrait, tablet, desktop and ultrawide viewports with near-plane and label margins (34.66475ms)
+✔ framing handles off-centre and buried bounds without mutating inputs and rejects unavailable geometry (0.257666ms)
+✔ camera transitions ease to an exact endpoint, clamp progress and snap with reduced motion (3.896625ms)
+✔ actual camera handler acknowledges the latest request only after arrival and repeats do not restart movement (38.741084ms)
+✔ actual camera handler cancels on manual interaction, resumes focus, and tolerates hidden or unavailable WebGL (41.906042ms)
+✔ eight immutable educational stages refer only to existing equipment and measured-flow routes (74.070416ms)
+✔ stage changes do not mutate shared materials, water quantities, feedback, or the manual selection (85.860583ms)
+✔ educational arrows require each exact flow and live presentation, while static focus survives pause and disconnect (45.571917ms)
+✔ educational stage highlights remain within the existing overview framing (72.12175ms)
+✔ overlapping filter labels keep full rectangles, anchor leaders and deterministic placement (2.056875ms)
+✔ all five default scene labels fit without collision across widths and camera orientations (42.770667ms)
+✔ compact viewport preserves both tank labels and selected filter without clipping (294.614875ms)
+✔ closer default overview still contains every scene bounding-box corner (40.91375ms)
+✔ only explicit virtual, matching-session state is accepted (3.2355ms)
+✔ zero is observed, missing or invalid evidence is unavailable; old alarms are excluded (2.007083ms)
+✔ wall transport freshness never uses virtual timestamp; pause and failure cannot animate (0.308375ms)
+✔ one read-only GET in flight and no auto-start/control request (5.101833ms)
+✔ source switch clears snapshot and subsequent session replaces rather than merges it (3.535333ms)
+✔ stop/restart rejects late old generation even if transport ignores abort (2.376208ms)
+✔ deadline rejects late successful payload and holds a non-live last snapshot (2.9815ms)
+✔ HTTP and JSON failure cannot publish fresh state (7.229834ms)
+✔ all equipment is selectable, with finite geometry and nonzero pipe segments (87.067625ms)
+✔ each moving line uses its exact server flow, with reuse after storage and separate backwash (59.721417ms)
+✔ water level follows reported percentage exactly, including empty and unavailable (36.793125ms)
+✔ HOLD with zero flows is still even with live transport, with no invented valve movement (42.423166ms)
+✔ pause or disconnected transport stops motion but preserves actual open feedback (37.995042ms)
+✔ backwash and unknown flows do not borrow treatment rate or inferred inventory (25.636875ms)
+✔ full reference topology is present, four dosing identities are distinct and design paths stay still (46.762ms)
+✔ horizontal tank fill handles0,1,25,50,99,100percent without invalid geometry or state changes (22.608583ms)
+✔ render updates cannot accumulate liters, alter equipment decisions or mutate snapshot (20.722875ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 720.453917

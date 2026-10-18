@@ -1,0 +1,540 @@
+{
+  "development_only": true,
+  "all_19_cases": true,
+  "no_new_threshold_selection": true,
+  "periods": [
+    {
+      "case": "2017_fold_1",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 7,
+          "guard_available_reference_starts": 4,
+          "normal_reference_starts": 5,
+          "guard_available_normal_reference_starts": 4,
+          "positive_reference_starts": 2,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 55,
+          "guard_available_reference_starts": 2,
+          "normal_reference_starts": 8,
+          "guard_available_normal_reference_starts": 2,
+          "positive_reference_starts": 47,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2017_fold_2",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 55,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 8,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 47,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 55,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 4,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 51,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2017_fold_3",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 78,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 9,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 69,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 44,
+          "guard_available_reference_starts": 3,
+          "normal_reference_starts": 19,
+          "guard_available_normal_reference_starts": 3,
+          "positive_reference_starts": 25,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2017_fold_4",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 87,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 12,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 75,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 10,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 4,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 6,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2017_fold_5",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 28,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 12,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 16,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 3,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 1,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 2,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2017_fold_6",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 17,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 10,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 7,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 14,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 14,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 0,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2018_fold_1",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 25,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 10,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 15,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 48,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 21,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 27,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2018_fold_2",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 66,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 16,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 50,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 44,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 19,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 25,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": [
+        {
+          "event_id": 12,
+          "start": 8094,
+          "end_exclusive": 8117,
+          "positive_minutes": 23,
+          "reference_confirmed": true,
+          "candidate_confirmed": false,
+          "reference_positive_minutes": 6,
+          "candidate_positive_minutes": 23,
+          "reference_available_minutes": 23,
+          "long_score_available_minutes": 23,
+          "long_score_quantiles": {
+            "rows": 23,
+            "q01": 0.9995979609134351,
+            "q10": 0.9996969744002259,
+            "q50": 0.9997149009083187,
+            "q90": 0.9997149009083187,
+            "q99": 0.9997629296598061,
+            "max": 0.9997629296598061
+          },
+          "minutes_above_selected_rescue_threshold": 23,
+          "candidate_alarm_at_previous_row": 1,
+          "candidate_alarm_at_onset": 1,
+          "guard_available_reference_positive_minutes": 0,
+          "guard_score_on_reference_positive": []
+        }
+      ]
+    },
+    {
+      "case": "2018_fold_3",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 37,
+          "guard_available_reference_starts": 1,
+          "normal_reference_starts": 18,
+          "guard_available_normal_reference_starts": 1,
+          "positive_reference_starts": 19,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 1,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 1,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 0,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2018_fold_4",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 32,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 18,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 14,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 2,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 2,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 0,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2018_fold_5",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 0,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 0,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 0,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 0,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 0,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 0,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2018_fold_6",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 0,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 0,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 0,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 4,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 0,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 4,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2019_disclosed_test",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 39,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 27,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 12,
+          "guard_available_positive_reference_starts": 0
+        },
+        "test": {
+          "reference_alarm_starts": 75,
+          "guard_available_reference_starts": 0,
+          "normal_reference_starts": 63,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 12,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2018-11",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 56,
+          "guard_available_reference_starts": 23,
+          "normal_reference_starts": 46,
+          "guard_available_normal_reference_starts": 21,
+          "positive_reference_starts": 10,
+          "guard_available_positive_reference_starts": 2
+        },
+        "test": {
+          "reference_alarm_starts": 24,
+          "guard_available_reference_starts": 9,
+          "normal_reference_starts": 7,
+          "guard_available_normal_reference_starts": 5,
+          "positive_reference_starts": 17,
+          "guard_available_positive_reference_starts": 4
+        }
+      },
+      "lost_events": [
+        {
+          "event_id": 33,
+          "start": 20640,
+          "end_exclusive": 20754,
+          "positive_minutes": 114,
+          "reference_confirmed": true,
+          "candidate_confirmed": false,
+          "reference_positive_minutes": 1,
+          "candidate_positive_minutes": 0,
+          "reference_available_minutes": 114,
+          "long_score_available_minutes": 114,
+          "long_score_quantiles": {
+            "rows": 114,
+            "q01": 0.004612010658251455,
+            "q10": 0.007146262649100106,
+            "q50": 0.711841559265713,
+            "q90": 0.871104823870641,
+            "q99": 0.9052497004329423,
+            "max": 0.9176167813556924
+          },
+          "minutes_above_selected_rescue_threshold": 0,
+          "candidate_alarm_at_previous_row": 0,
+          "candidate_alarm_at_onset": 0,
+          "guard_available_reference_positive_minutes": 1,
+          "guard_score_on_reference_positive": [
+            0.5626002369041779
+          ]
+        },
+        {
+          "event_id": 73,
+          "start": 41361,
+          "end_exclusive": 41392,
+          "positive_minutes": 31,
+          "reference_confirmed": true,
+          "candidate_confirmed": false,
+          "reference_positive_minutes": 2,
+          "candidate_positive_minutes": 0,
+          "reference_available_minutes": 31,
+          "long_score_available_minutes": 31,
+          "long_score_quantiles": {
+            "rows": 31,
+            "q01": 0.0421666263969027,
+            "q10": 0.06310016604669297,
+            "q50": 0.08582613029253683,
+            "q90": 0.13209029679792808,
+            "q99": 0.1461883198347766,
+            "max": 0.14698377874305546
+          },
+          "minutes_above_selected_rescue_threshold": 0,
+          "candidate_alarm_at_previous_row": 0,
+          "candidate_alarm_at_onset": 0,
+          "guard_available_reference_positive_minutes": 2,
+          "guard_score_on_reference_positive": [
+            0.08141100752048165,
+            0.03630993076393781
+          ]
+        }
+      ]
+    },
+    {
+      "case": "2018-12",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 60,
+          "guard_available_reference_starts": 18,
+          "normal_reference_starts": 36,
+          "guard_available_normal_reference_starts": 13,
+          "positive_reference_starts": 24,
+          "guard_available_positive_reference_starts": 5
+        },
+        "test": {
+          "reference_alarm_starts": 19,
+          "guard_available_reference_starts": 4,
+          "normal_reference_starts": 9,
+          "guard_available_normal_reference_starts": 3,
+          "positive_reference_starts": 10,
+          "guard_available_positive_reference_starts": 1
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2019-01",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 80,
+          "guard_available_reference_starts": 22,
+          "normal_reference_starts": 43,
+          "guard_available_normal_reference_starts": 17,
+          "positive_reference_starts": 37,
+          "guard_available_positive_reference_starts": 5
+        },
+        "test": {
+          "reference_alarm_starts": 52,
+          "guard_available_reference_starts": 23,
+          "normal_reference_starts": 49,
+          "guard_available_normal_reference_starts": 22,
+          "positive_reference_starts": 3,
+          "guard_available_positive_reference_starts": 1
+        }
+      },
+      "lost_events": [
+        {
+          "event_id": 21,
+          "start": 39447,
+          "end_exclusive": 39490,
+          "positive_minutes": 43,
+          "reference_confirmed": true,
+          "candidate_confirmed": false,
+          "reference_positive_minutes": 2,
+          "candidate_positive_minutes": 0,
+          "reference_available_minutes": 43,
+          "long_score_available_minutes": 43,
+          "long_score_quantiles": {
+            "rows": 43,
+            "q01": 0.026249990567331155,
+            "q10": 0.04895242826352287,
+            "q50": 0.15065924942587974,
+            "q90": 0.28678202015149623,
+            "q99": 0.3018785621860799,
+            "max": 0.3078086660992712
+          },
+          "minutes_above_selected_rescue_threshold": 0,
+          "candidate_alarm_at_previous_row": 0,
+          "candidate_alarm_at_onset": 0,
+          "guard_available_reference_positive_minutes": 2,
+          "guard_score_on_reference_positive": [
+            0.02920523000771968,
+            0.024109989593256706
+          ]
+        }
+      ]
+    },
+    {
+      "case": "2019-02",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 76,
+          "guard_available_reference_starts": 20,
+          "normal_reference_starts": 47,
+          "guard_available_normal_reference_starts": 14,
+          "positive_reference_starts": 29,
+          "guard_available_positive_reference_starts": 6
+        },
+        "test": {
+          "reference_alarm_starts": 26,
+          "guard_available_reference_starts": 10,
+          "normal_reference_starts": 25,
+          "guard_available_normal_reference_starts": 9,
+          "positive_reference_starts": 1,
+          "guard_available_positive_reference_starts": 1
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2019-03",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 8,
+          "guard_available_reference_starts": 8,
+          "normal_reference_starts": 0,
+          "guard_available_normal_reference_starts": 0,
+          "positive_reference_starts": 8,
+          "guard_available_positive_reference_starts": 8
+        },
+        "test": {
+          "reference_alarm_starts": 20,
+          "guard_available_reference_starts": 20,
+          "normal_reference_starts": 1,
+          "guard_available_normal_reference_starts": 1,
+          "positive_reference_starts": 19,
+          "guard_available_positive_reference_starts": 19
+        }
+      },
+      "lost_events": []
+    },
+    {
+      "case": "2019-04",
+      "split_diagnostics": {
+        "calibration": {
+          "reference_alarm_starts": 86,
+          "guard_available_reference_starts": 59,
+          "normal_reference_starts": 49,
+          "guard_available_normal_reference_starts": 24,
+          "positive_reference_starts": 37,
+          "guard_available_positive_reference_starts": 35
+        },
+        "test": {
+          "reference_alarm_starts": 41,
+          "guard_available_reference_starts": 20,
+          "normal_reference_starts": 38,
+          "guard_available_normal_reference_starts": 20,
+          "positive_reference_starts": 3,
+          "guard_available_positive_reference_starts": 0
+        }
+      },
+      "lost_events": []
+    }
+  ]
+}

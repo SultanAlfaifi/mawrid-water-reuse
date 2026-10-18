@@ -1,0 +1,2293 @@
+{
+  "native": {
+    "baseline": {
+      "sample_count": 31650,
+      "valid_count": 30491,
+      "unavailable_count": 1159,
+      "prediction_coverage": 0.9633807266982622,
+      "normal_valid_count": 30333,
+      "positive_valid_count": 158,
+      "tp": 28,
+      "fp": 118,
+      "fn": 130,
+      "tn": 30215,
+      "precision": 0.1917808219178082,
+      "recall": 0.17721518987341772,
+      "f1": 0.18421052631578946,
+      "false_positive_rate": 0.0038901526390399893,
+      "false_negative_rate": 0.8227848101265823,
+      "specificity": 0.99610984736096,
+      "accuracy": 0.991866452395789,
+      "false_positive_runs": 83,
+      "eligible_normal_days": 21.064583333333335,
+      "false_alarm_runs_per_normal_day": 3.9402630798140637,
+      "normal_time_under_alarm": 0.0038901526390399893,
+      "alarm_runs": 97,
+      "true_events": 12,
+      "detected_events": 5,
+      "undetected_events": 7,
+      "fully_unscorable_events": 3,
+      "event_recall": 0.4166666666666667,
+      "new_alarm_inside_event_recall": 0.4166666666666667,
+      "raw_new_alarm_inside_event_recall": 0.4166666666666667,
+      "confirmed_new_alarm_inside_event_recall": 0.4166666666666667,
+      "covered_at_onset_events": 4,
+      "new_alarm_inside_events": 5,
+      "raw_new_alarm_inside_events": 5,
+      "confirmed_new_alarm_inside_events": 5,
+      "boundary_censored_events": 0,
+      "complete_events": 12,
+      "complete_detected_events": 5,
+      "complete_new_alarm_inside_events": 5,
+      "complete_confirmed_new_alarm_inside_events": 5,
+      "complete_event_coverage": 0.4166666666666667,
+      "complete_event_new_alarm_start_recall": 0.4166666666666667,
+      "complete_raw_new_alarm_start_recall": 0.4166666666666667,
+      "complete_confirmed_new_alarm_start_recall": 0.4166666666666667,
+      "median_detection_delay_minutes": 0.0,
+      "p95_detection_delay_minutes": 1.5999999999999996,
+      "event_records": [
+        {
+          "event_id": 1,
+          "start": 12,
+          "end": 19,
+          "duration_minutes": 7,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 7,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 2,
+          "start": 40,
+          "end": 47,
+          "duration_minutes": 7,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 7,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 3,
+          "start": 65,
+          "end": 84,
+          "duration_minutes": 19,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 19,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 4,
+          "start": 8093,
+          "end": 8128,
+          "duration_minutes": 35,
+          "boundary_censored": false,
+          "valid_count": 35,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 8093,
+          "detection_delay_minutes": 0,
+          "covered_at_onset": true,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 8093,
+          "new_alarm_delay_minutes": 0,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 8093,
+          "confirmed_new_alarm_delay_minutes": 0,
+          "alarm_started_at_onset": true,
+          "detection_kind": "covered_at_onset"
+        },
+        {
+          "event_id": 5,
+          "start": 8469,
+          "end": 8488,
+          "duration_minutes": 19,
+          "boundary_censored": false,
+          "valid_count": 19,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 6,
+          "start": 9003,
+          "end": 9012,
+          "duration_minutes": 9,
+          "boundary_censored": false,
+          "valid_count": 9,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 7,
+          "start": 13003,
+          "end": 13026,
+          "duration_minutes": 23,
+          "boundary_censored": false,
+          "valid_count": 23,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 13003,
+          "detection_delay_minutes": 0,
+          "covered_at_onset": true,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 13003,
+          "new_alarm_delay_minutes": 0,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 13003,
+          "confirmed_new_alarm_delay_minutes": 0,
+          "alarm_started_at_onset": true,
+          "detection_kind": "covered_at_onset"
+        },
+        {
+          "event_id": 8,
+          "start": 13677,
+          "end": 13689,
+          "duration_minutes": 12,
+          "boundary_censored": false,
+          "valid_count": 12,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 13677,
+          "detection_delay_minutes": 0,
+          "covered_at_onset": true,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 13677,
+          "new_alarm_delay_minutes": 0,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 13677,
+          "confirmed_new_alarm_delay_minutes": 0,
+          "alarm_started_at_onset": true,
+          "detection_kind": "covered_at_onset"
+        },
+        {
+          "event_id": 9,
+          "start": 18302,
+          "end": 18318,
+          "duration_minutes": 16,
+          "boundary_censored": false,
+          "valid_count": 16,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 18304,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 18304,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 18304,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 10,
+          "start": 24302,
+          "end": 24318,
+          "duration_minutes": 16,
+          "boundary_censored": false,
+          "valid_count": 16,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 24302,
+          "detection_delay_minutes": 0,
+          "covered_at_onset": true,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 24302,
+          "new_alarm_delay_minutes": 0,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 24302,
+          "confirmed_new_alarm_delay_minutes": 0,
+          "alarm_started_at_onset": true,
+          "detection_kind": "covered_at_onset"
+        },
+        {
+          "event_id": 11,
+          "start": 28092,
+          "end": 28106,
+          "duration_minutes": 14,
+          "boundary_censored": false,
+          "valid_count": 14,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 12,
+          "start": 30092,
+          "end": 30106,
+          "duration_minutes": 14,
+          "boundary_censored": false,
+          "valid_count": 14,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        }
+      ],
+      "false_alarm_records": [
+        {
+          "start": 163,
+          "end": 164,
+          "duration_minutes": 1
+        },
+        {
+          "start": 211,
+          "end": 213,
+          "duration_minutes": 2
+        },
+        {
+          "start": 378,
+          "end": 379,
+          "duration_minutes": 1
+        },
+        {
+          "start": 385,
+          "end": 386,
+          "duration_minutes": 1
+        },
+        {
+          "start": 539,
+          "end": 542,
+          "duration_minutes": 3
+        },
+        {
+          "start": 543,
+          "end": 545,
+          "duration_minutes": 2
+        },
+        {
+          "start": 546,
+          "end": 548,
+          "duration_minutes": 2
+        },
+        {
+          "start": 549,
+          "end": 556,
+          "duration_minutes": 7
+        },
+        {
+          "start": 558,
+          "end": 561,
+          "duration_minutes": 3
+        },
+        {
+          "start": 571,
+          "end": 572,
+          "duration_minutes": 1
+        },
+        {
+          "start": 573,
+          "end": 574,
+          "duration_minutes": 1
+        },
+        {
+          "start": 580,
+          "end": 581,
+          "duration_minutes": 1
+        },
+        {
+          "start": 682,
+          "end": 684,
+          "duration_minutes": 2
+        },
+        {
+          "start": 689,
+          "end": 691,
+          "duration_minutes": 2
+        },
+        {
+          "start": 725,
+          "end": 726,
+          "duration_minutes": 1
+        },
+        {
+          "start": 768,
+          "end": 769,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1474,
+          "end": 1475,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1539,
+          "end": 1540,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1545,
+          "end": 1546,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1634,
+          "end": 1635,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1650,
+          "end": 1651,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1663,
+          "end": 1669,
+          "duration_minutes": 6
+        },
+        {
+          "start": 1670,
+          "end": 1675,
+          "duration_minutes": 5
+        },
+        {
+          "start": 1747,
+          "end": 1748,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1752,
+          "end": 1753,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1984,
+          "end": 1985,
+          "duration_minutes": 1
+        },
+        {
+          "start": 2668,
+          "end": 2669,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3111,
+          "end": 3112,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3125,
+          "end": 3126,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3138,
+          "end": 3139,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3169,
+          "end": 3170,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3172,
+          "end": 3175,
+          "duration_minutes": 3
+        },
+        {
+          "start": 3176,
+          "end": 3180,
+          "duration_minutes": 4
+        },
+        {
+          "start": 3322,
+          "end": 3323,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7732,
+          "end": 7733,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7748,
+          "end": 7750,
+          "duration_minutes": 2
+        },
+        {
+          "start": 7756,
+          "end": 7757,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7782,
+          "end": 7783,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7789,
+          "end": 7790,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7802,
+          "end": 7803,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7809,
+          "end": 7810,
+          "duration_minutes": 1
+        },
+        {
+          "start": 8164,
+          "end": 8165,
+          "duration_minutes": 1
+        },
+        {
+          "start": 8691,
+          "end": 8692,
+          "duration_minutes": 1
+        },
+        {
+          "start": 8703,
+          "end": 8704,
+          "duration_minutes": 1
+        },
+        {
+          "start": 8830,
+          "end": 8831,
+          "duration_minutes": 1
+        },
+        {
+          "start": 9503,
+          "end": 9504,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11516,
+          "end": 11517,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11750,
+          "end": 11751,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11757,
+          "end": 11758,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11828,
+          "end": 11829,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11848,
+          "end": 11849,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11890,
+          "end": 11891,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11894,
+          "end": 11896,
+          "duration_minutes": 2
+        },
+        {
+          "start": 11898,
+          "end": 11899,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11902,
+          "end": 11903,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11950,
+          "end": 11951,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13182,
+          "end": 13183,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13433,
+          "end": 13434,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13546,
+          "end": 13547,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13590,
+          "end": 13591,
+          "duration_minutes": 1
+        },
+        {
+          "start": 17448,
+          "end": 17449,
+          "duration_minutes": 1
+        },
+        {
+          "start": 17452,
+          "end": 17454,
+          "duration_minutes": 2
+        },
+        {
+          "start": 18232,
+          "end": 18233,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18318,
+          "end": 18319,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18631,
+          "end": 18632,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18890,
+          "end": 18891,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18931,
+          "end": 18932,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19007,
+          "end": 19008,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19058,
+          "end": 19059,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19087,
+          "end": 19088,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19089,
+          "end": 19091,
+          "duration_minutes": 2
+        },
+        {
+          "start": 19096,
+          "end": 19097,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19098,
+          "end": 19099,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19100,
+          "end": 19102,
+          "duration_minutes": 2
+        },
+        {
+          "start": 19107,
+          "end": 19109,
+          "duration_minutes": 2
+        },
+        {
+          "start": 19110,
+          "end": 19111,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19113,
+          "end": 19114,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19118,
+          "end": 19119,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19215,
+          "end": 19216,
+          "duration_minutes": 1
+        },
+        {
+          "start": 25549,
+          "end": 25550,
+          "duration_minutes": 1
+        },
+        {
+          "start": 27169,
+          "end": 27170,
+          "duration_minutes": 1
+        },
+        {
+          "start": 27178,
+          "end": 27179,
+          "duration_minutes": 1
+        },
+        {
+          "start": 30389,
+          "end": 30390,
+          "duration_minutes": 1
+        }
+      ]
+    },
+    "v2": {
+      "sample_count": 31650,
+      "valid_count": 27248,
+      "unavailable_count": 4402,
+      "prediction_coverage": 0.860916271721959,
+      "normal_valid_count": 27090,
+      "positive_valid_count": 158,
+      "tp": 111,
+      "fp": 21,
+      "fn": 47,
+      "tn": 27069,
+      "precision": 0.8409090909090909,
+      "recall": 0.7025316455696202,
+      "f1": 0.7655172413793103,
+      "false_positive_rate": 0.0007751937984496124,
+      "false_negative_rate": 0.2974683544303797,
+      "specificity": 0.9992248062015504,
+      "accuracy": 0.9975044039929536,
+      "false_positive_runs": 15,
+      "eligible_normal_days": 18.8125,
+      "false_alarm_runs_per_normal_day": 0.7973421926910299,
+      "normal_time_under_alarm": 0.0007751937984496124,
+      "alarm_runs": 23,
+      "true_events": 12,
+      "detected_events": 9,
+      "undetected_events": 3,
+      "fully_unscorable_events": 3,
+      "event_recall": 0.75,
+      "new_alarm_inside_event_recall": 0.75,
+      "raw_new_alarm_inside_event_recall": 0.75,
+      "confirmed_new_alarm_inside_event_recall": 0.75,
+      "covered_at_onset_events": 0,
+      "new_alarm_inside_events": 9,
+      "raw_new_alarm_inside_events": 9,
+      "confirmed_new_alarm_inside_events": 9,
+      "boundary_censored_events": 0,
+      "complete_events": 12,
+      "complete_detected_events": 9,
+      "complete_new_alarm_inside_events": 9,
+      "complete_confirmed_new_alarm_inside_events": 9,
+      "complete_event_coverage": 0.75,
+      "complete_event_new_alarm_start_recall": 0.75,
+      "complete_raw_new_alarm_start_recall": 0.75,
+      "complete_confirmed_new_alarm_start_recall": 0.75,
+      "median_detection_delay_minutes": 2.0,
+      "p95_detection_delay_minutes": 9.999999999999998,
+      "event_records": [
+        {
+          "event_id": 1,
+          "start": 12,
+          "end": 19,
+          "duration_minutes": 7,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 7,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 2,
+          "start": 40,
+          "end": 47,
+          "duration_minutes": 7,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 7,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 3,
+          "start": 65,
+          "end": 84,
+          "duration_minutes": 19,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 19,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 4,
+          "start": 8093,
+          "end": 8128,
+          "duration_minutes": 35,
+          "boundary_censored": false,
+          "valid_count": 35,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 8094,
+          "detection_delay_minutes": 1,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 8094,
+          "new_alarm_delay_minutes": 1,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 8094,
+          "confirmed_new_alarm_delay_minutes": 1,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 5,
+          "start": 8469,
+          "end": 8488,
+          "duration_minutes": 19,
+          "boundary_censored": false,
+          "valid_count": 19,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 8476,
+          "detection_delay_minutes": 7,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 8476,
+          "new_alarm_delay_minutes": 7,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 8476,
+          "confirmed_new_alarm_delay_minutes": 7,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 6,
+          "start": 9003,
+          "end": 9012,
+          "duration_minutes": 9,
+          "boundary_censored": false,
+          "valid_count": 9,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 9005,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 9005,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 9005,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 7,
+          "start": 13003,
+          "end": 13026,
+          "duration_minutes": 23,
+          "boundary_censored": false,
+          "valid_count": 23,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 13004,
+          "detection_delay_minutes": 1,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 13004,
+          "new_alarm_delay_minutes": 1,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 13004,
+          "confirmed_new_alarm_delay_minutes": 1,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 8,
+          "start": 13677,
+          "end": 13689,
+          "duration_minutes": 12,
+          "boundary_censored": false,
+          "valid_count": 12,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 13679,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 13679,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 13679,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 9,
+          "start": 18302,
+          "end": 18318,
+          "duration_minutes": 16,
+          "boundary_censored": false,
+          "valid_count": 16,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 18304,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 18304,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 18304,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 10,
+          "start": 24302,
+          "end": 24318,
+          "duration_minutes": 16,
+          "boundary_censored": false,
+          "valid_count": 16,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 24304,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 24304,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 24304,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 11,
+          "start": 28092,
+          "end": 28106,
+          "duration_minutes": 14,
+          "boundary_censored": false,
+          "valid_count": 14,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 28104,
+          "detection_delay_minutes": 12,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 28104,
+          "new_alarm_delay_minutes": 12,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 28104,
+          "confirmed_new_alarm_delay_minutes": 12,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 12,
+          "start": 30092,
+          "end": 30106,
+          "duration_minutes": 14,
+          "boundary_censored": false,
+          "valid_count": 14,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 30094,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 30094,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 30094,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        }
+      ],
+      "false_alarm_records": [
+        {
+          "start": 4248,
+          "end": 4250,
+          "duration_minutes": 2
+        },
+        {
+          "start": 8128,
+          "end": 8129,
+          "duration_minutes": 1
+        },
+        {
+          "start": 9012,
+          "end": 9013,
+          "duration_minutes": 1
+        },
+        {
+          "start": 12416,
+          "end": 12418,
+          "duration_minutes": 2
+        },
+        {
+          "start": 13026,
+          "end": 13027,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13400,
+          "end": 13401,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13689,
+          "end": 13690,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18318,
+          "end": 18319,
+          "duration_minutes": 1
+        },
+        {
+          "start": 24318,
+          "end": 24320,
+          "duration_minutes": 2
+        },
+        {
+          "start": 24364,
+          "end": 24365,
+          "duration_minutes": 1
+        },
+        {
+          "start": 24366,
+          "end": 24367,
+          "duration_minutes": 1
+        },
+        {
+          "start": 25991,
+          "end": 25994,
+          "duration_minutes": 3
+        },
+        {
+          "start": 26374,
+          "end": 26376,
+          "duration_minutes": 2
+        },
+        {
+          "start": 28106,
+          "end": 28107,
+          "duration_minutes": 1
+        },
+        {
+          "start": 30106,
+          "end": 30107,
+          "duration_minutes": 1
+        }
+      ]
+    }
+  },
+  "common": {
+    "baseline": {
+      "sample_count": 31650,
+      "valid_count": 27248,
+      "unavailable_count": 4402,
+      "prediction_coverage": 0.860916271721959,
+      "normal_valid_count": 27090,
+      "positive_valid_count": 158,
+      "tp": 28,
+      "fp": 104,
+      "fn": 130,
+      "tn": 26986,
+      "precision": 0.21212121212121213,
+      "recall": 0.17721518987341772,
+      "f1": 0.19310344827586207,
+      "false_positive_rate": 0.0038390550018456994,
+      "false_negative_rate": 0.8227848101265823,
+      "specificity": 0.9961609449981543,
+      "accuracy": 0.9914122137404581,
+      "false_positive_runs": 72,
+      "eligible_normal_days": 18.8125,
+      "false_alarm_runs_per_normal_day": 3.8272425249169437,
+      "normal_time_under_alarm": 0.0038390550018456994,
+      "alarm_runs": 86,
+      "true_events": 12,
+      "detected_events": 5,
+      "undetected_events": 7,
+      "fully_unscorable_events": 3,
+      "event_recall": 0.4166666666666667,
+      "new_alarm_inside_event_recall": 0.4166666666666667,
+      "raw_new_alarm_inside_event_recall": 0.4166666666666667,
+      "confirmed_new_alarm_inside_event_recall": 0.4166666666666667,
+      "covered_at_onset_events": 4,
+      "new_alarm_inside_events": 5,
+      "raw_new_alarm_inside_events": 5,
+      "confirmed_new_alarm_inside_events": 5,
+      "boundary_censored_events": 0,
+      "complete_events": 12,
+      "complete_detected_events": 5,
+      "complete_new_alarm_inside_events": 5,
+      "complete_confirmed_new_alarm_inside_events": 5,
+      "complete_event_coverage": 0.4166666666666667,
+      "complete_event_new_alarm_start_recall": 0.4166666666666667,
+      "complete_raw_new_alarm_start_recall": 0.4166666666666667,
+      "complete_confirmed_new_alarm_start_recall": 0.4166666666666667,
+      "median_detection_delay_minutes": 0.0,
+      "p95_detection_delay_minutes": 1.5999999999999996,
+      "event_records": [
+        {
+          "event_id": 1,
+          "start": 12,
+          "end": 19,
+          "duration_minutes": 7,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 7,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 2,
+          "start": 40,
+          "end": 47,
+          "duration_minutes": 7,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 7,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 3,
+          "start": 65,
+          "end": 84,
+          "duration_minutes": 19,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 19,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 4,
+          "start": 8093,
+          "end": 8128,
+          "duration_minutes": 35,
+          "boundary_censored": false,
+          "valid_count": 35,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 8093,
+          "detection_delay_minutes": 0,
+          "covered_at_onset": true,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 8093,
+          "new_alarm_delay_minutes": 0,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 8093,
+          "confirmed_new_alarm_delay_minutes": 0,
+          "alarm_started_at_onset": true,
+          "detection_kind": "covered_at_onset"
+        },
+        {
+          "event_id": 5,
+          "start": 8469,
+          "end": 8488,
+          "duration_minutes": 19,
+          "boundary_censored": false,
+          "valid_count": 19,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 6,
+          "start": 9003,
+          "end": 9012,
+          "duration_minutes": 9,
+          "boundary_censored": false,
+          "valid_count": 9,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 7,
+          "start": 13003,
+          "end": 13026,
+          "duration_minutes": 23,
+          "boundary_censored": false,
+          "valid_count": 23,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 13003,
+          "detection_delay_minutes": 0,
+          "covered_at_onset": true,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 13003,
+          "new_alarm_delay_minutes": 0,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 13003,
+          "confirmed_new_alarm_delay_minutes": 0,
+          "alarm_started_at_onset": true,
+          "detection_kind": "covered_at_onset"
+        },
+        {
+          "event_id": 8,
+          "start": 13677,
+          "end": 13689,
+          "duration_minutes": 12,
+          "boundary_censored": false,
+          "valid_count": 12,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 13677,
+          "detection_delay_minutes": 0,
+          "covered_at_onset": true,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 13677,
+          "new_alarm_delay_minutes": 0,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 13677,
+          "confirmed_new_alarm_delay_minutes": 0,
+          "alarm_started_at_onset": true,
+          "detection_kind": "covered_at_onset"
+        },
+        {
+          "event_id": 9,
+          "start": 18302,
+          "end": 18318,
+          "duration_minutes": 16,
+          "boundary_censored": false,
+          "valid_count": 16,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 18304,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 18304,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 18304,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 10,
+          "start": 24302,
+          "end": 24318,
+          "duration_minutes": 16,
+          "boundary_censored": false,
+          "valid_count": 16,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 24302,
+          "detection_delay_minutes": 0,
+          "covered_at_onset": true,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 24302,
+          "new_alarm_delay_minutes": 0,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 24302,
+          "confirmed_new_alarm_delay_minutes": 0,
+          "alarm_started_at_onset": true,
+          "detection_kind": "covered_at_onset"
+        },
+        {
+          "event_id": 11,
+          "start": 28092,
+          "end": 28106,
+          "duration_minutes": 14,
+          "boundary_censored": false,
+          "valid_count": 14,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 12,
+          "start": 30092,
+          "end": 30106,
+          "duration_minutes": 14,
+          "boundary_censored": false,
+          "valid_count": 14,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        }
+      ],
+      "false_alarm_records": [
+        {
+          "start": 211,
+          "end": 213,
+          "duration_minutes": 2
+        },
+        {
+          "start": 378,
+          "end": 379,
+          "duration_minutes": 1
+        },
+        {
+          "start": 385,
+          "end": 386,
+          "duration_minutes": 1
+        },
+        {
+          "start": 539,
+          "end": 542,
+          "duration_minutes": 3
+        },
+        {
+          "start": 543,
+          "end": 545,
+          "duration_minutes": 2
+        },
+        {
+          "start": 546,
+          "end": 548,
+          "duration_minutes": 2
+        },
+        {
+          "start": 549,
+          "end": 556,
+          "duration_minutes": 7
+        },
+        {
+          "start": 558,
+          "end": 561,
+          "duration_minutes": 3
+        },
+        {
+          "start": 571,
+          "end": 572,
+          "duration_minutes": 1
+        },
+        {
+          "start": 573,
+          "end": 574,
+          "duration_minutes": 1
+        },
+        {
+          "start": 580,
+          "end": 581,
+          "duration_minutes": 1
+        },
+        {
+          "start": 725,
+          "end": 726,
+          "duration_minutes": 1
+        },
+        {
+          "start": 768,
+          "end": 769,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1474,
+          "end": 1475,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1634,
+          "end": 1635,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1650,
+          "end": 1651,
+          "duration_minutes": 1
+        },
+        {
+          "start": 1663,
+          "end": 1669,
+          "duration_minutes": 6
+        },
+        {
+          "start": 1670,
+          "end": 1675,
+          "duration_minutes": 5
+        },
+        {
+          "start": 2668,
+          "end": 2669,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3111,
+          "end": 3112,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3125,
+          "end": 3126,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3138,
+          "end": 3139,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3169,
+          "end": 3170,
+          "duration_minutes": 1
+        },
+        {
+          "start": 3172,
+          "end": 3175,
+          "duration_minutes": 3
+        },
+        {
+          "start": 3176,
+          "end": 3180,
+          "duration_minutes": 4
+        },
+        {
+          "start": 3322,
+          "end": 3323,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7732,
+          "end": 7733,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7748,
+          "end": 7750,
+          "duration_minutes": 2
+        },
+        {
+          "start": 7756,
+          "end": 7757,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7782,
+          "end": 7783,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7789,
+          "end": 7790,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7802,
+          "end": 7803,
+          "duration_minutes": 1
+        },
+        {
+          "start": 7809,
+          "end": 7810,
+          "duration_minutes": 1
+        },
+        {
+          "start": 8164,
+          "end": 8165,
+          "duration_minutes": 1
+        },
+        {
+          "start": 8691,
+          "end": 8692,
+          "duration_minutes": 1
+        },
+        {
+          "start": 8703,
+          "end": 8704,
+          "duration_minutes": 1
+        },
+        {
+          "start": 8830,
+          "end": 8831,
+          "duration_minutes": 1
+        },
+        {
+          "start": 9503,
+          "end": 9504,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11516,
+          "end": 11517,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11750,
+          "end": 11751,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11757,
+          "end": 11758,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11828,
+          "end": 11829,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11848,
+          "end": 11849,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11890,
+          "end": 11891,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11894,
+          "end": 11896,
+          "duration_minutes": 2
+        },
+        {
+          "start": 11898,
+          "end": 11899,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11902,
+          "end": 11903,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11950,
+          "end": 11951,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13182,
+          "end": 13183,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13433,
+          "end": 13434,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13546,
+          "end": 13547,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13590,
+          "end": 13591,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18232,
+          "end": 18233,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18318,
+          "end": 18319,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18631,
+          "end": 18632,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18890,
+          "end": 18891,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18931,
+          "end": 18932,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19007,
+          "end": 19008,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19058,
+          "end": 19059,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19087,
+          "end": 19088,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19089,
+          "end": 19091,
+          "duration_minutes": 2
+        },
+        {
+          "start": 19096,
+          "end": 19097,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19098,
+          "end": 19099,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19100,
+          "end": 19102,
+          "duration_minutes": 2
+        },
+        {
+          "start": 19107,
+          "end": 19109,
+          "duration_minutes": 2
+        },
+        {
+          "start": 19110,
+          "end": 19111,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19113,
+          "end": 19114,
+          "duration_minutes": 1
+        },
+        {
+          "start": 19118,
+          "end": 19119,
+          "duration_minutes": 1
+        },
+        {
+          "start": 25549,
+          "end": 25550,
+          "duration_minutes": 1
+        },
+        {
+          "start": 27169,
+          "end": 27170,
+          "duration_minutes": 1
+        },
+        {
+          "start": 27178,
+          "end": 27179,
+          "duration_minutes": 1
+        },
+        {
+          "start": 30389,
+          "end": 30390,
+          "duration_minutes": 1
+        }
+      ]
+    },
+    "v2": {
+      "sample_count": 31650,
+      "valid_count": 27248,
+      "unavailable_count": 4402,
+      "prediction_coverage": 0.860916271721959,
+      "normal_valid_count": 27090,
+      "positive_valid_count": 158,
+      "tp": 111,
+      "fp": 21,
+      "fn": 47,
+      "tn": 27069,
+      "precision": 0.8409090909090909,
+      "recall": 0.7025316455696202,
+      "f1": 0.7655172413793103,
+      "false_positive_rate": 0.0007751937984496124,
+      "false_negative_rate": 0.2974683544303797,
+      "specificity": 0.9992248062015504,
+      "accuracy": 0.9975044039929536,
+      "false_positive_runs": 15,
+      "eligible_normal_days": 18.8125,
+      "false_alarm_runs_per_normal_day": 0.7973421926910299,
+      "normal_time_under_alarm": 0.0007751937984496124,
+      "alarm_runs": 23,
+      "true_events": 12,
+      "detected_events": 9,
+      "undetected_events": 3,
+      "fully_unscorable_events": 3,
+      "event_recall": 0.75,
+      "new_alarm_inside_event_recall": 0.75,
+      "raw_new_alarm_inside_event_recall": 0.75,
+      "confirmed_new_alarm_inside_event_recall": 0.75,
+      "covered_at_onset_events": 0,
+      "new_alarm_inside_events": 9,
+      "raw_new_alarm_inside_events": 9,
+      "confirmed_new_alarm_inside_events": 9,
+      "boundary_censored_events": 0,
+      "complete_events": 12,
+      "complete_detected_events": 9,
+      "complete_new_alarm_inside_events": 9,
+      "complete_confirmed_new_alarm_inside_events": 9,
+      "complete_event_coverage": 0.75,
+      "complete_event_new_alarm_start_recall": 0.75,
+      "complete_raw_new_alarm_start_recall": 0.75,
+      "complete_confirmed_new_alarm_start_recall": 0.75,
+      "median_detection_delay_minutes": 2.0,
+      "p95_detection_delay_minutes": 9.999999999999998,
+      "event_records": [
+        {
+          "event_id": 1,
+          "start": 12,
+          "end": 19,
+          "duration_minutes": 7,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 7,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 2,
+          "start": 40,
+          "end": 47,
+          "duration_minutes": 7,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 7,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 3,
+          "start": 65,
+          "end": 84,
+          "duration_minutes": 19,
+          "boundary_censored": false,
+          "valid_count": 0,
+          "unavailable_count": 19,
+          "fully_unscorable": true,
+          "detected": false,
+          "first_alarm_index": null,
+          "detection_delay_minutes": null,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": false,
+          "new_alarm_start_index": null,
+          "new_alarm_delay_minutes": null,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": false,
+          "confirmed_new_alarm_index": null,
+          "confirmed_new_alarm_delay_minutes": null,
+          "alarm_started_at_onset": false,
+          "detection_kind": "undetected"
+        },
+        {
+          "event_id": 4,
+          "start": 8093,
+          "end": 8128,
+          "duration_minutes": 35,
+          "boundary_censored": false,
+          "valid_count": 35,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 8094,
+          "detection_delay_minutes": 1,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 8094,
+          "new_alarm_delay_minutes": 1,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 8094,
+          "confirmed_new_alarm_delay_minutes": 1,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 5,
+          "start": 8469,
+          "end": 8488,
+          "duration_minutes": 19,
+          "boundary_censored": false,
+          "valid_count": 19,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 8476,
+          "detection_delay_minutes": 7,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 8476,
+          "new_alarm_delay_minutes": 7,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 8476,
+          "confirmed_new_alarm_delay_minutes": 7,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 6,
+          "start": 9003,
+          "end": 9012,
+          "duration_minutes": 9,
+          "boundary_censored": false,
+          "valid_count": 9,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 9005,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 9005,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 9005,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 7,
+          "start": 13003,
+          "end": 13026,
+          "duration_minutes": 23,
+          "boundary_censored": false,
+          "valid_count": 23,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 13004,
+          "detection_delay_minutes": 1,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 13004,
+          "new_alarm_delay_minutes": 1,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 13004,
+          "confirmed_new_alarm_delay_minutes": 1,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 8,
+          "start": 13677,
+          "end": 13689,
+          "duration_minutes": 12,
+          "boundary_censored": false,
+          "valid_count": 12,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 13679,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 13679,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 13679,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 9,
+          "start": 18302,
+          "end": 18318,
+          "duration_minutes": 16,
+          "boundary_censored": false,
+          "valid_count": 16,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 18304,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 18304,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 18304,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 10,
+          "start": 24302,
+          "end": 24318,
+          "duration_minutes": 16,
+          "boundary_censored": false,
+          "valid_count": 16,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 24304,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 24304,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 24304,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 11,
+          "start": 28092,
+          "end": 28106,
+          "duration_minutes": 14,
+          "boundary_censored": false,
+          "valid_count": 14,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 28104,
+          "detection_delay_minutes": 12,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 28104,
+          "new_alarm_delay_minutes": 12,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 28104,
+          "confirmed_new_alarm_delay_minutes": 12,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        },
+        {
+          "event_id": 12,
+          "start": 30092,
+          "end": 30106,
+          "duration_minutes": 14,
+          "boundary_censored": false,
+          "valid_count": 14,
+          "unavailable_count": 0,
+          "fully_unscorable": false,
+          "detected": true,
+          "first_alarm_index": 30094,
+          "detection_delay_minutes": 2,
+          "covered_at_onset": false,
+          "new_alarm_inside_event": true,
+          "new_alarm_start_index": 30094,
+          "new_alarm_delay_minutes": 2,
+          "new_alarm_previous_unavailable": false,
+          "new_alarm_previous_unknown": false,
+          "confirmed_new_alarm_inside_event": true,
+          "confirmed_new_alarm_index": 30094,
+          "confirmed_new_alarm_delay_minutes": 2,
+          "alarm_started_at_onset": false,
+          "detection_kind": "first_alarm_after_onset"
+        }
+      ],
+      "false_alarm_records": [
+        {
+          "start": 4248,
+          "end": 4250,
+          "duration_minutes": 2
+        },
+        {
+          "start": 8128,
+          "end": 8129,
+          "duration_minutes": 1
+        },
+        {
+          "start": 9012,
+          "end": 9013,
+          "duration_minutes": 1
+        },
+        {
+          "start": 12416,
+          "end": 12418,
+          "duration_minutes": 2
+        },
+        {
+          "start": 13026,
+          "end": 13027,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13400,
+          "end": 13401,
+          "duration_minutes": 1
+        },
+        {
+          "start": 13689,
+          "end": 13690,
+          "duration_minutes": 1
+        },
+        {
+          "start": 18318,
+          "end": 18319,
+          "duration_minutes": 1
+        },
+        {
+          "start": 24318,
+          "end": 24320,
+          "duration_minutes": 2
+        },
+        {
+          "start": 24364,
+          "end": 24365,
+          "duration_minutes": 1
+        },
+        {
+          "start": 24366,
+          "end": 24367,
+          "duration_minutes": 1
+        },
+        {
+          "start": 25991,
+          "end": 25994,
+          "duration_minutes": 3
+        },
+        {
+          "start": 26374,
+          "end": 26376,
+          "duration_minutes": 2
+        },
+        {
+          "start": 28106,
+          "end": 28107,
+          "duration_minutes": 1
+        },
+        {
+          "start": 30106,
+          "end": 30107,
+          "duration_minutes": 1
+        }
+      ]
+    }
+  },
+  "scored_at_utc": "2026-10-16T05:47:04.738194+00:00",
+  "source_start_index": 0,
+  "source_end_index": 31650,
+  "timestamp_start": "2017-11-08 00:30:00",
+  "timestamp_end": "2017-11-29 23:59:00",
+  "selected_family": "hist_gradient_boosting"
+}

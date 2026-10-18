@@ -1,0 +1,113 @@
+{
+  "updated_at_utc": "2026-10-16T17:39:01.221060+00:00",
+  "stage": "development_and_independent_replay_complete_rejected",
+  "latest_attempt": "run_04",
+  "latest_candidate_accepted": false,
+  "goal_achieved": false,
+  "reference_retained": "V6 (experimental reference, not field-ready approval)",
+  "development_periods": 19,
+  "test_rows": 449431,
+  "attempts": [
+    {
+      "attempt": "run_02",
+      "complete_periods": 19,
+      "events": 132,
+      "total_events": 399,
+      "false_alarm_fragments": 286,
+      "false_alarm_minutes": 1365.0,
+      "f1_observed_points": 0.30856978132850144,
+      "noninferior_periods": 13,
+      "development_acceptance_passed": false,
+      "lost_reference_event_ids_by_source": {
+        "2017": [],
+        "2018": [
+          27
+        ],
+        "2019": [],
+        "WaterHub": [
+          33,
+          73,
+          147
+        ]
+      },
+      "audit_passed": true,
+      "audit_sha256": "e952399d3465d1c515aa148988a3c31432df52aec9db487753989e5a37f1702e",
+      "audit_replayed_rows": 449431,
+      "audit_numeric_checks": 15858589
+    },
+    {
+      "attempt": "run_03",
+      "complete_periods": 19,
+      "events": 123,
+      "total_events": 399,
+      "false_alarm_fragments": 155,
+      "false_alarm_minutes": 372.0,
+      "f1_observed_points": 0.10042892011659044,
+      "noninferior_periods": 11,
+      "development_acceptance_passed": false,
+      "lost_reference_event_ids_by_source": {
+        "2017": [],
+        "2018": [
+          7,
+          9,
+          10,
+          13,
+          27
+        ],
+        "2019": [
+          4
+        ],
+        "WaterHub": [
+          83,
+          134,
+          147,
+          280,
+          281
+        ]
+      },
+      "audit_passed": true,
+      "audit_sha256": "03a1df9544035097326945840ec6aace3f7b341f4a93da0d064ea0f0c31760e9",
+      "audit_replayed_rows": 449431,
+      "audit_numeric_checks": 20829020
+    },
+    {
+      "attempt": "run_04",
+      "complete_periods": 19,
+      "events": 113,
+      "total_events": 399,
+      "false_alarm_fragments": 236,
+      "false_alarm_minutes": 478.0,
+      "f1_observed_points": 0.042333455121178906,
+      "noninferior_periods": 17,
+      "development_acceptance_passed": false,
+      "lost_reference_event_ids_by_source": {
+        "2017": [],
+        "2018": [],
+        "2019": [
+          4
+        ],
+        "WaterHub": [
+          83
+        ]
+      },
+      "audit_passed": true,
+      "audit_sha256": "d6997dbb1ea47c1a50e2b437f07c4fcd95981e64a5bd453a522b8abe4cf96b2d",
+      "audit_replayed_rows": 449431,
+      "audit_numeric_checks": 24499408
+    }
+  ],
+  "confirmation_experiment_authorized_seconds": 120,
+  "preflight_tests_passed": 153,
+  "fresh_validation_performed_this_iteration": false,
+  "source_exposure": "GECCO and WaterHub were already disclosed. Each current fit/threshold choice uses only its historical training/calibration rows; repeated outer evaluations are development, not fresh validation.",
+  "new_source_state": "UWO1 measurement values remain unopened and no evaluation label array has been materialized. Sparse annotation timestamp metadata was previously examined for coverage, which reveals selection timing; this exposure is logged. Source coverage is conditional, and native five-minute sampling cannot test two-minute confirmation.",
+  "deployment_approved": false,
+  "three_d_connected": false,
+  "raspberry_pi_benchmarked": false,
+  "latest_reference_event_losses": 2,
+  "latest_maximum_paired_extra_delay_seconds": 120,
+  "latest_active_policies": 4,
+  "latest_certification_vetoes": 5,
+  "latest_earlier_reference_choices": 10,
+  "decision_reason": "No attempt improved event detection and false alarms consistently while preserving prior detected event identities in all19periods and eachsourcepool. Currentcandidate losttwoV6events; retainedexperimentalreferenceV6, no deployment or3D."
+}

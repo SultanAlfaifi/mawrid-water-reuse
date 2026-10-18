@@ -1,0 +1,9 @@
+{
+  "created_at_utc": "2026-10-17T11:05:09.332171+00:00",
+  "passed": false,
+  "virtual_only": true,
+  "operator_database_opened": false,
+  "model_loaded": false,
+  "browser_rendering_verified_by_this_script": false,
+  "error": "AssertionError('Unexpected or external page asset: ./assets/index-C3u6ISGc.js')"
+}

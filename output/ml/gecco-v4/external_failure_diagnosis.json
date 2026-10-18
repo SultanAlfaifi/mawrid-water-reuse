@@ -1,0 +1,101 @@
+{
+  "created_at_utc": "2026-10-16T06:40:15.476070+00:00",
+  "scope": "Post-evaluation failure explanation only; no threshold, model or recipe changes. Historical external2017 results remain a failed independent check.",
+  "protocol_sha256": "604825a813513073e1669a76db6474f19d1b66c854a4eb30e6066b16834291ff",
+  "audit_status": "pass",
+  "primary_result": {
+    "baseline": {
+      "tp": 402,
+      "fp": 175,
+      "fn": 1044,
+      "tn": 70479,
+      "f1": 0.39742956005931784,
+      "true_events": 55,
+      "confirmed_new_alarm_inside_events": 46,
+      "false_alarm_runs_per_normal_day": 2.1807682509128994,
+      "normal_time_under_alarm": 0.002476859059642766
+    },
+    "v4": {
+      "tp": 307,
+      "fp": 130,
+      "fn": 1139,
+      "tn": 70524,
+      "f1": 0.3260754115772703,
+      "true_events": 55,
+      "confirmed_new_alarm_inside_events": 21,
+      "false_alarm_runs_per_normal_day": 0.3057151753616214,
+      "normal_time_under_alarm": 0.0018399524443060548
+    }
+  },
+  "gates": {
+    "pooled_joint_improvement": false,
+    "noninferior_periods": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "noninferior_period_count": 2,
+    "stable_joint_improvement": false,
+    "operating_budget_pass_per_period": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "all_period_operating_budget_pass": true,
+    "3d_connected": false
+  },
+  "fold1": {
+    "calibration_block2_source_range": [
+      30582,
+      36699
+    ],
+    "calibration_block2_rows": 6117,
+    "all_nine_channels_missing_every_row": true,
+    "calibration_operating_points_tried": 120,
+    "feasible_operating_points": 0,
+    "selection_status": "no_feasible_operating_point_all_silent",
+    "threshold": 30.16666666666666,
+    "policy": "instant",
+    "test_confirmed_events": 0,
+    "test_true_events": 17,
+    "test_fully_unscorable_events": 0,
+    "test_event_minutes_with_available_scores": 363,
+    "test_event_minutes_above_threshold": 0,
+    "explanation": "One wholly unavailable calibration block has no eligible normal exposure, so every operating point fails the every-block constraint. The frozen fallback selects above the highest calibration score; no test event exceeds it. This is protocol behavior, not source leakage or missing test events."
+  },
+  "fold2": {
+    "calibration_operating_points_tried": 150,
+    "feasible_operating_points": 15,
+    "best_feasible_worst_event_block_recall": 0.0,
+    "selected_calibration_confirmed_per_block": [
+      0,
+      1,
+      11,
+      0
+    ],
+    "selected_calibration_events_per_block": [
+      0,
+      1,
+      11,
+      6
+    ],
+    "selected_calibration_confirmed_events": 12,
+    "selected_calibration_complete_events": 18,
+    "threshold": 7.810434207121091,
+    "policy": "instant",
+    "test_confirmed_events": 1,
+    "test_true_events": 18,
+    "test_fully_unscorable_events": 1,
+    "test_event_minutes_with_available_scores": 365,
+    "test_event_minutes_above_threshold": 5,
+    "test_event_score_p90": 6.288109441932472,
+    "explanation": "Every feasible operating point has zero recall in at least one eventful calibration block. The worst-block objective ties at zero, so pooled event recall and point F1 choose a threshold that captures12/18 past calibration events but already misses all6 events in one block. Subsequent event scores mostly fall below it; the method does not generalize stably."
+  },
+  "conclusion": "Passing the false-alarm budget in all6 periods does not satisfy the frozen joint-improvement or stability gates. V4 is experimental and failed the independent event-detection requirement."
+}

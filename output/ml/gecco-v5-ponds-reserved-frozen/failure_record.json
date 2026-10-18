@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-10-16T09:28:42.425416+00:00",
+  "status": "operational_failure_before_final_aggregation",
+  "error": "ValueError: boundaries must cover observed rows exactly once in increasing integer order",
+  "cause": "A whole declared grid-time period has zero original observations, producing repeated observed-axis boundaries. The strict aggregation validator rejected this empty period.",
+  "completed_case_artifacts": 210,
+  "last_completed_case_by_mtime": "4B_P1_MD_R3_Sonde14_fold_6",
+  "outer_metrics_inspected": false,
+  "model_or_threshold_changes_allowed": false,
+  "repair": "New aggregation wrapper retains empty comparisons as unmeasurable; unchanged metrics and acceptance criteria. Preserve failed run, freeze repaired implementation and verify all completed prediction payloads match.",
+  "original_protocol_sha256": "1ed032621b3be8d2e5819c1560a61e756cb151c86a56b8ee704a250c4c3b81ef"
+}

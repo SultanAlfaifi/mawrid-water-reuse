@@ -1,0 +1,430 @@
+{
+  "created_at_utc": "2026-10-17T09:16:06.248487+00:00",
+  "scope": "all",
+  "limit_cases": 19,
+  "expected_cases": 19,
+  "attempt": "v13_run01_train_normal_if_tail_weights",
+  "development_only": true,
+  "all_sources_previously_disclosed": true,
+  "fresh_validation": false,
+  "code_sha256": {
+    "ml/gecco_baseline/metrics.py": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+    "ml/gecco_v10/calibration.py": "dd92671cc74d2a623f0f9f9d58e989cdcfd0056ae0080750b290989609c016ad",
+    "ml/gecco_v12/baseline_evidence.py": "d8dec0bd816905a9b6a8ad05e6cec35fc533d12e3eb211f4f153f06f6c10b856",
+    "ml/gecco_v13/development.py": "14667dd15884a0d544e428ec6453ecc77d2b63868476e55afb5e314837717c56",
+    "ml/gecco_v13/hard_normal.py": "20840d2a059a8651771ad80dc1322292572a910037bf876ed3a6b57a124bdaec",
+    "ml/gecco_v13/runtime.py": "ff53676ecac6d375de3f4a280c2cab4c77c5fb6940bef2bb9fb58a24e0caf274",
+    "ml/gecco_v2/alarm_policy.py": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+    "ml/gecco_v2/candidates_supervised.py": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+    "ml/gecco_v5/calibration.py": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+    "ml/gecco_v5/evaluation.py": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08",
+    "ml/gecco_v5/normal_support.py": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37",
+    "ml/gecco_v5/recovery_candidate.py": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+    "ml/gecco_v5/reproducible_explore.py": "887b16425539f758bd32043cb080fcbc3f0fa3109a2659184ba7864934d13c1b",
+    "ml/gecco_v5/supported_candidate.py": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626",
+    "ml/gecco_v6/audit_run04.py": "508046a6313e8f9fba48a1112a23015bc9a81ebfebf2963e49017985f34c4b27",
+    "ml/gecco_v6/build_development_report.py": "eed26f2b2e61280f9dd39a0fe4e9a83cf241a391ad08385cd35afb7082685278",
+    "ml/gecco_v6/corroborated_rescue.py": "166d38dba2ddfcd51ba33a04e74bc199b4833beb4c15209f388f4fd187d53d7b",
+    "ml/gecco_v6/departure_scores.py": "439b552e422c46e8ce021a689cded6ae6355bae8cd92582c7ce39d052ae3164b",
+    "ml/gecco_v6/development.py": "9f38406b8ea368e88bcf9379482eb7e17f559decbc29dadefe37895827be44b0",
+    "ml/gecco_v6/development_v2.py": "a00e64fe5c80ff11b07d9d0b72b44a08b1532a0f39b1f8e60cf7bcabb2620750",
+    "ml/gecco_v6/development_v3.py": "464a7337f6667473af7e658ba0d3ad10a351f644d63039cc251316d54a387ba1",
+    "ml/gecco_v6/development_v4.py": "e1082b5be8447713f92b473be07fe8f175e3b1e5e00eb1a4ea61aa16702d0e88",
+    "ml/gecco_v6/guarded_suppression.py": "f25b3aa7f5caa0d5ecdddb0b112b9ae88846f3fd82cd902e4b0cfb770e7bb27a",
+    "ml/gecco_v6/joint_calibration.py": "0243e4402b1da5582df73eeac225328ea6d48aa8df35bfebebb5923cfbf917cd",
+    "ml/gecco_v6/joint_calibration_v2.py": "bbd1a3b81437d71468a2ccd694049b802220d57aecc11b83922bfd01958b2b23",
+    "ml/gecco_v6/latched_suppression.py": "7d65a2cb24c93eeac0fa0e7cb0c89837cf4110456fa1494ab877dba93cb8924d",
+    "ml/gecco_v6/local_change.py": "bffc42d3a85fe9c4e91b7d5418e4187701645f7ed2a45f5c23aa763de3777396",
+    "ml/gecco_v6/partially_labeled_model.py": "c49c230fe274b7154924988a3edf6cbc7879fd4c0b3d52ff3496e83bf9eb44d7",
+    "ml/gecco_v6/runtime_v4.py": "69caebab5a6541968db76f358d55435c14851fa41be92bb5847796b8d5d38032",
+    "ml/gecco_v6/source_joint_calibration.py": "9192ccc264fadb663b8f88a06244c44f9598b14b09b3bd4cbc99278b7c0f7131",
+    "ml/gecco_v6/source_suppression.py": "6f85639855eb733aa44e9e8072a39001bdbf1c123af781c486b6e014ac74c5da",
+    "ml/gecco_v6/test_corroborated_rescue.py": "046c9de4e144c7db1fc9b11bc6c17f51edc99497e1c6d74255009f61155e8fea",
+    "ml/gecco_v6/test_guarded_suppression.py": "41f4fdfbc66f76b210510c63d876727b97a06f9859e796c654f58879193fc62e",
+    "ml/gecco_v6/test_joint_calibration.py": "d27bb40d3cda48d0b58a9f90aa06205a4a4d2aa1d6187eb2cd2e233ba8f08f58",
+    "ml/gecco_v6/test_latched_suppression.py": "4dceb5cf9e8a3b38d00ef140e4b5228b880e54d9e26ca4da507cfc8ef339ed81",
+    "ml/gecco_v6/test_local_change.py": "1fab7bb4725e7ab6bb5926cc9e563545902daf0d6af52935382e65e8396ebcbb",
+    "ml/gecco_v6/test_partially_labeled_model.py": "359d87dec20767725d28e94d5baaf7715ec2543532b968f41b3cec778f4a5794",
+    "ml/gecco_v6/test_runtime_v4.py": "55bb2630e09d697b33db948dd3a037e9335a9eb8fc12b5e275675d48280832d4",
+    "ml/gecco_v6/test_source_calibration.py": "824a472d7987ecd2d05a5470c8ec9f7c53c4467b4122324bcacc25c7d2406cee",
+    "ml/gecco_v6/test_unknown_label_metrics.py": "fddede36a4774d7773022f243f8b89e50dec23c27d2a0745c1afdcf2590e0d07",
+    "ml/gecco_v6/test_waterhub_adapter.py": "675d7afbf94df53ae31550b13810cebb1c5b04e1a252df4c6f73aef8869496b3",
+    "ml/gecco_v6/test_waterhub_evaluation.py": "ac64c41aba005d2f77ea9a00bc1719d03aa2a1392446e90da434febce61a6c42",
+    "ml/gecco_v6/test_waterhub_loader.py": "dc5c95f76139a338b1a46e63398486b1616dfb31d2df3cf2e2ed1a859529bd8a",
+    "ml/gecco_v6/unknown_label_metrics.py": "46fb870eb6f6cae6203d4431d95f91e3907413106d6f8d7926480671e0c5f7cf",
+    "ml/gecco_v6/waterhub_adapter.py": "0aa2c0393883e41e72fc3b62de03f2fa66e7c7d8697018895a860a50e6478c0f",
+    "ml/gecco_v6/waterhub_evaluation.py": "78b507d9b6d15cb245d5e925771cec0f4840f664d950d7dbe3b699159a2e77e4",
+    "ml/gecco_v6/waterhub_loader.py": "d96cbcc4f4fb0d6b6ee91b9827a02dcd5e3aa6c44714aeb5f78d5e7f5715200a",
+    "ml/gecco_v7/calibration.py": "0d9750a99d62a32bd4ec3ab9c717dc6b7c44533d994e1bfb95de774ebd18bd4c",
+    "ml/gecco_v7/calibration_certified.py": "1f6809a73ebead4746f771a526d6ee7c5ac4987bd4d16aa4e21b3f3775f86fce",
+    "ml/gecco_v7/calibration_delayed.py": "6fbc506f1d4b38f1670dd2cd1e04c4068d5a70d3c9033978c2d4ead2435586fe",
+    "ml/gecco_v7/calibration_v2.py": "f1ab5802413347c6dde76024887cf7efe4c4f8249e5e5612e257ceef779d2ed3",
+    "ml/gecco_v7/development.py": "790e70ac69a1f30711e68b6d2c3c457908007c83537d9eba94750e640fba46b9",
+    "ml/gecco_v7/development_v2.py": "e4679e1c50311d9eea5193965aa4212d78bb2ba7721f38236699045923253bd4",
+    "ml/gecco_v7/evidence.py": "3690aa84f9ce5dc3e7d29c0e4e7b7473672a5fec5c237124023c4b5c582df7df",
+    "ml/gecco_v7/long_context.py": "34b6b85a5b993dc498d7a13f6bee8434ebd1f44e9ae23a5efc6e7f02712ee0e7",
+    "ml/gecco_v7/long_context_hgb.py": "d435fd91727e8e3f229d514e1aba2d87730c6f816bd012d75b3fb736c88e69bc",
+    "ml/gecco_v7/recalibrate_certified.py": "a48a2d3077ed20d1920fe0f8d1c5eeffec49fb1386804058fea157a60a47471f",
+    "ml/gecco_v7/recalibrate_delayed.py": "d0bcf2264ff51e557424e789ce897fec089d60edbe0c9fb7962f65b9bfae2597",
+    "ml/gecco_v7/runtime.py": "f1be43e083c9f4f7d5e34761970c5f506f8e452c0a40b6211d6f827d6a579f39",
+    "ml/gecco_v7/runtime_certified.py": "dd321b6a4e6aebf688c131de776ff3ce201298b3bb312aa637630d3d38c8e7da",
+    "ml/gecco_v7/runtime_delayed.py": "1488a9c5ee0e9368adaf07b397a59a1eaa2d119711f1acae08a78e24bc012847",
+    "ml/gecco_v7/runtime_v2.py": "ad5e7cbee574599b995771dd4842c9039836bce84f0b32116dc53ee6a4559406",
+    "ml/gecco_v8/development.py": "f95805a26d4abf800369c6b4c36025527cae06f2454306dca31e0dd63128dbe3",
+    "ml/gecco_v8/onset.py": "5158441e5727c050423ce398d1e8695815030e4d8fe31e75018476aac7573863",
+    "ml/gecco_v8/runtime.py": "e84bc277dc36881bbea1dda8632eca38ed0c6c2b858f20aef54b05e3deded5c3",
+    "ml/gecco_v9/conditional.py": "e0cedecdc0fba6176ff8009e784789330e3e1c8249a3e4deffc818ab818cea11",
+    "ml/gecco_v9/development.py": "106791f0de2f56767d496d9c6de9f41d05a75de240fce572ac73d4b8499bf695",
+    "ml/gecco_v9/runtime.py": "8251712fefcd23267d71e27aa476d5a3725ba9860825942ccc47cc36ff0557d7"
+  },
+  "input_sha256": {
+    "output/ml/gecco-v6-waterhub-first-use/adapted_source.csv.gz": "2ebd0997afb7571390c7df6b5b64616dec81441b304f6a02ff323b6218984ff7",
+    "data/external/gecco2017/1_gecco2017_water_quality.csv": "8452e3c03b1d0b1ed81f8e85e90664c52fbe77a59e85c042a4e177cf3d753d1d",
+    "data/external/gecco2018/1_gecco2018_water_quality.csv": "c41221f3045696b75b79374f4c41c63f6c988e1df03b1dedcdbf910d44ea71cd",
+    "data/external/gecco2019/8_gecco2019_valid_water_qulity.csv": "d451142a969f5972278cbfa53d840b04805ab683b81cad092bda30820ec2e424",
+    "data/external/gecco2019/7_gecco2019_train_water_quality.csv": "05bbe6dea804b6fc6b2bf8ecc35f37c404ff3ae3503c47cf69301edf61c8b4b9",
+    "data/external/gecco2019/6_gecco2019_test_water_quality.csv": "ad509d0c1c656d3e48dc4e52011da5232d292997e6f7ce08eedd5f6194e3369f",
+    "output/ml/gecco-v6-development/run_04/2017_fold_1/bundle.joblib": "a47ae371f94a8c745b18934a941d49ddaca9ce5164864161c318ea407fd93b92",
+    "output/ml/gecco-v6-development/run_04/2017_fold_1/freeze.json": "352a25746323c9d170115bc11224cab1c1799bdcbd0e47d669e5a68c9b5f12af",
+    "output/ml/gecco-v6-development/run_04/2017_fold_1/calibration_scores.csv.gz": "ee8d03afc9c4dde1d0214849c99e640c13d32b6b7202cb555754f9b888c0fe0d",
+    "output/ml/gecco-v6-development/run_04/2017_fold_1/predictions.csv.gz": "f92dfe2b68fa318a55b116be10157f70a823e5517943795b09dea077701c7a44",
+    "output/ml/gecco-v6-development/run_04/2017_fold_2/bundle.joblib": "481a1811e82270a5ff72c47c069bc58e6c569dcc008c19a2a32c8501034c9fb2",
+    "output/ml/gecco-v6-development/run_04/2017_fold_2/freeze.json": "d1de9869bb6b07044f8ceea636d0faef69a9761a54d1f4e32359b1ce879ec9a7",
+    "output/ml/gecco-v6-development/run_04/2017_fold_2/calibration_scores.csv.gz": "4f9651b38b6c1845e1d0fafd1317320dfd2174ee410765e4d3e3bf7360d40dd4",
+    "output/ml/gecco-v6-development/run_04/2017_fold_2/predictions.csv.gz": "9605f328198e088efa8f317c648f7274109a09b311fd48b6342e06a93d66e366",
+    "output/ml/gecco-v6-development/run_04/2017_fold_3/bundle.joblib": "2becba81fbc554cee791f97c90b1951cb022f5c0132b8de734b22f6dcbb202ee",
+    "output/ml/gecco-v6-development/run_04/2017_fold_3/freeze.json": "b613167fb20536f8d1241d283b65ff894ee1167f3fbce1945ea09250a55293fc",
+    "output/ml/gecco-v6-development/run_04/2017_fold_3/calibration_scores.csv.gz": "794f4b6227760060230a28f28a3140cb89cf55282a4ce6c3470509eb4bf374ee",
+    "output/ml/gecco-v6-development/run_04/2017_fold_3/predictions.csv.gz": "4f36f1c5ebfb4d7a587a30e7dd3e49e6b2d431a75a2912eec1f6fffe7d5a28e9",
+    "output/ml/gecco-v6-development/run_04/2017_fold_4/bundle.joblib": "fbb628fa4554803c4a32ea0a2c0780429628627b7a3164ce66c7b9300ede61f3",
+    "output/ml/gecco-v6-development/run_04/2017_fold_4/freeze.json": "235592bbe065214f3a81bc19557cc896c826eb4364326be72d09720f9cdfef7c",
+    "output/ml/gecco-v6-development/run_04/2017_fold_4/calibration_scores.csv.gz": "55a8ae64b66ceb48275b40a0c9950dbc703b4dd88c5b8ef91242605a53f89f78",
+    "output/ml/gecco-v6-development/run_04/2017_fold_4/predictions.csv.gz": "5d0d3faede3c341a97b1aaa501a8642103953a97f2aa75e1546d52574c48c44e",
+    "output/ml/gecco-v6-development/run_04/2017_fold_5/bundle.joblib": "0926b2940ecdc751441cec838e4d70d2035d84ccd72436c972788b962cadaf07",
+    "output/ml/gecco-v6-development/run_04/2017_fold_5/freeze.json": "0e035873a932a2e143cccd9f78ee643fb15cd41d7bc42fc6980c50a1d571b485",
+    "output/ml/gecco-v6-development/run_04/2017_fold_5/calibration_scores.csv.gz": "ecff5ea845105d9ed1e5f9b2d897fa2798cd2d70901ff5c20803474fd92e4637",
+    "output/ml/gecco-v6-development/run_04/2017_fold_5/predictions.csv.gz": "8cb14986e0e73ca5f353d6bc47475b8ad2307dd5cdcda19922cfa309c1d64fe4",
+    "output/ml/gecco-v6-development/run_04/2017_fold_6/bundle.joblib": "72ce97289035b0374285146aebf81d98f6245053f367d677203a1e5df9dd5ab2",
+    "output/ml/gecco-v6-development/run_04/2017_fold_6/freeze.json": "4968c3b94953796e00522a10b7708e356e5df28f19b5475f6d3c3a7f04a1af85",
+    "output/ml/gecco-v6-development/run_04/2017_fold_6/calibration_scores.csv.gz": "22ac663cbe2f68d57f4b29e82c8f040ff4096c1c4e9edb7bdac0aa21c370dc77",
+    "output/ml/gecco-v6-development/run_04/2017_fold_6/predictions.csv.gz": "1a48a42e6502044aa96ec3b76bcafc21243c88ce506f6de11a447821fe7c3797",
+    "output/ml/gecco-v6-development/run_04/2018_fold_1/bundle.joblib": "812efce2cae775da724a9dcb93ef811dee33bd3683f699cb877a45c5cbbe6ed1",
+    "output/ml/gecco-v6-development/run_04/2018_fold_1/freeze.json": "c8e7deed58620283b36a3ce1388d43bc3636ccb2c36c0d230c9f7fa2019bb417",
+    "output/ml/gecco-v6-development/run_04/2018_fold_1/calibration_scores.csv.gz": "75d64709353aea8252cf43b945a89d27f11e20f23a00f78312a09081939709a4",
+    "output/ml/gecco-v6-development/run_04/2018_fold_1/predictions.csv.gz": "4448f37638d6a0adaea1eebfc7b5d199b8a3e7483401fdc5706a00e918de5bdc",
+    "output/ml/gecco-v6-development/run_04/2018_fold_2/bundle.joblib": "594161c1d7bbec595eaee33844b953df27b345f88d0517a15095f3189fecbbee",
+    "output/ml/gecco-v6-development/run_04/2018_fold_2/freeze.json": "8965518ec0902365d041cd89e7895b18f6d1a5e3f5b105c642f374e8a4dba2b6",
+    "output/ml/gecco-v6-development/run_04/2018_fold_2/calibration_scores.csv.gz": "6c183ccad369a5e5a854ebabcb9979dd16fa50022df7a2c9bfa6953a7f95f282",
+    "output/ml/gecco-v6-development/run_04/2018_fold_2/predictions.csv.gz": "a9a5e2fb56618965480830d90707606c6ee43bd55a6fa281753517b5222a6646",
+    "output/ml/gecco-v6-development/run_04/2018_fold_3/bundle.joblib": "6c4b5a083414a004bd4f017a218e6ad3e5cc0ffc9782fc8d8fcd0bc57c096ef0",
+    "output/ml/gecco-v6-development/run_04/2018_fold_3/freeze.json": "10e608ccffb32c4c65db0fba69622ef08871ead837fa9dcbb11ae7b682f22a42",
+    "output/ml/gecco-v6-development/run_04/2018_fold_3/calibration_scores.csv.gz": "6df329f4e6dc96947bcd6f0d4d6ecc5bb4aec551fa2a36e2f234a328da9e7bd5",
+    "output/ml/gecco-v6-development/run_04/2018_fold_3/predictions.csv.gz": "db00bdf5b60dfe38f424eb98de8308c9bdd6c460dc05f2e7f81695c0b9dddaa2",
+    "output/ml/gecco-v6-development/run_04/2018_fold_4/bundle.joblib": "1010e29e514193dfd67de35c001680461ba7edce9e41534d9ada2cb2e9654974",
+    "output/ml/gecco-v6-development/run_04/2018_fold_4/freeze.json": "cda0773e64cfd8ec8d6f78bd7c97d634b206d28b2a683461f1d0dc216b5af87b",
+    "output/ml/gecco-v6-development/run_04/2018_fold_4/calibration_scores.csv.gz": "ba3bf285577dcb30cfe4abb56e06881b8947ed21e133f559e6aa21f0b6eb421a",
+    "output/ml/gecco-v6-development/run_04/2018_fold_4/predictions.csv.gz": "f0284f796b79e65ef012c71a61b3e66b8a63454a12e5a96716261147c223d489",
+    "output/ml/gecco-v6-development/run_04/2018_fold_5/bundle.joblib": "3a3390ce427d9c5a109ab25a52106e85346e601a517c98252509ae66b60d1684",
+    "output/ml/gecco-v6-development/run_04/2018_fold_5/freeze.json": "13a6ee8f081587af96c4de04575f1647da6ca02e4ec530ea88b6c0996b6132e8",
+    "output/ml/gecco-v6-development/run_04/2018_fold_5/calibration_scores.csv.gz": "cfda5ad9763c03c1978ca70fb66bb66296b00a1c79ce2fbe32a0d1a4c70e44bb",
+    "output/ml/gecco-v6-development/run_04/2018_fold_5/predictions.csv.gz": "201f4517c33c0df01bc9f608967c9d75207dcb4708d5a5fdef70ea6bfe85be1d",
+    "output/ml/gecco-v6-development/run_04/2018_fold_6/bundle.joblib": "acf110f5ba2cbe41d68fa0318c98f5439d710912b37d291aa8fabbaff720d3b0",
+    "output/ml/gecco-v6-development/run_04/2018_fold_6/freeze.json": "6ce7be59652f8d335328ae199d601adc48e01542f591cd8266e8715612720f3c",
+    "output/ml/gecco-v6-development/run_04/2018_fold_6/calibration_scores.csv.gz": "1073487f4c2f9ffe5999361ff8bf9758254ea60da67767d49820c9e8c082d81d",
+    "output/ml/gecco-v6-development/run_04/2018_fold_6/predictions.csv.gz": "2ee25c95f9f791aef31bdfc9abdb180d19236018b8fe37bb561500f2c74f2fb8",
+    "output/ml/gecco-v6-development/run_04/2019_disclosed_test/bundle.joblib": "72cf6a753adc1a785ce78815561d72fff744d8d4780f6854e6fab2330e3b8335",
+    "output/ml/gecco-v6-development/run_04/2019_disclosed_test/freeze.json": "584fe51551b10618a2cf885e39bd2b9173bff2b19ee6142e94cb066617eff728",
+    "output/ml/gecco-v6-development/run_04/2019_disclosed_test/calibration_scores.csv.gz": "42213d40249c65775de351711aae08107815781cfe7e011a6bb5153790e04bac",
+    "output/ml/gecco-v6-development/run_04/2019_disclosed_test/predictions.csv.gz": "44bedc32c74e0a06f499c702ad1d02c15be171083aad00e82b5966bf216dece4",
+    "output/ml/gecco-v6-waterhub-first-use/2018-11/bundle.joblib": "204adae633f68f467373f7851c97785569c9a107f0c422e5b174d929338f4a39",
+    "output/ml/gecco-v6-waterhub-first-use/2018-11/freeze.json": "bccb7d5c035de15583462f7ced4600e7e472961526cb75df4a5f4b78a7ee82f1",
+    "output/ml/gecco-v6-waterhub-first-use/2018-11/calibration_scores.csv.gz": "babad172b39e57408cf8410acefd8a88b5912b353be0a4b49a311e968f38fd39",
+    "output/ml/gecco-v6-waterhub-first-use/2018-11/predictions.csv.gz": "c0770a537aa247d695b9b48dced76dfd207d4d13afcfd291792db03fb553bee3",
+    "output/ml/gecco-v6-waterhub-first-use/2018-12/bundle.joblib": "7bd199f649a2a283a5a14c0acaa858ebc4eed4444295bf2734abbc90bbd8edd8",
+    "output/ml/gecco-v6-waterhub-first-use/2018-12/freeze.json": "8d29387831971ca7085872ac9f70f4e0d5763bf80352fc1cae82b632277ff3fe",
+    "output/ml/gecco-v6-waterhub-first-use/2018-12/calibration_scores.csv.gz": "a41257e8c3c36af7518d56f7d9ea8352bbe2f79bdfbb17a2c0bb66c07ea482a9",
+    "output/ml/gecco-v6-waterhub-first-use/2018-12/predictions.csv.gz": "2d1dc42edbcdf4a67f4e3c098a10893290eded63ce08ec8e4af32ddcd43f1e62",
+    "output/ml/gecco-v6-waterhub-first-use/2019-01/bundle.joblib": "a53aed87ea9fe7e6d74997ebdba6966b9320ba285056268e998a6898efad8f11",
+    "output/ml/gecco-v6-waterhub-first-use/2019-01/freeze.json": "2efb138f5be74478ce43abc74b4570bf6d4e16ce8b7a1380cc45fed649284fbb",
+    "output/ml/gecco-v6-waterhub-first-use/2019-01/calibration_scores.csv.gz": "557b8477e14c7162b93ba36f7c5d3352767886aab485e624402530b8e6f6aa19",
+    "output/ml/gecco-v6-waterhub-first-use/2019-01/predictions.csv.gz": "4c1b273d1e2a094f532825542ccdd1a8b2d56b8616788ed2e4092bdd009c211b",
+    "output/ml/gecco-v6-waterhub-first-use/2019-02/bundle.joblib": "a588ec3dc2688dd831075b9c835e108cf1c5e75aa8c344e40886c89808cb80ff",
+    "output/ml/gecco-v6-waterhub-first-use/2019-02/freeze.json": "63dc9ae5308f2d95ac8f99f0d5e477efdd7a6d01c762501897fd3d3ab5c46f4b",
+    "output/ml/gecco-v6-waterhub-first-use/2019-02/calibration_scores.csv.gz": "ef358f0a9c31a1d1c9dc9388388edf1e70736bb13a3ba90a22293c1b7622cb6b",
+    "output/ml/gecco-v6-waterhub-first-use/2019-02/predictions.csv.gz": "41ffc36b404842e15c762d377e936e3691e94024941a26aaf7334d6ab3b27949",
+    "output/ml/gecco-v6-waterhub-first-use/2019-03/bundle.joblib": "cd7f66770c638d0fd04c5b653e47867823124e3867304296f39c01f77bb206d2",
+    "output/ml/gecco-v6-waterhub-first-use/2019-03/freeze.json": "4c050fafc870b8a6b77b7653658f84ff2d51750f0d3a7c598b17a004bf4d7e14",
+    "output/ml/gecco-v6-waterhub-first-use/2019-03/calibration_scores.csv.gz": "1f46cf3fa970644a23a030b847cb7a5eb126d3e771f356ba0bf370e9a89c70e8",
+    "output/ml/gecco-v6-waterhub-first-use/2019-03/predictions.csv.gz": "87270c959cbbe0c6a9dd952dc0032e3dce84103cc124c24eb1d4581b548947cb",
+    "output/ml/gecco-v6-waterhub-first-use/2019-04/bundle.joblib": "abe0d13e14b6b76d3371fdbd12fd74e39e11faa081923a0d264d9a886b5ce644",
+    "output/ml/gecco-v6-waterhub-first-use/2019-04/freeze.json": "9888f9103fb60f619b23383dc1a75aa63a7b4201debdbad1dc01de8370024b2b",
+    "output/ml/gecco-v6-waterhub-first-use/2019-04/calibration_scores.csv.gz": "7fc5b6e99b0b31f1b0698fb0425bc145df2982ac35c9a8e924de67ef1dc3f20e",
+    "output/ml/gecco-v6-waterhub-first-use/2019-04/predictions.csv.gz": "b9193abb46f9f561b0f2a92ed30dec13afe2a49a380fb8a946084e5f45b1d248",
+    "output/ml/gecco-v8-development/run_01/plan.json": "0cfd2f0a53499d5be732e0072090cd0def1604965097fc17a46d156f1cab3cc8",
+    "output/ml/gecco-v8-development/run_01/results.json": "682d74afda05993a77316d99b54dc603ba558ae617939ee3cdd52d6564333c86",
+    "output/ml/gecco-v8-development/run_01/audit.json": "2d6475045b5c9323a2c13e950587793404419b5f1cda211ec4d676dc9f2456c1",
+    "output/ml/gecco-v9-development/run_01/plan.json": "fb2235913e0fdcde4273e2f5a3a3e28c7372d662deb4a96d57e00def239987f2",
+    "output/ml/gecco-v9-development/run_01/results.json": "4d4770163d9213046d7dcf12cd4dd097345088da7a311aae1b34691c4715f243",
+    "output/ml/gecco-v9-development/run_01/audit.json": "46093c7b627f66ce491bff74a68139ffc235248db44d9f5855f61e3b3e5cf18d",
+    "output/ml/gecco-v10-development/run_01/plan.json": "2b1b67eaec8b968329193d6e4657a3df9efe801ac6acb71f9cbde21025b45413",
+    "output/ml/gecco-v10-development/run_01/results.json": "cb00ac1e346197423451256c75981203aaed291a10f1cc1efd379e972d80075a",
+    "output/ml/gecco-v10-development/run_01/audit.json": "e25afe3d63c427773dc92b212434154e677ea9cfd397d927a515525a1891a35b",
+    "output/ml/gecco-v11-development/run_01/plan.json": "f3e4b99402ccde2770056dfb760d16e186509a65d23b25523db1cb7bdb22f6fb",
+    "output/ml/gecco-v11-development/run_01/results.json": "474a7a741398d35eff8ea5ac81b8ae090504abb4a4f95a201924e55667945c7e",
+    "output/ml/gecco-v11-development/run_01/audit.json": "756ea0d4fcba59970f453f2379d88a25599cd179ebc1c1f04a5a2361d76b1b90",
+    "output/ml/gecco-v12-development/run_01/plan.json": "57be9b4012e2280bb95a145df7cd2576288ae2a5a43934777e4516e040993a4b",
+    "output/ml/gecco-v12-development/run_01/results.json": "73f15da043157fac69e172f896b781e92a396fee38f0ac5041112f2630e6c73b",
+    "output/ml/gecco-v12-development/run_01/audit.json": "14794e1bcb88dd974a1ac95ebd8c9efe595a5396440011e7767b2c331070ffbe"
+  },
+  "reference_sha256": {
+    "2017_fold_1": {
+      "folder": "output/ml/gecco-v6-development/run_04/2017_fold_1",
+      "files": {
+        "bundle.joblib": "a47ae371f94a8c745b18934a941d49ddaca9ce5164864161c318ea407fd93b92",
+        "freeze.json": "352a25746323c9d170115bc11224cab1c1799bdcbd0e47d669e5a68c9b5f12af",
+        "calibration_scores.csv.gz": "ee8d03afc9c4dde1d0214849c99e640c13d32b6b7202cb555754f9b888c0fe0d",
+        "predictions.csv.gz": "f92dfe2b68fa318a55b116be10157f70a823e5517943795b09dea077701c7a44"
+      }
+    },
+    "2017_fold_2": {
+      "folder": "output/ml/gecco-v6-development/run_04/2017_fold_2",
+      "files": {
+        "bundle.joblib": "481a1811e82270a5ff72c47c069bc58e6c569dcc008c19a2a32c8501034c9fb2",
+        "freeze.json": "d1de9869bb6b07044f8ceea636d0faef69a9761a54d1f4e32359b1ce879ec9a7",
+        "calibration_scores.csv.gz": "4f9651b38b6c1845e1d0fafd1317320dfd2174ee410765e4d3e3bf7360d40dd4",
+        "predictions.csv.gz": "9605f328198e088efa8f317c648f7274109a09b311fd48b6342e06a93d66e366"
+      }
+    },
+    "2017_fold_3": {
+      "folder": "output/ml/gecco-v6-development/run_04/2017_fold_3",
+      "files": {
+        "bundle.joblib": "2becba81fbc554cee791f97c90b1951cb022f5c0132b8de734b22f6dcbb202ee",
+        "freeze.json": "b613167fb20536f8d1241d283b65ff894ee1167f3fbce1945ea09250a55293fc",
+        "calibration_scores.csv.gz": "794f4b6227760060230a28f28a3140cb89cf55282a4ce6c3470509eb4bf374ee",
+        "predictions.csv.gz": "4f36f1c5ebfb4d7a587a30e7dd3e49e6b2d431a75a2912eec1f6fffe7d5a28e9"
+      }
+    },
+    "2017_fold_4": {
+      "folder": "output/ml/gecco-v6-development/run_04/2017_fold_4",
+      "files": {
+        "bundle.joblib": "fbb628fa4554803c4a32ea0a2c0780429628627b7a3164ce66c7b9300ede61f3",
+        "freeze.json": "235592bbe065214f3a81bc19557cc896c826eb4364326be72d09720f9cdfef7c",
+        "calibration_scores.csv.gz": "55a8ae64b66ceb48275b40a0c9950dbc703b4dd88c5b8ef91242605a53f89f78",
+        "predictions.csv.gz": "5d0d3faede3c341a97b1aaa501a8642103953a97f2aa75e1546d52574c48c44e"
+      }
+    },
+    "2017_fold_5": {
+      "folder": "output/ml/gecco-v6-development/run_04/2017_fold_5",
+      "files": {
+        "bundle.joblib": "0926b2940ecdc751441cec838e4d70d2035d84ccd72436c972788b962cadaf07",
+        "freeze.json": "0e035873a932a2e143cccd9f78ee643fb15cd41d7bc42fc6980c50a1d571b485",
+        "calibration_scores.csv.gz": "ecff5ea845105d9ed1e5f9b2d897fa2798cd2d70901ff5c20803474fd92e4637",
+        "predictions.csv.gz": "8cb14986e0e73ca5f353d6bc47475b8ad2307dd5cdcda19922cfa309c1d64fe4"
+      }
+    },
+    "2017_fold_6": {
+      "folder": "output/ml/gecco-v6-development/run_04/2017_fold_6",
+      "files": {
+        "bundle.joblib": "72ce97289035b0374285146aebf81d98f6245053f367d677203a1e5df9dd5ab2",
+        "freeze.json": "4968c3b94953796e00522a10b7708e356e5df28f19b5475f6d3c3a7f04a1af85",
+        "calibration_scores.csv.gz": "22ac663cbe2f68d57f4b29e82c8f040ff4096c1c4e9edb7bdac0aa21c370dc77",
+        "predictions.csv.gz": "1a48a42e6502044aa96ec3b76bcafc21243c88ce506f6de11a447821fe7c3797"
+      }
+    },
+    "2018_fold_1": {
+      "folder": "output/ml/gecco-v6-development/run_04/2018_fold_1",
+      "files": {
+        "bundle.joblib": "812efce2cae775da724a9dcb93ef811dee33bd3683f699cb877a45c5cbbe6ed1",
+        "freeze.json": "c8e7deed58620283b36a3ce1388d43bc3636ccb2c36c0d230c9f7fa2019bb417",
+        "calibration_scores.csv.gz": "75d64709353aea8252cf43b945a89d27f11e20f23a00f78312a09081939709a4",
+        "predictions.csv.gz": "4448f37638d6a0adaea1eebfc7b5d199b8a3e7483401fdc5706a00e918de5bdc"
+      }
+    },
+    "2018_fold_2": {
+      "folder": "output/ml/gecco-v6-development/run_04/2018_fold_2",
+      "files": {
+        "bundle.joblib": "594161c1d7bbec595eaee33844b953df27b345f88d0517a15095f3189fecbbee",
+        "freeze.json": "8965518ec0902365d041cd89e7895b18f6d1a5e3f5b105c642f374e8a4dba2b6",
+        "calibration_scores.csv.gz": "6c183ccad369a5e5a854ebabcb9979dd16fa50022df7a2c9bfa6953a7f95f282",
+        "predictions.csv.gz": "a9a5e2fb56618965480830d90707606c6ee43bd55a6fa281753517b5222a6646"
+      }
+    },
+    "2018_fold_3": {
+      "folder": "output/ml/gecco-v6-development/run_04/2018_fold_3",
+      "files": {
+        "bundle.joblib": "6c4b5a083414a004bd4f017a218e6ad3e5cc0ffc9782fc8d8fcd0bc57c096ef0",
+        "freeze.json": "10e608ccffb32c4c65db0fba69622ef08871ead837fa9dcbb11ae7b682f22a42",
+        "calibration_scores.csv.gz": "6df329f4e6dc96947bcd6f0d4d6ecc5bb4aec551fa2a36e2f234a328da9e7bd5",
+        "predictions.csv.gz": "db00bdf5b60dfe38f424eb98de8308c9bdd6c460dc05f2e7f81695c0b9dddaa2"
+      }
+    },
+    "2018_fold_4": {
+      "folder": "output/ml/gecco-v6-development/run_04/2018_fold_4",
+      "files": {
+        "bundle.joblib": "1010e29e514193dfd67de35c001680461ba7edce9e41534d9ada2cb2e9654974",
+        "freeze.json": "cda0773e64cfd8ec8d6f78bd7c97d634b206d28b2a683461f1d0dc216b5af87b",
+        "calibration_scores.csv.gz": "ba3bf285577dcb30cfe4abb56e06881b8947ed21e133f559e6aa21f0b6eb421a",
+        "predictions.csv.gz": "f0284f796b79e65ef012c71a61b3e66b8a63454a12e5a96716261147c223d489"
+      }
+    },
+    "2018_fold_5": {
+      "folder": "output/ml/gecco-v6-development/run_04/2018_fold_5",
+      "files": {
+        "bundle.joblib": "3a3390ce427d9c5a109ab25a52106e85346e601a517c98252509ae66b60d1684",
+        "freeze.json": "13a6ee8f081587af96c4de04575f1647da6ca02e4ec530ea88b6c0996b6132e8",
+        "calibration_scores.csv.gz": "cfda5ad9763c03c1978ca70fb66bb66296b00a1c79ce2fbe32a0d1a4c70e44bb",
+        "predictions.csv.gz": "201f4517c33c0df01bc9f608967c9d75207dcb4708d5a5fdef70ea6bfe85be1d"
+      }
+    },
+    "2018_fold_6": {
+      "folder": "output/ml/gecco-v6-development/run_04/2018_fold_6",
+      "files": {
+        "bundle.joblib": "acf110f5ba2cbe41d68fa0318c98f5439d710912b37d291aa8fabbaff720d3b0",
+        "freeze.json": "6ce7be59652f8d335328ae199d601adc48e01542f591cd8266e8715612720f3c",
+        "calibration_scores.csv.gz": "1073487f4c2f9ffe5999361ff8bf9758254ea60da67767d49820c9e8c082d81d",
+        "predictions.csv.gz": "2ee25c95f9f791aef31bdfc9abdb180d19236018b8fe37bb561500f2c74f2fb8"
+      }
+    },
+    "2019_disclosed_test": {
+      "folder": "output/ml/gecco-v6-development/run_04/2019_disclosed_test",
+      "files": {
+        "bundle.joblib": "72cf6a753adc1a785ce78815561d72fff744d8d4780f6854e6fab2330e3b8335",
+        "freeze.json": "584fe51551b10618a2cf885e39bd2b9173bff2b19ee6142e94cb066617eff728",
+        "calibration_scores.csv.gz": "42213d40249c65775de351711aae08107815781cfe7e011a6bb5153790e04bac",
+        "predictions.csv.gz": "44bedc32c74e0a06f499c702ad1d02c15be171083aad00e82b5966bf216dece4"
+      }
+    },
+    "2018-11": {
+      "folder": "output/ml/gecco-v6-waterhub-first-use/2018-11",
+      "files": {
+        "bundle.joblib": "204adae633f68f467373f7851c97785569c9a107f0c422e5b174d929338f4a39",
+        "freeze.json": "bccb7d5c035de15583462f7ced4600e7e472961526cb75df4a5f4b78a7ee82f1",
+        "calibration_scores.csv.gz": "babad172b39e57408cf8410acefd8a88b5912b353be0a4b49a311e968f38fd39",
+        "predictions.csv.gz": "c0770a537aa247d695b9b48dced76dfd207d4d13afcfd291792db03fb553bee3"
+      }
+    },
+    "2018-12": {
+      "folder": "output/ml/gecco-v6-waterhub-first-use/2018-12",
+      "files": {
+        "bundle.joblib": "7bd199f649a2a283a5a14c0acaa858ebc4eed4444295bf2734abbc90bbd8edd8",
+        "freeze.json": "8d29387831971ca7085872ac9f70f4e0d5763bf80352fc1cae82b632277ff3fe",
+        "calibration_scores.csv.gz": "a41257e8c3c36af7518d56f7d9ea8352bbe2f79bdfbb17a2c0bb66c07ea482a9",
+        "predictions.csv.gz": "2d1dc42edbcdf4a67f4e3c098a10893290eded63ce08ec8e4af32ddcd43f1e62"
+      }
+    },
+    "2019-01": {
+      "folder": "output/ml/gecco-v6-waterhub-first-use/2019-01",
+      "files": {
+        "bundle.joblib": "a53aed87ea9fe7e6d74997ebdba6966b9320ba285056268e998a6898efad8f11",
+        "freeze.json": "2efb138f5be74478ce43abc74b4570bf6d4e16ce8b7a1380cc45fed649284fbb",
+        "calibration_scores.csv.gz": "557b8477e14c7162b93ba36f7c5d3352767886aab485e624402530b8e6f6aa19",
+        "predictions.csv.gz": "4c1b273d1e2a094f532825542ccdd1a8b2d56b8616788ed2e4092bdd009c211b"
+      }
+    },
+    "2019-02": {
+      "folder": "output/ml/gecco-v6-waterhub-first-use/2019-02",
+      "files": {
+        "bundle.joblib": "a588ec3dc2688dd831075b9c835e108cf1c5e75aa8c344e40886c89808cb80ff",
+        "freeze.json": "63dc9ae5308f2d95ac8f99f0d5e477efdd7a6d01c762501897fd3d3ab5c46f4b",
+        "calibration_scores.csv.gz": "ef358f0a9c31a1d1c9dc9388388edf1e70736bb13a3ba90a22293c1b7622cb6b",
+        "predictions.csv.gz": "41ffc36b404842e15c762d377e936e3691e94024941a26aaf7334d6ab3b27949"
+      }
+    },
+    "2019-03": {
+      "folder": "output/ml/gecco-v6-waterhub-first-use/2019-03",
+      "files": {
+        "bundle.joblib": "cd7f66770c638d0fd04c5b653e47867823124e3867304296f39c01f77bb206d2",
+        "freeze.json": "4c050fafc870b8a6b77b7653658f84ff2d51750f0d3a7c598b17a004bf4d7e14",
+        "calibration_scores.csv.gz": "1f46cf3fa970644a23a030b847cb7a5eb126d3e771f356ba0bf370e9a89c70e8",
+        "predictions.csv.gz": "87270c959cbbe0c6a9dd952dc0032e3dce84103cc124c24eb1d4581b548947cb"
+      }
+    },
+    "2019-04": {
+      "folder": "output/ml/gecco-v6-waterhub-first-use/2019-04",
+      "files": {
+        "bundle.joblib": "abe0d13e14b6b76d3371fdbd12fd74e39e11faa081923a0d264d9a886b5ce644",
+        "freeze.json": "9888f9103fb60f619b23383dc1a75aa63a7b4201debdbad1dc01de8370024b2b",
+        "calibration_scores.csv.gz": "7fc5b6e99b0b31f1b0698fb0425bc145df2982ac35c9a8e924de67ef1dc3f20e",
+        "predictions.csv.gz": "b9193abb46f9f561b0f2a92ed30dec13afe2a49a380fb8a946084e5f45b1d248"
+      }
+    }
+  },
+  "historical_comparison_sha256": {
+    "output/ml/gecco-v8-development/run_01/plan.json": "0cfd2f0a53499d5be732e0072090cd0def1604965097fc17a46d156f1cab3cc8",
+    "output/ml/gecco-v8-development/run_01/results.json": "682d74afda05993a77316d99b54dc603ba558ae617939ee3cdd52d6564333c86",
+    "output/ml/gecco-v8-development/run_01/audit.json": "2d6475045b5c9323a2c13e950587793404419b5f1cda211ec4d676dc9f2456c1",
+    "output/ml/gecco-v9-development/run_01/plan.json": "fb2235913e0fdcde4273e2f5a3a3e28c7372d662deb4a96d57e00def239987f2",
+    "output/ml/gecco-v9-development/run_01/results.json": "4d4770163d9213046d7dcf12cd4dd097345088da7a311aae1b34691c4715f243",
+    "output/ml/gecco-v9-development/run_01/audit.json": "46093c7b627f66ce491bff74a68139ffc235248db44d9f5855f61e3b3e5cf18d",
+    "output/ml/gecco-v10-development/run_01/plan.json": "2b1b67eaec8b968329193d6e4657a3df9efe801ac6acb71f9cbde21025b45413",
+    "output/ml/gecco-v10-development/run_01/results.json": "cb00ac1e346197423451256c75981203aaed291a10f1cc1efd379e972d80075a",
+    "output/ml/gecco-v10-development/run_01/audit.json": "e25afe3d63c427773dc92b212434154e677ea9cfd397d927a515525a1891a35b",
+    "output/ml/gecco-v11-development/run_01/plan.json": "f3e4b99402ccde2770056dfb760d16e186509a65d23b25523db1cb7bdb22f6fb",
+    "output/ml/gecco-v11-development/run_01/results.json": "474a7a741398d35eff8ea5ac81b8ae090504abb4a4f95a201924e55667945c7e",
+    "output/ml/gecco-v11-development/run_01/audit.json": "756ea0d4fcba59970f453f2379d88a25599cd179ebc1c1f04a5a2361d76b1b90",
+    "output/ml/gecco-v12-development/run_01/plan.json": "57be9b4012e2280bb95a145df7cd2576288ae2a5a43934777e4516e040993a4b",
+    "output/ml/gecco-v12-development/run_01/results.json": "73f15da043157fac69e172f896b781e92a396fee38f0ac5041112f2630e6c73b",
+    "output/ml/gecco-v12-development/run_01/audit.json": "14794e1bcb88dd974a1ac95ebd8c9efe595a5396440011e7767b2c331070ffbe"
+  },
+  "case_order": [
+    "2017_fold_1",
+    "2017_fold_2",
+    "2017_fold_3",
+    "2017_fold_4",
+    "2017_fold_5",
+    "2017_fold_6",
+    "2018_fold_1",
+    "2018_fold_2",
+    "2018_fold_3",
+    "2018_fold_4",
+    "2018_fold_5",
+    "2018_fold_6",
+    "2019_disclosed_test",
+    "2018-11",
+    "2018-12",
+    "2019-01",
+    "2019-02",
+    "2019-03",
+    "2019-04"
+  ],
+  "single_statistical_change": "Only redistribute known-normal training weight using the existing V5/V6 rule: q95 of finite original frozen-IF raw scores on ALL original training rows with label0, irrespective of HGB eligibility. Eligible normal rows receive relative weight5 when raw score>=q95 and weight1 otherwise; normalize total negative mass to0.5. Missing IF or no finite known-normal score yields uniform normal weights. No calibration/test values or labels enter q95 or weights. V12 features, reference statistics, positive/onset weights, HGB hyperparameters, row availability and V10 policy remain unchanged. Original IF is never refitted. One candidate, no coefficient search.",
+  "calibration_contract": "Use the already frozen V10 positive-pulse/pending certification, not the V11 hard protection. This is one training-weight experiment under that fixed policy. No extra threshold grid or model family search. Original IF/V6 gates remain unchanged; historical retention and the separately declared V8 user objective are additional evaluation gates, without changing selection.",
+  "fitting_disclosure": "Original IF is reused without refitting. Its training scores are in-sample representation features, not cross-fitted estimates. The HGB is fitted only on the original training subset. These are reused disclosed development periods; correct temporal splits do not create fresh independent evidence.",
+  "streaming_limitation": "Raw baseline15 rolling statistics depend on finite-precision history. Mathematical lookback bounds alone do not qualify a cropped streaming implementation; separate numerical parity evidence is required.",
+  "weights": "Normal total0.5 with train-only frozen IF q95 tail emphasis5:1 (inclusive >= ties); positive0.125 uniformly by point +0.125 uniformly across eligible contiguous segments +0.25 uniformly across known-onset events and eligible rows at actual offsets0,1,2. Known onset requires previouslabel0. No moving unavailable onset rows later. If no eligible known onset exists, redistribute0.25 to segment-uniform mass (0.375). Unknown labels always zero weight.",
+  "normal_weight_recipe": {
+    "quantile": 0.95,
+    "quantile_method": "linear",
+    "quantile_scope": "ALL original training rows with label0 and finite float64 frozen original IF raw score; not restricted to HGB eligibility",
+    "tail_comparison": ">=",
+    "tail_relative_weight": 5,
+    "other_relative_weight": 1,
+    "total_negative_mass": 0.5,
+    "fallback": "uniform when IF absent or no finite known-normal IF scores"
+  },
+  "onset_window": "Three samples; at current60s cadence offsets0,60,120s. This training emphasis is not an inference latency guarantee.",
+  "reference": "Immutable V6run04 GECCO and frozen six-month WaterHub; original IF also compared.",
+  "split": "Exact13GECCO+6WaterHub expanding historical training geometry. Four contiguous past calibration blocks. No model fitting on calibration/test.",
+  "selection": "First2 past blocks choose one fixed V10 pulse-retaining pending policy; last2 certify without retuning and all4 veto. Identical low/high grids, normal/event evidence, zero-added-normal pending/rescue checks, positive-pulse ownership and 120s cap. Unsupported or failed certificate returns V6. Fixed V6 itself previously used all4 calibration blocks.",
+  "reset": "Discard first120rows before feature generation perindependentcal/test segment. Partial causal longcontext1440; first60remainingrows unavailable. GECCO2019calfeaturescontinuousafteronegap, policiesreset4blocks.",
+  "acceptance": "All19periods and eachsourcepool preserve confirmed reference eventIDs, availability, paired extraeventdelay<=120s, noFPcount/duration increase vsbothIFandV6. Pooledmoreevents/fewerFPfragments; eachgainin>=2periods. TProwlossdescriptive underuserauthorized<=120s experiment.",
+  "historical_retention_requirement": "Zero lost exact confirmed event IDs vs V8,V9,V10,V11,V12 in every original period and each contiguous source pool. V6 and V8 event-union must be retained; counts alone do not satisfy this. Historical test artifacts are evaluation comparators only, never fit/calibration inputs.",
+  "v8_user_objective": "Separate predeclared stricter comparison: preserve exact V8 event IDs, identical per-row availability, paired extraeventdelay<=120s and no false-fragment count or false-duration increase in any period or contiguous source pool; strictly fewer pooled false fragments and reduction in at least two periods. This gate is reported separately from unchanged original IF/V6 strong gates and does not alter model selection.",
+  "resource_execution": {
+    "training_parallelism": 1,
+    "case_isolation": "fresh subprocess per case; no concurrent training",
+    "minimum_free_disk_bytes": 1073741824,
+    "raw_or_feature_caches_copied": false,
+    "incomplete_run_cannot_pass": true
+  },
+  "comparison_schema": "Legacy keys if_vs_v7 and v6_vs_v7 denote currentcandidate V13; all metrics and output columns retain the independently audited schema.",
+  "cadence_seconds": 60,
+  "maximum_confirmation_seconds": 120,
+  "environment": {
+    "python": "3.12.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  },
+  "no_3d_or_actuator_integration": true
+}

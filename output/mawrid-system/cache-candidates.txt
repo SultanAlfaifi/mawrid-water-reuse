@@ -1,0 +1,57 @@
+1.6G	/Users/sultan/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle/Installation/JLzJjclif/pVz1BXcuy/ChatGPT.app
+1.6G	/Users/sultan/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle/Installation/JLzJjclif/pVz1BXcuy
+1.7G	/Users/sultan/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle/Installation/JLzJjclif
+1.7G	/Users/sultan/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle/Installation
+741M	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Cache/Cache_Data
+ 12K	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Cache/No_Vary_Search
+741M	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Cache
+ 60K	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/image_cache/image_data_storage
+  0B	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/image_cache/cached_image_fetcher_images
+ 60K	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/image_cache
+ 16K	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Storage/ext
+ 16K	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Storage
+202M	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Code Cache/js
+162M	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Code Cache/wasm
+365M	/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Code Cache
+1.1G	/Users/sultan/Library/Caches/Google/Chrome/Profile 1
+221M	/Users/sultan/Library/Caches/Google/Chrome/Default/Cache/Cache_Data
+221M	/Users/sultan/Library/Caches/Google/Chrome/Default/Cache
+4.0K	/Users/sultan/Library/Caches/Google/Chrome/Default/image_cache/image_data_storage
+  0B	/Users/sultan/Library/Caches/Google/Chrome/Default/image_cache/cached_image_fetcher_images
+4.0K	/Users/sultan/Library/Caches/Google/Chrome/Default/image_cache
+ 16K	/Users/sultan/Library/Caches/Google/Chrome/Default/Storage/ext
+ 16K	/Users/sultan/Library/Caches/Google/Chrome/Default/Storage
+ 74M	/Users/sultan/Library/Caches/Google/Chrome/Default/Code Cache/js
+8.0K	/Users/sultan/Library/Caches/Google/Chrome/Default/Code Cache/wasm
+ 74M	/Users/sultan/Library/Caches/Google/Chrome/Default/Code Cache
+295M	/Users/sultan/Library/Caches/Google/Chrome/Default
+8.0K	/Users/sultan/Library/Caches/Google/Chrome/System Profile/Code Cache/js
+8.0K	/Users/sultan/Library/Caches/Google/Chrome/System Profile/Code Cache/wasm
+ 16K	/Users/sultan/Library/Caches/Google/Chrome/System Profile/Code Cache
+ 16K	/Users/sultan/Library/Caches/Google/Chrome/System Profile
+1.4G	/Users/sultan/Library/Caches/Google/Chrome
+1.0M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/login-staging/Cache
+172K	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/login-staging/Code Cache
+1.2M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/login-staging
+ 12K	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/Default/Cache
+ 16K	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/Default/Code Cache
+ 28K	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/Default
+590M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/user-34QtvAfzUomjFyCOlUEoosgI__1f71e015-0b01-4211-af9a-2c88a9afd991/Cache
+193M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/user-34QtvAfzUomjFyCOlUEoosgI__1f71e015-0b01-4211-af9a-2c88a9afd991/Code Cache
+784M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/user-34QtvAfzUomjFyCOlUEoosgI__1f71e015-0b01-4211-af9a-2c88a9afd991
+785M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host
+785M	/Users/sultan/Library/Caches/com.openai.atlas/browser-data
+167M	/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app/Cache/Cache_Data
+8.0K	/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app/Cache/No_Vary_Search
+167M	/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app/Cache
+110M	/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app/Code Cache/js
+8.0K	/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app/Code Cache/wasm
+110M	/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app/Code Cache
+277M	/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app
+277M	/Users/sultan/Library/Caches/Codex/Default/Partitions
+619M	/Users/sultan/Library/Caches/com.anthropic.claudefordesktop.ShipIt/update.zXGRrtk/Claude.app/Contents
+619M	/Users/sultan/Library/Caches/com.anthropic.claudefordesktop.ShipIt/update.zXGRrtk/Claude.app
+619M	/Users/sultan/Library/Caches/com.anthropic.claudefordesktop.ShipIt/update.zXGRrtk
+619M	/Users/sultan/Library/Caches/com.anthropic.claudefordesktop.ShipIt
+174M	/Users/sultan/Library/Caches/antigravity-updater/pending
+348M	/Users/sultan/Library/Caches/antigravity-updater

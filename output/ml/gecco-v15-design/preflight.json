@@ -1,0 +1,28 @@
+{
+  "at_utc": "2026-10-17T11:50:04.119014+00:00",
+  "passed": true,
+  "tests": 68,
+  "synthetic_only": true,
+  "actual_source_arrays_opened": false,
+  "protocol_sha256": "5bc11ea7154a29c9f2301d2d9d652c8d38887e908c5d6aeb9983a2e3a5ca0c66",
+  "log_sha256": "00e210064b77e0a49c41766de67f11ab596302e3e822f3d0fe6d3d9dedd6f9fe",
+  "code_sha256": {
+    "ml/gecco_v15/__init__.py": "49fd2f2b555c2a16976791b257604514c7a179f6a46558da8634343919ba659d",
+    "ml/gecco_v15/audit.py": "712c16488138ed8ed2cf99d2f30bb5a47a0a806cc06e9f2a7552f9a88959f5ea",
+    "ml/gecco_v15/calibration.py": "502382487f041f89a4a36ac0ae238b29707a1fef478447379599fd9f6dede2b9",
+    "ml/gecco_v15/checks.py": "6c77c9c1764ce705cf532b62e623788aadc64a0a7907e3160294eaebf73b1c45",
+    "ml/gecco_v15/development.py": "6241d1c3d447b66cd437ea32b138bc81dbf99aba03898c30fb231e543e63cecd",
+    "ml/gecco_v15/report.py": "5ba4f2b667dfc90c1eaf53f18588b3d379bdf30feb1f7a166f50d3bcb109eb0b",
+    "ml/gecco_v15/runtime.py": "938bc817a9372291a7a68fe6a59be6204cfdf60d0011a4f3f0437ad565a13e85",
+    "ml/gecco_v15/test_audit.py": "ffecea98498c82d402876a4c1e7dc1cd942b0238548c9b731558a8a61ef21864",
+    "ml/gecco_v15/test_calibration.py": "b264c1bbd4e80f4ad08feaf0dadeff65ee53ef73dc3713f2da3792cc7fe9d378",
+    "ml/gecco_v15/test_checks.py": "6f1aab9fcbc555ee018b8d798861581b76471858af114a3def27b16c8103c0af",
+    "ml/gecco_v15/test_execution.py": "b313d4ad8dc5608bcae42b2b2b9794459f1e018954566dfd809ceac41bc07ccc",
+    "ml/gecco_v15/test_runtime.py": "d03de843a0664bd03498ab1a745ecdde5f32872afb918ee06fd7563ba0710ebd"
+  },
+  "earlier_preflight_attempts_preserved": [
+    "preflight-discovery-failed.log",
+    "preflight-fixture-path-failed.log"
+  ],
+  "earlier_failures": "Test discovery collided with legacy module name; dotted imports used. One fixture used unresolved macOS/var symlink; fixture path normalized. No real numeric source access or model trial occurred before successful preflight."
+}

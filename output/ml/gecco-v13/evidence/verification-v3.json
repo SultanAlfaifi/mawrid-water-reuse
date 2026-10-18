@@ -1,0 +1,113 @@
+{
+  "created_at": "2026-10-17T08:59:12.338891+00:00",
+  "software_status": "local_digital_twin_and_research_lab_verified",
+  "url": "http://127.0.0.1:8787/#plant",
+  "field_readiness": false,
+  "test_scope": "Synthetic software/transport/physics tests plus qualified public V9 inference parity; no new model-acceptance evaluation.",
+  "automated_checks": {
+    "server": 58,
+    "client": 39,
+    "edge": 17,
+    "total": 114,
+    "all_passed": true
+  },
+  "actual_public_inference": {
+    "path": "output/mawrid-system/integration-v3.json",
+    "sha256": "84a0c06cf0a1104762031ec7fc811d520227d2aac3b2eb875bf0ec514fb63406",
+    "rows": 3200,
+    "all_input_clocks_sensors_predictions_exact": true,
+    "maximum_score_error": 0,
+    "persisted_after_restart": true,
+    "runtime_server_and_contract_hashes_still_match": true,
+    "frontend_changes_after_this_run": "Diagram fit/readability and source wording; verified separately by current client tests and browser. Original evidence preserved."
+  },
+  "edge_http": {
+    "path": "output/mawrid-system/edge-integration-v3.json",
+    "sha256": "3c3fc7875916295ec161797494ac36e972da9c7c7fb7db1f8d0fe41c19be3fd2",
+    "checks_passed": 55,
+    "lost_reply_after_commit_deduplicated": true,
+    "restart_receipt_and_session_pin": true,
+    "current_code_hashes_match": true
+  },
+  "plant_http": {
+    "path": "output/mawrid-system/plant-integration-v3.json",
+    "sha256": "4537e6a0da34b1006b6426304b890757bcbdc9bd1e2ffe58f1c0111704abd52f",
+    "groups_passed": 12,
+    "full_snapshot_readings": 133,
+    "real_background_worker_verified": true,
+    "current_code_hashes_match": true
+  },
+  "browser_verified": [
+    "Explicit virtual-plant start from operating room",
+    "Normal REUSE equipment and counters",
+    "Turbidity fault enters HOLD, closes valve and creates reasoned event",
+    "Power loss stops equipment and both virtual valves",
+    "Backwash and return to auto",
+    "Pause holds simulation timestamp across more than three minutes, resume advances again",
+    "Irrigation equipment detail matches 8 L/min and cumulative counter",
+    "Session dialog states computed twin with no ML inference claim",
+    "Default diagram entirely fits723px container; no page overflow at964px viewport",
+    "No browser console errors or warnings"
+  ],
+  "screenshots": [
+    {
+      "path": "output/mawrid-system/screenshots/plant-final-v3.png",
+      "sha256": "d96fbf48376930863f5d51e5a1354ade6a5d99fd99fd5e55f15a425699aacb56"
+    },
+    {
+      "path": "output/mawrid-system/screenshots/plant-power-loss-v3.png",
+      "sha256": "2943ed9e8c4fe2c97b25982aa1b8f9f419a770d39fd485d223cd9e5f71b3253a"
+    }
+  ],
+  "final_local_state": {
+    "session_id": "d1282de5-2a60-41a2-ba2c-1649ec6e33b9",
+    "source": "virtual_plant",
+    "session_status": "ready",
+    "virtual_safety_state": "REUSE",
+    "speed": 1,
+    "hardware_connected": false,
+    "physical_valve_state": "closed",
+    "model_on_virtual_source": "unavailable"
+  },
+  "limitations": [
+    "Twin inventories and signals use explicit illustrative assumptions, not field measurements or validated treatment/hydraulic chemistry.",
+    "V9 executes only in its public-data research lab; fixed experimental rules protect the twin.",
+    "Preserving every previously detected event while reducing false alarms remains unmet; no improved-model claim.",
+    "Engineering 3D viewer is a separate reference view, without live control linkage."
+  ],
+  "current_code_sha256": {
+    "mawrid-system/CONTRACT.json": "7afbc05800ce6eda4537420c0bf8694ae665e8206e961e5e417bc960eaa951c3",
+    "mawrid-system/client/api.js": "1941af2e313471b025957c216e0ca6c2b8e3f08cd9f7e4c7fce540cd070c81a9",
+    "mawrid-system/client/app.js": "75514c2d97a12e7013a46c26a52c5c38254f676ed145ef324bcefebfc602da9d",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/index.html": "e8b9ef3aa575f4a062b9f6e05ddf10d8d2ca6af41052cd544a498a16405ecd56",
+    "mawrid-system/client/plant.css": "bdbb581df13cbbcfd5230c9dd7507276f626aa0745c5a25b0a9bf62b07a3ebfa",
+    "mawrid-system/client/plant.js": "0930e944f19e029eae2c2b9bb380fefb82de472b97a2b6bf695479a4ac459361",
+    "mawrid-system/client/styles.css": "a2e72658edc2e74a6f37e00f4dd4b08a350e072990c8557d5ba50620489db4e0",
+    "mawrid-system/client/test-client.mjs": "041ae262e18f9b6e1edb5e2b95cfd2733bfec9f6f87cc14c3b7b7f7ae64cc585",
+    "mawrid-system/client/test-plant.mjs": "03b98af3897872716f76df78b0a7c4d11d058c5d1ad0ba3559495d1d20d78d02",
+    "mawrid-system/edge/__init__.py": "89fdddded9dc67fc8eeede44e8087f0eeac712b2dfcc57aae285da409c980c84",
+    "mawrid-system/edge/__main__.py": "130acafaef8483625c857235eb995dace14121a5ba10eec2c7464c9f045153a7",
+    "mawrid-system/edge/core.py": "f6abc7d7af26b1e2ddacf38b6f74d772c4eaef8329374cd1a4f237ace915d31f",
+    "mawrid-system/edge/main.py": "d9b358c9387895eec43a915be2318137b5ca73bd5dfff41656bbf77af237343b",
+    "mawrid-system/edge/sender.py": "76b59b5214422c5124dce62e2cfde5f23acc0491b962b6152529517aa2940a4d",
+    "mawrid-system/edge/test_core.py": "a37cab639632f3c7c11a23015d19f68ca45db952040c3ed6d17549d5552fd742",
+    "mawrid-system/edge/test_sender.py": "b8c4553e1ad51ceea740dba6eea87e675ab160b49180a4ce47c2e22c187c51c5",
+    "mawrid-system/scripts/verify_actual.py": "73ddd02799a1b9d6ccc845acfea87268b5b3630212e6b2c3d1de7b149e0af193",
+    "mawrid-system/scripts/verify_edge.py": "90dc7cd9055dbcf11359f473d9d613201a9cb90c4c78d15f5dc284cdda3b298b",
+    "mawrid-system/scripts/verify_plant.py": "e71ae85e2e198abda571b42170d718dc898b1a3d0bff71262f66feefff77606e",
+    "mawrid-system/server/__init__.py": "953414236b1649f084ddf55d4c4db286ac5ef25ca2d5ab8b5d442082e5f0b600",
+    "mawrid-system/server/ai.py": "03073f019e304565aa37d05aba26e23199132f38bc56063b53a77ba0d688093f",
+    "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+    "mawrid-system/server/main.py": "8a04474ee4ee32be178d9f4bdeca7e02b88112f582bb6b99fbf6cd301c09b331",
+    "mawrid-system/server/plant.py": "7a4b83f0eae90c009f92165480795155cdf889dfe882f5e73e342679685523f4",
+    "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+    "mawrid-system/server/test_ai.py": "fd31bcfcf68621a4c3fea6a1821527318071f6d507c05f23d377f4a049851d94",
+    "mawrid-system/server/test_app.py": "627baf2c7868ba5eb1efabcbfc219c47449ffc17e5d22b0cd06b976900c3674a",
+    "mawrid-system/server/test_http.py": "79dba8b9f95004778703258984771465287c38ed9cdef1d3465cf37f53770303",
+    "mawrid-system/server/test_ingestion.py": "1ca57a84b53ff8ef0849d5a9d889d128682f9b3a0ae906f0e651de8faf2e9ede",
+    "mawrid-system/server/test_plant.py": "dfffa2eb21e5a8d9301da83366951644c2ee6ba59d5255b6fa63b9545251a610",
+    "mawrid-system/server/test_plant_app.py": "0f613d0b6601dc0e9473feff060dc91a8ff179741388d78fad07dd4590ccfc18",
+    "mawrid-system/server/test_store.py": "fa2c066023e1762053c42a7546cf70a781fd96fd65fb762c6ef76ce15410fa2b"
+  }
+}

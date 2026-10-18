@@ -8,3 +8,16 @@ assets/app/** -whitespace linguist-generated=true
 *.jpg binary
 *.webp binary
 *.ttf binary
+*.woff binary
+*.woff2 binary
+*.jpeg binary
+*.gif binary
+mawrid-system/client/assets/*.js -whitespace linguist-generated=true
+mawrid-system/client/plant3d/assets/** -whitespace linguist-generated=true
+mawrid-final/dist/assets/** -whitespace linguist-generated=true
+output/** -whitespace linguist-generated=true
+# Preserve published CSV byte streams and verbatim upstream license texts.
+*.csv -whitespace
+assets/licenses/** -whitespace
+# Preserve immutable research source hashes while checking other whitespace.
+ml/** whitespace=-blank-at-eof

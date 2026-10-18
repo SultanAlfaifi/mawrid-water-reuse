@@ -1,0 +1,835 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-17T13:05:52.715370+00:00",
+  "status": "requirements_review_and_scoped_implementation_complete_pending_root_UI_integration",
+  "source_precedence": {
+    "identity": "mawrid_full_description.md: وضوء/مغاسل→ري؛وحدةوصندوق",
+    "technical_design": "HTML provided by user takes precedence for technical layout and prices",
+    "operational_truth": "server snapshot; drawings and attachments do not fabricate unimplemented readings or override fixed safety",
+    "attached_instructions_executed": false
+  },
+  "sources": [
+    {
+      "path": "/Users/sultan/Downloads/مورد-محطة-المياه-الرمادية.html",
+      "sha256": "421e7a270ff7449e0e1bc64354672db6c9d34e09378326a46fe1d53fba99ad90",
+      "bytes": 121517,
+      "lines": 867,
+      "read_scope": "Full HTML: styles, SVG topology, all tables, metadata and full INFO script; not executed."
+    },
+    {
+      "path": "/Users/sultan/Downloads/mawrid_full_description.md",
+      "sha256": "ee1a2490bd8dc3c433e8026087c0c71b213c79b2a539748d2be76abfa5e4178c",
+      "role": "identity and product positioning; conflicting old technical/pricing details not adopted"
+    }
+  ],
+  "coverage": {
+    "reference_INFO_items": 33,
+    "mapped_INFO_items": 33,
+    "matrix_rows": 39,
+    "inventory": [
+      {
+        "id": "SRC",
+        "title": "مصادر المياه الرمادية",
+        "tag": "",
+        "layer": "base",
+        "requirement": "R01"
+      },
+      {
+        "id": "S-100",
+        "title": "مصفاة الشعر والوبر",
+        "tag": "S-100",
+        "layer": "added",
+        "requirement": "R03"
+      },
+      {
+        "id": "XV-100",
+        "title": "صمام التحويل للمجاري",
+        "tag": "XV-100",
+        "layer": "added",
+        "requirement": "R04"
+      },
+      {
+        "id": "AIT-101",
+        "title": "حساس جودة الدخل",
+        "tag": "AIT-101",
+        "layer": "smart",
+        "requirement": "S05"
+      },
+      {
+        "id": "T-101",
+        "title": "خزان التجميع الأرضي (فايبر جلاس)",
+        "tag": "T-101",
+        "layer": "base",
+        "requirement": "R05"
+      },
+      {
+        "id": "LT-101",
+        "title": "حساس مستوى الخزان الخام",
+        "tag": "LT-101",
+        "layer": "smart",
+        "requirement": "S01"
+      },
+      {
+        "id": "P-101",
+        "title": "المضخة الغاطسة",
+        "tag": "P-101",
+        "layer": "base",
+        "requirement": "R06"
+      },
+      {
+        "id": "VFD",
+        "title": "محوّل التردد",
+        "tag": "VFD",
+        "layer": "smart",
+        "requirement": "R07"
+      },
+      {
+        "id": "FT-101",
+        "title": "عداد التدفق",
+        "tag": "FT-101",
+        "layer": "smart",
+        "requirement": "S02"
+      },
+      {
+        "id": "PT-101",
+        "title": "مرسل ضغط المضخة",
+        "tag": "PT-101",
+        "layer": "smart",
+        "requirement": "S03"
+      },
+      {
+        "id": "DP-101",
+        "title": "حقن الكلور الأولي",
+        "tag": "DP-101",
+        "layer": "base",
+        "requirement": "R08"
+      },
+      {
+        "id": "F-101",
+        "title": "فلتر الوسائط المتعددة",
+        "tag": "F-101",
+        "layer": "base",
+        "requirement": "R09"
+      },
+      {
+        "id": "PDT-101",
+        "title": "فرق ضغط فلتر الوسائط",
+        "tag": "PDT-101",
+        "layer": "smart",
+        "requirement": "S03"
+      },
+      {
+        "id": "DP-102",
+        "title": "حقن إزالة الكلور (SMBS)",
+        "tag": "DP-102",
+        "layer": "base",
+        "requirement": "R10"
+      },
+      {
+        "id": "AIT-205",
+        "title": "حساس ORP",
+        "tag": "AIT-205",
+        "layer": "smart",
+        "requirement": "S06"
+      },
+      {
+        "id": "TC-101",
+        "title": "عمود الكربون الطبيعي التجريبي",
+        "tag": "TC-101",
+        "layer": "smart",
+        "requirement": "R20"
+      },
+      {
+        "id": "F-102",
+        "title": "فلتر الكربون النشط",
+        "tag": "F-102",
+        "layer": "base",
+        "requirement": "R11"
+      },
+      {
+        "id": "PDT-102",
+        "title": "فرق ضغط فلتر الكربون",
+        "tag": "PDT-102",
+        "layer": "smart",
+        "requirement": "S03"
+      },
+      {
+        "id": "AIT-206",
+        "title": "حساس UV254",
+        "tag": "AIT-206",
+        "layer": "smart",
+        "requirement": "S07"
+      },
+      {
+        "id": "CF-101",
+        "title": "فلتر الخراطيش",
+        "tag": "CF-101",
+        "layer": "base",
+        "requirement": "R12"
+      },
+      {
+        "id": "PDT-103",
+        "title": "فرق ضغط الخراطيش",
+        "tag": "PDT-103",
+        "layer": "smart",
+        "requirement": "S03"
+      },
+      {
+        "id": "DP-103",
+        "title": "حقن مادة الروائح أو تعديل pH",
+        "tag": "DP-103",
+        "layer": "base",
+        "requirement": "R13"
+      },
+      {
+        "id": "DP-104",
+        "title": "الكلورة النهائية",
+        "tag": "DP-104",
+        "layer": "base",
+        "requirement": "R14"
+      },
+      {
+        "id": "AP-201",
+        "title": "لوحة تحليل جودة المنتج",
+        "tag": "AIT-201..204",
+        "layer": "smart",
+        "requirement": "S04"
+      },
+      {
+        "id": "XV-101",
+        "title": "صمام المطابقة وخط الإعادة",
+        "tag": "XV-101",
+        "layer": "added",
+        "requirement": "R15"
+      },
+      {
+        "id": "UV",
+        "title": "تعقيم بالأشعة فوق البنفسجية UV-C",
+        "tag": "UV",
+        "layer": "added",
+        "requirement": "R16"
+      },
+      {
+        "id": "T-102",
+        "title": "الخزان الزراعي",
+        "tag": "T-102",
+        "layer": "base",
+        "requirement": "R17"
+      },
+      {
+        "id": "SKID",
+        "title": "وحدة مورد المدمجة",
+        "tag": "",
+        "layer": "added",
+        "requirement": "R21"
+      },
+      {
+        "id": "LT-102",
+        "title": "حساس مستوى خزان المنتج",
+        "tag": "LT-102",
+        "layer": "smart",
+        "requirement": "S01"
+      },
+      {
+        "id": "MH",
+        "title": "مانهول التصريف",
+        "tag": "",
+        "layer": "base",
+        "requirement": "R19"
+      },
+      {
+        "id": "CP",
+        "title": "لوحة التحكم الكهربائية",
+        "tag": "CP-01",
+        "layer": "base",
+        "requirement": "C01"
+      },
+      {
+        "id": "PLC",
+        "title": "وحدة التحكم الذكية",
+        "tag": "CP-01",
+        "layer": "smart",
+        "requirement": "C01"
+      },
+      {
+        "id": "CLOUD",
+        "title": "السحابة وتطبيق الجوال",
+        "tag": "",
+        "layer": "smart",
+        "requirement": "C02"
+      }
+    ]
+  },
+  "design_conflicts_not_silently_resolved": [
+    "UV is optional in earlier general diagram but included in compact section; current visual follows compact, without UV effectiveness claim.",
+    "Earlier reference specifies submerged pump, compact cost table says multistage pump; root authorized submerged geometry for this demo, not a final procurement choice.",
+    "Reference mixes completeproject and compact price scopes; no prices recalculated or presented as validated.",
+    "Markdown ORP-only chlorine proxy is not adopted: separate chlorine and ORP channels remain.",
+    "Power-loss diversion wording in attachments does not override no-power/no-flow implementation.",
+    "80%continuous rejection was an earlier demonstrator assumption, not this sand/carbon/cartridge process; it is removed."
+  ],
+  "requirements": [
+    {
+      "id": "R01",
+      "part": "هوية مورد: وضوء ومغاسل إلى ري؛ وحدة متكاملة وصندوق على محطة قائمة",
+      "benefit": "يفهم الزائر المنتجين والغرض قبل تفاصيل المعدات.",
+      "before_this_change": "المشهد عام بعنوان من التجميع إلى الري.",
+      "current": "هوية المصدر محددة من Markdown؛ root يبني مسار العرض الموجّه.",
+      "remaining_gap": "لا يُعرض الصندوق كأنه محطة جديدة أو يقال إن جميع خصائصه مثبتة.",
+      "priority": "P0",
+      "implementation_boundary": "محتوى وتنقل فقط؛ لا يغير مصدر البيانات أو صلاحيات التحكم.",
+      "reference_sections": [
+        "Markdown: مورد في سطرين/الحل",
+        "HTML: SRC"
+      ]
+    },
+    {
+      "id": "R02",
+      "part": "تسلسل خط المعالجة",
+      "benefit": "تطابق المحطة التي يراها المستخدم مع المرجع.",
+      "before_this_change": "خام→مضخة سطحية→وسائط→كربون→جرعات مجمعة→خزان→ري.",
+      "current": "مصفاة→خام/مضخة غاطسة→DP101→وسائط→DP102/ORP→كربون→خراطيش→DP103→DP104→لوحةجودة→XV101→UV→منتج→ري.",
+      "remaining_gap": "المعالجة الكيميائية بين الوحدات ليست محسوبة؛ القيم ليست أداء إزالة.",
+      "priority": "P0",
+      "implementation_boundary": "تسلسل بصري مكتمل؛ الكيمياء تحتاج نموذجًا لاحقًا.",
+      "reference_sections": [
+        "HTML:#steps,#lean,#station"
+      ]
+    },
+    {
+      "id": "R03",
+      "part": "S-100 مصفاة شعر ووبر",
+      "benefit": "يوضح حماية المضخة والفلاتر عند مدخل التجميع.",
+      "before_this_change": "غير موجودة.",
+      "current": "مجسم مستقل strainer قبل الخزان.",
+      "remaining_gap": "لا حالة انسداد/فقدضغط/رواسب للمصفاة.",
+      "priority": "P0",
+      "implementation_boundary": "تمثيل تصميمي؛ لا قراءة مصطنعة.",
+      "reference_sections": [
+        "HTML:S-100/#bom"
+      ]
+    },
+    {
+      "id": "R04",
+      "part": "XV-100 تحويل المدخل إلى المجاري",
+      "benefit": "عزل دخل غير ملائم أو مسار الصيانة.",
+      "before_this_change": "غير موجود.",
+      "current": "لم يضف في هذه الجولة؛ ليس ضمن رسم مورد lean الافتراضي في HTML.",
+      "remaining_gap": "يلزم مسار تدفق وتحكم وميزان كتلة إذا أصبح فعالًا؛ لا يُستنتج تحويل بالجاذبية عند انقطاع الكهرباء.",
+      "priority": "P2",
+      "implementation_boundary": "مستقبل/خيار؛ إضافة هندسية ومحاكاة عند التفعيل.",
+      "reference_sections": [
+        "HTML:XV-100/#station .not-lean"
+      ]
+    },
+    {
+      "id": "R05",
+      "part": "T-101 خزان GRP أرضي5م³",
+      "benefit": "فهم التجميع والمستوى والمضخة داخل الخزان.",
+      "before_this_change": "خزان رأسي فوق الأرض3000L.",
+      "current": "raw مقطع تعليمي مدفون،5000L؛ البداية3000L؛ منسوب الرسم من لقطة المحرك.",
+      "remaining_gap": "الهندسة تعليمية وليست تصنيعًا/مقاومةتربة؛ لا خلط أو عمرمياه.",
+      "priority": "P0",
+      "implementation_boundary": "المخزون محسوب؛ الدفن/GRP تمثيل تصميمي.",
+      "reference_sections": [
+        "HTML:T-101/#numbers"
+      ]
+    },
+    {
+      "id": "R06",
+      "part": "P-101 المضخة الغاطسة",
+      "benefit": "رفع الخام إلى المعالجة مع إظهار مصدر التدفق.",
+      "before_this_change": "مجسم مضخة سطحية منفصلة625L/h.",
+      "current": "feed داخل مقطع الخام تحت مستوى الأرض؛1000L/h.",
+      "remaining_gap": "لا منحنى مضخة/قدرة فعلية أو حماية جفاف هيدروليكية؛ إدخال لحظي يمكنه تغذية النقل عبر مخزون صفر.",
+      "priority": "P0",
+      "implementation_boundary": "المعدل والنقل محسوبان؛ شكل المضخة تمثيلي.",
+      "reference_sections": [
+        "HTML:P-101/#steps/#lean"
+      ]
+    },
+    {
+      "id": "R07",
+      "part": "VFD سرعة المضخة",
+      "benefit": "تمييز سرعة المحرك عن سرعة زمن العرض.",
+      "before_this_change": "سرعة1/10/30 للمحاكاة فقط.",
+      "current": "لم تضف قراءة RPM أو تيار؛ اللوحة تمثيلية.",
+      "remaining_gap": "زر سرعة التوأم ليس VFD ولا يثبت قدرة المضخة على65L/min. المرجع يطلب التحقق من منحنى المضخة.",
+      "priority": "P1",
+      "implementation_boundary": "شرح بصري؛ أي علاقة سرعة/ضغط/طاقة تحتاج نموذجًا.",
+      "reference_sections": [
+        "HTML:VFD/#numbers"
+      ]
+    },
+    {
+      "id": "R08",
+      "part": "DP-101 الكلور الأولي",
+      "benefit": "تمييز جرعة ما قبل الوسائط.",
+      "before_this_change": "مضختان مرسومتان ضمن D-101 بعد الكربون.",
+      "current": "dose_pre مستقل مع خزان وخط حقن قبل F-101.",
+      "remaining_gap": "لا جرعة mg/L أو استهلاك كيماويات/أثرأكسدة.",
+      "priority": "P0",
+      "implementation_boundary": "تصميمي؛ المؤشر المجمع dosing_pumps لا يثبت حالة كل مضخة.",
+      "reference_sections": [
+        "HTML:DP-101"
+      ]
+    },
+    {
+      "id": "R09",
+      "part": "F-101 فلتر الوسائط",
+      "benefit": "إظهار مرحلة إزالة العوالق ومكان فرق الضغط.",
+      "before_this_change": "موجود.",
+      "current": "موجود في الترتيب الصحيح، مسار غسيل متصل.",
+      "remaining_gap": "لا أحمال رواسب أو كفاءة إزالة أو سبب فيزيائي لفرق الضغط.",
+      "priority": "P0",
+      "implementation_boundary": "مجسم + مؤشرات ضغط توضيحية؛ الغسيل نقل حجمي.",
+      "reference_sections": [
+        "HTML:F-101/PDT-101"
+      ]
+    },
+    {
+      "id": "R10",
+      "part": "DP-102 إزالة الكلور SMBS",
+      "benefit": "تمييز وظيفة ما قبل الكربون عن الكلورة النهائية.",
+      "before_this_change": "غير منفصلة.",
+      "current": "dose_dechlor بعد الوسائط وقبل الكربون؛ موضع ORP مستقل.",
+      "remaining_gap": "لا قياس إزالة كلور حقيقي ولا علاقة ORP مباشرة بضمان التعقيم.",
+      "priority": "P0",
+      "implementation_boundary": "تصميمي؛ لا نمذجة تفاعل كيميائي.",
+      "reference_sections": [
+        "HTML:DP-102/AIT-205"
+      ]
+    },
+    {
+      "id": "R11",
+      "part": "F-102 الكربون المنشط",
+      "benefit": "إظهار امتزاز الروائح/العضويات كمرحلة تصميمية.",
+      "before_this_change": "موجود.",
+      "current": "كربون رئيسي منفصل؛ التجاري أساس العرض.",
+      "remaining_gap": "التشبع والعمر والأداء غير محسوبة؛ لا ينسب إليه بيوتشار مثبت.",
+      "priority": "P0",
+      "implementation_boundary": "تمثيل تصميمي؛ يتطلب بيانات وتجارب قبل نموذج امتزاز.",
+      "reference_sections": [
+        "HTML:F-102/#carbon"
+      ]
+    },
+    {
+      "id": "R12",
+      "part": "CF-101 خراطيش5ميكرون",
+      "benefit": "إكمال المرحلة المفقودة بين الكربون والجرعات النهائية.",
+      "before_this_change": "غير موجودة.",
+      "current": "cartridge مستقل بعد الكربون وقبل DP103.",
+      "remaining_gap": "فرق p3−p4 يمكن عرضه كمؤشر توضيحي؛ لا عمر خرطوشة/نفاذ جسيمات.",
+      "priority": "P0",
+      "implementation_boundary": "مجسم؛ لا يغيّر جودة الماء حسابيًا.",
+      "reference_sections": [
+        "HTML:CF-101/PDT-103"
+      ]
+    },
+    {
+      "id": "R13",
+      "part": "DP-103 الروائح أو تعديلpH",
+      "benefit": "تمييز المادة غير المحسومة عن الكلور.",
+      "before_this_change": "ضمن رمز جرعات عام.",
+      "current": "dose_ph بعد الخراطيش وقبل الكلور النهائي.",
+      "remaining_gap": "المادة غير محددة في المرجع؛ لا يقال إن التعديل الفعلي يرفع/يخفضpH.",
+      "priority": "P0",
+      "implementation_boundary": "تمثيل تصميمي معلن.",
+      "reference_sections": [
+        "HTML:DP-103"
+      ]
+    },
+    {
+      "id": "R14",
+      "part": "DP-104 الكلور النهائي",
+      "benefit": "إظهار موضع التعقيم النهائي وقياس المتبقي.",
+      "before_this_change": "ضمن جرعات عامة بعد الكربون.",
+      "current": "dose_final منفصل قبل لوحة الجودة.",
+      "remaining_gap": "قناة chlorine موجة توضيحية؛ لا نموذج جرعة/طلب/زمنتماس أو تحكم راجع.",
+      "priority": "P0",
+      "implementation_boundary": "تمثيل تصميمي؛ حد القناة التجريبي ثابت لم يتغير.",
+      "reference_sections": [
+        "HTML:DP-104/AIT-202"
+      ]
+    },
+    {
+      "id": "R15",
+      "part": "XV-101 صمام المطابقة وخط الإعادة",
+      "benefit": "تمييز الحجز قبل التخزين عن صمام الري بعده.",
+      "before_this_change": "XV-201 بعد الخزان فقط، دون خطعودة.",
+      "current": "compliance قبلUVوالخزان؛ equipment.compliance_valve=product عند النقل وclosed عند التوقف؛ خط عودة تصميمي ثابت.",
+      "remaining_gap": "recirculation_lpm=0؛ لا تدوير فعلي ولا تدفق عندHOLD. تفعيله لاحقًا يحتاج توزيع تدفق/مخزون خام/فيضان متوازن.",
+      "priority": "P0",
+      "implementation_boundary": "حالة مرور/إغلاق افتراضية بسيطة؛ الإعادة تصميم فقط.",
+      "reference_sections": [
+        "HTML:XV-101"
+      ]
+    },
+    {
+      "id": "R16",
+      "part": "UV-C55W مع حساس شدة",
+      "benefit": "توضيح حاجز التعقيم ضمن مورد كومباكت.",
+      "before_this_change": "غير موجود.",
+      "current": "uv حجرة مستقلة بعد صمام المطابقة وقبل المنتج.",
+      "remaining_gap": "لا شدة أو جرعة أو قتل ميكروبي محسوب. المرجع العام يسميه اختياريًا وقسمcompact يدرجه؛ العرض الحالي يتبعcompact.",
+      "priority": "P0",
+      "implementation_boundary": "تصميمي؛ لا لمبة تشغيل مضللة أو قيمةUV مخترعة.",
+      "reference_sections": [
+        "HTML:UV/#lean"
+      ]
+    },
+    {
+      "id": "R17",
+      "part": "T-102 منتجPEأفقي5م³",
+      "benefit": "التمييز بين التخزين المعالج والخزان الخام.",
+      "before_this_change": "خزان رأسي3000L.",
+      "current": "treated أفقي5000L؛ البداية2000L؛ ارتفاع رسم الماء بحل مساحة القطاع الدائري من نسبة الحجم.",
+      "remaining_gap": "ليس خلطًا أو تقييم تلوث/إعادة نمو أثناء التخزين.",
+      "priority": "P0",
+      "implementation_boundary": "مخزون محسوب وهندسة رسم فقط.",
+      "reference_sections": [
+        "HTML:T-102"
+      ]
+    },
+    {
+      "id": "R18",
+      "part": "P-102/XV-201 ومخرج الري",
+      "benefit": "إظهار نقطة التسليم وقرار الفتح والتأكيد.",
+      "before_this_change": "موجودان بعد المنتج.",
+      "current": "محفوظان مع تدفق1000/60L/min وأوامر/feedback مستقلة؛ مطابقتهما لا تعني مطابقة مخبرية.",
+      "remaining_gap": "مضخة وشبكة الري خارج نطاق السعر في مرجعHTML؛ أُبقيتا لإيضاح النهاية التشغيلية.",
+      "priority": "P0",
+      "implementation_boundary": "تدفق وصمام افتراضيان؛ لا أجهزة حقيقية.",
+      "reference_sections": [
+        "HTML:#cost غير داخل التقدير",
+        "Markdown:طبقة التحقق"
+      ]
+    },
+    {
+      "id": "R19",
+      "part": "الغسيل العكسي والمانهول والمصرف",
+      "benefit": "تمييز الماء المصروف للصيانة عن الرفض المستمر.",
+      "before_this_change": "20L/min وغسيل وسائط؛ رفض20%دائم125L/h.",
+      "current": "65L/min من خزان المنتج ومحدود بمخزونه؛ لا معالجة أو ري أثناء الغسيل؛ حذف مسار رفض عادي وإبقاء drain_lpm=0 للتوافق.",
+      "remaining_gap": "الغسيل النشط مرسوم للوسائط؛ فرع غسيل الكربون static؛ لا اختيار فلتر أو انتهاء دورة/تنظيف كفاءة.",
+      "priority": "P0",
+      "implementation_boundary": "محاكاة نقل وميزان كتلة؛65L/min قيمةمرجعيةتوضيحية غيرمعتمدة.",
+      "reference_sections": [
+        "HTML:MH/#numbers"
+      ]
+    },
+    {
+      "id": "R20",
+      "part": "TC-101 عمود الكربون الطبيعي الجانبي",
+      "benefit": "فصل البحث عن الكربون الرئيسي الجاري.",
+      "before_this_change": "غير موجود.",
+      "current": "pilot عمود وخط دخول/عودة ثابتان،لا حركة أو قراءة.",
+      "remaining_gap": "لم يحاكَ تدفق0.25L/min أو امتزاز/مقارنةأداء.",
+      "priority": "P2",
+      "implementation_boundary": "تصميم تجريبي مستقبلي فقط.",
+      "reference_sections": [
+        "HTML:TC-101/#carbon"
+      ]
+    },
+    {
+      "id": "R21",
+      "part": "SKID الهيكل والمظلة واللوحة",
+      "benefit": "فهم أن المعدات وحدة متكاملة قابلة للصيانة.",
+      "before_this_change": "منصة مفتوحة عامة.",
+      "current": "قاعدة خدمة ومعدات ولوحة ظاهرة؛ القطع منفصلة قابلة للاختيار.",
+      "remaining_gap": "المظلة/الأبواب/الأبعاد التصنيعية/صيانة المسافات ليست معتمدة.",
+      "priority": "P1",
+      "implementation_boundary": "تمثيل بصري قابل للتحسين دون تأثيرحسابي.",
+      "reference_sections": [
+        "HTML:SKID/#lean"
+      ]
+    },
+    {
+      "id": "R22",
+      "part": "الفائض والتهوية والتمييز البنفسجي وفاصل الهواء",
+      "benefit": "إظهار مسارات غير الشرب وعدم خلطها بمياه الشبكة.",
+      "before_this_change": "فائض مجمع ومجرى رسم، ألوانخضراء عامة.",
+      "current": "خط المنتج بنفسجي، فرعا فائض ثابتان إلى معدل مشترك من الخادم، تهويات مرسومة.",
+      "remaining_gap": "لا فاصل هواء/شبكةتعويض/عزل/علاماتتحذير مكتملة؛ الفائض الحالي مجمع وليس معدلًا لكلخزان.",
+      "priority": "P1",
+      "implementation_boundary": "ألوان/وسوم/عناصرثابتة؛ أيتعويضنشطيتطلبنموذجميزانكتلة.",
+      "reference_sections": [
+        "HTML:#bom إضافاتالكود/T-102"
+      ]
+    },
+    {
+      "id": "R23",
+      "part": "صمامات العزل ونقاط العينات",
+      "benefit": "توضيح الصيانة وأخذ عينات المختبر.",
+      "before_this_change": "غير موجودة كعناصر مستقلة.",
+      "current": "لوحةجودة تمثيلية بعدالكلور؛ لا عيناتمخبرية.",
+      "remaining_gap": "إضافةرموزثابتةخام/بعدكربون/منتج واختياراتشرح؛ التشغيل الفعلي ليس منفذًا.",
+      "priority": "P2",
+      "implementation_boundary": "بصري فقط أولًا.",
+      "reference_sections": [
+        "HTML:#bom"
+      ]
+    },
+    {
+      "id": "S01",
+      "part": "LT-101/LT-102 مستوى الخام والمنتج",
+      "benefit": "ربط المستوى بالمخزون ومنع تقديم قراءة ميدانية مزعومة.",
+      "before_this_change": "قيممخزون/نسبة للاثنين.",
+      "current": "المستويات مستمرة محسوبة بالمحرك وتنعكس على الماء المرسوم.",
+      "remaining_gap": "لا حساساتمادية/تأخركشف/معايرة؛ سياسةامتلاءالتوقفغيرمضافة(الفائض حسابيًا محفوظ).",
+      "priority": "P1",
+      "implementation_boundary": "قيم محاكاة حجمية متاحة.",
+      "reference_sections": [
+        "HTML:LT-101/LT-102"
+      ]
+    },
+    {
+      "id": "S02",
+      "part": "FT-101 تدفق خروج المضخة",
+      "benefit": "تجنب خلط تغذية المعالجة بتدفق الري.",
+      "before_this_change": "تدفق معالجة متاح ضمنflow؛chans.flow_lpm هو الري.",
+      "current": "موضعflow_meter قبلDP101؛ يجب adapter ربطهflow.treatment_lpm=1000/60.",
+      "remaining_gap": "لا عدادنبضات أوتعويضخطأ؛ لا يُربط بـchans.flow_lpm رغمتساويالمعدلينالآن.",
+      "priority": "P0",
+      "implementation_boundary": "قيمةتدفقحجميةافتراضية؛رابطصريحضروري.",
+      "reference_sections": [
+        "HTML:FT-101"
+      ]
+    },
+    {
+      "id": "S03",
+      "part": "PT-101 وPDT-101/102/103",
+      "benefit": "تحديد ضغط الدخول وفرق كل مرشح.",
+      "before_this_change": "4ضغطات؛فرقوسائطوكربونفقط؛لاخراطيش.",
+      "current": "4مقاييسفيالمواضع قبلوسائط/بعدوسائط/بعدكربون/بعدخراطيش.",
+      "remaining_gap": "ΔP3=p3−p4 يحتاجعرضroot؛لا مشتق فيزيائي للتدفقات. مفاتيحأمانالضغطلمتتغير.",
+      "priority": "P0",
+      "implementation_boundary": "الضغطإشارتوضيحي؛ فروقمتاحةحسابيًاولا تثبتانسدادًاواقعيًا.",
+      "reference_sections": [
+        "HTML:PT-101/PDT-101..103"
+      ]
+    },
+    {
+      "id": "S04",
+      "part": "AP-201:عكارةAIT201،كلورAIT202،pH/حرارةAIT203،EC-AIT204",
+      "benefit": "وضع القياس قبل التخزين وعرض المتاح فقط.",
+      "before_this_change": "عكارة/كلور/pH ضمنبطاقةعامة؛لا موضعلوحة.",
+      "current": "qualityلوحةعيناتبعدDP104؛توجد3قنواتمحاكاةتوضيحية،لاحرارةولاEC.",
+      "remaining_gap": "لااختراعالقناتينالناقصتين؛اذكرغيرمحاكى. لا BOD/COD/TSS/بكتيريا مستنتجةمنهذهالقيم.",
+      "priority": "P0",
+      "implementation_boundary": "3قيم توضيحية+مواضع تصميمية؛ حرارة/EC تحتاجامتدادschemaومحاكاةمعلنة.",
+      "reference_sections": [
+        "HTML:AP-201/#sensors"
+      ]
+    },
+    {
+      "id": "S05",
+      "part": "AIT-101 جودة الدخل",
+      "benefit": "فصل خام الوضوء عن المنتج دون نسبإزالةمزيفة.",
+      "before_this_change": "لا قناةجودةخاممستقلة.",
+      "current": "لا تغيير؛المصدرهووضوء/مغاسل وفقملفالهوية.",
+      "remaining_gap": "قناتاخامعكارة/EC وتحويلالدخل غيرمحاكاة. لا تستخدمقيمةالمنتج لتسميةخام.",
+      "priority": "P2",
+      "implementation_boundary": "مستقبل يحتاج قنوات مستقلة.",
+      "reference_sections": [
+        "HTML:AIT-101"
+      ]
+    },
+    {
+      "id": "S06",
+      "part": "AIT-205 ORP بعدSMBS",
+      "benefit": "تحديد أنORP مختلفعنالكلور الحر.",
+      "before_this_change": "قناةorp عامةموجودة.",
+      "current": "موضعorpبينDP102والكربون؛قيمةالخادم تبقىتوضيحية.",
+      "remaining_gap": "لا علاقة كيميائية معايرة ولا إثباتإزالةكلور أوتعقيم.",
+      "priority": "P0",
+      "implementation_boundary": "قناةتوضيحيةمعنسبةواضحةلموضعالتصميم.",
+      "reference_sections": [
+        "HTML:AIT-205"
+      ]
+    },
+    {
+      "id": "S07",
+      "part": "AIT-206 UV254 قبل/بعدالكربون",
+      "benefit": "تمييزرصدالعضوياتعنمصباحUV-C.",
+      "before_this_change": "غير موجود.",
+      "current": "مذكور كإضافةبحثيةلاقياسحالي.",
+      "remaining_gap": "لاUV254ولاCOD/BODمقدّرولا تحاليلتدريب.",
+      "priority": "P2",
+      "implementation_boundary": "تصميم لاحق فقط؛لاخلطمعUV-C.",
+      "reference_sections": [
+        "HTML:AIT-206"
+      ]
+    },
+    {
+      "id": "S08",
+      "part": "LS-301..304 مستوىخزاناتالكيماويات",
+      "benefit": "شرحإنذارنفادكلواحدةمنالموادالأربع.",
+      "before_this_change": "لاخزاناتمستقلةفيالنموذج.",
+      "current": "أربعخزاناتمرسومةمعوحداتالجرعات.",
+      "remaining_gap": "لا مخزون/استنزاف/عوامات محسوبة؛ لا أرقاممستوى أوتنبيهنفاد.",
+      "priority": "P1",
+      "implementation_boundary": "تصميميحتىإضافةledgerللكيماويات.",
+      "reference_sections": [
+        "HTML:#sensors/DP-101..104"
+      ]
+    },
+    {
+      "id": "S09",
+      "part": "JT-101 تيار/طاقةالمضخة،FSمفاتيحتدفق،LSH-100تسرب",
+      "benefit": "تشخيصمحددبدلإيحاءكشفكلأعطالالمحطة.",
+      "before_this_change": "لا قنواتتيار/طاقة/تسرب/FS مستقلة.",
+      "current": "لاقراءاتمصطنعةأضيفت.",
+      "remaining_gap": "تحتاجschemaوافتراضاتعطلواختبارات،غيرمرتبطةبالMLالحالي.",
+      "priority": "P2",
+      "implementation_boundary": "مستقبل؛يمكنشرحالموضعفقط.",
+      "reference_sections": [
+        "HTML:#sensors/#bom"
+      ]
+    },
+    {
+      "id": "S10",
+      "part": "FQ-001 عدادمياهالشبكة",
+      "benefit": "حسابالتوفيرالحقيقيبدل مساواةكللترمحاكىلترًاوفرناه.",
+      "before_this_change": "غير موجود.",
+      "current": "لا ادعاءتوفيرفعليريالي.",
+      "remaining_gap": "خطأساساستهلاكومصدرعدادحقيقيغيرمتاح.",
+      "priority": "P2",
+      "implementation_boundary": "واجهةشرحاختيارية؛لاKPIتوفيرفعلي.",
+      "reference_sections": [
+        "HTML:FQ-001/#ai"
+      ]
+    },
+    {
+      "id": "C01",
+      "part": "CP-01/PLC/HMI وحدودالأمان",
+      "benefit": "فهمالقواعدالثابتةوموقعهاوعدمسلطةالAIعلىالفتح.",
+      "before_this_change": "لوحةبصريةغيرقابلةللشرح.",
+      "current": "panelقابلللاختيار؛قواعدالمحركنفسها،الAIمنفصلولايستدعيplant.",
+      "remaining_gap": "لاPLCأوESP32أوUPSأوأسلاكمتصلة؛التسميةوصفمعمارية.",
+      "priority": "P0",
+      "implementation_boundary": "منطقافتراضيومجسم؛لاhardwareclaim.",
+      "reference_sections": [
+        "HTML:CP/PLC/#bom",
+        "Markdown:المعمارية"
+      ]
+    },
+    {
+      "id": "C02",
+      "part": "Edge/LTE/سحابة/تطبيق",
+      "benefit": "فصلالمتوفرمحليًاعنمنتجمستقبلي.",
+      "before_this_change": "واجهةمحليةومصادرreplayمنفصلة.",
+      "current": "النطاقlocal-firstمحفوظ.",
+      "remaining_gap": "لاSMS/واتساب/سحابةأوربطجهةيُفترضبناءًعلىمرجعHTML.",
+      "priority": "P1",
+      "implementation_boundary": "محتوىمسارالتقنية؛التكاملاتالخارجيةخارجالجولة.",
+      "reference_sections": [
+        "HTML:CLOUD/#bom"
+      ]
+    },
+    {
+      "id": "C03",
+      "part": "وظائفAIالتنبؤية والجرعاتوالحساسية",
+      "benefit": "منعالواجهةمنعرضمميزاتبحثيةكأداءمحطة.",
+      "before_this_change": "MLreplayمنفصلعنالتوأم.",
+      "current": "لميتغيرMLأوالقواعدوالحدود.",
+      "remaining_gap": "لاجرعاتذكية/تنبؤتشبع/5تصنيفاتأعطال/سلامةماءمثبتة.",
+      "priority": "P0",
+      "implementation_boundary": "توضيحالمثبتوالمستقبل؛لا تشغيلAIعلىplant.",
+      "reference_sections": [
+        "HTML:#ai",
+        "Markdown:الذكاءالاصطناعي"
+      ]
+    },
+    {
+      "id": "C04",
+      "part": "السجلوالتقاريروالمطابقة",
+      "benefit": "تفسيرسببالحجزوحجومالماءمعحدودالدليل.",
+      "before_this_change": "سجلمحاكاةوحجوممحليةموجودة.",
+      "current": "ميزانالكتلةوالأمانمحفوظانمعفرضياتجديدة.",
+      "remaining_gap": "ليسشهادةمطابقة؛المعاييروالأسعارفيالمرجعلمتتحققخارجيًافيهذهالمهمة.",
+      "priority": "P0",
+      "implementation_boundary": "تقريراتالمحاكاةفقط؛المختبرمستقل.",
+      "reference_sections": [
+        "HTML:#compliance/#cost",
+        "Markdown:المثبتوالافتراض"
+      ]
+    },
+    {
+      "id": "C05",
+      "part": "التجربةالموجّهةوالوسوم",
+      "benefit": "أجزاءمفهومةدون25وسمًامتزاحمًا.",
+      "before_this_change": "تفاعلcameraوinspectorعام.",
+      "current": "5primarylabelsفقط؛الأخرىsecondaryقابلةللاختيار،rootيضيفguidedpages.",
+      "remaining_gap": "لا تعتبر أزرار العرض مصدرقرارأوقيممحاكاة؛ زرإظهارأسماءالأجزاءاختياري.",
+      "priority": "P0",
+      "implementation_boundary": "واجهةوعرضفقط.",
+      "reference_sections": [
+        "HTML:#station/INFO"
+      ]
+    },
+    {
+      "id": "C06",
+      "part": "حجمالمحطة وجدولالتشغيل",
+      "benefit": "تفسير15م³/يومدونتناقض.",
+      "before_this_change": "625L/h×24h؛3000Lخزانات؛80%recovery.",
+      "current": "1000L/h×15ساعاتتصميمية؛5000Lخزانات؛normaltransfer100%.",
+      "remaining_gap": "المحاكاةلا توقفذاتيًابعد15h؛استمرار24hينقل24m³ويجبألايسمىrateddaily. الطلبوالدخلثابتانمساويانللتغذيةكافتراض.",
+      "priority": "P0",
+      "implementation_boundary": "افتراضاتحجميةصريحة،لاقيمةحجممنتجمتوقعميداني.",
+      "reference_sections": [
+        "HTML:header/#numbers"
+      ]
+    }
+  ],
+  "visual_vs_model_boundary": {
+    "implemented_numeric": [
+      "5000L capacity for each tank; initial3000/2000L",
+      "1000L/hour matched inlet/feed/product/reuse in auto",
+      "no normal continuous reject; backwash65L/min stock-bounded",
+      "unchanged fixed safety/thresholds and no-model actuation",
+      "mass conservation; detached snapshots and dt0 readonly"
+    ],
+    "implemented_visual": [
+      "buried raw cut-away and submerged pump",
+      "horizontal product tank with correct circular-segment volume-to-height drawing",
+      "four ordered dosing units, cartridge, compliance valve/return path, UV-C, experimental carbon branch",
+      "sensor positions and sample/PLC panels; five primary labels"
+    ],
+    "design_only": [
+      "chemistry/removal/dose feedback and individual chemical stocks",
+      "UV dose/intensity/disinfection",
+      "carbon saturation and experimental branch flow",
+      "recirculation return flow and carbon backwash selection",
+      "EC/temperature/UV254/current/leak/FS sensor values",
+      "civil/electrical/hydraulic construction design"
+    ],
+    "must_not_claim": [
+      "field compliance or guaranteed clean irrigation",
+      "AI-backed safety or five-fault classification",
+      "operational recirculation when HOLD or loss of power",
+      "real-site water/cost savings",
+      "validated65L/min pump sizing or automatic15h/day schedule"
+    ]
+  },
+  "implementation_files_sha256": {
+    "mawrid-system/server/plant.py": "3540c9cc0fb5402c42ff13d494168971a7ceb862e96778e08038c6b5da549292",
+    "mawrid-system/server/test_plant.py": "cd32d2aa44ee61ba3d96dc6fa8d54edce03964d8f7a49a2937aedc70071a136c",
+    "mawrid-system/plant3d/scene.js": "a8830b63b8160464339d5fe0245d2f8addaca1b3b5c943a99d9347137b2fe815",
+    "mawrid-system/plant3d/test-scene.mjs": "9142d7ec2407566195736d6874661664fe8a0385b06ac5773f474c60b60758ae"
+  },
+  "verification": {
+    "engine": {
+      "command": "cd mawrid-system && ../ml/gecco_baseline/.venv/bin/python -B -m unittest server.test_plant -v",
+      "passed": 20,
+      "scope": "synthetic only"
+    },
+    "scene": {
+      "command": "cd mawrid-system && node --test plant3d/test-scene.mjs",
+      "passed": 9,
+      "scope": "synthetic geometry/state only; root owns browser visual QA",
+      "final_recheck": "9/9PASS after root adapter IDs update and exact five-primary-label assertion"
+    },
+    "integration": "Root owns adapter/main/backend integration and revised integration assertions; old 3000L/625Lh expectations must not be reused as current proof."
+  }
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#edf0e7"><meta name="description" content="عرض ثلاثي الأبعاد للمنشأة الافتراضية في مورد؛ الحالة من محرك المحاكاة المحلي."><title>مورد — المنشأة الافتراضية</title>  <script type="module" crossorigin src="./assets/index-BT0rwanL.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three-Dw7j8k1c.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-BrMtkHpz.css">
+</head>
+<body>
+<header class="app-header"><a class="brand" href="/#start" aria-label="مورد، البداية"><svg viewBox="0 0 40 44" aria-hidden="true"><path d="M20 3C15 11 7 18 7 27a13 13 0 0 0 26 0C33 18 25 11 20 3Z"/><path d="M13 28c5-1 7-5 7-11 5 5 8 9 6 14-3 6-10 5-13-3Z"/></svg><span>مورد<small>MAWRID</small></span></a><div class="header-title"><span class="eyebrow">غرفة التشغيل / المشهد المكاني</span><strong>منشأة مورد الافتراضية 01</strong></div><nav class="viewer-nav" aria-label="تنقل مورد"><a href="/#start">ما هو مورد؟</a><a class="back-link" href="/#plant">التجربة الموجّهة والتحكم <span aria-hidden="true">←</span></a><a href="/#components">دليل الأجزاء</a><a href="/#technology">الكود والذكاء</a></nav></header>
+<main>
+  <section class="viewer-intro"><div><strong>هذه هي محطة مورد الافتراضية.</strong><p>تعالج مياه الوضوء والمغاسل ضمن تصور مورد ثم توجهها للري. اختر جزءًا لتفهم وظيفته. للتشغيل، افتح التجربة الموجّهة.</p></div><a href="/#plant">ابدأ التجربة خطوة بخطوة ←</a></section>
+  <div class="context-line"><span class="permanent-badge"><i></i>منشأة افتراضية · الحالة من محرك المحاكاة</span><div class="connection" id="connection" role="status" aria-live="polite">جارٍ الاتصال بالخادم المحلي</div></div>
+  <section class="metrics" aria-label="عدادات المنشأة">
+    <article><div><span>تغذية المعالجة</span><small>داخل خط الترشيح</small></div><strong id="metric-feed">—</strong><em>L/min</em></article>
+    <article><div><span>الناتج المعالج</span><small>إلى خزان المياه المعالجة</small></div><strong id="metric-product">—</strong><em>L/min</em></article>
+    <article><div><span>تدفق الري</span><small>بعد الخزان المعالج</small></div><strong id="metric-reuse">—</strong><em>L/min</em></article>
+    <article class="volume-card"><div><span>الري المحاكى</span><small>إجمالي الجلسة من الخادم</small></div><strong id="metric-volume">—</strong><em>L</em></article>
+  </section>
+  <div class="workspace">
+    <section class="scene-panel" aria-label="المشهد الثلاثي الأبعاد للمنشأة الافتراضية">
+      <div class="scene-heading"><div><span class="eyebrow">PROCESS / 01</span><h1>من التجميع إلى الري</h1></div><span class="process-chip" id="process-state">بانتظار الجلسة</span></div>
+      <div class="viewport" id="viewport"><div id="labels" aria-label="معدات المنشأة"></div><div id="scene-notice" class="scene-notice"><span class="notice-icon">◌</span><strong>جارٍ تحميل المشهد</strong><p>يقرأ العرض حالة المنشأة الافتراضية فقط.</p></div></div>
+      <div class="scene-toolbar"><p id="scene-help">اسحب للدوران · عجلة الفأرة للتقريب · اختر جهازًا</p><div class="camera-buttons" role="group" aria-label="تحريك الكاميرا"><button id="rotate-right" title="تدوير يمينًا" aria-label="تدوير يمينًا">↶</button><button id="rotate-left" title="تدوير يسارًا" aria-label="تدوير يسارًا">↷</button><span></span><button id="zoom-in" title="تقريب" aria-label="تقريب">＋</button><button id="zoom-out" title="إبعاد" aria-label="إبعاد">−</button><button id="reset-camera" class="reset-camera">كامل المحطة</button><button id="show-parts" class="reset-camera" aria-pressed="false">أسماء الأجزاء</button></div></div>
+      <div class="legend"><span><i class="feed"></i>التغذية والمعالجة</span><span><i class="product"></i>الماء المعالج والري</span><span><i class="reject"></i>الصرف والفائض</span><span><i class="wash"></i>الغسيل العكسي</span><small>حركة الأسهم للمسار؛ الجرعات وUV تفاصيل تصميمية</small></div>
+    </section>
+    <aside class="inspector" aria-label="الحالة وتفاصيل الجهاز">
+      <section class="operation-card"><div class="card-heading"><h2>حالة العملية</h2><span id="clock-speed" class="code-chip">×—</span></div><div class="operation-reason" id="operation-reason">ابدأ جلسة المنشأة الافتراضية من غرفة التشغيل.</div><dl class="operation-meta"><div><dt>ساعة المحاكاة</dt><dd id="simulation-clock">—</dd></div><div><dt>سيناريو التشغيل</dt><dd id="fault-label">—</dd></div><div><dt>حالة الاتصال</dt><dd id="freshness-label">انتظار اللقطة الأولى</dd></div></dl><a class="control-link" href="/#plant">فتح غرفة التشغيل <span aria-hidden="true">↗</span></a></section>
+      <section class="equipment-card"><div class="card-heading"><h2>الجزء المحدد</h2><button id="close-equipment" class="close-equipment" aria-label="إغلاق تفاصيل الجزء">×</button><span class="code-chip" id="equipment-tag">T-101</span></div><h3 id="equipment-title">خزان التجميع</h3><div id="equipment-details"></div></section>
+      <section class="quality-card"><div class="card-heading"><h2>قراءات المحاكاة</h2><span class="live-small" id="reading-status">—</span></div><div id="quality-readings"></div><p class="quiet-note">حماية التوأم بقواعد تشغيل ثابتة. <a href="/#model">مختبر الذكاء منفصل ↗</a></p></section>
+    </aside>
+  </div>
+  <section class="equipment-strip" aria-label="اختيار الجهاز" id="equipment-strip"></section>
+  <footer><span id="assumptions">تُعرض افتراضات التشغيل عند اتصال المنشأة الافتراضية.</span><span>عرض تشغيلي افتراضي · الأبعاد البصرية ليست مخططات تصنيع</span><span id="session-label"></span></footer>
+</main>
+</body></html>

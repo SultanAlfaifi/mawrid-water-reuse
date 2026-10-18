@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "scope": "Local guided water-route UX; no backend physics, hardware, AI model or training changes. Bounded functional checks, not a usability study or accessibility certification.",
+  "synthetic_checks": {
+    "client": 52,
+    "experience_state": 22,
+    "journey_data": 5,
+    "scene": 25
+  },
+  "build_proof": "plant3d-build-r1.json",
+  "browser_observations": "browser-observations.json",
+  "functional_verification": [
+    "All eight stages matched the child-rendered data-journey identity and displayed stage labels",
+    "Function and benefit were shown in one card; next/previous/replay do not write plant controls (actual app VM checks)",
+    "Pause/resume retained carbon stage; actual iframe replacement restored carbon after scene-ready handshake",
+    "All stages remained navigable; previous returned storage and next restored irrigation",
+    "At journey end sensor test showed verification equipment; live API confirmed closed virtual valve and zero reuse flow",
+    "Fault restoration returned irrigation and result; replay returned collection without a new session",
+    "390x842 and 964x976 CSS layouts had no horizontal overflow and the primary button inside the viewport",
+    "Fresh full reload restored first explanatory stage and equipment emphasis"
+  ],
+  "limits": [
+    "Stage order is educational; no water-parcel residence time or chemical efficacy is computed",
+    "No actual user study with judges was performed",
+    "One IAB MutationObserver parameter-not-Node error was captured without a source URL, as in earlier iframe reloads. No functional failure observed; no zero-console-error claim."
+  ],
+  "backup_scope": "Client source/metadata backed up before edits. 3D agent edited before a new source copy was requested; prior V6 immutable build proof and artifacts are retained, not represented as a full V7 pre-edit source backup.",
+  "final_state": {
+    "session_id": "b8d87f52-c1f4-49cd-8a44-4241b1160e90",
+    "running": true,
+    "fault": "none",
+    "mode": "auto",
+    "stage": "collection",
+    "hardware_connected": false,
+    "ml_status": "unavailable"
+  },
+  "source_manifest": [
+    {
+      "path": "mawrid-system/client/app.js",
+      "sha256": "fa30d22862451c8e600a2a296122c6803963d577a8197441828b9f81535d3a95"
+    },
+    {
+      "path": "mawrid-system/client/guide.js",
+      "sha256": "60bd3e12887f03aaac11def33efaae02cb4d5c4742da9196de80a198bff67fbe"
+    },
+    {
+      "path": "mawrid-system/client/guide.css",
+      "sha256": "9db794064561f863918b610ebc622de75cd09bde7070d368d7a1a4c4809ca4b0"
+    },
+    {
+      "path": "mawrid-system/client/guide-content.js",
+      "sha256": "97abbaec1ecd69334802eea6a98dad5015c85d8b0a26c23bcb1d0739a25160fa"
+    },
+    {
+      "path": "mawrid-system/client/experience-state.js",
+      "sha256": "39c97c0fa961e6d7ad8ca8502ea548d6b30884b387fe3a2422b97d175c3c28b5"
+    },
+    {
+      "path": "mawrid-system/client/water-journey.js",
+      "sha256": "b55d265667f22aa94ae6fccc0e4da2a05916a17bd0b7b3e95dfe98beb4707346"
+    },
+    {
+      "path": "mawrid-system/client/test-client.mjs",
+      "sha256": "f0551e28b135b855cc907ecf396ca383f2421113ee1e6f38f2fce58d521a3115"
+    },
+    {
+      "path": "mawrid-system/client/test-experience-state.mjs",
+      "sha256": "33f901fce51aca69242a962a57a8428dd337ee5dff37a8b2705e4f42e3ab2ed1"
+    },
+    {
+      "path": "mawrid-system/client/test-water-journey.mjs",
+      "sha256": "7249f1bd732bac9f943befccbe06f47e3affeea977d69493add15142ff75c526"
+    },
+    {
+      "path": "mawrid-system/plant3d/main.js",
+      "sha256": "1b345c20f5ed1561923eebf50effd84ddb90fe3988e6d8118731e5f2c6fd2801"
+    },
+    {
+      "path": "mawrid-system/plant3d/scene.js",
+      "sha256": "60f0b8136feb8148820db9dc5ec50bd886d704f2a1ea89c5109f623eb28245c0"
+    },
+    {
+      "path": "mawrid-system/plant3d/style.css",
+      "sha256": "65e3c37a63c63e1f379d53e90dacb38bf3c63c5d38fdb40af53b2025e9d19253"
+    },
+    {
+      "path": "mawrid-system/plant3d/journey.js",
+      "sha256": "8e76cd704c4d973f37309fc4a1974211a7ea2e41b285415acf38122201bcdf6a"
+    },
+    {
+      "path": "mawrid-system/plant3d/test-journey.mjs",
+      "sha256": "55fa129b6a0d101cca1b9a0559619bcc25e6b26144482c2099f19beac67aad66"
+    },
+    {
+      "path": "mawrid-system/CONTRACT.json",
+      "sha256": "8bbc58b0515a2778b54a6ea0552e9867026598bf3aefa3fba44b362991960ac8"
+    },
+    {
+      "path": "mawrid-system/README.md",
+      "sha256": "e0f1bfd7ba3289aa65d7c7654db8866edc4fcca27b7aa0d4077180743962ccf9"
+    }
+  ]
+}

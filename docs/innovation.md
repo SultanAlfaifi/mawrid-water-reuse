@@ -1,87 +1,51 @@
-# Innovation and Prior Art
+# Innovation and Alternatives
 
-> **Status:** Proposed contribution, not demonstrated novelty or performance. Scope follows the [project brief](project-brief.md); claim status and required evidence follow the [evidence register](evidence-register.md).
+> **Status:** Proposed contribution, not demonstrated novelty, superiority or field performance. Scope follows the [project brief](project-brief.md); evidence boundaries follow the [evidence register](evidence-register.md).
 
-## 1. Honest novelty position
+## What is being tested
 
-MAWRID is not based on the claim that any individual treatment component is new.
+MAWRID combines a defined source-separated ablution/washbasin stream and nearby irrigation use with treatment, operational monitoring, independent outlet protection and traceable records. It offers a complete-unit concept and a retrofit monitoring/control-box concept. Whether that integration improves value for a particular customer requires measurement.
 
-| Established area | Prior-art implication |
+The current base train uses **commercial activated carbon**. Date-palm-residue carbon is a future research candidate for qualified replacement, with a separate comparative study. Earlier descriptions requiring palm carbon in the base train are superseded by the current station reference; local origin is not proof of treatment efficacy, lower cost or sustainability.
+
+## Established approaches
+
+| Area | Prior-art implication |
 |---|---|
-| Ablution-greywater reuse | Already studied and piloted in multiple countries, including Saudi Arabia |
-| Sand and multimedia filtration | Standard water-treatment processes |
-| Activated carbon and biochar adsorption | Established adsorption approaches |
-| Date-palm material in water treatment | Published fibre and biochar studies already exist |
-| Chlorination and UV | Established disinfection processes |
-| Lead-lag adsorption beds | Established industrial configuration |
-| Online water-quality sensors | Established operational monitoring tools |
-| Predictive maintenance | Established engineering practice |
+| Ablution/greywater reuse and source separation | Already studied and implemented; not a first-of-kind claim |
+| Multimedia filtration, activated carbon, chlorination and UV | Established treatment processes |
+| Date-palm fibres and biochar in water treatment | Published material research exists; performance is source- and target-specific |
+| Online sensors, fixed interlocks and condition monitoring | Established engineering practices |
+| Anomaly detection and predictive maintenance | Established analytics methods; MAWRID field value remains unproven |
 
-This repository therefore avoids “first,” “unique,” and patentability claims until a formal literature, product, patent, and freedom-to-operate review is completed.
+No claim of “first,” patentability, certification or superiority is made without a suitable prior-art and evidence review.
 
-## 2. Proposed contribution
+## Proposed value and the evidence needed
 
-The contribution to test is a simple, traceable recovery system for **one separate university ablution source and a controlled ornamental-irrigation zone**. Integration, user value, and performance have not yet been demonstrated. The proposed elements are:
+1. **A source and use that fit.** Measure actual source quality/volume, irrigation demand, storage and existing alternatives before sizing.
+2. **Understandable operation.** Test whether the guided Arabic interface, component explanations and automatic water journey help intended users understand and operate the software. Current browser checks are functional QA, not a user study.
+3. **Independent outlet protection.** Validate fixed interlocks with physical sensor, valve, flow and power-failure tests; a rendered action is insufficient.
+4. **Condition-based maintenance.** Distinguish hydraulic blockage from adsorption exhaustion, compare actual service burden with a declared baseline, and avoid treating online surrogates as laboratory proof.
+5. **Traceable value.** Record irrigation water actually used, potable inputs, backwash/diversion, energy, consumables and labour against equivalent demand.
 
-1. One mapped ablution source, with actual quality, available volume, irrigation demand, and storage constraints measured before sizing.
-2. A treatment train justified by that source and use. Date-palm biochar is an optional candidate only if a relevant dissolved-constituent need is found; compare it with the simpler train and commercial activated carbon.
-3. Transparent maintenance rules that distinguish hydraulic clogging from adsorption exhaustion when adsorption is included.
-4. Independent outlet protection that closes or diverts on invalid critical data or failed process conditions, with physical valve and flow testing required.
-5. Traceable recording of water actually used, extra potable water, energy, costs, and maintenance, against a declared equivalent baseline.
+The research proposition is whether this combination produces a useful, maintainable and economically viable recovery system for a qualified site. The optional material proposition is whether a reproducibly prepared palm-carbon candidate meets or improves relevant commercial-carbon performance without unacceptable leaching, hydraulics or lifecycle burden.
 
-Additional handwashing sources require a source study and scope update. Predictive AI is a later maintenance study; it is not needed to explain or validate the first version and cannot authorize irrigation.
+## Alternatives to compare
 
-### Research proposition
-
-> Can a university recover water from one separate ablution source for a defined irrigation demand with a justified treatment train, independent outlet protection, and measurable operating benefit?
-
-If adsorption is justified, a subordinate material question is whether reproducibly prepared date-palm biochar adds useful performance and lifecycle value against the controls. Advance warning from online surrogates is a later question after target-specific correlation and complete media-life data exist.
-
-## 3. Difference from a conventional filter demonstration
-
-| Conventional demonstration | MAWRID validation approach |
+| Approach | Decision question |
 |---|---|
-| Shows visibly clearer water | Quantifies influent and effluent distributions using declared methods |
-| Replaces a cartridge on a schedule | Tracks loading, pressure loss, and defined breakthrough |
-| Treats sensor readings as proof of safety | Uses sensors for control and laboratory tests for validation |
-| Reports gross collection as water saved | Records water actually used and calculates source-specific offset against equivalent demand, including extra potable inputs |
-| Calls local biomass sustainable | Measures processing, energy, residuals, and end-of-life burdens |
-| Continues operating after a bad reading | Fails closed and logs the diversion event |
+| Existing water and irrigation practice | Does the site need another recovery route, and what cost or shortage would it actually avoid? |
+| Simpler filtration plus validated disinfection | Is adsorption needed for a defined constituent in this source? |
+| Commercial activated carbon | Current base and benchmark for later material screening |
+| Date-palm-carbon candidate | Does comparative evidence justify qualified replacement? |
+| Commercial onsite-reuse package | Compare equivalent capacity, source/use, tested performance, maintenance and whole-site cost |
+| Biological treatment or membranes | Consider if source characterization shows the proposed simpler train is insufficient; added complexity and waste streams need assessment |
+| Retrofit monitoring box | Can a compatible existing plant gain useful monitoring without replacing treatment hardware? |
 
-## 4. Alternatives and design choice
+A comparison must use the same source/use boundary, loading, validation level, lifetime and accounting assumptions. Published specifications, simulation results and physical test results are different evidence types.
 
-| Approach | Strength | Role in the first design decision |
-|---|---|---|
-| Reverse osmosis | High dissolved-solids rejection | Pressure, energy, membrane maintenance, and reject stream may exceed the needs of low-strength non-potable reuse |
-| Membrane bioreactor | Strong treatment for higher-load wastewater | Biological and membrane complexity may be unnecessary for the narrowly defined source |
-| Commercial greywater package | Established market option | Benchmark the proposed system against equivalent source/use, evidence level, service, and lifecycle cost; no superiority is established |
-| Sand plus disinfection | Simpler candidate, with cost and performance to test | Essential comparator and possible final train if it meets the source/use requirements; adsorption is not mandatory |
-| Commercial activated carbon | Mature adsorption medium | Serves as the performance and cost benchmark, not an inferior straw-man comparison |
+## Claims retained and excluded
 
-The design principle is **a justified treatment train that meets the defined source/use requirements**. Each additional barrier must address a measured need or documented risk; safe performance still requires validation.
+MAWRID proposes non-potable irrigation reuse with transparent evidence and separate control authority. It has a working digital prototype and trained public-data research models. It has no demonstrated MAWRID treatment performance, calibrated field sensor-trust score, validated five-fault classifier, confirmed customer partnership or measured field saving.
 
-## 5. Prior-art work before commercialization
-
-- Search peer-reviewed literature across multiple naming conventions.
-- Search Google Patents, WIPO Patentscope, Espacenet, USPTO, and Saudi Authority for Intellectual Property databases.
-- Review certified onsite-reuse products and public technical literature.
-- Map every potential claim to a feature, prior-art reference, and evidence gap.
-- Obtain professional patent and freedom-to-operate advice before filing or commercialization.
-
-## 6. Claims we make
-
-- MAWRID proposes to investigate separately collected university ablution water; the site's recoverable resource and demand are not yet measured.
-- The first treatment concept is scoped to controlled landscape irrigation of ornamental plants.
-- Date-palm biochar is evaluated as a local alternative, not assumed to be superior.
-- Operational monitoring and laboratory verification have different roles.
-- The architecture is designed to fail toward non-reuse.
-- Water, energy, cost, and residuals are planned pilot measurements, not current results.
-
-## 7. Claims we do not make
-
-- The water is potable or suitable for ablution.
-- Biochar removes every contaminant or provides disinfection.
-- Online sensors prove absence of pathogens or trace chemicals.
-- The system is certified, approved, cheapest, or maintenance-free.
-- Date-palm biochar is automatically carbon-negative or waste-free.
-- MAWRID is the first greywater or ablution-water reuse system.
+Palm carbon does not replace disinfection, and no online sensor proves absence of every pathogen or trace chemical. No model can authorize opening a failed reuse outlet. A formal literature, product, patent and freedom-to-operate review remains necessary before commercialization or filing.

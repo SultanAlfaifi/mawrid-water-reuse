@@ -1,0 +1,128 @@
+{
+  "checks": [
+    {
+      "step": 1,
+      "stage": "collection"
+    },
+    {
+      "step": 2,
+      "stage": "media"
+    },
+    {
+      "step": 3,
+      "stage": "carbon"
+    },
+    {
+      "check": "pause-keeps-stage",
+      "stage": "carbon",
+      "phase": "paused"
+    },
+    {
+      "check": "route-return-keeps-stage",
+      "stage": null,
+      "title": "يمر الماء عبر الكربون"
+    },
+    {
+      "check": "route-return-scene-ready",
+      "stage": "carbon"
+    },
+    {
+      "step": 4,
+      "stage": "polish"
+    },
+    {
+      "step": 5,
+      "stage": "verify"
+    },
+    {
+      "step": 6,
+      "stage": "uv"
+    },
+    {
+      "step": 7,
+      "stage": "storage"
+    },
+    {
+      "step": 8,
+      "stage": "irrigation"
+    },
+    {
+      "check": "previous",
+      "stage": "storage"
+    },
+    {
+      "check": "sensor-fault",
+      "stage": "verify"
+    },
+    {
+      "check": "restored",
+      "stage": "irrigation"
+    },
+    {
+      "check": "replay",
+      "stage": "collection"
+    }
+  ],
+  "mobile": {
+    "action": {
+      "bottom": 674.6151351928711,
+      "height": 50.995018005371094,
+      "left": 35.612945556640625,
+      "right": 354.93426513671875,
+      "top": 623.6201171875,
+      "width": 319.3213195800781,
+      "x": 35.612945556640625,
+      "y": 623.6201171875
+    },
+    "height": 842,
+    "scene": {
+      "bottom": 426.40309143066406,
+      "height": 277.03277587890625,
+      "left": 15.994245529174805,
+      "right": 374.55299186706543,
+      "top": 149.3703155517578,
+      "width": 358.5587463378906,
+      "x": 15.994245529174805,
+      "y": 149.3703155517578
+    },
+    "scrollHeight": 842,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "desktop": {
+    "action": {
+      "bottom": 801.3447532653809,
+      "height": 53.99758529663086,
+      "left": 60.61488723754883,
+      "right": 285.61291885375977,
+      "top": 747.34716796875,
+      "width": 224.99803161621097,
+      "x": 60.61488723754883,
+      "y": 747.34716796875
+    },
+    "focus": "التالي: مرشح الكربون",
+    "frames": 1,
+    "height": 976,
+    "scene": {
+      "bottom": 698.3441772460938,
+      "height": 526.3623046875,
+      "left": 31.99820899963379,
+      "right": 931.9320468902588,
+      "top": 171.98187255859375,
+      "width": 899.933837890625,
+      "x": 31.99820899963379,
+      "y": 171.98187255859375
+    },
+    "scrollHeight": 976,
+    "scrollWidth": 964,
+    "width": 964
+  },
+  "consoleErrors": [
+    {
+      "level": "error",
+      "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "timestamp": "2026-10-17T15:42:50.568Z"
+    }
+  ],
+  "finalStage": "collection"
+}

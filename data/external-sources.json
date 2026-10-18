@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-18",
+  "scope": "Public sources used in historical research. Raw sources and environments are outside the Git checkout. Two exact sensor-only 1600-row prefixes are optional release assets.",
+  "source_state": "All sources listed here have been disclosed during development; none is a new held-out validation source for a future revision.",
+  "sources": [
+    {
+      "id": "gecco2017",
+      "title": "GECCO 2017 water-quality challenge data",
+      "publisher_record": "https://zenodo.org/records/3884465",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "repository_includes_raw_data": false,
+      "files": [
+        {
+          "path": "data/external/gecco2017/1_gecco2017_water_quality.csv",
+          "bytes": 9563384,
+          "sha256": "8452e3c03b1d0b1ed81f8e85e90664c52fbe77a59e85c042a4e177cf3d753d1d",
+          "md5": "e5d0b266b586ac6f602fd6bd789ec8ed"
+        }
+      ],
+      "meaning": "External drinking-water benchmark; not MAWRID field measurements. Challenge year is not the measurement year. EVENT is not a five-fault label."
+    },
+    {
+      "id": "gecco2018",
+      "title": "GECCO 2018 water-quality challenge data",
+      "publisher_record": "https://zenodo.org/records/3884398",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "repository_includes_raw_data": false,
+      "files": [
+        {
+          "path": "data/external/gecco2018/1_gecco2018_water_quality.csv",
+          "bytes": 10784171,
+          "sha256": "c41221f3045696b75b79374f4c41c63f6c988e1df03b1dedcdbf910d44ea71cd",
+          "md5": "270bbe949b418e5d2d1dc47276fcc332"
+        }
+      ],
+      "meaning": "External drinking-water benchmark; not MAWRID field measurements. Challenge year is not the measurement year. EVENT is not a five-fault label."
+    },
+    {
+      "id": "gecco2019",
+      "title": "GECCO 2019 water-quality challenge data",
+      "publisher_record": "https://zenodo.org/records/4304080",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "repository_includes_raw_data": false,
+      "files": [
+        {
+          "path": "data/external/gecco2019/7_gecco2019_train_water_quality.csv",
+          "bytes": 10787236,
+          "sha256": "05bbe6dea804b6fc6b2bf8ecc35f37c404ff3ae3503c47cf69301edf61c8b4b9",
+          "md5": "e865a6dd955aae3aae8f3e63efdecf2f"
+        },
+        {
+          "path": "data/external/gecco2019/8_gecco2019_valid_water_qulity.csv",
+          "bytes": 4496965,
+          "sha256": "d451142a969f5972278cbfa53d840b04805ab683b81cad092bda30820ec2e424",
+          "md5": "4a04e32ae24709f5dfd7a3d59d7b2ba0"
+        },
+        {
+          "path": "data/external/gecco2019/6_gecco2019_test_water_quality.csv",
+          "bytes": 2621311,
+          "sha256": "ad509d0c1c656d3e48dc4e52011da5232d292997e6f7ce08eedd5f6194e3369f",
+          "md5": "9599658dd7f8a0ff5f538e1c1e17263f"
+        }
+      ],
+      "meaning": "External drinking-water benchmark; not MAWRID field measurements. Challenge year is not the measurement year. EVENT is not a five-fault label."
+    },
+    {
+      "id": "waterhub-adasen",
+      "title": "Data for: The Value of Human Data Annotation for Machine Learning based Anomaly Detection in Environmental Systems",
+      "publisher": "Eawag: Swiss Federal Institute of Aquatic Science and Technology",
+      "doi": "10.25678/0002WJ",
+      "publisher_record": "https://doi.org/10.25678/0002WJ",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+      "license_basis": {
+        "kind": "retained publisher DataCite metadata",
+        "path": "output/ml/gecco-v5-source-search/eawag_datacite_metadata.json",
+        "sha256": "4fd84a6de3aed71e27d3e89032800f374eb98444c90d3328fa3b4596e92266f2"
+      },
+      "repository_includes_raw_data": false,
+      "archive": {
+        "url": "https://opendata.eawag.ch/dataset/ba398cc7-e33a-4f87-84cb-3ce07cfe29d5/resource/880b5b77-2681-4692-b214-48978b638397/download/adasen_paper.zip",
+        "bytes": 1315604172,
+        "sha256": "f91e930d1e194f401f4570c8ddbfdd90606475233e2f6cd36114ff9da11fc8b0",
+        "local_path": "data/external/new_holdout_candidate/eawag_adasen/ADASen_paper.zip"
+      },
+      "adapted_source": {
+        "path": "output/ml/gecco-v6-waterhub-first-use/adapted_source.csv.gz",
+        "sha256": "2ebd0997afb7571390c7df6b5b64616dec81441b304f6a02ff323b6218984ff7",
+        "included_in_release": false
+      },
+      "meaning": "WaterHub/NEST pH time series in a multi-domain public research collection. Adaptation keeps gaps and unknown labels. Six monthly periods are disclosed development evidence, not independent MAWRID field validation. Archive software licensing is separate; no archive software is redistributed in the optional replay assets."
+    }
+  ],
+  "prefix_qualification": "../output/ml/gecco-stream-fidelity/input_qualification.json",
+  "release_documentation": "../docs/research-assets.md",
+  "license_note": "Dataset licenses apply to their data, not to unrelated code or the entire MAWRID repository. Retain attribution and third-party notices. This inventory is not a water-safety or deployment certificate."
+}

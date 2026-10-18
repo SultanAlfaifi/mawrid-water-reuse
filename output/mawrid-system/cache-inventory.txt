@@ -1,0 +1,214 @@
+  0B	/Users/sultan/Library/Caches/com.apple.AvatarKit
+4.0K	/Users/sultan/Library/Caches/Cisco-Systems.Spark
+  0B	/Users/sultan/Library/Caches/com.apple.callintelligenced
+468K	/Users/sultan/Library/Caches/com.cisco.webex.unified.mta
+204K	/Users/sultan/Library/Caches/com.crashlytics.data
+  0B	/Users/sultan/Library/Caches/com.apple.visualintelligenced
+160K	/Users/sultan/Library/Caches/com.apple.finder
+ 16K	/Users/sultan/Library/Caches/com.figma.Desktop.ShipIt
+2.2M	/Users/sultan/Library/Caches/com.apple.appleaccountd
+4.2M	/Users/sultan/Library/Caches/familycircled
+ 80K	/Users/sultan/Library/Caches/com.adobe.AdobeCRDaemon
+ 80K	/Users/sultan/Library/Caches/com.adobe.acc.AdobeCreativeCloud
+ 28M	/Users/sultan/Library/Caches/com.apple.helpd
+ 80K	/Users/sultan/Library/Caches/com.adobe.acc.HEXHelper.Renderer
+ 80K	/Users/sultan/Library/Caches/com.google.GoogleUpdater
+8.0K	/Users/sultan/Library/Caches/SentryCrash
+800K	/Users/sultan/Library/Caches/com.apple.dt.Xcode
+ 69M	/Users/sultan/Library/Caches/GeoServices
+3.4M	/Users/sultan/Library/Caches/com.apple.managedappdistributionagent
+  0B	/Users/sultan/Library/Caches/com.apple.speech.localspeechrecognition
+3.0M	/Users/sultan/Library/Caches/com.apple.Music
+ 80K	/Users/sultan/Library/Caches/notion.id
+227M	/Users/sultan/Library/Caches/notion.id.ShipIt
+280K	/Users/sultan/Library/Caches/com.adobe.PremierePro.24
+276K	/Users/sultan/Library/Caches/com.hnc.Discord
+8.9M	/Users/sultan/Library/Caches/com.adobe.PremierePro.23
+ 80K	/Users/sultan/Library/Caches/com.adobe.CCXProcess
+4.1M	/Users/sultan/Library/Caches/com.apple.storekitagent
+140K	/Users/sultan/Library/Caches/com.apple.HomeKit
+204K	/Users/sultan/Library/Caches/com.apple.proactive.eventtracker
+4.0K	/Users/sultan/Library/Caches/com.apple.findmy.findmylocateagent
+ 80K	/Users/sultan/Library/Caches/com.google.Keystone
+5.1M	/Users/sultan/Library/Caches/com.openai.chat
+2.5M	/Users/sultan/Library/Caches/PassKit
+789M	/Users/sultan/Library/Caches/com.openai.atlas
+ 60M	/Users/sultan/Library/Caches/CloudKit
+140K	/Users/sultan/Library/Caches/com.apple.SoftwareUpdateNotificationManager
+112K	/Users/sultan/Library/Caches/com.microsoft.VSCode.ShipIt
+1.3M	/Users/sultan/Library/Caches/Animoji
+4.3M	/Users/sultan/Library/Caches/com.apple.akd
+1.1M	/Users/sultan/Library/Caches/com.apple.swtransparencyd
+2.8M	/Users/sultan/Library/Caches/com.apple.FeatureAccessAgent
+  0B	/Users/sultan/Library/Caches/com.apple.e5rt.e5bundlecache
+ 16K	/Users/sultan/Library/Caches/com.hnc.Discord.ShipIt
+ 84K	/Users/sultan/Library/Caches/com.apple.Safari
+8.0K	/Users/sultan/Library/Caches/google-sdks-events
+108K	/Users/sultan/Library/Caches/claude-cli-nodejs
+ 29M	/Users/sultan/Library/Caches/com.adobe.Photoshop
+ 80K	/Users/sultan/Library/Caches/com.adobe.crashreporter
+4.0K	/Users/sultan/Library/Caches/.adobe
+176K	/Users/sultan/Library/Caches/GameKit
+1.4G	/Users/sultan/Library/Caches/Google
+ 80K	/Users/sultan/Library/Caches/com.adobe.accmac
+ 64M	/Users/sultan/Library/Caches/composer
+8.2M	/Users/sultan/Library/Caches/typescript
+  0B	/Users/sultan/Library/Caches/com.apple.XProtectFramework.plugins.BadGacha
+812K	/Users/sultan/Library/Caches/com.apple.assistant_service
+352K	/Users/sultan/Library/Caches/com.apple.betaenrollmentagent
+288K	/Users/sultan/Library/Caches/com.apple.findmy.imagecache
+608K	/Users/sultan/Library/Caches/epp.package.jee
+ 80K	/Users/sultan/Library/Caches/com.adobe.acc.HEXHelper
+3.1M	/Users/sultan/Library/Caches/com.apple.Spotlight
+  0B	/Users/sultan/Library/Caches/com.apple.assistant_cdmd
+572K	/Users/sultan/Library/Caches/com.openai.atlas.local-agent-xpc-helper
+304M	/Users/sultan/Library/Caches/Codex
+788K	/Users/sultan/Library/Caches/com.apple.betaenrollmentd
+1.6M	/Users/sultan/Library/Caches/com.adobe.xd
+  0B	/Users/sultan/Library/Caches/com.apple.businessservicesd
+ 12K	/Users/sultan/Library/Caches/icloudmailagent
+ 73M	/Users/sultan/Library/Caches/Homebrew
+ 42M	/Users/sultan/Library/Caches/pnpm
+232K	/Users/sultan/Library/Caches/com.apple.gamed
+ 12M	/Users/sultan/Library/Caches/com.apple.appstoreagent
+3.1M	/Users/sultan/Library/Caches/com.apple.FileProviderDaemon.AppStoreService
+ 80K	/Users/sultan/Library/Caches/com.adobe.ccd.helper
+144K	/Users/sultan/Library/Caches/com.apple.accountsd
+4.0K	/Users/sultan/Library/Caches/com.apple.DictionaryServices
+5.4M	/Users/sultan/Library/Caches/com.apple.CloudTelemetry
+4.3M	/Users/sultan/Library/Caches/com.apple.geoanalyticsd
+180K	/Users/sultan/Library/Caches/com.github.GitHubClient
+2.1M	/Users/sultan/Library/Caches/com.apple.nbagent
+2.1M	/Users/sultan/Library/Caches/com.apple.NewDeviceOutreach
+6.2M	/Users/sultan/Library/Caches/com.apple.tipsd
+3.8M	/Users/sultan/Library/Caches/com.webex.meetingmanager
+2.5M	/Users/sultan/Library/Caches/com.apple.itunescloudd
+ 80K	/Users/sultan/Library/Caches/com.adobe.acc.HEXHelper.GPU
+  0B	/Users/sultan/Library/Caches/AI_29_1
+2.2M	/Users/sultan/Library/Caches/com.apple.sirittsd
+ 80K	/Users/sultan/Library/Caches/com.apple.siri.SuggestionsBookkeepingService
+  0B	/Users/sultan/Library/Caches/com.apple.CharacterPaletteIM
+  0B	/Users/sultan/Library/Caches/com.apple.nsurlsessiond
+8.0K	/Users/sultan/Library/Caches/com.github.GitHubClient.ShipIt
+4.0K	/Users/sultan/Library/Caches/com.apple.findmy.fmfcore
+138M	/Users/sultan/Library/Caches/JetBrains
+  0B	/Users/sultan/Library/Caches/AI_29_8
+127M	/Users/sultan/Library/Caches/ms-playwright-go
+  0B	/Users/sultan/Library/Caches/Canon
+144K	/Users/sultan/Library/Caches/com.apple.icloudwebd
+ 80K	/Users/sultan/Library/Caches/com.apple.VideoConference
+180K	/Users/sultan/Library/Caches/com.apple.coreservices.uiagent
+  0B	/Users/sultan/Library/Caches/com.apple.containermanagerd
+972K	/Users/sultan/Library/Caches/com.apple.appstore
+604K	/Users/sultan/Library/Caches/JetPackCache
+118M	/Users/sultan/Library/Caches/pip
+  0B	/Users/sultan/Library/Caches/ssu
+220M	/Users/sultan/Library/Caches/Adobe
+1.2M	/Users/sultan/Library/Caches/arduino
+212K	/Users/sultan/Library/Caches/com.adobe.cc.Install
+ 80K	/Users/sultan/Library/Caches/us.zoom.xos
+ 80K	/Users/sultan/Library/Caches/chrome_crashpad_handler
+  0B	/Users/sultan/Library/Caches/Adobe Camera Raw 2
+404K	/Users/sultan/Library/Caches/mbuseragent
+  0B	/Users/sultan/Library/Caches/EnergyKit
+440K	/Users/sultan/Library/Caches/com.openai.sky.CUAService
+ 55M	/Users/sultan/Library/Caches/CSXS
+  0B	/Users/sultan/Library/Caches/com.apple.AssistantServices
+6.1M	/Users/sultan/Library/Caches/com.apple.passd
+116K	/Users/sultan/Library/Caches/org.swift.swiftpm
+ 32K	/Users/sultan/Library/Caches/com.apple.shazamlibrary.cloud
+ 28K	/Users/sultan/Library/Caches/com.apple.chrono
+7.6M	/Users/sultan/Library/Caches/com.apple.AppleMediaServices
+148K	/Users/sultan/Library/Caches/com.apple.remindd
+548K	/Users/sultan/Library/Caches/com.figma.agent
+300K	/Users/sultan/Library/Caches/com.apple.assistantd
+144K	/Users/sultan/Library/Caches/com.apple.dataaccess.dataaccessd
+472K	/Users/sultan/Library/Caches/com.apple.python
+244K	/Users/sultan/Library/Caches/com.apple.Safari.SafeBrowsing
+124K	/Users/sultan/Library/Caches/com.apple.SystemProfiler
+8.0K	/Users/sultan/Library/Caches/checkpoint-nodejs
+544K	/Users/sultan/Library/Caches/com.apple.campo
+ 96K	/Users/sultan/Library/Caches/unixod
+ 18M	/Users/sultan/Library/Caches/com.apple.VisualIntelligenceCore
+ 17M	/Users/sultan/Library/Caches/com.apple.parsecd
+244K	/Users/sultan/Library/Caches/com.figma.Desktop
+4.7M	/Users/sultan/Library/Caches/com.adobe.illustrator
+ 80K	/Users/sultan/Library/Caches/com.apple.SystemProfiler.AboutExtension
+1.7G	/Users/sultan/Library/Caches/com.openai.codex
+840K	/Users/sultan/Library/Caches/com.apple.shazamd
+5.2M	/Users/sultan/Library/Caches/com.adobe.acc.AdobeDesktopService
+1.0M	/Users/sultan/Library/Caches/com.apple.Family-Settings.extension
+ 16M	/Users/sultan/Library/Caches/com.google.SoftwareUpdate
+  0B	/Users/sultan/Library/Caches/AI_28_7
+124K	/Users/sultan/Library/Caches/com.apple.Software-Update-Settings.extension
+  0B	/Users/sultan/Library/Caches/com.apple.bird
+ 80K	/Users/sultan/Library/Caches/com.adobe.AIMonitor.application
+276K	/Users/sultan/Library/Caches/com.adobe.AfterEffects
+596K	/Users/sultan/Library/Caches/com.apple.cloudd
+132K	/Users/sultan/Library/Caches/com.adobe.InDesign
+960K	/Users/sultan/Library/Caches/com.microsoft.VSCode
+1.2M	/Users/sultan/Library/Caches/com.apple.amsaccountsd
+  0B	/Users/sultan/Library/Caches/com.apple.siriknowledged
+4.0K	/Users/sultan/Library/Caches/com.apple.ScreenSaver-Settings.extension
+ 32K	/Users/sultan/Library/Caches/FamilyCircle
+ 80K	/Users/sultan/Library/Caches/com.apple.textunderstandingd
+ 62M	/Users/sultan/Library/Caches/node-gyp
+ 52K	/Users/sultan/Library/Caches/AMSDataMigratorTool
+4.0K	/Users/sultan/Library/Caches/prisma-nodejs
+1.9M	/Users/sultan/Library/Caches/com.apple.AMPLibraryAgent
+364K	/Users/sultan/Library/Caches/com.google.antigravity
+2.2M	/Users/sultan/Library/Caches/com.apple.appstorecomponentsd
+ 80K	/Users/sultan/Library/Caches/com.adobe.LogTransport.LogTransport
+120M	/Users/sultan/Library/Caches/NetBeans
+ 12K	/Users/sultan/Library/Caches/com.apple.commerce
+896K	/Users/sultan/Library/Caches/com.apple.feedbacklogger
+  0B	/Users/sultan/Library/Caches/AI_28_6
+152K	/Users/sultan/Library/Caches/com.apple.askpermissiond
+612K	/Users/sultan/Library/Caches/askpermissiond
+  0B	/Users/sultan/Library/Caches/com.apple.duetexpertd
+400K	/Users/sultan/Library/Caches/com.apple.ap.PromotedContentJetService
+2.8M	/Users/sultan/Library/Caches/com.apple.iTunes
+  0B	/Users/sultan/Library/Caches/com.apple.siri.embeddedspeech
+  0B	/Users/sultan/Library/Caches/JNA
+ 80K	/Users/sultan/Library/Caches/com.apple.homed
+  0B	/Users/sultan/Library/Caches/io.sentry
+1.5M	/Users/sultan/Library/Caches/com.cisco.webex.Cisco-WebEx-Start
+ 36K	/Users/sultan/Library/Caches/com.apple.findmy.fmipcore
+2.2M	/Users/sultan/Library/Caches/com.adobe.headlights.LogTransport2App
+348M	/Users/sultan/Library/Caches/antigravity-updater
+  0B	/Users/sultan/Library/Caches/com.onevcat.Kingfisher.ImageCache.default
+148K	/Users/sultan/Library/Caches/com.apple.donotdisturbd
+1.0M	/Users/sultan/Library/Caches/com.apple.translationd
+8.8M	/Users/sultan/Library/Caches/com.apple.ctcategories.service
+  0B	/Users/sultan/Library/Caches/com.plausiblelabs.crashreporter.data
+280K	/Users/sultan/Library/Caches/com.apple.AuthenticationServicesCore.AuthenticationServicesAgent
+1.6M	/Users/sultan/Library/Caches/com.apple.iCloudNotificationAgent
+1.1M	/Users/sultan/Library/Caches/com.apple.cache_delete
+160K	/Users/sultan/Library/Caches/com.anthropic.claudefordesktop
+ 80K	/Users/sultan/Library/Caches/com.adobe.AIRobin
+ 80K	/Users/sultan/Library/Caches/Creative Cloud Libraries Synchronizer
+ 46M	/Users/sultan/Library/Caches/com.apple.intelligenceflow.intelligenceflowd
+ 13M	/Users/sultan/Library/Caches/Smart Code ltd
+ 32K	/Users/sultan/Library/Caches/com.google.antigravity.ShipIt
+261M	/Users/sultan/Library/Caches/SiriTTS
+5.5M	/Users/sultan/Library/Caches/com.apple.amsengagementd
+  0B	/Users/sultan/Library/Caches/Godot
+240K	/Users/sultan/Library/Caches/com.apple.iTunesCloud
+4.8M	/Users/sultan/Library/Caches/com.apple.ap.adprivacyd
+236M	/Users/sultan/Library/Caches/Adobe InDesign
+ 80K	/Users/sultan/Library/Caches/com.adobe.AdobeIPCBroker
+248K	/Users/sultan/Library/Caches/com.datadoghq
+  0B	/Users/sultan/Library/Caches/main.kts.compiled.cache
+619M	/Users/sultan/Library/Caches/com.anthropic.claudefordesktop.ShipIt
+7.3G	/Users/sultan/Library/Caches
+ 43M	/Users/sultan/.cache/selenium
+340K	/Users/sultan/.cache/tooling
+8.0K	/Users/sultan/.cache/gh
+ 35M	/Users/sultan/.cache/prisma
+ 23M	/Users/sultan/.cache/fontconfig
+525M	/Users/sultan/.cache/huggingface
+1.5G	/Users/sultan/.cache/codex-runtimes
+2.1G	/Users/sultan/.cache
+ 48K	/Users/sultan/.npm/_logs
+133M	/Users/sultan/.npm/_cacache
+133M	/Users/sultan/.npm

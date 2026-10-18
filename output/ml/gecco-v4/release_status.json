@@ -1,0 +1,86 @@
+{
+  "created_at_utc": "2026-10-16T06:42:34.921108+00:00",
+  "model_status": "NOT_PROMOTED",
+  "3d_connected": false,
+  "original_benchmark_unchanged": true,
+  "post_audit_guard_only": true,
+  "guard_tests": 3,
+  "synthetic_model_and_runner_tests": 81,
+  "independent_audit_checks": 343625,
+  "guarded_benchmark_performance_not_claimed": true,
+  "records": [
+    {
+      "scope": "external_2017",
+      "fold": 1,
+      "guard_reason": "calibration_constraints_not_established",
+      "calibration_ready": false
+    },
+    {
+      "scope": "external_2017",
+      "fold": 2,
+      "guard_reason": "calibration_missed_all_events_in_a_block",
+      "calibration_ready": false
+    },
+    {
+      "scope": "external_2017",
+      "fold": 3,
+      "guard_reason": "calibration_missed_all_events_in_a_block",
+      "calibration_ready": false
+    },
+    {
+      "scope": "external_2017",
+      "fold": 4,
+      "guard_reason": null,
+      "calibration_ready": true
+    },
+    {
+      "scope": "external_2017",
+      "fold": 5,
+      "guard_reason": null,
+      "calibration_ready": true
+    },
+    {
+      "scope": "external_2017",
+      "fold": 6,
+      "guard_reason": null,
+      "calibration_ready": true
+    },
+    {
+      "scope": "development_2018",
+      "fold": 1,
+      "guard_reason": null,
+      "calibration_ready": true
+    },
+    {
+      "scope": "development_2018",
+      "fold": 2,
+      "guard_reason": null,
+      "calibration_ready": true
+    },
+    {
+      "scope": "development_2018",
+      "fold": 3,
+      "guard_reason": null,
+      "calibration_ready": true
+    },
+    {
+      "scope": "development_2018",
+      "fold": 4,
+      "guard_reason": null,
+      "calibration_ready": true
+    },
+    {
+      "scope": "development_2018",
+      "fold": 5,
+      "guard_reason": null,
+      "calibration_ready": true
+    },
+    {
+      "scope": "development_2018",
+      "fold": 6,
+      "guard_reason": null,
+      "calibration_ready": true
+    }
+  ],
+  "guard_source_sha256": "a18ffbfb77481bc786d2deeb50fa577e6cb4050b535c3ffd1312db7d082b0591"
+}

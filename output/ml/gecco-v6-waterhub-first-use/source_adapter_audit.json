@@ -1,0 +1,1870 @@
+{
+  "loader": {
+    "metadata": {
+      "selected_months": [
+        "2018-06",
+        "2018-07",
+        "2018-08",
+        "2018-09",
+        "2018-10",
+        "2018-11",
+        "2018-12",
+        "2019-01",
+        "2019-02",
+        "2019-03",
+        "2019-04"
+      ],
+      "unlabelled_months_retained": [
+        "2018-08"
+      ],
+      "excluded_scope": "May 2019 and all non-WaterHub/nonselected members",
+      "source_member_count": 82,
+      "member_sha256_verified_against_expected": false,
+      "whole_archive_sha256_verified_by_loader": false,
+      "raw_timestamp_format": "%d.%m.%Y %H:%M:%S",
+      "annotation_timestamp_format": "%Y-%m-%d %H:%M:%S",
+      "raw_duplicate_timestamp_counts_by_process": {
+        "T1_T2": 360,
+        "GAK": 360
+      },
+      "fixed_raw_ambiguous_timestamp_count": 360,
+      "fixed_raw_ambiguity_mask_sha256": "e5566736001d11b527c20c41b69ce8aca37a84958142a0116beae9d4e26d9925",
+      "ambiguity_mask_basis": "All raw timestamps in the selected calendar; no annotation input",
+      "source_rows_preserved": true,
+      "copied_annotation_pressure_columns_loaded": false,
+      "limitations": [
+        "Read this scope only after caller protocol freeze; no automatic CLI is provided.",
+        "A fixed duplicate-clock mask is offline timestamp qualification, not live clock foresight.",
+        "Annotation conflicts are preserved for the adapter; no label-driven scope selection occurs.",
+        "Instrument-to-raw provenance and wall-clock timezone remain unspecified."
+      ]
+    },
+    "members": [
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/06_June 2018.csv",
+        "month": "2018-06",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "981aaf3ef82118359d283fe4a7ed2db298ceb98a43a1b083a0287e901c1adad8",
+        "uncompressed_bytes": 8103144,
+        "zip_crc32": "ffd0bccb",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 258870,
+        "combined_row_start": 0,
+        "combined_row_end_exclusive": 258870
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/06_June 2018_labels_timep1.csv",
+        "month": "2018-06",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "16b99a37a564bbd92f0cc8178ef0638f23eced30794daa6d1c8ae68348705add",
+        "uncompressed_bytes": 9061731,
+        "zip_crc32": "528fbed2",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 0,
+        "combined_row_end_exclusive": 259200
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/06_June 2018_labels_timep2.csv",
+        "month": "2018-06",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "dcb7053a4f9c64d1810dc052d6c5d744586879c57b533885fa3dc8a95cd3c68a",
+        "uncompressed_bytes": 9035913,
+        "zip_crc32": "155d270c",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 0,
+        "combined_row_end_exclusive": 259200
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/06_June 2018_labels_timep1p2.csv",
+        "month": "2018-06",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "ee9d7e0b1e2a377e8a9b4172056cc21dacfcbd5f7a42b66cf3c14f47707be50d",
+        "uncompressed_bytes": 10432735,
+        "zip_crc32": "27b65f75",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 0,
+        "combined_row_end_exclusive": 259200
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/06_June 2018.csv",
+        "month": "2018-06",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "eb7842bf72697728d218b414cc4b78b47a42e9897c265fd7409960dffb93752e",
+        "uncompressed_bytes": 7999735,
+        "zip_crc32": "fe93a94f",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 258870,
+        "combined_row_start": 0,
+        "combined_row_end_exclusive": 258870
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/06_June 2018_labels_timep3.csv",
+        "month": "2018-06",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "0a83e9e880bbe0de57b7793a3b17de9329608b5b032ca600509f97a5a3d26662",
+        "uncompressed_bytes": 8959592,
+        "zip_crc32": "68fac417",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 0,
+        "combined_row_end_exclusive": 259200
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/06_June 2018_labels_timep4.csv",
+        "month": "2018-06",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "24c4d452249609489184fb348513d44c516e7c75c8eb5a482a51eb02ef9787e2",
+        "uncompressed_bytes": 8959519,
+        "zip_crc32": "ae4cf123",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 0,
+        "combined_row_end_exclusive": 259200
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/06_June 2018_labels_timep3p4.csv",
+        "month": "2018-06",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "18ea674ab0b0eb727c13c6d833a1f55f6aa8057324b7fbfb675fe3ba8ac1eff9",
+        "uncompressed_bytes": 10254202,
+        "zip_crc32": "99718adb",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 0,
+        "combined_row_end_exclusive": 259200
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/07_July 2018.csv",
+        "month": "2018-07",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "ac3179e56ac29415a2f8ed140fed354deb8cacf0172b6e69122a1de29ae17457",
+        "uncompressed_bytes": 8312703,
+        "zip_crc32": "11f86651",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 267840,
+        "combined_row_start": 258870,
+        "combined_row_end_exclusive": 526710
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/07_July 2018_labels_timep1.csv",
+        "month": "2018-07",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "b0ae80fda4c5dd138679c85a5e70de596bc8741a35e72d6a1589d4469ba3a148",
+        "uncompressed_bytes": 9302673,
+        "zip_crc32": "5bb60b4d",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 259200,
+        "combined_row_end_exclusive": 527040
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/07_July 2018_labels_timep2.csv",
+        "month": "2018-07",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "a58b5b95521f9db49c4d4128e056154f975b19005b5d06687cd362ab32d0e639",
+        "uncompressed_bytes": 9341364,
+        "zip_crc32": "53a0b516",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 259200,
+        "combined_row_end_exclusive": 527040
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/07_July 2018_labels_timep1p2.csv",
+        "month": "2018-07",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "2898f2c96e212194fbe8c7cad515524caedde02da910481662c8dcb0e4ad6300",
+        "uncompressed_bytes": 10719928,
+        "zip_crc32": "64d1c481",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 259200,
+        "combined_row_end_exclusive": 527040
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/07_July 2018.csv",
+        "month": "2018-07",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "1da514fdc1d95727283d30a9d32baa394679f0f3d1b07ccc6e865e8bf8a9560a",
+        "uncompressed_bytes": 8275506,
+        "zip_crc32": "39ae90d9",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 267840,
+        "combined_row_start": 258870,
+        "combined_row_end_exclusive": 526710
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/07_July 2018_labels_timep3.csv",
+        "month": "2018-07",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "b97eebffa028db58ded6d470dc26767a6ca652dfcabcc735b73dcfcc5399e632",
+        "uncompressed_bytes": 9269682,
+        "zip_crc32": "5c58a3c7",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 268022,
+        "combined_row_start": 259200,
+        "combined_row_end_exclusive": 527222
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/07_July 2018_labels_timep4.csv",
+        "month": "2018-07",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "b22d7ba0a3e37c6e92eef1ca371f1eb569bb626a497519a3a33ed263315848e5",
+        "uncompressed_bytes": 9263296,
+        "zip_crc32": "9bb042d1",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 259200,
+        "combined_row_end_exclusive": 527040
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/07_July 2018_labels_timep3p4.csv",
+        "month": "2018-07",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "3ae0909f8fae332930321eb612b4d4dc4a7044e6ed181a652cb57eb1d783a448",
+        "uncompressed_bytes": 10602499,
+        "zip_crc32": "4a865291",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 259200,
+        "combined_row_end_exclusive": 527040
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/08_August 2018.csv",
+        "month": "2018-08",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "1dbc126f48690410359ab4db0c5438de5f87167ed93546667f7793ea66df15d5",
+        "uncompressed_bytes": 8347804,
+        "zip_crc32": "5edb1e36",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 267838,
+        "combined_row_start": 526710,
+        "combined_row_end_exclusive": 794548
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/08_August 2018.csv",
+        "month": "2018-08",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "ef73226b54b0dbfe0d9ecbb806718e73c66c1b48cfde25e636b3e04878e9de4a",
+        "uncompressed_bytes": 8260192,
+        "zip_crc32": "a30d594b",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 267838,
+        "combined_row_start": 526710,
+        "combined_row_end_exclusive": 794548
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/09_September 2018.csv",
+        "month": "2018-09",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "b66af279d586d11b13fe65cc57e6a5d4769faed712d45d810ecbb53c271f4611",
+        "uncompressed_bytes": 8119655,
+        "zip_crc32": "2a0b1c94",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 259200,
+        "combined_row_start": 794548,
+        "combined_row_end_exclusive": 1053748
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/09_September 2018_labels_timep1.csv",
+        "month": "2018-09",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "391bb612d31dad6ce503c342cc00aa3e5312fc58f0ece4a8f3beb7fa09a95184",
+        "uncompressed_bytes": 9045613,
+        "zip_crc32": "59c489b3",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 527040,
+        "combined_row_end_exclusive": 786240
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/09_September 2018_labels_timep2.csv",
+        "month": "2018-09",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "40ed3a72369675b717f24dfc85cb5e9622db45111b5b4631322be0ccfe37585e",
+        "uncompressed_bytes": 9063660,
+        "zip_crc32": "ca8ea61a",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 527040,
+        "combined_row_end_exclusive": 786240
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/09_September 2018_labels_timep1p2.csv",
+        "month": "2018-09",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "2231fe313dd814a9e5c5d50de23c7b8c4b2dadb744a9a72c69eb31c18c23705c",
+        "uncompressed_bytes": 10444651,
+        "zip_crc32": "c20b9b58",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259207,
+        "combined_row_start": 527040,
+        "combined_row_end_exclusive": 786247
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/09_September 2018.csv",
+        "month": "2018-09",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "b94fb955480de67ab9a450a976228d49e6f3add70860dc916debbcffd7b98df9",
+        "uncompressed_bytes": 7968121,
+        "zip_crc32": "291a59b5",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 259200,
+        "combined_row_start": 794548,
+        "combined_row_end_exclusive": 1053748
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/09_September 2018_labels_timep3.csv",
+        "month": "2018-09",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "32c5baa15ebfbcab41d2adfd3e6f78257e0feed533f5202b9a23fd9ec87560d3",
+        "uncompressed_bytes": 9103677,
+        "zip_crc32": "c9601b22",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 263279,
+        "combined_row_start": 527222,
+        "combined_row_end_exclusive": 790501
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/09_September 2018_labels_timep4.csv",
+        "month": "2018-09",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "3b671353dbb080a87cc27a9060f6e9d7bb3e32d420d6b0ce7747a512510c5cdf",
+        "uncompressed_bytes": 8950217,
+        "zip_crc32": "b6462e9d",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 527040,
+        "combined_row_end_exclusive": 786240
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/09_September 2018_labels_timep3p4.csv",
+        "month": "2018-09",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "ec90e51547c6d14373f6f51a7373bb5d3dab46c9add70ba5d3e75fe620b3b6c7",
+        "uncompressed_bytes": 10246220,
+        "zip_crc32": "10046c2b",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 527040,
+        "combined_row_end_exclusive": 786240
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/10_October 2018.csv",
+        "month": "2018-10",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "be0d53ca59ef3b37a24a0c5c1a133fffde5bb1afd92c3a27ef6d017cf608ebc0",
+        "uncompressed_bytes": 8407687,
+        "zip_crc32": "b58ced8e",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 268200,
+        "combined_row_start": 1053748,
+        "combined_row_end_exclusive": 1321948
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/10_October 2018_labels_timep1.csv",
+        "month": "2018-10",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "9abd0fd22d115a624bdd0bb541c4e8b670d91f83df0cea9636a3722a9a0cd788",
+        "uncompressed_bytes": 9376123,
+        "zip_crc32": "7b202bd9",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 786240,
+        "combined_row_end_exclusive": 1054080
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/10_October 2018_labels_timep2.csv",
+        "month": "2018-10",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "cdf6e57731ff9d019c362974617c943fe4cbe3024a6903f0dcf4bd51476ac045",
+        "uncompressed_bytes": 9351691,
+        "zip_crc32": "de7550bd",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 786240,
+        "combined_row_end_exclusive": 1054080
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/10_October 2018_labels_timep1p2.csv",
+        "month": "2018-10",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "fe075e42e015ddb5793e9938282815407002fa96b28a5aa5ff7a5fe9284f7012",
+        "uncompressed_bytes": 10803705,
+        "zip_crc32": "72ce085a",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 786247,
+        "combined_row_end_exclusive": 1054087
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/10_October 2018.csv",
+        "month": "2018-10",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "bc18d78f1359e5cdd3d576ce215a2cb141b4d201bdf07a32b48a6b79d36c634c",
+        "uncompressed_bytes": 8245047,
+        "zip_crc32": "7e3e414f",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 268200,
+        "combined_row_start": 1053748,
+        "combined_row_end_exclusive": 1321948
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/10_October 2018_labels_timep3.csv",
+        "month": "2018-10",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "51351a9a083c6e980ba55b2c66d4da0e2d7f78f2ae55c0a614777363a9ca3106",
+        "uncompressed_bytes": 9263467,
+        "zip_crc32": "d48637be",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 790501,
+        "combined_row_end_exclusive": 1058341
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/10_October 2018_labels_timep4.csv",
+        "month": "2018-10",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "b5e3b1496094e36d2858a3119610a9107f676b2c1ab4f914bd46b7626d097c3c",
+        "uncompressed_bytes": 9260064,
+        "zip_crc32": "37c3118b",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267924,
+        "combined_row_start": 786240,
+        "combined_row_end_exclusive": 1054164
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/10_October 2018_labels_timep3p4.csv",
+        "month": "2018-10",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "addb6942ddbf9c5f1ef1d011e4d2025fd5be07d090fb1665d13b7bcac5471346",
+        "uncompressed_bytes": 10597509,
+        "zip_crc32": "4d130297",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267866,
+        "combined_row_start": 786240,
+        "combined_row_end_exclusive": 1054106
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/11_November 2018.csv",
+        "month": "2018-11",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "04884185cddcdd522ffc56f6aee3a9f81c7d09d18dc1fd665b7329c785a16392",
+        "uncompressed_bytes": 8181630,
+        "zip_crc32": "d169d5af",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 259200,
+        "combined_row_start": 1321948,
+        "combined_row_end_exclusive": 1581148
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/11_November 2018_labels_timep1.csv",
+        "month": "2018-11",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "ebf88e97d0f2d8c09e992ab185a07d4ab1e45ee0013d74ddc34261a0fb3a7e3c",
+        "uncompressed_bytes": 9282775,
+        "zip_crc32": "d7e4b0e4",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 264063,
+        "combined_row_start": 1054080,
+        "combined_row_end_exclusive": 1318143
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/11_November 2018_labels_timep2.csv",
+        "month": "2018-11",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "aaf367197a6472f7a02c28d994b041d806335b25cb2fc51c6379dcecfacdaaf8",
+        "uncompressed_bytes": 9108674,
+        "zip_crc32": "ec7a1964",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 260408,
+        "combined_row_start": 1054080,
+        "combined_row_end_exclusive": 1314488
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/11_November 2018_labels_timep1p2.csv",
+        "month": "2018-11",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "ee0e9478ae8a66d76c3ed6e07db599416caa34b78e45a4f488f21ac9a7e72879",
+        "uncompressed_bytes": 10508757,
+        "zip_crc32": "e282a9c8",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 1054087,
+        "combined_row_end_exclusive": 1313287
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/11_November 2018.csv",
+        "month": "2018-11",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "e9f6c74ef97470b0c2623b2c00d5fba2ea26f2f9ca3d951fb572796d9684068c",
+        "uncompressed_bytes": 7905729,
+        "zip_crc32": "1201171f",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 259200,
+        "combined_row_start": 1321948,
+        "combined_row_end_exclusive": 1581148
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/11_November 2018_labels_timep3.csv",
+        "month": "2018-11",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "f0dc2b456b396f0365335cb5ba2d6568c17999808c164cc845aa1c115d2ed232",
+        "uncompressed_bytes": 8960912,
+        "zip_crc32": "9909ece7",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 1058341,
+        "combined_row_end_exclusive": 1317541
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/11_November 2018_labels_timep4.csv",
+        "month": "2018-11",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "0e8de539fbd2a309ef2c228eee4fb71c1dbd7c44f34251b935c5bd11922d376d",
+        "uncompressed_bytes": 8913847,
+        "zip_crc32": "2b3bc70c",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 1054164,
+        "combined_row_end_exclusive": 1313364
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/11_November 2018_labels_timep3p4.csv",
+        "month": "2018-11",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "6d8657d71e38ff1b0466a1401413806e33bfa39c15e611c1a2add730f7161b03",
+        "uncompressed_bytes": 10225676,
+        "zip_crc32": "8dece2f6",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259603,
+        "combined_row_start": 1054106,
+        "combined_row_end_exclusive": 1313709
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/12_December 2018.csv",
+        "month": "2018-12",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "52437caf89ecd8bdf9e298b82e59e138b08e59d65305af5b3c53306185f672d3",
+        "uncompressed_bytes": 8377035,
+        "zip_crc32": "76c21a00",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1581148,
+        "combined_row_end_exclusive": 1848988
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/12_December 2018_labels_timep1.csv",
+        "month": "2018-12",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "7b491910b404df2b0bef1980d17eef100da7656121fe832f6f2fce2d63e568ed",
+        "uncompressed_bytes": 9335149,
+        "zip_crc32": "afd690df",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1318143,
+        "combined_row_end_exclusive": 1585983
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/12_December 2018_labels_timep2.csv",
+        "month": "2018-12",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "a8919b023638096e82337d4d771cdc5a00a72280470acde6a269d9c5695e30e4",
+        "uncompressed_bytes": 9397365,
+        "zip_crc32": "522015ac",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 268318,
+        "combined_row_start": 1314488,
+        "combined_row_end_exclusive": 1582806
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/12_December 2018_labels_timep1p2.csv",
+        "month": "2018-12",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "6a5779082a6d1980e7c113d721345c7f42a505d74ff4a4ddc59b3dc12192a854",
+        "uncompressed_bytes": 10791499,
+        "zip_crc32": "1df09bc9",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267847,
+        "combined_row_start": 1313287,
+        "combined_row_end_exclusive": 1581134
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/12_December 2018.csv",
+        "month": "2018-12",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "14a48c96799683ddeb7eabc8cc35cd08f239e46498ddd20d7603deacbd58b2ba",
+        "uncompressed_bytes": 8216611,
+        "zip_crc32": "44c8bc13",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1581148,
+        "combined_row_end_exclusive": 1848988
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/12_December 2018_labels_timep3.csv",
+        "month": "2018-12",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "4833b10ed2feec6867ff9cafd5a1ab83d7f3f0f7f13d65fe75b86341094607e2",
+        "uncompressed_bytes": 9263312,
+        "zip_crc32": "1b241800",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1317541,
+        "combined_row_end_exclusive": 1585381
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/12_December 2018_labels_timep4.csv",
+        "month": "2018-12",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "2079ddba8ddadeb5d7e126c9d17df8f635cd239e3926e134d76fb93668a3da30",
+        "uncompressed_bytes": 9282337,
+        "zip_crc32": "ec0a0e9f",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 268908,
+        "combined_row_start": 1313364,
+        "combined_row_end_exclusive": 1582272
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/12_December 2018_labels_timep3p4.csv",
+        "month": "2018-12",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "f6bd02958de4b1f63243a61b871e800a6964acc5363a0c3332b69c5de639e968",
+        "uncompressed_bytes": 10597514,
+        "zip_crc32": "2a08857b",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 268158,
+        "combined_row_start": 1313709,
+        "combined_row_end_exclusive": 1581867
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/13_January 2019.csv",
+        "month": "2019-01",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "e2c3a3aba11f47e41404b18fde145f3b972392528ad4b391d8e849ccbbb0f5cd",
+        "uncompressed_bytes": 8351286,
+        "zip_crc32": "cfeeb89e",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1848988,
+        "combined_row_end_exclusive": 2116828
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/13_January 2019_labels_timep1.csv",
+        "month": "2019-01",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "bce58d882f3ba2f930f43dd5ab254364fc04b9d27cf27f6877877c9e9e783050",
+        "uncompressed_bytes": 9317369,
+        "zip_crc32": "ec81b44d",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 268009,
+        "combined_row_start": 1585983,
+        "combined_row_end_exclusive": 1853992
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/13_January 2019_labels_timep2.csv",
+        "month": "2019-01",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "5db12846d5bddf8afde569fc4669a8a2c16a24dab081d5105837f87fb024f665",
+        "uncompressed_bytes": 9371297,
+        "zip_crc32": "69d0999d",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1582806,
+        "combined_row_end_exclusive": 1850646
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/13_January 2019_labels_timep1p2.csv",
+        "month": "2019-01",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "755393f431ea4a534b7d0db1b50c25315e2b9fef2a313952b37f94398a134ff6",
+        "uncompressed_bytes": 10759252,
+        "zip_crc32": "b4adb2d2",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267859,
+        "combined_row_start": 1581134,
+        "combined_row_end_exclusive": 1848993
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/13_January 2019.csv",
+        "month": "2019-01",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "a54fb624aac4b1dff66f0cf67333126ed64831ec6a64c5890c6ade266bd32ee5",
+        "uncompressed_bytes": 8235112,
+        "zip_crc32": "33410967",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1848988,
+        "combined_row_end_exclusive": 2116828
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/13_January 2019_labels_timep3.csv",
+        "month": "2019-01",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "46e2481aec68be1bb226acb1b7ee79a893fa81ecda40cd49a97ffec076ff3bc4",
+        "uncompressed_bytes": 9263312,
+        "zip_crc32": "bea5d6d7",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1585381,
+        "combined_row_end_exclusive": 1853221
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/13_January 2019_labels_timep4.csv",
+        "month": "2019-01",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "d82c60087c36be3dd789581eb90df020b04fd955f26e1910752d12c63825023c",
+        "uncompressed_bytes": 9263312,
+        "zip_crc32": "38d6dbe0",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1582272,
+        "combined_row_end_exclusive": 1850112
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/13_January 2019_labels_timep3p4.csv",
+        "month": "2019-01",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "7b54f4037e1821166c261e0e3555384ceb1fa7a5c66f956b7b9735faa50b4ed7",
+        "uncompressed_bytes": 10602515,
+        "zip_crc32": "496abda1",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 1581867,
+        "combined_row_end_exclusive": 1849707
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/14_February 2019.csv",
+        "month": "2019-02",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "b7385c62e18edf891ff00ba344519fed60ee1946fa0c6507cec11cc24ac9c3af",
+        "uncompressed_bytes": 7661921,
+        "zip_crc32": "033f9bf1",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 241920,
+        "combined_row_start": 2116828,
+        "combined_row_end_exclusive": 2358748
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/14_February 2019_labels_timep1.csv",
+        "month": "2019-02",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "e9195a42ff6e7148e76cfaeddfa7775e2e03fa2d2aa3d4441c80719fdbc2568e",
+        "uncompressed_bytes": 8546883,
+        "zip_crc32": "b1f01bf1",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 242061,
+        "combined_row_start": 1853992,
+        "combined_row_end_exclusive": 2096053
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/14_February 2019_labels_timep2.csv",
+        "month": "2019-02",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "d36db65af98890c0ef7167e59ca9d2b0c70538b048d395854d08478c5421914f",
+        "uncompressed_bytes": 8420262,
+        "zip_crc32": "061e1fc4",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 241920,
+        "combined_row_start": 1850646,
+        "combined_row_end_exclusive": 2092566
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/14_February 2019_labels_timep1p2.csv",
+        "month": "2019-02",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "39c6d49144170c986d85fce51f75c3df02a747099989cd957ff1a60f703a0f33",
+        "uncompressed_bytes": 9815560,
+        "zip_crc32": "f3480062",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 241920,
+        "combined_row_start": 1848993,
+        "combined_row_end_exclusive": 2090913
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/14_February 2019.csv",
+        "month": "2019-02",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "872ea4c9ef7549a4c22e45950e980a6106ae4b8b78e2584aceb15354b8600ce0",
+        "uncompressed_bytes": 7339336,
+        "zip_crc32": "7b3285d4",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 241920,
+        "combined_row_start": 2116828,
+        "combined_row_end_exclusive": 2358748
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/14_February 2019_labels_timep3.csv",
+        "month": "2019-02",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "2f9ca16ef3531d90f9b7e863cff6f33cbc578940ea4f2619d69de8ff387d00d2",
+        "uncompressed_bytes": 8356112,
+        "zip_crc32": "9bb51165",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 241920,
+        "combined_row_start": 1853221,
+        "combined_row_end_exclusive": 2095141
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/14_February 2019_labels_timep4.csv",
+        "month": "2019-02",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "34d985bb79a8405b90e1fb8b8a22566dc6c52b42824b0518f87363612fc8fb24",
+        "uncompressed_bytes": 8356112,
+        "zip_crc32": "1fe725f0",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 241920,
+        "combined_row_start": 1850112,
+        "combined_row_end_exclusive": 2092032
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/14_February 2019_labels_timep3p4.csv",
+        "month": "2019-02",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "d81361b25ff171abaf14a56d3e4cf589ff3c1502225090dcd0c6884fb19e7ae8",
+        "uncompressed_bytes": 9600435,
+        "zip_crc32": "27256ea6",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 242788,
+        "combined_row_start": 1849707,
+        "combined_row_end_exclusive": 2092495
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/15_March 2019.csv",
+        "month": "2019-03",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "7dd8a2cfd371c02505c3098568429d3f10a9345396c5b17b655955e574384e01",
+        "uncompressed_bytes": 8444929,
+        "zip_crc32": "c16d71b7",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 267480,
+        "combined_row_start": 2358748,
+        "combined_row_end_exclusive": 2626228
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/15_March 2019_labels_timep1.csv",
+        "month": "2019-03",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "f95630e7c46f82f7b5d7fa74a575eb94d6c5d217b064f877d4e48d24e4658f95",
+        "uncompressed_bytes": 9418399,
+        "zip_crc32": "987955a2",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 268080,
+        "combined_row_start": 2096053,
+        "combined_row_end_exclusive": 2364133
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/15_March 2019_labels_timep2.csv",
+        "month": "2019-03",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "99e13ee8f651f0af92cb7775e9ad381ea849574e1ba4ce585a2ea2ef777766b9",
+        "uncompressed_bytes": 9374566,
+        "zip_crc32": "27934e91",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267981,
+        "combined_row_start": 2092566,
+        "combined_row_end_exclusive": 2360547
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/15_March 2019_labels_timep1p2.csv",
+        "month": "2019-03",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "84a9ddedd9444439132190926595a93d87735bac778c5ce6db835910acaeed3c",
+        "uncompressed_bytes": 10855140,
+        "zip_crc32": "f376b9d7",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 2090913,
+        "combined_row_end_exclusive": 2358753
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/15_March 2019.csv",
+        "month": "2019-03",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "601f4719426f9d7e82a15c586ec9651ba6650c37d7f5193fb9a88f1091eb3f20",
+        "uncompressed_bytes": 8193960,
+        "zip_crc32": "e92ec039",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 267480,
+        "combined_row_start": 2358748,
+        "combined_row_end_exclusive": 2626228
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/15_March 2019_labels_timep3.csv",
+        "month": "2019-03",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "7c1ef81e7f66c19276f8b70c81afcdcfb7fbc40729c5636bb01ad1bf273c171b",
+        "uncompressed_bytes": 9261872,
+        "zip_crc32": "69ed14d2",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 2095141,
+        "combined_row_end_exclusive": 2362981
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/15_March 2019_labels_timep4.csv",
+        "month": "2019-03",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "515e7430ace48806bc09d3c878e254635fac2c94cce984f24be28c4a47ba62c7",
+        "uncompressed_bytes": 9263832,
+        "zip_crc32": "8645b97c",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267896,
+        "combined_row_start": 2092032,
+        "combined_row_end_exclusive": 2359928
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/15_March 2019_labels_timep3p4.csv",
+        "month": "2019-03",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "88520c0238f577559ac1c5a3f5c69464de9f07a76c290b691b05aa590fe6b31c",
+        "uncompressed_bytes": 10599635,
+        "zip_crc32": "227dd192",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 267840,
+        "combined_row_start": 2092495,
+        "combined_row_end_exclusive": 2360335
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/16_April 2019.csv",
+        "month": "2019-04",
+        "kind": "raw",
+        "stream": "T1_T2",
+        "sha256": "9e736486f3d903edd0c50eb3436178d426f85284d873301442c355ffd773d834",
+        "uncompressed_bytes": 8103872,
+        "zip_crc32": "f65c6539",
+        "header_sha256_excluding_lf": "940a734268a1c6bf0485676404f5900fe9cfe15d3be3cdc6e5cb17d7c422f109",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p1",
+          "p2"
+        ],
+        "output_columns": [
+          "p1",
+          "p2"
+        ],
+        "rows": 259197,
+        "combined_row_start": 2626228,
+        "combined_row_end_exclusive": 2885425
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/16_April 2019_labels_timep1.csv",
+        "month": "2019-04",
+        "kind": "annotation",
+        "stream": "p1",
+        "sha256": "b68c0aab6274f8547efeb19853d93413c00a2b314e05f014d65a05ab071c0f70",
+        "uncompressed_bytes": 8982298,
+        "zip_crc32": "b80c813d",
+        "header_sha256_excluding_lf": "e0353aad5fd4b842750daeb0a7d47cefcef6cef2734ba66ed3047d2d7ace23a1",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 2364133,
+        "combined_row_end_exclusive": 2623333
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/16_April 2019_labels_timep2.csv",
+        "month": "2019-04",
+        "kind": "annotation",
+        "stream": "p2",
+        "sha256": "a7646397bd5d7fc0b78810ca616c6b881d7bf2ec9356aef85ca0a65976599343",
+        "uncompressed_bytes": 9109165,
+        "zip_crc32": "50ef66a4",
+        "header_sha256_excluding_lf": "8e0cdb71ce3e533aaf40ddc006e04f9329efe85ebe705a2f457a6df8395fce9f",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 2360547,
+        "combined_row_end_exclusive": 2619747
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensors_T1_T2/labels/16_April 2019_labels_timep1p2.csv",
+        "month": "2019-04",
+        "kind": "annotation",
+        "stream": "p1p2",
+        "sha256": "1180244ebd782fdf6cc2d08a153b985c874ab84d5734ebb320782f9dfb8f5c88",
+        "uncompressed_bytes": 10426554,
+        "zip_crc32": "01582ce5",
+        "header_sha256_excluding_lf": "4a0b9f84131c9d830ca1f584fb42c6ab43367585adbf6110d9f708ab18525672",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 2358753,
+        "combined_row_end_exclusive": 2617953
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/16_April 2019.csv",
+        "month": "2019-04",
+        "kind": "raw",
+        "stream": "GAK",
+        "sha256": "8c5128f3c31ad93e1c3d6feddadd95a66e3f9b19ceab659239c787d3f2d71906",
+        "uncompressed_bytes": 8011749,
+        "zip_crc32": "a6c0b14b",
+        "header_sha256_excluding_lf": "aaf2aef7383829bfefe7e1bbe6e2697bce7f517ee4bd82c5c05005d8c7222cbd",
+        "parsed_columns": [
+          "day",
+          "hour",
+          "p3",
+          "p4"
+        ],
+        "output_columns": [
+          "p3",
+          "p4"
+        ],
+        "rows": 259197,
+        "combined_row_start": 2626228,
+        "combined_row_end_exclusive": 2885425
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/16_April 2019_labels_timep3.csv",
+        "month": "2019-04",
+        "kind": "annotation",
+        "stream": "p3",
+        "sha256": "7991818bd48e1496c71ac97add278d4eac1c454600d2b161e97a375f79576374",
+        "uncompressed_bytes": 8960900,
+        "zip_crc32": "61cbc916",
+        "header_sha256_excluding_lf": "f6c14c74c9f19ee439caddfb94f66abe6e7af524c77df9003cf8097885e8ef07",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 2362981,
+        "combined_row_end_exclusive": 2622181
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/16_April 2019_labels_timep4.csv",
+        "month": "2019-04",
+        "kind": "annotation",
+        "stream": "p4",
+        "sha256": "6255aacb8ec4f23d84dbfad238a274d13d6be3eebfac6fb45ae0a75f49d34a40",
+        "uncompressed_bytes": 8960900,
+        "zip_crc32": "641ecf17",
+        "header_sha256_excluding_lf": "e278aa1dfb54d1bc47f1072c689d95c4d6f21b60f6411e2196182d18eb90c6dd",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 2359928,
+        "combined_row_end_exclusive": 2619128
+      },
+      {
+        "member": "ADASen_paper/data/04_WaterHub/data_raw/data_pressure_sensor_GAK/labels/16_April 2019_labels_timep3p4.csv",
+        "month": "2019-04",
+        "kind": "annotation",
+        "stream": "p3p4",
+        "sha256": "eb4147328238fc1bfba84fe58ebf61408ae1c71f7ae718d4cdb7c91f8064000c",
+        "uncompressed_bytes": 10256891,
+        "zip_crc32": "4ea351c4",
+        "header_sha256_excluding_lf": "f21b7f93c6e4e729008a3b46839db59023ba2701fbc3245c243fe40646c8f8a4",
+        "parsed_columns": [
+          "day",
+          "time",
+          "Anomaly"
+        ],
+        "output_columns": [
+          "Anomaly"
+        ],
+        "rows": 259200,
+        "combined_row_start": 2360335,
+        "combined_row_end_exclusive": 2619535
+      }
+    ]
+  },
+  "adapter": {
+    "adapter_policy": "minute_end_raw_last_complete_grid_six_stream_or_v1",
+    "cadence_seconds": 60,
+    "feature_sample_offset_seconds": 50,
+    "output_timestamp": "minute_end",
+    "output_rows": 480960,
+    "raw_rows_t1_t2": 2885425,
+    "raw_rows_gak": 2885425,
+    "feature_available_minutes": 480783,
+    "label_known_minutes": 436320,
+    "timestamp_ambiguity_mask_supplied": true,
+    "fixed_ambiguous_timestamp_count": 360,
+    "annotation_streams": {
+      "p1": {
+        "input_rows": 2623333,
+        "unique_timestamps": 2617920,
+        "duplicate_timestamp_groups": 3994,
+        "unknown_timestamp_groups": 0
+      },
+      "p2": {
+        "input_rows": 2619747,
+        "unique_timestamps": 2617920,
+        "duplicate_timestamp_groups": 1827,
+        "unknown_timestamp_groups": 0
+      },
+      "p1p2": {
+        "input_rows": 2617953,
+        "unique_timestamps": 2617920,
+        "duplicate_timestamp_groups": 33,
+        "unknown_timestamp_groups": 0
+      },
+      "p3": {
+        "input_rows": 2622181,
+        "unique_timestamps": 2617920,
+        "duplicate_timestamp_groups": 4261,
+        "unknown_timestamp_groups": 0
+      },
+      "p4": {
+        "input_rows": 2619128,
+        "unique_timestamps": 2617920,
+        "duplicate_timestamp_groups": 1208,
+        "unknown_timestamp_groups": 0
+      },
+      "p3p4": {
+        "input_rows": 2619535,
+        "unique_timestamps": 2617920,
+        "duplicate_timestamp_groups": 1589,
+        "unknown_timestamp_groups": 0
+      }
+    },
+    "limitations": [
+      "One hydraulic-pressure installation; no chemical-quality or field-safety claim.",
+      "Timezone and instrument-to-raw export provenance remain unspecified.",
+      "Prefix parity requires the same frozen clock ambiguity mask and closed minutes.",
+      "Known labels are independent of feature availability; unknown labels are not normal.",
+      "Minute OR labels may describe a transient absent in the selected :50 reading.",
+      "This raw policy is not the publisher's zero-filled/thinned benchmark input."
+    ]
+  }
+}

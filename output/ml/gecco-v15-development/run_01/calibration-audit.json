@@ -1,0 +1,499 @@
+{
+  "audit_version": "v15_independent_scalar_frozen_score_policy_replay_v1",
+  "stage": "calibration",
+  "created_at_utc": "2026-10-17T11:50:59.678493+00:00",
+  "passed": true,
+  "audit_script_sha256": "712c16488138ed8ed2cf99d2f30bb5a47a0a806cc06e9f2a7552f9a88959f5ea",
+  "development_only": true,
+  "fresh_validation": false,
+  "scope": "Independent scalar frozen-score policy replay plus inherited hash-bound sensor evidence. No model fit, raw-sensor reconstruction, streaming validation, hardware or app promotion.",
+  "production_v15_predictor_or_checks_called": false,
+  "original_axis_metric_provider": "ml.gecco_v6.unknown_label_metrics",
+  "all_sources_previously_disclosed": true,
+  "model_refitted": false,
+  "raw_sensor_replay_performed": false,
+  "plan_sha256": "24b688c0ca3aab5b6b3bbd637214bd47d23a2839e7723b7fa3b0b20e3f2aaf5b",
+  "policies_sha256": "2718c57b6ac19a9da94b4c73436d2dde5a9f9fc5e86720cb0cb82af50dc19cad",
+  "inherited_sensor_audits": {
+    "v8": {
+      "audit_sha256": "2d6475045b5c9323a2c13e950587793404419b5f1cda211ec4d676dc9f2456c1",
+      "results_sha256": "682d74afda05993a77316d99b54dc603ba558ae617939ee3cdd52d6564333c86",
+      "passed": true,
+      "scope": "Inherited completed audit; no new sensor or model execution by V15 auditor."
+    },
+    "v9": {
+      "audit_sha256": "46093c7b627f66ce491bff74a68139ffc235248db44d9f5855f61e3b3e5cf18d",
+      "results_sha256": "4d4770163d9213046d7dcf12cd4dd097345088da7a311aae1b34691c4715f243",
+      "passed": true,
+      "scope": "Inherited completed audit; no new sensor or model execution by V15 auditor."
+    },
+    "v10": {
+      "audit_sha256": "e25afe3d63c427773dc92b212434154e677ea9cfd397d927a515525a1891a35b",
+      "results_sha256": "cb00ac1e346197423451256c75981203aaed291a10f1cc1efd379e972d80075a",
+      "passed": true,
+      "scope": "Inherited completed audit; no new sensor or model execution by V15 auditor."
+    },
+    "v11": {
+      "audit_sha256": "756ea0d4fcba59970f453f2379d88a25599cd179ebc1c1f04a5a2361d76b1b90",
+      "results_sha256": "474a7a741398d35eff8ea5ac81b8ae090504abb4a4f95a201924e55667945c7e",
+      "passed": true,
+      "scope": "Inherited completed audit; no new sensor or model execution by V15 auditor."
+    },
+    "v12": {
+      "audit_sha256": "14794e1bcb88dd974a1ac95ebd8c9efe595a5396440011e7767b2c331070ffbe",
+      "results_sha256": "73f15da043157fac69e172f896b781e92a396fee38f0ac5041112f2630e6c73b",
+      "passed": true,
+      "scope": "Inherited completed audit; no new sensor or model execution by V15 auditor."
+    },
+    "v13": {
+      "audit_sha256": "669e546dacc32c2df1a6857b10a014e2e21a851a29370acd18ebea642c307d39",
+      "results_sha256": "761020e6342695c6aa6b912dfe50fa9c75eb24a20af4326eaf5c83fae89061fe",
+      "passed": true,
+      "scope": "Inherited completed audit; no new sensor or model execution by V15 auditor."
+    },
+    "v14": {
+      "audit_sha256": "09ba31b89ccf58b66b9790fd822243d18d923e2364cd73da98dcd08a3a4b0f3b",
+      "results_sha256": "269ba94f1b405b1ce4ccd9c91bdcab81fdb977509b93f1eff99c2e4ca6206260",
+      "passed": true,
+      "scope": "Inherited completed audit; no new sensor or model execution by V15 auditor."
+    }
+  },
+  "calibration_rows_replayed": 891750,
+  "calibration_by_case": {
+    "2017_fold_1": {
+      "rows": 24467,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": null,
+      "earlier_trials": 1,
+      "feasible_earlier_trials": 0,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2017_fold_2": {
+      "rows": 24467,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": null,
+      "earlier_trials": 5,
+      "feasible_earlier_trials": 0,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2017_fold_3": {
+      "rows": 24467,
+      "accepted": true,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 6,
+      "feasible_earlier_trials": 2,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2017_fold_4": {
+      "rows": 24466,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": null,
+      "earlier_trials": 64,
+      "feasible_earlier_trials": 0,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2017_fold_5": {
+      "rows": 24467,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": 0.7463916297044255,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 6,
+      "feasible_earlier_trials": 3,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2017_fold_6": {
+      "rows": 24467,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": null,
+      "earlier_trials": 8,
+      "feasible_earlier_trials": 0,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2018_fold_1": {
+      "rows": 27913,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": null,
+      "earlier_trials": 3,
+      "feasible_earlier_trials": 0,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2018_fold_2": {
+      "rows": 27914,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": null,
+      "earlier_trials": 5,
+      "feasible_earlier_trials": 0,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2018_fold_3": {
+      "rows": 27913,
+      "accepted": true,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 8,
+      "feasible_earlier_trials": 2,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2018_fold_4": {
+      "rows": 27913,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 8,
+      "feasible_earlier_trials": 2,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2018_fold_5": {
+      "rows": 27913,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": null,
+      "earlier_trials": 1,
+      "feasible_earlier_trials": 0,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2018_fold_6": {
+      "rows": 27913,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": null,
+      "earlier_trials": 1,
+      "feasible_earlier_trials": 0,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2019_disclosed_test": {
+      "rows": 54750,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 32,
+      "feasible_earlier_trials": 2,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2018-11": {
+      "rows": 87840,
+      "accepted": false,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": 0.7742165548319293,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 8,
+      "feasible_earlier_trials": 6,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2018-12": {
+      "rows": 87840,
+      "accepted": true,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 56,
+      "feasible_earlier_trials": 2,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2019-01": {
+      "rows": 87840,
+      "accepted": true,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 8,
+      "feasible_earlier_trials": 2,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2019-02": {
+      "rows": 89280,
+      "accepted": true,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 8,
+      "feasible_earlier_trials": 2,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2019-03": {
+      "rows": 84960,
+      "accepted": true,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 1,
+      "feasible_earlier_trials": 1,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    },
+    "2019-04": {
+      "rows": 84960,
+      "accepted": true,
+      "choice": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "proposed": {
+        "anchor_threshold": null,
+        "recovery_threshold": null,
+        "cadence_seconds": 60
+      },
+      "earlier_trials": 8,
+      "feasible_earlier_trials": 2,
+      "independent_early_search_replayed": true,
+      "scalar_final_replayed": true
+    }
+  },
+  "complete_replayed_cases": 19,
+  "failed_checks": 0,
+  "complete_replayed_calibration_cases": 19,
+  "total_checks": 146493,
+  "total_numeric_checks": 5402629,
+  "hashes": {
+    "plan.json": "24b688c0ca3aab5b6b3bbd637214bd47d23a2839e7723b7fa3b0b20e3f2aaf5b",
+    "policies-frozen.json": "2718c57b6ac19a9da94b4c73436d2dde5a9f9fc5e86720cb0cb82af50dc19cad",
+    "2017_fold_1/selection.json": "d05c4da5b3fe63dd3caadf65b2be0271a40cb3280e5ec9c3348d98fdef8f1d06",
+    "2017_fold_1/trials.json": "7550789c112e2315a6d7e2a63476730bf2531b7abdf49512581a5e330bfbf0e8",
+    "2017_fold_1/calibration_predictions.csv.gz": "090dd9f0b5851bd458e5d8be5a14da458c4222d9e2e20eb5993c9f02bab3f0ba",
+    "2017_fold_2/selection.json": "408dfa303d8a3131a8bef4d193f35c627c73c1499ca0da618d00443689f11c14",
+    "2017_fold_2/trials.json": "911a3a7688e5a270c7bd44060627f2396bc696fdb63fb66d559ac3e2686c8f43",
+    "2017_fold_2/calibration_predictions.csv.gz": "f899383fd3a9fcdedd07a9d0a80fb379111e89b92b89ef6932e15f87cc528535",
+    "2017_fold_3/selection.json": "a0c817623cf113918edcabeb7678913267b66f074e1def0e89dd9522d3c4aea3",
+    "2017_fold_3/trials.json": "a3907b5b1791270ae514d0571680c119c5b0375795c3816c29ce3b1fece3f748",
+    "2017_fold_3/calibration_predictions.csv.gz": "00cd64c75c41abc3ae7c721551bb37c3a65a9e68fa4a4b3ead140f1fe5ec18a1",
+    "2017_fold_4/selection.json": "7f1452a539838a19df2cad92d5b81330a7c3998def23f75259a7982af9ed5d4b",
+    "2017_fold_4/trials.json": "1f69253dd8b9b235ceca9ff64968a286c843b5720c2b2daf918f50719362a448",
+    "2017_fold_4/calibration_predictions.csv.gz": "27254e6b20615064f2f004de995ec866ce6e6bdfd04e18fb3b34624e2ffb3244",
+    "2017_fold_5/selection.json": "6e15ba19d7bac4f1884a197538334682870b7a2378de19cbd973e6313e7664ce",
+    "2017_fold_5/trials.json": "c35b387b8e27925cb96b1fb67a833010e6a686c0d7fd4112ce2253e0f428c82f",
+    "2017_fold_5/calibration_predictions.csv.gz": "b4b754418fb7e7396a06647e6f1b71e395bd62772692e2bdccac5d73f1641e4a",
+    "2017_fold_6/selection.json": "735b1df6b418a9053bed172fef01cd4ecf8ef5cc994df41380313583ea08e139",
+    "2017_fold_6/trials.json": "a4bc514c7a50b8b328dc0486b66662d2e6a182bf6a865964867ca6f9e135e8b0",
+    "2017_fold_6/calibration_predictions.csv.gz": "a40c53ba6a59bec19c7408a8f005afa00d84a88f4d066ef28255f1e74d2666a5",
+    "2018_fold_1/selection.json": "8abae0ff11e9de2ddcc4bd588d1264fb4f0b3a62c3603ec75a0fa67ca3007c11",
+    "2018_fold_1/trials.json": "f29547e3de3a9a20b292c08cad739101f77335d7d4bfc32db2655e90313ceea5",
+    "2018_fold_1/calibration_predictions.csv.gz": "6b60cc2e91a1ee3826bad89c7584a4e202071783b5960d9b1f0c096414f59eb7",
+    "2018_fold_2/selection.json": "290b0a452ea44c3407b724c956dffee225ee6c720b845e9c34c67138c693c17f",
+    "2018_fold_2/trials.json": "99f6b93f842203bc2b2d82773e399028319a4feb9f380940f317de870c706e6b",
+    "2018_fold_2/calibration_predictions.csv.gz": "857d5399dfa58d69fc84378639ef7acec1b4139463fd70cfc9a7175701dbe1c4",
+    "2018_fold_3/selection.json": "820e965bbb0d7d6b4fa9492d32fe1be5f4dfd509e07235300842137fab8891a6",
+    "2018_fold_3/trials.json": "a53829cea9cbf2f56cd3fa76219b4d497bcb9a17220bf3aa30f6512ed598c35f",
+    "2018_fold_3/calibration_predictions.csv.gz": "20692c7e9306f234e0c95692702b06a53f66bdd8829aa6644c95e1cd0f5ef9f1",
+    "2018_fold_4/selection.json": "04932e8b725879cc5daf7863f805438ca672c8dee7566eb85694dcbe019906a3",
+    "2018_fold_4/trials.json": "ab6a1c173c9b4051e617e4da9cebf1fed76d1a0f005a2a6c2fe3bd54362ae6b0",
+    "2018_fold_4/calibration_predictions.csv.gz": "2df823a44b8ba8eca3ed4e695be21e51bff739f91d459e237ecea873328a4e48",
+    "2018_fold_5/selection.json": "3fd88002a7d02717c1e8459aec7a9f3576668d86e24dba0ffcd4bbc7c944578d",
+    "2018_fold_5/trials.json": "d27e6ba078e9836e16c66b4efa6141e25d77dfef01380cef4772bec50cf38851",
+    "2018_fold_5/calibration_predictions.csv.gz": "74f448ee20ef852033bebc1ae6ab428a4693e47947b23366f4f57b1468571920",
+    "2018_fold_6/selection.json": "5b0a8ebd337e9383ac93daa2b9ba29d21734b01b93a7b8c1a87118b2afd6362c",
+    "2018_fold_6/trials.json": "8948e2b96d219ab2b5384edeb36e6d58c02e5ffcc7cc7b59bce6ce2d4900334a",
+    "2018_fold_6/calibration_predictions.csv.gz": "96dc78d48fcfd59e747817c1d4c733d3f115eb478d13011da929967de8496a0f",
+    "2019_disclosed_test/selection.json": "800f64fe066a2643a79791ec49cc21a29c2ad4e6b7acc75bf2bdab5ed181c837",
+    "2019_disclosed_test/trials.json": "39a28b16a7b74e645f8ac2e7fb2d2ee9ddd96358b0f680aec5d6249d7ff492eb",
+    "2019_disclosed_test/calibration_predictions.csv.gz": "8d4347aa2b476a4390545c0d2d03bedf1017a01f40cf40612faa267955d18f7d",
+    "2018-11/selection.json": "5d65e2b892685dc3d7a2fcb09e2686743b3c0e125a9563f8b2d4c5c7565a54f6",
+    "2018-11/trials.json": "c3e6a8f637bef9e1cbb3aba401ac2dcc5d8f21bbfa6a766991bb4759e7fd4098",
+    "2018-11/calibration_predictions.csv.gz": "820f2df91333e03370034172feb8d5fe1ae01f2944cbc8c2f4f8c71388b099f2",
+    "2018-12/selection.json": "5384110f8645e7bf7f61feeca34bb2cf9daf7b574c67eddc6a1b8462d6e4aed1",
+    "2018-12/trials.json": "0f09de632303deb1f4444b31b6f19ee9779e3945da3091ea67682facdb5a1e7e",
+    "2018-12/calibration_predictions.csv.gz": "471c15cab9a08b5ff34afa68a328700cc32512378a454a33d9b9f60fac59b4a3",
+    "2019-01/selection.json": "a9f3ed8890ab059f140755564f24319065b5b3fc318ba4c481d51059c5f95207",
+    "2019-01/trials.json": "103d8187c62c61896dd902daf76a68e887c3e090b4cce641a247b06c08ce0231",
+    "2019-01/calibration_predictions.csv.gz": "cb4c4229aa83b2cc6a8a642f0fa4685a1ff4bf9237ea2eb640c67dd458f21295",
+    "2019-02/selection.json": "537f4d4f2790ad379634938be6a4f1ca06bb1082aaa4c884b891237e7e6fe088",
+    "2019-02/trials.json": "1acd7efa9fb422e8b0761725ff31c49c1ae009e7949bc538ee7eaef194ff1d99",
+    "2019-02/calibration_predictions.csv.gz": "8d46eeabd80fcc0b25649a8d498a425157fc9a3b676054ced2c9a82a9bb50cae",
+    "2019-03/selection.json": "76918b473f73397d5deb517db6e9318bf159897dbf145b866881dc2fd53e8d1c",
+    "2019-03/trials.json": "26c4fb22e72954ed71f5cdee35c0d699b88d3c469819424ce2c0ed42ba4fa9df",
+    "2019-03/calibration_predictions.csv.gz": "e37fe14e747f9f8669119c6a3716202ebbd51df7554533d8f53e8680e42c0c11",
+    "2019-04/selection.json": "54753ba459e61a321a69fc30b0f4ad5d5e1a85c4745fecd6e56dbc3713633348",
+    "2019-04/trials.json": "4012e0737fa696ee3c982462702e2e1d5b2e0fcf0d0e9bd090ddd17dba74c0e5",
+    "2019-04/calibration_predictions.csv.gz": "a2896a0841a0e5c638933bddea93874da10d9d834fe13ab0da239eb13cb7c7ef"
+  },
+  "numeric_files_read": [
+    "output/ml/gecco-v14-development/run_01/2017_fold_1/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2017_fold_1/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2017_fold_1/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2017_fold_2/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2017_fold_2/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2017_fold_2/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2017_fold_3/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2017_fold_3/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2017_fold_3/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2017_fold_4/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2017_fold_4/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2017_fold_4/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2017_fold_5/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2017_fold_5/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2017_fold_5/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2017_fold_6/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2017_fold_6/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2017_fold_6/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2018_fold_1/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2018_fold_1/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2018_fold_1/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2018_fold_2/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2018_fold_2/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2018_fold_2/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2018_fold_3/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2018_fold_3/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2018_fold_3/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2018_fold_4/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2018_fold_4/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2018_fold_4/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2018_fold_5/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2018_fold_5/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2018_fold_5/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2018_fold_6/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2018_fold_6/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2018_fold_6/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2019_disclosed_test/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2019_disclosed_test/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2019_disclosed_test/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2018-11/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2018-11/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2018-11/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2018-12/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2018-12/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2018-12/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2019-01/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2019-01/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2019-01/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2019-02/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2019-02/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2019-02/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2019-03/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2019-03/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2019-03/calibration_predictions.csv.gz",
+    "output/ml/gecco-v14-development/run_01/2019-04/calibration_scores.csv.gz",
+    "output/ml/gecco-v8-development/run_01/2019-04/calibration_scores.csv.gz",
+    "output/ml/gecco-v15-development/run_01/2019-04/calibration_predictions.csv.gz"
+  ]
+}

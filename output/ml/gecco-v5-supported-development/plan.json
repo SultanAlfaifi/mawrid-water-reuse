@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-10-16T08:32:46.407660+00:00",
+  "scope": "Disclosed development only; no reserved source access",
+  "recipes": {
+    "support_q50": {
+      "reference_quantile": 0.5
+    },
+    "support_q95": {
+      "reference_quantile": 0.95
+    }
+  },
+  "limit_cases": 13,
+  "gap_samples": 120,
+  "sample_seconds": 60,
+  "geometry": "Same fixed past train/cal/test geometry and original baseline scores as initial V5 development",
+  "code_sha256": {
+    "ml/gecco_v5/reproducible_explore.py": "887b16425539f758bd32043cb080fcbc3f0fa3109a2659184ba7864934d13c1b",
+    "ml/gecco_v5/recovery_candidate.py": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+    "ml/gecco_v5/supported_candidate.py": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626",
+    "ml/gecco_v5/normal_support.py": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37",
+    "ml/gecco_v5/calibration.py": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+    "ml/gecco_v5/evaluation.py": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08",
+    "ml/gecco_v5/runtime.py": "7c00d744b73beacb2a491392612c6d77310ad16d200ddf444d41b381ae529118",
+    "ml/gecco_baseline/metrics.py": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+    "ml/gecco_v2/alarm_policy.py": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+    "ml/gecco_v2/candidates_supervised.py": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2"
+  },
+  "all_case_outcomes_retained": true
+}

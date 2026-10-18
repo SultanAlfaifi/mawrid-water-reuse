@@ -1,0 +1,1759 @@
+{
+  "created_utc": "2026-10-16T06:05:54.088151+00:00",
+  "scope": "POST-HOC DEVELOPMENT DIAGNOSTICS ONLY; 2018 and all 2019 labels already exposed",
+  "no_models_fitted_or_tuned": true,
+  "frozen_files_unchanged": 235,
+  "script_sha256": "497738d99aa0a9fa595109e84fda7a24c14bcf1a89042705d56c135d726c74f2",
+  "partitions": {
+    "fold_1": {
+      "availability": {
+        "train": {
+          "rows": 41869,
+          "raw_incomplete_rows": 985,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 186,
+          "missing_runs": 2,
+          "complete_1_coverage": 0.9764742410852898,
+          "complete_1_unavailable_rows": 985,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9754711122787743,
+          "complete_15_unavailable_rows": 1027,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 28,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9721751176287946,
+          "complete_61_unavailable_rows": 1165,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 120,
+              "event_minutes": 0
+            }
+          }
+        },
+        "calibration": {
+          "rows": 13837,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 261,
+          "missing_runs": 0,
+          "complete_1_coverage": 1.0,
+          "complete_1_unavailable_rows": 0,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9989882199898822,
+          "complete_15_unavailable_rows": 14,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.995663799956638,
+          "complete_61_unavailable_rows": 60,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        },
+        "test": {
+          "rows": 13957,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 549,
+          "missing_runs": 0,
+          "complete_1_coverage": 0.9914021637887799,
+          "complete_1_unavailable_rows": 120,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9903990828974708,
+          "complete_15_unavailable_rows": 134,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9871032456831698,
+          "complete_61_unavailable_rows": 180,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        }
+      },
+      "event_signatures": {
+        "confirmed": {
+          "count": 14,
+          "durations": [
+            253,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22
+          ],
+          "dominant_channels": {
+            "Redox": 1,
+            "Cl_2": 11,
+            "Trueb": 1,
+            "Fm_2": 1
+          },
+          "fully_unscorable": 0
+        },
+        "not_confirmed": {
+          "count": 1,
+          "durations": [
+            10
+          ],
+          "dominant_channels": {
+            "Trueb": 1
+          },
+          "fully_unscorable": 0
+        }
+      }
+    },
+    "fold_2": {
+      "availability": {
+        "train": {
+          "rows": 55826,
+          "raw_incomplete_rows": 985,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 447,
+          "missing_runs": 2,
+          "complete_1_coverage": 0.9823558915200803,
+          "complete_1_unavailable_rows": 985,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9816035538996166,
+          "complete_15_unavailable_rows": 1027,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 28,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9791315874323792,
+          "complete_61_unavailable_rows": 1165,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 120,
+              "event_minutes": 0
+            }
+          }
+        },
+        "calibration": {
+          "rows": 13837,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 549,
+          "missing_runs": 0,
+          "complete_1_coverage": 1.0,
+          "complete_1_unavailable_rows": 0,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9989882199898822,
+          "complete_15_unavailable_rows": 14,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.995663799956638,
+          "complete_61_unavailable_rows": 60,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        },
+        "test": {
+          "rows": 13956,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 479,
+          "missing_runs": 0,
+          "complete_1_coverage": 0.9914015477214101,
+          "complete_1_unavailable_rows": 120,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9903983949555747,
+          "complete_15_unavailable_rows": 134,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9871023215821152,
+          "complete_61_unavailable_rows": 180,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        }
+      },
+      "event_signatures": {
+        "confirmed": {
+          "count": 2,
+          "durations": [
+            157,
+            23
+          ],
+          "dominant_channels": {
+            "Redox": 1,
+            "pH": 1
+          },
+          "fully_unscorable": 0
+        },
+        "not_confirmed": {
+          "count": 13,
+          "durations": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "dominant_channels": {
+            "pH": 10,
+            "Fm_2": 2,
+            "Trueb": 1
+          },
+          "fully_unscorable": 0
+        }
+      }
+    },
+    "fold_3": {
+      "availability": {
+        "train": {
+          "rows": 69783,
+          "raw_incomplete_rows": 985,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 996,
+          "missing_runs": 2,
+          "complete_1_coverage": 0.985884814353066,
+          "complete_1_unavailable_rows": 985,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9852829485691358,
+          "complete_15_unavailable_rows": 1027,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 28,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9833053895647937,
+          "complete_61_unavailable_rows": 1165,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 120,
+              "event_minutes": 0
+            }
+          }
+        },
+        "calibration": {
+          "rows": 13836,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 479,
+          "missing_runs": 0,
+          "complete_1_coverage": 1.0,
+          "complete_1_unavailable_rows": 0,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9989881468632553,
+          "complete_15_unavailable_rows": 14,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9956634865568084,
+          "complete_61_unavailable_rows": 60,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        },
+        "test": {
+          "rows": 13957,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 174,
+          "missing_runs": 0,
+          "complete_1_coverage": 0.9914021637887799,
+          "complete_1_unavailable_rows": 120,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9903990828974708,
+          "complete_15_unavailable_rows": 134,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9871032456831698,
+          "complete_61_unavailable_rows": 180,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        }
+      },
+      "event_signatures": {
+        "confirmed": {
+          "count": 1,
+          "durations": [
+            29
+          ],
+          "dominant_channels": {
+            "pH": 1
+          },
+          "fully_unscorable": 0
+        },
+        "not_confirmed": {
+          "count": 5,
+          "durations": [
+            29,
+            29,
+            29,
+            29,
+            29
+          ],
+          "dominant_channels": {
+            "pH": 5
+          },
+          "fully_unscorable": 0
+        }
+      }
+    },
+    "fold_4": {
+      "availability": {
+        "train": {
+          "rows": 83739,
+          "raw_incomplete_rows": 985,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 1475,
+          "missing_runs": 2,
+          "complete_1_coverage": 0.9882372610133868,
+          "complete_1_unavailable_rows": 985,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9877357025997444,
+          "complete_15_unavailable_rows": 1027,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 28,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9860877249549195,
+          "complete_61_unavailable_rows": 1165,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 120,
+              "event_minutes": 0
+            }
+          }
+        },
+        "calibration": {
+          "rows": 13837,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 174,
+          "missing_runs": 0,
+          "complete_1_coverage": 1.0,
+          "complete_1_unavailable_rows": 0,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9989882199898822,
+          "complete_15_unavailable_rows": 14,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.995663799956638,
+          "complete_61_unavailable_rows": 60,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        },
+        "test": {
+          "rows": 13956,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 0,
+          "missing_runs": 0,
+          "complete_1_coverage": 0.9914015477214101,
+          "complete_1_unavailable_rows": 120,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9903983949555747,
+          "complete_15_unavailable_rows": 134,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9871023215821152,
+          "complete_61_unavailable_rows": 180,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        }
+      },
+      "event_signatures": {
+        "confirmed": {
+          "count": 0,
+          "durations": [],
+          "dominant_channels": {},
+          "fully_unscorable": 0
+        },
+        "not_confirmed": {
+          "count": 0,
+          "durations": [],
+          "dominant_channels": {},
+          "fully_unscorable": 0
+        }
+      }
+    },
+    "fold_5": {
+      "availability": {
+        "train": {
+          "rows": 97696,
+          "raw_incomplete_rows": 985,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 1649,
+          "missing_runs": 2,
+          "complete_1_coverage": 0.9899177038978054,
+          "complete_1_unavailable_rows": 985,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9894877988863413,
+          "complete_15_unavailable_rows": 1027,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 28,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9880752538486735,
+          "complete_61_unavailable_rows": 1165,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 120,
+              "event_minutes": 0
+            }
+          }
+        },
+        "calibration": {
+          "rows": 13836,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 0,
+          "missing_runs": 0,
+          "complete_1_coverage": 1.0,
+          "complete_1_unavailable_rows": 0,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9989881468632553,
+          "complete_15_unavailable_rows": 14,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9956634865568084,
+          "complete_61_unavailable_rows": 60,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        },
+        "test": {
+          "rows": 13957,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 0,
+          "missing_runs": 0,
+          "complete_1_coverage": 0.9914021637887799,
+          "complete_1_unavailable_rows": 120,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9903990828974708,
+          "complete_15_unavailable_rows": 134,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9871032456831698,
+          "complete_61_unavailable_rows": 180,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        }
+      },
+      "event_signatures": {
+        "confirmed": {
+          "count": 0,
+          "durations": [],
+          "dominant_channels": {},
+          "fully_unscorable": 0
+        },
+        "not_confirmed": {
+          "count": 0,
+          "durations": [],
+          "dominant_channels": {},
+          "fully_unscorable": 0
+        }
+      }
+    },
+    "fold_6": {
+      "availability": {
+        "train": {
+          "rows": 111652,
+          "raw_incomplete_rows": 985,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 1649,
+          "missing_runs": 2,
+          "complete_1_coverage": 0.9911779457600401,
+          "complete_1_unavailable_rows": 985,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9908017769498083,
+          "complete_15_unavailable_rows": 1027,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 28,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9895657937161896,
+          "complete_61_unavailable_rows": 1165,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 985,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 120,
+              "event_minutes": 0
+            }
+          }
+        },
+        "calibration": {
+          "rows": 13837,
+          "raw_incomplete_rows": 0,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 0,
+          "missing_runs": 0,
+          "complete_1_coverage": 1.0,
+          "complete_1_unavailable_rows": 0,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9989882199898822,
+          "complete_15_unavailable_rows": 14,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.995663799956638,
+          "complete_61_unavailable_rows": 60,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          }
+        },
+        "test": {
+          "rows": 13957,
+          "raw_incomplete_rows": 60,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 77,
+          "missing_runs": 1,
+          "complete_1_coverage": 0.9871032456831698,
+          "complete_1_unavailable_rows": 180,
+          "complete_1_unavailable_event_minutes": 0,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9850970839005517,
+          "complete_15_unavailable_rows": 208,
+          "complete_15_unavailable_event_minutes": 0,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 14,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.9785054094719495,
+          "complete_61_unavailable_rows": 300,
+          "complete_61_unavailable_event_minutes": 0,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 60,
+              "event_minutes": 0
+            }
+          }
+        }
+      },
+      "event_signatures": {
+        "confirmed": {
+          "count": 1,
+          "durations": [
+            77
+          ],
+          "dominant_channels": {
+            "Redox": 1
+          },
+          "fully_unscorable": 0
+        },
+        "not_confirmed": {
+          "count": 0,
+          "durations": [],
+          "dominant_channels": {},
+          "fully_unscorable": 0
+        }
+      }
+    },
+    "external_2019": {
+      "availability": {
+        "train": {
+          "rows": 132480,
+          "raw_incomplete_rows": 268,
+          "raw_incomplete_event_rows": 3,
+          "total_event_minutes": 212,
+          "missing_runs": 256,
+          "complete_1_coverage": 0.9979770531400967,
+          "complete_1_unavailable_rows": 268,
+          "complete_1_unavailable_event_minutes": 3,
+          "complete_1_fully_unscorable_events": 0,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 268,
+              "event_minutes": 3
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9721542874396135,
+          "complete_15_unavailable_rows": 3689,
+          "complete_15_unavailable_event_minutes": 12,
+          "complete_15_fully_unscorable_events": 0,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 268,
+              "event_minutes": 3
+            },
+            "propagated_history_missing": {
+              "rows": 3407,
+              "event_minutes": 9
+            }
+          },
+          "complete_61_coverage": 0.8883756038647344,
+          "complete_61_unavailable_rows": 14788,
+          "complete_61_unavailable_event_minutes": 12,
+          "complete_61_fully_unscorable_events": 0,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 268,
+              "event_minutes": 3
+            },
+            "propagated_history_missing": {
+              "rows": 14460,
+              "event_minutes": 9
+            }
+          }
+        },
+        "calibration": {
+          "rows": 54630,
+          "raw_incomplete_rows": 2272,
+          "raw_incomplete_event_rows": 21,
+          "total_event_minutes": 225,
+          "missing_runs": 125,
+          "complete_1_coverage": 0.9584111294160718,
+          "complete_1_unavailable_rows": 2272,
+          "complete_1_unavailable_event_minutes": 21,
+          "complete_1_fully_unscorable_events": 1,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 2272,
+              "event_minutes": 21
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9289035328574043,
+          "complete_15_unavailable_rows": 3884,
+          "complete_15_unavailable_event_minutes": 28,
+          "complete_15_fully_unscorable_events": 2,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 2272,
+              "event_minutes": 21
+            },
+            "propagated_history_missing": {
+              "rows": 1598,
+              "event_minutes": 7
+            }
+          },
+          "complete_61_coverage": 0.8345780706571481,
+          "complete_61_unavailable_rows": 9037,
+          "complete_61_unavailable_event_minutes": 62,
+          "complete_61_fully_unscorable_events": 2,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 2272,
+              "event_minutes": 21
+            },
+            "propagated_history_missing": {
+              "rows": 6705,
+              "event_minutes": 41
+            }
+          }
+        },
+        "test": {
+          "rows": 31650,
+          "raw_incomplete_rows": 70,
+          "raw_incomplete_event_rows": 0,
+          "total_event_minutes": 191,
+          "missing_runs": 70,
+          "complete_1_coverage": 0.993996840442338,
+          "complete_1_unavailable_rows": 190,
+          "complete_1_unavailable_event_minutes": 33,
+          "complete_1_fully_unscorable_events": 3,
+          "complete_1_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 33
+            },
+            "initial_history_warmup": {
+              "rows": 0,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 70,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 0,
+              "event_minutes": 0
+            }
+          },
+          "complete_15_coverage": 0.9633807266982622,
+          "complete_15_unavailable_rows": 1159,
+          "complete_15_unavailable_event_minutes": 33,
+          "complete_15_fully_unscorable_events": 3,
+          "complete_15_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 33
+            },
+            "initial_history_warmup": {
+              "rows": 14,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 70,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 955,
+              "event_minutes": 0
+            }
+          },
+          "complete_61_coverage": 0.8630963665086888,
+          "complete_61_unavailable_rows": 4333,
+          "complete_61_unavailable_event_minutes": 33,
+          "complete_61_fully_unscorable_events": 3,
+          "complete_61_unavailable_reasons": {
+            "protocol_gap": {
+              "rows": 120,
+              "event_minutes": 33
+            },
+            "initial_history_warmup": {
+              "rows": 60,
+              "event_minutes": 0
+            },
+            "raw_missing_after_warmup": {
+              "rows": 70,
+              "event_minutes": 0
+            },
+            "propagated_history_missing": {
+              "rows": 4083,
+              "event_minutes": 0
+            }
+          }
+        }
+      },
+      "event_signatures": {
+        "confirmed": {
+          "count": 9,
+          "durations": [
+            35,
+            19,
+            9,
+            23,
+            12,
+            16,
+            16,
+            14,
+            14
+          ],
+          "dominant_channels": {
+            "Turb": 4,
+            "SAC": 4,
+            "Cond": 1
+          },
+          "fully_unscorable": 0
+        },
+        "not_confirmed": {
+          "count": 3,
+          "durations": [
+            7,
+            7,
+            19
+          ],
+          "dominant_channels": {
+            "Turb": 3
+          },
+          "fully_unscorable": 3
+        }
+      }
+    }
+  },
+  "interpretation_limits": [
+    "Binary labels do not identify physical fault types; dominant channels describe observable event shape only.",
+    "Feature shifts use normal labels retrospectively for diagnosis, never as a deployable feature or test selection criterion.",
+    "Different schemas and retraining mean 2019 is not zero-shot checkpoint transfer or independent site proof.",
+    "Each fold's metrics are not summed event counts; event spanning a boundary can appear in two per-fold shape records. Existing global audit provides the deduplicated 37-event denominator.",
+    "Association between drift and errors does not prove causation; low calibration counts also constrain estimation."
+  ]
+}

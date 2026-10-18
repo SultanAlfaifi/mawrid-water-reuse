@@ -1,0 +1,1 @@
+{"name":"mawrid-virtual-plant-view","private":true,"type":"module","scripts":{"build":"node ../../mawrid-final/node_modules/vite/bin/vite.js build --config vite.config.mjs","test":"node --test test-*.mjs"}}

@@ -1,0 +1,507 @@
+{
+  "passed": true,
+  "cases": 19,
+  "original_audit_sha256": "03a1df9544035097326945840ec6aace3f7b341f4a93da0d064ea0f0c31760e9",
+  "supplement_auditor_sha256": "71140ad73a862da069471509a84a4400d7e9d0954a3a6ee9ab27d78fb75dace6",
+  "original_replay_preserved": true,
+  "source_rows_read": 0,
+  "checks": [
+    {
+      "check": "2017_fold_1:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_1:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_1:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_1:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_2:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_2:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_2:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_2:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_3:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_3:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_3:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_3:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_4:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_4:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_4:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_4:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_5:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_5:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_5:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_5:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_6:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_6:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_6:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2017_fold_6:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_1:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_1:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_1:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_1:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_2:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_2:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_2:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_2:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_3:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_3:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_3:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_3:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_4:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_4:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_4:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_4:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_5:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_5:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_5:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_5:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_6:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_6:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_6:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018_fold_6:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019_disclosed_test:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019_disclosed_test:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019_disclosed_test:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019_disclosed_test:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-11:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2018-12:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-01:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-02:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-03:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:bundle_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:parent_sha",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:long_model",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    },
+    {
+      "check": "2019-04:reference_bundle",
+      "passed": true,
+      "compared_values": 1,
+      "numeric_comparisons": 0
+    }
+  ],
+  "fitted_state_sha256": {
+    "2017_fold_1/long_model": "1c5dfb88a9a485352cb5bee454bbb7eed8d150c1f4947649b69daadc04a4d99d",
+    "2017_fold_1/reference_bundle": "8c74f4fb1dc90da7030db2b53316d251863167acc4c159584a6da95461e2435b",
+    "2017_fold_2/long_model": "d4385589832444938f784f1da8892b08bf3d4a6728abc7f96b74444a635620f9",
+    "2017_fold_2/reference_bundle": "8fb0d4bdeeef8e0f37a3b50fa4a9010f8cfcef9344820d86cce1d80c72a86f50",
+    "2017_fold_3/long_model": "857e02a512058abcb42575883ddec67a04f5cee19565b188a0a33d063a6f0d5f",
+    "2017_fold_3/reference_bundle": "3c5d0fb02eced09420ca1a6247bbf48202e42efa89e20ff58f656916f276a99b",
+    "2017_fold_4/long_model": "8fa0b1ab600877245dd61dc52193a7d0af696e33db59c011838f375e7be2e14f",
+    "2017_fold_4/reference_bundle": "b1ca0a11d80e5101716460f73cca80e8545a49b0130070364c15b7427ab3fe63",
+    "2017_fold_5/long_model": "64ec463f2a6f3c37bc46b4d7e088f4eec6721212458d918af18cd2ec6d6904e1",
+    "2017_fold_5/reference_bundle": "3619186b69dd8bd5ad9d35a8ff51cc0f1deea818afbe41d1e1612546e21bff20",
+    "2017_fold_6/long_model": "fbf3288e127c91d7fc64735d1cc323035b87a06a7076b819ceb2f351fa59e917",
+    "2017_fold_6/reference_bundle": "68d450a72428347037f0223e6d3e8192d1f777bebea6df2cb438a17f815699bf",
+    "2018_fold_1/long_model": "47c98ecd0b9b53784667f5ab8173f628b9348cd738a7d438da56fa534d9ca373",
+    "2018_fold_1/reference_bundle": "bbd3e6f13f4714194215d865af35be6b689de2ba6f4fd57d590dcf9b2258fdc6",
+    "2018_fold_2/long_model": "4af27be6de0355e2db357f63270b0934b691084e574d26771c8bd93a4960e96a",
+    "2018_fold_2/reference_bundle": "2a06b62a154e073fc26878c346b8c82cc21cd9da6bf23434bbb0a24c4ada3308",
+    "2018_fold_3/long_model": "5f69918b2fed501c5a56c284a0c03e66d78d90cfb6beea9c0c25614c86566191",
+    "2018_fold_3/reference_bundle": "6cb4164f47f145287a4350d8ef67f2e787eee6d736a5ff3bbe10e695dff1cd73",
+    "2018_fold_4/long_model": "553aedcf7d4b11c818dcc6e6851c8ced8a34d2d4231e957496c489b4d6112638",
+    "2018_fold_4/reference_bundle": "068a5f57d20e28ce5fcf6712b43103d98bad2d74a9a6194cc03fd8883abb3de9",
+    "2018_fold_5/long_model": "54efff878564ea43c66a7d4715f6a5e78d58dd1a2ef13d2673bff4dead9c4cee",
+    "2018_fold_5/reference_bundle": "95319d6f79fae957bf4e0b66a88e9dab44392e65fcc124729cef93585ee98f7c",
+    "2018_fold_6/long_model": "e5dee7239ddb5f9f4014d97c18e12fb38c87aad6967d4b081f342680a9de4d59",
+    "2018_fold_6/reference_bundle": "3e6bf19f31ec793e43cb6af506684c5f6f6733fac68ba02d14e9c48321b8a77a",
+    "2019_disclosed_test/long_model": "df6414a63bd0ec81a1f940ae0f6ce6fd9f5ecef1be88fe99d03a441ac0f794c6",
+    "2019_disclosed_test/reference_bundle": "a59cf8d63edc105915a674b5a7529c1b7c7808a353689b2bb71145cf98c7def5",
+    "2018-11/long_model": "ef3255b731cc57c7a8599681340c6acfceb2e2c3288533c66d66ee01fc55bb37",
+    "2018-11/reference_bundle": "9cb9e303b8460037f7f98e561e54a3e2725fdbb0f184dce9ff24a9f730f4832f",
+    "2018-12/long_model": "74020145e99e1a961c8e7d19028939132fab0a08d5c8aba9dc89bd36edf3bbff",
+    "2018-12/reference_bundle": "a48d0046453ed596be782810958d41d2ef6cd771fbb151feb099e5be7cc84457",
+    "2019-01/long_model": "5c3edc9bc152625560e1e70e42574742ed74f4308114129d4fedcb4b1df82aa4",
+    "2019-01/reference_bundle": "4d0fa517292ea94abc3e7327a8b38d26b4600d8948441969d197140f3099f2b3",
+    "2019-02/long_model": "76a3aa68bfc9595eed2b73ee93bd7dcf290262310bd8d63f72ff8a26306d6cbe",
+    "2019-02/reference_bundle": "448554a146130352362384e234adcde051022335097a581f03c265f6c98a156d",
+    "2019-03/long_model": "7020b0eda010f6e4a0e3b337f6405e95f9c4753e1c6bfcb628bf30ac74537b21",
+    "2019-03/reference_bundle": "d34d10557bcde491fada7e23b999690f525ffe0c7a29076ca1456806a43523ee",
+    "2019-04/long_model": "8197a340536ea976ddfff2ad8d2874cf1d58f7adf6dedb349dda32df164d83e1",
+    "2019-04/reference_bundle": "eb7671f4500bf4724f3edc06b4788c4ff9c4ba2ed71b29a7a539ae6e85e1e53a"
+  },
+  "correction": "Earlier state fingerprint lacked explicit nested-dictionary boundaries. This length-delimited supplement verifies all19 actual model pairs, retaining every named tree field and excluding only alignment padding. Earlier full-row runtime replay and all performance failures remain unchanged."
+}

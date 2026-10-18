@@ -1,0 +1,283 @@
+{
+  "created_at_utc": "2026-10-17T13:42:44.441503+00:00",
+  "passed": true,
+  "scope": "Local guided UI, software virtual-plant behavior, built 3D rendering and bounded browser checks. No new classifier quality, chemistry, hardware or full accessibility claim.",
+  "source_sha256": {
+    "mawrid-system/client/guide.css": "f31636b747a3be82def0aa5d54fbdfe941674ee7290a9ecae820d6b14e2d6606",
+    "mawrid-system/client/plant.js": "35787759f5d284e14dc36595d47ee55e5fe816ae521e7e624bdb2c0f9c31975d",
+    "mawrid-system/client/index.html": "5cef0ee0df77317d4eb1ce358c507de3121875850f5aad902cdbca1542b6bab2",
+    "mawrid-system/client/test-plant.mjs": "03b98af3897872716f76df78b0a7c4d11d058c5d1ad0ba3559495d1d20d78d02",
+    "mawrid-system/client/styles.css": "a2e72658edc2e74a6f37e00f4dd4b08a350e072990c8557d5ba50620489db4e0",
+    "mawrid-system/client/test-client.mjs": "6eba6aa711d26e2a0072a451b4040f970d148ff053a086e960bdbaaa8051f3a5",
+    "mawrid-system/client/plant.css": "bdbb581df13cbbcfd5230c9dd7507276f626aa0745c5a25b0a9bf62b07a3ebfa",
+    "mawrid-system/client/guide.js": "b53738decf3edfd561eedc0b089670c2d16895f1dea04e3227036bc8e509372a",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/api.js": "1941af2e313471b025957c216e0ca6c2b8e3f08cd9f7e4c7fce540cd070c81a9",
+    "mawrid-system/client/guide-content.js": "61da1fcdf63610ea392950507832c2b6e85a34f922a9e7c8ee941df474ef4eae",
+    "mawrid-system/client/app.js": "1a50257db170efe67b26e31d0f0da21ea16c1a7fbdbb300bca2114dd9e708264",
+    "mawrid-system/client/plant3d/index.html": "43aaec88ea393b7927878c24d532bc08a63a7ce7719916e91679d7a0f3dc67a4",
+    "mawrid-system/client/assets/mark.svg": "44e3965d133c2c1f472c07a589da252c73ddcd5b226bead9a7f482d984819c1b",
+    "mawrid-system/client/plant3d/licenses/three-MIT.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "mawrid-system/client/plant3d/licenses/IBM-Plex-Arabic-OFL.txt": "1c32ddc3fc6efd167cdcbe475195287f2dc26ed1a4c92fbe31c87ceaffe44f98",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-arabic-500-normal-C4MQITzh.woff2": "90aef64fea9794f232332e907d45810ab268d1a11721340025eba2a2cdb36d5c",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-400-normal-Bo5KPYvw.woff2": "9ed8dcb02e6c7246de4c120295fafa39a7bb73085f4951a4524a07dc911069f2",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-arabic-400-normal-CyU-ddYS.woff2": "6010e7fd0dce5d527583951750728cbe3c895efbd16aa0f809ab8c824878c9d8",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-ext-400-normal-BpLfq-63.woff2": "1935fa1a3326fcd48e20abe864bb30ace43fe58bd572f354c24271ea66208e04",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-500-normal-BletK1Hp.woff": "99dc0e4fcfe2d25c9b183fc26bc7fe8a015b0c431ed74851a5634c2df5017ceb",
+    "mawrid-system/client/plant3d/assets/index-DZA-Qv4p.css": "c4395f3ad7c6694949ed70eb020e64286eb0dcd5abc61b8d88365439efa7b2e8",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-ext-400-normal-BeVLg08x.woff": "e57a503ae929b27d4dda069a805bf2dea1d7f41e6fc82777e4617c2fced50983",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-400-normal-CFZh1unN.woff": "dba043d3901c69646b7c0deacbf7762b905887e43a394c115b02303b08bdca17",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-ext-600-normal-DjDAeNQD.woff2": "0f7c03bb523b8084a84c4b7d95a5c7b294b7318f88b2e51829d5fe7aaef0d0bb",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-ext-600-normal-DT29Q8HW.woff": "74556ff3aaecddb25ac4d0184090b5a1848b83aa3d9f8eeca257bdb659a893c7",
+    "mawrid-system/client/plant3d/assets/three-DYwk18w5.js": "1733867f6d013319318ff664a6775b30875801d98b61e4d180e7e38300a9a3ac",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-600-normal-Dk5eISD_.woff": "9a1577096ef8212b410a949155086b7435d08ffd7154d63f12f2c31ebfac17a3",
+    "mawrid-system/client/plant3d/assets/index-Ba_SaqPo.js": "806fd177b9293bbeb20894baab3d1ce285aa2da3d3533d4ed43c2c78d30d4c97",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-ext-500-normal-Ck_W4G78.woff2": "ae5c1a58c18d253e20691f00e401319f01fc568d24d0e50165f276d1a99035b5",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-600-normal-KrqB56Mw.woff2": "63f4757271e403f7baec0862f284ffaa4560ea6096ba9fe8bc6e585ca656e724",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-arabic-600-normal-0pRdybE_.woff2": "16734a5adb27b0f363e566cbbeacec480da0dc0baa19c8f0053251c2e2bc0eac",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-arabic-500-normal-DPXcppbm.woff": "9f5b9493535d6c8475381fa8414bb57058c8fe3d8a7dc27db6732e94eb8ac386",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-500-normal-Cd6jVIg7.woff2": "be6a3b2e37f3ad67aa822a55ce356d28c416331c97530a1ec076c2118240ca2d",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-arabic-600-normal-MJZ0liF5.woff": "47e5f63ded5c73fd11542557db42cb98825f7b5f1e940e864190a0b0b29d8c5c",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-arabic-400-normal-EA1o-u_Q.woff": "5777059c6186b4575f2097b83bf5ac50175b24ea8c430586f5be39a607875c21",
+    "mawrid-system/client/plant3d/assets/ibm-plex-sans-arabic-latin-ext-500-normal-eJxPnL1P.woff": "bda6d5bccae9b17d9f49f2683cf6a4157aeb1f98c9594917af56671be0f1412e",
+    "mawrid-system/client/assets/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2": "6010e7fd0dce5d527583951750728cbe3c895efbd16aa0f809ab8c824878c9d8",
+    "mawrid-system/client/assets/fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2": "16734a5adb27b0f363e566cbbeacec480da0dc0baa19c8f0053251c2e2bc0eac",
+    "mawrid-system/client/assets/fonts/ibm-plex-sans-arabic-latin-400-normal.woff2": "9ed8dcb02e6c7246de4c120295fafa39a7bb73085f4951a4524a07dc911069f2",
+    "mawrid-system/client/assets/fonts/OFL.txt": "1c32ddc3fc6efd167cdcbe475195287f2dc26ed1a4c92fbe31c87ceaffe44f98",
+    "mawrid-system/client/assets/fonts/ibm-plex-sans-arabic-latin-600-normal.woff2": "63f4757271e403f7baec0862f284ffaa4560ea6096ba9fe8bc6e585ca656e724",
+    "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+    "mawrid-system/server/plant.py": "3540c9cc0fb5402c42ff13d494168971a7ceb862e96778e08038c6b5da549292",
+    "mawrid-system/server/ai.py": "03073f019e304565aa37d05aba26e23199132f38bc56063b53a77ba0d688093f",
+    "mawrid-system/server/__init__.py": "953414236b1649f084ddf55d4c4db286ac5ef25ca2d5ab8b5d442082e5f0b600",
+    "mawrid-system/server/test_ai.py": "fd31bcfcf68621a4c3fea6a1821527318071f6d507c05f23d377f4a049851d94",
+    "mawrid-system/server/test_store.py": "fa2c066023e1762053c42a7546cf70a781fd96fd65fb762c6ef76ce15410fa2b",
+    "mawrid-system/server/test_plant_app.py": "2c1f35c76661aa8c0459362e95b83dc21b8398d22c57388900ec7e8312b85f04",
+    "mawrid-system/server/test_http.py": "79dba8b9f95004778703258984771465287c38ed9cdef1d3465cf37f53770303",
+    "mawrid-system/server/test_ingestion.py": "1ca57a84b53ff8ef0849d5a9d889d128682f9b3a0ae906f0e651de8faf2e9ede",
+    "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+    "mawrid-system/server/test_plant.py": "cd32d2aa44ee61ba3d96dc6fa8d54edce03964d8f7a49a2937aedc70071a136c",
+    "mawrid-system/server/main.py": "8a04474ee4ee32be178d9f4bdeca7e02b88112f582bb6b99fbf6cd301c09b331",
+    "mawrid-system/server/test_app.py": "627baf2c7868ba5eb1efabcbfc219c47449ffc17e5d22b0cd06b976900c3674a",
+    "mawrid-system/plant3d/adapter.js": "9b0a148e2863c0a7e6f77777f6b82851c887ceb3d1cbec7b7270f88b4ca1c253",
+    "mawrid-system/plant3d/build-proof.py": "5235f33bcca29d5d85f297d259bc8052468c4ff88134fac482d1fcce0ed29974",
+    "mawrid-system/plant3d/index.html": "59084aea435a06c3182fddd3d9feffbf67ecf643404f122a5666a7eec8f59d35",
+    "mawrid-system/plant3d/vite.config.mjs": "ef558b82aaab946d184412882281feeb61cb87475e12db656f3b8b340b8fcc8b",
+    "mawrid-system/plant3d/scene.js": "a8830b63b8160464339d5fe0245d2f8addaca1b3b5c943a99d9347137b2fe815",
+    "mawrid-system/plant3d/labels.js": "3074bd21212e14fcafb745a8a1f7513c5aeeb346d2b86d70ed9676026555c10b",
+    "mawrid-system/plant3d/test-labels.mjs": "4cf4e5445acf02c6bf6b3a5e5ae2fccdf9234e25df0b6bef145ced29583ce982",
+    "mawrid-system/plant3d/README.md": "a236278245e8bfc5c82f699efe0db3143ff083c4de2ef96ca1d7293679376681",
+    "mawrid-system/plant3d/main.js": "31755f276d3f9642c231818122ceada883ac5ef820d89205808d10beb53facac",
+    "mawrid-system/plant3d/package.json": "d41f5a4c09a8235b67de26a20a18a5b7cba7cd37e8c29fe00c10aab092fc01d5",
+    "mawrid-system/plant3d/style.css": "4f000dfe1ecd655a4d09c03c7ab1d3268ee7469b7fc0da6b67f691945fcdf37f",
+    "mawrid-system/plant3d/test-scene.mjs": "9142d7ec2407566195736d6874661664fe8a0385b06ac5773f474c60b60758ae",
+    "mawrid-system/plant3d/poller.js": "6c2f3779e6a2c83ecde3b3597513e5e047ddf21e6fab9726176d55b746ea9520",
+    "mawrid-system/plant3d/test-review.mjs": "97066cc087c846a1ea072b07964bb3d118434eb48c5472b846fe217f24f5ad00",
+    "mawrid-system/plant3d/public/licenses/three-MIT.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "mawrid-system/plant3d/public/licenses/IBM-Plex-Arabic-OFL.txt": "1c32ddc3fc6efd167cdcbe475195287f2dc26ed1a4c92fbe31c87ceaffe44f98",
+    "mawrid-system/CONTRACT.json": "b3cf32bdaa7a38cadc4138ded584aed57c917913a07e6b4b630fc12864a526d9"
+  },
+  "sources_unchanged_during_final_checks": true,
+  "tests": [
+    {
+      "argv": [
+        "node",
+        "mawrid-system/client/test-client.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "34 frontend checks PASS; actual guide module and app queue/event handlers with synthetic fixtures only; no browser-rendering/accessibility claim, network or persisted application mutations.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/sultan/Documents/ChatGPT/MAWRID/ml/gecco_baseline/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "mawrid-system/server",
+        "-t",
+        "mawrid-system",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_finite_json_null (server.test_ai.AdapterTests.test_finite_json_null) ... ok\ntest_no_claim_of_acceptance_or_safe_water (server.test_ai.AdapterTests.test_no_claim_of_acceptance_or_safe_water) ... ok\ntest_reject_arbitrary_source_before_import_or_io (server.test_ai.AdapterTests.test_reject_arbitrary_source_before_import_or_io) ... ok\ntest_step_requires_ready_session_and_valid_bounded_count (server.test_ai.AdapterTests.test_step_requires_ready_session_and_valid_bounded_count) ... ok\ntest_db_failure_after_engine_step_marks_failed_and_resets_engine (server.test_app.AppTests.test_db_failure_after_engine_step_marks_failed_and_resets_engine) ... ok\ntest_export_report_keep_source_session_and_no_unmeasured_volume (server.test_app.AppTests.test_export_report_keep_source_session_and_no_unmeasured_volume) ... ok\ntest_get_state_does_not_advance_and_replay_is_real_engine_output (server.test_app.AppTests.test_get_state_does_not_advance_and_replay_is_real_engine_output) ... ok\ntest_manual_hold_and_acknowledgement_never_open_or_clear_anomaly (server.test_app.AppTests.test_manual_hold_and_acknowledgement_never_open_or_clear_anomaly) ... ok\ntest_restart_retains_history_but_forces_new_session_and_no_model_replay (server.test_app.AppTests.test_restart_retains_history_but_forces_new_session_and_no_model_replay) ... ok\ntest_settings_whitelist_finite_order_and_persistence (server.test_app.AppTests.test_settings_whitelist_finite_order_and_persistence) ... ok\ntest_simultaneous_steps_are_serial_and_keep_unique_source_axis (server.test_app.AppTests.test_simultaneous_steps_are_serial_and_keep_unique_source_axis) ... ok\ntest_telemetry_missing_unknown_ml_timezone_staleness_and_monotonicity (server.test_app.AppTests.test_telemetry_missing_unknown_ml_timezone_staleness_and_monotonicity) ... ok\ntest_api_state_does_not_score_and_sessions_step_persistence_exports (server.test_http.HTTPTests.test_api_state_does_not_score_and_sessions_step_persistence_exports) ... mawrid GET /api/state\nmawrid POST /api/sessions\nmawrid POST /api/replay/step\nmawrid GET /api/readings\nmawrid GET /api/export/readings.csv\nmawrid GET /api/state\nmawrid GET /api/state\nok\ntest_cross_origin_content_type_bad_json_limit_and_actuation_rejected (server.test_http.HTTPTests.test_cross_origin_content_type_bad_json_limit_and_actuation_rejected) ... mawrid POST /api/control/stop\nmawrid POST /api/control/stop\nmawrid POST /api/control/stop\nmawrid POST /api/control/stop\nmawrid POST /api/replay/step\nmawrid POST /api/replay/step\nmawrid POST /api/replay/step\nmawrid POST /api/replay/step\nmawrid POST /api/control/open\nmawrid GET /api/readings\nmawrid POST /api/control/stop\nok\ntest_evidence_report_relative_links_reach_sibling_audits_and_prior_report (server.test_http.HTTPTests.test_evidence_report_relative_links_reach_sibling_audits_and_prior_report) ... mawrid GET /evidence/gecco-v9/report.html\nmawrid GET /evidence/gecco-v9-development/run_01/audit.json\nmawrid GET /evidence/gecco-v8/report.html\nmawrid GET /evidence/missing/audit.json\nmawrid GET /evidence/%2e%2e/secret.txt\nok\ntest_static_paths_confined_and_errors_are_json_without_traceback (server.test_http.HTTPTests.test_static_paths_confined_and_errors_are_json_without_traceback) ... mawrid GET /\nmawrid GET /%2e%2e/secret.txt\nmawrid GET /api/does-not-exist\nmawrid GET /viewer/not-built.js\nmawrid GET /\nok\ntest_additive_receipt_schema_migration_preserves_existing_data (server.test_ingestion.IngestionTests.test_additive_receipt_schema_migration_preserves_existing_data) ... ok\ntest_concurrent_same_measurement_commits_once (server.test_ingestion.IngestionTests.test_concurrent_same_measurement_commits_once) ... ok\ntest_conflicting_content_or_session_never_reuses_id (server.test_ingestion.IngestionTests.test_conflicting_content_or_session_never_reuses_id) ... ok\ntest_lost_reply_retry_keeps_one_reading_one_original_receipt (server.test_ingestion.IngestionTests.test_lost_reply_retry_keeps_one_reading_one_original_receipt) ... ok\ntest_old_clock_with_new_id_is_not_a_retry (server.test_ingestion.IngestionTests.test_old_clock_with_new_id_is_not_a_retry) ... ok\ntest_paired_uuid_and_explicit_four_channel_schema (server.test_ingestion.IngestionTests.test_paired_uuid_and_explicit_four_channel_schema) ... ok\ntest_receipt_insert_failure_rolls_back_reading_and_alarm_together (server.test_ingestion.IngestionTests.test_receipt_insert_failure_rolls_back_reading_and_alarm_together) ... ok\ntest_receipt_survives_restart_without_resuming_old_session (server.test_ingestion.IngestionTests.test_receipt_survives_restart_without_resuming_old_session) ... ok\ntest_retry_of_old_session_does_not_replace_current_measurement (server.test_ingestion.IngestionTests.test_retry_of_old_session_does_not_replace_current_measurement) ... ok\ntest_backwash_accounts_every_liter_and_stops_at_empty (server.test_plant.PlantTests.test_backwash_accounts_every_liter_and_stops_at_empty) ... ok\ntest_each_fault_immediately_holds_for_observable_reason (server.test_plant.PlantTests.test_each_fault_immediately_holds_for_observable_reason) ... ok\ntest_empty_tanks_and_overdraw_bounded (server.test_plant.PlantTests.test_empty_tanks_and_overdraw_bounded) ... ok\ntest_failed_closed_valve_command_and_feedback_trip (server.test_plant.PlantTests.test_failed_closed_valve_command_and_feedback_trip) ... ok\ntest_full_tank_boundary_fixture_accounts_overflow_separately (server.test_plant.PlantTests.test_full_tank_boundary_fixture_accounts_overflow_separately) ... ok\ntest_hundreds_steps_matched_flows_keep_stable_stocks (server.test_plant.PlantTests.test_hundreds_steps_matched_flows_keep_stable_stocks) ... ok\ntest_initial_contract_explicit_virtual_and_no_model (server.test_plant.PlantTests.test_initial_contract_explicit_virtual_and_no_model) ... ok\ntest_invalid_inputs_are_atomic (server.test_plant.PlantTests.test_invalid_inputs_are_atomic) ... ok\ntest_manual_hold_persists_across_fault_clear_and_mode_changes (server.test_plant.PlantTests.test_manual_hold_persists_across_fault_clear_and_mode_changes) ... ok\ntest_mixed_control_sequence_conservation (server.test_plant.PlantTests.test_mixed_control_sequence_conservation) ... ok\ntest_no_ai_or_threshold_override_can_open_valve (server.test_plant.PlantTests.test_no_ai_or_threshold_override_can_open_valve) ... ok\ntest_one_hour_feed_recovery_reject_and_reuse (server.test_plant.PlantTests.test_one_hour_feed_recovery_reject_and_reuse) ... ok\ntest_partition_invariant_inventory_and_deterministic_smooth_values (server.test_plant.PlantTests.test_partition_invariant_inventory_and_deterministic_smooth_values) ... ok\ntest_power_loss_stops_both_nc_valves_and_all_pumps_in_all_modes (server.test_plant.PlantTests.test_power_loss_stops_both_nc_valves_and_all_pumps_in_all_modes) ... ok\ntest_pressure_sensor_and_quality_fault_values (server.test_plant.PlantTests.test_pressure_sensor_and_quality_fault_values) ... ok\ntest_reference_design_is_not_an_unimplemented_chemical_or_duty_cycle_claim (server.test_plant.PlantTests.test_reference_design_is_not_an_unimplemented_chemical_or_duty_cycle_claim) ... ok\ntest_snapshot_and_zero_step_are_detached_and_read_only (server.test_plant.PlantTests.test_snapshot_and_zero_step_are_detached_and_read_only) ... ok\ntest_speed_is_metadata_and_deepcopy_is_transaction_friendly (server.test_plant.PlantTests.test_speed_is_metadata_and_deepcopy_is_transaction_friendly) ... ok\ntest_standby_has_no_flow_or_inventory_change (server.test_plant.PlantTests.test_standby_has_no_flow_or_inventory_change) ... ok\ntest_timestamp_validation_and_timestamp_overflow_atomic (server.test_plant.PlantTests.test_timestamp_validation_and_timestamp_overflow_atomic) ... ok\ntest_control_commit_failure_leaves_snapshot_unchanged (server.test_plant_app.PlantApplicationTests.test_control_commit_failure_leaves_snapshot_unchanged) ... ok\ntest_control_validation_and_stuck_valve_feedback (server.test_plant_app.PlantApplicationTests.test_control_validation_and_stuck_valve_feedback) ... ok\ntest_explicit_twin_source_no_model_and_read_only_get (server.test_plant_app.PlantApplicationTests.test_explicit_twin_source_no_model_and_read_only_get) ... ok\ntest_failed_database_tick_does_not_publish_unsaved_time_or_volume (server.test_plant_app.PlantApplicationTests.test_failed_database_tick_does_not_publish_unsaved_time_or_volume) ... ok\ntest_manual_hold_cannot_be_bypassed_by_start_controls_or_fault_clear (server.test_plant_app.PlantApplicationTests.test_manual_hold_cannot_be_bypassed_by_start_controls_or_fault_clear) ... ok\ntest_pause_freezes_clock_and_fault_controls_recompute_without_volume_change (server.test_plant_app.PlantApplicationTests.test_pause_freezes_clock_and_fault_controls_recompute_without_volume_change) ... ok\ntest_source_switch_clears_twin_and_controls_cannot_change_current_source (server.test_plant_app.PlantApplicationTests.test_source_switch_clears_twin_and_controls_cannot_change_current_source) ... ok\ntest_tick_persists_actual_snapshot_conserved_volumes_and_export_provenance (server.test_plant_app.PlantApplicationTests.test_tick_persists_actual_snapshot_conserved_volumes_and_export_provenance) ... ok\ntest_acknowledge_idempotent_without_changing_safety_data (server.test_store.StoreTests.test_acknowledge_idempotent_without_changing_safety_data) ... ok\ntest_invalid_values_event_or_foreign_key_commit_nothing (server.test_store.StoreTests.test_invalid_values_event_or_foreign_key_commit_nothing) ... ok\ntest_mid_batch_conflict_rolls_back_earlier_insert_and_events (server.test_store.StoreTests.test_mid_batch_conflict_rolls_back_earlier_insert_and_events) ... ok\ntest_new_session_never_deletes_history_and_queries_are_bounded (server.test_store.StoreTests.test_new_session_never_deletes_history_and_queries_are_bounded) ... ok\ntest_reopen_preserves_readings_events_settings_and_acknowledgement (server.test_store.StoreTests.test_reopen_preserves_readings_events_settings_and_acknowledgement) ... ok\ntest_retry_is_idempotent_and_conflicting_payload_rejected (server.test_store.StoreTests.test_retry_is_idempotent_and_conflicting_payload_rejected) ... ok\ntest_settings_write_validates_all_before_commit (server.test_store.StoreTests.test_settings_write_validates_all_before_commit) ... ok\n\n----------------------------------------------------------------------\nRan 60 tests in 0.567s\n\nOK\n"
+    }
+  ],
+  "build_proof": {
+    "path": "output/mawrid-system/ux-v5/plant3d-build-r6.json",
+    "sha256": "789a2d830f1474491ab7802748779ad80e598d0e56ae5e51515e5575456b4c29",
+    "tests": 21
+  },
+  "integration_proof": {
+    "path": "output/mawrid-system/ux-v5/plant3d-integration-r6/verification.json",
+    "sha256": "8075f22ae2651253825cc1e1ec20c49734249c780b02f1081a90d3d367ae131b",
+    "snapshots": 17,
+    "adapter_checks": 887
+  },
+  "browser_observations": {
+    "created_at_utc": "2026-10-17T13:41:57.677Z",
+    "passed": true,
+    "checks": [
+      {
+        "name": "clear_fault_restores_virtual_reuse_and_preserves_focus",
+        "passed": true
+      },
+      {
+        "name": "optional_code_and_ai_details_stay_open_during_poll",
+        "passed": true
+      },
+      {
+        "name": "paused_clock_and_volumes_stable_across_navigation",
+        "passed": true
+      },
+      {
+        "name": "mobile_start_391_css_pixels_no_overflow_and_start_target_48px",
+        "passed": true
+      },
+      {
+        "name": "desktop_1642_css_pixels_controls_and_scenario_no_overflow",
+        "passed": true
+      },
+      {
+        "name": "quality_fault_visible_reason_and_zero_virtual_flow",
+        "passed": true
+      },
+      {
+        "name": "standalone_webgl_reference_geometry_selection_camera_and_six_labels_without_overlap_or_clipping",
+        "passed": true
+      },
+      {
+        "name": "component_search_and_selection_keep_query_and_move_focus_to_details",
+        "passed": true
+      },
+      {
+        "name": "mobile_menu_hides_closed_links_and_focuses_first_open_destination",
+        "passed": true
+      },
+      {
+        "name": "final_default_964_css_pixels_no_horizontal_overflow",
+        "passed": true
+      }
+    ],
+    "viewports_css": [
+      {
+        "width": 391,
+        "height": 845
+      },
+      {
+        "width": 1642,
+        "height": 1104
+      },
+      {
+        "width": 964,
+        "height": 976
+      },
+      {
+        "width": 1910,
+        "scope": "standalone 3D"
+      }
+    ],
+    "final_app": {
+      "height": 976,
+      "mainLive": null,
+      "overflow": false,
+      "sourceBadge": "محاكاة تفاعلية / وحدة مورد",
+      "status": "المحاكاة متوقفة مؤقتًا\n\nالزمن والعدادات ثابتة، والحالات المعروضة من آخر لقطة. اضغط «متابعة المحاكاة» لاستئناف الزمن.",
+      "width": 964
+    },
+    "console": {
+      "app_observer_errors_observed": [
+        {
+          "level": "error",
+          "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+          "timestamp": "2026-10-17T13:40:18.570Z"
+        },
+        {
+          "level": "error",
+          "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+          "timestamp": "2026-10-17T13:41:09.003Z"
+        }
+      ],
+      "standalone_errors": [],
+      "note": "Unattributed MutationObserver errors remain in the embedded browser during reloads. The current application source and built entry contain no MutationObserver after disabling the optional Vite preload observer. Functional interactions passed; this is not a zero-console-error certification."
+    },
+    "limitations": [
+      "Functional browser QA on this Mac only, not a usability study with all audience groups.",
+      "No full WCAG certification or field hardware/chemical treatment validation.",
+      "Mobile viewport is an emulated CSS viewport, not a physical-device test."
+    ],
+    "viewport_override_reset": true,
+    "physical_hardware": false,
+    "ml_promoted": false
+  },
+  "screenshots_sha256": {
+    "guided-plant-final.png": "1f1065c327c49bee1c421debb2e29809a4fc855ab1ef07adbcfcbe35e5479ec5",
+    "plant3d-final.png": "f35f7eea2ffa303b8d91a4614ab66e70c30c6ccf37227b5c84819d733e63e72e",
+    "start-final.png": "3b6220b9747e77146930e41f5e8d9adf3edd3e5677ac128739e61cc8c178bd75",
+    "mobile-start.png": "fccb2680f1ee1537133c0991acd86e1765c4db90becb233052323f7d30620b6d"
+  },
+  "http_assets": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 9745
+    },
+    {
+      "path": "/guide.js",
+      "status": 200,
+      "bytes": 32794
+    },
+    {
+      "path": "/guide-content.js",
+      "status": 200,
+      "bytes": 40702
+    },
+    {
+      "path": "/guide.css",
+      "status": 200,
+      "bytes": 22607
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes": 60843
+    },
+    {
+      "path": "/plant3d/index.html",
+      "status": 200,
+      "bytes": 6846
+    }
+  ],
+  "final_live_state": {
+    "source_id": "virtual_plant",
+    "model_version": "V9",
+    "ml_available_for_virtual_water": false,
+    "hardware_connected": false,
+    "physical_valve": "closed",
+    "running": false,
+    "fault": "none",
+    "tanks": {
+      "raw": {
+        "liters": 3000.0,
+        "capacity_liters": 5000.0,
+        "level_percent": 60.0
+      },
+      "treated": {
+        "liters": 2000.0,
+        "capacity_liters": 5000.0,
+        "level_percent": 40.0
+      }
+    },
+    "balance_error_liters": 4.7e-25
+  },
+  "data_preserved_backup": "mawrid-system/var/backups/before-guided-v5-20261017.sqlite3",
+  "no_new_ml_fit": true,
+  "v16_preflight": {
+    "path": "output/ml/gecco-v16-design/preflight.json",
+    "sha256": "7895cdc5ba5a90ba700b174fc516656d8d93890f9f145acdeb723622705c5569",
+    "synthetic_tests": 136
+  },
+  "free_bytes": 3917905920
+}

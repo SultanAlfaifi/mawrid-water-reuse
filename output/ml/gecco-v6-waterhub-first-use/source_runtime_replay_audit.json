@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "source_rows_rederived": 480960,
+  "source_sensor_values_rederived": 1923840,
+  "source_members_verified": 82,
+  "streaming_rows": 600,
+  "cases": [
+    {
+      "case": "2018-11",
+      "streaming_rows": 300,
+      "future_perturbation_prefix_rows": 1000
+    },
+    {
+      "case": "2019-04",
+      "streaming_rows": 300,
+      "future_perturbation_prefix_rows": 1000
+    }
+  ],
+  "archive_sha256": "f91e930d1e194f401f4570c8ddbfdd90606475233e2f6cd36114ff9da11fc8b0",
+  "adapted_source_sha256": "2ebd0997afb7571390c7df6b5b64616dec81441b304f6a02ff323b6218984ff7",
+  "audit_script_sha256": "7734bbc2b90fa7d368f67f0158dc0210a810c3711db4cc4b81f6d114c385b4f9",
+  "scope": "Post-test exact source adaptation replay and saved-model streaming/prefix parity. No selection, retraining, hardware-speed claim or actuator."
+}

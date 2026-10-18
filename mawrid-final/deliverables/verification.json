@@ -1,0 +1,152 @@
+{
+  "geometryChecks": "passed",
+  "reports": [
+    {
+      "preset": "M10",
+      "headHeight": 1.961,
+      "components": 15,
+      "pipeRuns": 29,
+      "meshes": 677,
+      "vertices": 140560,
+      "barrelIntersections": [],
+      "chamberOverflowHasRise": false,
+      "operatingFlows": {
+        "normal": [
+          "raw-inlet",
+          "lift-to-balance",
+          "raw-feed",
+          "feed-sand",
+          "sand-inlet-manifold",
+          "sand-carbon",
+          "carbon-pp",
+          "pp-uv",
+          "uv-cell",
+          "cell-decision",
+          "irrigation-isolation",
+          "tank-pump",
+          "irrigation-distribution"
+        ],
+        "backwash": [
+          "sand-inlet-manifold",
+          "backwash-supply",
+          "backwash-pump",
+          "sand-backwash-drain",
+          "airgap-discharge",
+          "gravity-main-2",
+          "backwash-to-sewer",
+          "sewer-downpipe"
+        ],
+        "fault": [
+          "raw-feed",
+          "feed-sand",
+          "sand-inlet-manifold",
+          "sand-carbon",
+          "carbon-pp",
+          "pp-uv",
+          "uv-cell",
+          "cell-decision",
+          "fault-reprocess"
+        ],
+        "poweroff": []
+      }
+    },
+    {
+      "preset": "M20",
+      "headHeight": 1.961,
+      "components": 15,
+      "pipeRuns": 29,
+      "meshes": 677,
+      "vertices": 140608,
+      "barrelIntersections": [],
+      "chamberOverflowHasRise": false,
+      "operatingFlows": {
+        "normal": [
+          "raw-inlet",
+          "lift-to-balance",
+          "raw-feed",
+          "feed-sand",
+          "sand-inlet-manifold",
+          "sand-carbon",
+          "carbon-pp",
+          "pp-uv",
+          "uv-cell",
+          "cell-decision",
+          "irrigation-isolation",
+          "tank-pump",
+          "irrigation-distribution"
+        ],
+        "backwash": [
+          "sand-inlet-manifold",
+          "backwash-supply",
+          "backwash-pump",
+          "sand-backwash-drain",
+          "airgap-discharge",
+          "gravity-main-2",
+          "backwash-to-sewer",
+          "sewer-downpipe"
+        ],
+        "fault": [
+          "raw-feed",
+          "feed-sand",
+          "sand-inlet-manifold",
+          "sand-carbon",
+          "carbon-pp",
+          "pp-uv",
+          "uv-cell",
+          "cell-decision",
+          "fault-reprocess"
+        ],
+        "poweroff": []
+      }
+    },
+    {
+      "preset": "M30",
+      "headHeight": 1.915,
+      "components": 15,
+      "pipeRuns": 29,
+      "meshes": 677,
+      "vertices": 140656,
+      "barrelIntersections": [],
+      "chamberOverflowHasRise": false,
+      "operatingFlows": {
+        "normal": [
+          "raw-inlet",
+          "lift-to-balance",
+          "raw-feed",
+          "feed-sand",
+          "sand-inlet-manifold",
+          "sand-carbon",
+          "carbon-pp",
+          "pp-uv",
+          "uv-cell",
+          "cell-decision",
+          "irrigation-isolation",
+          "tank-pump",
+          "irrigation-distribution"
+        ],
+        "backwash": [
+          "sand-inlet-manifold",
+          "backwash-supply",
+          "backwash-pump",
+          "sand-backwash-drain",
+          "airgap-discharge",
+          "gravity-main-2",
+          "backwash-to-sewer",
+          "sewer-downpipe"
+        ],
+        "fault": [
+          "raw-feed",
+          "feed-sand",
+          "sand-inlet-manifold",
+          "sand-carbon",
+          "carbon-pp",
+          "pp-uv",
+          "uv-cell",
+          "cell-decision",
+          "fault-reprocess"
+        ],
+        "poweroff": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-17T08:55:08.990641+00:00",
+  "passed": true,
+  "scope": "Actual loopback HTTP and SQLite integration of an explicitly virtual deterministic plant.",
+  "limitations": [
+    "Synthetic plant values are not field measurements, hydraulic validation or chemical treatment validation.",
+    "No ML model or public-source measurement data was opened. Model non-use is checked by a rejecting sentinel.",
+    "No operator database or hardware was connected. This is functional integration evidence only."
+  ],
+  "temporary_database_only": true,
+  "hardware_connected": false,
+  "ml_loaded": false,
+  "environment": {
+    "python": "3.12.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "assertions": [
+    "HTTP sources explicitly distinguish virtual plant and correctly label reuse flow",
+    "GET never advances time; invalid controls and AI-like inputs cannot mutate the plant",
+    "120 deterministic worker ticks at30s produce the independently calculated one-hour water balance",
+    "All five faults hold immediately for observable values/feedback; clear restores virtual reuse",
+    "Standby closes virtual flow without changing inventories",
+    "Backwash withdraws20L/min from treated storage, separately from reject and reuse",
+    "Pause/GET do not advance; manual hold prevents resume until explicit reset then resume",
+    "All133 persisted/CSV rows retain exact full plant snapshots, sensors, source/session and unavailable-ML provenance",
+    "HTTP report and event CSV preserve virtual provenance; acknowledgement persists; no model load/inference occurs",
+    "Process restart preserves every reading/event/acknowledgement and byte-identical exports while leaving the simulator idle",
+    "Real background worker advances via its own thread within5s; HTTP GET merely observes, and pause stops the clock",
+    "All exercised production code, contract and verifier hashes were unchanged throughout the run"
+  ],
+  "code_sha256": {
+    "mawrid-system/server/__init__.py": "953414236b1649f084ddf55d4c4db286ac5ef25ca2d5ab8b5d442082e5f0b600",
+    "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+    "mawrid-system/server/main.py": "8a04474ee4ee32be178d9f4bdeca7e02b88112f582bb6b99fbf6cd301c09b331",
+    "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+    "mawrid-system/server/plant.py": "7a4b83f0eae90c009f92165480795155cdf889dfe882f5e73e342679685523f4",
+    "mawrid-system/CONTRACT.json": "7afbc05800ce6eda4537420c0bf8694ae665e8206e961e5e417bc960eaa951c3",
+    "mawrid-system/scripts/verify_plant.py": "e71ae85e2e198abda571b42170d718dc898b1a3d0bff71262f66feefff77606e"
+  },
+  "deterministic_hour": {
+    "ticks": 120,
+    "seconds_per_tick": 30,
+    "elapsed_seconds": 3600.0,
+    "volumes": {
+      "input_liters": 720.0,
+      "reuse_liters": 480.0,
+      "reject_drain_liters": 125.0,
+      "backwash_liters": 0.0,
+      "overflow_liters": 0.0,
+      "raw_overflow_liters": 0.0,
+      "treated_overflow_liters": 0.0,
+      "treatment_feed_liters": 625.0,
+      "treated_product_liters": 500.0,
+      "initial_stored_liters": 3000.0,
+      "stored_liters": 3115.0,
+      "balance_error_liters": -8.11e-23
+    },
+    "expected_volumes": {
+      "input_liters": 720,
+      "reuse_liters": 480,
+      "reject_drain_liters": 125,
+      "initial_stored_liters": 3000,
+      "stored_liters": 3115,
+      "treatment_feed_liters": 625,
+      "treated_product_liters": 500,
+      "overflow_liters": 0,
+      "backwash_liters": 0
+    },
+    "clock_advanced_by_test_ticks_only": true
+  },
+  "faults": [
+    {
+      "fault": "turbidity",
+      "reason": "TURBIDITY_HIGH",
+      "immediate_hold": true,
+      "zero_flow_and_no_volume_change": true,
+      "clear_recovers": true
+    },
+    {
+      "fault": "sensor_dropout",
+      "reason": "QUALITY_SENSOR_INVALID",
+      "immediate_hold": true,
+      "zero_flow_and_no_volume_change": true,
+      "clear_recovers": true
+    },
+    {
+      "fault": "clogging",
+      "reason": "FILTER_DIFFERENTIAL_HIGH",
+      "immediate_hold": true,
+      "zero_flow_and_no_volume_change": true,
+      "clear_recovers": true
+    },
+    {
+      "fault": "power_loss",
+      "reason": "POWER_LOSS",
+      "immediate_hold": true,
+      "zero_flow_and_no_volume_change": true,
+      "clear_recovers": true
+    },
+    {
+      "fault": "valve_stuck",
+      "reason": "VALVE_COMMAND_FEEDBACK_MISMATCH",
+      "immediate_hold": true,
+      "zero_flow_and_no_volume_change": true,
+      "clear_recovers": true
+    }
+  ],
+  "persisted_virtual_readings": 133,
+  "full_snapshots_checked": 133,
+  "sentinel_model_calls": {
+    "start": 0,
+    "step": 0
+  },
+  "records_before_restart": {
+    "readings": 133,
+    "anomaly_readings": 0,
+    "unavailable_readings": 133,
+    "sessions": 1,
+    "events": 33,
+    "unacknowledgedEvents": 6
+  },
+  "restart": {
+    "idle_requires_explicit_new_session": true,
+    "history_exact": true,
+    "alarms_and_acknowledgement_exact": true,
+    "readings_csv_sha256": "4849268ce449d80c2b2a7033579a88c1cf2e98f742660eccb91e5d479b4e2122",
+    "events_csv_sha256": "b1bdf1150f80e2245862ffa26a41a4c20bdd8fafb46a2e34fbc242409c1a7833",
+    "csv_bytes_identical": true
+  },
+  "background_worker": {
+    "enabled": true,
+    "manual_tick_calls": 0,
+    "first_observed_tick_wall_seconds": 1.069248375017196,
+    "polls": 19,
+    "first_observed_position": 1,
+    "sample_speed": 1,
+    "virtual_elapsed_seconds": 1.0,
+    "pause_stops_clock": true,
+    "model_start_calls": 0,
+    "model_step_calls": 0
+  },
+  "code_sha256_after": {
+    "mawrid-system/server/__init__.py": "953414236b1649f084ddf55d4c4db286ac5ef25ca2d5ab8b5d442082e5f0b600",
+    "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+    "mawrid-system/server/main.py": "8a04474ee4ee32be178d9f4bdeca7e02b88112f582bb6b99fbf6cd301c09b331",
+    "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+    "mawrid-system/server/plant.py": "7a4b83f0eae90c009f92165480795155cdf889dfe882f5e73e342679685523f4",
+    "mawrid-system/CONTRACT.json": "7afbc05800ce6eda4537420c0bf8694ae665e8206e961e5e417bc960eaa951c3",
+    "mawrid-system/scripts/verify_plant.py": "e71ae85e2e198abda571b42170d718dc898b1a3d0bff71262f66feefff77606e"
+  },
+  "elapsed_seconds": 2.0820127920014784,
+  "assertion_groups_passed": 12
+}

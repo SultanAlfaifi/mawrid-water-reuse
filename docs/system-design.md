@@ -1,149 +1,79 @@
-# System Design
+# System Design · تصميم النظام
 
-> **Status:** `DESIGN` concept architecture. No physical treatment result, tested outlet protection, confirmed university partnership, or site approval is documented. Component sizing and operating limits require bench and site-specific validation.
+> **Status:** `DESIGN` architecture and `SIMULATED` software implementation. No physical treatment result, tested physical outlet protection, site approval or confirmed partnership is established. See the [current project brief](project-brief.md) and [evidence register](evidence-register.md).
 
-This document follows the [project brief](project-brief.md) and [evidence register](evidence-register.md). It specifies intended behaviour; the digital explorer does not demonstrate that the hardware exists or performs as described.
+## 1. Scope and products
 
-## 1. Design objective
+MAWRID targets separately collected ablution and washbasin water for defined non-potable landscape irrigation. Toilets, kitchens and mixed sewage are excluded; the connected fixtures, cleaning chemicals, source variability and intended exposure must be characterized before design approval.
 
-The first concept recovers **one separately collected ablution-water source at one university facility** for a defined landscape-irrigation demand. The proposed initial use is a controlled zone of ornamental plants with drip irrigation, subject to site, exposure, and applicable-requirements review. Source quality and recoverable volume are hypotheses to measure, not established properties.
+The full unit combines treatment and monitoring. The retrofit **MAWRID Box** proposes monitoring and controls for an existing plant, subject to a compatibility survey. Neither a software demonstration nor a diagram establishes installed hardware. Academic facilities are a candidate customer segment; no particular university or site is a confirmed partner.
 
-The architecture prioritizes low treatment complexity, observable operation, maintainability, and failure toward non-reuse. Additional handwashing drains require separate characterization and a scope change in the project brief before inclusion.
+## 2. Current design basis
 
-The design does not include toilet wastewater, kitchen wastewater, grease-bearing drains, industrial wastewater, or unidentified mixed drainage.
+The current implementation follows the later station reference, summarized without redistributing the private attachment or supplier offer. It supersedes earlier planning examples of 20 m³/day, fixed 80% recovery and required date-palm carbon in the base train.
 
-## 2. Functional architecture
+| Item | Declared design basis |
+|---|---|
+| Feed | 1,000 L/hour; 15 m³/day assumes 15 operating hours |
+| Raw tank T-101 | 5,000 L, buried GRP design; installation and flotation checks remain |
+| Product tank T-102 | 5,000 L, horizontal above-ground polyethylene |
+| Base adsorption medium | Commercial activated carbon |
+| Date-palm carbon | Future experimental replacement/side-column study after comparative qualification |
+| Dosing | Four distinct points: pre-chlorination, SMBS, odor/pH treatment, final chlorination |
+| UV | Optional additional barrier position; performance is not calculated in the twin |
+| Backwash | Approximate design reference 65 L/min; actual pump curve, head, filter and stock constraints require verification |
+| Normal reject | No RO process or fixed 20% continuous reject assumption |
 
-```text
-One university ablution drain
-        │
-        ▼
-Coarse screen ──────────────── screenings to controlled disposal
-        │
-        ▼
-Raw-water equalization tank ── overflow to approved sewer
-        │
-        ▼
-Feed pump + flow control
-        │
-        ▼
-Sand / multimedia filter ───── backwash to approved sewer or treatment
-        │
-        ▼
-Optional adsorption stage ──── selected only if characterization justifies it
-        │
-        ▼
-Controlled disinfection + verified contact condition
-        │
-        ▼
-Treated-water tank + age/condition checks
-        │
-        ▼
-Independent outlet controller + decision manifold
-        ├── PASS → defined irrigation zone, after pilot approval
-        └── HOLD/FAIL → reprocess, contain, or approved sewer
-```
+These are sizing assumptions, not verified throughput, irrigation output, chemical doses, regulatory limits or supplier guarantees. The local twin has no automatic 15-hour daily scheduler.
 
-The diagram is a candidate functional arrangement, not a construction drawing. Storage and the irrigation outlet must remain within the validated operating envelope; if stored-water age or a critical downstream condition is unknown, the independent outlet protection keeps reuse closed. Discharge destinations shown as approved are requirements to obtain, not existing approvals.
-
-## 3. Treatment barriers
-
-### 3.1 Source separation
-
-Source control is the first barrier. Dedicated drainage prevents high-load or hazardous streams from entering the system. The pilot must document every connected fixture and complete cross-connection checks before operation.
-
-### 3.2 Screening and equalization
-
-A removable screen protects pumps and filters from hair, fibres, sand, and coarse debris. The equalization tank buffers the intermittent hydraulic pattern of ablution periods and enables a controlled treatment flow.
-
-Design requirements include a cleanout, high-level overflow, low-level pump protection, level sensing, accessible sampling, and a residence-time limit to reduce stagnation.
-
-### 3.3 Sand or multimedia filtration
-
-This stage targets suspended solids and turbidity and supports downstream treatment. It protects an adsorption bed if one is justified. Media grading, filtration velocity, run length, backwash trigger, and backwash volume will be selected experimentally.
-
-### 3.4 Date-palm biochar adsorption
-
-Adsorption is included only if source characterization identifies a relevant dissolved constituent that simpler treatment does not adequately address. A candidate cartridge then investigates whether date-palm-derived biochar provides useful capacity for that **preselected constituent**. Candidate media will be characterized for:
-
-- Feedstock identity and preparation.
-- Pyrolysis and activation conditions.
-- Particle-size distribution and bulk density.
-- Surface area and pore characteristics where laboratory access permits.
-- Ash, pH effects, fines, metals, and organic leachates.
-- Empty-bed contact time and hydraulic head loss.
-- Capacity and bed volumes to a defined breakthrough criterion.
-
-The simpler train without adsorption and commercial activated carbon are comparators. If adsorption is unnecessary, or biochar adds no justified benefit after performance, leaching, hydraulics, maintenance, and cost are considered, the project advances with the simpler train or a supported alternative. Local origin alone is not evidence of better performance or lower lifecycle cost.
-
-### 3.5 Disinfection
-
-Disinfection is a distinct microbial barrier. The baseline concept uses controlled chlorination because a measurable residual can help protect treated-water storage and distribution. Validation must account for disinfectant demand, pH, temperature, contact time, microbial reduction, and potential by-products.
-
-UV may be evaluated if testing shows a clear need. It would require validated UV dose and transmittance monitoring and would not provide a distribution residual.
-
-### 3.6 Treated-water storage and delivery
-
-The treated-water tank is physically separate from drinking-water and raw-water systems. It requires non-potable identification, protected make-up water, backflow prevention, controlled storage time, hygienic access, overflow management, and a sampling point.
-
-## 4. Instrumentation
-
-| Instrument | Location | Control purpose |
-|---|---|---|
-| Level sensors | Raw and treated tanks | Pump interlocks, overflow prevention, demand management |
-| Flow meter | Treatment inlet and reuse outlet | Loading, recovery, water balance, bed volumes |
-| Pressure sensors | Before and after granular filters | Differential pressure and clogging detection |
-| Turbidity | Before and after filtration | Particulate loading and filtration integrity |
-| pH and temperature | Before disinfection | Process envelope and disinfectant control |
-| Conductivity | Inlet and outlet | Source-change and salinity indicator |
-| Free chlorine | After verified contact time | Chlorination process condition |
-| UV254, optional | Across adsorption bed | Candidate organic breakthrough surrogate after correlation testing |
-
-Low-cost sensors require calibration, fouling checks, declared uncertainty, and reference measurements. No listed sensor can independently certify microbial safety.
-
-## 5. Operating states
-
-| State | Description | Reuse valve |
-|---|---|---|
-| `STARTUP` | Flush, initialize, and confirm sensor health | Closed |
-| `TREAT` | Water moves through treatment; release not yet authorized | Closed |
-| `REUSE_READY` | All validated release conditions are satisfied | Open on demand |
-| `REPROCESS` | Recoverable water is returned for another pass | Closed |
-| `DIVERT` | Water is sent to an approved sewer or containment route | Closed |
-| `BACKWASH` | Granular filter cleaning sequence | Closed |
-| `MAINTENANCE` | Manual service, calibration, or media replacement | Locked closed |
-| `FAULT` | Critical data or process integrity is unavailable | Fail-closed |
-
-These states specify the proposed physical controller, not measured valve behaviour. `REUSE_READY` describes eligibility under validated process rules; it is not a certificate of water quality. Site authorization and laboratory verification remain separate requirements.
-
-The independent local controller must not infer release permission from the last valid reading after sensor loss or power interruption. The website, remote dashboard, and any future AI model cannot open the reuse outlet. Bench testing must verify the physical valve position and destination flow, including loss of power and communications.
-
-## 6. Condition-based media management
-
-Two distinct mechanisms are tracked:
-
-- **Clogging:** rising differential pressure or declining hydraulic capacity. Cleaning or backwash may restore performance.
-- **Adsorption breakthrough:** increasing outlet concentration of the selected dissolved constituent relative to its inlet concentration. Media regeneration or replacement is required.
-
-Bed volumes provide a loading basis:
+## 3. Water and signal paths
 
 ```text
-Bed volumes treated = cumulative treated volume / packed media-bed volume
+Separated source
+  → inlet screen and diversion provision
+  → raw tank / feed pump / flow and pressure monitoring
+  → pre-chlorination DP-101
+  → multimedia filter F-101
+  → SMBS dosing DP-102 / ORP monitoring
+  → commercial-carbon filter F-102
+  → fine cartridge filter CF-101
+  → compatible odor treatment or pH correction DP-103
+  → final chlorination DP-104
+  → operational-quality checks / non-reuse decision
+  → optional UV position
+  → product tank
+  → metered irrigation
 ```
 
-The first controller will use transparent rules based on measured thresholds and cumulative loading. Predictive models will only be evaluated after multiple independent exhaustion runs are available.
+Backwash, overflow, inlet diversion and the designed return-to-raw branch need explicit destinations and hydraulic design. They are not extra irrigation output. The current twin calculates zero recirculation on the design return branch and does not model the experimental side column. Containment and shutdown must not be described as a functioning return flow where none is calculated.
 
-## 7. Modular scale-up
+The inlet, treatment and product states are different observations. A tank level does not establish quality; an outlet command does not establish physical valve position or destination flow. Missing critical measurements remain unknown.
 
-No treatment capacity or production size has been selected. A name such as `M5`, or the dimensions of the illustrative 3D unit, establishes neither `5 m³/day` nor any tested hydraulic capacity. Sizing follows measured source availability, irrigation demand, storage constraints, and validated loading/contact conditions. Parallel treatment trains or lead-lag adsorption are later design options, not current product configurations. Any scale-up must preserve the validated process envelope.
+## 4. Control authority
 
-## 8. Open design decisions
+| Layer | Intended responsibility | Current evidence boundary |
+|---|---|---|
+| Physical controller | Independent fixed interlocks, valid-data checks and safe response on power/communication loss | Proposed hardware architecture; physical tests remain |
+| Sensors and laboratory | Operational monitoring plus use-specific laboratory verification | No MAWRID field measurements or treatment results in this prototype |
+| Local application | Display, operator actions, history, exports and software session management | Working Python/SQLite prototype; no actuator connected |
+| Digital twin | Inventory, flow and equipment-state calculations under declared assumptions | Synthetic inputs and fixed experimental rules |
+| Research ML | Anomaly scores and research alarms on a qualified public-data replay | V9 optional replay only; no authority to open the reuse path |
+| Cloud/remote services | Proposed reporting and support | Not established by the local-only application |
 
-- Confirm the proposed university source and controlled ornamental-irrigation zone, including demand and the approval path.
-- Characterize representative influent variability.
-- Decide whether adsorption is justified; if so, select the target constituent, analytical method, and comparable media.
-- If biochar testing proceeds, determine its preparation and activation route.
-- Validate hydraulic loading and contact time.
-- Select disinfectant and contact configuration.
-- Confirm current Saudi plumbing, building, water-reuse, and discharge requirements.
-- Complete a hazard review before construction.
+The outlet is allowed to operate only under an independently validated operating envelope. AI may add an alarm or a hold request; it cannot turn a failed/unknown condition into permission to irrigate. Software simulation rules are not physical safety certification.
+
+Chlorine is measured directly and is not inferred from ORP. UV254 may support a target-specific surrogate model after calibration; it does not directly measure BOD/COD or prove microbial safety. UV presence or an animation does not establish validated dose/contact conditions.
+
+## 5. Local software and 3D experience
+
+The application separates a guided plant experience, component explanations, technology evidence and operating records. The embedded 3D scene reads the same virtual snapshots as the dashboard: stock, feed/product/reuse/backwash flows and equipment state. It does not issue actuator commands.
+
+UX V8 adds an explicit automatic tour through eight explanatory stages. Each stage highlights its equipment and pipe, moves the camera, then allows reading time. Pause/resume preserves the presentation clock; it is separate from pausing the virtual process. Details, manual camera interaction, navigation, an unavailable service or a plant interruption pause the tour until explicit continuation. Completion does not inject a fault or start a new round. The stage sequence explains the design; it is not hydraulic travel time or a treatment-kinetics calculation.
+
+The twin does not compute chemical reaction efficacy, microorganism removal, UV treatment, adsorption life or actual irrigation suitability. A `SIMULATED` record remains simulated when stored in SQLite or exported to CSV.
+
+## 6. Material study and validation
+
+Commercial carbon is the current base medium. Date-palm carbon advances only through a separate characterization and comparison study covering target removal, leaching, pressure loss, durability, media life and lifecycle cost. A research side column or later replacement is conditional; a rendered chamber is not an executed experiment.
+
+Before field use, freeze the selected source/use envelope, hydraulics and instruments, qualify disinfection/storage, test actual controller/valve/power faults, review cross-connections and applicable requirements, and obtain site authorization. See the [validation plan](validation.md). Demonstration limits and future gates must remain visible in the project presentation.

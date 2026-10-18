@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-10-17T09:40:11.637732+00:00",
+  "authorized_by_user": "شف اي بيانات اخذه مساحه ولا لها فايده احذفها",
+  "free_bytes_before": 2128084992,
+  "free_bytes_after": 5181349888,
+  "apparent_bytes_removed": 4582989708,
+  "removed": [
+    {
+      "path": "/Users/sultan/Documents/ChatGPT/MAWRID/.git/objects/pack/tmp_pack_O5a80U",
+      "kind": "Git-classified unopened temporary pack garbage",
+      "bytes_removed": 1202192396
+    },
+    {
+      "path": "/Users/sultan/Documents/ChatGPT/MAWRID/.git/objects/pack/tmp_pack_ltYGp2",
+      "kind": "Git-classified unopened temporary pack garbage",
+      "bytes_removed": 48496652
+    },
+    {
+      "path": "/Users/sultan/Documents/ChatGPT/MAWRID/.git/objects/pack/tmp_pack_7StPUn",
+      "kind": "Git-classified unopened temporary pack garbage",
+      "bytes_removed": 490602508
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 722723405
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Google/Chrome/Profile 1/Code Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 362306560
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Google/Chrome/Default/Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 217245452
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Google/Chrome/Default/Code Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 75415370
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Google/Chrome/System Profile/Code Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 144
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Codex/Default/Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 26515497
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Codex/Default/Code Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 144
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app/Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 168783699
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Codex/Default/Partitions/codex-browser-app/Code Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 109714967
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/login-staging/Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 985480
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/login-staging/Code Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 38634
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/Default/Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 3844
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/Default/Code Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 144
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/user-34QtvAfzUomjFyCOlUEoosgI__1f71e015-0b01-4211-af9a-2c88a9afd991/Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 584097727
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/com.openai.atlas/browser-data/host/user-34QtvAfzUomjFyCOlUEoosgI__1f71e015-0b01-4211-af9a-2c88a9afd991/Code Cache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 193201405
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/pip/http-v2",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 123297836
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/Homebrew",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 74307153
+    },
+    {
+      "path": "/Users/sultan/Library/Caches/pnpm",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 43868508
+    },
+    {
+      "path": "/Users/sultan/.npm/_cacache",
+      "kind": "HTTP/code/package download cache; root and permissions retained",
+      "bytes_removed": 139192183
+    }
+  ],
+  "errors": [],
+  "git_head_before_and_after": "1a1fa098d6f81349fb0b79405e87c198c4cb9547",
+  "git_object_counts_unchanged": true,
+  "git_counts_before": "count: 7085\nsize: 2.76 GiB\nin-pack: 406\npacks: 2\nsize-pack: 1.79 GiB\nprune-packable: 0\ngarbage: 3\nsize-garbage: 1.62 GiB\n",
+  "git_counts_after": "count: 7085\nsize: 2.76 GiB\nin-pack: 406\npacks: 2\nsize-pack: 1.79 GiB\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0 bytes\n",
+  "preserved": [
+    "Original project and user files",
+    "All source datasets, models and frozen ML evidence",
+    "Installed packages and runtimes",
+    "Browser history, cookies, passwords and user data",
+    "Pending app updates and running applications"
+  ]
+}

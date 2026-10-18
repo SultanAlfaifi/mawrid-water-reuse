@@ -1,0 +1,241 @@
+{
+  "generated_at_utc": "2026-10-16T18:55:54.314676+00:00",
+  "candidate": "V8",
+  "run": "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01",
+  "phase": "development_failed",
+  "complete_cases": 19,
+  "independent_replay_audit_passed": true,
+  "replay_audit_proves_model_acceptance": false,
+  "passes_declared_development_gate": false,
+  "fresh_external_validation_performed": false,
+  "deployment_approved": false,
+  "three_d_connected": false,
+  "summary": {
+    "if_vs_v6": {
+      "baseline": {
+        "true_events": 399,
+        "confirmed_events": 101,
+        "tp": 682,
+        "fp": 648,
+        "fn": 39026,
+        "tn": 405324,
+        "false_positive_runs": 370,
+        "normal_observed_seconds": 24358320.0,
+        "fp_duration_seconds": 38880.0,
+        "known_positive_rows": 39807,
+        "positive_unavailable_rows": 99,
+        "rows": 449431,
+        "available_rows": 445680,
+        "confirmed_event_recall": 0.2531328320802005,
+        "precision": 0.512781954887218,
+        "recall_observed_positive": 0.01717538027601491,
+        "f1_observed_points": 0.033237487206978895,
+        "false_runs_per_day": 1.3124057816795247
+      },
+      "candidate": {
+        "true_events": 399,
+        "confirmed_events": 115,
+        "tp": 889,
+        "fp": 560,
+        "fn": 38819,
+        "tn": 405412,
+        "false_positive_runs": 298,
+        "normal_observed_seconds": 24358320.0,
+        "fp_duration_seconds": 33600.0,
+        "known_positive_rows": 39807,
+        "positive_unavailable_rows": 99,
+        "rows": 449431,
+        "available_rows": 445680,
+        "confirmed_event_recall": 0.2882205513784461,
+        "precision": 0.6135265700483091,
+        "recall_observed_positive": 0.022388435579732045,
+        "f1_observed_points": 0.0432004276307797,
+        "false_runs_per_day": 1.0570187106499955
+      },
+      "checks": {
+        "all_prespecified_cases_complete": true,
+        "all_periods_and_source_pools_noninferior_with_120s_limit": true,
+        "strictly_more_pooled_events": true,
+        "strictly_fewer_pooled_false_runs": true,
+        "event_gain_in_at_least_two_periods": true,
+        "false_run_reduction_in_at_least_two_periods": true
+      },
+      "noninferior_periods": 19,
+      "periods": 19,
+      "event_gain_periods": 5,
+      "false_run_reduction_periods": 7,
+      "maximum_observed_paired_extra_delay_seconds": 0.0,
+      "lost_positive_alarm_rows_descriptive": 1,
+      "passes_declared_development_gate": true
+    },
+    "if_vs_v7": {
+      "baseline": {
+        "true_events": 399,
+        "confirmed_events": 101,
+        "tp": 682,
+        "fp": 648,
+        "fn": 39026,
+        "tn": 405324,
+        "false_positive_runs": 370,
+        "normal_observed_seconds": 24358320.0,
+        "fp_duration_seconds": 38880.0,
+        "known_positive_rows": 39807,
+        "positive_unavailable_rows": 99,
+        "rows": 449431,
+        "available_rows": 445680,
+        "confirmed_event_recall": 0.2531328320802005,
+        "precision": 0.512781954887218,
+        "recall_observed_positive": 0.01717538027601491,
+        "f1_observed_points": 0.033237487206978895,
+        "false_runs_per_day": 1.3124057816795247
+      },
+      "candidate": {
+        "true_events": 399,
+        "confirmed_events": 117,
+        "tp": 935,
+        "fp": 475,
+        "fn": 38773,
+        "tn": 405497,
+        "false_positive_runs": 235,
+        "normal_observed_seconds": 24358320.0,
+        "fp_duration_seconds": 28500.0,
+        "known_positive_rows": 39807,
+        "positive_unavailable_rows": 99,
+        "rows": 449431,
+        "available_rows": 445680,
+        "confirmed_event_recall": 0.2932330827067669,
+        "precision": 0.6631205673758865,
+        "recall_observed_positive": 0.023546892313891406,
+        "f1_observed_points": 0.0454788657035848,
+        "false_runs_per_day": 0.8335550234991576
+      },
+      "checks": {
+        "all_prespecified_cases_complete": true,
+        "all_periods_and_source_pools_noninferior_with_120s_limit": false,
+        "strictly_more_pooled_events": true,
+        "strictly_fewer_pooled_false_runs": true,
+        "event_gain_in_at_least_two_periods": true,
+        "false_run_reduction_in_at_least_two_periods": true
+      },
+      "noninferior_periods": 17,
+      "periods": 19,
+      "event_gain_periods": 6,
+      "false_run_reduction_periods": 8,
+      "maximum_observed_paired_extra_delay_seconds": 120.0,
+      "lost_positive_alarm_rows_descriptive": 20,
+      "passes_declared_development_gate": false
+    },
+    "v6_vs_v7": {
+      "baseline": {
+        "true_events": 399,
+        "confirmed_events": 115,
+        "tp": 889,
+        "fp": 560,
+        "fn": 38819,
+        "tn": 405412,
+        "false_positive_runs": 298,
+        "normal_observed_seconds": 24358320.0,
+        "fp_duration_seconds": 33600.0,
+        "known_positive_rows": 39807,
+        "positive_unavailable_rows": 99,
+        "rows": 449431,
+        "available_rows": 445680,
+        "confirmed_event_recall": 0.2882205513784461,
+        "precision": 0.6135265700483091,
+        "recall_observed_positive": 0.022388435579732045,
+        "f1_observed_points": 0.0432004276307797,
+        "false_runs_per_day": 1.0570187106499955
+      },
+      "candidate": {
+        "true_events": 399,
+        "confirmed_events": 117,
+        "tp": 935,
+        "fp": 475,
+        "fn": 38773,
+        "tn": 405497,
+        "false_positive_runs": 235,
+        "normal_observed_seconds": 24358320.0,
+        "fp_duration_seconds": 28500.0,
+        "known_positive_rows": 39807,
+        "positive_unavailable_rows": 99,
+        "rows": 449431,
+        "available_rows": 445680,
+        "confirmed_event_recall": 0.2932330827067669,
+        "precision": 0.6631205673758865,
+        "recall_observed_positive": 0.023546892313891406,
+        "f1_observed_points": 0.0454788657035848,
+        "false_runs_per_day": 0.8335550234991576
+      },
+      "checks": {
+        "all_prespecified_cases_complete": true,
+        "all_periods_and_source_pools_noninferior_with_120s_limit": false,
+        "strictly_more_pooled_events": true,
+        "strictly_fewer_pooled_false_runs": true,
+        "event_gain_in_at_least_two_periods": false,
+        "false_run_reduction_in_at_least_two_periods": true
+      },
+      "noninferior_periods": 17,
+      "periods": 19,
+      "event_gain_periods": 1,
+      "false_run_reduction_periods": 3,
+      "maximum_observed_paired_extra_delay_seconds": 120.0,
+      "lost_positive_alarm_rows_descriptive": 25,
+      "passes_declared_development_gate": false
+    }
+  },
+  "lost_events_by_period": {
+    "if_vs_v7": {
+      "2019_disclosed_test": [
+        4
+      ],
+      "2018-12": [
+        9
+      ]
+    },
+    "v6_vs_v7": {
+      "2019_disclosed_test": [
+        4
+      ],
+      "2018-12": [
+        9
+      ]
+    }
+  },
+  "maximum_paired_extra_delay_seconds": {
+    "if_vs_v7": 120.0,
+    "v6_vs_v7": 120.0
+  },
+  "policy_status_counts": {
+    "earlier_reference_retained": 9,
+    "temporally_certified_confirmation_policy_selected": 4,
+    "certification_failed_reference_retained": 6
+  },
+  "v7_run04_candidate": {
+    "true_events": 399,
+    "confirmed_events": 113,
+    "tp": 869,
+    "fp": 478,
+    "fn": 38839,
+    "tn": 405494,
+    "false_positive_runs": 236,
+    "normal_observed_seconds": 24358320.0,
+    "fp_duration_seconds": 28680.0,
+    "known_positive_rows": 39807,
+    "positive_unavailable_rows": 99,
+    "rows": 449431,
+    "available_rows": 445680,
+    "confirmed_event_recall": 0.2832080200501253,
+    "precision": 0.6451373422420194,
+    "recall_observed_positive": 0.02188475873879319,
+    "f1_observed_points": 0.042333455121178906,
+    "false_runs_per_day": 0.8371020661523455
+  },
+  "post_test_diagnosis": {
+    "path": "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8-development/run_01/post_test_diagnosis.json",
+    "sha256": "f28216b8ccf00219bac17c7cfd5a9c5f122b078f00c39594406426ff6dc709a5",
+    "active_policies": 4,
+    "reference_retention_decisions": 15,
+    "active_periods_with_lost_reference_events": 2
+  },
+  "report": "/Users/sultan/Documents/ChatGPT/MAWRID/output/ml/gecco-v8/report.html"
+}

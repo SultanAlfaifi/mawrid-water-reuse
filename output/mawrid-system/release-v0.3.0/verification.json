@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "created_at_utc": "2026-10-18T13:07:41.153232+00:00",
+  "scope": "Local pre-publication regression and isolated packaged-copy portability verification. No publication, training, research inference, physical hardware, browser QA or regulatory certification.",
+  "environment": {
+    "python": "3.12.1",
+    "node": "v25.6.0",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "checks": [
+    {
+      "name": "server_stdlib",
+      "status": "PASS",
+      "tests": 65,
+      "portability_tests_included": 5,
+      "command": "python3 -B -m unittest discover -s mawrid-system/server -t mawrid-system -p 'test_*.py' -v",
+      "log": "server-tests.log"
+    },
+    {
+      "name": "edge_stdlib",
+      "status": "PASS",
+      "tests": 17,
+      "command": "python3 -B -m unittest discover -s mawrid-system/edge -t mawrid-system -p 'test_*.py' -v",
+      "log": "edge-tests.log"
+    },
+    {
+      "name": "client_synthetic",
+      "status": "PASS",
+      "groups": {
+        "frontend": 68,
+        "plant_ui": 10,
+        "experience_state": 22,
+        "water_journey": 5,
+        "presentation_clock": 8
+      },
+      "log": "client-tests.log"
+    },
+    {
+      "name": "scene_and_camera_synthetic",
+      "status": "PASS",
+      "tests": 31,
+      "command": "node --test mawrid-system/plant3d/test-*.mjs",
+      "log": "scene-tests.log"
+    },
+    {
+      "name": "root_site_simulator_check",
+      "status": "PASS",
+      "tests": 20,
+      "command": "npm run check",
+      "log": "root-check.log"
+    }
+  ],
+  "clean_copy": {
+    "status": "PASS",
+    "fixture": "temporary directory named clean copy with spaces",
+    "isolated_python": true,
+    "copied": [
+      "mawrid-system/server (runtime modules only)",
+      "mawrid-system/client (packaged assets)",
+      "mawrid-system/CONTRACT.json",
+      "mawrid-system/start.command"
+    ],
+    "omitted": [
+      "ml/",
+      "node_modules/",
+      ".venv/",
+      "runtime var/",
+      "model bundles",
+      "research data",
+      "historical evidence"
+    ],
+    "launcher_help_explicit_python": "PASS",
+    "launcher_help_path_fallback": "PASS",
+    "invalid_explicit_python_reported": "PASS",
+    "http_port": "OS-assigned ephemeral loopback port; not8787",
+    "database": "temporary SQLite, removed after test",
+    "main_classic_bundle_200": true,
+    "main_styles_200": true,
+    "main_fonts_200": 4,
+    "scene_entry_and_referenced_assets_200": true,
+    "virtual_session": "ready; model unavailable; hardware disconnected",
+    "research_session_without_ml": {
+      "http_status": 503,
+      "error_code": "model_initialization_failed",
+      "state": "failed",
+      "latest": null,
+      "series": [],
+      "model_source_id": null,
+      "model_provenance": null
+    },
+    "scientific_imports_absent": [
+      "ml",
+      "numpy",
+      "pandas",
+      "sklearn",
+      "joblib"
+    ]
+  },
+  "build_proof_consistency": [
+    {
+      "proof": "output/mawrid-system/ux-v8/client-build-r1.json",
+      "historical_proof_unchanged": true,
+      "current_source_entries": 9,
+      "current_source_mismatches": [],
+      "current_asset_entries": 1,
+      "current_asset_mismatches": []
+    },
+    {
+      "proof": "output/mawrid-system/ux-v8/plant3d-build-r1.json",
+      "historical_proof_unchanged": true,
+      "current_source_entries": 21,
+      "current_source_mismatches": [],
+      "current_asset_entries": 24,
+      "current_asset_mismatches": []
+    }
+  ],
+  "licenses_observed": {
+    "main_fonts": "mawrid-system/client/assets/fonts/OFL.txt",
+    "scene": [
+      "mawrid-system/client/plant3d/licenses/three-MIT.txt",
+      "mawrid-system/client/plant3d/licenses/IBM-Plex-Arabic-OFL.txt"
+    ],
+    "engineering_viewer": [
+      "mawrid-final/dist/licenses/three-MIT.txt",
+      "mawrid-final/dist/licenses/IBM-Plex-Arabic-OFL.txt"
+    ],
+    "site_fonts": [
+      "assets/fonts/LICENSE-manrope.txt",
+      "assets/fonts/LICENSE-plex-arabic.txt"
+    ],
+    "scope": "Presence and package metadata inventory only; public site library notice preparation is owned by release packaging, not certified by this verification."
+  },
+  "not_performed": [
+    "git operations or push",
+    "npm dependency install from network",
+    "public deployment",
+    "model fitting or bundle unpickling",
+    "live8787service or live database mutations",
+    "browser interaction during this verification",
+    "hardware/water quality/field validation"
+  ],
+  "source_sha256": {
+    "mawrid-system/CONTRACT.json": "4ebeb8df99e114d17c6f02db5ea5893342adf5073fe4bfd0fc08d3b2f2d221b6",
+    "mawrid-system/client/api.js": "1941af2e313471b025957c216e0ca6c2b8e3f08cd9f7e4c7fce540cd070c81a9",
+    "mawrid-system/client/app.js": "b83d03866c4209a1b39f2e0f40d4b5884b58f74a874c9e0144ca31604f806f15",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/experience-state.js": "39c97c0fa961e6d7ad8ca8502ea548d6b30884b387fe3a2422b97d175c3c28b5",
+    "mawrid-system/client/guide-content.js": "6918cab6dfdb1341be36486d6cbe8a1b8f8e3135fe4782226ef0c43d5913589d",
+    "mawrid-system/client/guide.css": "1161e76f84970a266becce0ba5ddf68683aaac06c872acc31b1ab50f319e44f5",
+    "mawrid-system/client/guide.js": "d9e609aed386c8bf3d83decbe3767211b9926713dfe447e2688c8d338f8ad077",
+    "mawrid-system/client/index.html": "f57e892783f54be178eaf88fd98d4f437f60f652bf8359bb508e94f7baf2f7e9",
+    "mawrid-system/client/plant.css": "bdbb581df13cbbcfd5230c9dd7507276f626aa0745c5a25b0a9bf62b07a3ebfa",
+    "mawrid-system/client/plant.js": "35787759f5d284e14dc36595d47ee55e5fe816ae521e7e624bdb2c0f9c31975d",
+    "mawrid-system/client/presentation.js": "7c39ed9b3b0ad46ba956c2509314a7505cb022bafbe76608c252276abd69d234",
+    "mawrid-system/client/styles.css": "a2e72658edc2e74a6f37e00f4dd4b08a350e072990c8557d5ba50620489db4e0",
+    "mawrid-system/client/test-client.mjs": "942314fb264ed0cce8a5c4c0f626d739187feef5d5fd60b25c2892d9284f3f4a",
+    "mawrid-system/client/test-experience-state.mjs": "33f901fce51aca69242a962a57a8428dd337ee5dff37a8b2705e4f42e3ab2ed1",
+    "mawrid-system/client/test-plant.mjs": "03b98af3897872716f76df78b0a7c4d11d058c5d1ad0ba3559495d1d20d78d02",
+    "mawrid-system/client/test-presentation.mjs": "93281592be550685e0bb600c920a85c0030d909eb5407ba9ed82185488d6836e",
+    "mawrid-system/client/test-water-journey.mjs": "7249f1bd732bac9f943befccbe06f47e3affeea977d69493add15142ff75c526",
+    "mawrid-system/client/water-journey.js": "194d53cce79607def812d9fdf7d382f84d5e71025dc6de5b15f35b092dc00930",
+    "mawrid-system/edge/__init__.py": "89fdddded9dc67fc8eeede44e8087f0eeac712b2dfcc57aae285da409c980c84",
+    "mawrid-system/edge/__main__.py": "130acafaef8483625c857235eb995dace14121a5ba10eec2c7464c9f045153a7",
+    "mawrid-system/edge/core.py": "f6abc7d7af26b1e2ddacf38b6f74d772c4eaef8329374cd1a4f237ace915d31f",
+    "mawrid-system/edge/main.py": "d9b358c9387895eec43a915be2318137b5ca73bd5dfff41656bbf77af237343b",
+    "mawrid-system/edge/sender.py": "76b59b5214422c5124dce62e2cfde5f23acc0491b962b6152529517aa2940a4d",
+    "mawrid-system/edge/test_core.py": "a37cab639632f3c7c11a23015d19f68ca45db952040c3ed6d17549d5552fd742",
+    "mawrid-system/edge/test_sender.py": "b8c4553e1ad51ceea740dba6eea87e675ab160b49180a4ce47c2e22c187c51c5",
+    "mawrid-system/plant3d/adapter.js": "9b0a148e2863c0a7e6f77777f6b82851c887ceb3d1cbec7b7270f88b4ca1c253",
+    "mawrid-system/plant3d/camera.js": "fa1252a2fe1fa5be835e35d56b8f7eb1aa1ce4164bd52bd37964f7733120a642",
+    "mawrid-system/plant3d/index.html": "59084aea435a06c3182fddd3d9feffbf67ecf643404f122a5666a7eec8f59d35",
+    "mawrid-system/plant3d/journey.js": "8e76cd704c4d973f37309fc4a1974211a7ea2e41b285415acf38122201bcdf6a",
+    "mawrid-system/plant3d/labels.js": "3074bd21212e14fcafb745a8a1f7513c5aeeb346d2b86d70ed9676026555c10b",
+    "mawrid-system/plant3d/main.js": "f9bfaad9dfd747ac806baa4547d881a4265d2d83ed11de68e54139eca1a6c4ee",
+    "mawrid-system/plant3d/poller.js": "6c2f3779e6a2c83ecde3b3597513e5e047ddf21e6fab9726176d55b746ea9520",
+    "mawrid-system/plant3d/scene.js": "60f0b8136feb8148820db9dc5ec50bd886d704f2a1ea89c5109f623eb28245c0",
+    "mawrid-system/plant3d/style.css": "65e3c37a63c63e1f379d53e90dacb38bf3c63c5d38fdb40af53b2025e9d19253",
+    "mawrid-system/plant3d/test-camera.mjs": "3d84c3214195b760499dfec6bd5e2d2ba4269594eb59d6e08ff49e5add3a4981",
+    "mawrid-system/plant3d/test-journey.mjs": "55fa129b6a0d101cca1b9a0559619bcc25e6b26144482c2099f19beac67aad66",
+    "mawrid-system/plant3d/test-labels.mjs": "4cf4e5445acf02c6bf6b3a5e5ae2fccdf9234e25df0b6bef145ced29583ce982",
+    "mawrid-system/plant3d/test-review.mjs": "97066cc087c846a1ea072b07964bb3d118434eb48c5472b846fe217f24f5ad00",
+    "mawrid-system/plant3d/test-scene.mjs": "9142d7ec2407566195736d6874661664fe8a0385b06ac5773f474c60b60758ae",
+    "mawrid-system/plant3d/vite.config.mjs": "ef558b82aaab946d184412882281feeb61cb87475e12db656f3b8b340b8fcc8b",
+    "mawrid-system/server/__init__.py": "953414236b1649f084ddf55d4c4db286ac5ef25ca2d5ab8b5d442082e5f0b600",
+    "mawrid-system/server/ai.py": "03073f019e304565aa37d05aba26e23199132f38bc56063b53a77ba0d688093f",
+    "mawrid-system/server/app.py": "3f702b1fbc73f1c4c6a98dd2e22cc245e0ee09e1f4b349a9c5901a58e63881cf",
+    "mawrid-system/server/main.py": "8dabca077771a1951cc15a32ab1c8252abd5ba6a8d70ac4f85d3c1ccfddee4ae",
+    "mawrid-system/server/plant.py": "3540c9cc0fb5402c42ff13d494168971a7ceb862e96778e08038c6b5da549292",
+    "mawrid-system/server/store.py": "b8d5d65ff6fb1ac36f5e19fecd875d28bac59266ce2f59754993ea13a0e64eb8",
+    "mawrid-system/server/test_ai.py": "fd31bcfcf68621a4c3fea6a1821527318071f6d507c05f23d377f4a049851d94",
+    "mawrid-system/server/test_app.py": "627baf2c7868ba5eb1efabcbfc219c47449ffc17e5d22b0cd06b976900c3674a",
+    "mawrid-system/server/test_http.py": "79dba8b9f95004778703258984771465287c38ed9cdef1d3465cf37f53770303",
+    "mawrid-system/server/test_ingestion.py": "1ca57a84b53ff8ef0849d5a9d889d128682f9b3a0ae906f0e651de8faf2e9ede",
+    "mawrid-system/server/test_plant.py": "cd32d2aa44ee61ba3d96dc6fa8d54edce03964d8f7a49a2937aedc70071a136c",
+    "mawrid-system/server/test_plant_app.py": "2c1f35c76661aa8c0459362e95b83dc21b8398d22c57388900ec7e8312b85f04",
+    "mawrid-system/server/test_portability.py": "ecd0393eef31738baa9bb93ed016e08a1353dff5ac7070ff92f50017bf29c654",
+    "mawrid-system/server/test_store.py": "fa2c066023e1762053c42a7546cf70a781fd96fd65fb762c6ef76ce15410fa2b",
+    "mawrid-system/start.command": "8af699a1b07b971ba36df565738d3590eeaab85f516dd7991026c1a13a8b0416",
+    "tests/reuse-logic.test.mjs": "93fed74496f45202a275e4e30dae50ce2999a9bf312ed3e5b981aea0c7d82ef7",
+    "tests/simulator.test.mjs": "4b55f771cef1c798b7aa23604f0701e81bdbd5399557eb9ee4e000180489a2e8",
+    "web/src/reuse-logic.js": "d4f2bf521652d7f6223b991b6a626cdac2a0915d8b5620e7af6680457514445e",
+    "web/src/simulator-engine.js": "55007004c151037bf7b05243d3d6f4b36ebc2c2ec9bbfa2cf9e19d31b1fe2ec8"
+  },
+  "log_sha256": {
+    "server-tests.log": "eba875e551eefff35892ae3507228cc267fee976f5eeaf5121b5f706542f22cb",
+    "edge-tests.log": "dcf07773ec0e76504ed4f7c8e4295c8be66d550b6c4d4f52b49702d3398cc931",
+    "client-tests.log": "32c261b7d994738ecfa3b7c7d130275fa8934ee8f1c1f71297f011c3d693a809",
+    "scene-tests.log": "59cef2a0845183ee5660a5ba1c0b14d31702cc0c5b5ed8404404d58d126e1a31",
+    "root-check.log": "44828744444d25dbe304cb8f8d1e4ba751d93710de32356942ef6a74aad1951f"
+  }
+}

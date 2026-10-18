@@ -1,0 +1,15 @@
+{
+  "chosen_at_utc": "2026-10-16T06:32:32.280922+00:00",
+  "family": "adaptive",
+  "recipe": "return_gated_channel_median5",
+  "new_source_labels_read": false,
+  "decision_basis": "Disclosed development only: same31/37 confirmed2018events as unsmoothed return-gated method, lower false run rate and normal alarm time, improves worst eventful fold from0/6to1/6. All2018development periods satisfy provisional operating budget.2019tradeoff7/12rather than8/12 disclosed. No claim of stable joint improvement; this is a candidate selected for one new historical external check.",
+  "rejected_long_anchor": "720history did not improve slow events, reduced event detection and exceeded1%normal alarm time in one development period.",
+  "candidate_sha256": "2c480aaf674ff33e33942b2f1605fc5121bfdac4cfa800cf0f74a80b3f34a0f2",
+  "independent_tests": 81,
+  "criterion_source": "ml/gecco_v4/evaluation_contract.json",
+  "all_attempts": [
+    "output/ml/gecco-v4-adaptive-development/development_summary.json",
+    "output/ml/gecco-v4-supervised-development/development_summary.json"
+  ]
+}

@@ -1,0 +1,56 @@
+MAWRID V5 — reproducible experiments, not an approved field detector
+
+Use Python 3.12.1 and the observed package versions recorded in
+output/ml/gecco-v5/environment.json and each frozen protocol.json.
+The saved joblib files were created locally by these runners. Their hashes
+are in the per-period freeze files. Load only those verified local bundles.
+
+From the project root, after installing the recorded dependencies:
+
+  python -B -m unittest discover -s ml/gecco_v5 -p 'test_*.py'
+
+Fresh-source primary reproduction (use a NEW output folder):
+
+  python -B ml/gecco_v5/ponds_frozen_evaluation.py --output output/ml/ponds-primary-reproduction
+
+The fixed extension to all52 remaining cohorts:
+
+  python -B ml/gecco_v5/ponds_reserved_evaluation_v2.py --output output/ml/ponds-extension-reproduction
+
+The extension's first run stopped after210 periods because its aggregation
+validator rejected an entirely unobserved period. The repaired wrapper retains
+empty periods as unmeasurable, with the same acceptance rules, rather than
+dropping them. The model/calibration method did not change. The failed attempt,
+repair declaration and comparison of completed prediction payloads are retained.
+
+These commands reproduce an already disclosed evaluation. Re-running them
+does not create new unseen evidence. The original output folders are never
+overwritten. No internet access is needed if the source archive is present.
+
+The GECCO development runner also checks its baseline against the older V3/V4
+reference predictions in the original workspace. Those earlier full result
+trees are in the separate V4 evidence package, not duplicated here. The V5
+package includes all V5 calibration/test scores, decisions, models, code
+snapshots and raw GECCO files for independent reconstruction and evaluation.
+
+The first V5 classifier attempt was rejected. Its initial source-hash
+limitation is preserved in code_change_during_development.json. The later
+support-gate run has complete executable snapshots and saved bundles.
+
+Metrics retain original observed event intervals. A confirmed event detection
+needs a 0-to-1 transition inside the event, with an observed preceding sample
+on the immediately adjacent time slot. Missing periods do not add normal
+exposure. A continuous event crossing adjacent test folds is counted once
+in its source total. Separate phases remain separate benchmark series.
+False-alarm counts and duration are both reported; no point adjustment or
+forgiven event tails are used. Fold starts and unavailable rows remain in the
+event denominator. Per-period noninferiority does not mean improvement in
+every period, and development results are not independent validation.
+
+Ponds intermediate3.1 supplies raw model inputs; intermediate3.2 supplies
+conductivity labels only. Published preprocessing before3.1 is unverified.
+The four primary groups and52 reserve groups belong to one experiment.
+The source is sampled every15 minutes; no minute-level/Pi latency claim
+can be inferred from this benchmark. No3D integration or valve command is
+implemented here. The source DOI license evidence and archive license notice
+are preserved in output/ml/gecco-v5-source-search.

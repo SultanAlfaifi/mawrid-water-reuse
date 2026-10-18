@@ -1,0 +1,400 @@
+{
+  "native": {
+    "baseline": {
+      "sample_count": 13957,
+      "valid_count": 13823,
+      "unavailable_count": 134,
+      "prediction_coverage": 0.9903990828974708,
+      "normal_valid_count": 13823,
+      "positive_valid_count": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 13823,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": null,
+      "specificity": 1.0,
+      "accuracy": 1.0,
+      "false_positive_runs": 0,
+      "eligible_normal_days": 9.599305555555556,
+      "false_alarm_runs_per_normal_day": 0.0,
+      "normal_time_under_alarm": 0.0,
+      "alarm_runs": 0,
+      "true_events": 0,
+      "detected_events": 0,
+      "undetected_events": 0,
+      "fully_unscorable_events": 0,
+      "event_recall": null,
+      "new_alarm_inside_event_recall": null,
+      "raw_new_alarm_inside_event_recall": null,
+      "confirmed_new_alarm_inside_event_recall": null,
+      "covered_at_onset_events": 0,
+      "new_alarm_inside_events": 0,
+      "raw_new_alarm_inside_events": 0,
+      "confirmed_new_alarm_inside_events": 0,
+      "boundary_censored_events": 0,
+      "complete_events": 0,
+      "complete_detected_events": 0,
+      "complete_new_alarm_inside_events": 0,
+      "complete_confirmed_new_alarm_inside_events": 0,
+      "complete_event_coverage": null,
+      "complete_event_new_alarm_start_recall": null,
+      "complete_raw_new_alarm_start_recall": null,
+      "complete_confirmed_new_alarm_start_recall": null,
+      "median_detection_delay_minutes": null,
+      "p95_detection_delay_minutes": null,
+      "event_records": [],
+      "false_alarm_records": []
+    },
+    "v3": {
+      "sample_count": 13957,
+      "valid_count": 13821,
+      "unavailable_count": 136,
+      "prediction_coverage": 0.9902557856272838,
+      "normal_valid_count": 13821,
+      "positive_valid_count": 0,
+      "tp": 0,
+      "fp": 65,
+      "fn": 0,
+      "tn": 13756,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0,
+      "false_positive_rate": 0.004702988206352652,
+      "false_negative_rate": null,
+      "specificity": 0.9952970117936474,
+      "accuracy": 0.9952970117936474,
+      "false_positive_runs": 19,
+      "eligible_normal_days": 9.597916666666666,
+      "false_alarm_runs_per_normal_day": 1.9795962665509008,
+      "normal_time_under_alarm": 0.004702988206352652,
+      "alarm_runs": 19,
+      "true_events": 0,
+      "detected_events": 0,
+      "undetected_events": 0,
+      "fully_unscorable_events": 0,
+      "event_recall": null,
+      "new_alarm_inside_event_recall": null,
+      "raw_new_alarm_inside_event_recall": null,
+      "confirmed_new_alarm_inside_event_recall": null,
+      "covered_at_onset_events": 0,
+      "new_alarm_inside_events": 0,
+      "raw_new_alarm_inside_events": 0,
+      "confirmed_new_alarm_inside_events": 0,
+      "boundary_censored_events": 0,
+      "complete_events": 0,
+      "complete_detected_events": 0,
+      "complete_new_alarm_inside_events": 0,
+      "complete_confirmed_new_alarm_inside_events": 0,
+      "complete_event_coverage": null,
+      "complete_event_new_alarm_start_recall": null,
+      "complete_raw_new_alarm_start_recall": null,
+      "complete_confirmed_new_alarm_start_recall": null,
+      "median_detection_delay_minutes": null,
+      "p95_detection_delay_minutes": null,
+      "event_records": [],
+      "false_alarm_records": [
+        {
+          "start": 548,
+          "end": 555,
+          "duration_minutes": 7
+        },
+        {
+          "start": 869,
+          "end": 871,
+          "duration_minutes": 2
+        },
+        {
+          "start": 874,
+          "end": 878,
+          "duration_minutes": 4
+        },
+        {
+          "start": 913,
+          "end": 916,
+          "duration_minutes": 3
+        },
+        {
+          "start": 997,
+          "end": 1010,
+          "duration_minutes": 13
+        },
+        {
+          "start": 1043,
+          "end": 1047,
+          "duration_minutes": 4
+        },
+        {
+          "start": 1909,
+          "end": 1911,
+          "duration_minutes": 2
+        },
+        {
+          "start": 2376,
+          "end": 2379,
+          "duration_minutes": 3
+        },
+        {
+          "start": 4492,
+          "end": 4495,
+          "duration_minutes": 3
+        },
+        {
+          "start": 7232,
+          "end": 7239,
+          "duration_minutes": 7
+        },
+        {
+          "start": 7752,
+          "end": 7755,
+          "duration_minutes": 3
+        },
+        {
+          "start": 10053,
+          "end": 10056,
+          "duration_minutes": 3
+        },
+        {
+          "start": 10065,
+          "end": 10067,
+          "duration_minutes": 2
+        },
+        {
+          "start": 11567,
+          "end": 11569,
+          "duration_minutes": 2
+        },
+        {
+          "start": 11572,
+          "end": 11573,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11782,
+          "end": 11785,
+          "duration_minutes": 3
+        },
+        {
+          "start": 12435,
+          "end": 12436,
+          "duration_minutes": 1
+        },
+        {
+          "start": 12598,
+          "end": 12599,
+          "duration_minutes": 1
+        },
+        {
+          "start": 12600,
+          "end": 12601,
+          "duration_minutes": 1
+        }
+      ]
+    }
+  },
+  "common": {
+    "baseline": {
+      "sample_count": 13957,
+      "valid_count": 13821,
+      "unavailable_count": 136,
+      "prediction_coverage": 0.9902557856272838,
+      "normal_valid_count": 13821,
+      "positive_valid_count": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 13821,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": null,
+      "specificity": 1.0,
+      "accuracy": 1.0,
+      "false_positive_runs": 0,
+      "eligible_normal_days": 9.597916666666666,
+      "false_alarm_runs_per_normal_day": 0.0,
+      "normal_time_under_alarm": 0.0,
+      "alarm_runs": 0,
+      "true_events": 0,
+      "detected_events": 0,
+      "undetected_events": 0,
+      "fully_unscorable_events": 0,
+      "event_recall": null,
+      "new_alarm_inside_event_recall": null,
+      "raw_new_alarm_inside_event_recall": null,
+      "confirmed_new_alarm_inside_event_recall": null,
+      "covered_at_onset_events": 0,
+      "new_alarm_inside_events": 0,
+      "raw_new_alarm_inside_events": 0,
+      "confirmed_new_alarm_inside_events": 0,
+      "boundary_censored_events": 0,
+      "complete_events": 0,
+      "complete_detected_events": 0,
+      "complete_new_alarm_inside_events": 0,
+      "complete_confirmed_new_alarm_inside_events": 0,
+      "complete_event_coverage": null,
+      "complete_event_new_alarm_start_recall": null,
+      "complete_raw_new_alarm_start_recall": null,
+      "complete_confirmed_new_alarm_start_recall": null,
+      "median_detection_delay_minutes": null,
+      "p95_detection_delay_minutes": null,
+      "event_records": [],
+      "false_alarm_records": []
+    },
+    "v3": {
+      "sample_count": 13957,
+      "valid_count": 13821,
+      "unavailable_count": 136,
+      "prediction_coverage": 0.9902557856272838,
+      "normal_valid_count": 13821,
+      "positive_valid_count": 0,
+      "tp": 0,
+      "fp": 65,
+      "fn": 0,
+      "tn": 13756,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0,
+      "false_positive_rate": 0.004702988206352652,
+      "false_negative_rate": null,
+      "specificity": 0.9952970117936474,
+      "accuracy": 0.9952970117936474,
+      "false_positive_runs": 19,
+      "eligible_normal_days": 9.597916666666666,
+      "false_alarm_runs_per_normal_day": 1.9795962665509008,
+      "normal_time_under_alarm": 0.004702988206352652,
+      "alarm_runs": 19,
+      "true_events": 0,
+      "detected_events": 0,
+      "undetected_events": 0,
+      "fully_unscorable_events": 0,
+      "event_recall": null,
+      "new_alarm_inside_event_recall": null,
+      "raw_new_alarm_inside_event_recall": null,
+      "confirmed_new_alarm_inside_event_recall": null,
+      "covered_at_onset_events": 0,
+      "new_alarm_inside_events": 0,
+      "raw_new_alarm_inside_events": 0,
+      "confirmed_new_alarm_inside_events": 0,
+      "boundary_censored_events": 0,
+      "complete_events": 0,
+      "complete_detected_events": 0,
+      "complete_new_alarm_inside_events": 0,
+      "complete_confirmed_new_alarm_inside_events": 0,
+      "complete_event_coverage": null,
+      "complete_event_new_alarm_start_recall": null,
+      "complete_raw_new_alarm_start_recall": null,
+      "complete_confirmed_new_alarm_start_recall": null,
+      "median_detection_delay_minutes": null,
+      "p95_detection_delay_minutes": null,
+      "event_records": [],
+      "false_alarm_records": [
+        {
+          "start": 548,
+          "end": 555,
+          "duration_minutes": 7
+        },
+        {
+          "start": 869,
+          "end": 871,
+          "duration_minutes": 2
+        },
+        {
+          "start": 874,
+          "end": 878,
+          "duration_minutes": 4
+        },
+        {
+          "start": 913,
+          "end": 916,
+          "duration_minutes": 3
+        },
+        {
+          "start": 997,
+          "end": 1010,
+          "duration_minutes": 13
+        },
+        {
+          "start": 1043,
+          "end": 1047,
+          "duration_minutes": 4
+        },
+        {
+          "start": 1909,
+          "end": 1911,
+          "duration_minutes": 2
+        },
+        {
+          "start": 2376,
+          "end": 2379,
+          "duration_minutes": 3
+        },
+        {
+          "start": 4492,
+          "end": 4495,
+          "duration_minutes": 3
+        },
+        {
+          "start": 7232,
+          "end": 7239,
+          "duration_minutes": 7
+        },
+        {
+          "start": 7752,
+          "end": 7755,
+          "duration_minutes": 3
+        },
+        {
+          "start": 10053,
+          "end": 10056,
+          "duration_minutes": 3
+        },
+        {
+          "start": 10065,
+          "end": 10067,
+          "duration_minutes": 2
+        },
+        {
+          "start": 11567,
+          "end": 11569,
+          "duration_minutes": 2
+        },
+        {
+          "start": 11572,
+          "end": 11573,
+          "duration_minutes": 1
+        },
+        {
+          "start": 11782,
+          "end": 11785,
+          "duration_minutes": 3
+        },
+        {
+          "start": 12435,
+          "end": 12436,
+          "duration_minutes": 1
+        },
+        {
+          "start": 12598,
+          "end": 12599,
+          "duration_minutes": 1
+        },
+        {
+          "start": 12600,
+          "end": 12601,
+          "duration_minutes": 1
+        }
+      ]
+    }
+  },
+  "scored_at_utc": "2026-10-16T05:49:31.010773+00:00",
+  "source_start_index": 111652,
+  "source_end_index": 125609,
+  "timestamp_start": "2016-10-20 00:41:00",
+  "timestamp_end": "2016-10-29 17:17:00",
+  "selected_family": "baseline_persistent"
+}

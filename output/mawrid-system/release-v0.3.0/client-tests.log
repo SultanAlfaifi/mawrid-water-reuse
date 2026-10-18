@@ -1,0 +1,42 @@
+$ node mawrid-system/client/test-client.mjs
+68 frontend checks PASS; actual guide module and app queue/event handlers with synthetic fixtures only; no browser-rendering/accessibility claim, network or persisted application mutations.
+exit_code=0
+$ node mawrid-system/client/test-plant.mjs
+10 plant UI checks PASS; no network, random values, clock advancement or persisted mutation.
+exit_code=0
+$ node mawrid-system/client/test-experience-state.mjs
+PASS loading offers no command
+PASS disconnect takes priority over all saved plant and completion states
+PASS inactive virtual plant starts rather than inheriting UI completion
+PASS wrong source and mismatched session do not inherit saved virtual success or hold
+PASS snapshot manual hold precedes fault, pause and completion
+PASS global explicit hold can be released before a virtual session exists
+PASS textual reasons and hidden settings do not invent a manual-hold boolean
+PASS confirmed sensor dropout explains irrigation stopping while treatment can continue
+PASS dropout with unconfirmed closure cannot claim successful protective closure
+PASS all faults take priority over completion and paused state
+PASS standby and backwash offer return to ordinary operation
+PASS paused state cannot be completed by a saved UI flag
+PASS unavailable operating fields cannot look like normal or finished operation
+PASS hold or missing safety state waits and preserves server reasons
+PASS closed or missing valve feedback cannot prove success
+PASS zero negative missing string and nonfinite reuse flow cannot prove success
+PASS fresh ordinary operation begins the explanation before the sensor test
+PASS last journey stage offers the sensor test without inventing completion
+PASS completion needs this exact session and boolean restoration flag
+PASS restoration alone cannot skip the explanation or inherit another session journey
+PASS failed sessions restart rather than issuing an invalid resume or release
+PASS function is pure and always returns the documented fields
+22 experience state checks PASS; synthetic only, no mutations.
+exit_code=0
+$ node mawrid-system/client/test-water-journey.mjs
+PASS eight unique stages explain the water path in process order
+PASS fresh or different sessions begin at collection without completion
+PASS only integer local indices are accepted and valid values are bounded
+PASS completion is a boolean tied to the exact session
+PASS reading progress never edits local UI state or the stage data
+5 water journey checks PASS; pure explanation/progress only.
+exit_code=0
+$ node mawrid-system/client/test-presentation.mjs
+8 presentation-clock checks PASS; real presentation module, explicit synthetic clock; no server, browser or plant commands.
+exit_code=0

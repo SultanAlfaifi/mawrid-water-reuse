@@ -1,0 +1,59 @@
+{
+  "created_at_utc": "2026-10-16T18:40:07.280113+00:00",
+  "scope": "Descriptive timing on already disclosed V8 test only; no threshold search, no refit, no new source access.",
+  "counterfactual_not_executed": "Continuing pending confidence checks after a reference pulse clears would still not confirm these lost events within120seconds at their frozen low threshold. This is not a replay or evaluation of a new policy.",
+  "input_sha256": {
+    "post_test_diagnosis.json": "f28216b8ccf00219bac17c7cfd5a9c5f122b078f00c39594406426ff6dc709a5",
+    "2019_disclosed_test/predictions.csv.gz": "c4b144c24db1dd59591068a1411bed61aba8a94841f39a4673a910a21323f723",
+    "2018-12/predictions.csv.gz": "c22d8fd077852ece3459194045f19a73b09c9a74e777b5e3009c261b6d8dd1b0"
+  },
+  "lost_events": [
+    {
+      "case": "2019_disclosed_test",
+      "event_id": 4,
+      "frozen_low_threshold": 0.9938938099927306,
+      "pulses": [
+        {
+          "reference_pulse_start_test_index": 8093,
+          "reference_pulse_samples": 2,
+          "confidence_offsets_0_through_deadline": [
+            0.18041063271842533,
+            0.4031203832172109,
+            0.4031203832172109
+          ],
+          "first_raw_confidence_crossing_seconds": null,
+          "raw_confidence_can_confirm_within120s": false
+        },
+        {
+          "reference_pulse_start_test_index": 8100,
+          "reference_pulse_samples": 2,
+          "confidence_offsets_0_through_deadline": [
+            0.4305231156114325,
+            0.3489556556679855,
+            0.1487143238805497
+          ],
+          "first_raw_confidence_crossing_seconds": null,
+          "raw_confidence_can_confirm_within120s": false
+        }
+      ]
+    },
+    {
+      "case": "2018-12",
+      "event_id": 9,
+      "frozen_low_threshold": 0.2939756405655372,
+      "pulses": [
+        {
+          "reference_pulse_start_test_index": 5261,
+          "reference_pulse_samples": 1,
+          "confidence_offsets_0_through_deadline": [
+            0.05941669764786949,
+            0.04583197288095707,
+            0.12218525832398786
+          ],
+          "first_raw_confidence_crossing_seconds": 240.0,
+          "raw_confidence_can_confirm_within120s": false
+        }
+      ]
+    }
+  ]
+}

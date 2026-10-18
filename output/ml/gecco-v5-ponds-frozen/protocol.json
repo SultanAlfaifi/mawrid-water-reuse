@@ -1,0 +1,152 @@
+{
+  "frozen_at_utc": "2026-10-16T09:08:10.200052+00:00",
+  "configuration": {
+    "method": "support_q50",
+    "selected_using": "13 already disclosed GECCO periods; q50 retains73/104 baseline events, FP236->228. q95 loses10 events and is rejected.",
+    "environment": {
+      "python": "3.12.1",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "packages": {
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.1",
+        "joblib": "1.6.0",
+        "threadpoolctl": "3.7.0"
+      }
+    },
+    "source_doi": "10.25678/00023Y",
+    "cohorts": [
+      [
+        "2D",
+        "Sonde07"
+      ],
+      [
+        "3D",
+        "Sonde10"
+      ],
+      [
+        "5A",
+        "Sonde04"
+      ],
+      [
+        "5B",
+        "Sonde15"
+      ]
+    ],
+    "filter": {
+      "Treatment": "M",
+      "Phase": "1"
+    },
+    "expected_grid_rows_per_cohort": 22752,
+    "sample_seconds": 900,
+    "gap_samples": 8,
+    "gap_minutes": 120,
+    "geometry": "For k=4..9: train [0,floor(N*(k-2)/10)), calibration next20% divided into4 adjacent blocks, test next10%. No random split. Reset feature context after8-slot gap in each cal/test block.",
+    "local_refit": "Identical fixed method refits only on each local past prefix; this is not zero-shot transfer of GECCO weights.",
+    "features": [
+      "Chlorophyll_RFU",
+      "BGAPC_RFU",
+      "ODO_sat",
+      "ODO_mgL",
+      "pH",
+      "fDOM_RFU",
+      "SpCond_uScm",
+      "Temp_C"
+    ],
+    "lookbacks_samples": [
+      15,
+      60
+    ],
+    "lookbacks_minutes": [
+      225,
+      900
+    ],
+    "labels": "Original observed conductivity finite and expert-cleaned conductivity missing; other anomaly types unlabelled.",
+    "missing": "Original missing target becomes all-channel unavailable. Inserted grid slots are unavailable; never interpolated. Original event IDs survive time gaps; a gap cannot confirm0->1.",
+    "baseline": "Original200-tree IF with cadence-corrected original threshold grid/F1 ranking and1 false run/day,1% normal-alarm-time calibration constraints.",
+    "baseline_trial_event_diagnostics": "Legacy baseline trial event counts use the full grid and may split an event at an inserted gap; only point F1 and false-alarm quantities affect baseline selection. Candidate calibration and all reported event results use original observed identities.",
+    "no_calibration_evidence": "If no finite baseline calibration score or no normal exposure, use finite no-alarm threshold1.0000000000000002 (IF score is at most1), report unqualified; such periods cannot support release.",
+    "candidate_calibration": "Existing default minimum1 normal day/block,2 observed blocks,4 normal days total,5 reference events across2 blocks; instant/2of3/3of5; preserve every reference event ID and normal exposure. Unknown support retains original IF.",
+    "primary_acceptance": "Every one of24 periods must retain every baseline event ID and availability, with no higher false-run rate or normal alarm duration; strict pooled false-run reduction on original source axes.",
+    "evidence_minimum": {
+      "baseline_detected_events": 5,
+      "eventful_cohorts": 2,
+      "eventful_periods": 2,
+      "all_baseline_calibrations_qualified": true
+    },
+    "outcome_policy": "Run all24 before inspecting outer metrics. No changes based on fresh outcomes; failures retained. Future retuning would make these cohorts development data.",
+    "prior_exposure": "Archive metadata, identity/time fields, headers and publisher source code reviewed; no selected sensor values or derived labels inspected. A qualitative published benchmark ranking was incidentally exposed, not used for model choice.",
+    "upstream_limitation": "Publisher intermediate3.1 preprocessing provenance is incomplete. This establishes our own temporal isolation conditional on published inputs; end-to-end raw-instrument causality is unverified.",
+    "scope": "Four series share one pond experiment,15-minute cadence; conductivity observation anomalies only. No MAWRID field efficacy, water safety probability, five physical fault classes, or3D/Pi performance claim."
+  },
+  "code": {
+    "ml/gecco_v5/ponds_frozen_evaluation.py": {
+      "sha256": "21840ccad1df7f51e47f3ebfbe1068cdd562992141f2b0194e57780f50021fcc",
+      "bytes": 13459
+    },
+    "ml/gecco_v5/ponds_data.py": {
+      "sha256": "402e2214ee73c4be6adaf547cc0458a2495e397958bfb3b25501f3c486f39794",
+      "bytes": 6475
+    },
+    "ml/gecco_v5/baseline_cadence.py": {
+      "sha256": "26e6111fc11c419428759d09eabc2b2a5fccdd6fa7f3c43a3c88c5aeb1deff20",
+      "bytes": 5193
+    },
+    "ml/gecco_v5/sparse_calibration.py": {
+      "sha256": "7663ca90150e584be463576daf86a31cfae329359a2b73a582944e595c90c2ee",
+      "bytes": 10700
+    },
+    "ml/gecco_v5/sparse_evaluation.py": {
+      "sha256": "a8ea22f7fe8c9724a3a6285e6235515fb9396bef863d933163db00a8841c18b9",
+      "bytes": 7845
+    },
+    "ml/gecco_v5/provenance.py": {
+      "sha256": "43008c5eb62730e68c1e6899ef311acf3a1e1dca6036d9d0af57d2b12dead8d6",
+      "bytes": 3067
+    },
+    "ml/gecco_v5/recovery_candidate.py": {
+      "sha256": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+      "bytes": 9620
+    },
+    "ml/gecco_v5/supported_candidate.py": {
+      "sha256": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626",
+      "bytes": 2139
+    },
+    "ml/gecco_v5/normal_support.py": {
+      "sha256": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37",
+      "bytes": 8996
+    },
+    "ml/gecco_v5/calibration.py": {
+      "sha256": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+      "bytes": 14970
+    },
+    "ml/gecco_v5/evaluation.py": {
+      "sha256": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08",
+      "bytes": 7580
+    },
+    "ml/gecco_v5/runtime.py": {
+      "sha256": "7c00d744b73beacb2a491392612c6d77310ad16d200ddf444d41b381ae529118",
+      "bytes": 2635
+    },
+    "ml/gecco_baseline/metrics.py": {
+      "sha256": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+      "bytes": 11876
+    },
+    "ml/gecco_v2/alarm_policy.py": {
+      "sha256": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+      "bytes": 5873
+    },
+    "ml/gecco_v2/candidates_supervised.py": {
+      "sha256": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+      "bytes": 16647
+    }
+  },
+  "raw_sources": {
+    "data/external/new_holdout_candidate/eawag_ponds_active_learning/AL_Repo.zip": {
+      "sha256": "3c0fdc52a5d501d11afdd89e464f0bf794eaa409d3d5a958f6513bb6c94592b1",
+      "bytes": 27177506
+    }
+  },
+  "semantics": "Configuration and source hashes declared before first row/label parsing for this evaluation. Prior source exposure must be separately disclosed in configuration."
+}

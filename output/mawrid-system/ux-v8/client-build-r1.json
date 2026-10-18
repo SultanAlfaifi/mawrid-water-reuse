@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "created_at_utc": "2026-10-17T16:52:23.652Z",
+  "scope": "Single classic IIFE client entry, exact local source closure and static HTML integration. Browser behavior and application tests are verified separately.",
+  "node_version": "v25.6.0",
+  "external_assets_or_installs": false,
+  "browser_verified": false,
+  "source_js_changed": false,
+  "other_assets_removed": false,
+  "physical_hardware_connected": false,
+  "model_injected_or_promoted": false,
+  "source_sha256_before": {
+    "mawrid-system/client/api.js": "1941af2e313471b025957c216e0ca6c2b8e3f08cd9f7e4c7fce540cd070c81a9",
+    "mawrid-system/client/app.js": "b83d03866c4209a1b39f2e0f40d4b5884b58f74a874c9e0144ca31604f806f15",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/experience-state.js": "39c97c0fa961e6d7ad8ca8502ea548d6b30884b387fe3a2422b97d175c3c28b5",
+    "mawrid-system/client/guide-content.js": "6918cab6dfdb1341be36486d6cbe8a1b8f8e3135fe4782226ef0c43d5913589d",
+    "mawrid-system/client/guide.js": "d9e609aed386c8bf3d83decbe3767211b9926713dfe447e2688c8d338f8ad077",
+    "mawrid-system/client/plant.js": "35787759f5d284e14dc36595d47ee55e5fe816ae521e7e624bdb2c0f9c31975d",
+    "mawrid-system/client/presentation.js": "7c39ed9b3b0ad46ba956c2509314a7505cb022bafbe76608c252276abd69d234",
+    "mawrid-system/client/water-journey.js": "194d53cce79607def812d9fdf7d382f84d5e71025dc6de5b15f35b092dc00930"
+  },
+  "build_script_sha256_before": "9b6f89e3a59d98b66f62766e5e67269b32c915bac77c95bddfdf8a15a0a04116",
+  "index_html_sha256_before": "8eccae1f947a234638a6a6ebffcaaa19f6eb056ad5577de71cdd78ff076a9f49",
+  "index_html_before_backup": {
+    "path": "output/mawrid-system/ux-v8/client-build-r1.json.index-before.html",
+    "sha256": "8eccae1f947a234638a6a6ebffcaaa19f6eb056ad5577de71cdd78ff076a9f49"
+  },
+  "local_dependency_versions": {
+    "vite": "8.3.4",
+    "rolldown": "1.2.14"
+  },
+  "bundled_module_ids": [
+    "mawrid-system/client/api.js",
+    "mawrid-system/client/app.js",
+    "mawrid-system/client/charts.js",
+    "mawrid-system/client/experience-state.js",
+    "mawrid-system/client/guide-content.js",
+    "mawrid-system/client/guide.js",
+    "mawrid-system/client/plant.js",
+    "mawrid-system/client/presentation.js",
+    "mawrid-system/client/water-journey.js"
+  ],
+  "source_sha256_after": {
+    "mawrid-system/client/api.js": "1941af2e313471b025957c216e0ca6c2b8e3f08cd9f7e4c7fce540cd070c81a9",
+    "mawrid-system/client/app.js": "b83d03866c4209a1b39f2e0f40d4b5884b58f74a874c9e0144ca31604f806f15",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/experience-state.js": "39c97c0fa961e6d7ad8ca8502ea548d6b30884b387fe3a2422b97d175c3c28b5",
+    "mawrid-system/client/guide-content.js": "6918cab6dfdb1341be36486d6cbe8a1b8f8e3135fe4782226ef0c43d5913589d",
+    "mawrid-system/client/guide.js": "d9e609aed386c8bf3d83decbe3767211b9926713dfe447e2688c8d338f8ad077",
+    "mawrid-system/client/plant.js": "35787759f5d284e14dc36595d47ee55e5fe816ae521e7e624bdb2c0f9c31975d",
+    "mawrid-system/client/presentation.js": "7c39ed9b3b0ad46ba956c2509314a7505cb022bafbe76608c252276abd69d234",
+    "mawrid-system/client/water-journey.js": "194d53cce79607def812d9fdf7d382f84d5e71025dc6de5b15f35b092dc00930"
+  },
+  "build_script_sha256_after": "9b6f89e3a59d98b66f62766e5e67269b32c915bac77c95bddfdf8a15a0a04116",
+  "source_and_build_script_unchanged_during_build": true,
+  "compiled_file": {
+    "path": "mawrid-system/client/assets/mawrid-ui-1b17ffb42516.js",
+    "sha256": "1b17ffb425165eba711cc7dee866f27082572f9f75c737ec3891894b6e341824",
+    "bytes": 195578,
+    "format": "iife",
+    "classic_script_parse": "PASS",
+    "external_imports": [],
+    "dynamic_imports": []
+  },
+  "index_html_sha256_after": "f57e892783f54be178eaf88fd98d4f437f60f652bf8359bb508e94f7baf2f7e9",
+  "entry_script": "<script id=\"mawrid-entry\" defer src=\"./assets/mawrid-ui-1b17ffb42516.js\"></script>",
+  "source_sha256_final": {
+    "mawrid-system/client/api.js": "1941af2e313471b025957c216e0ca6c2b8e3f08cd9f7e4c7fce540cd070c81a9",
+    "mawrid-system/client/app.js": "b83d03866c4209a1b39f2e0f40d4b5884b58f74a874c9e0144ca31604f806f15",
+    "mawrid-system/client/charts.js": "d0c536108f2a26d09fba4a28b3eb8af13b962e8db11900248c4aac441ba92fad",
+    "mawrid-system/client/experience-state.js": "39c97c0fa961e6d7ad8ca8502ea548d6b30884b387fe3a2422b97d175c3c28b5",
+    "mawrid-system/client/guide-content.js": "6918cab6dfdb1341be36486d6cbe8a1b8f8e3135fe4782226ef0c43d5913589d",
+    "mawrid-system/client/guide.js": "d9e609aed386c8bf3d83decbe3767211b9926713dfe447e2688c8d338f8ad077",
+    "mawrid-system/client/plant.js": "35787759f5d284e14dc36595d47ee55e5fe816ae521e7e624bdb2c0f9c31975d",
+    "mawrid-system/client/presentation.js": "7c39ed9b3b0ad46ba956c2509314a7505cb022bafbe76608c252276abd69d234",
+    "mawrid-system/client/water-journey.js": "194d53cce79607def812d9fdf7d382f84d5e71025dc6de5b15f35b092dc00930"
+  },
+  "finished_at_utc": "2026-10-17T16:52:23.807Z"
+}

@@ -14,3 +14,41 @@ __pycache__/
 .site-build/
 .qa/
 output/brand/mawrid-identity-kit.zip
+
+# Local workspaces, private submission drafts and runtime state.
+/.bom10-work/
+/.camp-work/
+/.camp-final-work/
+/.cost-work/
+/tmp/
+/outputs/
+/output/documents/
+/output/presentations/
+/output/releases/
+/data/external/
+/mawrid-system/var/
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+
+# Research code and curated evidence are versioned; large artifacts are releases.
+*.joblib
+*.npz
+*.gz
+*.zip
+*.partial*
+*.lock
+!/package-lock.json
+!/mawrid-final/package-lock.json
+
+# Disposable build/review intermediates.
+/output/pdf/mawrid-engineering-en/review/
+/mawrid-final/MAWRID-delivery.zip
+
+# Keep the delivered engineering viewer available without a runtime build.
+!/mawrid-final/dist/
+!/mawrid-final/dist/**
+
+# Test transcripts are public evidence, not live application logs.
+!/output/mawrid-system/release-v0.3.0/*.log

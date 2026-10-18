@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-18",
+  "archive": {
+    "path": "output/releases/mawrid-v9-research-assets.zip",
+    "bytes": 24797225,
+    "sha256": "e359023288d526396c2e348f75fd8899a5d20acf1e7951c4713e0d170915d0ff",
+    "files": 82,
+    "uncompressed_bytes": 36777773,
+    "distribution": "Optional GitHub Release asset; not a Git working-tree dependency."
+  },
+  "checks": {
+    "v9_metadata_gates": {
+      "2019-04": {
+        "passed": true,
+        "development_acceptance_passed": false,
+        "production_hashes": 63
+      },
+      "2019_disclosed_test": {
+        "passed": true,
+        "development_acceptance_passed": false,
+        "production_hashes": 63
+      }
+    },
+    "qualification_hash_and_scope_checks": true,
+    "qualified_current_code_files": 72,
+    "environment_checked_at_packaging": false,
+    "environment_requirement_preserved": {
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "python": "3.12.1",
+      "pandas": "3.0.6",
+      "numpy": "2.5.4",
+      "threadpool_limit": 1
+    },
+    "sensor_rows_decoded_at_packaging": false,
+    "joblib_loaded_at_packaging": false,
+    "training_or_inference_at_packaging": false,
+    "scope": "Metadata, byte hashes, case records, and archive integrity only. Environment equality and numerical inference were not rerun."
+  },
+  "internal_manifest_path": "RESEARCH-ASSETS-MANIFEST.json",
+  "members": [
+    {
+      "path": "RESEARCH-ASSETS-MANIFEST.json",
+      "bytes": 17902,
+      "sha256": "356432389aacec13834762317ab4bf0bb5c393f3938652e9faebf281b7b2cf7b"
+    },
+    {
+      "path": "RESEARCH-ASSETS-README.txt",
+      "bytes": 2678,
+      "sha256": "302fb29b7602bc5c7d950f7f7cbaabb1614eba42d705d8d6a8ed54f0cacfe33d"
+    },
+    {
+      "path": "data/external-sources.json",
+      "bytes": 5332,
+      "sha256": "b704d616fe1f7c785dd84488e7cdbd225cb456ba424645233c9dc76a5ccc4823"
+    },
+    {
+      "path": "ml/gecco_stream_fidelity/PANDAS_LICENSE",
+      "bytes": 1634,
+      "sha256": "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae"
+    },
+    {
+      "path": "output/ml/gecco-stream-fidelity/actual_prefix_verification.json",
+      "bytes": 7592,
+      "sha256": "4313b8dccc03fac24a66b71f472699d3fa13719be4e4e26d70580b67c49519ad"
+    },
+    {
+      "path": "output/ml/gecco-stream-fidelity/input_qualification.json",
+      "bytes": 2973,
+      "sha256": "153d34477fc9cd1c066705bc78e9359e299dee5a9f26a0fee96ae8a852650ebf"
+    },
+    {
+      "path": "output/ml/gecco-stream-fidelity/prototype-demo/2019-04_first1600_sensors.csv",
+      "bytes": 126234,
+      "sha256": "b0cf8a14c1ccc221b5c0145e25d6b5844be0f15549b1ac4374c6d9fe5fe9abfa"
+    },
+    {
+      "path": "output/ml/gecco-stream-fidelity/prototype-demo/2019_disclosed_test_first1600_sensors.csv",
+      "bytes": 183191,
+      "sha256": "f599e8a3ab824ff1500f625e52b0657afa59d458b1dadec9e365ead43662714e"
+    },
+    {
+      "path": "output/ml/gecco-stream-fidelity/verification_plan.json",
+      "bytes": 8372,
+      "sha256": "d8772205df7089c03298531de375f11af2207927e747c2c85ee3665a21c2e68a"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/2019-04/bundle.joblib",
+      "bytes": 21639741,
+      "sha256": "82ab3609d7aa05220c7378743baca55a5111d92234e05e7aaadfe383a94494d1"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/2019-04/freeze.json",
+      "bytes": 321764,
+      "sha256": "307a731dd13224f0eaba4256e6664b8252fb4d89884f9abffe69047290d45e90"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/2019-04/results.json",
+      "bytes": 426095,
+      "sha256": "048c35a13e33cbf450139a301fdb6189748107edc9a230efd69b5531c4570219"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/2019_disclosed_test/bundle.joblib",
+      "bytes": 2616063,
+      "sha256": "445141c316b30d46a1dff88a87151d61757c8858318bce17421f051f125e9a4d"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/2019_disclosed_test/freeze.json",
+      "bytes": 79339,
+      "sha256": "4c13f0cd40ff2d6b089b23bcd333e57b3c299fba3bcb2bd89f808b5ae0c51aa3"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/2019_disclosed_test/results.json",
+      "bytes": 149194,
+      "sha256": "e7de753cbc3972d4b5a283d581b7cc8d8bd25f6afc31a07c0de194efe2c2c506"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/audit.json",
+      "bytes": 3061904,
+      "sha256": "46093c7b627f66ce491bff74a68139ffc235248db44d9f5855f61e3b3e5cf18d"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/plan.json",
+      "bytes": 10649,
+      "sha256": "fb2235913e0fdcde4273e2f5a3a3e28c7372d662deb4a96d57e00def239987f2"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/results.json",
+      "bytes": 7522120,
+      "sha256": "4d4770163d9213046d7dcf12cd4dd097345088da7a311aae1b34691c4715f243"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_baseline/metrics.py",
+      "bytes": 11876,
+      "sha256": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v2/alarm_policy.py",
+      "bytes": 5873,
+      "sha256": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v2/candidates_supervised.py",
+      "bytes": 16647,
+      "sha256": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v5/calibration.py",
+      "bytes": 14970,
+      "sha256": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v5/evaluation.py",
+      "bytes": 7580,
+      "sha256": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v5/normal_support.py",
+      "bytes": 8996,
+      "sha256": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v5/recovery_candidate.py",
+      "bytes": 9620,
+      "sha256": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v5/reproducible_explore.py",
+      "bytes": 11277,
+      "sha256": "887b16425539f758bd32043cb080fcbc3f0fa3109a2659184ba7864934d13c1b"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v5/supported_candidate.py",
+      "bytes": 2139,
+      "sha256": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/audit_run04.py",
+      "bytes": 4021,
+      "sha256": "508046a6313e8f9fba48a1112a23015bc9a81ebfebf2963e49017985f34c4b27"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/build_development_report.py",
+      "bytes": 9302,
+      "sha256": "eed26f2b2e61280f9dd39a0fe4e9a83cf241a391ad08385cd35afb7082685278"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/corroborated_rescue.py",
+      "bytes": 1367,
+      "sha256": "166d38dba2ddfcd51ba33a04e74bc199b4833beb4c15209f388f4fd187d53d7b"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/departure_scores.py",
+      "bytes": 778,
+      "sha256": "439b552e422c46e8ce021a689cded6ae6355bae8cd92582c7ce39d052ae3164b"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/development.py",
+      "bytes": 9886,
+      "sha256": "9f38406b8ea368e88bcf9379482eb7e17f559decbc29dadefe37895827be44b0"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/development_v2.py",
+      "bytes": 10745,
+      "sha256": "a00e64fe5c80ff11b07d9d0b72b44a08b1532a0f39b1f8e60cf7bcabb2620750"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/development_v3.py",
+      "bytes": 11132,
+      "sha256": "464a7337f6667473af7e658ba0d3ad10a351f644d63039cc251316d54a387ba1"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/development_v4.py",
+      "bytes": 11444,
+      "sha256": "e1082b5be8447713f92b473be07fe8f175e3b1e5e00eb1a4ea61aa16702d0e88"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/guarded_suppression.py",
+      "bytes": 805,
+      "sha256": "f25b3aa7f5caa0d5ecdddb0b112b9ae88846f3fd82cd902e4b0cfb770e7bb27a"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/joint_calibration.py",
+      "bytes": 7674,
+      "sha256": "0243e4402b1da5582df73eeac225328ea6d48aa8df35bfebebb5923cfbf917cd"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/joint_calibration_v2.py",
+      "bytes": 7830,
+      "sha256": "bbd1a3b81437d71468a2ccd694049b802220d57aecc11b83922bfd01958b2b23"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/latched_suppression.py",
+      "bytes": 12645,
+      "sha256": "7d65a2cb24c93eeac0fa0e7cb0c89837cf4110456fa1494ab877dba93cb8924d"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/local_change.py",
+      "bytes": 8765,
+      "sha256": "bffc42d3a85fe9c4e91b7d5418e4187701645f7ed2a45f5c23aa763de3777396"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/partially_labeled_model.py",
+      "bytes": 4068,
+      "sha256": "c49c230fe274b7154924988a3edf6cbc7879fd4c0b3d52ff3496e83bf9eb44d7"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/runtime_v4.py",
+      "bytes": 11469,
+      "sha256": "69caebab5a6541968db76f358d55435c14851fa41be92bb5847796b8d5d38032"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/source_joint_calibration.py",
+      "bytes": 8033,
+      "sha256": "9192ccc264fadb663b8f88a06244c44f9598b14b09b3bd4cbc99278b7c0f7131"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/source_suppression.py",
+      "bytes": 11221,
+      "sha256": "6f85639855eb733aa44e9e8072a39001bdbf1c123af781c486b6e014ac74c5da"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_corroborated_rescue.py",
+      "bytes": 1398,
+      "sha256": "046c9de4e144c7db1fc9b11bc6c17f51edc99497e1c6d74255009f61155e8fea"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_guarded_suppression.py",
+      "bytes": 1021,
+      "sha256": "41f4fdfbc66f76b210510c63d876727b97a06f9859e796c654f58879193fc62e"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_joint_calibration.py",
+      "bytes": 2800,
+      "sha256": "d27bb40d3cda48d0b58a9f90aa06205a4a4d2aa1d6187eb2cd2e233ba8f08f58"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_latched_suppression.py",
+      "bytes": 1523,
+      "sha256": "4dceb5cf9e8a3b38d00ef140e4b5228b880e54d9e26ca4da507cfc8ef339ed81"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_local_change.py",
+      "bytes": 9796,
+      "sha256": "1fab7bb4725e7ab6bb5926cc9e563545902daf0d6af52935382e65e8396ebcbb"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_partially_labeled_model.py",
+      "bytes": 3099,
+      "sha256": "359d87dec20767725d28e94d5baaf7715ec2543532b968f41b3cec778f4a5794"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_runtime_v4.py",
+      "bytes": 10406,
+      "sha256": "55bb2630e09d697b33db948dd3a037e9335a9eb8fc12b5e275675d48280832d4"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_source_calibration.py",
+      "bytes": 3083,
+      "sha256": "824a472d7987ecd2d05a5470c8ec9f7c53c4467b4122324bcacc25c7d2406cee"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_unknown_label_metrics.py",
+      "bytes": 14747,
+      "sha256": "fddede36a4774d7773022f243f8b89e50dec23c27d2a0745c1afdcf2590e0d07"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_waterhub_adapter.py",
+      "bytes": 15078,
+      "sha256": "675d7afbf94df53ae31550b13810cebb1c5b04e1a252df4c6f73aef8869496b3"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_waterhub_evaluation.py",
+      "bytes": 17307,
+      "sha256": "ac64c41aba005d2f77ea9a00bc1719d03aa2a1392446e90da434febce61a6c42"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/test_waterhub_loader.py",
+      "bytes": 14849,
+      "sha256": "dc5c95f76139a338b1a46e63398486b1616dfb31d2df3cf2e2ed1a859529bd8a"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/unknown_label_metrics.py",
+      "bytes": 12886,
+      "sha256": "46fb870eb6f6cae6203d4431d95f91e3907413106d6f8d7926480671e0c5f7cf"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/waterhub_adapter.py",
+      "bytes": 14487,
+      "sha256": "0aa2c0393883e41e72fc3b62de03f2fa66e7c7d8697018895a860a50e6478c0f"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/waterhub_evaluation.py",
+      "bytes": 17384,
+      "sha256": "78b507d9b6d15cb245d5e925771cec0f4840f664d950d7dbe3b699159a2e77e4"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v6/waterhub_loader.py",
+      "bytes": 13287,
+      "sha256": "d96cbcc4f4fb0d6b6ee91b9827a02dcd5e3aa6c44714aeb5f78d5e7f5715200a"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/calibration.py",
+      "bytes": 17435,
+      "sha256": "0d9750a99d62a32bd4ec3ab9c717dc6b7c44533d994e1bfb95de774ebd18bd4c"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/calibration_certified.py",
+      "bytes": 13339,
+      "sha256": "1f6809a73ebead4746f771a526d6ee7c5ac4987bd4d16aa4e21b3f3775f86fce"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/calibration_delayed.py",
+      "bytes": 17569,
+      "sha256": "6fbc506f1d4b38f1670dd2cd1e04c4068d5a70d3c9033978c2d4ead2435586fe"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/calibration_v2.py",
+      "bytes": 12676,
+      "sha256": "f1ab5802413347c6dde76024887cf7efe4c4f8249e5e5612e257ceef779d2ed3"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/development.py",
+      "bytes": 18203,
+      "sha256": "790e70ac69a1f30711e68b6d2c3c457908007c83537d9eba94750e640fba46b9"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/development_v2.py",
+      "bytes": 19212,
+      "sha256": "e4679e1c50311d9eea5193965aa4212d78bb2ba7721f38236699045923253bd4"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/evidence.py",
+      "bytes": 1364,
+      "sha256": "3690aa84f9ce5dc3e7d29c0e4e7b7473672a5fec5c237124023c4b5c582df7df"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/long_context.py",
+      "bytes": 18876,
+      "sha256": "34b6b85a5b993dc498d7a13f6bee8434ebd1f44e9ae23a5efc6e7f02712ee0e7"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/long_context_hgb.py",
+      "bytes": 4569,
+      "sha256": "d435fd91727e8e3f229d514e1aba2d87730c6f816bd012d75b3fb736c88e69bc"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/recalibrate_certified.py",
+      "bytes": 15004,
+      "sha256": "a48a2d3077ed20d1920fe0f8d1c5eeffec49fb1386804058fea157a60a47471f"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/recalibrate_delayed.py",
+      "bytes": 13934,
+      "sha256": "d0bcf2264ff51e557424e789ce897fec089d60edbe0c9fb7962f65b9bfae2597"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/runtime.py",
+      "bytes": 2108,
+      "sha256": "f1be43e083c9f4f7d5e34761970c5f506f8e452c0a40b6211d6f827d6a579f39"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/runtime_certified.py",
+      "bytes": 510,
+      "sha256": "dd321b6a4e6aebf688c131de776ff3ce201298b3bb312aa637630d3d38c8e7da"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/runtime_delayed.py",
+      "bytes": 1908,
+      "sha256": "1488a9c5ee0e9368adaf07b397a59a1eaa2d119711f1acae08a78e24bc012847"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v7/runtime_v2.py",
+      "bytes": 2359,
+      "sha256": "ad5e7cbee574599b995771dd4842c9039836bce84f0b32116dc53ee6a4559406"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v8/development.py",
+      "bytes": 12675,
+      "sha256": "f95805a26d4abf800369c6b4c36025527cae06f2454306dca31e0dd63128dbe3"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v8/onset.py",
+      "bytes": 8627,
+      "sha256": "5158441e5727c050423ce398d1e8695815030e4d8fe31e75018476aac7573863"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v8/runtime.py",
+      "bytes": 509,
+      "sha256": "e84bc277dc36881bbea1dda8632eca38ed0c6c2b858f20aef54b05e3deded5c3"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v9/conditional.py",
+      "bytes": 12677,
+      "sha256": "e0cedecdc0fba6176ff8009e784789330e3e1c8249a3e4deffc818ab818cea11"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v9/development.py",
+      "bytes": 14581,
+      "sha256": "106791f0de2f56767d496d9c6de9f41d05a75de240fce572ac73d4b8499bf695"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/source/ml/gecco_v9/runtime.py",
+      "bytes": 521,
+      "sha256": "8251712fefcd23267d71e27aa476d5a3725ba9860825942ccc47cc36ff0557d7"
+    },
+    {
+      "path": "output/ml/gecco-v9-development/run_01/streaming_audit.json",
+      "bytes": 13026,
+      "sha256": "630a4e30d7c6d33dfdd408ff1b64c406701fa23caf17605ca831937bd09312c3"
+    }
+  ]
+}

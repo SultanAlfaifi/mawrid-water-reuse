@@ -1,0 +1,2 @@
+event_id,start,end,duration_minutes,boundary_censored,valid_count,unavailable_count,fully_unscorable,detected,first_alarm_index,detection_delay_minutes,covered_at_onset,new_alarm_inside_event,new_alarm_start_index,new_alarm_delay_minutes,new_alarm_previous_unavailable,new_alarm_previous_unknown,confirmed_new_alarm_inside_event,confirmed_new_alarm_index,confirmed_new_alarm_delay_minutes,alarm_started_at_onset,detection_kind
+1,20591,20668,77,False,77,0,False,True,20591,0,True,True,20591,0,False,False,True,20591,0,True,covered_at_onset

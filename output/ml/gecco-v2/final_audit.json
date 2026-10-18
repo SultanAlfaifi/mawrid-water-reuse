@@ -1,0 +1,259 @@
+{
+  "status": "pass",
+  "audited_at_utc": "2026-10-16T05:48:55.822567+00:00",
+  "audit_code_sha256": "3c43fa7b915309a668ddd34c9e9bf98fb0a4d697f9193f0bb6d285686a27a788",
+  "declared_protocol_sha256": "3e29a4d1bd62a444c5121525a50b35b04e68366c44e455d2deff4e7d980b3b2e",
+  "checks_performed": 62762,
+  "findings": [],
+  "summary": {
+    "fold_1": {
+      "baseline": {
+        "tp": 335,
+        "fp": 139,
+        "fn": 214,
+        "tn": 13090,
+        "f1": 0.6549364613880743,
+        "true_events": 15,
+        "confirmed_new_alarm_inside_events": 14,
+        "false_alarm_runs_per_normal_day": 6.857661198881246,
+        "normal_time_under_alarm": 0.010507218988585683
+      },
+      "v2": {
+        "tp": 28,
+        "fp": 0,
+        "fn": 521,
+        "tn": 13229,
+        "f1": 0.09705372616984402,
+        "true_events": 15,
+        "confirmed_new_alarm_inside_events": 1,
+        "false_alarm_runs_per_normal_day": 0.0,
+        "normal_time_under_alarm": 0.0
+      }
+    },
+    "fold_2": {
+      "baseline": {
+        "tp": 37,
+        "fp": 61,
+        "fn": 442,
+        "tn": 13237,
+        "f1": 0.12824956672443674,
+        "true_events": 15,
+        "confirmed_new_alarm_inside_events": 5,
+        "false_alarm_runs_per_normal_day": 1.624304406677696,
+        "normal_time_under_alarm": 0.0045871559633027525
+      },
+      "v2": {
+        "tp": 168,
+        "fp": 245,
+        "fn": 311,
+        "tn": 13053,
+        "f1": 0.37668161434977576,
+        "true_events": 15,
+        "confirmed_new_alarm_inside_events": 2,
+        "false_alarm_runs_per_normal_day": 3.140321852910212,
+        "normal_time_under_alarm": 0.01842382313129794
+      }
+    },
+    "fold_3": {
+      "baseline": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 174,
+        "tn": 13598,
+        "f1": 0.0,
+        "true_events": 6,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.10589013898080742,
+        "normal_time_under_alarm": 7.353481873667182e-05
+      },
+      "v2": {
+        "tp": 0,
+        "fp": 18,
+        "fn": 174,
+        "tn": 13581,
+        "f1": 0.0,
+        "true_events": 6,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.42356055592322966,
+        "normal_time_under_alarm": 0.0013236267372600927
+      }
+    },
+    "fold_4": {
+      "baseline": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 13776,
+        "f1": 0.0,
+        "true_events": 0,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.10452202946940553,
+        "normal_time_under_alarm": 7.258474268708717e-05
+      },
+      "v2": {
+        "tp": 0,
+        "fp": 67,
+        "fn": 0,
+        "tn": 13710,
+        "f1": 0.0,
+        "true_events": 0,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.10452202946940553,
+        "normal_time_under_alarm": 0.00486317776003484
+      }
+    },
+    "fold_5": {
+      "baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 13776,
+        "f1": null,
+        "true_events": 0,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 0.0,
+        "normal_time_under_alarm": 0.0
+      },
+      "v2": {
+        "tp": 0,
+        "fp": 153,
+        "fn": 0,
+        "tn": 13623,
+        "f1": 0.0,
+        "true_events": 0,
+        "confirmed_new_alarm_inside_events": 0,
+        "false_alarm_runs_per_normal_day": 1.5679442508710801,
+        "normal_time_under_alarm": 0.011106271777003485
+      }
+    },
+    "fold_6": {
+      "baseline": {
+        "tp": 29,
+        "fp": 14,
+        "fn": 48,
+        "tn": 13564,
+        "f1": 0.48333333333333334,
+        "true_events": 1,
+        "confirmed_new_alarm_inside_events": 1,
+        "false_alarm_runs_per_normal_day": 0.6363234644277508,
+        "normal_time_under_alarm": 0.0010310796877301518
+      },
+      "v2": {
+        "tp": 76,
+        "fp": 297,
+        "fn": 1,
+        "tn": 13281,
+        "f1": 0.3377777777777778,
+        "true_events": 1,
+        "confirmed_new_alarm_inside_events": 1,
+        "false_alarm_runs_per_normal_day": 2.969509500662837,
+        "normal_time_under_alarm": 0.021873619089703932
+      }
+    },
+    "csv_score_roundtrip": {
+      "baseline_score": {
+        "maximum_absolute_difference": 5.551115123125783e-17,
+        "changed_float_values": 34967,
+        "absolute_tolerance": 1e-15,
+        "note": "Combined CSV scores were parsed and reserialized by the runner; all decisions, labels and row identities must remain exact. Frozen per-partition scores are used for policy replay."
+      },
+      "v2_score": {
+        "maximum_absolute_difference": 1.1102230246251565e-16,
+        "changed_float_values": 57617,
+        "absolute_tolerance": 1e-15,
+        "note": "Combined CSV scores were parsed and reserialized by the runner; all decisions, labels and row identities must remain exact. Frozen per-partition scores are used for policy replay."
+      }
+    },
+    "walk_forward_2018": {
+      "baseline": {
+        "tp": 401,
+        "fp": 216,
+        "fn": 878,
+        "tn": 81041,
+        "f1": 0.4229957805907173,
+        "true_events": 37,
+        "confirmed_new_alarm_inside_events": 20,
+        "false_alarm_runs_per_normal_day": 1.5240533123300146,
+        "normal_time_under_alarm": 0.0026582325215058393
+      },
+      "v2": {
+        "tp": 272,
+        "fp": 780,
+        "fn": 1007,
+        "tn": 80477,
+        "f1": 0.23337623337623337,
+        "true_events": 37,
+        "confirmed_new_alarm_inside_events": 4,
+        "false_alarm_runs_per_normal_day": 1.3645593610396642,
+        "normal_time_under_alarm": 0.009599172994326643
+      }
+    },
+    "global_original_event_ids": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "external_2019": {
+      "baseline": {
+        "tp": 28,
+        "fp": 104,
+        "fn": 130,
+        "tn": 26986,
+        "f1": 0.19310344827586207,
+        "true_events": 12,
+        "confirmed_new_alarm_inside_events": 5,
+        "false_alarm_runs_per_normal_day": 3.8272425249169437,
+        "normal_time_under_alarm": 0.0038390550018456994
+      },
+      "v2": {
+        "tp": 111,
+        "fp": 21,
+        "fn": 47,
+        "tn": 27069,
+        "f1": 0.7655172413793103,
+        "true_events": 12,
+        "confirmed_new_alarm_inside_events": 9,
+        "false_alarm_runs_per_normal_day": 0.7973421926910299,
+        "normal_time_under_alarm": 0.0007751937984496124
+      }
+    }
+  },
+  "independent_implementation": "No production metrics, selection, policy or model module imported",
+  "external_source_access": "Only after existence of final external results and every required output was checked",
+  "scope": "Saved scores/predictions, metric recomputation, selection ranking, calibration constraints, source axes, hashes and chronology; models not retrained",
+  "audit_pass_does_not_imply_model_improvement": true
+}

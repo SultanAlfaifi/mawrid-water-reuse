@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "development_only": true,
+  "model_acceptance_claim": false,
+  "research_preview_only": true,
+  "created_at_utc": "2026-10-17T04:53:27.789942+00:00",
+  "streaming_sha256": "297fb1680808a46b259e9474539aaf54be20a49a6847202539aafe2fb078fa2d",
+  "runtime_code_sha256": {
+    "ml/gecco_baseline/metrics.py": "3d29e0714062717cecafb48a60bb6dc80d4934091547d5b60f68cdb37c21327f",
+    "ml/gecco_v2/alarm_policy.py": "54a1106129732780e5ab8ebb5661df61efc177298aca11bb715aa3a1e7f14262",
+    "ml/gecco_v2/candidates_supervised.py": "99ba06976db5c01693bcfffa4b1c0eb95c243133f8a63def4ca55c65975c22c2",
+    "ml/gecco_v5/calibration.py": "cb57062a7750e07cfc6b8e04f51998a1580ebc46fcb0d57abe6da56b905ae0b2",
+    "ml/gecco_v5/evaluation.py": "6c076746164a46b437c04b7028dc94b7a8e27c3850b25bf7847fc9306b929d08",
+    "ml/gecco_v5/normal_support.py": "52b1ea78815f8d1f4eed15fa7879f716290ff73bc624fa703edbd0c655432b37",
+    "ml/gecco_v5/recovery_candidate.py": "3017ed7ea7a3d3bb14abf310aaa3d6080e6532f6eca9986a663e997b2b245088",
+    "ml/gecco_v5/reproducible_explore.py": "887b16425539f758bd32043cb080fcbc3f0fa3109a2659184ba7864934d13c1b",
+    "ml/gecco_v5/supported_candidate.py": "ff3fb24f1b620fd13fc1efc8df6d7b93f61684ce832497677644e70f099f4626",
+    "ml/gecco_v6/audit_run04.py": "508046a6313e8f9fba48a1112a23015bc9a81ebfebf2963e49017985f34c4b27",
+    "ml/gecco_v6/build_development_report.py": "eed26f2b2e61280f9dd39a0fe4e9a83cf241a391ad08385cd35afb7082685278",
+    "ml/gecco_v6/corroborated_rescue.py": "166d38dba2ddfcd51ba33a04e74bc199b4833beb4c15209f388f4fd187d53d7b",
+    "ml/gecco_v6/departure_scores.py": "439b552e422c46e8ce021a689cded6ae6355bae8cd92582c7ce39d052ae3164b",
+    "ml/gecco_v6/development.py": "9f38406b8ea368e88bcf9379482eb7e17f559decbc29dadefe37895827be44b0",
+    "ml/gecco_v6/development_v2.py": "a00e64fe5c80ff11b07d9d0b72b44a08b1532a0f39b1f8e60cf7bcabb2620750",
+    "ml/gecco_v6/development_v3.py": "464a7337f6667473af7e658ba0d3ad10a351f644d63039cc251316d54a387ba1",
+    "ml/gecco_v6/development_v4.py": "e1082b5be8447713f92b473be07fe8f175e3b1e5e00eb1a4ea61aa16702d0e88",
+    "ml/gecco_v6/guarded_suppression.py": "f25b3aa7f5caa0d5ecdddb0b112b9ae88846f3fd82cd902e4b0cfb770e7bb27a",
+    "ml/gecco_v6/joint_calibration.py": "0243e4402b1da5582df73eeac225328ea6d48aa8df35bfebebb5923cfbf917cd",
+    "ml/gecco_v6/joint_calibration_v2.py": "bbd1a3b81437d71468a2ccd694049b802220d57aecc11b83922bfd01958b2b23",
+    "ml/gecco_v6/latched_suppression.py": "7d65a2cb24c93eeac0fa0e7cb0c89837cf4110456fa1494ab877dba93cb8924d",
+    "ml/gecco_v6/local_change.py": "bffc42d3a85fe9c4e91b7d5418e4187701645f7ed2a45f5c23aa763de3777396",
+    "ml/gecco_v6/partially_labeled_model.py": "c49c230fe274b7154924988a3edf6cbc7879fd4c0b3d52ff3496e83bf9eb44d7",
+    "ml/gecco_v6/runtime_v4.py": "69caebab5a6541968db76f358d55435c14851fa41be92bb5847796b8d5d38032",
+    "ml/gecco_v6/source_joint_calibration.py": "9192ccc264fadb663b8f88a06244c44f9598b14b09b3bd4cbc99278b7c0f7131",
+    "ml/gecco_v6/source_suppression.py": "6f85639855eb733aa44e9e8072a39001bdbf1c123af781c486b6e014ac74c5da",
+    "ml/gecco_v6/test_corroborated_rescue.py": "046c9de4e144c7db1fc9b11bc6c17f51edc99497e1c6d74255009f61155e8fea",
+    "ml/gecco_v6/test_guarded_suppression.py": "41f4fdfbc66f76b210510c63d876727b97a06f9859e796c654f58879193fc62e",
+    "ml/gecco_v6/test_joint_calibration.py": "d27bb40d3cda48d0b58a9f90aa06205a4a4d2aa1d6187eb2cd2e233ba8f08f58",
+    "ml/gecco_v6/test_latched_suppression.py": "4dceb5cf9e8a3b38d00ef140e4b5228b880e54d9e26ca4da507cfc8ef339ed81",
+    "ml/gecco_v6/test_local_change.py": "1fab7bb4725e7ab6bb5926cc9e563545902daf0d6af52935382e65e8396ebcbb",
+    "ml/gecco_v6/test_partially_labeled_model.py": "359d87dec20767725d28e94d5baaf7715ec2543532b968f41b3cec778f4a5794",
+    "ml/gecco_v6/test_runtime_v4.py": "55bb2630e09d697b33db948dd3a037e9335a9eb8fc12b5e275675d48280832d4",
+    "ml/gecco_v6/test_source_calibration.py": "824a472d7987ecd2d05a5470c8ec9f7c53c4467b4122324bcacc25c7d2406cee",
+    "ml/gecco_v6/test_unknown_label_metrics.py": "fddede36a4774d7773022f243f8b89e50dec23c27d2a0745c1afdcf2590e0d07",
+    "ml/gecco_v6/test_waterhub_adapter.py": "675d7afbf94df53ae31550b13810cebb1c5b04e1a252df4c6f73aef8869496b3",
+    "ml/gecco_v6/test_waterhub_evaluation.py": "ac64c41aba005d2f77ea9a00bc1719d03aa2a1392446e90da434febce61a6c42",
+    "ml/gecco_v6/test_waterhub_loader.py": "dc5c95f76139a338b1a46e63398486b1616dfb31d2df3cf2e2ed1a859529bd8a",
+    "ml/gecco_v6/unknown_label_metrics.py": "46fb870eb6f6cae6203d4431d95f91e3907413106d6f8d7926480671e0c5f7cf",
+    "ml/gecco_v6/waterhub_adapter.py": "0aa2c0393883e41e72fc3b62de03f2fa66e7c7d8697018895a860a50e6478c0f",
+    "ml/gecco_v6/waterhub_evaluation.py": "78b507d9b6d15cb245d5e925771cec0f4840f664d950d7dbe3b699159a2e77e4",
+    "ml/gecco_v6/waterhub_loader.py": "d96cbcc4f4fb0d6b6ee91b9827a02dcd5e3aa6c44714aeb5f78d5e7f5715200a",
+    "ml/gecco_v7/calibration.py": "0d9750a99d62a32bd4ec3ab9c717dc6b7c44533d994e1bfb95de774ebd18bd4c",
+    "ml/gecco_v7/calibration_certified.py": "1f6809a73ebead4746f771a526d6ee7c5ac4987bd4d16aa4e21b3f3775f86fce",
+    "ml/gecco_v7/calibration_delayed.py": "6fbc506f1d4b38f1670dd2cd1e04c4068d5a70d3c9033978c2d4ead2435586fe",
+    "ml/gecco_v7/calibration_v2.py": "f1ab5802413347c6dde76024887cf7efe4c4f8249e5e5612e257ceef779d2ed3",
+    "ml/gecco_v7/development.py": "790e70ac69a1f30711e68b6d2c3c457908007c83537d9eba94750e640fba46b9",
+    "ml/gecco_v7/development_v2.py": "e4679e1c50311d9eea5193965aa4212d78bb2ba7721f38236699045923253bd4",
+    "ml/gecco_v7/evidence.py": "3690aa84f9ce5dc3e7d29c0e4e7b7473672a5fec5c237124023c4b5c582df7df",
+    "ml/gecco_v7/long_context.py": "34b6b85a5b993dc498d7a13f6bee8434ebd1f44e9ae23a5efc6e7f02712ee0e7",
+    "ml/gecco_v7/long_context_hgb.py": "d435fd91727e8e3f229d514e1aba2d87730c6f816bd012d75b3fb736c88e69bc",
+    "ml/gecco_v7/recalibrate_certified.py": "a48a2d3077ed20d1920fe0f8d1c5eeffec49fb1386804058fea157a60a47471f",
+    "ml/gecco_v7/recalibrate_delayed.py": "d0bcf2264ff51e557424e789ce897fec089d60edbe0c9fb7962f65b9bfae2597",
+    "ml/gecco_v7/runtime.py": "f1be43e083c9f4f7d5e34761970c5f506f8e452c0a40b6211d6f827d6a579f39",
+    "ml/gecco_v7/runtime_certified.py": "dd321b6a4e6aebf688c131de776ff3ce201298b3bb312aa637630d3d38c8e7da",
+    "ml/gecco_v7/runtime_delayed.py": "1488a9c5ee0e9368adaf07b397a59a1eaa2d119711f1acae08a78e24bc012847",
+    "ml/gecco_v7/runtime_v2.py": "ad5e7cbee574599b995771dd4842c9039836bce84f0b32116dc53ee6a4559406",
+    "ml/gecco_v8/development.py": "f95805a26d4abf800369c6b4c36025527cae06f2454306dca31e0dd63128dbe3",
+    "ml/gecco_v8/onset.py": "5158441e5727c050423ce398d1e8695815030e4d8fe31e75018476aac7573863",
+    "ml/gecco_v8/runtime.py": "e84bc277dc36881bbea1dda8632eca38ed0c6c2b858f20aef54b05e3deded5c3",
+    "ml/gecco_v9/conditional.py": "e0cedecdc0fba6176ff8009e784789330e3e1c8249a3e4deffc818ab818cea11",
+    "ml/gecco_v9/development.py": "106791f0de2f56767d496d9c6de9f41d05a75de240fce572ac73d4b8499bf695",
+    "ml/gecco_v9/runtime.py": "8251712fefcd23267d71e27aa476d5a3725ba9860825942ccc47cc36ff0557d7",
+    "ml/gecco_v9/streaming.py": "297fb1680808a46b259e9474539aaf54be20a49a6847202539aafe2fb078fa2d",
+    "ml/gecco_v9/verify_stream.py": "b811827723176333cec6dac814afe4fcc3313d1f9d4d2619e95cefa6ce26ff91"
+  },
+  "batch_audit_sha256": "46093c7b627f66ce491bff74a68139ffc235248db44d9f5855f61e3b3e5cf18d",
+  "verified_bundle_sha256": {
+    "2019_disclosed_test": "445141c316b30d46a1dff88a87151d61757c8858318bce17421f051f125e9a4d"
+  },
+  "cases": [
+    {
+      "tested_sample_bounds": [
+        0,
+        1600
+      ],
+      "full_period_tested": false,
+      "exact_prediction_masks": true,
+      "score_tolerance": 1e-12,
+      "score_relative_tolerance": 0.0,
+      "maximum_absolute_score_error": {
+        "individual": {
+          "baseline_score": 0.0,
+          "shape_raw": 0.0,
+          "level": 0.0,
+          "jump": 0.0,
+          "sustained": 4.440892098500626e-16,
+          "guarded_shape": 0.0,
+          "rescue__level": 0.0,
+          "rescue__jump": 0.0,
+          "rescue__sustained": 2.220446049250313e-16,
+          "rescue__shape_raw": 0.0,
+          "long_context": 0.0,
+          "guarded_long_context": 0.0,
+          "rescue_long_context": 0.0
+        },
+        "chunked": {
+          "baseline_score": 0.0,
+          "shape_raw": 0.0,
+          "level": 0.0,
+          "jump": 0.0,
+          "sustained": 4.440892098500626e-16,
+          "guarded_shape": 0.0,
+          "rescue__level": 0.0,
+          "rescue__jump": 0.0,
+          "rescue__sustained": 2.220446049250313e-16,
+          "rescue__shape_raw": 0.0,
+          "long_context": 0.0,
+          "guarded_long_context": 0.0,
+          "rescue_long_context": 0.0
+        }
+      },
+      "chunk_boundaries": [
+        0,
+        1,
+        17,
+        119,
+        120,
+        121,
+        180,
+        801,
+        1560,
+        1561,
+        1600
+      ],
+      "batch_seconds": 0.10536266598501243,
+      "latency_seconds": {
+        "individual_all_rows": {
+          "rows": 1600,
+          "total_seconds": 45.926149415492546,
+          "mean_seconds": 0.02870384338468284,
+          "p50_seconds": 0.03044945800502319,
+          "p95_seconds": 0.03741473126574419,
+          "maximum_seconds": 0.09559979097684845
+        },
+        "individual_after_gap": {
+          "rows": 1480,
+          "total_seconds": 45.919995751348324,
+          "mean_seconds": 0.031027024156316436,
+          "p50_seconds": 0.03103612498671282,
+          "p95_seconds": 0.037489354802528393,
+          "maximum_seconds": 0.09559979097684845
+        },
+        "chunked_total": 45.48120458301855
+      },
+      "memory_metrics": {
+        "maximum_runtime_history": {
+          "sensor_rows": 1441,
+          "reference_sensor_rows": 75,
+          "reference_score_rows": 5,
+          "rescue_score_rows": 5,
+          "mutable_state_bytes": 375875
+        },
+        "process_peak_rss_before_bytes": 202489856,
+        "process_peak_rss_after_bytes": 213123072,
+        "rss_scope": "Process lifetime peak includes imported libraries, fitted models, batch/scratch/output; not incremental stream memory.",
+        "mutable_state_scope": "Approximate recursive Python object sizes; excludes fitted models, scratch features and caller-owned input/output."
+      },
+      "clock": {
+        "first": "2017-11-08T00:30:00",
+        "last": "2017-11-09T03:09:00",
+        "actual_timestamps_validated": true,
+        "sample_seconds": 60.0
+      },
+      "prefix_prediction_counts": {
+        "reference_prediction": {
+          "-1": 209,
+          "0": 1361,
+          "1": 30
+        },
+        "prediction": {
+          "-1": 209,
+          "0": 1384,
+          "1": 7
+        }
+      },
+      "case_id": "2019_disclosed_test",
+      "source": {
+        "path": "data/external/gecco2019/6_gecco2019_test_water_quality.csv",
+        "sha256": "ad509d0c1c656d3e48dc4e52011da5232d292997e6f7ce08eedd5f6194e3369f",
+        "original_source_row_bounds": [
+          0,
+          1600
+        ],
+        "original_test_axis_bounds": [
+          187230,
+          188830
+        ],
+        "columns_parsed": [
+          "Time",
+          "Tp",
+          "pH",
+          "Cond",
+          "Turb",
+          "SAC",
+          "PFM"
+        ],
+        "label_columns_parsed": false,
+        "clock_origin": "Published GECCO2019 test Time field; actual serialized year is retained, not rewritten to the dataset title year."
+      },
+      "original_saved_prediction_sha256": "579b6912981d8484ec6ff7265817b48f60a44e0fe5d0fd1803eb69122667a063",
+      "saved_prefix_replay_passed": true,
+      "selected_policy": {
+        "decision": "candidate",
+        "low_threshold": 0.9979790935227663,
+        "high_threshold": null,
+        "policy": "instant",
+        "confirmation_samples": 2,
+        "cadence_seconds": 60.0
+      }
+    }
+  ],
+  "environment": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.12.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "threadpool_limit": 1
+  },
+  "limitations": [
+    "WaterHub streaming is NOT authorized. The original combined stream audit remains FAILED. This narrower software scope does not reduce the all19period statistical evaluation.",
+    "Only the named fitted bundles and first1600original test rows were stream-verified; this is not full-period or all-period stream proof.",
+    "All19periods passed the separate batch artifact/replay audit; model development acceptance remains separate and may fail.",
+    "Timing and memory were measured on the current computer, not a RaspberryPi.",
+    "Synthetic tests cover active confirmation/rescue/unknown/continuous alarms; an actual prefix may not exercise every policy state.",
+    "Core history is bounded, but fitted training-audit arrays and caller-owned chunk/input/output storage are not removed.",
+    "No actuator,3D,field-safety or chemical-fault validation is provided."
+  ],
+  "finished_at_utc": "2026-10-17T04:53:27.790131+00:00",
+  "authorization_scope": "GECCO2019 named fitted bundle and first1600original test rows only; no global stream PASS claim.",
+  "global_stream_fidelity_passed": false,
+  "waterhub_stream_authorized": false,
+  "excluded_cases": {
+    "2019-04": "Failed absolute1e-12baseline_score fidelity; zero ternary mismatches in tested prefix do not waive score requirement."
+  },
+  "derived_from": {
+    "path": "output/ml/gecco-v9-development/run_01/streaming_audit.json",
+    "sha256": "630a4e30d7c6d33dfdd408ff1b64c406701fa23caf17605ca831937bd09312c3",
+    "passed": false,
+    "method": "Copy only the independently completed PASS case record after rechecking all runtime/source/bundle/batch-audit hashes; no retest or tolerance change."
+  },
+  "cli_only_revision": {
+    "old_prototype_sha256": "d1f8c8a17f61ddae05c21ae2a5a60a49d20c00d145cca65113ece8528cbebc6c",
+    "current_prototype_sha256": "523c38b6fc30314dad33a7005adbd80e87d23783c35b7d32cd1bfd9dd0a48c77",
+    "change": "Resolve trusted historical module names via fixed workspace paths before unpickle; no inference/threshold/model change.",
+    "inference_evidence_unchanged": true,
+    "prior_scoped_artifact": "output/ml/gecco-v9/prototype-demo/streaming_audit_gecco2019_only.json",
+    "prior_scoped_artifact_sha256": "9974a7e828faae301334d6a6f5599583e8be5b98f3c03ac0be76452a9b7054a3",
+    "reason_cli_excluded_from_runtime_dependencies": "CLI deserialization bootstrap is outside the frozen inference closure; the actual CLI replay manifest records its own current hash."
+  }
+}

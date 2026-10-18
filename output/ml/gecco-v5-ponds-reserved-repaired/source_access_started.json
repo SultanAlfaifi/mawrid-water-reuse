@@ -1,0 +1,8 @@
+{
+  "first_access_at_utc": "2026-10-16T09:29:47.553511+00:00",
+  "protocol_sha256": "aeb286f161cb0c73c9f6fd3338245efd226a1fc7b5194c51b8dbf8e31ee9d37a",
+  "sources": [
+    "data/external/new_holdout_candidate/eawag_ponds_active_learning/AL_Repo.zip"
+  ],
+  "note": "These sources are no longer untouched once this evaluation accesses them. Failed results cannot be retuned and called a fresh test."
+}
