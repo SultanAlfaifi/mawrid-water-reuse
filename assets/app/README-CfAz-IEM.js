@@ -80,6 +80,30 @@ This library separates regulatory context, technical guidance, and peer-reviewed
 
 These additions and the research-logo provenance were checked on **10 October 2026**; see the Arabic-first [palm research register](../docs/palm-research.md). Logos identify research affiliations, not MAWRID partners or endorsements.
 
+## Treatment and intelligent-monitoring additions — 18 October 2026
+
+The Arabic-first [research guide](../docs/research-guide.md) connects these sources to specific design and evaluation questions. Publication metadata and accessible abstracts were checked; no new MAWRID treatment or model experiment was run.
+
+16. **Alharbi, S. K., Shafiquzzaman, M., Haider, H., AlSaleem, S. S., & Ghumman, A. R. (2019).** “Treatment of Ablution Greywater for Recycling by Alum Coagulation and Activated Carbon Adsorption.” *Arabian Journal for Science and Engineering*, 44, 8389–8399. [Publisher](https://link.springer.com/article/10.1007/s13369-019-03834-6), [DOI](https://doi.org/10.1007/s13369-019-03834-6).
+    - Supports: an experimental treatment comparison using coagulation and activated-carbon adsorption for ablution greywater.
+    - Boundary: the accessible publisher abstract was reviewed, not the subscription full text. Its removal results and cost do not transfer to MAWRID's different, untested design.
+
+17. **Tagar, S., & Qambrani, N. A. (2025).** “A Review on Treatment Methods, Recycling, and Reuse of Ablution Greywater for Sustainable Water Resource Management.” *Water Conservation Science and Engineering*, 10, 36. [Publisher](https://link.springer.com/article/10.1007/s41101-025-00357-0), [DOI](https://doi.org/10.1007/s41101-025-00357-0).
+    - Supports: treatment-option selection, water-quality indicators and implementation barriers.
+    - Boundary: accessible abstract and metadata only; no numerical treatment requirement or site approval is inferred.
+
+18. **Russo, S. et al. (2021).** “The value of human data annotation for machine learning based anomaly detection in environmental systems.” *Water Research*, 206, 117695. [DOI](https://doi.org/10.1016/j.watres.2021.117695), [participating research institution record](https://impact.ornl.gov/en/publications/the-value-of-human-data-annotation-for-machine-learning-based-ano/).
+    - Supports: expert annotation and comparison of anomaly-detection methods across environmental water systems, including the WaterHub research context.
+    - Boundary: the paper and its [2020 dataset](https://doi.org/10.25678/0002WJ) are distinct records. Neither establishes MAWRID sensor-fault classification, water safety, or field generalization.
+
+19. **Kim, S., Choi, K., Choi, H.-S., Lee, B., & Yoon, S. (2022).** “Towards a Rigorous Evaluation of Time-Series Anomaly Detection.” *Proceedings of the AAAI Conference on Artificial Intelligence*, 36(7), 7194–7201. [Publisher](https://ojs.aaai.org/index.php/AAAI/article/view/20680), [DOI](https://doi.org/10.1609/aaai.v36i7.20680).
+    - Supports: caution about inflated detection scores from point-adjustment evaluation.
+    - Boundary: methodology guidance, not a benchmark of MAWRID or a claim that this repository implements the paper's complete protocol.
+
+20. **Moritz, S., Rehbach, F., & Bartz-Beielstein, T. (2019).** *GECCO Industrial Challenge 2019 Dataset*, version v2. Zenodo. [Original record](https://zenodo.org/records/4304080), [DOI](https://doi.org/10.5281/zenodo.4304080).
+    - Supports: the origin and chronological same-station train/test/validation split of public drinking-water event data.
+    - Boundary: a dataset record, not a greywater treatment study or an independent MAWRID-site validation. Previously inspected periods remain disclosed development data.
+
 ## Citation policy
 
 - Prefer DOI or official primary-source URLs.

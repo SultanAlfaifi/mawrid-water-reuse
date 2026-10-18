@@ -1,0 +1,17 @@
+{
+  "source": "assets/demo/mawrid-smart-demo.mp4",
+  "source_sha256": "70d97a0982857004e7dc7a15b7ad42c55ec96c76753e0afb982c81780fce579f",
+  "attachment_url": "https://github.com/user-attachments/assets/4a277585-c04d-4903-a984-1e6fae6413c6",
+  "uploaded_file": "mawrid-readme-demo.mp4",
+  "sha256": "7f14372b36ed985b83b5c6685c255753e770e5f4accb229980007e7a8be04b68",
+  "bytes": 6816604,
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "duration_seconds": 60,
+  "audio": "absent",
+  "purpose": "GitHub-native README player; original Full HD movie retained unchanged",
+  "encode": "ffmpeg -i assets/demo/mawrid-smart-demo.mp4 -vf scale=1280:720 -an -c:v libx264 -preset medium -b:v 1050k -maxrate 1150k -bufsize 2300k -pix_fmt yuv420p -movflags +faststart mawrid-readme-demo.mp4",
+  "upload_method": "GitHub README editor attachment control; bare stable attachment URL committed through reviewed source change",
+  "scope": "Media derivative and hosting only; no new model inference or physical validation"
+}
