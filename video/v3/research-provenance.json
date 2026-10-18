@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "purpose": "Evidence contract for the V3 film's historical research-analysis shot. This file does not rerun, promote, or modify a model.",
+  "model": "V9",
+  "case_id": "2019_disclosed_test",
+  "evidence_state": {
+    "development_only": true,
+    "fresh_validation": false,
+    "field_validation": false,
+    "model_acceptance_claim": false,
+    "live_inference_in_film": false,
+    "selected_example_is_overall_efficacy_evidence": false
+  },
+  "frozen_source": {
+    "repository": "https://github.com/SultanAlfaifi/mawrid-water-reuse",
+    "file": "output/ml/gecco-v9-development/run_01/results.json",
+    "sha256": "4d4770163d9213046d7dcf12cd4dd097345088da7a311aae1b34691c4715f243",
+    "last_file_commit": "f61e022d89786dc03d0e8ef777f79232a1329da1",
+    "file_url": "https://github.com/SultanAlfaifi/mawrid-water-reuse/blob/f61e022d89786dc03d0e8ef777f79232a1329da1/output/ml/gecco-v9-development/run_01/results.json",
+    "case_json_pointer": "/periods/12",
+    "metrics_json_pointer": "/periods/12/comparisons/v6_vs_v7/candidate",
+    "event_json_pointer": "/periods/12/comparisons/v6_vs_v7/candidate/known_positive_segment_details/6",
+    "schema_note": "The legacy comparison names if_vs_v7 and v6_vs_v7 denote the current V9 candidate in this V9 result file.",
+    "schema_note_source": {
+      "file": "ml/gecco_v9/development.py",
+      "line": 173,
+      "sha256": "106791f0de2f56767d496d9c6de9f41d05a75de240fce572ac73d4b8499bf695",
+      "field": "plan.comparison_schema"
+    }
+  },
+  "event_record_verbatim": {
+    "event_id": 7,
+    "start": 13003,
+    "end_exclusive": 13026,
+    "primary_uncensored_onset": true,
+    "left_censored": false,
+    "left_censor_reason": null,
+    "right_censored": false,
+    "right_censor_reason": null,
+    "positive_rows": 23,
+    "observed_positive_rows": 23,
+    "alarm_positive_rows": 3,
+    "any_alarm": true,
+    "confirmed_transition_index": 13005
+  },
+  "event_derivation": {
+    "index_origin": "Zero-based index on this original 31,650-row test-period axis; end_exclusive is not an included sample.",
+    "cadence_seconds": 60,
+    "labelled_interval_samples": [13003, 13026],
+    "labelled_interval_duration_seconds": 1380,
+    "first_confirmed_alarm_index": 13005,
+    "first_confirmed_alarm_delay_samples": 2,
+    "first_confirmed_alarm_delay_seconds": 120,
+    "formula": "(confirmed_transition_index - start) * cadence_seconds",
+    "alarm_extent_limit": "Only the first confirmed transition and the total of three positive-labelled alarm rows are present in this record. Their individual indices and continuity are not present; do not draw a continuous alarm band or infer an alarm end time."
+  },
+  "full_period_context": {
+    "source_json_pointer": "/periods/12/comparisons/v6_vs_v7/candidate",
+    "rows": 31650,
+    "cadence_seconds": 60,
+    "true_events": 12,
+    "confirmed_events": 5,
+    "confirmed_event_ids": [7, 8, 9, 10, 12],
+    "confirmed_times": [13005, 13679, 18306, 24304, 30097],
+    "events_without_confirmed_detection": 7,
+    "fully_unobserved_positive_segments": 3,
+    "fully_unobserved_event_ids": [1, 2, 3],
+    "false_positive_runs": 7,
+    "fp_duration_seconds": 840,
+    "derived_false_alarm_minutes": 14,
+    "normal_observed_seconds": 1819980,
+    "available_rows": 30491,
+    "interpretation": "The selected detected event is a mechanism illustration. It does not establish overall efficacy, detection of all faults, or readiness for MAWRID water. Seven events lack a confirmed detection, including three fully unobserved during initialization. False-alarm time is nominal sample-count times cadence, not measured continuous physical duration."
+  },
+  "clock_provenance_and_derivation": {
+    "source_file": "output/ml/gecco-stream-fidelity/input_qualification.json",
+    "source_sha256": "153d34477fc9cd1c066705bc78e9359e299dee5a9f26a0fee96ae8a852650ebf",
+    "json_pointer": "/cases/1/actual_clock",
+    "case_id": "2019_disclosed_test",
+    "verified_prefix_rows": 1600,
+    "verified_prefix_first_timestamp": "2017-11-08T00:30:00",
+    "verified_prefix_last_timestamp": "2017-11-09T03:09:00",
+    "verified_prefix_sample_seconds": 60,
+    "source_timezone": null,
+    "dataset_title_is_calendar_year": false,
+    "nominal_date_formula": "prefix_first_timestamp + test_axis_index * 60 seconds, without timezone conversion",
+    "derived_nominal_event_start": "2017-11-17T01:13:00",
+    "derived_nominal_event_end_exclusive": "2017-11-17T01:36:00",
+    "derived_nominal_first_alarm": "2017-11-17T01:15:00",
+    "calendar_limit": "These event dates are nominal derivations from the qualified prefix origin and reported cadence. The film preparation did not read the full raw source timestamp column at indices 13003, 13005 or 13026. Prefer original sample indices or elapsed minutes in the film, rather than presenting these derived dates as directly inspected timestamps. The event lies outside the separately qualified first-1,600-row replay prefix."
+  },
+  "visual_contract": {
+    "recommended_seconds": 8,
+    "window_start_index": 12993,
+    "window_end_exclusive": 13039,
+    "lanes": [
+      {
+        "kind": "labelled_event_interval",
+        "label_ar": "حدث معلّم في بيانات الاختبار",
+        "start_index": 13003,
+        "end_exclusive": 13026
+      },
+      {
+        "kind": "first_confirmed_alarm_marker",
+        "label_ar": "أول إشارة بحثية من V9",
+        "index": 13005
+      }
+    ],
+    "title_ar": "تحليل ذكي. وإشارة قابلة للمراجعة.",
+    "scope_caption_ar": "مثال تاريخي من GECCO · نموذج V9 بحثي",
+    "delay_caption_ar": "ظهرت الإشارة بعد دقيقتين في هذا المثال",
+    "sensor_or_score_waveform_invented": false,
+    "sensor_or_score_waveform_permitted": false,
+    "reason": "The committed evidence records intervals and first-confirmed transitions, not the original pointwise sensor or score arrays. Animate the documented interval and marker only."
+  },
+  "separation_from_other_film_shots": {
+    "browser_plant": "The public browser experience is a virtual plant simulation with experimental fixed rules. Its changing telemetry is not the historical V9 event above and is not scored by this research model.",
+    "phone": "The phone shot shows the responsive browser simulation. It must not imply live monitoring of a physical MAWRID station, a connected field gateway, or V9 inference running in the public browser.",
+    "phone_caption_ar": "تابع حالة المحاكاة من جوالك",
+    "safety": "Research AI is advisory. In the virtual plant, fixed experimental rules govern the simulated irrigation state. This film makes no claim of validated water safety or physical valve actuation."
+  },
+  "warranted_screen_copy_ar": [
+    "قراءات واضحة، ومصدر معروف.",
+    "ذكاء اصطناعي بحثي يحلل الأنماط على بيانات عامة حقيقية.",
+    "إشارة تستدعي المراجعة، مع وقتها وسجلها.",
+    "قواعد ثابتة تحكم قرار الري في المحاكاة.",
+    "تابع حالة المحاكاة من جوالك."
+  ],
+  "unsupported_claims": [
+    "AI controls or opens a real irrigation valve.",
+    "The model detects all five sensor-fault classes.",
+    "The anomaly score is a calibrated probability of safe water or sensor confidence.",
+    "The selected example demonstrates overall model efficacy or field validation.",
+    "The browser or phone simulation is connected to a physical MAWRID station.",
+    "The event's ground-truth labels were input to inference. Labels are shown only as retrospective evaluation evidence."
+  ]
+}

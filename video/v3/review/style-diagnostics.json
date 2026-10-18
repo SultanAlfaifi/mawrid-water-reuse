@@ -1,0 +1,1001 @@
+{
+  "errors": [],
+  "diagnostics": [
+    {
+      "frame": 84,
+      "t": 2.8,
+      "shot": "hero",
+      "camera": [
+        17.297590954103363,
+        10.96057806848,
+        18.580291976458483
+      ],
+      "target": [
+        3.642725218423363,
+        0.5,
+        -2.1968586923415163
+      ],
+      "time": 2.8,
+      "source": "browser_simulation",
+      "virtual": true,
+      "state": "REUSE",
+      "fault": "none",
+      "chlorine": 0.35,
+      "irrigationFeedback": "open",
+      "reasonCodes": [],
+      "flow": {
+        "inlet_lpm": 16.666666666666668,
+        "treatment_lpm": 16.666666666666668,
+        "reuse_lpm": 16.666666666666668,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 16.666666666666668,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "routes": [
+        "collection",
+        "screen-to-raw",
+        "raw-to-feed",
+        "feed-to-media",
+        "media-to-carbon",
+        "carbon-to-cartridge",
+        "cartridge-to-compliance",
+        "compliance-to-uv",
+        "product-to-storage",
+        "storage-to-reuse",
+        "reuse-to-valve",
+        "irrigation-out"
+      ],
+      "originalEquipmentCount": 24,
+      "originalPipeCount": 22,
+      "cumulativeAnimation": false,
+      "phone": null,
+      "research": null,
+      "type": {
+        "t": 2.8,
+        "fontsReady": true,
+        "arabicFontLoaded": true,
+        "active": [
+          {
+            "key": "hero",
+            "lines": [
+              {
+                "text": "مياه الوضوء،",
+                "x": 1014,
+                "y": 342,
+                "width": 800,
+                "height": 179,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              },
+              {
+                "text": "موردٌ للري.",
+                "x": 1014,
+                "y": 530,
+                "width": 800,
+                "height": 179,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": null
+          }
+        ],
+        "identityLoaded": true,
+        "disclosure": {
+          "text": "محاكاة برمجية · لا قياسات ميدانية",
+          "x": 102,
+          "y": 82,
+          "width": 289,
+          "height": 37,
+          "scrollWidth": 289,
+          "clientWidth": 289,
+          "withinFrame": true,
+          "fitsWidth": true
+        },
+        "boundary": {
+          "text": "محاكاة برمجية؛ الاختبار الميداني هو القادم.",
+          "x": 170,
+          "y": 944,
+          "width": 1580,
+          "height": 54,
+          "scrollWidth": 1580,
+          "clientWidth": 1580,
+          "withinFrame": true,
+          "fitsWidth": true
+        }
+      }
+    },
+    {
+      "frame": 270,
+      "t": 9,
+      "shot": "raw",
+      "camera": [
+        -2.5272331850959255,
+        3.18688,
+        6.429453864803526
+      ],
+      "target": [
+        -4.7141131850959255,
+        -0.1,
+        -0.411090135196473
+      ],
+      "time": 9,
+      "source": "browser_simulation",
+      "virtual": true,
+      "state": "REUSE",
+      "fault": "none",
+      "chlorine": 0.35,
+      "irrigationFeedback": "open",
+      "reasonCodes": [],
+      "flow": {
+        "inlet_lpm": 16.666666666666668,
+        "treatment_lpm": 16.666666666666668,
+        "reuse_lpm": 16.666666666666668,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 16.666666666666668,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "routes": [
+        "collection",
+        "screen-to-raw",
+        "raw-to-feed",
+        "feed-to-media",
+        "media-to-carbon",
+        "carbon-to-cartridge",
+        "cartridge-to-compliance",
+        "compliance-to-uv",
+        "product-to-storage",
+        "storage-to-reuse",
+        "reuse-to-valve",
+        "irrigation-out"
+      ],
+      "originalEquipmentCount": 24,
+      "originalPipeCount": 22,
+      "cumulativeAnimation": false,
+      "phone": null,
+      "research": null,
+      "type": {
+        "t": 9,
+        "fontsReady": true,
+        "arabicFontLoaded": true,
+        "active": [
+          {
+            "key": "source",
+            "lines": [
+              {
+                "text": "من المصدر،",
+                "x": 1014,
+                "y": 298,
+                "width": 800,
+                "height": 172,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              },
+              {
+                "text": "تبدأ الرحلة.",
+                "x": 1014,
+                "y": 479,
+                "width": 800,
+                "height": 172,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": null
+          }
+        ],
+        "identityLoaded": true,
+        "disclosure": {
+          "text": "محاكاة برمجية · لا قياسات ميدانية",
+          "x": 102,
+          "y": 82,
+          "width": 289,
+          "height": 37,
+          "scrollWidth": 289,
+          "clientWidth": 289,
+          "withinFrame": true,
+          "fitsWidth": true
+        },
+        "boundary": {
+          "text": "محاكاة برمجية؛ الاختبار الميداني هو القادم.",
+          "x": 170,
+          "y": 944,
+          "width": 1580,
+          "height": 54,
+          "scrollWidth": 1580,
+          "clientWidth": 1580,
+          "withinFrame": true,
+          "fitsWidth": true
+        }
+      }
+    },
+    {
+      "frame": 570,
+      "t": 19,
+      "shot": "research",
+      "camera": [
+        19.7495849609375,
+        14.9495849609375,
+        28.4495849609375
+      ],
+      "target": [
+        0.3,
+        0.5,
+        0
+      ],
+      "time": 19,
+      "source": "browser_simulation",
+      "virtual": true,
+      "state": "REUSE",
+      "fault": "none",
+      "chlorine": 0.35,
+      "irrigationFeedback": "open",
+      "reasonCodes": [],
+      "flow": {
+        "inlet_lpm": 16.666666666666668,
+        "treatment_lpm": 16.666666666666668,
+        "reuse_lpm": 16.666666666666668,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 16.666666666666668,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "routes": [
+        "collection",
+        "screen-to-raw",
+        "raw-to-feed",
+        "feed-to-media",
+        "media-to-carbon",
+        "carbon-to-cartridge",
+        "cartridge-to-compliance",
+        "compliance-to-uv",
+        "product-to-storage",
+        "storage-to-reuse",
+        "reuse-to-valve",
+        "irrigation-out"
+      ],
+      "originalEquipmentCount": 24,
+      "originalPipeCount": 22,
+      "cumulativeAnimation": false,
+      "phone": null,
+      "research": {
+        "time": 19,
+        "source": "output/ml/gecco-v9-development/run_01/results.json",
+        "case": "2019_disclosed_test",
+        "event": 7,
+        "event_start": 13003,
+        "event_end_exclusive": 13026,
+        "confirmed_alarm": 13005,
+        "graph": "actual timing annotations; no sensor or score waveform",
+        "connected_to_phone": false
+      },
+      "type": {
+        "t": 19,
+        "fontsReady": true,
+        "arabicFontLoaded": true,
+        "active": [
+          {
+            "key": "ai",
+            "lines": [
+              {
+                "text": "الذكاء الاصطناعي،",
+                "x": 1014,
+                "y": 274,
+                "width": 800,
+                "height": 145,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              },
+              {
+                "text": "للتحليل والتنبيه.",
+                "x": 1014,
+                "y": 428,
+                "width": 800,
+                "height": 145,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": {
+              "text": "بحث على بيانات GECCO وWaterHub",
+              "x": 1014,
+              "y": 607,
+              "width": 800,
+              "height": 56,
+              "scrollWidth": 800,
+              "clientWidth": 800,
+              "withinFrame": true,
+              "fitsWidth": true
+            }
+          }
+        ],
+        "identityLoaded": true,
+        "disclosure": {
+          "text": "محاكاة برمجية · لا قياسات ميدانية",
+          "x": 102,
+          "y": 82,
+          "width": 289,
+          "height": 37,
+          "scrollWidth": 289,
+          "clientWidth": 289,
+          "withinFrame": true,
+          "fitsWidth": true
+        },
+        "boundary": {
+          "text": "محاكاة برمجية؛ الاختبار الميداني هو القادم.",
+          "x": 170,
+          "y": 944,
+          "width": 1580,
+          "height": 54,
+          "scrollWidth": 1580,
+          "clientWidth": 1580,
+          "withinFrame": true,
+          "fitsWidth": true
+        }
+      }
+    },
+    {
+      "frame": 840,
+      "t": 28,
+      "shot": "sensors",
+      "camera": [
+        0.25294173737560355,
+        2.904938271604938,
+        4.873942272192384
+      ],
+      "target": [
+        3.104793589227455,
+        0.9,
+        0.5060410376244829
+      ],
+      "time": 28,
+      "source": "browser_simulation",
+      "virtual": true,
+      "state": "REUSE",
+      "fault": "none",
+      "chlorine": 0.35,
+      "irrigationFeedback": "open",
+      "reasonCodes": [],
+      "flow": {
+        "inlet_lpm": 16.666666666666668,
+        "treatment_lpm": 16.666666666666668,
+        "reuse_lpm": 16.666666666666668,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 16.666666666666668,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "routes": [
+        "collection",
+        "screen-to-raw",
+        "raw-to-feed",
+        "feed-to-media",
+        "media-to-carbon",
+        "carbon-to-cartridge",
+        "cartridge-to-compliance",
+        "compliance-to-uv",
+        "product-to-storage",
+        "storage-to-reuse",
+        "reuse-to-valve",
+        "irrigation-out"
+      ],
+      "originalEquipmentCount": 24,
+      "originalPipeCount": 22,
+      "cumulativeAnimation": false,
+      "phone": null,
+      "research": null,
+      "type": {
+        "t": 28,
+        "fontsReady": true,
+        "arabicFontLoaded": true,
+        "active": [
+          {
+            "key": "sensor",
+            "lines": [
+              {
+                "text": "قراءة، وتحقّق،",
+                "x": 1014,
+                "y": 358,
+                "width": 800,
+                "height": 172,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              },
+              {
+                "text": "وقرار واضح.",
+                "x": 1014,
+                "y": 538,
+                "width": 800,
+                "height": 172,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": null
+          }
+        ],
+        "identityLoaded": true,
+        "disclosure": {
+          "text": "محاكاة برمجية · لا قياسات ميدانية",
+          "x": 102,
+          "y": 82,
+          "width": 289,
+          "height": 37,
+          "scrollWidth": 289,
+          "clientWidth": 289,
+          "withinFrame": true,
+          "fitsWidth": true
+        },
+        "boundary": {
+          "text": "محاكاة برمجية؛ الاختبار الميداني هو القادم.",
+          "x": 170,
+          "y": 944,
+          "width": 1580,
+          "height": 54,
+          "scrollWidth": 1580,
+          "clientWidth": 1580,
+          "withinFrame": true,
+          "fitsWidth": true
+        }
+      }
+    },
+    {
+      "frame": 1020,
+      "t": 34,
+      "shot": "valve",
+      "camera": [
+        12.423068285212125,
+        3,
+        4.8017150003254745
+      ],
+      "target": [
+        8.923068285212125,
+        0.8,
+        -0.5982849996745255
+      ],
+      "time": 32,
+      "source": "browser_simulation",
+      "virtual": true,
+      "state": "HOLD",
+      "fault": "sensor_dropout",
+      "chlorine": null,
+      "irrigationFeedback": "closed",
+      "reasonCodes": [
+        "QUALITY_SENSOR_INVALID"
+      ],
+      "flow": {
+        "inlet_lpm": 0,
+        "treatment_lpm": 0,
+        "reuse_lpm": 0,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 0,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "routes": [
+        "collection",
+        "screen-to-raw",
+        "raw-to-feed",
+        "feed-to-media",
+        "media-to-carbon",
+        "carbon-to-cartridge",
+        "cartridge-to-compliance",
+        "compliance-to-uv",
+        "product-to-storage",
+        "storage-to-reuse",
+        "reuse-to-valve",
+        "irrigation-out"
+      ],
+      "originalEquipmentCount": 24,
+      "originalPipeCount": 22,
+      "cumulativeAnimation": false,
+      "phone": null,
+      "research": null,
+      "type": {
+        "t": 34,
+        "fontsReady": true,
+        "arabicFontLoaded": true,
+        "active": [
+          {
+            "key": "missing",
+            "lines": [
+              {
+                "text": "قراءة مفقودة.",
+                "x": 1014,
+                "y": 288,
+                "width": 800,
+                "height": 149,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": {
+              "text": "حالة توضيحية · قراءة الكلور— mg/L",
+              "x": 1014,
+              "y": 475,
+              "width": 800,
+              "height": 150,
+              "scrollWidth": 800,
+              "clientWidth": 800,
+              "withinFrame": true,
+              "fitsWidth": true
+            }
+          },
+          {
+            "key": "stop",
+            "lines": [
+              {
+                "text": "يتوقّف",
+                "x": 1014,
+                "y": 467,
+                "width": 800,
+                "height": 167,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              },
+              {
+                "text": "الري الافتراضي.",
+                "x": 1014,
+                "y": 643,
+                "width": 800,
+                "height": 167,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": {
+              "text": "قواعد حماية مستقلة عن الذكاء البحثي",
+              "x": 1014,
+              "y": 675,
+              "width": 800,
+              "height": 56,
+              "scrollWidth": 800,
+              "clientWidth": 800,
+              "withinFrame": true,
+              "fitsWidth": true
+            }
+          }
+        ],
+        "identityLoaded": true,
+        "disclosure": {
+          "text": "محاكاة برمجية · لا قياسات ميدانية",
+          "x": 102,
+          "y": 82,
+          "width": 289,
+          "height": 37,
+          "scrollWidth": 289,
+          "clientWidth": 289,
+          "withinFrame": true,
+          "fitsWidth": true
+        },
+        "boundary": {
+          "text": "محاكاة برمجية؛ الاختبار الميداني هو القادم.",
+          "x": 170,
+          "y": 944,
+          "width": 1580,
+          "height": 54,
+          "scrollWidth": 1580,
+          "clientWidth": 1580,
+          "withinFrame": true,
+          "fitsWidth": true
+        }
+      }
+    },
+    {
+      "frame": 1200,
+      "t": 40,
+      "shot": "phone",
+      "camera": [
+        16.504920077456237,
+        10.47717813155648,
+        19.4755465642309
+      ],
+      "target": [
+        2.5477110807878396,
+        0.5,
+        -1.4959261002147
+      ],
+      "time": 46,
+      "source": "browser_simulation",
+      "virtual": true,
+      "state": "REUSE",
+      "fault": "none",
+      "chlorine": 0.35,
+      "irrigationFeedback": "open",
+      "reasonCodes": [],
+      "flow": {
+        "inlet_lpm": 16.666666666666668,
+        "treatment_lpm": 16.666666666666668,
+        "reuse_lpm": 16.666666666666668,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 16.666666666666668,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "routes": [
+        "collection",
+        "screen-to-raw",
+        "raw-to-feed",
+        "feed-to-media",
+        "media-to-carbon",
+        "carbon-to-cartridge",
+        "cartridge-to-compliance",
+        "compliance-to-uv",
+        "product-to-storage",
+        "storage-to-reuse",
+        "reuse-to-valve",
+        "irrigation-out"
+      ],
+      "originalEquipmentCount": 24,
+      "originalPipeCount": 22,
+      "cumulativeAnimation": false,
+      "phone": {
+        "phoneShot": true,
+        "source": "actual_public_browser_simulation",
+        "hardwareConnected": false,
+        "mlUsed": false,
+        "screenState": "normal",
+        "sourceURL": "https://sultalfaifi.com/mawrid-water-reuse/experience/",
+        "screenshotViewport": [
+          390,
+          844
+        ],
+        "screenshotPixelSize": [
+          1170,
+          2532
+        ],
+        "texturesLoaded": 2,
+        "loadError": null,
+        "timeSeconds": 41.69230769230769,
+        "texture": "http://127.0.0.1:59677/assets/phone-normal-BtKTIKDb.png"
+      },
+      "research": null,
+      "type": {
+        "t": 40,
+        "fontsReady": true,
+        "arabicFontLoaded": true,
+        "active": [
+          {
+            "key": "phone",
+            "lines": [
+              {
+                "text": "تابع المحاكاة",
+                "x": 1014,
+                "y": 300,
+                "width": 800,
+                "height": 159,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              },
+              {
+                "text": "من جوالك.",
+                "x": 1014,
+                "y": 468,
+                "width": 800,
+                "height": 159,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": {
+              "text": "القراءات. التنبيه. وسبب القرار.",
+              "x": 1014,
+              "y": 661,
+              "width": 800,
+              "height": 56,
+              "scrollWidth": 800,
+              "clientWidth": 800,
+              "withinFrame": true,
+              "fitsWidth": true
+            }
+          }
+        ],
+        "identityLoaded": true,
+        "disclosure": {
+          "text": "محاكاة برمجية · لا قياسات ميدانية",
+          "x": 102,
+          "y": 82,
+          "width": 289,
+          "height": 37,
+          "scrollWidth": 289,
+          "clientWidth": 289,
+          "withinFrame": true,
+          "fitsWidth": true
+        },
+        "boundary": {
+          "text": "محاكاة برمجية؛ الاختبار الميداني هو القادم.",
+          "x": 170,
+          "y": 944,
+          "width": 1580,
+          "height": 54,
+          "scrollWidth": 1580,
+          "clientWidth": 1580,
+          "withinFrame": true,
+          "fitsWidth": true
+        }
+      }
+    },
+    {
+      "frame": 1410,
+      "t": 47,
+      "shot": "phone",
+      "camera": [
+        15.341955987445562,
+        9.838723864979947,
+        18.730087012799288
+      ],
+      "target": [
+        2.581848740608158,
+        0.5,
+        -1.4433178184256459
+      ],
+      "time": 46,
+      "source": "browser_simulation",
+      "virtual": true,
+      "state": "REUSE",
+      "fault": "none",
+      "chlorine": 0.35,
+      "irrigationFeedback": "open",
+      "reasonCodes": [],
+      "flow": {
+        "inlet_lpm": 16.666666666666668,
+        "treatment_lpm": 16.666666666666668,
+        "reuse_lpm": 16.666666666666668,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 16.666666666666668,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "routes": [
+        "collection",
+        "screen-to-raw",
+        "raw-to-feed",
+        "feed-to-media",
+        "media-to-carbon",
+        "carbon-to-cartridge",
+        "cartridge-to-compliance",
+        "compliance-to-uv",
+        "product-to-storage",
+        "storage-to-reuse",
+        "reuse-to-valve",
+        "irrigation-out"
+      ],
+      "originalEquipmentCount": 24,
+      "originalPipeCount": 22,
+      "cumulativeAnimation": false,
+      "phone": {
+        "phoneShot": true,
+        "source": "actual_public_browser_simulation",
+        "hardwareConnected": false,
+        "mlUsed": false,
+        "screenState": "dropout",
+        "sourceURL": "https://sultalfaifi.com/mawrid-water-reuse/experience/",
+        "screenshotViewport": [
+          390,
+          844
+        ],
+        "screenshotPixelSize": [
+          1170,
+          2532
+        ],
+        "texturesLoaded": 2,
+        "loadError": null,
+        "timeSeconds": 47.61538461538461,
+        "texture": "http://127.0.0.1:59677/assets/phone-dropout-Cw_sycVa.png"
+      },
+      "research": null,
+      "type": {
+        "t": 47,
+        "fontsReady": true,
+        "arabicFontLoaded": true,
+        "active": [
+          {
+            "key": "phone",
+            "lines": [
+              {
+                "text": "تابع المحاكاة",
+                "x": 1014,
+                "y": 300,
+                "width": 800,
+                "height": 159,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              },
+              {
+                "text": "من جوالك.",
+                "x": 1014,
+                "y": 468,
+                "width": 800,
+                "height": 159,
+                "scrollWidth": 800,
+                "clientWidth": 800,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": {
+              "text": "القراءات. التنبيه. وسبب القرار.",
+              "x": 1014,
+              "y": 661,
+              "width": 800,
+              "height": 56,
+              "scrollWidth": 800,
+              "clientWidth": 800,
+              "withinFrame": true,
+              "fitsWidth": true
+            }
+          }
+        ],
+        "identityLoaded": true,
+        "disclosure": {
+          "text": "محاكاة برمجية · لا قياسات ميدانية",
+          "x": 102,
+          "y": 82,
+          "width": 289,
+          "height": 37,
+          "scrollWidth": 289,
+          "clientWidth": 289,
+          "withinFrame": true,
+          "fitsWidth": true
+        },
+        "boundary": {
+          "text": "محاكاة برمجية؛ الاختبار الميداني هو القادم.",
+          "x": 170,
+          "y": 944,
+          "width": 1580,
+          "height": 54,
+          "scrollWidth": 1580,
+          "clientWidth": 1580,
+          "withinFrame": true,
+          "fitsWidth": true
+        }
+      }
+    },
+    {
+      "frame": 1665,
+      "t": 55.5,
+      "shot": "hero",
+      "camera": [
+        14.55,
+        13.399999999999999,
+        21.5
+      ],
+      "target": [
+        0.3,
+        3.3,
+        0
+      ],
+      "time": 46,
+      "source": "browser_simulation",
+      "virtual": true,
+      "state": "REUSE",
+      "fault": "none",
+      "chlorine": 0.35,
+      "irrigationFeedback": "open",
+      "reasonCodes": [],
+      "flow": {
+        "inlet_lpm": 16.666666666666668,
+        "treatment_lpm": 16.666666666666668,
+        "reuse_lpm": 16.666666666666668,
+        "drain_lpm": 0,
+        "backwash_lpm": 0,
+        "product_lpm": 16.666666666666668,
+        "overflow_lpm": 0,
+        "recirculation_lpm": 0
+      },
+      "routes": [
+        "collection",
+        "screen-to-raw",
+        "raw-to-feed",
+        "feed-to-media",
+        "media-to-carbon",
+        "carbon-to-cartridge",
+        "cartridge-to-compliance",
+        "compliance-to-uv",
+        "product-to-storage",
+        "storage-to-reuse",
+        "reuse-to-valve",
+        "irrigation-out"
+      ],
+      "originalEquipmentCount": 24,
+      "originalPipeCount": 22,
+      "cumulativeAnimation": false,
+      "phone": null,
+      "research": null,
+      "type": {
+        "t": 55.5,
+        "fontsReady": true,
+        "arabicFontLoaded": true,
+        "active": [
+          {
+            "key": "end",
+            "lines": [
+              {
+                "text": "جرّب مورد.",
+                "x": 120,
+                "y": 254,
+                "width": 1680,
+                "height": 210,
+                "scrollWidth": 1680,
+                "clientWidth": 1680,
+                "withinFrame": true,
+                "fitsWidth": true
+              }
+            ],
+            "extra": {
+              "text": "sultalfaifi.com/mawrid-water-reuse/experience/",
+              "x": 120,
+              "y": 489,
+              "width": 1680,
+              "height": 56,
+              "scrollWidth": 1680,
+              "clientWidth": 1680,
+              "withinFrame": true,
+              "fitsWidth": true
+            }
+          }
+        ],
+        "identityLoaded": true,
+        "disclosure": {
+          "text": "محاكاة برمجية · لا قياسات ميدانية",
+          "x": 102,
+          "y": 82,
+          "width": 289,
+          "height": 37,
+          "scrollWidth": 289,
+          "clientWidth": 289,
+          "withinFrame": true,
+          "fitsWidth": true
+        },
+        "boundary": {
+          "text": "محاكاة برمجية؛ الاختبار الميداني هو القادم.",
+          "x": 170,
+          "y": 930,
+          "width": 1580,
+          "height": 54,
+          "scrollWidth": 1580,
+          "clientWidth": 1580,
+          "withinFrame": true,
+          "fitsWidth": true
+        }
+      }
+    }
+  ]
+}

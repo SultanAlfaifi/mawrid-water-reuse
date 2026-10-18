@@ -1,0 +1,211 @@
+{
+  "url": "https://sultalfaifi.com/mawrid-water-reuse/experience/",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 3,
+  "note": "Actual browser screenshots of the deployed responsive simulation; no invented readings, remote station connection or ML inference.",
+  "shots": [
+    {
+      "file": "phone-normal.png",
+      "scrollY": 886,
+      "status": {
+        "source": "browser_simulation",
+        "hardwareConnected": false,
+        "mlUsed": false,
+        "webglAvailable": true,
+        "running": true,
+        "stage": null,
+        "virtual": true,
+        "hardware": false,
+        "timestamp": "2026-10-18T09:00:11.691Z",
+        "elapsed_seconds": 11.69100000023842,
+        "mode": "auto",
+        "fault": "none",
+        "speed": 10,
+        "manual_hold": false,
+        "chans": {
+          "turbidity": 0.6515587013648788,
+          "ph": 7.200649481734052,
+          "chlorine": 0.3503247357297917,
+          "orp": 680.1169058387973,
+          "p1_bar": 2.800584513011829,
+          "p2_bar": 2.550584513011829,
+          "p3_bar": 2.300584513011829,
+          "p4_bar": 1.8505845130118297,
+          "flow_lpm": 16.666666666666668
+        },
+        "validity": {
+          "turbidity": true,
+          "ph": true,
+          "chlorine": true,
+          "orp": true,
+          "p1_bar": true,
+          "p2_bar": true,
+          "p3_bar": true,
+          "p4_bar": true,
+          "flow_lpm": true
+        },
+        "flow": {
+          "inlet_lpm": 16.666666666666668,
+          "treatment_lpm": 16.666666666666668,
+          "reuse_lpm": 16.666666666666668,
+          "drain_lpm": 0,
+          "backwash_lpm": 0,
+          "product_lpm": 16.666666666666668,
+          "overflow_lpm": 0,
+          "recirculation_lpm": 0
+        },
+        "tanks": {
+          "raw": {
+            "liters": 3000,
+            "capacity_liters": 5000,
+            "level_percent": 60
+          },
+          "treated": {
+            "liters": 2000,
+            "capacity_liters": 5000,
+            "level_percent": 40
+          }
+        },
+        "volumes": {
+          "input_liters": 3.247500000066228,
+          "reuse_liters": 3.247500000066228,
+          "reject_drain_liters": 0,
+          "overflow_liters": 0,
+          "backwash_liters": 0,
+          "treatment_feed_liters": 3.247500000066228,
+          "treated_product_liters": 3.247500000066228,
+          "raw_overflow_liters": 0,
+          "treated_overflow_liters": 0,
+          "initial_stored_liters": 5000,
+          "stored_liters": 5000,
+          "balance_error_liters": -3.4416913763379853e-13
+        },
+        "equipment": {
+          "feed_pump": "running",
+          "dosing_pumps": "running",
+          "inlet_pump": "running",
+          "reuse_pump": "running",
+          "backwash_pump": "stopped",
+          "irrigation_valve": "open",
+          "drain_valve": "closed",
+          "power": true,
+          "irrigation_command": "open",
+          "irrigation_feedback": "open",
+          "compliance_valve": "product"
+        },
+        "safety": {
+          "state": "REUSE",
+          "reuse_permitted": true,
+          "reasons": [],
+          "reason_codes": []
+        }
+      },
+      "decision": "يسمح بالري الافتراضي\nموضع الصمام: مفتوح\n\nالقيم ضمن الحدود التجريبية. لا يعني هذا إثبات صلاحية الماء."
+    },
+    {
+      "file": "phone-dropout.png",
+      "scrollY": 886,
+      "status": {
+        "source": "browser_simulation",
+        "hardwareConnected": false,
+        "mlUsed": false,
+        "webglAvailable": true,
+        "running": true,
+        "stage": null,
+        "virtual": true,
+        "hardware": false,
+        "timestamp": "2026-10-18T09:00:16.691Z",
+        "elapsed_seconds": 16.691000000238418,
+        "mode": "auto",
+        "fault": "sensor_dropout",
+        "speed": 10,
+        "manual_hold": false,
+        "chans": {
+          "turbidity": 0.6522251796446545,
+          "ph": 7.200927224624419,
+          "chlorine": null,
+          "orp": 680.1668978910549,
+          "p1_bar": 2.8008344423667455,
+          "p2_bar": 2.5508344423667455,
+          "p3_bar": 2.3008344423667455,
+          "p4_bar": 1.8508344423667455,
+          "flow_lpm": 0
+        },
+        "validity": {
+          "turbidity": true,
+          "ph": true,
+          "chlorine": false,
+          "orp": true,
+          "p1_bar": true,
+          "p2_bar": true,
+          "p3_bar": true,
+          "p4_bar": true,
+          "flow_lpm": true
+        },
+        "flow": {
+          "inlet_lpm": 0,
+          "treatment_lpm": 0,
+          "reuse_lpm": 0,
+          "drain_lpm": 0,
+          "backwash_lpm": 0,
+          "product_lpm": 0,
+          "overflow_lpm": 0,
+          "recirculation_lpm": 0
+        },
+        "tanks": {
+          "raw": {
+            "liters": 3000,
+            "capacity_liters": 5000,
+            "level_percent": 60
+          },
+          "treated": {
+            "liters": 2000,
+            "capacity_liters": 5000,
+            "level_percent": 40
+          }
+        },
+        "volumes": {
+          "input_liters": 3.9416666666666673,
+          "reuse_liters": 3.9416666666666673,
+          "reject_drain_liters": 0,
+          "overflow_liters": 0,
+          "backwash_liters": 0,
+          "treatment_feed_liters": 3.9416666666666673,
+          "treated_product_liters": 3.9416666666666673,
+          "raw_overflow_liters": 0,
+          "treated_overflow_liters": 0,
+          "initial_stored_liters": 5000,
+          "stored_liters": 5000,
+          "balance_error_liters": -6.128431095930864e-14
+        },
+        "equipment": {
+          "feed_pump": "stopped",
+          "dosing_pumps": "stopped",
+          "inlet_pump": "stopped",
+          "reuse_pump": "stopped",
+          "backwash_pump": "stopped",
+          "irrigation_valve": "closed",
+          "drain_valve": "closed",
+          "power": true,
+          "irrigation_command": "closed",
+          "irrigation_feedback": "closed",
+          "compliance_valve": "closed"
+        },
+        "safety": {
+          "state": "HOLD",
+          "reuse_permitted": false,
+          "reasons": [
+            "قراءة جودة مفقودة أو غير صالحة؛ لا سماح بالري الافتراضي."
+          ],
+          "reason_codes": [
+            "QUALITY_SENSOR_INVALID"
+          ]
+        }
+      },
+      "decision": "الري محجوز افتراضيًا\nموضع الصمام: مغلق\n\nقراءة جودة مفقودة أو غير صالحة؛ لا سماح بالري الافتراضي."
+    }
+  ]
+}
