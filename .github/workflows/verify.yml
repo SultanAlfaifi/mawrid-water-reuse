@@ -33,6 +33,8 @@ jobs:
       - run: npm --prefix mawrid-final ci
       - name: Public-site logic
         run: npm run check
+      - name: Browser simulation and Python comparison
+        run: npm run check:experience
       - name: Local interface and presentation
         run: npm run check:system
       - name: 3D scene and camera
@@ -45,5 +47,7 @@ jobs:
         run: npm run check:repo
       - name: Public-site build
         run: npm run build
+      - name: Browser experience build
+        run: npm run build:experience
       - name: Build must match the committed site
-        run: git diff --exit-code -- index.html simulator/index.html assets/app
+        run: git diff --exit-code -- index.html simulator/index.html assets/app experience/index.html experience/assets

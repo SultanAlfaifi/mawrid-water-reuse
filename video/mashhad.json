@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "title": "مورد — جولة النموذج البرمجي",
+  "primary_engine": "browser-ffmpeg",
+  "spec": {
+    "width": 1280,
+    "height": 720,
+    "fps": {
+      "num": 24,
+      "den": 1
+    },
+    "duration_frames": 1440,
+    "color_space": "SDR YUV420p; BT.709 matrix; color primaries and transfer metadata not exposed by ffprobe",
+    "audio": "absent; user requested silent film, no narration and no music",
+    "pixel_aspect": "1:1",
+    "codec": "h264"
+  },
+  "shots": [
+    {
+      "id": "intro",
+      "start_frame": 0,
+      "duration_frames": 144,
+      "layer": "base",
+      "engine": "browser-ffmpeg",
+      "status": "reviewed",
+      "source": "composition.html",
+      "media": "../assets/demo/mawrid-software-demo.mp4",
+      "media_in_frame": 0,
+      "review": "review/review.md",
+      "review_scope": "Final encoded-frame samples and full decode; no continuous full playback"
+    },
+    {
+      "id": "journey",
+      "start_frame": 144,
+      "duration_frames": 384,
+      "layer": "base",
+      "engine": "browser-ffmpeg",
+      "status": "reviewed",
+      "source": "composition.html",
+      "media": "../assets/demo/mawrid-software-demo.mp4",
+      "media_in_frame": 144,
+      "review": "review/review.md",
+      "review_scope": "Final encoded-frame samples and full decode; no continuous full playback"
+    },
+    {
+      "id": "fault",
+      "start_frame": 528,
+      "duration_frames": 288,
+      "layer": "base",
+      "engine": "browser-ffmpeg",
+      "status": "reviewed",
+      "source": "composition.html",
+      "media": "../assets/demo/mawrid-software-demo.mp4",
+      "media_in_frame": 528,
+      "review": "review/review.md",
+      "review_scope": "Final encoded-frame samples and full decode; no continuous full playback"
+    },
+    {
+      "id": "readings",
+      "start_frame": 816,
+      "duration_frames": 240,
+      "layer": "base",
+      "engine": "browser-ffmpeg",
+      "status": "reviewed",
+      "source": "composition.html",
+      "media": "../assets/demo/mawrid-software-demo.mp4",
+      "media_in_frame": 816,
+      "review": "review/review.md",
+      "review_scope": "Final encoded-frame samples and full decode; no continuous full playback"
+    },
+    {
+      "id": "limits",
+      "start_frame": 1056,
+      "duration_frames": 240,
+      "layer": "base",
+      "engine": "browser-ffmpeg",
+      "status": "reviewed",
+      "source": "composition.html",
+      "media": "../assets/demo/mawrid-software-demo.mp4",
+      "media_in_frame": 1056,
+      "review": "review/review.md",
+      "review_scope": "Final encoded-frame samples and full decode; no continuous full playback"
+    },
+    {
+      "id": "final",
+      "start_frame": 1296,
+      "duration_frames": 144,
+      "layer": "base",
+      "engine": "browser-ffmpeg",
+      "status": "reviewed",
+      "source": "composition.html",
+      "media": "../assets/demo/mawrid-software-demo.mp4",
+      "media_in_frame": 1296,
+      "review": "review/review.md",
+      "review_scope": "Final encoded-frame samples and full decode; no continuous full playback"
+    }
+  ],
+  "transitions": [],
+  "assets": [
+    {
+      "id": "brand",
+      "provenance": "Original repository MAWRID brand logo",
+      "path": "../assets/brand/logos/mawrid-primary-green.svg",
+      "license": "Repository license; original project asset"
+    },
+    {
+      "id": "plex-arabic",
+      "provenance": "Existing IBM Plex Sans Arabic font files in repository",
+      "path": "../assets/fonts/plex-arabic-400.ttf",
+      "license": "See assets/fonts/LICENSE-plex-arabic.txt"
+    },
+    {
+      "id": "manrope",
+      "provenance": "Existing Manrope font in repository",
+      "path": "../assets/fonts/manrope-700.ttf",
+      "license": "See assets/fonts/LICENSE-manrope.txt"
+    },
+    {
+      "id": "overview",
+      "provenance": "New screenshot of actual browser simulation Canvas, cropped for framing; all content simulated",
+      "path": "review/plant-overview.jpg"
+    },
+    {
+      "id": "decision",
+      "provenance": "New actual #decision element capture after sensor_dropout; no reading or text injection",
+      "path": "review/decision-hold.png"
+    },
+    {
+      "id": "follow",
+      "provenance": "New local Python/SQLite application screenshot of virtual_plant simulation, disposable capture database",
+      "path": "review/readings.jpg"
+    },
+    {
+      "id": "journey-recording",
+      "provenance": "Actual browser Canvas capture via MediaRecorder, VFR; raw intermediate excluded from Git; reproducible through capture-browser.mjs",
+      "sha256": "93e3d99332f718435ef4a2702548402f098eadc4131b6f3af9709669d8234466",
+      "metadata": "review/source-metadata.json"
+    },
+    {
+      "id": "fault-recording",
+      "provenance": "Actual browser Canvas capture normal to sensor_dropout/HOLD; raw intermediate excluded from Git",
+      "sha256": "08fb1ce11fe02e510d5392534a0b95b0eb1be816f83305bd9be0646532929d92",
+      "metadata": "review/source-metadata.json"
+    }
+  ],
+  "versions": {
+    "node": "24.19.0",
+    "playwright": "1.62.1",
+    "chromium": "Playwright Chromium 1234 installed browser",
+    "ffmpeg": "9.0-essentials_build-www.gyan.dev",
+    "compositor": "Original HTML/CSS cards + FFmpeg concat/overlay",
+    "capture_gpu": "NVIDIA RTX 4060 / D3D11 (ANGLE)"
+  },
+  "delivery": {
+    "video": "../assets/demo/mawrid-software-demo.mp4",
+    "poster": "../assets/demo/mawrid-software-demo-poster.jpg",
+    "sha256": "8cdf8fb0298639525eccc4e8afd0fca3d25079672df190c4518cbef9cb9eea03",
+    "bytes": 788544,
+    "continuous_playback_reviewed": false,
+    "user_approved": false
+  }
+}

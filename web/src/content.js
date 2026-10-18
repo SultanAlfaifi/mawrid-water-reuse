@@ -43,6 +43,10 @@ export const UI = {
     "نجمع مياه الوضوء، نعالجها في الموقع، ونختبر استخدامها لري المساحات الخضراء.",
     "Collect ablution water, treat it on site, and test its use for landscape irrigation."
   ],
+  "tryPrototype": [
+    "جرّب النموذج البرمجي",
+    "Try the software prototype"
+  ],
   "startJourney": [
     "كيف يعمل مورد؟",
     "How does MAWRID work?"
