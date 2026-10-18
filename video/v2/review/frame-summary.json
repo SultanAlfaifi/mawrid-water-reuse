@@ -1,0 +1,6 @@
+{
+  "frames": 1800,
+  "distinct_decoded_frame_hashes": 1800,
+  "source_sha256": "021ecfa80546cb7d6c37a42caff037bcb19591a97ff3852d65694bb0323a3d1f",
+  "meaning": "Decoded frames are distinct; this is not a subjective motion-quality rating."
+}

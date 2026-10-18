@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "file": "assets/demo/mawrid-cinematic-demo.mp4",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "frames",
+      "passed": true,
+      "actual": 1800,
+      "expected": 1800
+    },
+    {
+      "name": "width",
+      "passed": true,
+      "actual": 1920,
+      "expected": 1920
+    },
+    {
+      "name": "height",
+      "passed": true,
+      "actual": 1080,
+      "expected": 1080
+    },
+    {
+      "name": "average_fps",
+      "passed": true,
+      "actual": 30,
+      "expected": 30
+    },
+    {
+      "name": "duration",
+      "passed": true,
+      "actual": 60,
+      "expected": 60
+    }
+  ],
+  "visual_qa": "not_performed",
+  "full_decode": {
+    "status": "passed",
+    "returncode": 0,
+    "diagnostics": "",
+    "scope": "selected video stream and all audio streams, entire duration"
+  },
+  "alpha": {
+    "evidence": "pixel_format_metadata_only; decoded alpha not verified",
+    "decoded_channel": null,
+    "nonopaque_pixels_observed": null,
+    "pixel_format_hint": "yuv420p"
+  },
+  "tools": {
+    "ffmpeg": "ffmpeg 9.0",
+    "ffprobe": "ffprobe 9.0"
+  },
+  "media": {
+    "video_stream_index": 0,
+    "video_stream_count": 1,
+    "audio_stream_count": 0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "fps_basis": "avg_frame_rate",
+    "duration": 60,
+    "duration_basis": "video_stream",
+    "pixel_format": "yuv420p",
+    "codec": "h264"
+  },
+  "frame_count": {
+    "status": "read",
+    "video_stream_index": 0,
+    "basis": "ffprobe -count_frames; decoded nb_read_frames, not nb_frames metadata",
+    "actual": 1800
+  },
+  "duration_tolerance_seconds": 0.03333333333333333,
+  "exit_code": 0,
+  "output_sha256": "021ecfa80546cb7d6c37a42caff037bcb19591a97ff3852d65694bb0323a3d1f"
+}

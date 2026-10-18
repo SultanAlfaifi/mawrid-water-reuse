@@ -10,9 +10,9 @@
 
 **[جرّب المحاكاة مباشرة في المتصفح](https://sultalfaifi.com/mawrid-water-reuse/experience/)** · [الموقع التعريفي](https://sultalfaifi.com/mawrid-water-reuse/) · [دليل المحكّم](docs/judge-guide.md)
 
-[![شاهد تجربة مورد في دقيقة — فيديو صامت](assets/demo/mawrid-software-demo-poster.jpg)](https://sultalfaifi.com/mawrid-water-reuse/assets/demo/mawrid-software-demo.mp4)
+[![شاهد رحلة مورد — فيلم ثلاثي الأبعاد صامت](assets/demo/mawrid-cinematic-demo-poster.jpg)](https://sultalfaifi.com/mawrid-water-reuse/assets/demo/mawrid-cinematic-demo.mp4)
 
-[شاهد فيديو التجربة — دقيقة واحدة، بلا صوت](https://sultalfaifi.com/mawrid-water-reuse/assets/demo/mawrid-software-demo.mp4). لقطات فعلية للبرنامج ببيانات محاكاة؛ ليست محطة منفذة.
+[شاهد رحلة مورد — دقيقة واحدة، بلا صوت](https://sultalfaifi.com/mawrid-water-reuse/assets/demo/mawrid-cinematic-demo.mp4). فيلم من مجسم النموذج وقواعده البرمجية؛ بيانات محاكاة، وليست محطة منفذة. [مصدر الفيلم وحدوده](video/v2/README.md).
 
 ## ما الذي يعمل؟
 
