@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "title": "مورد — النظام الذكي والمتابعة من الجوال",
+  "primary_engine": "Three.js deterministic browser compositor + FFmpeg",
+  "spec": {
+    "width": 1920,
+    "height": 1080,
+    "fps": {
+      "num": 30,
+      "den": 1
+    },
+    "duration_frames": 1800,
+    "color_space": "SDR BT.709 limited range YUV420p",
+    "audio": "absent; no narration, music or effects by user choice",
+    "pixel_aspect": "1:1"
+  },
+  "shots": [
+    {
+      "id": "hero",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 0,
+      "duration_frames": 150,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    },
+    {
+      "id": "source",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 150,
+      "duration_frames": 150,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    },
+    {
+      "id": "filtration",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 300,
+      "duration_frames": 180,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    },
+    {
+      "id": "historical-ai-research",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 480,
+      "duration_frames": 240,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    },
+    {
+      "id": "smart-rule-system",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 720,
+      "duration_frames": 180,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    },
+    {
+      "id": "missing-reading",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 900,
+      "duration_frames": 120,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    },
+    {
+      "id": "virtual-valve-hold",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 1020,
+      "duration_frames": 120,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    },
+    {
+      "id": "actual-mobile-simulation",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 1140,
+      "duration_frames": 390,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    },
+    {
+      "id": "try-mawrid",
+      "engine": "browser-threejs",
+      "layer": "base",
+      "start_frame": 1530,
+      "duration_frames": 270,
+      "status": "reviewed",
+      "source": "src/main.js",
+      "media": "../../assets/demo/mawrid-smart-demo.mp4",
+      "review": "review/review.md",
+      "review_scope": "Sampled final encoded frames, deterministic seek and full decode; continuous visual playback not reviewed."
+    }
+  ],
+  "transitions": [],
+  "assets": [
+    {
+      "id": "original-scene",
+      "path": "../../mawrid-system/plant3d/scene.js",
+      "provenance": "Original repository geometry, used unchanged; presentation materials and light only",
+      "license": "Repository MIT"
+    },
+    {
+      "id": "virtual-rules",
+      "path": "../../experience/src/model.js",
+      "provenance": "Original browser simulator rules used unchanged; normal and sensor-dropout snapshots",
+      "license": "Repository MIT"
+    },
+    {
+      "id": "arabic-font",
+      "path": "../../assets/fonts/plex-arabic-600.ttf",
+      "provenance": "Existing project IBM Plex Arabic font",
+      "license": "SIL OFL; existing font license"
+    },
+    {
+      "id": "brand",
+      "path": "../../assets/brand/logos/mawrid-primary-white.svg",
+      "provenance": "Existing project brand asset",
+      "license": "Repository license"
+    },
+    {
+      "id": "phone-normal",
+      "path": "assets/phone-normal.png",
+      "provenance": "Actual deployed responsive browser simulation; normal state",
+      "license": "Original project UI; repository MIT"
+    },
+    {
+      "id": "phone-dropout",
+      "path": "assets/phone-dropout.png",
+      "provenance": "Actual deployed responsive browser simulation; sensor-dropout state",
+      "license": "Original project UI; repository MIT"
+    },
+    {
+      "id": "research-event",
+      "path": "research-provenance.json",
+      "provenance": "Frozen historical GECCO V9 event and first alarm indices; no raw sensor/score waveforms",
+      "license": "Existing repository research evidence and dataset attribution"
+    }
+  ],
+  "versions": {
+    "node": "v24.11.0",
+    "three": "0.186.1",
+    "vite": "8.3.4",
+    "ffmpeg": "9.0"
+  },
+  "delivery": {
+    "movie": "../../assets/demo/mawrid-smart-demo.mp4",
+    "sha256": "70d97a0982857004e7dc7a15b7ad42c55ec96c76753e0afb982c81780fce579f",
+    "bytes": 17854890,
+    "user_approved": false,
+    "continuous_visual_playback_reviewed": false
+  },
+  "preservation": {
+    "v1_movie": "../../assets/demo/mawrid-software-demo.mp4",
+    "v1_movie_sha256": "8cdf8fb0298639525eccc4e8afd0fca3d25079672df190c4518cbef9cb9eea03",
+    "v1_source": "../",
+    "original_system_research_and_evidence": "unchanged",
+    "v2_movie": "../../assets/demo/mawrid-cinematic-demo.mp4",
+    "v2_movie_sha256": "021ecfa80546cb7d6c37a42caff037bcb19591a97ff3852d65694bb0323a3d1f",
+    "v2_source": "../v2/"
+  },
+  "source_snapshot_sha256": {
+    "video/v3/src/main.js": "db74516df5fc830e3a756b6a909197769ec129a252d621e64c9e21c8ba66476f",
+    "video/v3/src/type.js": "e35f1d4a1ca37462ac4a402ce3025e507a29d5c65c62e4cb83520a2d72d8bc27",
+    "video/v3/src/type.css": "bc8ec1152cfb22416f1bfc3e68f9064137879823e12379477b5857ca6f558d76",
+    "video/v3/src/phone.js": "19492f49b60a0ef10a9d3c4d27a610599225857916b53d6e6d3b620f9e6f921b",
+    "video/v3/src/research.js": "82247856790dcb65964d45d7ca1898baed01bbea48cf3dd238e4bb8d615fe5d4",
+    "video/v2/src/cinema.js": "d290792d83af8b26d6ebacfeda8386f65fffea1cbd27a739eb6fd92ee2c1c176",
+    "video/v3/assets/phone-normal.png": "499d8c15b12b5e21e18606c5572b96bfaa7cbd71f3d226f94181b35727e5a298",
+    "video/v3/assets/phone-dropout.png": "1337b58f6bf6b0e85d947d329acceb59c70ba613eb2e974de001564b504fef27"
+  },
+  "boundaries": {
+    "hardware_connected": false,
+    "ai_in_browser_or_phone": false,
+    "research_inference_run_for_film": false,
+    "experimental_fixed_rules_govern_virtual_irrigation": true,
+    "research_selected_example_not_overall_efficacy": true,
+    "phone_display": "Unaltered screenshots, not a live remote connection"
+  }
+}

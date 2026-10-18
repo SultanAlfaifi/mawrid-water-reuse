@@ -10,9 +10,9 @@
 
 **[جرّب المحاكاة مباشرة في المتصفح](https://sultalfaifi.com/mawrid-water-reuse/experience/)** · [الموقع التعريفي](https://sultalfaifi.com/mawrid-water-reuse/) · [دليل المحكّم](docs/judge-guide.md)
 
-[![شاهد رحلة مورد — فيلم ثلاثي الأبعاد صامت](assets/demo/mawrid-cinematic-demo-poster.jpg)](https://sultalfaifi.com/mawrid-water-reuse/assets/demo/mawrid-cinematic-demo.mp4)
+[![مورد — النظام الذكي والمتابعة من الجوال](assets/demo/mawrid-smart-demo-poster.jpg)](https://sultalfaifi.com/mawrid-water-reuse/assets/demo/mawrid-smart-demo.mp4)
 
-[شاهد رحلة مورد — دقيقة واحدة، بلا صوت](https://sultalfaifi.com/mawrid-water-reuse/assets/demo/mawrid-cinematic-demo.mp4). فيلم من مجسم النموذج وقواعده البرمجية؛ بيانات محاكاة، وليست محطة منفذة. [مصدر الفيلم وحدوده](video/v2/README.md).
+[شاهد مورد — دقيقة واحدة، بلا صوت](https://sultalfaifi.com/mawrid-water-reuse/assets/demo/mawrid-smart-demo.mp4). مجسم النموذج، وقواعد الحماية، ومتابعة المحاكاة من الجوال؛ مع مثال تاريخي موثّق من بحث الذكاء الاصطناعي. البحث مستقل عن المحاكاة، ولم تُنفّذ محطة ميدانية. [مصدر الفيلم وحدوده والنسخ السابقة](video/v3/README.md).
 
 ## ما الذي يعمل؟
 

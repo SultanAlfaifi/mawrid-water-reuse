@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "time": 2.8,
+      "sha256": "3492f69c08de8343ef78e474e530e67b2c30fabaea6f383206cd182927319798",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open",
+      "phone": null,
+      "research": null
+    },
+    {
+      "time": 19,
+      "sha256": "00039687500fde727c21e99d750c206e5206ca701a3a803aabdaa1d55f5b2165",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open",
+      "phone": null,
+      "research": {
+        "time": 19,
+        "source": "output/ml/gecco-v9-development/run_01/results.json",
+        "case": "2019_disclosed_test",
+        "event": 7,
+        "event_start": 13003,
+        "event_end_exclusive": 13026,
+        "confirmed_alarm": 13005,
+        "graph": "actual timing annotations; no sensor or score waveform",
+        "connected_to_phone": false
+      }
+    },
+    {
+      "time": 34,
+      "sha256": "25b4af580bcae038f6d5bbbc25da1f568c4d67461ab22dcdc5c864eaae63a924",
+      "repeat_identical": true,
+      "state": "HOLD",
+      "irrigation": "closed",
+      "phone": null,
+      "research": null
+    },
+    {
+      "time": 40,
+      "sha256": "2321e589e3401851dc49f018f6f9e60ff17c6ba833e7c33c453c30014c307fff",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open",
+      "phone": "normal",
+      "research": null
+    },
+    {
+      "time": 45,
+      "sha256": "4e092f0c826b87a30cfd4e210269d627d0a95bce3a996758f2720a8fd7628c44",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open",
+      "phone": "dropout",
+      "research": null
+    },
+    {
+      "time": 49,
+      "sha256": "91d4604f144a044ee861b4c4404a788d17c20d9f6ebd967f8b245f0b621a6f80",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open",
+      "phone": "normal",
+      "research": null
+    },
+    {
+      "time": 55.5,
+      "sha256": "82a9550c7d4ea807e6f473d4d5b651aef041f5e71d0331479b62b008e1065cb0",
+      "repeat_identical": true,
+      "state": "REUSE",
+      "irrigation": "open",
+      "phone": null,
+      "research": null
+    }
+  ],
+  "scope": "Deterministic frame seeking, Arabic bounds and virtual fault response only."
+}
