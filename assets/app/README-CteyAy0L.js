@@ -104,7 +104,16 @@ The Arabic-first [research guide](../docs/research-guide.md) connects these sour
     - Supports: the origin and chronological same-station train/test/validation split of public drinking-water event data.
     - Boundary: a dataset record, not a greywater treatment study or an independent MAWRID-site validation. Previously inspected periods remain disclosed development data.
 
-## Citation policy
+## Rabigh submission context — checked 19 October 2026
+
+21. **Umm Al-Qura Official Gazette (14 August 2026).** *Updated executive regulation for monitoring compliance with water-efficiency and conservation standards.* [Official text](https://www.uqn.gov.sa/decisions-and-regulations/4001591).
+    - Supports: the effective date and conditional obligations discussed in the [Rabigh plan](../docs/rabigh-plan.md). It does not certify MAWRID or establish an obligation to purchase it.
+
+22. **Wajid, H. A., & Alluqmani, A. E. (2025).** “Enhancing water sustainability in ablution (wudu): lessons from Prophet Muhammad’s (صلى الله عليه وسلم) wudu practice and the role of water-efficient aerators.” *Journal of Umm Al-Qura University for Engineering and Architecture*, 16, 1119–1129. [Publisher](https://link.springer.com/article/10.1007/s43995-025-00145-w), [DOI](https://doi.org/10.1007/s43995-025-00145-w).
+    - Supports: scenario-based modelling of ablution-water consumption and demand reduction with aerators and user behaviour.
+    - Boundary: not a MAWRID water-reuse experiment, site-flow measurement or proof of the available water volume at a targeted facility.
+
+## Citation policy and use of sources
 
 - Prefer DOI or official primary-source URLs.
 - Record the accessed version and date for regulatory documents.

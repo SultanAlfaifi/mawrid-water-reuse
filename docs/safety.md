@@ -6,7 +6,7 @@
 
 MAWRID must prevent human or environmental exposure whenever treatment performance cannot be demonstrated. Safety is established through source control, multiple barriers, validated operating limits, hygienic plumbing, laboratory verification, and a fail-safe release decision.
 
-The first proposed application is one separately collected university ablution source serving a controlled zone of ornamental plants with drip irrigation. Exposure routes include maintenance contact, public access, accidental drinking, spray/aerosols, soil, and drainage. The site review must address these before any field irrigation. Drinking, reuse for ablution, edible crops, and mixed wastewater are outside this version.
+The first proposed application is one separately collected facility ablution source serving a controlled zone of ornamental plants with drip irrigation. Exposure routes include maintenance contact, public access, accidental drinking, spray/aerosols, soil, and drainage. The site review must address these before any field irrigation. Drinking, reuse for ablution, edible crops, and mixed wastewater are outside this version.
 
 ## 2. Release philosophy
 
@@ -50,7 +50,7 @@ This register is preliminary. A multidisciplinary site hazard assessment must up
 
 ### Source acceptance
 
-- Only the mapped university ablution source may connect in the first version.
+- Only the mapped and characterized ablution source may connect in the first version.
 - Handwashing fixtures or any other added source require separate characterization, risk review, and a scope update before connection.
 - Floor drains and cleaning-chemical discharges require explicit review.
 - Abnormal source-water indicators trigger diversion and investigation.

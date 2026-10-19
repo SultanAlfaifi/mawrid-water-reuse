@@ -28,8 +28,8 @@ export const UI = {
     "Working software prototype"
   ],
   "eyebrow": [
-    "من مياه الوضوء إلى ري الجامعة",
-    "From campus ablution water to irrigation"
+    "لخدمة مرافق الحرمين والمجمعات الكبيرة",
+    "For Haramain facilities and large complexes"
   ],
   "heroLine1": [
     "مياه الوضوء،",
@@ -40,8 +40,8 @@ export const UI = {
     "A resource for irrigation."
   ],
   "heroLead": [
-    "نطوّر نظامًا لإعادة استخدام مياه الوضوء في الري. جرّب المحطة الافتراضية وراقب القراءات وقرار الري.",
-    "We are developing a system to reuse ablution water for irrigation. Explore the virtual plant, readings and irrigation decision."
+    "نطوّر وحدة متكاملة وصندوقًا ذكيًا للمحطات القائمة. جرّب النموذج البرمجي وراقب القراءات وقرار الري.",
+    "We are developing a complete unit and a Smart Box for existing plants. Try the software prototype, readings and irrigation decision."
   ],
   "tryPrototype": [
     "جرّب النموذج البرمجي",
@@ -124,16 +124,16 @@ export const UI = {
     "Proposed design, requiring engineering and laboratory testing."
   ],
   "purposeEyebrow": [
-    "أين نبدأ؟",
-    "Where we start"
+    "المنتج والتجربة الأولى",
+    "Product and first test"
   ],
   "purposeTitle": [
-    "مصدر واحد.<br>واستخدام واضح.",
-    "One source.<br>A clear use."
+    "وحدة متكاملة.<br>أو صندوق للتحديث.",
+    "A complete unit.<br>Or a retrofit box."
   ],
   "purposeText": [
-    "مرفق وضوء في جامعة، ووحدة قريبة منه، ومساحة مزروعة تحتاج الري.",
-    "A campus ablution facility, a nearby treatment unit, and a landscape that needs irrigation."
+    "نستهدف مرافق الحرمين والمجمعات الكبيرة. البداية المقترحة نموذج في أكاديمية الطاقة والمياه برابغ.",
+    "We target Haramain facilities and large complexes. The proposed first prototype is at the Energy and Water Academy in Rabigh."
   ],
   "sourceLabel": [
     "المصدر الأول",
@@ -148,8 +148,8 @@ export const UI = {
     "First customer"
   ],
   "buyerValue": [
-    "إدارة المرافق الجامعية",
-    "Campus facilities management"
+    "الجهة المالكة أو المشغّلة",
+    "Facility owner or operator"
   ],
   "useLabel": [
     "الاستخدام المستهدف",
@@ -160,12 +160,12 @@ export const UI = {
     "Landscape irrigation"
   ],
   "pilotNote": [
-    "الموقع والسعة والتكلفة تحددها الدراسة الميدانية.",
-    "Site assessment will determine location, capacity and cost."
+    "اختبار رابغ مقترح، رهن الموافقة وتوفر الورشة والمختبر. سعر البيع قيد التقدير دون رقم معلن.",
+    "The Rabigh test is proposed, subject to permission, workshop and laboratory access. No sales price is published yet."
   ],
   "campusCaption": [
-    "تصور تطبيقي، ليس صورة موقع منفذ",
-    "Application concept, not a photograph of a deployed site"
+    "مثال توضيحي، لا يمثل موقع الأكاديمية أو الحرمين",
+    "Illustrative example; not the Academy or Haramain site"
   ],
   "campusAlt": [
     "تصور لوحدة مورد داخل حرم جامعي، بجوار مساحة مزروعة",
@@ -392,8 +392,8 @@ export const UI = {
     "Show the nine deliverables"
   ],
   "planSummary": [
-    "خطة تطوير مقترحة، خطوة بخطوة.",
-    "A proposed step-by-step development plan."
+    "خطة رابغ: 6 أسابيع إلى نموذج قابل للاختبار، رهن الموافقة والموارد.",
+    "Rabigh proposal: six weeks to a testable prototype, subject to permission and resources."
   ]
 };
 
@@ -604,8 +604,16 @@ export const EVIDENCE = [
   {
     "code": "RESEARCH",
     "doc": "research-guide",
-    "ar": ["بحث الذكاء الاصطناعي", "كشف شذوذ على GECCO وWaterHub، مستقل عن قرار الري.", "بحث تجريبي"],
-    "en": ["AI research", "Anomaly research on GECCO and WaterHub, separate from irrigation control.", "Experimental"]
+    "ar": [
+      "بحث الذكاء الاصطناعي",
+      "كشف شذوذ على GECCO وWaterHub، مستقل عن قرار الري.",
+      "بحث تجريبي"
+    ],
+    "en": [
+      "AI research",
+      "Anomaly research on GECCO and WaterHub, separate from irrigation control.",
+      "Experimental"
+    ]
   },
   {
     "code": "NOT TESTED",
@@ -623,44 +631,44 @@ export const EVIDENCE = [
   },
   {
     "code": "NOT TESTED",
-    "doc": "impact-and-economics",
+    "doc": "rabigh-plan",
     "ar": [
-      "التطبيق في جامعة",
-      "الخطوة التالية: موقع وتجربة ميدانية.",
-      "قيد التخطيط"
+      "النموذج المادي في رابغ",
+      "6 أسابيع وميزانية 9,500 ريال؛ تقدير لخطة نموذج لم يُبنَ بعد.",
+      "مقترح"
     ],
     "en": [
-      "Campus pilot",
-      "Next: a site and a field trial.",
-      "Planned"
+      "Rabigh hardware prototype",
+      "Six weeks and a SAR 9,500 planning budget; hardware remains unbuilt.",
+      "Proposed"
     ]
   }
 ];
 
 export const DELIVERABLES = [
   {
-    "doc": "judging-map",
+    "doc": "rabigh-plan",
     "ar": [
       "الفريق وقدرته على التنفيذ",
-      "توزيع أدوار البرمجيات والتحكم واختبارات المياه.",
-      "إقرار التفرغ والمسؤوليات وتغطية الخبرات الناقصة."
+      "سلطان للبرمجيات والقيادة، فيصل للميكاترونكس، وعبدالسلام للمعالجة والجودة.",
+      "تأكيد الموارد والتفرغ المعلن، ودعم المختبر والاشتراطات."
     ],
     "en": [
       "Team and execution capability",
-      "Software, control, and water-testing roles are defined.",
-      "Confirm availability, responsibilities, and missing expertise."
+      "Sultan leads software; Faisal owns mechatronics; Abdulsalam owns treatment and quality.",
+      "Confirm declared availability, resources, laboratory access and regulatory expertise."
     ]
   },
   {
     "doc": "project-brief",
     "ar": [
       "المشكلة والحاجة للحل",
-      "مشكلة محددة: مصدر وضوء منفصل وطلب ري جامعي.",
+      "مصدر وضوء ومغاسل منفصل، وطلب ري في المرافق الكبيرة.",
       "قياس حجم المصدر والطلب والتكلفة، مع مصادر الأرقام."
     ],
     "en": [
       "Problem and need",
-      "A defined campus ablution source and an irrigation demand.",
+      "A separated ablution/washbasin source and irrigation demand at a large facility.",
       "Measure source, demand, and cost with traceable sources."
     ]
   },
@@ -681,13 +689,13 @@ export const DELIVERABLES = [
     "doc": "judging-map",
     "ar": [
       "العميل والقيمة وقابلية التبني",
-      "إدارة المرافق هي نقطة البداية. القيمة: مياه مستخدمة وتشغيل مفهوم.",
-      "مقابلات مع المشغل والجهة الدافعة وصاحب القرار."
+      "فني الصيانة يستخدم النظام، والجهة المالكة أو المشغلة تدفع، وإدارة المرافق تقرر.",
+      "توثيق اهتمام الأكاديمية وخطاب الاختبار، ثم التحقق من التبني في المواقع المستهدفة."
     ],
     "en": [
       "Customer, value, and adoption",
-      "Start with facilities management. Value is water used and understandable operation.",
-      "Interview the operator, budget owner, and decision maker."
+      "The technician uses it; the facility owner/operator pays; facilities management decides.",
+      "Document reported Academy interest and test permission, then validate adoption at target sites."
     ]
   },
   {
@@ -720,12 +728,12 @@ export const DELIVERABLES = [
     "doc": "roadmap",
     "ar": [
       "خطة التنفيذ ومتطلبات الفريق",
-      "مراحل مقترحة إلى نموذج مختبري قابل للاختبار.",
+      "خطة 6 أسابيع بميزانية نموذج تقديرية 9,500 ريال.",
       "قائمة مكونات وأسعار، وتوفر مختبر ومسؤول لكل محطة."
     ],
     "en": [
       "Execution plan and team requirements",
-      "A proposed path to a testable laboratory unit.",
+      "A six-week proposal with a SAR 9,500 prototype planning budget.",
       "A priced component list, laboratory access, and an owner for each milestone."
     ]
   },
@@ -733,12 +741,12 @@ export const DELIVERABLES = [
     "doc": "impact-and-economics",
     "ar": [
       "الجدوى والتوسع والأثر",
-      "بيع الوحدة للجهة فرضية أولية، والتوسع يبدأ بالمواقع المؤهلة.",
+      "وحدة كاملة أو صندوق تحديث، مع صيانة مقترحة وتسعير غير محسوم.",
       "تكلفة تطبيق وميزان ماء ومراجعة المتطلبات وثلاثة مخاطر رئيسية."
     ],
     "en": [
       "Feasibility, scale, and impact",
-      "Equipment sale is the initial hypothesis; scale starts with eligible sites.",
+      "A complete unit or retrofit box, with proposed maintenance and unresolved pricing.",
       "Installed cost, water balance, applicable requirements, and three principal risks."
     ]
   },

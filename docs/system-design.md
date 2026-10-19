@@ -6,7 +6,9 @@
 
 MAWRID targets separately collected ablution and washbasin water for defined non-potable landscape irrigation. Toilets, kitchens and mixed sewage are excluded; the connected fixtures, cleaning chemicals, source variability and intended exposure must be characterized before design approval.
 
-The full unit combines treatment and monitoring. The retrofit **MAWRID Box** proposes monitoring and controls for an existing plant, subject to a compatibility survey. Neither a software demonstration nor a diagram establishes installed hardware. Academic facilities are a candidate customer segment; no particular university or site is a confirmed partner.
+The full unit combines treatment and monitoring. The retrofit **MAWRID Smart Box** proposes monitoring and controls for an existing plant, subject to a compatibility survey. Neither a software demonstration nor a diagram establishes installed hardware. The [Rabigh plan](rabigh-plan.md) targets Haramain facilities and large complexes, with a proposed first bench prototype at the Energy and Water Academy. Reported interest is not a signed site agreement.
+
+The scaled bench proposal separates an ESP32 safety controller from Raspberry Pi 5 records/interface/research, with UPS power and a normally closed irrigation valve. The proposed gravity-drain or containment path requires a reviewed physical layout. The current simulation closes valves and stops pumps on power loss; its animation is not proof of physical diversion. Independent cellular connectivity and fleet monitoring are intended product capabilities, not deployed services.
 
 ## 2. Current design basis
 

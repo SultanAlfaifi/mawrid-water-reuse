@@ -29,7 +29,7 @@ All meters require calibration and a stated reconciliation error. Report source 
 
 ## 2. Site water balance
 
-Before sizing the university irrigation pilot, measure:
+Before sizing the selected irrigation pilot, measure:
 
 - Hourly and daily source-water availability.
 - Hourly and seasonal demand for the selected end use.
@@ -124,11 +124,19 @@ Assume one site collects \`5.0 m³/day\` of greywater and adds \`0.2 m³/day\` o
 
 ## 7. Commercial hypotheses
 
-The two commercial hypotheses are a **complete treatment/monitoring unit** for a qualified site and a **retrofit monitoring/control box** for a compatible existing plant. Maintenance and remote reporting may be separate offers; their price, service burden and customer demand remain unverified. No sale, interest letter, subscription revenue or partnership is claimed.
+### Rabigh planning inputs, not measured economics
+
+The [Rabigh plan](rabigh-plan.md) targets a six-week bench prototype with a **SAR 9,500 planning budget**. This is separate from product cost and sales price. Unit, Smart Box and maintenance prices are deliberately unpublished until scope is resolved. A 24-month warranty and multi-year service offer are proposals requiring costed terms, not current commitments.
+
+The deck's **up to 5,000 m³/year** water-use scenario and **12-to-4 planned service visits/year** are targets. Reconcile actual source, irrigation demand, losses, potable inputs and achieved quality; include fault callouts and mandatory calibration/sampling in service costs. Independent connectivity and future fleet reporting do not establish reduced total service burden. No fine avoidance, sales margin or payback is included as a measured benefit.
+
+### Product and customer evidence
+
+The two commercial hypotheses are a **complete treatment/monitoring unit** for a qualified site and a **retrofit monitoring/control box** for a compatible existing plant. Maintenance and remote reporting may be separate offers; their price, service burden and customer demand remain unverified. The team reports Academy interest in the Rabigh deck, but no signed interest letter, sale, subscription revenue or partnership is established. Product and service prices remain unpublished pending scope decisions.
 
 Keep three decisions separate: technical success requires the predeclared treatment and physical-control tests; irrigation feasibility requires measured source availability, equivalent demand, baseline supply and whole-site cost; commercial adoption requires a purchasing organization, approval path and evidence of willingness to pay. Success in one does not establish the others.
 
-Academic institutions are a candidate segment, not a verified market count. Filter prospective sites for separable drainage, demand, existing economically viable reuse, space, staff, budget, installation constraints and approval requirements. Previous university-branch research informs questions; it does not establish that every branch needs MAWRID or that a particular location is approved.
+Haramain facilities and large complexes are the first target segment in the Rabigh proposal, followed by universities, airports and other qualified sites; this is not a verified market count. Filter prospective sites for separable drainage, demand, existing economically viable reuse, space, staff, budget, installation constraints and approval requirements. Previous university-branch research informs questions; it does not establish that every branch needs MAWRID or that a particular location is approved.
 
 New developments with planned greywater plumbing may offer better economics than retrofits. Centralized ablution areas in existing facilities may also be feasible when drainage separation is accessible.
 `;export{e as default};

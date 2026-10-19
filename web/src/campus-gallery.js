@@ -15,8 +15,8 @@ let instanceCount = 0;
 
 const COPY = {
   ar: {
-    label: 'المسار المقترح داخل الجامعة', carousel: 'معرض صور', slide: 'مشهد',
-    note: 'صور مولّدة · تصور مقترح غير منفذ',
+    label: 'مثال لمسار الماء داخل مرفق', carousel: 'معرض صور', slide: 'مشهد',
+    note: 'صور مولّدة · ليست موقع الأكاديمية أو الحرمين',
     previous: 'المشهد السابق', next: 'المشهد التالي',
     pause: 'إيقاف الدوران', resume: 'تشغيل الدوران', reduced: 'تنقل يدوي',
     pick: 'اختر مشهدًا', hint: 'اسحب أو استخدم الأسهم',
@@ -30,8 +30,8 @@ const COPY = {
     ],
   },
   en: {
-    label: 'A proposed campus cycle', carousel: 'image carousel', slide: 'scene',
-    note: 'Generated images · An unbuilt proposal',
+    label: 'An illustrative facility water journey', carousel: 'image carousel', slide: 'scene',
+    note: 'Generated images · not the Academy or Haramain site',
     previous: 'Previous scene', next: 'Next scene',
     pause: 'Pause rotation', resume: 'Start rotation', reduced: 'Manual navigation',
     pick: 'Choose a scene', hint: 'Drag or use the arrows',
