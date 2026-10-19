@@ -6,7 +6,7 @@ var e=`# Scientific Basis
 
 MAWRID follows a fit-for-purpose principle: treatment should be designed for the source water, intended use, exposure pathway, and required risk reduction. Producing drinking-water quality is not automatically necessary for a non-potable application, but using fewer barriers is acceptable only when evidence demonstrates that the selected treatment train meets the applicable target safely.
 
-The initial hypothesis is recovery of one separate university ablution source for controlled drip irrigation of ornamental plants. It excludes mixed drains and irrigation of edible crops. Neither the suitability of a candidate source nor the intended-use water quality has been demonstrated.
+The initial hypothesis is recovery of one separate, characterized facility ablution source for controlled drip irrigation of ornamental plants. It excludes mixed drains and irrigation of edible crops. Neither the suitability of a candidate source nor the intended-use water quality has been demonstrated.
 
 ## 2. Source water is variable
 
@@ -101,7 +101,7 @@ The following summary uses the [central evidence register](evidence-register.md)
 
 | Statement | Current status |
 |---|---|
-| Published studies support investigating separately collected ablution water for a defined non-potable use | **LITERATURE**, not a result for the proposed university source |
+| Published studies support investigating separately collected ablution water for a defined non-potable use | **LITERATURE**, not a result for the proposed site source |
 | Date-palm residues can be converted into adsorptive biochar | **LITERATURE** |
 | MAWRID biochar treats real ablution greywater effectively | **NOT TESTED** |
 | Online surrogate data can predict MAWRID breakthrough | **NOT TESTED** |

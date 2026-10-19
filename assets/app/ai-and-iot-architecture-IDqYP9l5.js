@@ -2,7 +2,7 @@ var e=`# AI and IoT Architecture
 
 > **Status:** Proposed architecture. The deterministic state machine can be prototyped before a predictive model is trained. No AI performance result is claimed.
 
-The first application is a university ablution-water treatment unit with a proposed irrigation outlet. The public static website is a demonstration interface for this use case. Its simulated telemetry, control state, and 3D flow illustration are separate from a field gateway, physical actuator, and laboratory record. A realistic rendering does not establish built hardware or treatment validation.
+The [Rabigh proposal](rabigh-plan.md) covers a complete treatment/monitoring unit and a retrofit MAWRID Smart Box for compatible existing plants. Target customers include Haramain facilities and large complexes; the proposed first bench test is at the Energy and Water Academy, subject to permission. The public website's simulated telemetry, control state and 3D flow are separate from a field gateway, physical actuator and laboratory record. A realistic rendering does not establish built hardware or treatment validation.
 
 ## Design principle
 
@@ -24,13 +24,15 @@ flowchart LR
     Q --> A
     A --> D[Dashboard and maintenance advice]
     R --> C[Fail-safe valve controller]
-    C -->|validated state| U[Approved university irrigation]
+    C -->|validated state| U[Approved non-potable irrigation]
     C -->|unknown or failed state| X[Reprocess, contain, or divert]
 \`\`\`
 
 ## Edge layer
 
-The bench prototype may use an ESP32-class gateway. A field pilot should select industrial hardware after a hazard and reliability review.
+The proposed bench separates an **ESP32 safety controller** from a **Raspberry Pi 5** for local records, interface and research, with a UPS and normally closed irrigation valve. This is an unbuilt hardware proposal; the current Python/SQLite service runs on a host computer. Field hardware selection needs a hazard and reliability review. Retrofit compatibility must be surveyed rather than assumed for every existing plant.
+
+Independent connectivity, fleet dashboards and remote reporting are intended capabilities, not deployed services. Separate connectivity does not establish cybersecurity; authentication, encryption, authorization, command expiry and a local safe-state policy remain required. A future user or research-model stop request may restrict operation, but cannot bypass fixed rules or reopen an unsafe outlet.
 
 The edge layer should:
 

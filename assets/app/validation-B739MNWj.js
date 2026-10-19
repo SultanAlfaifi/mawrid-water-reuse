@@ -12,6 +12,22 @@ The station design basis is **1,000 L/hour and 15 m³/day at 15 operating hours*
 
 ## 1. Experimental questions
 
+### Rabigh prototype targets from the final deck
+
+The [19 October Rabigh plan](rabigh-plan.md) names the Energy and Water Academy as a proposed test location and reports the team's interest claim. It does not establish a signed test agreement. Its SAR 9,500 / six-week plan is a resource estimate, not a results report. Record all the following as \`TARGET\` until measured:
+
+| Planned check | Target and measurement boundary |
+|---|---|
+| Irrigation shutdown | No more than 10 seconds in all 20 defined challenge cases; time physical valve feedback and destination flow, not the browser animation |
+| Critical sensor or power disconnection | Irrigation inhibited in all 10 planned disconnections; a stated 99% figure is not permission to tolerate unsafe release |
+| Turbidity | Deck target: mean below 2 NTU and no sample above 5 NTU; freeze sampling and averaging before testing. These are team targets, not verified regulatory limits |
+| Turbidity calibration | At least 18 of 20 reference comparisons within ±10%; specify range, near-zero treatment and uncertainty |
+| Run, records and laboratory | Seven-day run, reconciled volumes/events and three samples passing a predeclared accredited-lab panel; three samples alone do not establish safety across all operating conditions |
+
+Do not loosen the virtual simulator's current 2 NTU rule to the deck's 5 NTU sample ceiling. Current simulated power loss stops pumps and closes valves; it does not demonstrate a physical gravity-drain path. The proposed ESP32/Raspberry Pi 5/UPS hardware and fail-safe drainage must be tested separately. ORP alone does not establish free chlorine, disinfection contact conditions or microbial absence.
+
+### Questions for the frozen protocol
+
 1. How variable is the selected source water over users, peak periods, cleaning events, and storage times?
 2. What does each treatment barrier contribute?
 3. Does the commercial-carbon base train meet its target-specific requirements, and can a later date-palm-carbon candidate match or improve that performance without unacceptable leaching or operating burden?

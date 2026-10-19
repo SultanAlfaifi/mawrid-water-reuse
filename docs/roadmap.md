@@ -2,7 +2,20 @@
 
 MAWRID advances through evidence gates rather than calendar promises.
 
-The first proposed use case is one university facility: source-separated ablution drainage feeding treatment for irrigation of a defined green area. A public digital demonstration illustrates this architecture and its control rules. It does not establish a site agreement, completed hardware, treatment performance, or permission to irrigate.
+The current Rabigh proposal targets a bench prototype at the Energy and Water Academy in Rabigh, subject to documented permission and available resources. The team reports interest; there is no published interest letter or site agreement. The first commercial segment is Haramain facilities and large complexes, followed by universities, airports and other qualified sites. Each pilot still uses one characterized source and a defined irrigation demand. A public digital demonstration does not establish completed hardware, treatment performance, or permission to irrigate.
+
+## Rabigh six-week execution proposal
+
+The [Arabic Rabigh plan](rabigh-plan.md) records the named owners and test targets from the team's final deck. **SAR 9,500** is a planning budget for the first prototype, not an approved purchase or product price. The week allocation below is a proposed schedule, conditional on parts, site permission and laboratory availability.
+
+| Window | Owner | Evidence to produce |
+|---|---|---|
+| Weeks 1–2 | Faisal Alhilali, with Abdulsalam Alotaibi | Assemble the loop, map drainage and calibrate sensors against references |
+| Weeks 2–3 | Sultan Alfaifi and Faisal Alhilali | Connect controller, actual valve feedback, flow and local logs |
+| Weeks 3–5 | Abdulsalam Alotaibi, supported by the team | Planned challenge and disconnection tests, seven-day run and three laboratory samples under a frozen protocol |
+| Week 6 | Full team | Acceptance or failure report, water/cost reconciliation and a decision on further testing |
+
+The subsequent customer trial is proposed for 60–90 days with agreed criteria. Neither schedule proves treatment safety or completes field validation. Product and maintenance prices remain unpublished pending scope decisions.
 
 ## Stage 0 — Definition
 
@@ -21,7 +34,7 @@ The first proposed use case is one university facility: source-separated ablutio
 
 ## Stage 1 — Source characterization
 
-**Objective:** Quantify variability in source-separated ablution water at the selected university facility. Additional handwashing inputs require a separate source review before inclusion.
+**Objective:** Quantify variability in source-separated ablution water at the selected approved facility. Additional handwashing inputs require a separate source review before inclusion.
 
 **Deliverables:**
 
@@ -63,7 +76,7 @@ The first proposed use case is one university facility: source-separated ablutio
 
 ## Stage 4 — Monitored site pilot
 
-**Objective:** Test representative operation at one approved university facility for the selected irrigation use.
+**Objective:** Test representative operation at one approved facility for the selected irrigation use.
 
 **Scale:** Not selected. Size the proposed pilot from measured source availability, irrigation demand, storage limits, and tested process conditions. `M5` or an illustrative 3D unit is not evidence of capacity or a commitment to `5 m³/day`.
 
@@ -125,6 +138,6 @@ The first proposed use case is one university facility: source-separated ablutio
 - Three-minute system demonstration focused on source, barriers, decision, and safe diversion.
 - Explicit next experiment and evidence gap.
 
-The onsite template's six-week grid can be used as a proposed planning window: define the university source and irrigation demand; assemble the bench loop and data record; test the controller and valve; perform available laboratory media comparisons; reconcile water and cost; then repeat unresolved tests and package the evidence. This is a target for a testable prototype, subject to component and laboratory availability. It is not a promise of field validation, certification, or a trained predictive model within six weeks.
+The onsite template's six-week grid can be used as a proposed planning window: define the selected source and irrigation demand; assemble the bench loop and data record; test the controller and valve; perform available laboratory media comparisons; reconcile water and cost; then repeat unresolved tests and package the evidence. This is a target for a testable prototype, subject to component and laboratory availability. It is not a promise of field validation, certification, or a trained predictive model within six weeks.
 
 Report maturity using the template's idea, design, prototype, experiment, and initial-results categories, supported by the delivered artifact. Any TRL estimate is a stated self-assessment; a target level must not be reported as achieved. Completion percentages require a declared task list and calculation method.

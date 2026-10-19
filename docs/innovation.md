@@ -6,6 +6,8 @@
 
 MAWRID combines a defined source-separated ablution/washbasin stream and nearby irrigation use with treatment, operational monitoring, independent outlet protection and traceable records. It offers a complete-unit concept and a retrofit monitoring/control-box concept. Whether that integration improves value for a particular customer requires measurement.
 
+The [Rabigh proposal](rabigh-plan.md) focuses the commercial story on Haramain facilities and large complexes, followed by other eligible sites. The Smart Box is a retrofit concept subject to compatibility checks; it is not established as universally installable. Two supplier offers reviewed by the team cannot establish that all competitors lack monitoring, nor do omitted offer lines prove that a feature is unavailable. Condition-based service and remote reporting remain value hypotheses.
+
 The current base train uses **commercial activated carbon**. Date-palm-residue carbon is a future research candidate for qualified replacement, with a separate comparative study. Earlier descriptions requiring palm carbon in the base train are superseded by the current station reference; local origin is not proof of treatment efficacy, lower cost or sustainability.
 
 ## Established approaches
